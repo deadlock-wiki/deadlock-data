@@ -1,0 +1,50 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  default:
+    cmds:
+      - task -l
+
+  fetch:
+    desc: Fetch most recent data from github.com/deadlock-wiki/deadbot
+    aliases:
+      - f
+    cmds:
+      - task: archive-current
+      - git clone git@github.com:deadlock-wiki/deadbot.git ./tmp
+      - mkdir -p ./data/current && rm -rf ./data/current/*
+      - cp -a ./tmp/output-data/* ./data/current
+  
+  clean:
+    desc: Cleanup temp files
+    aliases:
+      - c
+    cmds:
+      - rm -rf ./tmp
+
+  generate:
+    desc: generate charts from data
+    aliases:
+      - g
+      - gen
+    cmds:
+      - ls
+
+  archive-current:
+    desc: Copy current game data into archive folder
+    aliases:
+      - a
+    vars:
+      REV:
+        # trim CR (0x15) from CRLF line endings
+        sh: cat ./data/current/version.txt | tr -d '\015' | awk -F "=" '/SourceRevision/ {print $2}'
+      DATE:
+        sh: cat ./data/current/version.txt | tr -d '\015' | awk -F "=" '/VersionDate/  {gsub(" ","_",$2); print $2}'
+    cmds:      
+      - mkdir -p "./data/archive/{{.REV}}_{{.DATE}}"
+      - cp -a ./data/current/* "./data/archive/{{.REV}}_{{.DATE}}"
