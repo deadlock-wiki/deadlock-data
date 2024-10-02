@@ -4,16 +4,21 @@ Collection of current and historical Deadlock data and stats.
 
 Also includes code for visualizations of the data.
 
+All data is pulled from https://github.com/deadlock-wiki/deadbot
+
 ## Organization
 
 Folder Hierarchy:
 
 * `/data` : 
-  * `/current` : most up-to-date data
+  * `/current` : current, up-to-date data
     * ...
-  * `/all` : all data, including current
+  * `/archive` : all data, including current
     * `/<SourceRevision>_<VersionDate>`
       * ...
-* `/src` : python scripts for plot gen
-* `Taskfile.yml` : script task runner
-* `README.md` : you are here
+
+## Updating
+
+The commands to update and sync the data are contained in `Taskfile.yml`.
+
+To run, install `go-task`: https://taskfile.dev/
