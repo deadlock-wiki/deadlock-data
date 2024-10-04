@@ -22,14 +22,10 @@ jobs:
         with:
           version: 3.x
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Clone Deadbot repo
-        # https://github.com/marketplace/actions/clone-github-repo-action
-        uses: GuillaumeFalourd/clone-github-repo-action@v2.3
-        with:
-          depth: 1
-          branch: 'master'
-          owner: 'deadlock-wiki'
-          repository: 'deadbot'
+      - name: Git Submodule Update
+        run: |
+          git pull --recurse-submodules
+          git submodule update --remote --recursive
       - name: sync deadlock data
         run: task sync
       - name: update archive with new data
