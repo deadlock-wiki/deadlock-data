@@ -10,6 +10,16 @@ tasks:
     cmds:
       - task -l
 
+  auto:
+    desc: do it all idempotent
+    aliases:
+      - all
+    cmds:
+      - task: clean
+      - task: fetch
+      - task: archive-current
+      - task: clean
+
   fetch:
     desc: Fetch most recent data from github.com/deadlock-wiki/deadbot
     aliases:
