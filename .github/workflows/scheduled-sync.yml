@@ -26,6 +26,8 @@ jobs:
         run: |
           git pull --recurse-submodules
           git submodule update --remote --recursive
+          pwd
+          ls
       - name: sync deadlock data
         run: task sync
       - name: update archive with new data
