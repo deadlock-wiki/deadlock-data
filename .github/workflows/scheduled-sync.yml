@@ -25,4 +25,5 @@ jobs:
           owner: 'deadlock-wiki'
           repository: 'deadbot'
       - run: task sync
+      - run: task archive-current
       - uses: actions4git/add-commit-push@v1
