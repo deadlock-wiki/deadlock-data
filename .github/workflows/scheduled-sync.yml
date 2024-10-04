@@ -5,14 +5,16 @@ on:
   push:
     branches: "main"
 jobs:
-  job:
+  deadbot-sync:
     permissions:
       contents: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: |
-          brew update
-          brew install go-task
+      - name: Install Task
+        uses: arduino/setup-task@v2
+        with:
+          version: 3.x
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
       - run: task auto
       - uses: actions4git/add-commit-push@v1
