@@ -28,7 +28,7 @@ jobs:
           repository: 'deadbot'
       - run: task sync
       - run: task archive-current
-      - run: grep -Z 'SourceRevision' ./data/current/version.txt >> "$GITHUB_ENV"
+      - run: grep 'SourceRevision' ./data/current/version.txt | tr -d '\015' >> "$GITHUB_ENV"
       - uses: actions4git/add-commit-push@v1
         with:
           commit-committer: 'me'
