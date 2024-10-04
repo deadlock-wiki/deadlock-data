@@ -14,11 +14,13 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install Task
         uses: arduino/setup-task@v2
+        # https://taskfile.dev/installation/#github-actions
         with:
           version: 3.x
           repo-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Clone Deadbot repo
         uses: GuillaumeFalourd/clone-github-repo-action@v2.3
+        # https://github.com/marketplace/actions/clone-github-repo-action
         with:
           depth: 1
           branch: 'master'
@@ -26,4 +28,8 @@ jobs:
           repository: 'deadbot'
       - run: task sync
       - run: task archive-current
+      - run: grep 'SourceRevision' ./data/current/version.txt >> "$GITHUB_ENV"
       - uses: actions4git/add-commit-push@v1
+        with:
+          commit-committer: '${{GITHUB_ACTOR}}'
+          commit-message: 'Revision $GAME_VER - ${{GITHUB_WORKFLOW}} - ${{GITHUB_EVENT_NAME}} - ${{GITHUB_RUN_NUMBER}}'
