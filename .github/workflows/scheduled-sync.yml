@@ -1,3 +1,5 @@
+name: Deadbot data sync
+run-name: ${{github.event_name}} by @${{ github.actor }} 
 on:
   workflow_dispatch:
   schedule:
@@ -13,14 +15,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install Task
-        uses: arduino/setup-task@v2
         # https://taskfile.dev/installation/#github-actions
+        uses: arduino/setup-task@v2
         with:
           version: 3.x
           repo-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Clone Deadbot repo
-        uses: GuillaumeFalourd/clone-github-repo-action@v2.3
         # https://github.com/marketplace/actions/clone-github-repo-action
+        uses: GuillaumeFalourd/clone-github-repo-action@v2.3
         with:
           depth: 1
           branch: 'master'
@@ -32,8 +34,9 @@ jobs:
         run: task archive-current
       - name: load current version vars
         run: cat ./data/current/version.txt | tr -d '\015' >> "$GITHUB_ENV"
-      - uses: actions-js/push@v1.5
+      - name: Commit data updates
         # https://github.com/marketplace/actions/github-commit-push
+        uses: actions-js/push@v1.5
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           author_name: 'me'
