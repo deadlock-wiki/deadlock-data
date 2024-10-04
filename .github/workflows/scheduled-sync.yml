@@ -3,7 +3,8 @@ on:
   schedule:
   - cron: "0 2 * * *"
   push:
-    branches: "main"
+    branches: 
+      - "main"
 jobs:
   deadbot-sync:
     permissions:
@@ -16,5 +17,12 @@ jobs:
         with:
           version: 3.x
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-      - run: task auto
+      - name: Clone Deadbot repo
+        uses: GuillaumeFalourd/clone-github-repo-action@v2.3
+        with:
+          depth: 1
+          branch: 'master'
+          owner: 'deadlock-wiki'
+          repository: 'deadbot'
+      - run: task sync
       - uses: actions4git/add-commit-push@v1

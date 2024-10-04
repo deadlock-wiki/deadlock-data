@@ -16,26 +16,29 @@ tasks:
       - all
     cmds:
       - task: clean
-      - task: fetch
+      - task: setup-git
+      - task: sync
       - task: archive-current
       - task: clean
 
-  fetch:
-    desc: Fetch most recent data from github.com/deadlock-wiki/deadbot
+  sync:
+    desc: sync most recent data from github.com/deadlock-wiki/deadbot
     aliases:
-      - f
+      - s
     cmds:
       - task: archive-current
-      - git clone git@github.com:deadlock-wiki/deadbot.git ./tmp
       - mkdir -p ./data/current && rm -rf ./data/current/*
-      - cp -a ./tmp/output-data/* ./data/current
+      - cp -a ./deadbot/output-data/* ./data/current
+
+  setup-git:
+    - git clone git@github.com:deadlock-wiki/deadbot.git ./deadbot
   
   clean:
     desc: Cleanup temp files
     aliases:
       - c
     cmds:
-      - rm -rf ./tmp
+      - rm -rf ./deadbot
 
   generate:
     desc: generate charts from data
