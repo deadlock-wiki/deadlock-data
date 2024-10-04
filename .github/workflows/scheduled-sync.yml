@@ -35,5 +35,6 @@ jobs:
       - uses: actions-js/push@v1.5
         # https://github.com/marketplace/actions/github-commit-push
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           author_name: 'me'
           message: 'Revision ${{env.SourceRevision}} - ${{env.VersionDate}} | ${{github.event_name}} - ${{github.run_number}}'
