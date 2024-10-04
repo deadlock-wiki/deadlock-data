@@ -16,19 +16,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodules: 'true'
       - name: Install Task
         # https://taskfile.dev/installation/#github-actions
         uses: arduino/setup-task@v2
         with:
           version: 3.x
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Git Submodule Update
-        run: |
-          git pull --recurse-submodules
-          git submodule update --remote --recursive
-          pwd
-          ls
-          cd deadbot && ls
       - name: sync deadlock data
         run: task sync
       - name: update archive with new data
