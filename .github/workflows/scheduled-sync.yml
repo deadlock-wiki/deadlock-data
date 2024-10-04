@@ -32,4 +32,4 @@ jobs:
       - uses: actions4git/add-commit-push@v1
         with:
           commit-committer: '${{github.actor}}'
-          commit-message: 'Revision $GAME_VER - ${{github.workflow}} - ${{github.event_name}} - ${{githuv.run_number}}'
+          commit-message: 'Revision $GAME_VER - ${{github.workflow}} - ${{github.event_name}} - ${{github.run_number}}'
