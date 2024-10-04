@@ -26,10 +26,14 @@ jobs:
           branch: 'master'
           owner: 'deadlock-wiki'
           repository: 'deadbot'
-      - run: task sync
-      - run: task archive-current
-      - run: grep 'SourceRevision' ./data/current/version.txt | tr -d '\015' >> "$GITHUB_ENV"
-      - uses: actions4git/add-commit-push@v1
+      - name: sync deadlock data
+        run: task sync
+      - name: update archive with new data
+        run: task archive-current
+      - name: load current version vars
+        run: cat ./data/current/version.txt | tr -d '\015' >> "$GITHUB_ENV"
+      - uses: actions-js/push@v1.5
+        # https://github.com/marketplace/actions/github-commit-push
         with:
-          commit-committer: 'me'
-          commit-message: 'Revision ${{env.SourceRevision}} - ${{github.event_name}} - ${{github.run_number}}'
+          author_name: 'me'
+          message: 'Revision ${{env.SourceRevision}} - ${{env.VersionDate}} | ${{github.event_name}} - ${{github.run_number}}'
