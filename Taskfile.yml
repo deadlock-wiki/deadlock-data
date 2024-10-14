@@ -30,6 +30,13 @@ tasks:
       - mkdir -p ./data/current && rm -rf ./data/current/*
       - cp -a ./deadbot/output-data/* ./data/current
 
+  changelogs-sync:
+    desc: use docker and deadbot to fetch latest changelogs
+    cmds:
+      - task: archive-current
+      - docker pull ghcr.io/deadlock-wiki/deadbot:latest
+      - docker run -e CHANGELOGS=True -v ./data/current:/output -v ./inputs/raw_changelogs:/input/raw-changelogs ghcr.io/deadlock-wiki/deadbot:latest
+
   setup-git:
     - git clone git@github.com:deadlock-wiki/deadbot.git ./deadbot
   
