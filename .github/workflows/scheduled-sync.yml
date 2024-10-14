@@ -30,7 +30,7 @@ jobs:
           version: 3.x
           repo-token: ${{ secrets.GITHUB_TOKEN }}
       - name: sync deadlock data
-        run: task sync
+        run: task git-sync
       - name: update archive with new data
         run: task archive-current
       - name: load current version vars

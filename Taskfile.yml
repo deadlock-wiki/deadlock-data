@@ -17,11 +17,11 @@ tasks:
     cmds:
       - task: clean
       - task: setup-git
-      - task: sync
+      - task: git-sync
       - task: archive-current
       - task: clean
 
-  sync:
+  git-sync:
     desc: sync most recent data from github.com/deadlock-wiki/deadbot
     aliases:
       - s
