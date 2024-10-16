@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
   repository_dispatch:
     types: [changelog_sync]
-  schedule:
-    # every 16th hour
-  - cron: "0 */16 * * *"
+  # schedule:
+  #   # every 16th hour
+  # - cron: "0 */16 * * *"
 jobs:
   deadbot-sync:
     permissions:
