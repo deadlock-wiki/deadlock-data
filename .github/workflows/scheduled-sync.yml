@@ -4,11 +4,11 @@ on:
   workflow_dispatch:
   repository_dispatch:
     types: [data_sync]
-  schedule:
-  - cron: "0 2 * * *"
-  push:
-    branches: 
-      - "main"
+  # schedule:
+  # - cron: "0 2 * * *"
+  # push:
+  #   branches: 
+  #     - "main"
 jobs:
   deadbot-sync:
     permissions:
