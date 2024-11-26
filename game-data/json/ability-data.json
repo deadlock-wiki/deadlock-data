@@ -1843,10 +1843,10 @@
         "ChannelMoveSpeed": 50,
         "DPS": 50,
         "Height": 2,
+        "InitialRadius": 3,
         "Key": "ability_trapper_poisonjar",
-        "MaxRadius": 7,
         "Name": "Bottled Phantasmicide",
-        "Radius": 3,
+        "RadiusPerSecond": 0.25,
         "SlowPercent": 20,
         "TickRate": 0.25,
         "Upgrades": [
@@ -1938,6 +1938,8 @@
         "Damage": 200,
         "DebuffDuration": 2,
         "Key": "ability_trapper_webwall",
+        "MaxWallToWallDistance": 100,
+        "MinWallToWallDistance": 3,
         "Name": "Silktrap",
         "Radius": 0.6,
         "SlowPercent": 99,
@@ -1949,10 +1951,9 @@
                 "WebDuration": 120
             },
             {
-                "DisarmDuration": 4
+                "SilenceDuration": 2.5
             }
         ],
-        "WallToWallDistance": 100,
         "WebArmTime": 0.5,
         "WebDuration": 60,
         "WebWallTickRate": 0.15
