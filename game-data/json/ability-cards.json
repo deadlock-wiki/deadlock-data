@@ -985,7 +985,8 @@
                 },
                 {
                     "BulletResistReduction": -12,
-                    "TechArmorDamageReduction": -12
+                    "TechArmorDamageReduction": -12,
+                    "DescKey": "citadel_ability_hornet_sting_t3_desc"
                 }
             ],
             "Move": {
@@ -11285,20 +11286,16 @@
                 },
                 "Alt": [
                     {
-                        "Key": "Radius",
-                        "Name": "Radius",
+                        "Key": "InitialRadius",
+                        "Name": "Initial Radius",
                         "Value": 3,
                         "Type": "distance"
                     },
                     {
-                        "Key": "MaxRadius",
-                        "Name": "Max Radius",
-                        "Value": 7,
-                        "Type": "distance",
-                        "Scale": {
-                            "Value": 1.3,
-                            "Type": "spirit"
-                        }
+                        "Key": "RadiusPerSecond",
+                        "Name": "Radius Growth",
+                        "Value": 0.25,
+                        "Type": "distance"
                     }
                 ],
                 "DescKey": "ability_trapper_poisonjar_desc"
@@ -11351,10 +11348,6 @@
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 8
-            },
-            "Radius": {
-                "Name": "Radius",
-                "Value": 3
             }
         },
         "2": {
@@ -11395,8 +11388,14 @@
                         "Type": "duration"
                     },
                     {
-                        "Key": "WallToWallDistance",
-                        "Name": "Max Web Distance",
+                        "Key": "MinWallToWallDistance",
+                        "Name": "Minimum Web Distance",
+                        "Value": 3,
+                        "Type": "distance"
+                    },
+                    {
+                        "Key": "MaxWallToWallDistance",
+                        "Name": "Maximum Web Distance",
                         "Value": 100,
                         "Type": "distance"
                     }
@@ -11411,7 +11410,7 @@
                     "WebDuration": 120
                 },
                 {
-                    "DisarmDuration": 4,
+                    "SilenceDuration": 2.5,
                     "DescKey": "ability_trapper_webwall_t3_desc"
                 }
             ],
