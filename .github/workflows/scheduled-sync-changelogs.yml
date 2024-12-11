@@ -1,0 +1,33 @@
+name: Deadbot changelog sync
+run-name: ${{github.event_name}} by @${{ github.actor }} 
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [changelog_sync]
+  # schedule:
+  #   # every 16th hour
+  # - cron: "0 */16 * * *"
+jobs:
+  deadbot-sync:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Task
+        # https://taskfile.dev/installation/#github-actions
+        uses: arduino/setup-task@v2
+        with:
+          version: 3.x
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: sync deadlock data
+        run: task changelogs-sync
+      - name: update archive with new data
+        run: task archive-current
+      - name: Commit data updates
+        # https://github.com/marketplace/actions/github-commit-push
+        uses: actions-js/push@v1.5
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          author_name: 'me'
+          message: 'Changelogs Sync Automation | ${{github.event_name}} - ${{github.run_number}}'
