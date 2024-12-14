@@ -1,0 +1,44 @@
+name: Deadbot data sync
+run-name: ${{github.event_name}} by @${{ github.actor }} 
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [data_sync]
+  # schedule:
+  # - cron: "0 2 * * *"
+  # push:
+  #   branches: 
+  #     - "main"
+jobs:
+  deadbot-sync:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: 'true'
+      # Update references
+      - name: Git Submodule Update
+        run: |
+          git pull --recurse-submodules
+          git submodule update --remote --recursive
+      - name: Install Task
+        # https://taskfile.dev/installation/#github-actions
+        uses: arduino/setup-task@v2
+        with:
+          version: 3.x
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: sync deadlock data
+        run: task git-sync
+      - name: update archive with new data
+        run: task archive-current
+      - name: load current version vars
+        run: cat ./data/current/version.txt | tr -d '\015' >> "$GITHUB_ENV"
+      - name: Commit data updates
+        # https://github.com/marketplace/actions/github-commit-push
+        uses: actions-js/push@v1.5
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          author_name: 'me'
+          message: 'Revision ${{env.SourceRevision}} - ${{env.VersionDate}} | ${{github.event_name}} - ${{github.run_number}}'
