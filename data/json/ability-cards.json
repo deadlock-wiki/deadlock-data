@@ -149,12 +149,6 @@
                 },
                 "Alt": [
                     {
-                        "Key": "DashTime",
-                        "Name": "Dash Time",
-                        "Value": 3.0,
-                        "Type": "duration"
-                    },
-                    {
                         "Key": "DashSpeed",
                         "Name": "Dash Speed",
                         "Value": 12,
@@ -198,7 +192,7 @@
                         "Value": 1,
                         "Type": "max_charges"
                     },
-                    "AbilityCooldownBetweenCharge": 15,
+                    "AbilityCooldownBetweenCharge": 18,
                     "DescKey": "ability_flame_dash_t3_desc"
                 }
             ],
@@ -254,6 +248,11 @@
                 "Name": "Cooldown",
                 "Value": 35.0,
                 "Type": "cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 3.0,
+                "Type": "duration"
             }
         },
         "3": {
@@ -1119,7 +1118,7 @@
                         {
                             "Key": "Damage",
                             "Name": "Damage",
-                            "Value": 120,
+                            "Value": 100,
                             "Type": "tech_damage",
                             "Scale": {
                                 "Value": 1.0,
@@ -1129,7 +1128,7 @@
                         {
                             "Key": "LowHealthEnemyDamageBonus",
                             "Name": "Max Bonus Damage",
-                            "Value": 120,
+                            "Value": 100,
                             "Type": "tech_damage",
                             "Scale": {
                                 "Value": 1.5,
@@ -7976,6 +7975,10 @@
                     "Name": null,
                     "Value": 1
                 },
+                "BossDamagePercent": {
+                    "Name": null,
+                    "Value": 60
+                },
                 "ConeAngle": {
                     "Name": "Cone Angle",
                     "Value": 115
@@ -8318,13 +8321,13 @@
                     {
                         "Key": "BulletResist",
                         "Name": "Bullet Resist",
-                        "Value": 45,
+                        "Value": 40,
                         "Type": "bullet_armor_up"
                     },
                     {
                         "Key": "TechResist",
                         "Name": "Spirit Resist",
-                        "Value": 45,
+                        "Value": 40,
                         "Type": "tech_armor_up"
                     },
                     {
@@ -8350,8 +8353,8 @@
                 },
                 {
                     "AbilityDuration": 3.0,
-                    "BulletResist": 15,
-                    "TechResist": 15,
+                    "BulletResist": 20,
+                    "TechResist": 20,
                     "DescKey": "citadel_ability_infinity_slash_t3_desc"
                 }
             ],
@@ -10155,7 +10158,7 @@
                     "LaunchWindowCooldown": -15
                 },
                 {
-                    "BulletArmorReduction": -10
+                    "BulletArmorReduction": -8
                 },
                 {
                     "HealthSteal": 80
