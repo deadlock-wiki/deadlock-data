@@ -481,12 +481,12 @@
     "ability_flame_dash": {
         "AbilityCastDelay": 0.2,
         "AbilityCooldown": 35.0,
+        "AbilityDuration": 3.0,
         "AbilityUnitTargetLimit": 1,
         "AuraLingerDuration": 1.0,
         "ChannelMoveSpeed": 18,
         "DashAirSpeed": 8,
         "DashSpeed": 12,
-        "DashTime": 3.0,
         "FlameAuraDPS": 40,
         "FlameAuraRadius": 4.5,
         "FlameDashJumpBonus": 50,
@@ -514,7 +514,7 @@
                     "Value": 1,
                     "Type": "max_charges"
                 },
-                "AbilityCooldownBetweenCharge": 15
+                "AbilityCooldownBetweenCharge": 18
             }
         ]
     },
@@ -2250,6 +2250,7 @@
         "AbilityDuration": 6,
         "AbilityUnitTargetLimit": 1,
         "BonusMoveSpeed": 0,
+        "BossDamagePercent": 60,
         "BulletResist": 30,
         "ConeAngle": 115,
         "CooldownOnInterrupt": 20,
@@ -3022,10 +3023,10 @@
         "AbilityUnitTargetLimit": 1,
         "BonusGoldOnKill": 250,
         "ChannelMoveSpeed": 50,
-        "Damage": 120,
+        "Damage": 100,
         "HeadshotBonus": 20,
         "Key": "citadel_ability_hornet_snipe",
-        "LowHealthEnemyDamageBonus": 120,
+        "LowHealthEnemyDamageBonus": 100,
         "LowHealthEnemyThresholdPct": 50,
         "MaxSoundDistance": 2000,
         "MinChargeDamagePercent": 50,
@@ -3085,12 +3086,12 @@
         "AbilitySpeedPct": 60,
         "AbilityUnitTargetLimit": 1,
         "BonusMoveSpeed": 0,
-        "BulletResist": 45,
+        "BulletResist": 40,
         "Key": "citadel_ability_infinity_slash",
         "MaxHealthRegen": 15,
         "Name": "Shadow Transformation",
         "ShadowFormDurationOnKill": 2.0,
-        "TechResist": 45,
+        "TechResist": 40,
         "Upgrades": [
             {
                 "BonusFireRate": 20
@@ -3100,8 +3101,8 @@
             },
             {
                 "AbilityDuration": 3.0,
-                "BulletResist": 15,
-                "TechResist": 15
+                "BulletResist": 20,
+                "TechResist": 20
             }
         ]
     },
@@ -4572,7 +4573,7 @@
                 "LaunchWindowCooldown": -15
             },
             {
-                "BulletArmorReduction": -10
+                "BulletArmorReduction": -8
             },
             {
                 "HealthSteal": 80
