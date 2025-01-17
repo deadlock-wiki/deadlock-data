@@ -206,7 +206,7 @@
         "BarrelBounceVelocity": 800,
         "BarrelUpFactor": 1,
         "BounceVelocity": 750,
-        "ChannelMoveSpeed": 50,
+        "ChannelMoveSpeed": 9999,
         "IsDisabled": false,
         "Key": "ability_bounce_pad",
         "MinAirTimeForStomp": 0.2,
@@ -366,7 +366,7 @@
         "AbilityCastDelay": 0.15,
         "AbilityCooldown": 20,
         "AbilityUnitTargetLimit": 1,
-        "Damage": 100,
+        "Damage": 75,
         "DebuffDuration": 2,
         "ExplosionRadius": 2,
         "FadingSlowPercent": 50,
@@ -378,10 +378,10 @@
                 "FadingSlowPercent": 25
             },
             {
-                "Damage": 50
+                "Damage": 75
             },
             {
-                "AbilityCooldownPerHeadshot": -2
+                "AbilityCooldownPerHeadshot": -4
             }
         ]
     },
@@ -434,11 +434,11 @@
     },
     "ability_explosive_barrel": {
         "AbilityCastDelay": 0.125,
-        "AbilityCharges": 2,
+        "AbilityCharges": 1,
         "AbilityCooldown": 32.0,
-        "AbilityCooldownBetweenCharge": 5,
+        "AbilityCooldownBetweenCharge": 1,
         "AbilityUnitTargetLimit": 1,
-        "ArmTime": 1,
+        "ArmTime": 0.5,
         "BarrelDamage": 100,
         "BarrelHeavyMeleeForceForward": 1100,
         "BarrelHeavyMeleeForceUp": 550,
@@ -459,15 +459,13 @@
         "TossSpeed": 400,
         "Upgrades": [
             {
-                "AbilityCharges": 1
+                "AbilityCooldown": -10
             },
             {
                 "BarrelDamage": 140
             },
             {
-                "AbilityCooldown": -9.5,
-                "MinTimeBeforeDestroy": -1,
-                "ArmTime": -1
+                "AbilityCharges": 3
             }
         ]
     },
@@ -538,35 +536,39 @@
         ]
     },
     "ability_gravity_lasso": {
-        "AbilityCastRange": 10,
-        "AbilityCooldown": 159.0,
+        "AbilityCastDelay": 0.5,
+        "AbilityCastRange": 20,
+        "AbilityCooldown": 100,
         "AbilityDuration": 2.5,
         "AbilityUnitTargetLimit": 1,
-        "BouncePadExtendDuration": 2,
         "CameraPreviewDistance": 200,
         "CameraPreviewOffset": 25,
         "CameraPreviewSpeed": 0.6,
-        "ExtraTargetConeAngle": 40,
+        "ChannelMoveSpeed": 9999,
+        "Damage": 120,
+        "ExtraTargetConeAngle": 60,
         "ExtraTargetHorizontalOffset": 30,
-        "FollowDampingFactor": 12,
-        "FollowDistance": 120,
+        "FollowDampingFactor": 8,
+        "FollowDistance": 60,
         "GrabExtraTargetsRadiusMult": 2,
         "IsDisabled": false,
         "Key": "ability_gravity_lasso",
-        "LassoTargetMaxSpeed": 550,
+        "LassoTargetMaxSpeed": 55,
         "LiftHeight": 7,
         "LiftHorizontal": -30,
+        "LiftInitialDelay": 0.5,
+        "LiftInitialRisingSpeed": 100,
+        "LiftInitialVelocityStart": 500,
         "Name": "Spirit Lasso",
         "Upgrades": [
             {
-                "AbilityDuration": 0.6
+                "Damage": 80
             },
             {
-                "AbilityCooldown": -56.0
+                "AbilityDuration": 0.5
             },
             {
-                "GrabExtraTargets": 1,
-                "ExtraTargetConeAngle": 60
+                "AbilityCooldown": -30
             }
         ]
     },
@@ -1122,11 +1124,12 @@
         "AbilityPostCastDuration": 0.1,
         "AbilityUnitTargetLimit": 1,
         "AirDampingDuration": 1,
-        "ChannelMoveSpeed": 50,
+        "ChannelMoveSpeed": 99999,
         "DamageAmpPercentage": 25,
         "HexMoveSpeedLimit": 6,
         "IsDisabled": false,
         "Key": "ability_magician_animalcurse",
+        "MoveSpeedBonusPct": 25,
         "Name": "Rabbit Hex",
         "Radius": 0,
         "SelfBumpImpulse": 500,
@@ -1188,7 +1191,7 @@
         "AbilityCooldown": 30,
         "AbilityDuration": 8,
         "AbilityUnitTargetLimit": 1,
-        "ChannelMoveSpeed": 100,
+        "ChannelMoveSpeed": 9999,
         "Damage": 30,
         "IsDisabled": false,
         "Key": "ability_magician_cloneturret",
@@ -1211,6 +1214,25 @@
                 "BonusFireRate": 45,
                 "Damage": 15
             }
+        ]
+    },
+    "ability_magician_copyult": {
+        "AbilityCastDelay": 0.15,
+        "AbilityCastRange": 10,
+        "AbilityCooldown": 90,
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": 9999,
+        "CopiedUltWindow": 10,
+        "CopyCooldownPercentage": 100,
+        "CopyInternalCooldown": 1.0,
+        "IsDisabled": false,
+        "Key": "ability_magician_copyult",
+        "Name": "Audience Participation",
+        "SwapBackDelay": 0.1,
+        "Upgrades": [
+            {},
+            {},
+            {}
         ]
     },
     "ability_magician_escape": {
@@ -1255,7 +1277,7 @@
         "CloneDamage": 80,
         "Damage": 120,
         "DebuffDuration": 5,
-        "FireRateSlow": 20,
+        "FireRateSlow": 15,
         "InitialProjectileVelocity": 1000,
         "IsDisabled": false,
         "Key": "ability_magician_magicbolt",
@@ -1269,7 +1291,7 @@
                 "AbilityCooldown": -4
             },
             {
-                "TechArmorDamageReduction": -20
+                "TechArmorDamageReduction": -10
             },
             {
                 "Damage": 110,
@@ -1339,6 +1361,90 @@
                     "Value": 1.638,
                     "Type": "spirit"
                 }
+            }
+        ]
+    },
+    "ability_nano_catform": {
+        "AbilityCooldown": 50,
+        "AbilityUnitTargetLimit": 1,
+        "BuffDuration": 20,
+        "ChannelMoveSpeed": 50,
+        "InterruptCooldown": 5,
+        "IsDisabled": false,
+        "Key": "ability_nano_catform",
+        "MoveSpeedBonusPct": 75,
+        "Name": "Ava",
+        "Upgrades": [
+            {
+                "BuffDuration": 20
+            },
+            {
+                "MoveSpeedBonusPct": 25
+            },
+            {
+                "AbilityCooldown": -15,
+                "HealthRegen": 30
+            }
+        ]
+    },
+    "ability_nano_clustergrenade": {
+        "AbilityCastDelay": 0.15,
+        "AbilityCooldown": 10,
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": 99999,
+        "Damage": 60,
+        "GrenadeAngleVariance": 0.08,
+        "GrenadeCount": 4,
+        "IsDisabled": false,
+        "Key": "ability_nano_clustergrenade",
+        "Lifetime": 0.75,
+        "MultiHitPenaltyPercentage": 50,
+        "Name": "Gloom Bombs",
+        "Radius": 2.5,
+        "TimeBetweenGrenades": 0.05,
+        "TossSpeed": 400,
+        "Upgrades": [
+            {
+                "Damage": 20
+            },
+            {
+                "AbilityCooldown": -3
+            },
+            {
+                "GrenadeCount": 2
+            }
+        ]
+    },
+    "ability_nano_dash": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCooldown": 11,
+        "AbilityUnitTargetLimit": 1,
+        "CameraDistance": 550,
+        "ChannelMoveSpeed": 50,
+        "CooldownReductionPercentOnHit": 0.5,
+        "DashAngleThreshold": 89,
+        "DashRadius": 2.0,
+        "DashRange": 9,
+        "DashSpeed": 2400,
+        "HealAmount": 50,
+        "IsDisabled": false,
+        "Key": "ability_nano_dash",
+        "MoveSpeedPenaltyMaxSpeed": 200,
+        "Name": "Leaping Slash",
+        "PostDashMaintainedVelocityRatio": 0.15,
+        "SideMoveSpeedReduction": -90,
+        "SlashForwardOffset": 1.5,
+        "SlashHeight": 1.5,
+        "SlashRadius": 4,
+        "Upgrades": [
+            {
+                "HealAmount": 30
+            },
+            {
+                "ImpactDamage": 50
+            },
+            {
+                "CooldownReductionPercentOnHit": 50
             }
         ]
     },
@@ -1450,6 +1556,32 @@
                 "VictimDamageReduction": -30,
                 "HealAmpReceivePenaltyPercent": -30,
                 "HealAmpRegenPenaltyPercent": -30
+            }
+        ]
+    },
+    "ability_nano_shadow_pulse": {
+        "AbilityChannelTime": 3,
+        "AbilityCooldown": 80,
+        "AbilityUnitTargetLimit": 1,
+        "AirSpeedMax": 100,
+        "ChannelMoveSpeed": 9999,
+        "Damage": 150,
+        "FallSpeedMax": 10,
+        "IsDisabled": false,
+        "Key": "ability_nano_shadow_pulse",
+        "MoveSpeedBonusPct": 50,
+        "Name": "Return to Shadows",
+        "Radius": 7,
+        "Upgrades": [
+            {
+                "AbilityCooldown": -30
+            },
+            {
+                "Damage": 80
+            },
+            {
+                "BuffDuration": "5s",
+                "DamageAmp": 30
             }
         ]
     },
@@ -2153,9 +2285,8 @@
         "PetrifyDamage": 180,
         "PetrifyDamageBreakThreshold": 200,
         "PetrifyDuration": 2,
-        "PetrifyRadius": 3,
         "Radius": 6,
-        "SlowDuration": 3.5,
+        "SlowDuration": 1.5,
         "SlowPercent": 50,
         "Upgrades": [
             {
@@ -2165,7 +2296,7 @@
                 "AbilityCooldown": -30
             },
             {
-                "PetrifyDuration": "1.5s"
+                "PetrifyDuration": 1.0
             }
         ]
     },
@@ -2220,6 +2351,7 @@
         "AbilityCastRange": 15,
         "AbilityCooldown": 26.0,
         "AbilityUnitTargetLimit": 1,
+        "BuildUpDuration": 5,
         "ChannelMoveSpeed": 50,
         "IsDisabled": false,
         "Key": "ability_viper_venom",
@@ -2233,9 +2365,10 @@
                 "HealAmpReceivePenaltyPercent": -60
             },
             {
-                "VenomMissingHealthDamagePercentage": 8
+                "BuildUpPerShot": 5
             }
         ],
+        "VenomBuildupPerShot": 1,
         "VenomDuration": 3,
         "VenomMaxDamage": 200,
         "VenomMaxDamageHealthPercentage": 25,
@@ -3205,7 +3338,7 @@
         "TechResist": 40,
         "Upgrades": [
             {
-                "BonusFireRate": 20
+                "BonusFireRate": 15
             },
             {
                 "BonusMoveSpeed": "4m"
