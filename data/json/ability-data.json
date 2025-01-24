@@ -366,7 +366,8 @@
         "AbilityCastDelay": 0.15,
         "AbilityCooldown": 20,
         "AbilityUnitTargetLimit": 1,
-        "Damage": 75,
+        "CrackshotNPCCDReduction": 50,
+        "Damage": 60,
         "DebuffDuration": 2,
         "ExplosionRadius": 2,
         "FadingSlowPercent": 50,
@@ -378,10 +379,11 @@
                 "FadingSlowPercent": 25
             },
             {
-                "Damage": 75
+                "Damage": 85
             },
             {
-                "AbilityCooldownPerHeadshot": -4
+                "AbilityCooldownPerHeadshot": -4,
+                "AbilityCooldownPerHeadshotNPC": -2
             }
         ]
     },
@@ -462,7 +464,7 @@
                 "AbilityCooldown": -10
             },
             {
-                "BarrelDamage": 140
+                "BarrelDamage": 120
             },
             {
                 "AbilityCharges": 3
@@ -565,7 +567,7 @@
                 "Damage": 80
             },
             {
-                "AbilityDuration": 0.5
+                "AbilityDuration": 0.75
             },
             {
                 "AbilityCooldown": -30
@@ -1129,7 +1131,7 @@
         "HexMoveSpeedLimit": 6,
         "IsDisabled": false,
         "Key": "ability_magician_animalcurse",
-        "MoveSpeedBonusPct": 25,
+        "MoveSpeedBonusPct": 35,
         "Name": "Rabbit Hex",
         "Radius": 0,
         "SelfBumpImpulse": 500,
@@ -1188,8 +1190,8 @@
         "AbilityCastDelay": 0.15,
         "AbilityCastRange": 15,
         "AbilityChannelTime": 5,
-        "AbilityCooldown": 30,
-        "AbilityDuration": 8,
+        "AbilityCooldown": 40,
+        "AbilityDuration": 6,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 9999,
         "Damage": 30,
@@ -1275,7 +1277,7 @@
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
         "CloneDamage": 80,
-        "Damage": 120,
+        "Damage": 110,
         "DebuffDuration": 5,
         "FireRateSlow": 15,
         "InitialProjectileVelocity": 1000,
@@ -1300,7 +1302,7 @@
                     "Value": 0.4,
                     "Type": "spirit"
                 },
-                "CloneDamage": 150
+                "CloneDamage": 140
             }
         ]
     },
@@ -1379,7 +1381,7 @@
                 "BuffDuration": 20
             },
             {
-                "MoveSpeedBonusPct": 25
+                "MoveSpeedBonusPct": 35
             },
             {
                 "AbilityCooldown": -15,
@@ -1435,13 +1437,13 @@
         "SideMoveSpeedReduction": -90,
         "SlashForwardOffset": 1.5,
         "SlashHeight": 1.5,
-        "SlashRadius": 4,
+        "SlashRadius": 4.5,
         "Upgrades": [
             {
                 "HealAmount": 30
             },
             {
-                "ImpactDamage": 50
+                "ImpactDamage": 75
             },
             {
                 "CooldownReductionPercentOnHit": 50
@@ -2315,7 +2317,7 @@
                 "Stamina": 2
             },
             {
-                "SlideResist": 30
+                "SlideResist": 25
             }
         ]
     },
@@ -2370,7 +2372,7 @@
         ],
         "VenomBuildupPerShot": 1,
         "VenomDuration": 3,
-        "VenomMaxDamage": 200,
+        "VenomMaxDamage": 180,
         "VenomMaxDamageHealthPercentage": 25,
         "VenomMinDamage": 20,
         "VenomMinDamageHealthPercentage": 100
@@ -2855,7 +2857,7 @@
         "AbilityCastRange": 500,
         "AbilityCharges": 1,
         "AbilityChargesConditionally": 1,
-        "AbilityCooldown": 0.65,
+        "AbilityCooldown": 0.75,
         "AbilityPostCastDuration": 0.2,
         "AbilityUnitTargetLimit": 1,
         "BonusAbilityResource": 100,
@@ -3171,7 +3173,7 @@
         "Name": "Hook",
         "Upgrades": [
             {
-                "BulletAmp": 30,
+                "BulletAmp": 25,
                 "BulletAmpDuration": 10
             },
             {
@@ -3745,10 +3747,10 @@
         ]
     },
     "citadel_ability_psychic_lift": {
-        "AbilityCastDelay": 0.4,
+        "AbilityCastDelay": 0.3,
         "AbilityCastRange": 20,
         "AbilityCooldown": 100.0,
-        "AbilityDuration": 2.5,
+        "AbilityDuration": 3,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
         "Damage": 175,
@@ -3960,7 +3962,7 @@
         "DashRadius": 2.5,
         "DashRange": 12,
         "DashSpeed": 2400,
-        "ImpactDamage": 110,
+        "ImpactDamage": 100,
         "IsDisabled": false,
         "Key": "citadel_ability_shiv_dash",
         "MoveSpeedPenaltyMaxSpeed": 200,
@@ -3972,7 +3974,7 @@
                 "AbilityCooldown": -3
             },
             {
-                "ImpactDamage": 70
+                "ImpactDamage": 60
             },
             {
                 "CooldownReductionOnHit": 2,
@@ -3983,13 +3985,13 @@
     },
     "citadel_ability_shiv_defer_damage": {
         "AbilityCastDelay": 0.25,
-        "AbilityCooldown": 50.0,
+        "AbilityCooldown": 60.0,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
         "DamagePctDeferred": 20,
         "DamagePctDeferredMaxRage": 14,
         "DeferClearPct": 40,
-        "DeferredDamageDuration": 13,
+        "DeferredDamageDuration": 12,
         "IsDisabled": false,
         "Key": "citadel_ability_shiv_defer_damage",
         "Name": "Bloodletting",
@@ -4078,7 +4080,7 @@
         "BonusDamagePctPerPlayerHit": 1.5,
         "BonusDamagePctPerPlayerKilled": 4,
         "ChannelMoveSpeed": 50,
-        "Damage": 120,
+        "Damage": 110,
         "FuseTime": 3.0,
         "IsDisabled": false,
         "Key": "citadel_ability_sticky_bomb",
@@ -4090,7 +4092,7 @@
                 "AbilityCooldown": -8
             },
             {
-                "Damage": 80
+                "Damage": 75
             },
             {
                 "OutgoingDamagePenaltyPercent": -30,
@@ -4317,7 +4319,7 @@
             },
             {
                 "UppercutBuffOnHit": 12,
-                "BuffBaseWeaponPct": 60
+                "BuffBaseWeaponPct": 50
             },
             {
                 "RestoreHookCooldown": 1,
@@ -4854,7 +4856,7 @@
         "BulletArmorReduction": -10,
         "ChannelMoveSpeed": 50,
         "DebuffDuration": 14,
-        "HealthSteal": 75,
+        "HealthSteal": 50,
         "HeroStack": 3,
         "IsDisabled": false,
         "Key": "mirage_fire_beetles",

@@ -1984,7 +1984,7 @@
                             "Value": 70,
                             "Type": "tech_damage",
                             "Scale": {
-                                "Value": 1.1,
+                                "Value": 0.9,
                                 "Type": "spirit"
                             }
                         },
@@ -2087,7 +2087,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 0.65,
+                "Value": 0.75,
                 "Type": "cooldown",
                 "Scale": {
                     "Value": 0.0,
@@ -2285,7 +2285,7 @@
                         {
                             "Key": "AbilityDuration",
                             "Name": "Duration",
-                            "Value": 2.5,
+                            "Value": 3,
                             "Type": "duration"
                         }
                     ]
@@ -2332,7 +2332,7 @@
             },
             "AbilityCastDelay": {
                 "Name": "Cast Delay",
-                "Value": 0.4,
+                "Value": 0.3,
                 "Type": "cast"
             },
             "AbilityCastRange": {
@@ -2347,7 +2347,7 @@
             },
             "AbilityDuration": {
                 "Name": "Duration",
-                "Value": 2.5,
+                "Value": 3,
                 "Type": "duration"
             }
         }
@@ -4553,7 +4553,7 @@
                     "AbilityCooldown": -10
                 },
                 {
-                    "BarrelDamage": 140
+                    "BarrelDamage": 120
                 },
                 {
                     "AbilityCharges": 3
@@ -4807,11 +4807,11 @@
                         {
                             "Key": "Damage",
                             "Name": "Damage",
-                            "Value": 75,
+                            "Value": 60,
                             "Type": "bullet_damage",
                             "Scale": {
-                                "Value": 1.0,
-                                "Type": "weapon_damage"
+                                "Value": 1.2,
+                                "Type": "spirit"
                             }
                         },
                         {
@@ -4836,10 +4836,12 @@
                     "FadingSlowPercent": 25
                 },
                 {
-                    "Damage": 75
+                    "Damage": 85
                 },
                 {
-                    "AbilityCooldownPerHeadshot": -4
+                    "AbilityCooldownPerHeadshot": -4,
+                    "AbilityCooldownPerHeadshotNPC": -2,
+                    "DescKey": "ability_crackshot_t3_desc"
                 }
             ],
             "Range": {
@@ -4853,6 +4855,10 @@
                 "AbilityUnitTargetLimit": {
                     "Name": null,
                     "Value": 1
+                },
+                "CrackshotNPCCDReduction": {
+                    "Name": null,
+                    "Value": 50
                 }
             },
             "AbilityCastDelay": {
@@ -4901,7 +4907,7 @@
                     "Damage": 80
                 },
                 {
-                    "AbilityDuration": 0.5
+                    "AbilityDuration": 0.75
                 },
                 {
                     "AbilityCooldown": -30
@@ -5061,7 +5067,7 @@
                 },
                 {
                     "UppercutBuffOnHit": 12,
-                    "BuffBaseWeaponPct": 60,
+                    "BuffBaseWeaponPct": 50,
                     "DescKey": "citadel_ability_uppercut_t2_desc"
                 },
                 {
@@ -5131,7 +5137,7 @@
                         {
                             "Key": "Damage",
                             "Name": "Damage",
-                            "Value": 120,
+                            "Value": 110,
                             "Type": "tech_damage",
                             "Scale": {
                                 "Value": 1.2,
@@ -5154,7 +5160,7 @@
                     "AbilityCooldown": -8
                 },
                 {
-                    "Damage": 80
+                    "Damage": 75
                 },
                 {
                     "OutgoingDamagePenaltyPercent": -30,
@@ -5235,7 +5241,7 @@
             },
             "Upgrades": [
                 {
-                    "BulletAmp": 30,
+                    "BulletAmp": 25,
                     "BulletAmpDuration": 10,
                     "DescKey": "citadel_ability_hook_t1_desc"
                 },
@@ -5546,7 +5552,7 @@
                     {
                         "Key": "SlashRadius",
                         "Name": "Slash Radius",
-                        "Value": 4,
+                        "Value": 4.5,
                         "Type": "distance"
                     }
                 ],
@@ -5557,7 +5563,7 @@
                     "HealAmount": 30
                 },
                 {
-                    "ImpactDamage": 50
+                    "ImpactDamage": 75
                 },
                 {
                     "CooldownReductionPercentOnHit": 50,
@@ -5657,7 +5663,7 @@
                     "BuffDuration": 20
                 },
                 {
-                    "MoveSpeedBonusPct": 25
+                    "MoveSpeedBonusPct": 35
                 },
                 {
                     "AbilityCooldown": -15,
@@ -6695,10 +6701,10 @@
                         {
                             "Key": "ImpactDamage",
                             "Name": "Damage",
-                            "Value": 110,
+                            "Value": 100,
                             "Type": "tech_damage",
                             "Scale": {
-                                "Value": 1.3,
+                                "Value": 1.55,
                                 "Type": "spirit"
                             }
                         },
@@ -6718,7 +6724,7 @@
                     "AbilityCooldown": -3
                 },
                 {
-                    "ImpactDamage": 70
+                    "ImpactDamage": 60
                 },
                 {
                     "CooldownReductionOnHit": 2,
@@ -6799,7 +6805,7 @@
                         {
                             "Key": "DeferredDamageDuration",
                             "Name": "Deferred Damage Duration",
-                            "Value": 13,
+                            "Value": 12,
                             "Type": "duration"
                         }
                     ]
@@ -6866,7 +6872,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 50.0,
+                "Value": 60.0,
                 "Type": "cooldown"
             }
         },
@@ -9951,10 +9957,10 @@
                         {
                             "Key": "HealthSteal",
                             "Name": "Max HP Steal Per Bullet",
-                            "Value": 75,
+                            "Value": 50,
                             "Type": "healing",
                             "Scale": {
-                                "Value": 0.9,
+                                "Value": 1.4,
                                 "Type": "spirit"
                             }
                         },
@@ -10871,7 +10877,7 @@
                         {
                             "Key": "VenomMaxDamage",
                             "Name": "Max Venom Damage",
-                            "Value": 200,
+                            "Value": 180,
                             "Type": "tech_damage",
                             "Scale": {
                                 "Value": 3.0,
@@ -10974,7 +10980,7 @@
                     "Stamina": 2
                 },
                 {
-                    "SlideResist": 30,
+                    "SlideResist": 25,
                     "DescKey": "ability_viper_snakedash_t3_desc"
                 }
             ],
@@ -11100,7 +11106,7 @@
                         {
                             "Key": "Damage",
                             "Name": "Damage",
-                            "Value": 120,
+                            "Value": 110,
                             "Type": "tech_damage",
                             "Scale": {
                                 "Value": 1.2,
@@ -11159,7 +11165,7 @@
                         "Value": 0.4,
                         "Type": "spirit"
                     },
-                    "CloneDamage": 150,
+                    "CloneDamage": 140,
                     "DescKey": "ability_magician_magicbolt_t3_desc"
                 }
             ],
@@ -11250,7 +11256,7 @@
                     {
                         "Key": "AbilityDuration",
                         "Name": "Duration",
-                        "Value": 8,
+                        "Value": 6,
                         "Type": "duration"
                     },
                     {
@@ -11323,12 +11329,12 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 30,
+                "Value": 40,
                 "Type": "cooldown"
             },
             "AbilityDuration": {
                 "Name": "Duration",
-                "Value": 8,
+                "Value": 6,
                 "Type": "duration"
             }
         },
@@ -11355,7 +11361,7 @@
                     {
                         "Key": "MoveSpeedBonusPct",
                         "Name": "Move Speed bonus",
-                        "Value": 25,
+                        "Value": 35,
                         "Type": "move_speed"
                     },
                     {
