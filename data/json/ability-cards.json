@@ -465,10 +465,6 @@
                     "Name": null,
                     "Value": 1
                 },
-                "BossDamagePercent": {
-                    "Name": null,
-                    "Value": 50
-                },
                 "HitSpeed": {
                     "Name": null,
                     "Value": 80
@@ -663,10 +659,6 @@
                         "Type": "spirit"
                     }
                 },
-                "BossDamagePercent": {
-                    "Name": null,
-                    "Value": 50
-                },
                 "ChainTickRate": {
                     "Name": null,
                     "Value": 0.2
@@ -786,10 +778,6 @@
                     "Name": null,
                     "Value": 1
                 },
-                "BossDamagePercent": {
-                    "Name": null,
-                    "Value": 25
-                },
                 "CameraDistance": {
                     "Name": null,
                     "Value": 600
@@ -808,7 +796,7 @@
                 },
                 "LightningStrikeDelay": {
                     "Name": null,
-                    "Value": 2
+                    "Value": 0.25
                 },
                 "LightningStrikeKnockBackForce": {
                     "Name": null,
@@ -1168,7 +1156,7 @@
                     "AbilityCooldown": -19.0
                 },
                 {
-                    "LowHealthEnemyDamageBonus": 120
+                    "LowHealthEnemyDamageBonus": 110
                 },
                 {
                     "BonusGoldOnKill": 600,
@@ -1316,10 +1304,6 @@
                 "BeepSoundMaxFrequency": {
                     "Name": null,
                     "Value": 0.1
-                },
-                "BossDamagePercent": {
-                    "Name": null,
-                    "Value": 25
                 }
             },
             "AbilityCooldown": {
@@ -1845,7 +1829,7 @@
                         {
                             "Key": "RegenIncomingDamagePercent",
                             "Name": "Damage regenerated",
-                            "Value": 11,
+                            "Value": 12,
                             "Type": "healing"
                         },
                         {
@@ -2793,10 +2777,6 @@
                     "Name": null,
                     "Value": 100
                 },
-                "BossDamagePercent": {
-                    "Name": null,
-                    "Value": 50
-                },
                 "DetonateTimer": {
                     "Name": null,
                     "Value": 5
@@ -2936,10 +2916,6 @@
                 "AbilityUnitTargetLimit": {
                     "Name": null,
                     "Value": 1
-                },
-                "BossDamagePercent": {
-                    "Name": null,
-                    "Value": 50
                 }
             },
             "AbilityCastDelay": {
@@ -3339,7 +3315,7 @@
                             "Value": 100,
                             "Type": "tech_damage",
                             "Scale": {
-                                "Value": 1.4,
+                                "Value": 1.8,
                                 "Type": "spirit"
                             }
                         },
@@ -3378,7 +3354,9 @@
                     "DescKey": "citadel_ability_stomp_t2_desc"
                 },
                 {
-                    "Damage": 125
+                    "Damage": 125,
+                    "AbilityCharges": 1,
+                    "DescKey": "citadel_ability_stomp_t3_desc"
                 }
             ],
             "Move": {
@@ -4021,6 +3999,10 @@
                     "Name": null,
                     "Value": 250
                 },
+                "MaxGroundDashReductionPercent": {
+                    "Name": null,
+                    "Value": -20
+                },
                 "MinSlowPercent": {
                     "Name": null,
                     "Value": 30
@@ -4455,8 +4437,8 @@
                     "AbilityCooldown": -40.0
                 },
                 {
-                    "EvasionPercent": 40,
-                    "ChannelMoveSpeed": "2m",
+                    "EvasionPercent": 60,
+                    "ChannelMoveSpeed": "3m",
                     "DescKey": "ability_bullet_flurry_t3_desc"
                 }
             ],
@@ -4620,7 +4602,7 @@
                 },
                 "TossSpeed": {
                     "Name": null,
-                    "Value": 400
+                    "Value": 340
                 }
             },
             "AbilityCastDelay": {
@@ -4640,7 +4622,7 @@
             },
             "AbilityCooldownBetweenCharge": {
                 "Name": "Charge Delay",
-                "Value": 1,
+                "Value": 2,
                 "Type": "charge_cooldown"
             },
             "Radius": {
@@ -4662,7 +4644,7 @@
                             "Value": 120,
                             "Type": "tech_damage",
                             "Scale": {
-                                "Value": 0.91728,
+                                "Value": 0.4,
                                 "Type": "spirit"
                             }
                         },
@@ -4882,7 +4864,7 @@
                         {
                             "Key": "AbilityDuration",
                             "Name": "Duration",
-                            "Value": 2.5,
+                            "Value": 2.25,
                             "Type": "duration"
                         },
                         {
@@ -4924,6 +4906,10 @@
                 "AbilityUnitTargetLimit": {
                     "Name": null,
                     "Value": 1
+                },
+                "BouncePadExtendDuration": {
+                    "Name": null,
+                    "Value": 1.5
                 },
                 "CameraPreviewDistance": {
                     "Name": null,
@@ -4999,7 +4985,7 @@
             },
             "AbilityDuration": {
                 "Name": "Duration",
-                "Value": 2.5,
+                "Value": 2.25,
                 "Type": "duration"
             }
         }
@@ -5389,10 +5375,6 @@
                     "Name": null,
                     "Value": 4.0
                 },
-                "BossDamagePercent": {
-                    "Name": null,
-                    "Value": 20
-                },
                 "CameraDistance": {
                     "Name": null,
                     "Value": 7
@@ -5644,13 +5626,13 @@
                         {
                             "Key": "MoveSpeedBonusPct",
                             "Name": "Move Speed bonus",
-                            "Value": 75,
+                            "Value": 65,
                             "Type": "move_speed"
                         },
                         {
                             "Key": "BuffDuration",
                             "Name": "Buff Duration",
-                            "Value": 20,
+                            "Value": 15,
                             "Type": "duration"
                         }
                     ]
@@ -5663,7 +5645,7 @@
                     "BuffDuration": 20
                 },
                 {
-                    "MoveSpeedBonusPct": 35
+                    "MoveSpeedBonusPct": 45
                 },
                 {
                     "AbilityCooldown": -15,
@@ -5683,14 +5665,22 @@
                     "Name": null,
                     "Value": 1
                 },
+                "EnemyDamageSpeedPenalty": {
+                    "Name": null,
+                    "Value": 50
+                },
                 "InterruptCooldown": {
                     "Name": null,
                     "Value": 5
+                },
+                "SpeedLostDuration": {
+                    "Name": null,
+                    "Value": 1.5
                 }
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 50,
+                "Value": 45,
                 "Type": "cooldown"
             }
         },
@@ -5776,7 +5766,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 80,
+                "Value": 90,
                 "Type": "cooldown"
             },
             "Radius": {
@@ -5850,10 +5840,6 @@
                 "AirSpeedMax": {
                     "Name": null,
                     "Value": 150
-                },
-                "BossDamagePercent": {
-                    "Name": null,
-                    "Value": 25
                 },
                 "CameraHeightOffset": {
                     "Name": null,
@@ -6074,7 +6060,7 @@
                     "AbilityCooldown": -20.0
                 },
                 {
-                    "TetherDuration": 0.5
+                    "TetherDuration": 0.75
                 },
                 {
                     "BulletVulnerbility": 30,
@@ -6127,7 +6113,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 37.0,
+                "Value": 34,
                 "Type": "cooldown"
             },
             "Radius": {
@@ -7079,10 +7065,6 @@
                     "Name": null,
                     "Value": 1
                 },
-                "BossDamagePercent": {
-                    "Name": null,
-                    "Value": 50
-                },
                 "Height": {
                     "Name": null,
                     "Value": 2
@@ -7820,10 +7802,6 @@
                 "AbilityUnitTargetLimit": {
                     "Name": null,
                     "Value": 1
-                },
-                "BossDamagePercent": {
-                    "Name": null,
-                    "Value": 60
                 },
                 "ConeAngle": {
                     "Name": "Cone Angle",
@@ -8799,10 +8777,6 @@
                     "Name": null,
                     "Value": 1
                 },
-                "BossDamagePercent": {
-                    "Name": null,
-                    "Value": 50
-                },
                 "DetonateCooldown": {
                     "Name": null,
                     "Value": 0.15
@@ -9156,10 +9130,6 @@
                     "Value": 500
                 },
                 "BallOffset": {
-                    "Name": null,
-                    "Value": 50
-                },
-                "BossDamagePercent": {
                     "Name": null,
                     "Value": 50
                 },
@@ -10153,10 +10123,6 @@
                     "Name": null,
                     "Value": 1
                 },
-                "BossDamagePercent": {
-                    "Name": null,
-                    "Value": 50
-                },
                 "ClimbHeight": {
                     "Name": null,
                     "Value": 1
@@ -10725,7 +10691,7 @@
             },
             "Damage": {
                 "MinDamage": {
-                    "Name": null,
+                    "Name": "Minimum Damage",
                     "Value": 50,
                     "Type": "tech_damage",
                     "Scale": {
@@ -11034,12 +11000,6 @@
                 },
                 "Alt": [
                     {
-                        "Key": "PetrifyDamageBreakThreshold",
-                        "Name": "Petrify Damage Block",
-                        "Value": 200,
-                        "Type": "health"
-                    },
-                    {
                         "Key": "SlowPercent",
                         "Name": "Movement Slow",
                         "Value": 50,
@@ -11070,6 +11030,13 @@
                     "Name": "Channel Move Speed",
                     "Value": 9999,
                     "Type": "move_speed"
+                }
+            },
+            "Health": {
+                "PetrifyDamageBreakThreshold": {
+                    "Name": "Petrify Damage Block",
+                    "Value": 200,
+                    "Type": "health"
                 }
             },
             "Other": {
@@ -11104,49 +11071,51 @@
                 "Main": {
                     "Props": [
                         {
-                            "Key": "Damage",
-                            "Name": "Damage",
-                            "Value": 110,
+                            "Key": "MinDamage",
+                            "Name": "Minimum Damage",
+                            "Value": 75,
                             "Type": "tech_damage",
                             "Scale": {
-                                "Value": 1.2,
+                                "Value": 1.0,
                                 "Type": "spirit"
                             }
                         },
                         {
-                            "Key": "CloneDamage",
-                            "Name": "Assistant Damage",
-                            "Value": 80,
+                            "Key": "MaxDamage",
+                            "Name": "Max Damage",
+                            "Value": 150,
                             "Type": "tech_damage",
                             "Scale": {
-                                "Value": 0.8,
+                                "Value": 2.0,
                                 "Type": "spirit"
                             }
+                        },
+                        {
+                            "Key": "CloneDamagePercentage",
+                            "Name": "Assistant Damage",
+                            "Value": 50,
+                            "Type": "tech_damage"
                         }
                     ]
                 },
                 "Alt": [
                     {
+                        "Key": "MaxDamageTime",
+                        "Name": "Time for Max Damage",
+                        "Value": 2,
+                        "Type": "duration"
+                    },
+                    {
                         "Key": "FireRateSlow",
                         "Name": "Fire Rate Slow",
-                        "Value": 15,
+                        "Value": null,
                         "Type": "fire_rate"
                     },
                     {
                         "Key": "DebuffDuration",
                         "Name": "Debuff Duration",
-                        "Value": 5,
-                        "Type": "duration"
-                    },
-                    {
-                        "Key": "TechArmorDamageReduction",
                         "Value": null,
-                        "Type": "tech_armor_up"
-                    },
-                    {
-                        "Key": "ProjectileRedirectCount",
-                        "Name": "Max Redirects",
-                        "Value": 1
+                        "Type": "duration"
                     }
                 ],
                 "DescKey": "ability_magician_magicbolt_desc"
@@ -11156,16 +11125,13 @@
                     "AbilityCooldown": -4
                 },
                 {
-                    "TechArmorDamageReduction": -10
+                    "FireRateSlow": 25,
+                    "DebuffDuration": 5,
+                    "DescKey": "ability_magician_magicbolt_t2_desc"
                 },
                 {
-                    "Damage": 110,
-                    "Scale": {
-                        "Prop": "CloneDamage",
-                        "Value": 0.4,
-                        "Type": "spirit"
-                    },
-                    "CloneDamage": 140,
+                    "MaxDamage": 150,
+                    "CloneDamagePercentage": 50,
                     "DescKey": "ability_magician_magicbolt_t3_desc"
                 }
             ],
@@ -11185,6 +11151,10 @@
                     "Name": null,
                     "Value": 1
                 },
+                "CloneBoltDelay": {
+                    "Name": null,
+                    "Value": 0.1
+                },
                 "InitialProjectileVelocity": {
                     "Name": null,
                     "Value": 1000
@@ -11192,6 +11162,10 @@
                 "ProjectileLifetime": {
                     "Name": null,
                     "Value": 3
+                },
+                "ProjectileRedirectCount": {
+                    "Name": "Max Redirects",
+                    "Value": 1
                 },
                 "RedirectVelocity": {
                     "Name": null,
@@ -11225,7 +11199,8 @@
             },
             "Radius": {
                 "Name": "Radius",
-                "Value": 3
+                "Value": 3,
+                "Type": "distance"
             }
         },
         "2": {
@@ -11246,26 +11221,14 @@
                             }
                         },
                         {
-                            "Key": "TotalSwaps",
-                            "Name": "Max Swaps",
-                            "Value": 1
+                            "Key": "AbilityDuration",
+                            "Name": "Duration",
+                            "Value": 6,
+                            "Type": "duration"
                         }
                     ]
                 },
-                "Alt": [
-                    {
-                        "Key": "AbilityDuration",
-                        "Name": "Duration",
-                        "Value": 6,
-                        "Type": "duration"
-                    },
-                    {
-                        "Key": "LeashRadius",
-                        "Name": "Max Leash Radius",
-                        "Value": 20,
-                        "Type": "time"
-                    }
-                ],
+                "Alt": [],
                 "DescKey": "ability_magician_cloneturret_desc"
             },
             "Upgrades": [
@@ -11284,6 +11247,13 @@
                     "DescKey": "ability_magician_cloneturret_t3_desc"
                 }
             ],
+            "Range": {
+                "LeashRadius": {
+                    "Name": "Max Leash Radius",
+                    "Value": 20,
+                    "Type": "time"
+                }
+            },
             "Cast": {
                 "AbilityChannelTime": {
                     "Name": "Channel Duration",
@@ -11301,6 +11271,10 @@
             "Other": {
                 "AbilityUnitTargetLimit": {
                     "Name": null,
+                    "Value": 1
+                },
+                "TotalSwaps": {
+                    "Name": "Max Swaps",
                     "Value": 1
                 },
                 "TurretBulletTargetAngle": {
@@ -11451,13 +11425,13 @@
                         {
                             "Key": "CopiedUltWindow",
                             "Name": "Copy Duration",
-                            "Value": 10,
+                            "Value": 20,
                             "Type": "time"
                         },
                         {
                             "Key": "CopyCooldownPercentage",
                             "Name": "Copied Cooldown",
-                            "Value": 100,
+                            "Value": 50,
                             "Type": "cooldown"
                         }
                     ]
@@ -11586,10 +11560,6 @@
                 "AbilityUnitTargetLimit": {
                     "Name": null,
                     "Value": 1
-                },
-                "BossDamagePercent": {
-                    "Name": null,
-                    "Value": 50
                 },
                 "Height": {
                     "Name": null,

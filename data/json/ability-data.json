@@ -85,7 +85,6 @@
         "BeepSoundBuildupCount": 4,
         "BeepSoundIntervalBias": 0.55,
         "BeepSoundMaxFrequency": 0.1,
-        "BossDamagePercent": 25,
         "ChannelMoveSpeed": 50,
         "Damage": 100,
         "IsDisabled": false,
@@ -261,8 +260,8 @@
                 "AbilityCooldown": -40.0
             },
             {
-                "EvasionPercent": 40,
-                "ChannelMoveSpeed": "2m"
+                "EvasionPercent": 60,
+                "ChannelMoveSpeed": "3m"
             }
         ]
     },
@@ -335,7 +334,6 @@
         "AbilityCooldownBetweenCharge": 4,
         "AbilityUnitTargetLimit": 1,
         "AirSpeedMax": 150,
-        "BossDamagePercent": 25,
         "CameraHeightOffset": 20,
         "CameraHorizontalOffset": 15,
         "ChannelMoveSpeed": 50,
@@ -438,7 +436,7 @@
         "AbilityCastDelay": 0.125,
         "AbilityCharges": 1,
         "AbilityCooldown": 32.0,
-        "AbilityCooldownBetweenCharge": 1,
+        "AbilityCooldownBetweenCharge": 2,
         "AbilityUnitTargetLimit": 1,
         "ArmTime": 0.5,
         "BarrelDamage": 100,
@@ -458,7 +456,7 @@
         "MinTimeBeforeDestroy": 1.0,
         "Name": "Powder Keg",
         "Radius": 6,
-        "TossSpeed": 400,
+        "TossSpeed": 340,
         "Upgrades": [
             {
                 "AbilityCooldown": -10
@@ -541,8 +539,9 @@
         "AbilityCastDelay": 0.5,
         "AbilityCastRange": 20,
         "AbilityCooldown": 100,
-        "AbilityDuration": 2.5,
+        "AbilityDuration": 2.25,
         "AbilityUnitTargetLimit": 1,
+        "BouncePadExtendDuration": 1.5,
         "CameraPreviewDistance": 200,
         "CameraPreviewOffset": 25,
         "CameraPreviewSpeed": 0.6,
@@ -832,6 +831,7 @@
         "IsDisabled": false,
         "Key": "ability_icebeam",
         "MaxFireRateSlowPercent": 40,
+        "MaxGroundDashReductionPercent": -20,
         "MaxSlowPercent": 40,
         "MaxSlowTime": 2.0,
         "MinSlowPercent": 30,
@@ -896,7 +896,7 @@
         ]
     },
     "ability_immobilize_trap": {
-        "AbilityCooldown": 37.0,
+        "AbilityCooldown": 34,
         "AbilityUnitTargetLimit": 1,
         "ArmTime": 2.0,
         "ChannelMoveSpeed": 50,
@@ -920,7 +920,7 @@
                 "AbilityCooldown": -20.0
             },
             {
-                "TetherDuration": 0.5
+                "TetherDuration": 0.75
             },
             {
                 "BulletVulnerbility": 30,
@@ -1224,8 +1224,8 @@
         "AbilityCooldown": 90,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 9999,
-        "CopiedUltWindow": 10,
-        "CopyCooldownPercentage": 100,
+        "CopiedUltWindow": 20,
+        "CopyCooldownPercentage": 50,
         "CopyInternalCooldown": 1.0,
         "IsDisabled": false,
         "Key": "ability_magician_copyult",
@@ -1276,13 +1276,14 @@
         "AbilityPostCastDuration": 0.3,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
-        "CloneDamage": 80,
-        "Damage": 110,
-        "DebuffDuration": 5,
-        "FireRateSlow": 15,
+        "CloneBoltDelay": 0.1,
+        "CloneDamagePercentage": 50,
         "InitialProjectileVelocity": 1000,
         "IsDisabled": false,
         "Key": "ability_magician_magicbolt",
+        "MaxDamage": 150,
+        "MaxDamageTime": 2,
+        "MinDamage": 75,
         "Name": "Vexing Bolt",
         "ProjectileLifetime": 3,
         "ProjectileRedirectCount": 1,
@@ -1293,16 +1294,12 @@
                 "AbilityCooldown": -4
             },
             {
-                "TechArmorDamageReduction": -10
+                "FireRateSlow": 25,
+                "DebuffDuration": 5
             },
             {
-                "Damage": 110,
-                "Scale": {
-                    "Prop": "CloneDamage",
-                    "Value": 0.4,
-                    "Type": "spirit"
-                },
-                "CloneDamage": 140
+                "MaxDamage": 150,
+                "CloneDamagePercentage": 50
             }
         ]
     },
@@ -1367,21 +1364,23 @@
         ]
     },
     "ability_nano_catform": {
-        "AbilityCooldown": 50,
+        "AbilityCooldown": 45,
         "AbilityUnitTargetLimit": 1,
-        "BuffDuration": 20,
+        "BuffDuration": 15,
         "ChannelMoveSpeed": 50,
+        "EnemyDamageSpeedPenalty": 50,
         "InterruptCooldown": 5,
         "IsDisabled": false,
         "Key": "ability_nano_catform",
-        "MoveSpeedBonusPct": 75,
+        "MoveSpeedBonusPct": 65,
         "Name": "Ava",
+        "SpeedLostDuration": 1.5,
         "Upgrades": [
             {
                 "BuffDuration": 20
             },
             {
-                "MoveSpeedBonusPct": 35
+                "MoveSpeedBonusPct": 45
             },
             {
                 "AbilityCooldown": -15,
@@ -1563,7 +1562,7 @@
     },
     "ability_nano_shadow_pulse": {
         "AbilityChannelTime": 3,
-        "AbilityCooldown": 80,
+        "AbilityCooldown": 90,
         "AbilityUnitTargetLimit": 1,
         "AirSpeedMax": 100,
         "ChannelMoveSpeed": 9999,
@@ -1692,7 +1691,6 @@
         "AbilityDuration": 10,
         "AbilityUnitTargetLimit": 1,
         "BonusPerChain": 10,
-        "BossDamagePercent": 50,
         "ChainCount": 3,
         "ChainRadius": 10,
         "ChainTickRate": 0.2,
@@ -2049,7 +2047,6 @@
         "AbilityCooldown": 25,
         "AbilityDuration": 8,
         "AbilityUnitTargetLimit": 1,
-        "BossDamagePercent": 50,
         "ChannelMoveSpeed": 50,
         "DPS": 50,
         "Height": 2,
@@ -2465,7 +2462,6 @@
         "AbilityDuration": 6,
         "AbilityUnitTargetLimit": 1,
         "BonusMoveSpeed": 0,
-        "BossDamagePercent": 60,
         "BulletResist": 30,
         "ConeAngle": 115,
         "CooldownOnInterrupt": 20,
@@ -2743,7 +2739,6 @@
         "BeamEndRadius": 4.0,
         "BeamLength": 70,
         "BeamWidth": 2.9,
-        "BossDamagePercent": 20,
         "CameraDistance": 7,
         "ChannelMoveSpeed": 70,
         "DPS": 205,
@@ -2983,7 +2978,6 @@
         "AbilityCooldown": 28.0,
         "AbilityDuration": 3.2,
         "AbilityUnitTargetLimit": 1,
-        "BossDamagePercent": 50,
         "ChannelMoveSpeed": 50,
         "DamageAmplificationPerStack": 6,
         "DebuffDuration": 8.0,
@@ -3284,7 +3278,7 @@
                 "AbilityCooldown": -19.0
             },
             {
-                "LowHealthEnemyDamageBonus": 120
+                "LowHealthEnemyDamageBonus": 110
             },
             {
                 "BonusGoldOnKill": 600
@@ -3381,7 +3375,6 @@
         "AbilityCooldown": 30.0,
         "AbilityCooldownBetweenCharge": 6,
         "AbilityUnitTargetLimit": 1,
-        "BossDamagePercent": 50,
         "ChannelMoveSpeed": 50,
         "Damage": 120,
         "IsDisabled": false,
@@ -3522,7 +3515,6 @@
         "AbilityCooldown": 26.0,
         "AbilityCooldownBetweenCharge": 8,
         "AbilityUnitTargetLimit": 1,
-        "BossDamagePercent": 50,
         "ChannelMoveSpeed": 50,
         "DPS": 80,
         "HitSpeed": 80,
@@ -3641,7 +3633,7 @@
         "Name": "Infernal Resilience",
         "RegenDamageInterval": 1.0,
         "RegenIncomingDamageDuration": 20,
-        "RegenIncomingDamagePercent": 11,
+        "RegenIncomingDamagePercent": 12,
         "Upgrades": [
             {
                 "BonusHealthRegen": 1.5
@@ -3798,7 +3790,6 @@
         "AbilityChannelTime": 13,
         "AbilityCooldown": 140.0,
         "AbilityUnitTargetLimit": 100,
-        "BossDamagePercent": 50,
         "ChannelMoveSpeed": -1,
         "DamagePerRocket": 30,
         "DetonateTimer": 5,
@@ -4130,7 +4121,8 @@
                 "BulletArmorReductionDuration": 8
             },
             {
-                "Damage": 125
+                "Damage": 125,
+                "AbilityCharges": 1
             }
         ]
     },
@@ -4138,7 +4130,6 @@
         "AbilityChannelTime": 7,
         "AbilityCooldown": 148.0,
         "AbilityUnitTargetLimit": 1,
-        "BossDamagePercent": 25,
         "BulletResistOnActive": 20,
         "CameraDistance": 600,
         "CloudHeight": 120,
@@ -4150,7 +4141,7 @@
         "IsDisabled": false,
         "Key": "citadel_ability_storm_cloud",
         "LightningStrikeDamage": 150,
-        "LightningStrikeDelay": 2,
+        "LightningStrikeDelay": 0.25,
         "LightningStrikeKnockBackForce": 500,
         "LightningStrikeRadius": 6,
         "LightningStrikes": 1,
@@ -4272,7 +4263,6 @@
         "AbilityCooldownBetweenCharge": 8,
         "AbilityDuration": 4,
         "AbilityUnitTargetLimit": 1,
-        "BossDamagePercent": 50,
         "ChannelMoveSpeed": 50,
         "DPS": 60,
         "Height": 2,
@@ -4940,7 +4930,6 @@
         "AbilityCastRange": 20,
         "AbilityCooldown": 32.0,
         "AbilityUnitTargetLimit": 1,
-        "BossDamagePercent": 50,
         "ChannelMoveSpeed": 18,
         "ClimbHeight": 1,
         "Damage": 70,
@@ -5139,7 +5128,6 @@
         "AbilityCooldownBetweenCharge": 1,
         "AbilityUnitTargetLimit": 1,
         "AirSpeedMax": 150,
-        "BossDamagePercent": 100,
         "CameraHeightOffset": 20,
         "CameraHorizontalOffset": 15,
         "ChannelMoveSpeed": 50,
@@ -5736,7 +5724,6 @@
         "BallHitRadius": 1.8,
         "BallOffset": 50,
         "BallRadius": 1.4,
-        "BossDamagePercent": 50,
         "BreakablePropDamageRadius": 75,
         "BulletResist": 60,
         "ChannelMoveSpeed": 275,
@@ -5769,7 +5756,6 @@
         "AbilityCooldown": 21.0,
         "AbilityPostCastDuration": 0.2,
         "AbilityUnitTargetLimit": 1,
-        "BossDamagePercent": 50,
         "ChannelMoveSpeed": 50,
         "Damage": 90,
         "DetonateCooldown": 0.15,
@@ -5950,7 +5936,6 @@
     "yakuza_setting_sun": {
         "AbilityCooldown": 74.0,
         "AbilityUnitTargetLimit": 1,
-        "BossDamagePercent": 25,
         "CenterDamage": 250,
         "CenterRadius": 5,
         "ChannelMoveSpeed": 50,
