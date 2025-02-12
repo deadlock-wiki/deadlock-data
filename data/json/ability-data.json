@@ -223,7 +223,7 @@
                 "SpeedOnLandDuration": 4
             },
             {
-                "StompDamage": 100,
+                "StompDamage": 80,
                 "Scale": {
                     "Prop": "StompDamage",
                     "Value": 1.04832,
@@ -436,7 +436,7 @@
         "AbilityCastDelay": 0.125,
         "AbilityCharges": 1,
         "AbilityCooldown": 32.0,
-        "AbilityCooldownBetweenCharge": 2,
+        "AbilityCooldownBetweenCharge": 3.5,
         "AbilityUnitTargetLimit": 1,
         "ArmTime": 0.5,
         "BarrelDamage": 100,
@@ -1147,6 +1147,36 @@
             }
         ]
     },
+    "ability_magician_animalhexarea": {
+        "AbilityCastDelay": 0.15,
+        "AbilityCastRange": 30,
+        "AbilityCooldown": 35,
+        "AbilityUnitTargetLimit": 1,
+        "AirDampingDuration": 1,
+        "ChannelMoveSpeed": 99999,
+        "Damage": 80,
+        "DamageAmpPercentage": 25,
+        "DetonationDelay": 0.7,
+        "HexDuration": 2,
+        "HexMoveSpeedLimit": 6,
+        "IsDisabled": false,
+        "Key": "ability_magician_animalhexarea",
+        "MoveSpeedBonusPct": 15,
+        "Name": "Rabbit Hex",
+        "Radius": 6,
+        "SelfBumpImpulse": 500,
+        "Upgrades": [
+            {
+                "AbilityCooldown": -10
+            },
+            {
+                "HexDuration": 1
+            },
+            {
+                "Radius": "3m"
+            }
+        ]
+    },
     "ability_magician_bigbolt": {
         "AbilityCastDelay": 0.5,
         "AbilityCastRange": 500,
@@ -1220,17 +1250,16 @@
     },
     "ability_magician_copyult": {
         "AbilityCastDelay": 0.15,
-        "AbilityCastRange": 10,
+        "AbilityCastRange": 20,
         "AbilityCooldown": 90,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 9999,
-        "CopiedUltWindow": 20,
+        "CopiedUltWindow": 10,
         "CopyCooldownPercentage": 50,
-        "CopyInternalCooldown": 1.0,
+        "CopyInternalCooldown": 0.5,
         "IsDisabled": false,
         "Key": "ability_magician_copyult",
         "Name": "Audience Participation",
-        "SwapBackDelay": 0.1,
         "Upgrades": [
             {},
             {},
@@ -1442,7 +1471,7 @@
                 "HealAmount": 30
             },
             {
-                "ImpactDamage": 75
+                "ImpactDamage": 60
             },
             {
                 "CooldownReductionPercentOnHit": 50
@@ -1562,7 +1591,7 @@
     },
     "ability_nano_shadow_pulse": {
         "AbilityChannelTime": 3,
-        "AbilityCooldown": 90,
+        "AbilityCooldown": 100,
         "AbilityUnitTargetLimit": 1,
         "AirSpeedMax": 100,
         "ChannelMoveSpeed": 9999,
@@ -1570,7 +1599,7 @@
         "FallSpeedMax": 10,
         "IsDisabled": false,
         "Key": "ability_nano_shadow_pulse",
-        "MoveSpeedBonusPct": 50,
+        "MoveSpeedBonusPct": 30,
         "Name": "Return to Shadows",
         "Radius": 7,
         "Upgrades": [
@@ -1578,7 +1607,8 @@
                 "AbilityCooldown": -30
             },
             {
-                "Damage": 80
+                "Damage": 80,
+                "MoveSpeedBonusPct": 20
             },
             {
                 "BuffDuration": "5s",
@@ -2867,7 +2897,7 @@
         "Name": "Card Trick",
         "NonPlayerCardResourceScale": 0.35,
         "ProjectileOriginHeightOffset": 50,
-        "Radius": 5,
+        "Radius": 4,
         "ResourcePerCard": 100,
         "Upgrades": [
             {
@@ -3744,7 +3774,7 @@
         "AbilityDuration": 3,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
-        "Damage": 175,
+        "Damage": 140,
         "DampingFactor": 0.3,
         "IsDisabled": false,
         "Key": "citadel_ability_psychic_lift",
