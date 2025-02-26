@@ -1377,14 +1377,17 @@
                     "Type": "move_speed"
                 }
             },
+            "Debuff": {
+                "MoveSpeedReduction": {
+                    "Name": null,
+                    "Value": 25,
+                    "Type": "slow"
+                }
+            },
             "Other": {
                 "AbilityUnitTargetLimit": {
                     "Name": null,
                     "Value": 10
-                },
-                "MoveSpeedReduction": {
-                    "Name": null,
-                    "Value": 25
                 },
                 "TickRate": {
                     "Name": null,
@@ -4249,6 +4252,12 @@
                         "Name": "Invis Sprint Speed",
                         "Value": 2.0,
                         "Type": "move_speed"
+                    },
+                    {
+                        "Key": "PhaseOutDuration",
+                        "Name": "Invincible Duration",
+                        "Value": null,
+                        "Type": "duration"
                     }
                 ],
                 "DescKey": "ability_smoke_bomb_desc"
@@ -4445,17 +4454,6 @@
                     "Type": "radius"
                 }
             },
-            "Damage": {
-                "ExplodeDamage": {
-                    "Name": "Explode Damage",
-                    "Value": 250,
-                    "Type": "tech_damage",
-                    "Scale": {
-                        "Value": 1.638,
-                        "Type": "spirit"
-                    }
-                }
-            },
             "Other": {
                 "AbilityUnitTargetLimit": {
                     "Name": null,
@@ -4637,7 +4635,7 @@
                         {
                             "Key": "StompDamage",
                             "Name": "Stomp Damage",
-                            "Value": 120,
+                            "Value": 90,
                             "Type": "tech_damage",
                             "Scale": {
                                 "Value": 0.4,
@@ -4678,7 +4676,7 @@
                     "DescKey": "ability_bounce_pad_t2_desc"
                 },
                 {
-                    "StompStunDuration": 1.25,
+                    "StompStunDuration": 1,
                     "DescKey": "ability_bounce_pad_t3_desc"
                 }
             ],
@@ -4872,7 +4870,7 @@
                         {
                             "Key": "Damage",
                             "Name": "Damage",
-                            "Value": 120,
+                            "Value": 90,
                             "Type": "tech_damage"
                         }
                     ]
@@ -5370,10 +5368,6 @@
                 "BeamEndRadius": {
                     "Name": null,
                     "Value": 4.0
-                },
-                "CameraDistance": {
-                    "Name": null,
-                    "Value": 7
                 },
                 "FallSpeedMax": {
                     "Name": null,
@@ -6040,7 +6034,7 @@
                     },
                     {
                         "Key": "BulletVulnerbility",
-                        "Name": "Weapon Damage Amplification",
+                        "Name": "Bullet Damage Amp",
                         "Value": null,
                         "Type": "bullet_armor_down"
                     },
@@ -7334,20 +7328,14 @@
                             }
                         },
                         {
-                            "Key": "DebuffDuration",
-                            "Name": "Debuff Duration",
-                            "Value": 4,
-                            "Type": "duration"
+                            "Key": "FlyingBulletResist",
+                            "Name": "Bullet Resist",
+                            "Value": 40,
+                            "Type": "bullet_armor_up"
                         }
                     ]
                 },
                 "Alt": [
-                    {
-                        "Key": "FlyingBulletResist",
-                        "Name": "Bullet Resist",
-                        "Value": 40,
-                        "Type": "bullet_armor_up"
-                    },
                     {
                         "Key": "BuffDuration",
                         "Name": "Buff Duration",
@@ -7365,6 +7353,12 @@
                         "Name": "Movement Slow",
                         "Value": 30,
                         "Type": "slow"
+                    },
+                    {
+                        "Key": "DebuffDuration",
+                        "Name": "Debuff Duration",
+                        "Value": 4,
+                        "Type": "duration"
                     },
                     {
                         "Key": "BulletArmorReduction",
@@ -10160,7 +10154,7 @@
             },
             "AbilityCastDelay": {
                 "Name": "Cast Delay",
-                "Value": 0.0,
+                "Value": 0.1,
                 "Type": "cast"
             },
             "AbilityCastRange": {
@@ -10378,8 +10372,12 @@
                         {
                             "Key": "WeaponDamageBonusPerSec",
                             "Name": "Weapon Damage Gain Per Sec",
-                            "Value": 7,
-                            "Type": "bullet_damage"
+                            "Value": 5,
+                            "Type": "bullet_damage",
+                            "Scale": {
+                                "Value": 0.04,
+                                "Type": "spirit"
+                            }
                         },
                         {
                             "Key": "WeaponDamageBonusDuration",
@@ -10400,7 +10398,7 @@
                     "AbilityDuration": 2
                 },
                 {
-                    "DPS": 45
+                    "DPS": 55
                 }
             ],
             "Move": {
@@ -10505,6 +10503,10 @@
                 "TossSpeed": {
                     "Name": null,
                     "Value": 350
+                },
+                "WallImpactLookAheadDistance": {
+                    "Name": null,
+                    "Value": 100
                 }
             },
             "AbilityCastDelay": {
@@ -10635,20 +10637,26 @@
                 "Main": {
                     "Props": [
                         {
-                            "Key": "ImmobilizeMaxDuration",
-                            "Name": "Max Immobilize Duration",
-                            "Value": 3,
-                            "Type": "duration"
-                        },
-                        {
-                            "Key": "MaxDamage",
-                            "Name": "Max Damage",
-                            "Value": 125,
+                            "Key": "DPS",
+                            "Name": "DPS",
+                            "Value": 60,
                             "Type": "tech_damage",
                             "Scale": {
-                                "Value": 1.25,
+                                "Value": 0.7,
                                 "Type": "spirit"
                             }
+                        },
+                        {
+                            "Key": "EnemySlowPct",
+                            "Name": "Enemy Movement Slow",
+                            "Value": 60,
+                            "Type": "slow"
+                        },
+                        {
+                            "Key": "DebuffMaxDuration",
+                            "Name": "Max Slow Duration",
+                            "Value": 3.5,
+                            "Type": "duration"
                         }
                     ]
                 },
@@ -10660,12 +10668,19 @@
                     "AbilityCooldown": -15
                 },
                 {
-                    "NotSeenByEnemiesRegen": 2
+                    "DebuffMaxDuration": 1
                 },
                 {
-                    "ImmobilizeMaxDuration": 1
+                    "NotSeenByEnemiesRegen": 2
                 }
             ],
+            "Duration": {
+                "NonLatchedDurationPct": {
+                    "Name": null,
+                    "Value": 50,
+                    "Type": "duration"
+                }
+            },
             "Range": {
                 "SpottedRadius": {
                     "Name": "Spot Radius",
@@ -10683,19 +10698,8 @@
             "Move": {
                 "ChannelMoveSpeed": {
                     "Name": "Channel Move Speed",
-                    "Value": 50,
+                    "Value": 5,
                     "Type": "move_speed"
-                }
-            },
-            "Damage": {
-                "MinDamage": {
-                    "Name": "Minimum Damage",
-                    "Value": 50,
-                    "Type": "tech_damage",
-                    "Scale": {
-                        "Value": 0.5,
-                        "Type": "spirit"
-                    }
                 }
             },
             "Other": {
@@ -10703,13 +10707,13 @@
                     "Name": null,
                     "Value": 1
                 },
-                "ChannelTimeForMaxImmobilize": {
+                "ChannelTimeForMaxDebuff": {
                     "Name": null,
-                    "Value": 2.5
+                    "Value": 1.5
                 },
-                "ImmobilizeMinDuration": {
+                "DebuffMinDuration": {
                     "Name": null,
-                    "Value": 1
+                    "Value": 1.0
                 },
                 "InitialHeight": {
                     "Name": null,
@@ -11060,7 +11064,7 @@
         }
     },
     "hero_magician": {
-        "Name": "THE MAGNIFICENT SINCLAIR",
+        "Name": "Sinclair",
         "1": {
             "Key": "ability_magician_magicbolt",
             "Name": "Vexing Bolt",
@@ -11496,20 +11500,14 @@
                 "Main": {
                     "Props": [
                         {
-                            "Key": "DPS",
-                            "Name": "DPS",
-                            "Value": 50,
-                            "Type": "tech_damage",
-                            "Scale": {
-                                "Value": 0.5,
-                                "Type": "spirit"
-                            }
-                        },
-                        {
                             "Key": "SlowPercent",
                             "Name": "Movement Slow",
-                            "Value": 20,
-                            "Type": "slow"
+                            "Value": 25,
+                            "Type": "slow",
+                            "Scale": {
+                                "Value": 0.3,
+                                "Type": "spirit"
+                            }
                         },
                         {
                             "Key": "AbilityDuration",
@@ -11523,7 +11521,7 @@
                     {
                         "Key": "InitialRadius",
                         "Name": "Initial Radius",
-                        "Value": 4.5,
+                        "Value": 6,
                         "Type": "distance"
                     },
                     {
@@ -11537,14 +11535,14 @@
             },
             "Upgrades": [
                 {
-                    "SpiritDamageReduction": -20,
-                    "DescKey": "ability_trapper_poisonjar_t1_desc"
+                    "SlowPercent": 20
                 },
                 {
                     "AbilityDuration": 4
                 },
                 {
-                    "DPS": 100
+                    "TechArmorDamageReduction": -25,
+                    "DescKey": "ability_trapper_poisonjar_t3_desc"
                 }
             ],
             "Move": {
@@ -11575,7 +11573,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 25,
+                "Value": 30,
                 "Type": "cooldown"
             },
             "AbilityDuration": {
@@ -11592,12 +11590,12 @@
                 "Main": {
                     "Props": [
                         {
-                            "Key": "Damage",
-                            "Name": "Damage",
-                            "Value": 200,
+                            "Key": "DPS",
+                            "Name": "DPS",
+                            "Value": 40,
                             "Type": "tech_damage",
                             "Scale": {
-                                "Value": 1.3,
+                                "Value": 0.3,
                                 "Type": "spirit"
                             }
                         },
@@ -11606,19 +11604,19 @@
                             "Name": "Movement Slow",
                             "Value": 99,
                             "Type": "slow"
+                        },
+                        {
+                            "Key": "DebuffDuration",
+                            "Name": "Debuff Duration",
+                            "Value": 3
                         }
                     ]
                 },
                 "Alt": [
                     {
-                        "Key": "DebuffDuration",
-                        "Name": "Debuff Duration",
-                        "Value": 2
-                    },
-                    {
                         "Key": "WebDuration",
                         "Name": "Web Duration",
-                        "Value": 60,
+                        "Value": 120,
                         "Type": "duration"
                     },
                     {
@@ -11645,6 +11643,7 @@
                 },
                 {
                     "SilenceDuration": 2.5,
+                    "DebuffDuration": 2,
                     "DescKey": "ability_trapper_webwall_t3_desc"
                 }
             ],
@@ -11659,6 +11658,10 @@
                 "AbilityUnitTargetLimit": {
                     "Name": null,
                     "Value": 1
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 0.5
                 },
                 "WebArmTime": {
                     "Name": null,
@@ -12044,7 +12047,7 @@
                             "Value": 100,
                             "Type": "tech_damage",
                             "Scale": {
-                                "Value": 1.6,
+                                "Value": 1.5,
                                 "Type": "spirit"
                             }
                         }
@@ -12058,19 +12061,18 @@
                     "AbilityCooldown": -14
                 },
                 {
-                    "AbilityCooldown": 0,
-                    "DescKey": "operative_umbrella_maneuver_t2_desc"
+                    "Damage": 50
                 },
                 {
                     "AbilityCooldown": 0,
                     "DescKey": "operative_umbrella_maneuver_t3_desc"
                 }
             ],
-            "Duration": {
-                "AssaultDuration": {
-                    "Name": "Air Attack Duration",
-                    "Value": 2.0,
-                    "Type": "duration"
+            "Range": {
+                "ExplodeRadius": {
+                    "Name": "Explosion Radius",
+                    "Value": 5,
+                    "Type": "distance"
                 }
             },
             "Move": {
@@ -12089,9 +12091,21 @@
                     "Name": null,
                     "Value": 0.2
                 },
+                "AirSpeedMax": {
+                    "Name": null,
+                    "Value": 150
+                },
                 "BackwardsVelocity": {
                     "Name": null,
                     "Value": 13.0
+                },
+                "FallSpeedMax": {
+                    "Name": null,
+                    "Value": 60
+                },
+                "TimeBeforeProjectileLaunch": {
+                    "Name": null,
+                    "Value": 1.25
                 },
                 "UpImpulse": {
                     "Name": null,
@@ -12223,14 +12237,14 @@
                             "Value": 50,
                             "Type": "tech_damage",
                             "Scale": {
-                                "Value": 0.5,
+                                "Value": 0.7,
                                 "Type": "spirit"
                             }
                         },
                         {
                             "Key": "Radius",
                             "Name": "Radius",
-                            "Value": 13,
+                            "Value": 15,
                             "Type": "distance"
                         },
                         {
@@ -12259,13 +12273,13 @@
             },
             "Upgrades": [
                 {
-                    "Radius": "3m"
+                    "Radius": "5m"
                 },
                 {
                     "AbilityCooldown": -25.0
                 },
                 {
-                    "DPS": 40
+                    "DPS": 50
                 }
             ],
             "Move": {
@@ -12314,7 +12328,7 @@
             },
             "Radius": {
                 "Name": "Radius",
-                "Value": 13,
+                "Value": 15,
                 "Type": "distance"
             }
         }

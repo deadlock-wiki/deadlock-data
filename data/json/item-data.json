@@ -2032,6 +2032,43 @@
         "TechShieldMaxHealth": "150",
         "BonusClipSizePercent": "15"
     },
+    "upgrade_corpse_explosion": {
+        "Name": "Soul Explosion",
+        "Description": "Kills or assists cause an <span class=\"highlight\">explosion</span> where the victim dies. Kills against heroes have greater radius and damage.",
+        "Cost": "3000",
+        "Tier": "3",
+        "Activation": "Passive",
+        "Slot": "Tech",
+        "Components": null,
+        "TargetTypes": [
+            "AllEnemy"
+        ],
+        "ShopFilters": [
+            "MagicDamage",
+            "Movement"
+        ],
+        "IsDisabled": true,
+        "AbilityCooldown": "0",
+        "AbilityDuration": "0",
+        "AbilityCastRange": "0",
+        "AbilityUnitTargetLimit": "1",
+        "AbilityCastDelay": "0",
+        "AbilityChannelTime": "0",
+        "AbilityPostCastDuration": "0",
+        "AbilityCharges": "0",
+        "AbilityCooldownBetweenCharge": "0",
+        "ChannelMoveSpeed": "50",
+        "AbilityResourceCost": "0",
+        "TechPower": "6",
+        "WeaponPower": "0",
+        "BonusHealthRegen": "3",
+        "BonusHealth": "160",
+        "BonusSprintSpeed": "1m",
+        "ExplosionRadius": "4m",
+        "ExplosionDamage": "125",
+        "HeroMultiplier": "150",
+        "ArmingTime": ".1"
+    },
     "upgrade_crackshot": {
         "Name": "Mystic Shot",
         "Description": "Your next bullet deals bonus <span style=\"font-weight: bold;\">Spirit Damage</span>.",
@@ -2140,7 +2177,6 @@
         "BulletLifestealPercent": "32",
         "BaseAttackDamagePercent": "20",
         "BonusHealth": "175",
-        "CooldownReduction": "0",
         "HealAmpReceivePenaltyPercent": "-60",
         "HealAmpRegenPenaltyPercent": "-60",
         "HealOnKill": "350"
@@ -5487,6 +5523,44 @@
         "AbilityLifestealPercentHero": "18",
         "DebuffDuration": "6"
     },
+    "upgrade_spirit_burn": {
+        "Name": "Spirit Burn",
+        "Description": "Dealing <span class=\"highlight\">Spirit Damage</span> applies a <span class=\"highlight\">Burn</span> over {s:BurnDuration}s. This effect can repeatedly stack on the same target.",
+        "Cost": "6000",
+        "Tier": "4",
+        "Activation": "Passive",
+        "Slot": "Tech",
+        "Components": null,
+        "TargetTypes": [
+            "AllEnemy"
+        ],
+        "ShopFilters": [
+            "MagicDamage",
+            "Durability"
+        ],
+        "IsDisabled": true,
+        "AbilityCooldown": "0",
+        "AbilityDuration": "0",
+        "AbilityCastRange": "0",
+        "AbilityUnitTargetLimit": "1",
+        "AbilityCastDelay": "0",
+        "AbilityChannelTime": "0",
+        "AbilityPostCastDuration": "0",
+        "AbilityCharges": "0",
+        "AbilityCooldownBetweenCharge": "0",
+        "ChannelMoveSpeed": "50",
+        "AbilityResourceCost": "0",
+        "TechPower": "0",
+        "WeaponPower": "0",
+        "ProcCooldown": "0.7",
+        "TechResist": "15",
+        "BonusHealth": "125",
+        "MaxStacks": "20",
+        "MinDPS": "15",
+        "MaxDPS": "100",
+        "BurnDuration": "4",
+        "TickRate": "0.5"
+    },
     "upgrade_spirit_snatch": {
         "Name": "Spirit Snatch",
         "Description": "When you perform a <span style=\"font-weight: bold;\">Light or Heavy Melee</span> attack against a hero, the attack deals extra <span style=\"font-weight: bold;\">Spirit Damage</span> and steals <span style=\"font-weight: bold;\">Spirit Resist</span> and <span style=\"font-weight: bold;\">Spirit Power</span>.",
@@ -5735,7 +5809,6 @@
         "Stamina": "3",
         "StaminaCooldownReduction": "25",
         "BonusHealth": "75",
-        "BonusFireRate": "7",
         "AirMoveIncreasePercent": "30"
     },
     "upgrade_suppressor": {
@@ -5811,7 +5884,7 @@
     },
     "upgrade_target_stun": {
         "Name": "Knockdown",
-        "Description": "Target is <span style=\"font-weight: bold;\">knocked down</span> and <span style=\"font-weight: bold;\">Stunned</span> after a <span style=\"font-weight: bold;\">2s delay</span>, interrupting and temporarily preventing them from taking any action. Stun lasts up to 2x longer against <span style=\"font-weight: bold;\">airborne</span> targets based on how high off the ground they are (up to 30m).",
+        "Description": "Target is <span style=\"font-weight: bold;\">knocked down</span> and <span style=\"font-weight: bold;\">Stunned</span> after a <span style=\"font-weight: bold;\">2s delay</span>, interrupting and temporarily preventing them from taking any action. Stun lasts up to 1.5s longer against <span style=\"font-weight: bold;\">airborne</span> targets based on how high off the ground they are (up to 30m).",
         "Cost": "3000",
         "Tier": "3",
         "Activation": "ActivationPress",
@@ -6318,6 +6391,40 @@
         "HealAmpReceivePenaltyPercent": "-50",
         "HealAmpRegenPenaltyPercent": "-65",
         "DotMultiplerTroopers": "0.5"
+    },
+    "upgrade_ultimate_burst": {
+        "Name": "Lighting Scroll",
+        "Description": "Imbue your ultimate with <span class=\"highlight\">permanent Spirit Power</span> . <br><br>After dealing damage with your <span class=\"highlight\">ultimate</span>, the target takes <span class=\"highlight\">bonus spirit damage</span> and is <span class=\"highlight\">Stunned</span>. <span class=\"diminish\">This effect can only trigger once per target per ultimate.</span>",
+        "Cost": "6000",
+        "Tier": "4",
+        "Activation": "Passive",
+        "Slot": "Tech",
+        "Components": null,
+        "TargetTypes": [
+            "AllEnemy"
+        ],
+        "ShopFilters": [
+            "MagicDamage",
+            "Disruption"
+        ],
+        "IsDisabled": true,
+        "AbilityCooldown": "0",
+        "AbilityDuration": "0",
+        "AbilityCastRange": "0",
+        "AbilityUnitTargetLimit": "1",
+        "AbilityCastDelay": "0",
+        "AbilityChannelTime": "0",
+        "AbilityPostCastDuration": "0",
+        "AbilityCharges": "0",
+        "AbilityCooldownBetweenCharge": "0",
+        "ChannelMoveSpeed": "50",
+        "AbilityResourceCost": "0",
+        "TechPower": "0",
+        "WeaponPower": "0",
+        "StunDuration": "1",
+        "MaxHealthDamage": "12",
+        "TechRangeMultiplier": "15",
+        "UltimateTechPower": "40"
     },
     "upgrade_unstoppable": {
         "Name": "Unstoppable",

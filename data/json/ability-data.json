@@ -214,7 +214,7 @@
         "Radius": 12,
         "Scale": 1,
         "SpeedOnLand": 0,
-        "StompDamage": 120,
+        "StompDamage": 90,
         "TossSpeed": 500,
         "UpFactor": 1.2,
         "Upgrades": [
@@ -231,7 +231,7 @@
                 }
             },
             {
-                "StompStunDuration": 1.25
+                "StompStunDuration": 1
             }
         ],
         "VerticalDifferenceTolerance": 60
@@ -243,7 +243,6 @@
         "AbilityUnitTargetLimit": 1,
         "BonusFireRate": 30,
         "ChannelMoveSpeed": 4,
-        "ExplodeDamage": 250,
         "IsDisabled": false,
         "Key": "ability_bullet_flurry",
         "Name": "Bullet Dance",
@@ -297,6 +296,39 @@
             {
                 "AbilityCooldown": -19.0,
                 "BonusMoveSpeed": "2m"
+            }
+        ]
+    },
+    "ability_burrow2": {
+        "AbilityCastDelay": 1,
+        "AbilityChannelTime": 5,
+        "AbilityCooldown": 37.0,
+        "AbilityUnitTargetLimit": 1,
+        "BonusMoveSpeed": 4,
+        "BulletResist": 80,
+        "ChannelMoveSpeed": -1,
+        "DPS": 80,
+        "Damage": 110,
+        "EnemyDamageSpeedPenalty": 0.5,
+        "IsDisabled": false,
+        "Key": "ability_burrow2",
+        "Name": "Burrow",
+        "Radius": 3,
+        "SpeedLostDuration": 1,
+        "SpinSlowDuration": 0.3,
+        "SpinSlowPercent": 10,
+        "TechResist": 30,
+        "TickRate": 0.1,
+        "UpForce": 250,
+        "Upgrades": [
+            {
+                "AbilityChannelTime": 3
+            },
+            {
+                "Radius": "2m"
+            },
+            {
+                "AbilityCooldown": -19.0
             }
         ]
     },
@@ -404,6 +436,34 @@
                 "TechPowerAmpBonus": 10,
                 "TechPowerAmpBonusDuration": 10,
                 "TechPowerAmpBonusMaxStacks": 10
+            }
+        ]
+    },
+    "ability_digger_mudshield": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCooldown": 30,
+        "AbilityDuration": 6,
+        "AbilityUnitTargetLimit": 1,
+        "BulletShieldDamageConversionPercent": 80,
+        "BulletShieldMaxHealthPercentage": 30,
+        "ChannelMoveSpeed": 99999,
+        "Damage": 60,
+        "FlatBulletDamageReduction": 5,
+        "IsDisabled": false,
+        "Key": "ability_digger_mudshield",
+        "Name": "Mud Shield",
+        "Radius": 7,
+        "ShieldDuration": 6,
+        "TickRate": 0.1,
+        "Upgrades": [
+            {
+                "AbilityCooldown": -5
+            },
+            {
+                "BulletShieldMissingHealthPercentage": 18
+            },
+            {
+                "FlatBulletDamageReduction": 15
             }
         ]
     },
@@ -546,7 +606,7 @@
         "CameraPreviewOffset": 25,
         "CameraPreviewSpeed": 0.6,
         "ChannelMoveSpeed": 9999,
-        "Damage": 120,
+        "Damage": 90,
         "ExtraTargetConeAngle": 60,
         "ExtraTargetHorizontalOffset": 30,
         "FollowDampingFactor": 8,
@@ -2019,6 +2079,31 @@
             }
         ]
     },
+    "ability_throw_sand2": {
+        "AbilityCastDelay": 0.15,
+        "AbilityCastRange": 20,
+        "AbilityCooldown": 20,
+        "AbilityDuration": 2.0,
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": 50,
+        "Damage": 40,
+        "GrowthPerMeter": 0.4,
+        "InitialWidth": 3,
+        "IsDisabled": false,
+        "Key": "ability_throw_sand2",
+        "Name": null,
+        "Upgrades": [
+            {
+                "Damage": 30
+            },
+            {
+                "AbilityCooldown": -7
+            },
+            {
+                "SlowPercent": 40
+            }
+        ]
+    },
     "ability_trapper_fear": {
         "AbilityCastDelay": 0.1,
         "AbilityCooldown": 26.0,
@@ -2073,28 +2158,27 @@
     },
     "ability_trapper_poisonjar": {
         "AbilityCastDelay": 0.2,
-        "AbilityCooldown": 25,
+        "AbilityCooldown": 30,
         "AbilityDuration": 8,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
-        "DPS": 50,
         "Height": 2,
-        "InitialRadius": 4.5,
+        "InitialRadius": 6,
         "IsDisabled": false,
         "Key": "ability_trapper_poisonjar",
         "Name": "Bottled Phantasmicide",
         "RadiusPerSecond": 0.25,
-        "SlowPercent": 20,
+        "SlowPercent": 25,
         "TickRate": 0.25,
         "Upgrades": [
             {
-                "SpiritDamageReduction": -20
+                "SlowPercent": 20
             },
             {
                 "AbilityDuration": 4
             },
             {
-                "DPS": 100
+                "TechArmorDamageReduction": -25
             }
         ]
     },
@@ -2174,8 +2258,8 @@
         "AbilityCooldownBetweenCharge": 1,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
-        "Damage": 200,
-        "DebuffDuration": 2,
+        "DPS": 40,
+        "DebuffDuration": 3,
         "IsDisabled": false,
         "Key": "ability_trapper_webwall",
         "MaxWallToWallDistance": 100,
@@ -2183,6 +2267,7 @@
         "Name": "Silktrap",
         "Radius": 0.6,
         "SlowPercent": 99,
+        "TickRate": 0.5,
         "Upgrades": [
             {
                 "AbilityCharges": 1
@@ -2191,11 +2276,12 @@
                 "WebDuration": 120
             },
             {
-                "SilenceDuration": 2.5
+                "SilenceDuration": 2.5,
+                "DebuffDuration": 2
             }
         ],
         "WebArmTime": 0.5,
-        "WebDuration": 60,
+        "WebDuration": 120,
         "WebWallTickRate": 0.15
     },
     "ability_ult_combo": {
@@ -2768,7 +2854,6 @@
         "BeamEndRadius": 4.0,
         "BeamLength": 70,
         "BeamWidth": 2.9,
-        "CameraDistance": 7,
         "ChannelMoveSpeed": 70,
         "DPS": 205,
         "FallSpeedMax": 1,
@@ -4564,7 +4649,8 @@
             {
                 "Damage": 120
             }
-        ]
+        ],
+        "WallImpactLookAheadDistance": 100
     },
     "fathom_defer_damage": {
         "AbilityCastDelay": 0.25,
@@ -4596,17 +4682,18 @@
         "AbilityChannelTime": 9999,
         "AbilityCooldown": 50.0,
         "AbilityUnitTargetLimit": 1,
-        "ChannelMoveSpeed": 50,
-        "ChannelTimeForMaxImmobilize": 2.5,
-        "ImmobilizeMaxDuration": 3,
-        "ImmobilizeMinDuration": 1,
+        "ChannelMoveSpeed": 5,
+        "ChannelTimeForMaxDebuff": 1.5,
+        "DPS": 60,
+        "DebuffMaxDuration": 3.5,
+        "DebuffMinDuration": 1.0,
+        "EnemySlowPct": 60,
         "InitialHeight": 350,
         "InvisFadeToDuration": 1.5,
         "IsDisabled": false,
         "Key": "fathom_lurkers_ambush",
-        "MaxDamage": 125,
-        "MinDamage": 50,
         "Name": "Lurker's Ambush",
+        "NonLatchedDurationPct": 50,
         "NotSeenByEnemiesRegen": 3,
         "RevealOnDamageDuration": 0.5,
         "RevealOnSpottedDuration": 3,
@@ -4618,10 +4705,10 @@
                 "AbilityCooldown": -15
             },
             {
-                "NotSeenByEnemiesRegen": 2
+                "DebuffMaxDuration": 1
             },
             {
-                "ImmobilizeMaxDuration": 1
+                "NotSeenByEnemiesRegen": 2
             }
         ]
     },
@@ -4675,11 +4762,11 @@
                 "AbilityDuration": 2
             },
             {
-                "DPS": 45
+                "DPS": 55
             }
         ],
         "WeaponDamageBonusDuration": 12,
-        "WeaponDamageBonusPerSec": 7
+        "WeaponDamageBonusPerSec": 5
     },
     "genericperson_ability_1": {
         "AbilityCastDelay": 1,
@@ -4955,7 +5042,7 @@
         ]
     },
     "mirage_tornado": {
-        "AbilityCastDelay": 0.0,
+        "AbilityCastDelay": 0.1,
         "AbilityCastRange": 20,
         "AbilityCooldown": 32.0,
         "AbilityUnitTargetLimit": 1,
@@ -5031,19 +5118,19 @@
         "MaxCameraAngleForSeeing": 180,
         "MoveSpeedReduction": 20,
         "Name": "Revelation",
-        "Radius": 13,
+        "Radius": 15,
         "SlowPercent": 25,
         "TickRate": 0.25,
         "TimeBeforeCursed": 2,
         "Upgrades": [
             {
-                "Radius": "3m"
+                "Radius": "5m"
             },
             {
                 "AbilityCooldown": -25.0
             },
             {
-                "DPS": 40
+                "DPS": 50
             }
         ]
     },
@@ -5052,20 +5139,23 @@
         "AbilityCooldown": 32.0,
         "AbilityUnitTargetLimit": 1,
         "ActivateTime": 0.2,
-        "AssaultDuration": 2.0,
+        "AirSpeedMax": 150,
         "BackwardsVelocity": 13.0,
         "ChannelMoveSpeed": 50,
         "Damage": 100,
+        "ExplodeRadius": 5,
+        "FallSpeedMax": 60,
         "IsDisabled": false,
         "Key": "operative_umbrella_maneuver",
         "Name": "Umbrella Maneuver",
+        "TimeBeforeProjectileLaunch": 1.25,
         "UpImpulse": 15.0,
         "Upgrades": [
             {
                 "AbilityCooldown": -14
             },
             {
-                "AbilityCooldown": 0
+                "Damage": 50
             },
             {
                 "AbilityCooldown": 0
