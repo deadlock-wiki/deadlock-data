@@ -196,7 +196,7 @@
     "ability_bounce_pad": {
         "AbilityCastDelay": 0.08,
         "AbilityCharges": 1,
-        "AbilityCooldown": 37.0,
+        "AbilityCooldown": 41,
         "AbilityCooldownBetweenCharge": 3.5,
         "AbilityDuration": 22,
         "AbilityUnitTargetLimit": 1,
@@ -219,6 +219,10 @@
         "UpFactor": 1.2,
         "Upgrades": [
             {
+                "AbilityCooldown": -10,
+                "SpeedOnLandDuration": 4
+            },
+            {
                 "SpeedOnLand": "4m",
                 "SpeedOnLandDuration": 4
             },
@@ -226,12 +230,9 @@
                 "StompDamage": 80,
                 "Scale": {
                     "Prop": "StompDamage",
-                    "Value": 1.04832,
+                    "Value": 0.346,
                     "Type": null
                 }
-            },
-            {
-                "StompStunDuration": 1
             }
         ],
         "VerticalDifferenceTolerance": 60
@@ -249,11 +250,10 @@
         "OverrideBulletRadius": 10,
         "ProcChance": 100,
         "Radius": 15,
-        "SpiritDamage": 6,
         "TargetsPerTick": 1,
         "Upgrades": [
             {
-                "SpiritDamage": 6
+                "WeaponDamageBonus": 4
             },
             {
                 "AbilityCooldown": -40.0
@@ -262,7 +262,8 @@
                 "EvasionPercent": 60,
                 "ChannelMoveSpeed": "3m"
             }
-        ]
+        ],
+        "WeaponDamageBonus": 6
     },
     "ability_burrow": {
         "AbilityCastDelay": 1,
@@ -522,7 +523,7 @@
                 "AbilityCooldown": -10
             },
             {
-                "BarrelDamage": 120
+                "BarrelDamage": 100
             },
             {
                 "AbilityCharges": 3
@@ -1284,7 +1285,7 @@
         "AbilityDuration": 6,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 9999,
-        "Damage": 30,
+        "Damage": 20,
         "IsDisabled": false,
         "Key": "ability_magician_cloneturret",
         "LeashRadius": 20,
