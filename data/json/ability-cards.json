@@ -1011,7 +1011,7 @@
                         {
                             "Key": "DotHealthPercent",
                             "Name": "Bleed Damage",
-                            "Value": 3.0,
+                            "Value": 2.3,
                             "Type": "tech_damage"
                         },
                         {
@@ -1020,7 +1020,7 @@
                             "Value": 6,
                             "Type": "duration",
                             "Scale": {
-                                "Value": 0.03,
+                                "Value": 0.024,
                                 "Type": "spirit"
                             }
                         }
@@ -3832,6 +3832,11 @@
                     "Value": 100,
                     "Type": "move_speed"
                 },
+                "SlideScale": {
+                    "Name": "Slide Distance",
+                    "Value": 50,
+                    "Type": "move_speed"
+                },
                 "SlowResistancePercent": {
                     "Name": "Movement Slow Resist",
                     "Value": 60,
@@ -4525,7 +4530,7 @@
                     "AbilityCooldown": -10
                 },
                 {
-                    "BarrelDamage": 100
+                    "BarrelDamage": 80
                 },
                 {
                     "AbilityCharges": 3
@@ -4809,7 +4814,7 @@
                     "FadingSlowPercent": 25
                 },
                 {
-                    "Damage": 85
+                    "Damage": 60
                 },
                 {
                     "AbilityCooldownPerHeadshot": -4,
@@ -5502,10 +5507,10 @@
                         {
                             "Key": "HealAmount",
                             "Name": "Heal Amount",
-                            "Value": 50,
+                            "Value": 40,
                             "Type": "healing",
                             "Scale": {
-                                "Value": 1.6,
+                                "Value": 1.1,
                                 "Type": "spirit"
                             }
                         }
@@ -10227,7 +10232,7 @@
                     "DescKey": "mirage_sand_phantom_t1_desc"
                 },
                 {
-                    "VictimStackDuration": 4.0,
+                    "VictimStackDuration": 2.5,
                     "ProcDamageBase": 10,
                     "DescKey": "mirage_sand_phantom_t2_desc"
                 },
@@ -11121,11 +11126,11 @@
             },
             "Upgrades": [
                 {
-                    "AbilityCooldown": -4
+                    "FireRateSlow": 25,
+                    "DebuffDuration": 5
                 },
                 {
-                    "FireRateSlow": 25,
-                    "DebuffDuration": 5,
+                    "AbilityCooldown": -13,
                     "DescKey": "ability_magician_magicbolt_t2_desc"
                 },
                 {
@@ -11188,7 +11193,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 15,
+                "Value": 24,
                 "Type": "cooldown"
             },
             "AbilityCooldownBetweenCharge": {
