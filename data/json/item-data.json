@@ -290,7 +290,7 @@
             "MagicDamage"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 21.0,
+        "AbilityCooldown": 23.0,
         "AbilityDuration": "0",
         "AbilityCastRange": "0",
         "AbilityUnitTargetLimit": "1",
@@ -393,7 +393,7 @@
         "TechPower": "0",
         "WeaponPower": "0",
         "SpiritDamage": "50",
-        "TechArmorDamageReduction": "-12",
+        "TechArmorDamageReduction": "-8",
         "TechShieldMaxHealth": "80",
         "BonusMeleeDamagePercent": "12"
     },
@@ -1538,7 +1538,7 @@
     },
     "upgrade_chonky": {
         "Name": "Fortitude",
-        "Description": "After not taking damage for <span style=\"font-weight: bold;\">10s</span>, gain <span style=\"font-weight: bold;\">4% Max Health Regen</span>.",
+        "Description": "After not taking damage for <span style=\"font-weight: bold;\">13s</span>, gain <span style=\"font-weight: bold;\">4% Max Health Regen</span>.",
         "Cost": "3000",
         "Tier": "3",
         "Activation": "Passive",
@@ -1567,11 +1567,11 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
-        "RestoreDelay": "10",
+        "RestoreDelay": "13",
         "HealLifePercentOutOfCombat": "4",
         "HealthThreshold": "75",
         "BonusMoveSpeed": "2m",
-        "BaseAttackDamagePercent": "27",
+        "BaseAttackDamagePercent": "23",
         "BonusHealth": "400"
     },
     "upgrade_clip_size": {
@@ -2207,9 +2207,9 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
-        "StatusResistancePercent": "28",
+        "StatusResistancePercent": "24",
         "BaseAttackDamagePercent": "8",
-        "BonusHealth": "125"
+        "BonusHealth": "75"
     },
     "upgrade_disarm": {
         "Name": "Drain Will",
@@ -2952,7 +2952,7 @@
         "WeaponPower": "0",
         "HealAmpReceivePenaltyPercent": "-40",
         "HealAmpRegenPenaltyPercent": "-40",
-        "HealOnKill": "350",
+        "HealOnKill": "275",
         "BonusHealth": "75"
     },
     "upgrade_healing_booster": {
@@ -3157,7 +3157,7 @@
             "Healing"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 64.0,
+        "AbilityCooldown": 70.0,
         "AbilityDuration": "0",
         "AbilityCastRange": "30m",
         "AbilityUnitTargetLimit": "1",
@@ -3170,7 +3170,7 @@
         "AbilityResourceCost": "0",
         "TechPower": "3",
         "WeaponPower": "0",
-        "TotalHealthRegen": "370",
+        "TotalHealthRegen": "350",
         "RegenDuration": "20",
         "BonusHealth": "30",
         "BonusSprintSpeed": "2m"
@@ -3288,8 +3288,8 @@
         "TechPower": "4",
         "WeaponPower": "0",
         "LifeThreshold": "65",
-        "BaseAttackDamagePercent": "20",
-        "TechShieldMaxHealth": "95"
+        "BaseAttackDamagePercent": "18",
+        "TechShieldMaxHealth": "70"
     },
     "upgrade_imbued_ability": {
         "Name": "Imbued Ability",
@@ -3878,7 +3878,7 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
-        "TechShieldMaxHealth": "300",
+        "TechShieldMaxHealth": "250",
         "BonusSpiritWithMagicShield": "20",
         "CooldownReductionWithShield": "6"
     },
@@ -4341,7 +4341,7 @@
             "Disruption"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 26.0,
+        "AbilityCooldown": 30.0,
         "AbilityDuration": "0",
         "AbilityCastRange": "25m",
         "AbilityUnitTargetLimit": "1",
@@ -4735,7 +4735,7 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
-        "BulletShieldMaxHealth": "325",
+        "BulletShieldMaxHealth": "275",
         "AttackDamageWhenShielded": "22",
         "FireRateWhenShielded": "7"
     },
@@ -4924,10 +4924,10 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
-        "Radius": "50m",
+        "Radius": "35m",
         "MeleeResistPercent": "25",
         "BonusSprintSpeed": "1m",
-        "HealPerStack": "32",
+        "HealPerStack": "30",
         "MaxStacks": "15"
     },
     "upgrade_return_fire": {
@@ -5097,7 +5097,7 @@
             "Disruption"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 33.0,
+        "AbilityCooldown": 36.0,
         "AbilityDuration": "10",
         "AbilityCastRange": "15m",
         "AbilityUnitTargetLimit": "1",
@@ -5108,13 +5108,13 @@
         "AbilityCooldownBetweenCharge": "0",
         "ChannelMoveSpeed": "50",
         "AbilityResourceCost": "0",
-        "TechPower": "7",
+        "TechPower": "4",
         "WeaponPower": "0",
         "HealAmpReceivePenaltyPercent": "-55",
         "HealAmpRegenPenaltyPercent": "-55",
         "TickRate": "1.0",
         "DotHealthPercent": "1.5",
-        "BonusHealthRegen": "1.5",
+        "BonusHealthRegen": "1.0",
         "BonusAbilityDurationPercent": "8"
     },
     "upgrade_savior": {
@@ -5133,7 +5133,7 @@
             "Movement"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 30.0,
+        "AbilityCooldown": 40.0,
         "AbilityDuration": "0",
         "AbilityCastRange": "35m",
         "AbilityUnitTargetLimit": "1",
@@ -5156,9 +5156,9 @@
     },
     "upgrade_self_bubble": {
         "Name": "Ethereal Shift",
-        "Description": "You enter a void state and become <span style=\"font-weight: bold;\">untargetable and invincible</span> for a short duration, during which you float slowly and cannot perform actions. Afterwards you gain <span style=\"font-weight: bold;\">move speed, spirit and spirit resist</span>. <br><span style=\"font-style: italic;\">Cancels any active ability.</span>",
-        "Cost": "3000",
-        "Tier": "3",
+        "Description": "You enter a void state and become <span style=\"font-weight: bold;\">untargetable and invincible</span> for a short duration, during which you float slowly and cannot perform actions. Afterwards you gain <span style=\"font-weight: bold;\">Spirit Power, Move Speed, and Spirit Resist</span>.<br>Can be canceled early.<br><span style=\"font-style: italic;\">Activation cancels any active ability.</span>",
+        "Cost": "6000",
+        "Tier": "4",
         "Activation": "InstantCast",
         "Slot": "Tech",
         "Components": null,
@@ -5168,7 +5168,7 @@
         ],
         "IsDisabled": false,
         "AbilityCooldown": 32.0,
-        "AbilityDuration": "3.5",
+        "AbilityDuration": "4.0",
         "AbilityCastRange": "0",
         "AbilityUnitTargetLimit": "1",
         "AbilityCastDelay": "0",
@@ -5184,9 +5184,9 @@
         "TechResist": "40",
         "DampingFactor": "3",
         "LiftHeight": "120",
-        "MoveSpeedMax": "2m",
-        "BonusMoveSpeed": "3m",
-        "BonusTechPower": "20"
+        "BonusSpirit": "20",
+        "MoveSpeedMax": "3m",
+        "BonusMoveSpeed": "3m"
     },
     "upgrade_sharpshooter": {
         "Name": "Sharpshooter",
