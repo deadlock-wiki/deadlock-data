@@ -513,7 +513,7 @@
     },
     "upgrade_active_reload": {
         "Name": "Active Reload",
-        "Description": "While reloading, pressing R during the highlighted portion will <span style=\"font-weight: bold;\">instantly finish your reload</span> and grant you <span style=\"font-weight: bold;\">Fire Rate</span> and <span style=\"font-weight: bold;\">Weapon Damage</span>.",
+        "Description": "While reloading, pressing R during the highlighted portion will <span style=\"font-weight: bold;\">instantly finish your reload</span> and grant you <span style=\"font-weight: bold;\">Fire Rate</span> and <span style=\"font-weight: bold;\">Bullet Lifesteal</span>.",
         "Cost": "1600",
         "Tier": "2",
         "Activation": "Passive",
@@ -1572,7 +1572,10 @@
             "upgrade_chain_lightning"
         ],
         "TargetTypes": [
-            "AllEnemy"
+            "HeroEnemy",
+            "TrooperEnemy",
+            "BossEnemy",
+            "MinionEnemy"
         ],
         "ShopFilters": [
             "MagicDamage",
@@ -2113,7 +2116,7 @@
         "SpreadDuration": "0.5",
         "StartRadius": "2m",
         "EndRadius": "12m",
-        "SlowPercent": "60",
+        "MovementSpeedSlow": "60",
         "Damage": "125",
         "DamageHeight": "2.5m",
         "NPCDamageMult": "1",
