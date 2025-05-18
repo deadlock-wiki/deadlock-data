@@ -7631,6 +7631,9 @@
             }
         }
     },
+    "hero_kali": {
+        "Name": "Kali"
+    },
     "hero_warden": {
         "Name": "Warden",
         "1": {
@@ -9346,6 +9349,316 @@
             }
         }
     },
+    "hero_gunslinger": {
+        "Name": "Gunslinger",
+        "1": {
+            "Key": "citadel_ability_chrono_pulse_grenade",
+            "Name": "Pulse Grenade",
+            "DescKey": "citadel_ability_chrono_pulse_grenade_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "PulseDamage",
+                            "Name": "Pulse Damage",
+                            "Value": 45,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 0.426535,
+                                "Type": "spirit"
+                            }
+                        },
+                        {
+                            "Key": "DamageAmplificationPerStack",
+                            "Name": "Bonus Damage per Stack",
+                            "Value": 6,
+                            "Type": "damage"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "PulseInterval",
+                        "Name": "Pulse Interval",
+                        "Value": 0.8,
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "DebuffDuration",
+                        "Name": "Debuff Duration",
+                        "Value": 8.0,
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "SlowPercent",
+                        "Name": "Move Speed",
+                        "Value": 30,
+                        "Type": "slow"
+                    },
+                    {
+                        "Key": "MovementSlowDuration",
+                        "Name": "Slow Duration",
+                        "Value": 2.0,
+                        "Type": "duration"
+                    }
+                ],
+                "DescKey": "citadel_ability_chrono_pulse_grenade_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityDuration": 0.8
+                },
+                {
+                    "AbilityCooldown": -8
+                },
+                {
+                    "PulseDamage": 45,
+                    "RadiusIncreasePerPulse": "0.75m",
+                    "DescKey": "citadel_ability_chrono_pulse_grenade_t3_desc"
+                }
+            ],
+            "Range": {
+                "RadiusIncreasePerPulse": {
+                    "Name": null,
+                    "Value": 0,
+                    "Type": "distance"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 50,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.2,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 28.0,
+                "Type": "cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 3.2,
+                "Type": "duration"
+            },
+            "Radius": {
+                "Name": "Radius",
+                "Value": 6,
+                "Type": "distance"
+            }
+        },
+        "3": {
+            "Key": "gunslinger_demonMark",
+            "Name": "Infernal Brand",
+            "DescKey": "gunslinger_demonMark_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "ProcDamage",
+                            "Name": "Spirit Damage",
+                            "Value": 100,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 0.744,
+                                "Type": "spirit"
+                            }
+                        },
+                        {
+                            "Key": "BonusFireRate",
+                            "Name": "Fire Rate",
+                            "Value": 25,
+                            "Type": "fire_rate"
+                        },
+                        {
+                            "Key": "BonusMoveSpeed",
+                            "Name": "Move Speed",
+                            "Value": 2,
+                            "Type": "move_speed"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "SearchRadius",
+                        "Name": "Search Radius",
+                        "Value": 20
+                    },
+                    {
+                        "Key": "MarkDuration",
+                        "Value": 5
+                    },
+                    {
+                        "Key": "BuffDuration",
+                        "Name": "Buff Duration",
+                        "Value": 3
+                    }
+                ],
+                "DescKey": "gunslinger_demonMark_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -3
+                },
+                {
+                    "ProcDamage": 50
+                }
+            ],
+            "Damage": {
+                "Damage": {
+                    "Name": "Damage",
+                    "Value": 100,
+                    "Type": "bullet_damage",
+                    "Scale": {
+                        "Value": 0.93,
+                        "Type": "weapon_damage"
+                    }
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "SearchAngle": {
+                    "Name": null,
+                    "Value": 20
+                },
+                "SearchRate": {
+                    "Name": null,
+                    "Value": 1
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.15,
+                "Type": "cast"
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 40,
+                "Type": "range"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 14,
+                "Type": "cooldown"
+            }
+        },
+        "4": {
+            "Key": "ability_gunslinger_salvo",
+            "Name": "Demontrigger Blitz",
+            "DescKey": "ability_gunslinger_salvo_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "TotalShots",
+                            "Name": "Total Shots Fired",
+                            "Value": 4,
+                            "Type": "bullet_damage"
+                        },
+                        {
+                            "Key": "ProcDamagePercentage",
+                            "Name": "Bonus Bullet Damage",
+                            "Value": 220,
+                            "Type": "tech_damage"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "AbilityCastDelay",
+                        "Name": "Cast Delay",
+                        "Value": 1,
+                        "Type": "cast"
+                    },
+                    {
+                        "Key": "AbilityChannelTime",
+                        "Name": "Channel Duration",
+                        "Value": 1,
+                        "Type": "cast"
+                    }
+                ],
+                "DescKey": "ability_gunslinger_salvo_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -20
+                },
+                {
+                    "DebuffDuration": 6
+                },
+                {
+                    "TotalShots": 2
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 150,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "Damage": {
+                    "Name": "Damage",
+                    "Value": null
+                },
+                "OverrideBulletRadius": {
+                    "Name": null,
+                    "Value": 0.3
+                },
+                "ProcChance": {
+                    "Name": "Proc Chance",
+                    "Value": 100
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 0.5
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 1,
+                "Type": "cast"
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 60,
+                "Type": "range"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 90,
+                "Type": "cooldown"
+            }
+        }
+    },
+    "hero_yakuza": {
+        "Name": "The Boss"
+    },
+    "hero_genericperson": {
+        "Name": "Generic Person"
+    },
+    "hero_tokamak": {
+        "Name": "Tokamak"
+    },
     "hero_wrecker": {
         "Name": "Wrecker",
         "1": {
@@ -9714,6 +10027,9 @@
                 "Type": "cooldown"
             }
         }
+    },
+    "hero_rutger": {
+        "Name": "Rutger"
     },
     "hero_synth": {
         "Name": "Pocket",
@@ -10085,6 +10401,9 @@
                 "Type": "distance"
             }
         }
+    },
+    "hero_thumper": {
+        "Name": "Thumper"
     },
     "hero_mirage": {
         "Name": "Mirage",
@@ -10935,6 +11254,18 @@
             }
         }
     },
+    "hero_cadence": {
+        "Name": "Cadence"
+    },
+    "hero_targetdummy": {
+        "Name": "TargetDummy"
+    },
+    "hero_bomber": {
+        "Name": "Bomber"
+    },
+    "hero_shieldguy": {
+        "Name": "Shield Guy"
+    },
     "hero_viper": {
         "Name": "Vyper",
         "1": {
@@ -11244,6 +11575,9 @@
                 "Value": 6
             }
         }
+    },
+    "hero_vandal": {
+        "Name": "Vandal"
     },
     "hero_magician": {
         "Name": "Sinclair",
@@ -12510,5 +12844,1873 @@
                 "Type": "distance"
             }
         }
+    },
+    "hero_vampirebat": {
+        "Name": "VampireBat",
+        "1": {
+            "Key": "ability_vampirebat_doubledagger",
+            "Name": "Double Dagger",
+            "DescKey": "ability_vampirebat_doubledagger_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 30,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 0.465,
+                                "Type": "spirit"
+                            }
+                        },
+                        {
+                            "Title": "On Double Hit:",
+                            "Key": "BonusDamage",
+                            "Name": "Bonus Damage",
+                            "Value": 45,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 0.651,
+                                "Type": "spirit"
+                            }
+                        }
+                    ]
+                },
+                "Alt": null,
+                "DescKey": "ability_vampirebat_doubledagger_desc"
+            },
+            "Upgrades": [
+                {
+                    "BonusDamage": 15,
+                    "Damage": 15,
+                    "DescKey": "ability_vampirebat_doubledagger_t1_desc"
+                },
+                {
+                    "AbilityCooldown": -2
+                },
+                {
+                    "DebuffDuration": 5,
+                    "TechArmorDamageReduction": -12,
+                    "DescKey": "ability_vampirebat_doubledagger_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "DaggerCount": {
+                    "Name": null,
+                    "Value": 2
+                },
+                "DelayBetweenDaggers": {
+                    "Name": null,
+                    "Value": 0.3
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.1,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 7,
+                "Type": "cooldown"
+            }
+        },
+        "2": {
+            "Key": "ability_vampirebat_batblink",
+            "Name": "Batblink",
+            "DescKey": "ability_vampirebat_batblink_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "AbilityCastRange",
+                            "Name": "Cast Range",
+                            "Value": 12,
+                            "Type": "range"
+                        }
+                    ]
+                },
+                "Alt": null,
+                "DescKey": "ability_vampirebat_batblink_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCastRange": "4m"
+                },
+                {
+                    "BonusMoveSpeed": 5
+                },
+                {
+                    "AbilityCooldown": -10
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 50,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "BuffDuration": {
+                    "Name": "Buff Duration",
+                    "Value": 4
+                },
+                "EndJumpVelocity": {
+                    "Name": null,
+                    "Value": 200
+                },
+                "ExitVelocity": {
+                    "Name": null,
+                    "Value": 5
+                },
+                "MaxRecasts": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "RecastWindow": {
+                    "Name": null,
+                    "Value": 3
+                }
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 12,
+                "Type": "range"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 25,
+                "Type": "cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 0.65,
+                "Type": "duration"
+            }
+        },
+        "4": {
+            "Key": "ability_vampirebat_batswarm",
+            "Name": "Nox Nostra",
+            "DescKey": "ability_vampirebat_batswarm_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "BatCount",
+                            "Name": "Bats Released",
+                            "Value": 50,
+                            "Type": "cast"
+                        },
+                        {
+                            "Title": "On Hit:",
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 40,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 0.0465,
+                                "Type": "spirit"
+                            }
+                        },
+                        {
+                            "Title": "On Hit:",
+                            "Key": "CurrentHealthPercent",
+                            "Name": "Current Health",
+                            "Value": 4,
+                            "Type": "tech_damage"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "BonusBatsPerProc",
+                        "Name": "Additional Bats Per Love Bite",
+                        "Value": 2,
+                        "Type": "cast"
+                    },
+                    {
+                        "Key": "BonusBatsMax",
+                        "Name": "Max Additional Bats",
+                        "Value": 50,
+                        "Type": "cast"
+                    }
+                ],
+                "DescKey": "ability_vampirebat_batswarm_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -40
+                },
+                {
+                    "BonusBatsPerProc": 2
+                },
+                {
+                    "CurrentHealthPercent": 4
+                }
+            ],
+            "Cast": {
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Value": 2.5,
+                    "Type": "cast"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "BatCountPerWave": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "BatSpawnRadius": {
+                    "Name": null,
+                    "Value": 4.5
+                },
+                "BatSpawnRandomAngle": {
+                    "Name": null,
+                    "Value": 0.03
+                },
+                "BatSpawnRandomVelocity": {
+                    "Name": null,
+                    "Value": 300
+                },
+                "FallSpeedMax": {
+                    "Name": null,
+                    "Value": 0.3
+                },
+                "JumpPitch": {
+                    "Name": null,
+                    "Value": -60
+                },
+                "JumpSpeed": {
+                    "Name": null,
+                    "Value": 20.0
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.6,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 120,
+                "Type": "cooldown"
+            },
+            "Radius": {
+                "Name": "Radius",
+                "Value": 3
+            }
+        }
+    },
+    "hero_drifter": {
+        "Name": "Drifter",
+        "3": {
+            "Key": "ability_drifter_hunger",
+            "Name": "The Hunger",
+            "DescKey": "ability_drifter_hunger_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "KillDuration",
+                            "Name": "Kill Duration",
+                            "Value": 300,
+                            "Type": "duration"
+                        }
+                    ]
+                },
+                "Alt": null,
+                "DescKey": "ability_drifter_hunger_desc"
+            },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "Satiated:",
+                            "Key": "OutgoingDamagePercent",
+                            "Name": "Damage",
+                            "Value": 20,
+                            "Type": "damage",
+                            "Scale": {
+                                "Value": 0.186,
+                                "Type": "spirit"
+                            }
+                        }
+                    ]
+                },
+                "Alt": null
+            },
+            "Info3": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "Hungry:",
+                            "Key": "OutgoingDamagePercentHungry",
+                            "Name": "Damage",
+                            "Value": -20,
+                            "Type": "damage",
+                            "Scale": {
+                                "Value": -0.186,
+                                "Type": "spirit"
+                            }
+                        },
+                        {
+                            "Title": "Hungry:",
+                            "Key": "StaminaHungry",
+                            "Name": "Stamina",
+                            "Value": -2,
+                            "Type": "move_speed"
+                        }
+                    ]
+                },
+                "Alt": null
+            },
+            "Upgrades": [
+                {
+                    "KillDuration": 180
+                },
+                {
+                    "BonusMoveSpeedPercent": 10
+                },
+                {
+                    "OutgoingDamagePercent": 15
+                }
+            ],
+            "Move": {
+                "BonusMoveSpeedPercent": {
+                    "Name": "Move Speed",
+                    "Value": 12,
+                    "Type": "move_speed"
+                },
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 50,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "LowHealthThreshold": {
+                    "Name": "Health Threshold",
+                    "Value": 40
+                },
+                "Stamina": {
+                    "Name": "Stamina",
+                    "Value": 2
+                },
+                "TargetLingerDuration": {
+                    "Name": null,
+                    "Value": 3
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 2
+                }
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 80,
+                "Type": "range"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 26.0,
+                "Type": "cooldown"
+            }
+        }
+    },
+    "hero_priest": {
+        "Name": "Priest",
+        "2": {
+            "Key": "ability_priest_selfheal",
+            "Name": "Potent Vapors",
+            "DescKey": "ability_priest_selfheal_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "IncomingDamagePercent",
+                            "Name": "Damage Taken",
+                            "Value": -35,
+                            "Type": "health"
+                        },
+                        {
+                            "Key": "FlatHealthHealing",
+                            "Name": "Healing Amount",
+                            "Value": 120,
+                            "Type": "healing",
+                            "Scale": {
+                                "Value": 2.79,
+                                "Type": "spirit"
+                            }
+                        }
+                    ]
+                },
+                "Alt": null,
+                "DescKey": "ability_priest_selfheal_desc"
+            },
+            "Upgrades": [
+                {
+                    "FlatHealthHealing": 80
+                },
+                {
+                    "AbilityCooldown": -15
+                },
+                {
+                    "SlowResistance": 100
+                }
+            ],
+            "Cast": {
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Value": 4,
+                    "Type": "cast"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.125
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 0.25
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.125,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 45,
+                "Type": "cooldown"
+            }
+        },
+        "3": {
+            "Key": "ability_priest_stackingdefense",
+            "Name": "Penance & Retribution",
+            "DescKey": "ability_priest_stackingdefense_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "MaxStacks",
+                            "Name": "Max Stacks",
+                            "Value": 30
+                        },
+                        {
+                            "Key": "ResistancePerStack",
+                            "Name": "Resist Per Stack",
+                            "Value": 1,
+                            "Type": "bullet_armor_up"
+                        },
+                        {
+                            "Title": "On Max Stacks:",
+                            "Key": "OutgoingDamagePercent",
+                            "Name": "Damage",
+                            "Value": 30,
+                            "Type": "damage",
+                            "Scale": {
+                                "Value": 0.093,
+                                "Type": "spirit"
+                            }
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "StackDuration",
+                        "Name": "Stack Duration",
+                        "Value": 8,
+                        "Type": "duration"
+                    }
+                ],
+                "DescKey": "ability_priest_stackingdefense_desc"
+            },
+            "Upgrades": [
+                {
+                    "StackDuration": 2
+                },
+                {
+                    "ResistancePerStack": 0.5
+                },
+                {
+                    "OutgoingDamagePercent": 20
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 50,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "CooldownPerStack": {
+                    "Name": null,
+                    "Value": 0.2
+                }
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 26.0,
+                "Type": "cooldown"
+            }
+        }
+    },
+    "hero_frank": {
+        "Name": "Frank",
+        "1": {
+            "Key": "ability_frank_shocktarget",
+            "Name": "Pain Battery",
+            "DescKey": "ability_frank_shocktarget_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 30,
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Title": "On Hit:",
+                            "Key": "BonusDamageCap",
+                            "Name": "Max Stored Damage",
+                            "Value": 200,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 1.86,
+                                "Type": "spirit"
+                            }
+                        },
+                        {
+                            "Title": "On Hit:",
+                            "Key": "SlowPercent",
+                            "Name": "Move Speed",
+                            "Value": 40,
+                            "Type": "slow"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "BonusDamageConversionPercent",
+                        "Name": "Incoming Damage Stored",
+                        "Value": 40,
+                        "Type": "damage"
+                    },
+                    {
+                        "Key": "BonusDamagePerBullet",
+                        "Name": "Damage per Bullet",
+                        "Value": null,
+                        "Type": "tech_damage",
+                        "Scale": {
+                            "Value": 0.279,
+                            "Type": "spirit"
+                        }
+                    }
+                ],
+                "DescKey": "ability_frank_shocktarget_desc"
+            },
+            "Upgrades": [
+                {
+                    "Damage": 30
+                },
+                {
+                    "AbilityCooldown": -2
+                },
+                {
+                    "BonusDamagePerBullet": 40,
+                    "DescKey": "ability_frank_shocktarget_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "BonusDamageDecayLockoutDuration": {
+                    "Name": null,
+                    "Value": 3
+                },
+                "BonusDamageDecayPerSecond": {
+                    "Name": null,
+                    "Value": 2
+                },
+                "BonusDamageDecayRate": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "SlowDuration": {
+                    "Name": "Debuff Duration",
+                    "Value": 1.5
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.2,
+                "Type": "cast"
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 16,
+                "Type": "range"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 7,
+                "Type": "cooldown"
+            }
+        },
+        "2": {
+            "Key": "ability_frank_selfzap",
+            "Name": "Jumpstart",
+            "DescKey": "ability_frank_selfzap_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "CurrentHealthPercentDamage",
+                            "Name": "Current Health",
+                            "Value": 12,
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Title": "On Buff:",
+                            "Key": "BonusHealthRegen",
+                            "Name": "Health Regen",
+                            "Value": 30,
+                            "Type": "healing",
+                            "Scale": {
+                                "Value": 0.93,
+                                "Type": "spirit"
+                            }
+                        },
+                        {
+                            "Title": "On Buff:",
+                            "Key": "BonusMoveSpeed",
+                            "Name": "Move Speed",
+                            "Value": 5,
+                            "Type": "move_speed"
+                        }
+                    ]
+                },
+                "Alt": [],
+                "DescKey": "ability_frank_selfzap_desc"
+            },
+            "Upgrades": [
+                {
+                    "BonusMoveSpeed": "2m"
+                },
+                {
+                    "BonusHealthRegen": 15
+                },
+                {
+                    "SlowResistance": 75
+                }
+            ],
+            "Cast": {
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Value": 0.35,
+                    "Type": "cast"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                }
+            },
+            "AbilityCharges": {
+                "Name": "Charges",
+                "Value": 1,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 18,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": 3,
+                "Type": "charge_cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 4,
+                "Type": "duration"
+            }
+        },
+        "3": {
+            "Key": "ability_frank_painaura",
+            "Name": "Aura of Suffering",
+            "DescKey": "ability_frank_painaura_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "When Inactive:",
+                            "Key": "IncomingDamagePercent",
+                            "Name": "Damage Taken",
+                            "Value": -25,
+                            "Type": "health",
+                            "Scale": {
+                                "Value": -0.1395,
+                                "Type": "spirit"
+                            }
+                        }
+                    ]
+                },
+                "Alt": null,
+                "DescKey": "ability_frank_painaura_desc"
+            },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "When Active:",
+                            "Key": "DPS",
+                            "Name": "Damage Per Second",
+                            "Value": 20,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 0.093,
+                                "Type": "spirit"
+                            }
+                        }
+                    ]
+                },
+                "Alt": null
+            },
+            "Upgrades": [
+                {
+                    "SlowPercent": 30,
+                    "DebuffDuration": 0.5,
+                    "DescKey": "ability_frank_painaura_t1_desc"
+                },
+                {
+                    "DPS": 20
+                },
+                {
+                    "IncomingDamagePercentOnHit": 20,
+                    "DescKey": "ability_frank_painaura_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 50,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "DebuffDuration": {
+                    "Name": "Debuff Duration",
+                    "Value": 0.5
+                },
+                "RadiusGrowthTime": {
+                    "Name": null,
+                    "Value": 5
+                },
+                "SelfDPS": {
+                    "Name": null,
+                    "Value": 15
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 0.25
+                },
+                "ToggleOffDelay": {
+                    "Name": null,
+                    "Value": 1
+                }
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 3,
+                "Type": "cooldown"
+            },
+            "Radius": {
+                "Name": "Radius",
+                "Value": 10
+            }
+        },
+        "4": {
+            "Key": "ability_frank_revive",
+            "Name": "Shocking Reanimation",
+            "DescKey": "ability_frank_revive_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "RespawnHealthPercent",
+                            "Name": "Rebirth Health",
+                            "Value": 25,
+                            "Type": "healing",
+                            "Scale": {
+                                "Value": 0.372,
+                                "Type": "spirit"
+                            }
+                        },
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 130,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 0.93,
+                                "Type": "spirit"
+                            }
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "CooldownRefreshChancePercent",
+                        "Name": "Cooldown Refund Chance",
+                        "Value": null,
+                        "Type": "cooldown"
+                    }
+                ],
+                "DescKey": "ability_frank_revive_desc"
+            },
+            "Upgrades": [
+                {
+                    "RespawnHealthPercent": 25
+                },
+                {
+                    "Radius": "4m"
+                },
+                {
+                    "CooldownRefreshChancePercent": 25
+                }
+            ],
+            "Cast": {
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Value": 3,
+                    "Type": "cast"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 50,
+                    "Type": "move_speed"
+                }
+            },
+            "Debuff": {
+                "SlowPercent": {
+                    "Name": "Move Speed",
+                    "Value": 80,
+                    "Type": "slow"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "HalfHeight": {
+                    "Name": null,
+                    "Value": 15
+                },
+                "InitialDelay": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "RespawnDelay": {
+                    "Name": "Respawn Delay",
+                    "Value": 3
+                },
+                "SlowDuration": {
+                    "Name": "Debuff Duration",
+                    "Value": 3
+                }
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 120,
+                "Type": "cooldown"
+            },
+            "Radius": {
+                "Name": "Radius",
+                "Value": 12
+            }
+        }
+    },
+    "hero_bookworm": {
+        "Name": "Bookworm",
+        "1": {
+            "Key": "ability_warden_crowd_control",
+            "Name": "Alchemical Flask",
+            "DescKey": "ability_warden_crowd_control_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 65,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 0.731203,
+                                "Type": "spirit"
+                            }
+                        },
+                        {
+                            "Key": "MoveSpeedSlowPct",
+                            "Name": "Move Speed",
+                            "Value": 20,
+                            "Type": "slow"
+                        },
+                        {
+                            "Key": "WeaponPowerDebuff",
+                            "Name": "Weapon Damage",
+                            "Value": -30,
+                            "Type": "bullet_damage"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "SlowDuration",
+                        "Name": "Debuff Duration",
+                        "Value": 3,
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "DebuffDuration",
+                        "Name": "Debuff Duration",
+                        "Value": 7,
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "StaminaReduction",
+                        "Name": "Stamina Reduction",
+                        "Value": null
+                    }
+                ],
+                "DescKey": "ability_warden_crowd_control_desc"
+            },
+            "Upgrades": [
+                {
+                    "StaminaReduction": 1,
+                    "DescKey": "ability_warden_crowd_control_t1_desc"
+                },
+                {
+                    "Damage": 50
+                },
+                {
+                    "FireRateSlow": 35,
+                    "AbilityCooldown": -6.5,
+                    "DescKey": "ability_warden_crowd_control_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 50,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "ForwardVelocity": {
+                    "Name": null,
+                    "Value": 800
+                },
+                "ProjectileLifetime": {
+                    "Name": null,
+                    "Value": 60
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.1,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 12.0,
+                "Type": "cooldown"
+            },
+            "Radius": {
+                "Name": "Radius",
+                "Value": 6.5,
+                "Type": "distance"
+            }
+        },
+        "2": {
+            "Key": "ability_bookworm_knightbarrier",
+            "Name": "Protection",
+            "DescKey": "ability_bookworm_knightbarrier_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "CombatBarrier",
+                            "Name": "Barrier",
+                            "Value": 200,
+                            "Type": "bullet_armor_up",
+                            "Scale": {
+                                "Value": 1.395,
+                                "Type": "spirit"
+                            }
+                        },
+                        {
+                            "Title": "On Buff:",
+                            "Key": "BulletResist",
+                            "Name": "Bullet Resist",
+                            "Value": 25,
+                            "Type": "bullet_armor_up"
+                        }
+                    ]
+                },
+                "Alt": [],
+                "DescKey": "ability_bookworm_knightbarrier_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -8
+                },
+                {
+                    "BonusFireRate": 15,
+                    "DescKey": "ability_bookworm_knightbarrier_t2_desc"
+                },
+                {
+                    "CombatBarrier": 200
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 50,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.2
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "BarrierDuration": {
+                    "Name": "Barrier Duration",
+                    "Value": 5
+                },
+                "ParriedStunTime": {
+                    "Name": null,
+                    "Value": 2.75
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.1,
+                "Type": "cast"
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 30,
+                "Type": "range"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 26.0,
+                "Type": "cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 5,
+                "Type": "duration"
+            }
+        },
+        "3": {
+            "Key": "ability_bookworm_aoemagic",
+            "Name": "AOEMagic",
+            "DescKey": "ability_bookworm_aoemagic_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "SlowPercent",
+                            "Name": "Move Speed",
+                            "Value": 45,
+                            "Type": "slow"
+                        },
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 80,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 1.209,
+                                "Type": "spirit"
+                            }
+                        },
+                        {
+                            "Key": "ImmobilizeDuration",
+                            "Name": "Immobilize Duration",
+                            "Value": 1
+                        }
+                    ]
+                },
+                "Alt": null,
+                "DescKey": "ability_bookworm_aoemagic_desc"
+            },
+            "Upgrades": [
+                {
+                    "Damage": 45
+                },
+                {
+                    "Radius": "1.5m"
+                },
+                {
+                    "ImmobilizeDuration": 0.5
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "DetonationDelay": {
+                    "Name": null,
+                    "Value": 1.25
+                },
+                "SlowDuration": {
+                    "Name": "Debuff Duration",
+                    "Value": 1.25
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.15,
+                "Type": "cast"
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 30,
+                "Type": "range"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 30,
+                "Type": "cooldown"
+            },
+            "Radius": {
+                "Name": "Radius",
+                "Value": 7
+            }
+        },
+        "4": {
+            "Key": "ability_bookworm_knightcharge",
+            "Name": "Inspiring Charge",
+            "DescKey": "ability_bookworm_knightcharge_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 80,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 0.465,
+                                "Type": "spirit"
+                            }
+                        },
+                        {
+                            "Title": "On Buff:",
+                            "Key": "CombatBarrier",
+                            "Name": "Barrier",
+                            "Value": 200,
+                            "Type": "bullet_armor_up",
+                            "Scale": {
+                                "Value": 0.651,
+                                "Type": "spirit"
+                            }
+                        },
+                        {
+                            "Title": "On Buff:",
+                            "Key": "BonusMoveSpeed",
+                            "Name": "Move Speed",
+                            "Value": 3.5,
+                            "Type": "move_speed"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "KnightCount",
+                        "Name": "Knights Released",
+                        "Value": 3
+                    }
+                ],
+                "DescKey": "ability_bookworm_knightcharge_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -30
+                },
+                {
+                    "CombatBarrier": 150
+                },
+                {
+                    "KnightCount": 2
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 50,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AllyHeight": {
+                    "Name": null,
+                    "Value": 20
+                },
+                "AllyRadius": {
+                    "Name": null,
+                    "Value": 20
+                },
+                "BuffDuration": {
+                    "Name": "Buff Duration",
+                    "Value": 6
+                },
+                "ClimbHeight": {
+                    "Name": null,
+                    "Value": 2
+                },
+                "DistanceAboveGround": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "DropDownRate": {
+                    "Name": null,
+                    "Value": 10
+                },
+                "KnightChargeRange": {
+                    "Name": null,
+                    "Value": 60
+                },
+                "KnightChargeWidth": {
+                    "Name": null,
+                    "Value": 4
+                },
+                "KnightPositionSpread": {
+                    "Name": null,
+                    "Value": 3
+                },
+                "KnightWhiskerLength": {
+                    "Name": null,
+                    "Value": 300
+                },
+                "KnightWhiskerSide": {
+                    "Name": null,
+                    "Value": 50
+                },
+                "KnightWhiskerStrength": {
+                    "Name": null,
+                    "Value": 0.2
+                },
+                "TossBackSpeed": {
+                    "Name": null,
+                    "Value": 400
+                },
+                "TossUpSpeed": {
+                    "Name": null,
+                    "Value": 400
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.35,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 127.0,
+                "Type": "cooldown"
+            }
+        }
+    },
+    "hero_boho": {
+        "Name": "Boho"
+    },
+    "hero_doorman": {
+        "Name": "Doorman",
+        "1": {
+            "Key": "ability_doorman_doorway",
+            "Name": "Doorway",
+            "DescKey": "ability_doorman_doorway_desc",
+            "Info1": {
+                "Main": {
+                    "Props": []
+                },
+                "Alt": null,
+                "DescKey": "ability_doorman_doorway_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -5
+                },
+                {
+                    "AbilityDuration": 5
+                },
+                {
+                    "AbilityCastRange": "10m"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 50,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "SecondDoorPlacementWindow": {
+                    "Name": null,
+                    "Value": 5
+                }
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 30,
+                "Type": "range"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 20.0,
+                "Type": "cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 10,
+                "Type": "duration"
+            }
+        },
+        "2": {
+            "Key": "ability_doorman_wall",
+            "Name": "Luggage Drop",
+            "DescKey": "ability_doorman_wall_desc",
+            "Info1": {
+                "Main": {
+                    "Props": []
+                },
+                "Alt": null,
+                "DescKey": "ability_doorman_wall_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": 0
+                },
+                {
+                    "AbilityCooldown": 0
+                },
+                {
+                    "AbilityCooldown": 0
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 50,
+                    "Type": "move_speed"
+                }
+            },
+            "Damage": {
+                "Damage": {
+                    "Name": "Damage",
+                    "Value": 80,
+                    "Type": "tech_damage",
+                    "Scale": {
+                        "Value": 0.93,
+                        "Type": "spirit"
+                    }
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                }
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 40,
+                "Type": "range"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 26.0,
+                "Type": "cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 8,
+                "Type": "duration"
+            }
+        }
+    },
+    "hero_skyrunner": {
+        "Name": "Skyrunner",
+        "1": {
+            "Key": "ability_skyrunner_swingline",
+            "Name": "Lifethread",
+            "DescKey": "ability_skyrunner_swingline_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "MaxMoveSpeed",
+                            "Name": "Max Movement Speed",
+                            "Value": 25,
+                            "Type": "move_speed"
+                        }
+                    ]
+                },
+                "Alt": null,
+                "DescKey": "ability_skyrunner_swingline_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": 0
+                },
+                {
+                    "AbilityCooldown": 0
+                },
+                {
+                    "AbilityCooldown": 0
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 50,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "SwingLineBulletDistance": {
+                    "Name": null,
+                    "Value": 40
+                }
+            },
+            "AbilityCharges": {
+                "Name": "Charges",
+                "Value": 2,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 12,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": 0.1,
+                "Type": "charge_cooldown"
+            }
+        },
+        "3": {
+            "Key": "ability_skyrunner_flakshot",
+            "Name": "Flakshot",
+            "DescKey": "ability_skyrunner_flakshot_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "BonusDamage",
+                            "Name": "Bonus Damage",
+                            "Value": 3,
+                            "Type": "bullet_damage",
+                            "Scale": {
+                                "Value": 0.093,
+                                "Type": "spirit"
+                            }
+                        },
+                        {
+                            "Key": "RicochetChance",
+                            "Name": "Ricochet Chance",
+                            "Value": 50,
+                            "Type": "cast"
+                        },
+                        {
+                            "Key": "RicochetDamagePercent",
+                            "Name": "Ricochet Damage",
+                            "Value": 100,
+                            "Type": "bullet_damage"
+                        }
+                    ]
+                },
+                "Alt": null,
+                "DescKey": "ability_skyrunner_flakshot_desc"
+            },
+            "Upgrades": [
+                {
+                    "RicochetChance": 50
+                },
+                {
+                    "BonusDamage": 5
+                },
+                {
+                    "RicochetDamagePercent": 50
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 50,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "DirectionVariance": {
+                    "Name": null,
+                    "Value": 0.02
+                },
+                "MinEffectiveness": {
+                    "Name": null,
+                    "Value": -1
+                },
+                "RicochetAssistRatio": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "RicochetRadius": {
+                    "Name": "Ricochet Range",
+                    "Value": 20
+                }
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 26.0,
+                "Type": "cooldown"
+            },
+            "Radius": {
+                "Name": "Radius",
+                "Value": 5
+            }
+        },
+        "4": {
+            "Key": "ability_gunslinger_salvo",
+            "Name": "Demontrigger Blitz",
+            "DescKey": "ability_gunslinger_salvo_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "TotalShots",
+                            "Name": "Total Shots Fired",
+                            "Value": 4,
+                            "Type": "bullet_damage"
+                        },
+                        {
+                            "Key": "ProcDamagePercentage",
+                            "Name": "Bonus Bullet Damage",
+                            "Value": 220,
+                            "Type": "tech_damage"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "AbilityCastDelay",
+                        "Name": "Cast Delay",
+                        "Value": 1,
+                        "Type": "cast"
+                    },
+                    {
+                        "Key": "AbilityChannelTime",
+                        "Name": "Channel Duration",
+                        "Value": 1,
+                        "Type": "cast"
+                    }
+                ],
+                "DescKey": "ability_gunslinger_salvo_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -20
+                },
+                {
+                    "DebuffDuration": 6
+                },
+                {
+                    "TotalShots": 2
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 150,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "Damage": {
+                    "Name": "Damage",
+                    "Value": null
+                },
+                "OverrideBulletRadius": {
+                    "Name": null,
+                    "Value": 0.3
+                },
+                "ProcChance": {
+                    "Name": "Proc Chance",
+                    "Value": 100
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 0.5
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 1,
+                "Type": "cast"
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 60,
+                "Type": "range"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 90,
+                "Type": "cooldown"
+            }
+        }
+    },
+    "hero_swan": {
+        "Name": "Swan",
+        "2": {
+            "Key": "ability_swan_leap",
+            "Name": "Jeté",
+            "DescKey": "ability_swan_leap_desc",
+            "Info1": {
+                "Main": {
+                    "Props": []
+                },
+                "Alt": null,
+                "DescKey": "ability_swan_leap_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": 0
+                },
+                {
+                    "AbilityCooldown": 0
+                },
+                {
+                    "AbilityCooldown": 0
+                }
+            ],
+            "Cast": {
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Value": 0.15,
+                    "Type": "cast"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 50,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "BuffDuration": {
+                    "Name": "Buff Duration",
+                    "Value": 7
+                },
+                "JumpPitch": {
+                    "Name": null,
+                    "Value": -30
+                },
+                "JumpSpeed": {
+                    "Name": null,
+                    "Value": 20
+                }
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 14,
+                "Type": "cooldown"
+            }
+        },
+        "3": {
+            "Key": "ability_swan_acrobat",
+            "Name": "Acrobat",
+            "DescKey": "ability_swan_acrobat_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "MaxStacks",
+                            "Name": "Max Stacks",
+                            "Value": 4,
+                            "Type": "cast"
+                        },
+                        {
+                            "Title": "On Buff:",
+                            "Key": "BurstBonusPerStack",
+                            "Name": "Weapon Burst Bonus",
+                            "Value": 1,
+                            "Type": "bullet_damage"
+                        }
+                    ]
+                },
+                "Alt": null,
+                "DescKey": "ability_swan_acrobat_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityDuration": 3
+                },
+                {
+                    "FireRatePerStack": 4
+                },
+                {
+                    "MaxStacks": 4
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 50,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                }
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 26.0,
+                "Type": "cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 7,
+                "Type": "duration"
+            }
+        }
+    },
+    "hero_punkgoat": {
+        "Name": "Punkgoat"
     }
 }
