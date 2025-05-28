@@ -775,7 +775,7 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
-        "BonusBulletSpeedPercent": "30",
+        "BonusBulletSpeedPercent": "35",
         "ProcChance": "60"
     },
     "upgrade_arcane_eater": {
@@ -1054,7 +1054,7 @@
             "Disruption"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": "3",
+        "AbilityCooldown": "0",
         "AbilityDuration": "0",
         "AbilityCastRange": "0",
         "AbilityUnitTargetLimit": "1",
@@ -1072,7 +1072,7 @@
         "MagicResistReduction": "-18",
         "HealAmpReceivePenaltyPercent": "-30",
         "HealAmpRegenPenaltyPercent": "-30",
-        "DebuffDuration": "10",
+        "DebuffDuration": "8",
         "DiminishingMultiplier": "0.5",
         "HeadShotBonusDamage": "0"
     },
@@ -1229,7 +1229,7 @@
         "BonusHealth": "125",
         "HealthDrainedPerSecond": "50",
         "TickRate": "0.1",
-        "BonusFireRate": "35",
+        "BonusFireRate": "40",
         "StatusResistancePercent": "50",
         "HealAmpReceivePenaltyPercent": "-50",
         "HealAmpRegenPenaltyPercent": "-50",
@@ -1293,7 +1293,7 @@
         "WeaponPower": "0",
         "BonusHealth": "100",
         "OutOfCombatHealthRegen": "4",
-        "TechPowerPercent": "10"
+        "TechPowerPercent": "13"
     },
     "upgrade_boxing_glove": {
         "Name": "Lifestrike",
@@ -2289,7 +2289,7 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
-        "CooldownReduction": "26",
+        "CooldownReduction": "25",
         "OutOfCombatHealthRegen": "4"
     },
     "upgrade_corpse_explosion": {
@@ -2362,7 +2362,7 @@
         "SpiritPower": "20",
         "BonusMoveSpeed": "2m",
         "BuffDuration": "6",
-        "SpellParryDuration": "0.8"
+        "SpellParryDuration": "1.0"
     },
     "upgrade_crackshot": {
         "Name": "Mystic Shot",
@@ -3118,8 +3118,8 @@
             "Movement"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 10.0,
-        "AbilityDuration": "4",
+        "AbilityCooldown": 16.0,
+        "AbilityDuration": "6",
         "AbilityCastRange": "0",
         "AbilityUnitTargetLimit": "1",
         "AbilityCastDelay": "0",
@@ -3135,7 +3135,8 @@
         "MoveWhileZoomedSpeedPenaltyReductionPercent": "100",
         "ActiveBonusMoveSpeed": "3.5m",
         "SlideScale": "35",
-        "BonusHealth": "125"
+        "BulletResist": "10",
+        "SlowResistancePercent": "40"
     },
     "upgrade_focus_lens": {
         "Name": "Focus Lens",
@@ -3495,7 +3496,7 @@
     },
     "upgrade_headhunter": {
         "Name": "Headhunter",
-        "Description": "Landing a <span class=\"highlight\">headshot</span> deals bonus damage, heals you, and briefly grants you bonus move speed.",
+        "Description": "Your next <span class=\"highlight\">headshot</span> against an enemy Hero deals {g:citadel_inline_attribute:'BonusWeaponDamage'}, {g:citadel_inline_attribute:'Heal'} you, and briefly grants {g:citadel_inline_attribute:'BonusMoveSpeed'}.",
         "Cost": "3200",
         "Tier": "3",
         "Activation": "Passive",
@@ -3521,16 +3522,17 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
-        "HeadShotBonusDamage": "100",
+        "HeadShotBonusDamage": "75",
         "BaseAttackDamagePercent": "5",
         "BonusHealth": "75",
         "HealPercentPerHeadshot": "4",
         "BonusMoveSpeed": "2m",
-        "MovementSpeedBonusDuration": "3"
+        "MovementSpeedBonusDuration": "3",
+        "ProcChance": "100"
     },
     "upgrade_headshot_booster": {
         "Name": "Headshot Booster",
-        "Description": "Deal bonus <span class=\"highlight\">Weapon Damage</span> with <span class=\"highlight\">headshots</span>.",
+        "Description": "Your next <span class=\"highlight\">headshot</span> against an enemy Hero deals {g:citadel_inline_attribute:'BonusWeaponDamage'}.",
         "Cost": "800",
         "Tier": "1",
         "Activation": "Passive",
@@ -3556,11 +3558,12 @@
         "TechPower": "0",
         "WeaponPower": "0",
         "HeadShotBonusDamage": "50",
-        "BonusHealth": "40"
+        "BonusHealth": "40",
+        "ProcChance": "100"
     },
     "upgrade_headshot_booster2": {
         "Name": "Weakening Headshot",
-        "Description": "Upon landing a <span class=\"highlight\">headshot</span> reduce target's <span class=\"highlight\">Bullet Resist</span>.",
+        "Description": "Landing a <span class=\"highlight\">Headshot</span> on Heroes reduces their <span class=\"highlight\">Bullet Resist</span>.",
         "Cost": "1600",
         "Tier": "2",
         "Activation": "Passive",
@@ -3790,8 +3793,8 @@
     "upgrade_health_nova": {
         "Name": "Healing Nova",
         "Description": "<span class=\"highlight\">Heal</span> yourself and nearby allies.",
-        "Cost": "1600",
-        "Tier": "2",
+        "Cost": "3200",
+        "Tier": "3",
         "Activation": "InstantCast",
         "Slot": "Armor",
         "Components": [
@@ -3804,7 +3807,7 @@
             "Healing"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": "70",
+        "AbilityCooldown": "60",
         "AbilityDuration": "0",
         "AbilityCastRange": "0",
         "AbilityUnitTargetLimit": "1",
@@ -3817,10 +3820,11 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
-        "TotalHealthRegen": "260",
+        "TotalHealthRegen": "325",
         "HeroTargetBonus": "0",
         "RegenDuration": "2",
-        "AuraRadius": "18m"
+        "AuraRadius": "18m",
+        "SpiritPower": "8"
     },
     "upgrade_health_regen_1": {
         "Name": "Health Regen",
@@ -4905,7 +4909,7 @@
         "TechPower": "0",
         "WeaponPower": "0",
         "Radius": "1m",
-        "ProcChance": "90",
+        "ProcChance": "100",
         "HealFromHero": "40",
         "HealFromNPC": "15",
         "BaseAttackDamagePercent": "8"
@@ -5180,12 +5184,12 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
-        "NonPlayerBonusWeaponPower": "35",
-        "OutOfCombatHealthRegen": "4",
-        "NonPlayerBulletResist": "35",
+        "NonPlayerBonusWeaponPower": "30",
+        "OutOfCombatHealthRegen": "2",
+        "NonPlayerBulletResist": "30",
         "BonusSoulsPct": "150",
-        "BonusHealth": "250",
-        "BonusFireRate": "25",
+        "BonusHealth": "100",
+        "BonusFireRate": "10",
         "BonusAbilityCharges": "1",
         "TechRangeMultiplier": "15",
         "TechRadiusMultiplier": "15"
@@ -6007,7 +6011,7 @@
     },
     "upgrade_rupture": {
         "Name": "Decay",
-        "Description": "Inflict <span class=\"highlight\">damage over time</span> to a target, dealing damage based on their current health.",
+        "Description": "Inflict <span class=\"highlight\">damage over time</span> to a target, dealing damage based on their current health.<br>Decay's damage is non-lethal and does not apply item procs.",
         "Cost": "3200",
         "Tier": "3",
         "Activation": "Press",
@@ -6177,7 +6181,7 @@
         "StackLostPerDeath": "2",
         "MaxStacks": "9999",
         "StealDuration": "20",
-        "ProcCooldown": "0.7",
+        "ProcCooldown": "0.8",
         "HealthSteal": "55",
         "ParticleRadius": "1m"
     },

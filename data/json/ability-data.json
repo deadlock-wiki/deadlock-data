@@ -5,7 +5,7 @@
         "BuildUpDuration": 17,
         "BurnDuration": 3,
         "ChannelMoveSpeed": 50,
-        "CritBuildup": 14,
+        "CritBuildup": 15.4,
         "DPS": 15,
         "IsDisabled": false,
         "Key": "ability_afterburn",
@@ -1066,7 +1066,7 @@
     "ability_gravity_lasso": {
         "AbilityCastDelay": 0.5,
         "AbilityCastRange": 20,
-        "AbilityCooldown": 100,
+        "AbilityCooldown": 105,
         "AbilityDuration": 2.25,
         "AbilityUnitTargetLimit": 1,
         "BouncePadExtendDuration": 1.0,
@@ -1097,14 +1097,14 @@
                 "AbilityDuration": 0.75
             },
             {
-                "AbilityCooldown": -30
+                "AbilityCooldown": -35
             }
         ]
     },
     "ability_guided_arrow": {
         "AbilityCastDelay": 1.5,
-        "AbilityChannelTime": 14,
-        "AbilityCooldown": 127.0,
+        "AbilityChannelTime": 16,
+        "AbilityCooldown": 125.0,
         "AbilityUnitTargetLimit": 1,
         "BonusTechPowerPerKill": 5,
         "Damage": 250,
@@ -1118,7 +1118,7 @@
                 "Damage": 100
             },
             {
-                "AbilityCooldown": -47.0
+                "AbilityCooldown": -50.0
             },
             {
                 "LowHealthEnemyThresholdPct": 22
@@ -1435,7 +1435,7 @@
         "Key": "ability_immobilize_trap",
         "Lifetime": 20,
         "Name": "Spirit Snare",
-        "Radius": 6.2,
+        "Radius": 6.5,
         "SkipFrames": 6,
         "SlowPercent": 30,
         "TetherDuration": 1.75,
@@ -1679,7 +1679,7 @@
     "ability_magician_animalhexarea": {
         "AbilityCastDelay": 0.15,
         "AbilityCastRange": 30,
-        "AbilityCooldown": 35,
+        "AbilityCooldown": 30,
         "AbilityUnitTargetLimit": 1,
         "AirDampingDuration": 1,
         "ChannelMoveSpeed": 99999,
@@ -1767,7 +1767,7 @@
                 "AbilityCooldown": -10
             },
             {
-                "AbilityDuration": 5,
+                "AbilityDuration": 7,
                 "AbilityCastRange": "5m",
                 "LeashRadius": "5m"
             },
@@ -1845,7 +1845,7 @@
         "Name": "Vexing Bolt",
         "ProjectileLifetime": 3,
         "ProjectileRedirectCount": 1,
-        "Radius": 3,
+        "Radius": 3.5,
         "RedirectVelocity": 1500,
         "Upgrades": [
             {
@@ -1925,17 +1925,17 @@
         "AbilityCooldown": 45,
         "AbilityUnitTargetLimit": 1,
         "BonusMoveSpeedPercent": 65,
-        "BuffDuration": 15,
+        "BuffDuration": 14,
         "ChannelMoveSpeed": 50,
-        "EnemyDamageSpeedPenalty": 50,
-        "InterruptCooldown": 5,
+        "EnemyDamageSpeedPenalty": 65,
+        "InterruptCooldown": 6,
         "IsDisabled": false,
         "Key": "ability_nano_catform",
         "Name": "Ava",
-        "SpeedLostDuration": 1.5,
+        "SpeedLostDuration": 2,
         "Upgrades": [
             {
-                "BuffDuration": 20
+                "BuffDuration": 14
             },
             {
                 "BonusMoveSpeedPercent": 45
@@ -3129,7 +3129,7 @@
     "ability_ult_combo": {
         "AbilityCastRange": 5,
         "AbilityChannelTime": 2.5,
-        "AbilityCooldown": 75.0,
+        "AbilityCooldown": 80.0,
         "AbilityUnitTargetLimit": 1,
         "BonusHealthOnKill": 50,
         "DPS": 40,
@@ -3555,7 +3555,7 @@
         "BonusMoveSpeed": 0,
         "BulletResist": 30,
         "ConeAngle": 115,
-        "CooldownOnInterrupt": 20,
+        "CooldownOnInterrupt": 30,
         "HealthStealPct": 15,
         "HealthStealPctHero": 65,
         "IsDisabled": false,
@@ -3822,7 +3822,7 @@
     "citadel_ability_bebop_laser_beam": {
         "AbilityCastDelay": 1.0,
         "AbilityChannelTime": 11,
-        "AbilityCooldown": 130.0,
+        "AbilityCooldown": 110.0,
         "AbilityUnitTargetLimit": 1,
         "AirSpeedMax": 70,
         "BeamCloseDamagePercent": 75,
@@ -3872,7 +3872,7 @@
         "Name": "Shoulder Charge",
         "SideMoveSpeedReduction": -65,
         "SpeedInitial": 18.75,
-        "StunDuration": 0.85,
+        "StunDuration": 0.6,
         "TossUpMagnitude": 0.5,
         "TurnRateMax": 140,
         "Upgrades": [
@@ -3881,12 +3881,10 @@
                 "WeaponPowerIncreaseDuration": 8
             },
             {
-                "AbilityCooldown": -12
+                "StunDuration": 0.45
             },
             {
-                "SlowPercent": 40,
-                "SlowDuration": 4,
-                "StunDuration": 0.2
+                "AbilityCooldown": -18
             }
         ]
     },
@@ -3916,7 +3914,7 @@
         ]
     },
     "citadel_ability_bull_leap": {
-        "AbilityCooldown": 160.0,
+        "AbilityCooldown": 170.0,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
         "Damage": 60,
@@ -4731,7 +4729,7 @@
         "Name": "Infernal Resilience",
         "RegenDamageInterval": 1.0,
         "RegenIncomingDamageDuration": 20,
-        "RegenIncomingDamagePercent": 10,
+        "RegenIncomingDamagePercent": 12,
         "Upgrades": [
             {
                 "BonusHealthRegen": 1.5
@@ -4740,7 +4738,7 @@
                 "BonusMaxHealth": 150
             },
             {
-                "RegenIncomingDamagePercent": 5
+                "RegenIncomingDamagePercent": 6
             }
         ]
     },
@@ -4840,7 +4838,7 @@
         "AbilityCastDelay": 0.3,
         "AbilityCastRange": 20,
         "AbilityCooldown": 100.0,
-        "AbilityDuration": 3,
+        "AbilityDuration": 2.75,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
         "Damage": 140,
@@ -5130,7 +5128,7 @@
         "RagePerHeavyMelee": 2.75,
         "RagePerLightMelee": 1.5,
         "RagePerSpiritDamage": 0.014,
-        "RagePerWeaponDamage": 0.017,
+        "RagePerWeaponDamage": 0.0153,
         "SlashRange": 80,
         "Upgrades": [
             {
@@ -5235,12 +5233,12 @@
     },
     "citadel_ability_storm_cloud": {
         "AbilityChannelTime": 7,
-        "AbilityCooldown": 148.0,
+        "AbilityCooldown": 155.0,
         "AbilityUnitTargetLimit": 1,
         "BulletResistOnActive": 20,
         "CameraDistance": 600,
         "CloudHeight": 120,
-        "DPS": 120,
+        "DPS": 115,
         "DamageInterval": 0.25,
         "EndingSoonTime": 2,
         "ExpandTime": 1.5,
@@ -5263,7 +5261,7 @@
                 "AbilityChannelTime": 7
             },
             {
-                "DPS": 75,
+                "DPS": 70,
                 "FlightControlEnabled": 1
             }
         ]
@@ -6829,7 +6827,7 @@
     "viscous_goo_bowling_ball": {
         "AbilityCastDelay": 0.55,
         "AbilityCooldown": 105.0,
-        "AbilityDuration": 10,
+        "AbilityDuration": 9,
         "AbilityUnitTargetLimit": 1,
         "AccelerationPercentage": -60,
         "AirJumpForce": 500,
