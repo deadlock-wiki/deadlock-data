@@ -13239,6 +13239,99 @@
     },
     "hero_priest": {
         "Name": "Priest",
+        "1": {
+            "Key": "ability_priest_knockback",
+            "Name": "Buckshot",
+            "DescKey": "ability_priest_knockback_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 60,
+                            "Type": "bullet_damage",
+                            "Scale": {
+                                "Value": 0.3,
+                                "Type": "weapon_damage_increase"
+                            }
+                        },
+                        {
+                            "Title": "On Wall Hit:",
+                            "Key": "BonusDamage",
+                            "Name": "Bonus Damage",
+                            "Value": 80,
+                            "Type": "bullet_damage",
+                            "Scale": {
+                                "Value": 0.8,
+                                "Type": "weapon_damage_increase"
+                            }
+                        }
+                    ]
+                },
+                "Alt": null,
+                "DescKey": "ability_priest_knockback_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCastRange": "2.5m"
+                },
+                {
+                    "Damage": 60
+                },
+                {
+                    "StunDuration": 0.5
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 50,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 99
+                },
+                "BonusKnockbackDistance": {
+                    "Name": null,
+                    "Value": 3.5
+                },
+                "KnockbackSpeed": {
+                    "Name": null,
+                    "Value": 1200
+                },
+                "PushBackDistance": {
+                    "Name": null,
+                    "Value": 12
+                },
+                "StunDuration": {
+                    "Name": "Stun Duration",
+                    "Value": 0.75
+                },
+                "TargetingConeAngle": {
+                    "Name": "Attack Angle",
+                    "Value": 80
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.2,
+                "Type": "cast"
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 10,
+                "Type": "range"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 15,
+                "Type": "cooldown"
+            }
+        },
         "2": {
             "Key": "ability_priest_selfheal",
             "Name": "Potent Vapors",
@@ -13390,6 +13483,98 @@
                 "Name": "Cooldown",
                 "Value": 26.0,
                 "Type": "cooldown"
+            }
+        },
+        "4": {
+            "Key": "ability_priest_weaponswap",
+            "Name": "Witching Hour",
+            "DescKey": "ability_priest_weaponswap_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "StakeCount",
+                            "Name": "Total Stakes",
+                            "Value": 4
+                        },
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 140,
+                            "Type": "bullet_damage",
+                            "Scale": {
+                                "Value": 2.0,
+                                "Type": "weapon_damage_increase"
+                            }
+                        },
+                        {
+                            "Title": "On Hit:",
+                            "Key": "SlowPercent",
+                            "Name": "Move Speed",
+                            "Value": 60,
+                            "Type": "slow"
+                        }
+                    ]
+                },
+                "Alt": [],
+                "DescKey": "ability_priest_weaponswap_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -25
+                },
+                {
+                    "Damage": 40
+                },
+                {
+                    "StakeCount": 2
+                }
+            ],
+            "Cast": {
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Value": 0.6,
+                    "Type": "cast"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 50,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "ExplodeRadius": {
+                    "Name": "Explosion Radius",
+                    "Value": 0.2
+                },
+                "PushForce": {
+                    "Name": null,
+                    "Value": 300000
+                },
+                "SlowDuration": {
+                    "Name": "Debuff Duration",
+                    "Value": 1
+                },
+                "SwapEndDelay": {
+                    "Name": null,
+                    "Value": 0.6
+                }
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 60,
+                "Type": "cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 8,
+                "Type": "duration"
             }
         }
     },
