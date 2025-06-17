@@ -1404,7 +1404,7 @@
             "Debuff": {
                 "MoveSpeedReduction": {
                     "Name": null,
-                    "Value": 25,
+                    "Value": 40,
                     "Type": "slow"
                 }
             },
@@ -1652,7 +1652,7 @@
             },
             "AbilityCastRange": {
                 "Name": "Cast Range",
-                "Value": 7,
+                "Value": 6,
                 "Type": "range"
             },
             "AbilityCooldown": {
@@ -2033,10 +2033,10 @@
                         {
                             "Key": "Damage",
                             "Name": "Damage",
-                            "Value": 70,
+                            "Value": 60,
                             "Type": "tech_damage",
                             "Scale": {
-                                "Value": 0.837,
+                                "Value": 1.1,
                                 "Type": "spirit"
                             }
                         },
@@ -2048,7 +2048,20 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [
+                    {
+                        "Key": "SlowPercent",
+                        "Name": "Move Speed",
+                        "Value": null,
+                        "Type": "slow"
+                    },
+                    {
+                        "Key": "SlowDuration",
+                        "Name": "Debuff Duration",
+                        "Value": null,
+                        "Type": "duration"
+                    }
+                ],
                 "DescKey": "citadel_ability_card_toss_desc"
             },
             "Upgrades": [
@@ -2059,7 +2072,10 @@
                     "Damage": 50
                 },
                 {
-                    "CardResourceGenPctScale": 50
+                    "CardResourceGenPctScale": 50,
+                    "SlowPercent": 25,
+                    "SlowDuration": 1,
+                    "DescKey": "citadel_ability_card_toss_t3_desc"
                 }
             ],
             "Move": {
@@ -2267,7 +2283,7 @@
                         "Value": 0.0465,
                         "Type": null
                     },
-                    "MagicDamagePerBullet": 4
+                    "MagicDamagePerBullet": 3
                 },
                 {
                     "BulletLifestealPercent": 15,
@@ -2429,7 +2445,7 @@
                             "Value": 150,
                             "Type": "health",
                             "Scale": {
-                                "Value": 20,
+                                "Value": 12,
                                 "Type": "power_increase"
                             }
                         },
@@ -4071,13 +4087,13 @@
             },
             "Upgrades": [
                 {
-                    "AbilityCooldown": -7.5
+                    "AbilityCooldown": -7
                 },
                 {
                     "DPS": 40
                 },
                 {
-                    "BeamSplit": "13m",
+                    "BeamSplit": "10m",
                     "Scale": {
                         "Prop": "BeamSplit",
                         "Value": 0.93,
@@ -4143,7 +4159,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 24.0,
+                "Value": 25.0,
                 "Type": "cooldown"
             }
         },
@@ -5822,6 +5838,10 @@
                     "Name": null,
                     "Value": 1
                 },
+                "CatFormDamageDealtReduction": {
+                    "Name": null,
+                    "Value": -100
+                },
                 "EnemyDamageSpeedPenalty": {
                     "Name": null,
                     "Value": 65
@@ -5893,7 +5913,7 @@
                 },
                 {
                     "BuffDuration": "5s",
-                    "OutgoingDamagePercent": 30,
+                    "OutgoingDamagePercent": 24,
                     "DescKey": "ability_nano_shadow_pulse_t3_desc"
                 }
             ],
@@ -7889,10 +7909,10 @@
                         {
                             "Key": "PulseDPS",
                             "Name": "DPS",
-                            "Value": 90,
+                            "Value": 80,
                             "Type": "tech_damage",
                             "Scale": {
-                                "Value": 1.4,
+                                "Value": 1.6,
                                 "Type": "spirit"
                             }
                         },
@@ -7943,7 +7963,7 @@
                     "Radius": "3m"
                 },
                 {
-                    "PulseDPS": 60,
+                    "PulseDPS": 50,
                     "AbilityCooldown": -35.0,
                     "DescKey": "ability_warden_riot_protocol_t2_desc"
                 },
@@ -7962,10 +7982,6 @@
                 "ConeAngle": {
                     "Name": "Cone Angle",
                     "Value": 115
-                },
-                "CooldownOnInterrupt": {
-                    "Name": null,
-                    "Value": 30
                 }
             },
             "AbilityCastDelay": {
@@ -8945,7 +8961,7 @@
                 },
                 "SecondHitDamagePercentage": {
                     "Name": null,
-                    "Value": 0.7
+                    "Value": 0.5
                 },
                 "ThirdHitDamagePercentage": {
                     "Name": null,
@@ -9213,10 +9229,10 @@
                         {
                             "Key": "Damage",
                             "Name": "Damage",
-                            "Value": 140,
+                            "Value": 120,
                             "Type": "tech_damage",
                             "Scale": {
-                                "Value": 1.023,
+                                "Value": 1,
                                 "Type": "spirit"
                             }
                         },
@@ -12674,7 +12690,7 @@
                         "Value": 0.0465,
                         "Type": null
                     },
-                    "MagicDamagePerBullet": 4
+                    "MagicDamagePerBullet": 3
                 },
                 {
                     "BulletLifestealPercent": 15,

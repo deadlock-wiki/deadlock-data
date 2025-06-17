@@ -1253,7 +1253,7 @@
     },
     "ability_health_swap": {
         "AbilityCastDelay": 0.2,
-        "AbilityCastRange": 7,
+        "AbilityCastRange": 6,
         "AbilityCooldown": 170.0,
         "AbilityDuration": 0.25,
         "AbilityUnitTargetLimit": 1,
@@ -1348,7 +1348,7 @@
     },
     "ability_icebeam": {
         "AbilityChannelTime": 5.0,
-        "AbilityCooldown": 24.0,
+        "AbilityCooldown": 25.0,
         "AbilityUnitTargetLimit": 1,
         "BeamSplit": 0,
         "CameraDistance": 250,
@@ -1370,13 +1370,13 @@
         "TickRate": 0.1,
         "Upgrades": [
             {
-                "AbilityCooldown": -7.5
+                "AbilityCooldown": -7
             },
             {
                 "DPS": 40
             },
             {
-                "BeamSplit": "13m",
+                "BeamSplit": "10m",
                 "Scale": {
                     "Prop": "BeamSplit",
                     "Value": 0.93,
@@ -1626,7 +1626,7 @@
         "LifeDrainHealthMult": 80,
         "LifeDrainPerSecond": 35,
         "MaxRange": 30,
-        "MoveSpeedReduction": 25,
+        "MoveSpeedReduction": 40,
         "Name": "Life Drain",
         "TickRate": 0.1,
         "Upgrades": [
@@ -1926,6 +1926,7 @@
         "AbilityUnitTargetLimit": 1,
         "BonusMoveSpeedPercent": 65,
         "BuffDuration": 14,
+        "CatFormDamageDealtReduction": -100,
         "ChannelMoveSpeed": 50,
         "EnemyDamageSpeedPenalty": 65,
         "InterruptCooldown": 6,
@@ -2140,13 +2141,13 @@
             },
             {
                 "BuffDuration": "5s",
-                "OutgoingDamagePercent": 30
+                "OutgoingDamagePercent": 24
             }
         ]
     },
     "ability_nano_shadow_step": {
         "AbilityCastDelay": 0.2,
-        "AbilityCooldown": 100.0,
+        "AbilityCooldown": 110.0,
         "AbilityDuration": 12,
         "AbilityUnitTargetLimit": 1,
         "BulletArmorReductionDuration": 6,
@@ -3555,13 +3556,12 @@
         "BonusMoveSpeed": 0,
         "BulletResist": 30,
         "ConeAngle": 115,
-        "CooldownOnInterrupt": 30,
         "HealthStealPct": 15,
         "HealthStealPctHero": 65,
         "IsDisabled": false,
         "Key": "ability_warden_riot_protocol",
         "Name": "Last Stand",
-        "PulseDPS": 90,
+        "PulseDPS": 80,
         "PulseInterval": 0.5,
         "Radius": 13,
         "TechResist": 30,
@@ -3570,7 +3570,7 @@
                 "Radius": "3m"
             },
             {
-                "PulseDPS": 60,
+                "PulseDPS": 50,
                 "AbilityCooldown": -35.0
             },
             {
@@ -3953,7 +3953,7 @@
         "CardResourcePerHeavyMelee": 25,
         "CardResourcePerLightMelee": 10,
         "ChannelMoveSpeed": 50,
-        "Damage": 70,
+        "Damage": 60,
         "IsDisabled": false,
         "Key": "citadel_ability_card_toss",
         "Name": "Card Trick",
@@ -3969,7 +3969,9 @@
                 "Damage": 50
             },
             {
-                "CardResourceGenPctScale": 50
+                "CardResourceGenPctScale": 50,
+                "SlowPercent": 25,
+                "SlowDuration": 1
             }
         ]
     },
@@ -5547,7 +5549,7 @@
                     "Value": 0.0465,
                     "Type": null
                 },
-                "MagicDamagePerBullet": 4
+                "MagicDamagePerBullet": 3
             },
             {
                 "BulletLifestealPercent": 15,
@@ -6837,7 +6839,7 @@
         "BreakablePropDamageRadius": 75,
         "BulletResist": 60,
         "ChannelMoveSpeed": 275,
-        "Damage": 140,
+        "Damage": 120,
         "FrictionPercentage": -85,
         "IsDisabled": false,
         "JumpForce": 500,
@@ -6874,7 +6876,7 @@
         "Name": "Splatter",
         "PuddleDuration": 10,
         "Radius": 5,
-        "SecondHitDamagePercentage": 0.7,
+        "SecondHitDamagePercentage": 0.5,
         "SlowPercent": 35,
         "ThirdHitDamagePercentage": 0.5,
         "Upgrades": [
