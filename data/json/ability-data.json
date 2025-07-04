@@ -6,7 +6,7 @@
         "BurnDuration": 3,
         "ChannelMoveSpeed": 50,
         "CritBuildup": 15.4,
-        "DPS": 15,
+        "DPS": 12.0,
         "IsDisabled": false,
         "Key": "ability_afterburn",
         "Name": "Afterburn",
@@ -19,7 +19,7 @@
                 "BurnDuration": 1
             },
             {
-                "DPS": 30
+                "DPS": 28
             }
         ]
     },
@@ -114,12 +114,13 @@
     "ability_blood_bomb": {
         "AbilityCooldown": 10.5,
         "AbilityUnitTargetLimit": 1,
-        "ArmingDuration": 0.5,
+        "ArmingDuration": 0.65,
         "BeepSoundBuildupCount": 4,
         "BeepSoundIntervalBias": 0.55,
         "BeepSoundMaxFrequency": 0.1,
+        "BloodSpillDPSPercent": 0.0,
         "ChannelMoveSpeed": 50,
-        "Damage": 100,
+        "Damage": 90,
         "IsDisabled": false,
         "Key": "ability_blood_bomb",
         "Name": "Essence Bomb",
@@ -130,10 +131,10 @@
                 "Radius": "2m"
             },
             {
-                "Damage": 60
+                "Damage": 55
             },
             {
-                "BloodSpillDPSPercent": 26,
+                "BloodSpillDPSPercent": 24,
                 "BloodSpillDuration": 6
             }
         ]
@@ -145,14 +146,14 @@
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
         "DebuffDuration": 9,
-        "HealthToDamage": 25,
+        "HealthToDamage": 23.0,
         "IsDisabled": false,
         "Key": "ability_blood_shards",
         "MaxStacks": 5,
         "MoveSpeedPenaltyPerStack": 15,
         "Name": "Malice",
         "NumBloodShards": 3,
-        "SelfDamagePct": 6,
+        "SelfDamagePct": 7,
         "SlowDuration": 4,
         "SpreadAngleDegrees": 6,
         "Upgrades": [
@@ -160,12 +161,12 @@
                 "AbilityCooldown": -3
             },
             {
-                "HealthToDamage": 30,
-                "VulnerabilityPerStack": 7
+                "HealthToDamage": 28,
+                "NumBloodShards": 4,
+                "SpreadAngleDegrees": 22
             },
             {
-                "NumBloodShards": 6,
-                "SpreadAngleDegrees": 22
+                "VulnerabilityPerStack": 7
             }
         ],
         "VulnerabilityPerStack": 8
@@ -435,7 +436,7 @@
         "Radius": 12,
         "Scale": 1,
         "SpeedOnLand": 0,
-        "StompDamage": 90,
+        "StompDamage": 80,
         "TossSpeed": 500,
         "UpFactor": 1.2,
         "Upgrades": [
@@ -448,7 +449,7 @@
                 "SpeedOnLandDuration": 4
             },
             {
-                "StompDamage": 80,
+                "StompDamage": 75,
                 "Scale": {
                     "Prop": "StompDamage",
                     "Value": 0.32178,
@@ -460,7 +461,7 @@
     },
     "ability_bullet_flurry": {
         "AbilityCastDelay": 0.4,
-        "AbilityCooldown": 150.0,
+        "AbilityCooldown": 165.0,
         "AbilityDuration": 3.0,
         "AbilityUnitTargetLimit": 1,
         "BonusFireRate": 35,
@@ -477,7 +478,7 @@
                 "WeaponDamageBonus": 4
             },
             {
-                "AbilityCooldown": -50.0
+                "AbilityCooldown": -45.0
             },
             {
                 "EvasionPercent": 60,
@@ -494,7 +495,7 @@
         "BonusMoveSpeed": 4,
         "BulletResist": 80,
         "ChannelMoveSpeed": -1,
-        "DPS": 80,
+        "DPS": 75,
         "EnemyDamageSpeedPenalty": 0.5,
         "IsDisabled": false,
         "Key": "ability_burrow",
@@ -512,7 +513,7 @@
                 "AbilityChannelTime": 3
             },
             {
-                "DPS": 80,
+                "DPS": 75,
                 "Radius": "2m"
             },
             {
@@ -558,7 +559,7 @@
         "CameraHeightOffset": 20,
         "CameraHorizontalOffset": 15,
         "ChannelMoveSpeed": 50,
-        "Damage": 90,
+        "Damage": 80,
         "FallSpeedMax": 60,
         "IsDisabled": false,
         "Key": "ability_charged_shot",
@@ -569,7 +570,7 @@
                 "AbilityCharges": 1
             },
             {
-                "Damage": 65
+                "Damage": 60
             },
             {
                 "AbilityCooldownBetweenCharge": -3,
@@ -586,7 +587,7 @@
         "AbilityCooldown": 20,
         "AbilityUnitTargetLimit": 1,
         "CrackshotNPCCDReduction": 50,
-        "Damage": 60,
+        "Damage": 55,
         "DebuffDuration": 2,
         "ExplosionRadius": 2,
         "FadingSlowPercent": 50,
@@ -598,7 +599,7 @@
                 "FadingSlowPercent": 25
             },
             {
-                "Damage": 60
+                "Damage": 55
             },
             {
                 "AbilityCooldownPerHeadshot": -4,
@@ -856,7 +857,7 @@
         "AbilityCooldownBetweenCharge": 3.5,
         "AbilityUnitTargetLimit": 1,
         "ArmTime": 0.5,
-        "BarrelDamage": 100,
+        "BarrelDamage": 90,
         "BarrelHeavyMeleeForceForward": 1100,
         "BarrelHeavyMeleeForceUp": 550,
         "BarrelLifetime": 8,
@@ -879,7 +880,7 @@
                 "AbilityCooldown": -10
             },
             {
-                "BarrelDamage": 80
+                "BarrelDamage": 75
             },
             {
                 "AbilityCharges": 3
@@ -887,10 +888,10 @@
         ]
     },
     "ability_fire_bomb": {
-        "AbilityCooldown": 127.0,
+        "AbilityCooldown": 140.0,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
-        "Damage": 160,
+        "Damage": 150,
         "ExplodeDelay": 3,
         "IsDisabled": false,
         "Key": "ability_fire_bomb",
@@ -899,14 +900,14 @@
         "StunDuration": 1.25,
         "Upgrades": [
             {
-                "AbilityCooldown": -38.0
+                "AbilityCooldown": -35.0
             },
             {
                 "StunDuration": 0.5,
                 "Radius": "3m"
             },
             {
-                "Damage": 115,
+                "Damage": 105,
                 "LifeStealPercentOnHit": 70
             }
         ]
@@ -918,7 +919,7 @@
         "AbilityUnitTargetLimit": 1,
         "AuraLingerDuration": 1.0,
         "ChannelMoveSpeed": 18,
-        "DPS": 40,
+        "DPS": 33,
         "DashAirSpeed": 8,
         "DashSpeed": 12,
         "FlameAuraRadius": 4.5,
@@ -938,7 +939,7 @@
                 "DebuffDuration": 6
             },
             {
-                "DPS": 40
+                "DPS": 37
             },
             {
                 "AbilityCooldown": -15.0,
@@ -1066,7 +1067,7 @@
     "ability_gravity_lasso": {
         "AbilityCastDelay": 0.5,
         "AbilityCastRange": 20,
-        "AbilityCooldown": 105,
+        "AbilityCooldown": 115,
         "AbilityDuration": 2.25,
         "AbilityUnitTargetLimit": 1,
         "BouncePadExtendDuration": 1.0,
@@ -1074,7 +1075,7 @@
         "CameraPreviewOffset": 25,
         "CameraPreviewSpeed": 0.6,
         "ChannelMoveSpeed": 9999,
-        "Damage": 90,
+        "Damage": 80,
         "ExtraTargetConeAngle": 60,
         "ExtraTargetHorizontalOffset": 30,
         "FollowDampingFactor": 8,
@@ -1091,23 +1092,23 @@
         "Name": "Spirit Lasso",
         "Upgrades": [
             {
-                "Damage": 80
+                "Damage": 75
             },
             {
                 "AbilityDuration": 0.75
             },
             {
-                "AbilityCooldown": -35
+                "AbilityCooldown": -30
             }
         ]
     },
     "ability_guided_arrow": {
         "AbilityCastDelay": 1.5,
         "AbilityChannelTime": 16,
-        "AbilityCooldown": 125.0,
+        "AbilityCooldown": 135.0,
         "AbilityUnitTargetLimit": 1,
         "BonusTechPowerPerKill": 5,
-        "Damage": 250,
+        "Damage": 230.0,
         "ExplosionRadius": 12,
         "IsDisabled": false,
         "Key": "ability_guided_arrow",
@@ -1115,10 +1116,10 @@
         "StunDuration": 0.75,
         "Upgrades": [
             {
-                "Damage": 100
+                "Damage": 90.0
             },
             {
-                "AbilityCooldown": -50.0
+                "AbilityCooldown": -45.0
             },
             {
                 "LowHealthEnemyThresholdPct": 22
@@ -1253,8 +1254,8 @@
     },
     "ability_health_swap": {
         "AbilityCastDelay": 0.2,
-        "AbilityCastRange": 6,
-        "AbilityCooldown": 170.0,
+        "AbilityCastRange": 5.5,
+        "AbilityCooldown": 185.0,
         "AbilityDuration": 0.25,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 2,
@@ -1270,7 +1271,7 @@
         "SilenceRadius": 0,
         "Upgrades": [
             {
-                "AbilityCooldown": -38.0
+                "AbilityCooldown": -35.0
             },
             {
                 "SelfBuffDuration": 8,
@@ -1284,7 +1285,7 @@
     },
     "ability_ice_dome": {
         "AbilityCastDelay": 0.2,
-        "AbilityCooldown": 140,
+        "AbilityCooldown": 150,
         "AbilityDuration": 5.5,
         "AbilityUnitTargetLimit": 1,
         "BlockerScaleFactor": 115,
@@ -1302,7 +1303,7 @@
                 "FireRateSlow": 40
             },
             {
-                "AbilityCooldown": -50.0
+                "AbilityCooldown": -45.0
             },
             {
                 "BonusHealthRegen": 50,
@@ -1321,7 +1322,7 @@
         "AbilityCooldownBetweenCharge": 7,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
-        "Damage": 80,
+        "Damage": 74,
         "IsDisabled": false,
         "Key": "ability_ice_grenade",
         "Name": "Frost Grenade",
@@ -1342,7 +1343,7 @@
                 }
             },
             {
-                "Damage": 175
+                "Damage": 160.0
             }
         ]
     },
@@ -1354,7 +1355,7 @@
         "CameraDistance": 250,
         "ChannelMoveSpeed": -1,
         "ChannelSlowPercent": 8,
-        "DPS": 50,
+        "DPS": 45.0,
         "IceBeamBuildupProcDuration": 2,
         "IsDisabled": false,
         "Key": "ability_icebeam",
@@ -1373,7 +1374,7 @@
                 "AbilityCooldown": -7
             },
             {
-                "DPS": 40
+                "DPS": 37
             },
             {
                 "BeamSplit": "10m",
@@ -1430,7 +1431,7 @@
         "ArmTime": 2.0,
         "ChannelMoveSpeed": 50,
         "ChargedShotHitRadiusScale": 30,
-        "Damage": 30,
+        "Damage": 25,
         "IsDisabled": false,
         "Key": "ability_immobilize_trap",
         "Lifetime": 20,
@@ -1465,7 +1466,7 @@
         "AbilityCooldownBetweenCharge": 6,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 18,
-        "Damage": 50,
+        "Damage": 46.0,
         "DebuffDuration": 8,
         "GrowthPerMeter": 0.5,
         "HeightOffGround": 50,
@@ -1497,7 +1498,7 @@
         "AbilityCooldown": 12.5,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
-        "Damage": 60,
+        "Damage": 55,
         "DamageHealMult": 1.2,
         "DamageHealMultNonHero": 0.5,
         "IsDisabled": false,
@@ -1510,7 +1511,7 @@
                 "AbilityCooldown": -3.75
             },
             {
-                "Damage": 25
+                "Damage": 23.0
             },
             {
                 "DamageBonus": 15,
@@ -1589,11 +1590,11 @@
     },
     "ability_lash_flog": {
         "AbilityCastDelay": 0.15,
-        "AbilityCastRange": 25,
+        "AbilityCastRange": 20,
         "AbilityCooldown": 26.0,
         "AbilityUnitTargetLimit": 30,
         "ChannelMoveSpeed": 50,
-        "Damage": 65,
+        "Damage": 60,
         "HealPctVsHeroes": 50,
         "HealPctVsNonHeroes": 16,
         "IsDisabled": false,
@@ -1609,7 +1610,7 @@
                 "AbilityCooldown": -14.0
             },
             {
-                "Damage": 105,
+                "Damage": 95,
                 "FireRateSlow": 35
             }
         ]
@@ -1624,14 +1625,14 @@
         "IsDisabled": false,
         "Key": "ability_life_drain",
         "LifeDrainHealthMult": 80,
-        "LifeDrainPerSecond": 35,
+        "LifeDrainPerSecond": 32,
         "MaxRange": 30,
         "MoveSpeedReduction": 40,
         "Name": "Life Drain",
         "TickRate": 0.1,
         "Upgrades": [
             {
-                "LifeDrainPerSecond": 20
+                "LifeDrainPerSecond": 18
             },
             {
                 "AbilityDuration": 2.0
@@ -1678,18 +1679,18 @@
     },
     "ability_magician_animalhexarea": {
         "AbilityCastDelay": 0.15,
-        "AbilityCastRange": 30,
+        "AbilityCastRange": 24,
         "AbilityCooldown": 30,
         "AbilityUnitTargetLimit": 1,
         "AirDampingDuration": 1,
         "ChannelMoveSpeed": 99999,
         "DamageAmpPercentage": 15,
-        "DetonationDelay": 0.7,
+        "DetonationDelay": 0.9,
         "HexDuration": 2,
         "HexMoveSpeedLimit": 6,
         "IsDisabled": false,
         "Key": "ability_magician_animalhexarea",
-        "MoveSpeedBonusPct": 22,
+        "MoveSpeedBonusPct": 36,
         "Name": "Rabbit Hex",
         "Radius": 6,
         "SelfBumpImpulse": 500,
@@ -1753,7 +1754,7 @@
         "AbilityDuration": 6,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 9999,
-        "Damage": 20,
+        "Damage": 18,
         "IsDisabled": false,
         "Key": "ability_magician_cloneturret",
         "LeashRadius": 20,
@@ -1773,14 +1774,14 @@
             },
             {
                 "BonusFireRate": 45,
-                "Damage": 15
+                "Damage": 14
             }
         ]
     },
     "ability_magician_copyult": {
         "AbilityCastDelay": 0.15,
         "AbilityCastRange": 20,
-        "AbilityCooldown": 90,
+        "AbilityCooldown": 100,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 9999,
         "CopiedUltWindow": 10,
@@ -1835,13 +1836,13 @@
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
         "CloneBoltDelay": 0.1,
-        "CloneDamagePercentage": 50,
+        "CloneDamagePercentage": 50.0,
         "InitialProjectileVelocity": 1000,
         "IsDisabled": false,
         "Key": "ability_magician_magicbolt",
-        "MaxDamage": 130,
+        "MaxDamage": 120,
         "MaxDamageTime": 2,
-        "MinDamage": 65,
+        "MinDamage": 60,
         "Name": "Vexing Bolt",
         "ProjectileLifetime": 3,
         "ProjectileRedirectCount": 1,
@@ -1856,8 +1857,8 @@
                 "AbilityCooldown": -13
             },
             {
-                "MaxDamage": 150,
-                "CloneDamagePercentage": 50
+                "MaxDamage": 140.0,
+                "CloneDamagePercentage": 50.0
             }
         ]
     },
@@ -1952,7 +1953,7 @@
         "AbilityCooldown": 10,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 99999,
-        "Damage": 60,
+        "Damage": 55,
         "GrenadeAngleVariance": 0.08,
         "GrenadeCount": 4,
         "IsDisabled": false,
@@ -1968,7 +1969,7 @@
                 "AbilityCooldown": -3
             },
             {
-                "Damage": 20
+                "Damage": 18
             },
             {
                 "GrenadeCount": 2
@@ -1986,6 +1987,7 @@
         "DashRange": 9,
         "DashSpeed": 2400,
         "HealAmount": 40,
+        "ImpactDamage": 0.0,
         "IsDisabled": false,
         "Key": "ability_nano_dash",
         "MoveSpeedPenaltyMaxSpeed": 200,
@@ -2000,7 +2002,7 @@
                 "HealAmount": 25
             },
             {
-                "ImpactDamage": 60
+                "ImpactDamage": 55
             },
             {
                 "CooldownRefundPercent": 50
@@ -2120,12 +2122,12 @@
     },
     "ability_nano_shadow_pulse": {
         "AbilityChannelTime": 3,
-        "AbilityCooldown": 100,
+        "AbilityCooldown": 110,
         "AbilityUnitTargetLimit": 1,
         "AirSpeedMax": 100,
         "BonusMoveSpeedPercent": 30,
         "ChannelMoveSpeed": 9999,
-        "Damage": 150,
+        "Damage": 140.0,
         "FallSpeedMax": 10,
         "IsDisabled": false,
         "Key": "ability_nano_shadow_pulse",
@@ -2133,10 +2135,10 @@
         "Radius": 7,
         "Upgrades": [
             {
-                "AbilityCooldown": -30
+                "AbilityCooldown": -25
             },
             {
-                "Damage": 80,
+                "Damage": 75,
                 "BonusMoveSpeedPercent": 20
             },
             {
@@ -2714,7 +2716,7 @@
         "AbilityCooldown": 26.0,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
-        "Damage": 70,
+        "Damage": 65,
         "DoesNotBreakInvis": 1,
         "IsDisabled": false,
         "Key": "ability_sleep_dagger",
@@ -2786,7 +2788,7 @@
         "Name": "Fixation",
         "Upgrades": [
             {
-                "ProcDamage": 60,
+                "ProcDamage": 55,
                 "Scale": {
                     "Prop": "ProcDamage",
                     "Value": 0.365602,
@@ -3130,10 +3132,10 @@
     "ability_ult_combo": {
         "AbilityCastRange": 5,
         "AbilityChannelTime": 2.5,
-        "AbilityCooldown": 80.0,
+        "AbilityCooldown": 90.0,
         "AbilityUnitTargetLimit": 1,
         "BonusHealthOnKill": 50,
-        "DPS": 40,
+        "DPS": 35,
         "IsDisabled": false,
         "Key": "ability_ult_combo",
         "Name": "Combo",
@@ -3145,7 +3147,7 @@
                 "AbilityChannelTime": 0.75
             },
             {
-                "DPS": 40,
+                "DPS": 35,
                 "LifeStealPercentOnHit": 80
             }
         ]
@@ -3345,7 +3347,7 @@
         "IsDisabled": false,
         "Key": "ability_viper_hookdagger",
         "Name": "Hook Blade",
-        "OutgoingDamage": 50,
+        "OutgoingDamage": 45.0,
         "OutgoingProjectileLifetime": 0.4,
         "ReturnDamage": 90,
         "ReturnRadius": 1,
@@ -3366,14 +3368,14 @@
     },
     "ability_viper_petrifybola": {
         "AbilityCastDelay": 0.1,
-        "AbilityCooldown": 100,
+        "AbilityCooldown": 110,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 9999,
-        "Damage": 50,
+        "Damage": 45.0,
         "IsDisabled": false,
         "Key": "ability_viper_petrifybola",
         "Name": "Petrifying Bola",
-        "PetrifyDamage": 180,
+        "PetrifyDamage": 165,
         "PetrifyDamageBreakThreshold": 200,
         "PetrifyDuration": 2,
         "Radius": 6,
@@ -3381,10 +3383,10 @@
         "SlowPercent": 50,
         "Upgrades": [
             {
-                "PetrifyDamage": 60
+                "PetrifyDamage": 55
             },
             {
-                "AbilityCooldown": -30
+                "AbilityCooldown": -25
             },
             {
                 "PetrifyDuration": 1.0
@@ -3449,7 +3451,7 @@
         "Name": "Lethal Venom",
         "Upgrades": [
             {
-                "VenomMaxDamage": 40
+                "VenomMaxDamage": 35
             },
             {
                 "HealAmpRegenPenaltyPercent": -40,
@@ -3461,7 +3463,7 @@
         ],
         "VenomBuildupPerShot": 1,
         "VenomDuration": 3,
-        "VenomMaxDamage": 180,
+        "VenomMaxDamage": 165,
         "VenomMaxDamageHealthPercentage": 25,
         "VenomMinDamage": 20,
         "VenomMinDamageHealthPercentage": 100
@@ -3471,7 +3473,7 @@
         "AbilityCooldown": 12.0,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
-        "Damage": 65,
+        "Damage": 60,
         "DebuffDuration": 7,
         "ForwardVelocity": 800,
         "IsDisabled": false,
@@ -3486,7 +3488,7 @@
                 "StaminaReduction": 1
             },
             {
-                "Damage": 50
+                "Damage": 45.0
             },
             {
                 "FireRateSlow": 35,
@@ -3528,7 +3530,7 @@
         "AbilityCooldown": 37.0,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
-        "Damage": 120,
+        "Damage": 110,
         "EscapeRange": 19,
         "EscapeTime": 2.8,
         "ImmobilizeDuration": 1.75,
@@ -3550,7 +3552,7 @@
     },
     "ability_warden_riot_protocol": {
         "AbilityCastDelay": 2,
-        "AbilityCooldown": 140.0,
+        "AbilityCooldown": 155.0,
         "AbilityDuration": 6,
         "AbilityUnitTargetLimit": 1,
         "BonusMoveSpeed": 0,
@@ -3561,7 +3563,7 @@
         "IsDisabled": false,
         "Key": "ability_warden_riot_protocol",
         "Name": "Last Stand",
-        "PulseDPS": 80,
+        "PulseDPS": 74,
         "PulseInterval": 0.5,
         "Radius": 13,
         "TechResist": 30,
@@ -3570,8 +3572,8 @@
                 "Radius": "3m"
             },
             {
-                "PulseDPS": 50,
-                "AbilityCooldown": -35.0
+                "PulseDPS": 45.0,
+                "AbilityCooldown": -30.0
             },
             {
                 "BulletResist": 50.0,
@@ -3822,7 +3824,7 @@
     "citadel_ability_bebop_laser_beam": {
         "AbilityCastDelay": 1.0,
         "AbilityChannelTime": 11,
-        "AbilityCooldown": 110.0,
+        "AbilityCooldown": 120.0,
         "AbilityUnitTargetLimit": 1,
         "AirSpeedMax": 70,
         "BeamCloseDamagePercent": 75,
@@ -3831,7 +3833,7 @@
         "BeamLength": 70,
         "BeamWidth": 2.9,
         "ChannelMoveSpeed": 70,
-        "DPS": 205,
+        "DPS": 190,
         "FallSpeedMax": 1,
         "GroundDashReductionPercent": -40,
         "Interval": 0.1,
@@ -3843,10 +3845,10 @@
         "TrackingSpeed": 55,
         "Upgrades": [
             {
-                "AbilityCooldown": -30.0
+                "AbilityCooldown": -25.0
             },
             {
-                "DPS": 100
+                "DPS": 90.0
             },
             {
                 "BeamLifesteal": 65,
@@ -3866,7 +3868,7 @@
         "ChargeRadius": 2.2,
         "ChargeSpeedMax": 30,
         "CollidePlayersStopTime": 0.3,
-        "Damage": 40,
+        "Damage": 37,
         "IsDisabled": false,
         "Key": "citadel_ability_bull_charge",
         "Name": "Shoulder Charge",
@@ -3884,7 +3886,7 @@
                 "StunDuration": 0.45
             },
             {
-                "AbilityCooldown": -18
+                "AbilityCooldown": -22
             }
         ]
     },
@@ -3893,7 +3895,7 @@
         "AbilityDuration": 4,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
-        "DPS": 35,
+        "DPS": 32,
         "HealingFactor": 60,
         "IsDisabled": false,
         "Key": "citadel_ability_bull_heal",
@@ -3909,15 +3911,15 @@
                 "AbilityDuration": 2
             },
             {
-                "DPS": 40
+                "DPS": 38
             }
         ]
     },
     "citadel_ability_bull_leap": {
-        "AbilityCooldown": 170.0,
+        "AbilityCooldown": 185.0,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
-        "Damage": 60,
+        "Damage": 55,
         "ImpactHeight": 4,
         "ImpactRadius": 10.5,
         "IsDisabled": false,
@@ -3927,7 +3929,7 @@
         "TossSpeed": 450,
         "Upgrades": [
             {
-                "AbilityCooldown": -40.0
+                "AbilityCooldown": -35.0
             },
             {
                 "BonusMaxHealthPerHero": 100,
@@ -3953,7 +3955,7 @@
         "CardResourcePerHeavyMelee": 25,
         "CardResourcePerLightMelee": 10,
         "ChannelMoveSpeed": 50,
-        "Damage": 60,
+        "Damage": 55,
         "IsDisabled": false,
         "Key": "citadel_ability_card_toss",
         "Name": "Card Trick",
@@ -3966,11 +3968,11 @@
                 "AbilityCharges": 1
             },
             {
-                "Damage": 50
+                "Damage": 45.0
             },
             {
                 "CardResourceGenPctScale": 50,
-                "SlowPercent": 25,
+                "SlowPercent": 30,
                 "SlowDuration": 1
             }
         ]
@@ -3981,7 +3983,7 @@
         "ChannelMoveSpeed": 50,
         "ConeAngle": 45,
         "ConeRadius": 6,
-        "Damage": 16,
+        "Damage": 15,
         "IsDisabled": false,
         "Key": "citadel_ability_chain_lightning",
         "Name": "Chain Lightning",
@@ -3990,7 +3992,7 @@
                 "ConeRadius": "4m"
             },
             {
-                "Damage": 24
+                "Damage": 22
             },
             {
                 "MultiChain": 1
@@ -4032,18 +4034,17 @@
     "citadel_ability_chrono_kinetic_carbine": {
         "AbilityCooldown": 30.0,
         "AbilityUnitTargetLimit": 1,
-        "BaseBulletDamage": 5,
         "BonusBulletSpeed": 100,
         "BulletRadiusOverride": 13.7,
         "BulletTimeScale": 0.01,
         "ChannelMoveSpeed": 50,
-        "HeadshotBonus": 15,
+        "HeadshotBonus": 14,
         "IsDisabled": false,
         "Key": "citadel_ability_chrono_kinetic_carbine",
-        "MaxBonusBulletDamage": 100,
+        "MaxBonusBulletDamage": 29,
         "MaxChargeDuration": 2.5,
         "MaxSlowDuration": 0.4,
-        "MinBonusBulletDamage": 25,
+        "MinBonusBulletDamage": 29,
         "MinSlowDuration": 0.25,
         "MoveSpeedWhileShootingPenaltyReduction": 100,
         "Name": "Kinetic Carbine",
@@ -4062,7 +4063,11 @@
                 "SpeedBoostDuration": 2
             },
             {
-                "MaxBonusBulletDamage": 50
+                "Scale": {
+                    "Prop": "MaxBonusBulletDamage",
+                    "Value": 50,
+                    "Type": "weapon_power"
+                }
             }
         ]
     },
@@ -4078,7 +4083,7 @@
         "Key": "citadel_ability_chrono_pulse_grenade",
         "MovementSlowDuration": 2.0,
         "Name": "Pulse Grenade",
-        "PulseDamage": 45,
+        "PulseDamage": 40,
         "PulseInterval": 0.8,
         "Radius": 6,
         "RadiusIncreasePerPulse": 0,
@@ -4091,7 +4096,7 @@
                 "AbilityCooldown": -8
             },
             {
-                "PulseDamage": 45,
+                "PulseDamage": 40,
                 "RadiusIncreasePerPulse": "0.75m"
             }
         ]
@@ -4099,7 +4104,7 @@
     "citadel_ability_chrono_swap": {
         "AbilityCastDelay": 0.15,
         "AbilityCastRange": 25,
-        "AbilityCooldown": 65.0,
+        "AbilityCooldown": 70.0,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
         "DistanceToMaxTime": 30,
@@ -4111,14 +4116,14 @@
         "Name": "Paradoxical Swap",
         "SpellLifesteal": 80,
         "SwapTime": 1.0,
-        "SwapTotalDamage": 125,
+        "SwapTotalDamage": 115.0,
         "TickRate": 0.25,
         "Upgrades": [
             {
                 "AbilityCooldown": -15
             },
             {
-                "SwapTotalDamage": 100
+                "SwapTotalDamage": 90.0
             },
             {
                 "AbilityCastRange": "15m"
@@ -4133,8 +4138,9 @@
         "AbilityUnitTargetLimit": 1,
         "AuraEffectDuration": 1.25,
         "ChannelMoveSpeed": 50,
+        "DamagePctPerWallHit": 0.0,
         "DamageTickRate": 1.5,
-        "DamageWallHit": 50,
+        "DamageWallHit": 46.0,
         "FriendlyBulletDamageBonus": 20,
         "FriendlyBulletTimeScale": 3,
         "IsDisabled": false,
@@ -4154,7 +4160,7 @@
                 "TimeWallHeight": "1m"
             },
             {
-                "DamagePctPerWallHit": 10
+                "DamagePctPerWallHit": 9
             },
             {
                 "DebuffDuration": 2.5
@@ -4167,7 +4173,7 @@
         "AbilityDuration": 4.5,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
-        "Damage": 64,
+        "Damage": 60,
         "IsDisabled": false,
         "Key": "citadel_ability_fissure_wall",
         "MinRange": 6,
@@ -4200,7 +4206,7 @@
         "AbilityPostCastDuration": 0.2,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
-        "Damage": 70,
+        "Damage": 65,
         "IsDisabled": false,
         "Key": "citadel_ability_flying_strike",
         "Name": "Flying Strike",
@@ -4218,14 +4224,15 @@
                 "WeaponPowerIncreaseDuration": 10,
                 "CanGrappleAllyHeroes": 1
             }
-        ]
+        ],
+        "WeaponDamageBonus": 0.0
     },
     "citadel_ability_healing_slash": {
         "AbilityCastDelay": 0.3,
         "AbilityCooldown": 11.5,
         "AbilityPostCastDuration": 0.4,
         "AbilityUnitTargetLimit": 1,
-        "Damage": 60,
+        "Damage": 55,
         "DebuffDuration": 4,
         "FireRateSlow": 20,
         "HealFixedHealth": 55,
@@ -4283,7 +4290,7 @@
         "ChainDuration": 2.0,
         "ChainLength": 6,
         "ChannelMoveSpeed": 50,
-        "Damage": 60,
+        "Damage": 55,
         "EnemyDragSpeed": 1000,
         "IsDisabled": false,
         "Key": "citadel_ability_hornet_chain",
@@ -4312,7 +4319,7 @@
         "IsDisabled": false,
         "JumpVelocity": 1000,
         "Key": "citadel_ability_hornet_leap",
-        "MagicDamagePerBullet": 10.0,
+        "MagicDamagePerBullet": 9,
         "MaxFlyHeight": 1720,
         "MinVelocityZ": -20.0,
         "Name": "Flight",
@@ -4324,7 +4331,7 @@
                 "AbilityDuration": 6
             },
             {
-                "MagicDamagePerBullet": 12.0
+                "MagicDamagePerBullet": 11
             }
         ],
         "WeaponRecoilReduction": 40
@@ -4352,16 +4359,16 @@
     },
     "citadel_ability_hornet_snipe": {
         "AbilityCharges": 2,
-        "AbilityCooldown": 53.0,
+        "AbilityCooldown": 60.0,
         "AbilityCooldownBetweenCharge": 2.5,
         "AbilityUnitTargetLimit": 1,
         "BonusGoldOnKill": 250,
         "ChannelMoveSpeed": 50,
-        "Damage": 100,
+        "Damage": 90,
         "HeadshotBonus": 20,
         "IsDisabled": false,
         "Key": "citadel_ability_hornet_snipe",
-        "LowHealthEnemyDamageBonus": 100,
+        "LowHealthEnemyDamageBonus": 90,
         "LowHealthEnemyThresholdPct": 50,
         "MaxSoundDistance": 2000,
         "MinChargeDamagePercent": 50,
@@ -4372,10 +4379,10 @@
         "TimeToFullCharge": 1.0,
         "Upgrades": [
             {
-                "AbilityCooldown": -19.0
+                "AbilityCooldown": -20.0
             },
             {
-                "LowHealthEnemyDamageBonus": 110
+                "LowHealthEnemyDamageBonus": 100
             },
             {
                 "BonusGoldOnKill": 600
@@ -4392,8 +4399,8 @@
         "BulletResistReduction": -6,
         "ChannelMoveSpeed": 50,
         "DebuffDuration": 6,
-        "DotHealthPercent": 2.3,
-        "ImpactDamage": 40,
+        "DotHealthPercent": 2.1,
+        "ImpactDamage": 37,
         "IsDisabled": false,
         "Key": "citadel_ability_hornet_sting",
         "Name": "Crow Familiar",
@@ -4417,7 +4424,7 @@
     },
     "citadel_ability_infinity_slash": {
         "AbilityChannelTime": 1.5,
-        "AbilityCooldown": 100.0,
+        "AbilityCooldown": 110.0,
         "AbilityDuration": 5,
         "AbilitySpeedPct": 60,
         "AbilityUnitTargetLimit": 1,
@@ -4543,11 +4550,11 @@
         "MinAimAngle": 60,
         "Name": "Ground Strike",
         "Radius": 11,
-        "StompDamage": 75,
-        "StompDamagePerMeterPrimary": 6.0,
-        "StompDamagePerMeterSecondary": 4.5,
+        "StompDamage": 70.0,
+        "StompDamagePerMeterPrimary": 5.5,
+        "StompDamagePerMeterSecondary": 4.2,
         "StompDamagePrimaryRange": 25,
-        "StompVerticalThreshold": 130,
+        "StompVerticalThreshold": 118,
         "StrikeVelocity": 50,
         "Upgrades": [
             {
@@ -4571,12 +4578,12 @@
         "AbilityCastDelay": 0.3,
         "AbilityCastRange": 20,
         "AbilityChannelTime": 2.3,
-        "AbilityCooldown": 140.0,
+        "AbilityCooldown": 155.0,
         "AbilityUnitTargetLimit": 6,
         "BoostTime": 1.0,
         "ChannelMoveSpeed": 50,
         "HangTime": 0.6,
-        "ImpactDamage": 115,
+        "ImpactDamage": 105,
         "ImpactRadius": 6,
         "IsDisabled": false,
         "Key": "citadel_ability_lash_ultimate",
@@ -4599,7 +4606,7 @@
                 "ThrowDistance": "8m"
             },
             {
-                "AbilityCooldown": -30
+                "AbilityCooldown": -25
             },
             {
                 "StunDuration": 1
@@ -4613,7 +4620,7 @@
         "AbilityCooldownBetweenCharge": 8,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
-        "DPS": 80,
+        "DPS": 75,
         "HitSpeed": 80,
         "IsDisabled": false,
         "Key": "citadel_ability_lightning_ball",
@@ -4630,7 +4637,7 @@
                 "SlowPercent": 35
             },
             {
-                "DPS": 70,
+                "DPS": 65,
                 "ShockRadius": "1m"
             }
         ]
@@ -4740,7 +4747,7 @@
                 "BonusMaxHealth": 150
             },
             {
-                "RegenIncomingDamagePercent": 6
+                "RegenIncomingDamagePercent": 7
             }
         ]
     },
@@ -4751,7 +4758,7 @@
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
         "FallSpeedMax": 5,
-        "FullChargeDamage": 160,
+        "FullChargeDamage": 145,
         "IsDisabled": false,
         "Key": "citadel_ability_power_slash",
         "MediumChargeDamagePct": 60,
@@ -4771,7 +4778,7 @@
                 "AbilityCooldown": -2
             },
             {
-                "FullChargeDamage": 200
+                "FullChargeDamage": 185
             }
         ]
     },
@@ -4839,11 +4846,11 @@
     "citadel_ability_psychic_lift": {
         "AbilityCastDelay": 0.3,
         "AbilityCastRange": 20,
-        "AbilityCooldown": 100.0,
+        "AbilityCooldown": 110.0,
         "AbilityDuration": 2.75,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
-        "Damage": 140,
+        "Damage": 125,
         "DampingFactor": 0.3,
         "IsDisabled": false,
         "Key": "citadel_ability_psychic_lift",
@@ -4852,7 +4859,7 @@
         "Name": "Telekinesis",
         "Upgrades": [
             {
-                "AbilityCooldown": -30.0
+                "AbilityCooldown": -25.0
             },
             {
                 "AbilityDuration": 0.75
@@ -4885,11 +4892,11 @@
     },
     "citadel_ability_rocket_barrage": {
         "AbilityCastRange": 50,
-        "AbilityCooldown": 150.0,
+        "AbilityCooldown": 165.0,
         "AbilityDuration": 13,
         "AbilityUnitTargetLimit": 100,
         "ChannelMoveSpeed": -1,
-        "DamagePerRocket": 23,
+        "DamagePerRocket": 22.5,
         "DetonateTimer": 5,
         "ExplosionFalloffDisabled": 1,
         "ExplosionRadius": 5,
@@ -4913,10 +4920,10 @@
                 "MoveSlowDuration": 2.0
             },
             {
-                "AbilityCooldown": -50.0
+                "AbilityCooldown": -45.0
             },
             {
-                "DamagePerRocket": 25,
+                "DamagePerRocket": 23,
                 "Scale": {
                     "Prop": "DamagePerRocket",
                     "Value": 0.093,
@@ -4948,10 +4955,10 @@
     "citadel_ability_self_vacuum": {
         "AbilityCastDelay": 0.2,
         "AbilityChannelTime": 2.75,
-        "AbilityCooldown": 215.0,
+        "AbilityCooldown": 230.0,
         "AbilityUnitTargetLimit": 1,
         "CameraDistance": 400,
-        "DPS": 45,
+        "DPS": 40,
         "DPSPercentHealth": 1.5,
         "IsDisabled": false,
         "Key": "citadel_ability_self_vacuum",
@@ -4999,7 +5006,7 @@
         "TurretAttackFalloffStart": 20,
         "TurretAttackRange": 25,
         "TurretBaseHealth": 150,
-        "TurretDPS": 32,
+        "TurretDPS": 30,
         "TurretDeployTime": 0.25,
         "TurretHealthPerBoon": 20,
         "TurretLifetime": 24,
@@ -5013,7 +5020,7 @@
                 "AttackSpeedMult": 10
             },
             {
-                "TurretDPS": 45,
+                "TurretDPS": 42,
                 "TurretLifetime": 14
             }
         ]
@@ -5026,11 +5033,11 @@
         "AbilityCooldownBetweenCharge": 2,
         "AbilityPostCastDuration": 0.3,
         "AbilityUnitTargetLimit": 1,
-        "BleedDPSPerStack": 5,
+        "BleedDPSPerStack": 4.6,
         "BleedDuration": 5,
         "BleedTickRate": 1,
         "ChannelMoveSpeed": 50,
-        "ImpactDamage": 35,
+        "ImpactDamage": 32,
         "IsDisabled": false,
         "Key": "citadel_ability_shiv_dagger",
         "MovementSlow": 35,
@@ -5044,8 +5051,8 @@
                 "BleedDuration": 2
             },
             {
-                "ImpactDamage": 40,
-                "BleedDPSPerStack": 7
+                "ImpactDamage": 37,
+                "BleedDPSPerStack": 6.5
             }
         ]
     },
@@ -5060,7 +5067,7 @@
         "DashRadius": 2.5,
         "DashRange": 12,
         "DashSpeed": 2400,
-        "ImpactDamage": 80,
+        "ImpactDamage": 75,
         "IsDisabled": false,
         "Key": "citadel_ability_shiv_dash",
         "MoveSpeedPenaltyMaxSpeed": 200,
@@ -5072,7 +5079,7 @@
                 "AbilityCooldown": -3
             },
             {
-                "ImpactDamage": 60
+                "ImpactDamage": 55
             },
             {
                 "CooldownReductionOnHit": 2,
@@ -5107,7 +5114,7 @@
     },
     "citadel_ability_shiv_killing_blow": {
         "AbilityCastRange": 15,
-        "AbilityCooldown": 95.0,
+        "AbilityCooldown": 105.0,
         "AbilityPostCastDuration": 0.25,
         "AbilityUnitTargetLimit": 1,
         "BonusAbilityResource": 10,
@@ -5151,7 +5158,7 @@
         "AbilityCooldown": 42.0,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
-        "Damage": 40,
+        "Damage": 35,
         "IsDisabled": false,
         "Key": "citadel_ability_static_charge",
         "Name": "Static Charge",
@@ -5178,7 +5185,7 @@
         "BonusDamagePctPerPlayerHit": 1.5,
         "BonusDamagePctPerPlayerKilled": 4,
         "ChannelMoveSpeed": 50,
-        "Damage": 110,
+        "Damage": 100,
         "FuseTime": 3.0,
         "IsDisabled": false,
         "Key": "citadel_ability_sticky_bomb",
@@ -5190,7 +5197,7 @@
                 "AbilityCooldown": -8
             },
             {
-                "Damage": 75
+                "Damage": 70
             },
             {
                 "OutgoingDamagePercent": -30,
@@ -5206,7 +5213,7 @@
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
         "ClimbHeight": 0.5,
-        "Damage": 100,
+        "Damage": 90.0,
         "DistanceAboveGround": 0.5,
         "DropDownRate": 8,
         "ImpactInterval": 0.1,
@@ -5228,26 +5235,26 @@
                 "DebuffDuration": 8
             },
             {
-                "Damage": 125,
+                "Damage": 115,
                 "AbilityCharges": 1
             }
         ]
     },
     "citadel_ability_storm_cloud": {
         "AbilityChannelTime": 7,
-        "AbilityCooldown": 155.0,
+        "AbilityCooldown": 170.0,
         "AbilityUnitTargetLimit": 1,
         "BulletResistOnActive": 20,
         "CameraDistance": 600,
         "CloudHeight": 120,
-        "DPS": 115,
+        "DPS": 95,
         "DamageInterval": 0.25,
         "EndingSoonTime": 2,
         "ExpandTime": 1.5,
         "InitialRadius": 12,
         "IsDisabled": false,
         "Key": "citadel_ability_storm_cloud",
-        "LightningStrikeDamage": 100,
+        "LightningStrikeDamage": 90.0,
         "LightningStrikeDelay": 0.25,
         "LightningStrikeKnockBackForce": 500,
         "LightningStrikeRadius": 7,
@@ -5263,7 +5270,7 @@
                 "AbilityChannelTime": 7
             },
             {
-                "DPS": 70,
+                "DPS": 65,
                 "FlightControlEnabled": 1
             }
         ]
@@ -5280,6 +5287,8 @@
         "IsDisabled": false,
         "Key": "citadel_ability_tangotether",
         "MoveSpeedBonus": 0,
+        "MoveWhileShootingSpeedPenaltyReductionPercent": 100,
+        "MoveWhileZoomedSpeedPenaltyReductionPercent": 100,
         "Name": "Watcher's Covenant",
         "TetherSharedHealPct": 25,
         "TickRate": 0.1,
@@ -5299,7 +5308,7 @@
     "citadel_ability_tengu_airlift": {
         "AbilityCastDelay": 1.3,
         "AbilityCastRange": 12,
-        "AbilityCooldown": 90.0,
+        "AbilityCooldown": 100.0,
         "AbilityDuration": 16.0,
         "AbilityUnitTargetLimit": 1,
         "AirDropBulletShield": 150,
@@ -5308,7 +5317,7 @@
         "BuffDuration": 5,
         "ChannelMoveSpeed": 50,
         "DebuffDuration": 3,
-        "ExplodeDamage": 125,
+        "ExplodeDamage": 115.0,
         "FlyingBulletResist": 40,
         "IsDisabled": false,
         "Key": "citadel_ability_tengu_airlift",
@@ -5338,7 +5347,7 @@
         "AbilityDuration": 2,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
-        "Damage": 80,
+        "Damage": 75,
         "DampingFactor": 0.25,
         "IsDisabled": false,
         "Key": "citadel_ability_tengu_stone_form",
@@ -5356,7 +5365,7 @@
             },
             {
                 "StunDuration": 0.5,
-                "Damage": 80
+                "Damage": 75
             },
             {
                 "MaxHealthRegen": 13
@@ -5371,7 +5380,7 @@
         "AbilityDuration": 4,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
-        "DPS": 60,
+        "DPS": 55,
         "Height": 2,
         "IsDisabled": false,
         "Key": "citadel_ability_tengu_urn",
@@ -5387,7 +5396,7 @@
                 "AbilityDuration": 2
             },
             {
-                "DPS": 50,
+                "DPS": 46.0,
                 "Radius": "2m"
             }
         ]
@@ -5403,7 +5412,7 @@
         "ForceReductionOnAngleDown": 0.75,
         "IsDisabled": false,
         "Key": "citadel_ability_uppercut",
-        "LandingDamage": 80,
+        "LandingDamage": 75,
         "MeleeAttackLength": 6,
         "MeleeHalfAngle": 60,
         "MeleeRadius": 2.5,
@@ -5549,7 +5558,7 @@
                     "Value": 0.0465,
                     "Type": null
                 },
-                "MagicDamagePerBullet": 3
+                "MagicDamagePerBullet": 2.8
             },
             {
                 "BulletLifestealPercent": 15,
@@ -5955,7 +5964,7 @@
         "BulletArmorReduction": -8,
         "ChannelMoveSpeed": 50,
         "DebuffDuration": 14,
-        "HealthSteal": 40,
+        "HealthSteal": 37,
         "HeroStack": 3,
         "IsDisabled": false,
         "Key": "mirage_fire_beetles",
@@ -5976,7 +5985,7 @@
                 "BulletArmorReduction": -8
             },
             {
-                "HealthSteal": 65
+                "HealthSteal": 60
             }
         ]
     },
@@ -5991,7 +6000,8 @@
         "Name": "Djinn's Mark",
         "ProcChance": 100,
         "ProcCooldown": 2.5,
-        "ProcDamageBase": 12,
+        "ProcDamageBase": 11,
+        "ProcMaxRange": 45,
         "RevealDuration": 3.0,
         "Upgrades": [
             {
@@ -6000,7 +6010,7 @@
             },
             {
                 "VictimStackDuration": 2.5,
-                "ProcDamageBase": 10
+                "ProcDamageBase": 9
             },
             {
                 "ProcCooldown": -0.75,
@@ -6012,7 +6022,7 @@
     "mirage_teleport": {
         "AbilityCastDelay": 0.01,
         "AbilityChannelTime": 2.5,
-        "AbilityCooldown": 145.0,
+        "AbilityCooldown": 160.0,
         "AbilityUnitTargetLimit": 1,
         "BonusFireRate": 30,
         "BonusMoveSpeed": 2,
@@ -6041,9 +6051,9 @@
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 18,
         "ClimbHeight": 1,
-        "Damage": 70,
+        "Damage": 65,
         "DampingFactor": 0.3,
-        "DistanceAboveGround": 2,
+        "DistanceAboveGround": 0.5,
         "DropDownRate": 10,
         "EnemyLiftDuration": 0.2,
         "HoldInPlaceDuration": 1.0,
@@ -6056,7 +6066,7 @@
         "ProjectileThinkInterval": 0.01,
         "Radius": 3.5,
         "TickRate": 0.25,
-        "TornadoSpeed": 945,
+        "TornadoSpeed": 24,
         "Upgrades": [
             {
                 "HoldInPlaceDuration": 0.4
@@ -6270,12 +6280,12 @@
     },
     "synth_affliction": {
         "AbilityCastDelay": 0.6,
-        "AbilityCooldown": 130.0,
+        "AbilityCooldown": 140.0,
         "AbilityUnitTargetLimit": 1,
         "CanBePurged": 1,
         "ChannelMoveSpeed": 50,
         "CurrentHealthDamage": 10,
-        "DPS": 30,
+        "DPS": 28,
         "DamageInterval": 0.5,
         "DebuffDuration": 12,
         "IsDisabled": false,
@@ -6284,7 +6294,7 @@
         "Radius": 9,
         "Upgrades": [
             {
-                "AbilityCooldown": -28
+                "AbilityCooldown": -25
             },
             {
                 "HealAmpReceivePenaltyPercent": -40,
@@ -6292,7 +6302,7 @@
                 "DebuffDuration": 4
             },
             {
-                "DPS": 20,
+                "DPS": 18,
                 "Radius": "6m"
             }
         ]
@@ -6307,7 +6317,7 @@
         "AmpDuration": 15,
         "AmpPercentPerStack": 6,
         "ChannelMoveSpeed": 50,
-        "DamagePerProjectile": 35,
+        "DamagePerProjectile": 32,
         "FallSpeedMax": 10,
         "IsDisabled": false,
         "Key": "synth_barrage",
@@ -6318,7 +6328,7 @@
         "SlowDuration": 1.5,
         "Upgrades": [
             {
-                "DamagePerProjectile": 15
+                "DamagePerProjectile": 14
             },
             {
                 "AbilityCooldown": -14.0
@@ -6393,7 +6403,7 @@
         "AbilityCooldown": 32.0,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
-        "Damage": 90,
+        "Damage": 85,
         "IsDisabled": false,
         "Key": "synth_plasma_flux",
         "MaxLifetime": 3.4,
@@ -6405,13 +6415,14 @@
                 "AbilityCooldown": -14.0
             },
             {
-                "Damage": 80
+                "Damage": 75
             },
             {
                 "WeaponDamageBonus": 7,
                 "WeaponDamageBonusDuration": 10
             }
-        ]
+        ],
+        "WeaponDamageBonus": 0.0
     },
     "synth_pulse": {
         "AbilityCastDelay": 0.15,
@@ -6419,7 +6430,7 @@
         "AbilityCooldown": 17.0,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
-        "Damage": 70,
+        "Damage": 65,
         "FallSpeedMax": 1,
         "IsDisabled": false,
         "Key": "synth_pulse",
@@ -6430,7 +6441,7 @@
                 "AbilityCooldown": -5
             },
             {
-                "Damage": 110
+                "Damage": 100
             },
             {
                 "FireRateSlow": 40,
@@ -6828,7 +6839,7 @@
     },
     "viscous_goo_bowling_ball": {
         "AbilityCastDelay": 0.55,
-        "AbilityCooldown": 105.0,
+        "AbilityCooldown": 115.0,
         "AbilityDuration": 9,
         "AbilityUnitTargetLimit": 1,
         "AccelerationPercentage": -60,
@@ -6839,7 +6850,7 @@
         "BreakablePropDamageRadius": 75,
         "BulletResist": 60,
         "ChannelMoveSpeed": 275,
-        "Damage": 120,
+        "Damage": 110,
         "FrictionPercentage": -85,
         "IsDisabled": false,
         "JumpForce": 500,
@@ -6856,7 +6867,7 @@
                 "AbilityDuration": 5
             },
             {
-                "Damage": 90
+                "Damage": 80
             },
             {
                 "CastWhileRolling": 1
@@ -6869,7 +6880,7 @@
         "AbilityPostCastDuration": 0.2,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
-        "Damage": 90,
+        "Damage": 80,
         "DetonateCooldown": 0.15,
         "IsDisabled": false,
         "Key": "viscous_goo_grenade",
@@ -6884,7 +6895,7 @@
                 "AbilityCooldown": -5.75
             },
             {
-                "Damage": 50,
+                "Damage": 45.0,
                 "Radius": "1m"
             },
             {
@@ -6961,6 +6972,7 @@
         "AbilityCooldownBetweenCharge": 1.5,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
+        "Damage": 0.0,
         "ImpactDuration": 4,
         "IsDisabled": false,
         "Key": "viscous_telepunch",
@@ -6979,7 +6991,7 @@
                 "AbilityCharges": 1
             },
             {
-                "Damage": 35,
+                "Damage": 30,
                 "SlowPercent": 15
             },
             {
@@ -6991,7 +7003,7 @@
                     "Type": null
                 },
                 "DamageHeavyMelee": 35,
-                "Damage": -35
+                "Damage": -30
             }
         ]
     },

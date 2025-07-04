@@ -443,13 +443,13 @@
         "TechPower": "10",
         "WeaponPower": "0",
         "TechResist": "20",
-        "CooldownReductionPerHit": "3",
+        "CooldownReductionPerHit": "4",
         "CooldownReduction": "7",
         "DamageThreshold": "75"
     },
     "upgrade_acolytes_glove": {
         "Name": "Spirit Strike",
-        "Description": "When you perform a <span class=\"highlight\">Light or Heavy Melee</span> attack against a hero, deal extra <span class=\"highlight\">Spirit Damage</span> with the attack and reduce the target's <span class=\"highlight\">Spirit Resist</span>.",
+        "Description": "When you perform a <span class=\"highlight\">Light or Heavy Melee</span> attack against a hero, deal extra <span class=\"highlight\">Spirit Damage</span> with the attack and reduce the target's <span class=\"highlight\">Spirit Resist</span>.<span class=\"diminish\"><br><br>Cooldown is 2x longer for Light Melee hits.</span>",
         "Cost": "800",
         "Tier": "1",
         "Activation": "Passive",
@@ -476,6 +476,7 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
+        "LightMeleeCooldownMult": "2",
         "SpiritDamage": "40",
         "TechArmorDamageReduction": "-6"
     },
@@ -637,13 +638,14 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
-        "CaptureRadius": "11m",
+        "CaptureRadius": "12m",
         "TetherDuration": "0.5",
         "TetherRadius": "1m",
         "SlowPercent": "35",
         "GroundDashReductionPercent": "-40",
         "TechRangeMultiplier": "10",
-        "TechRadiusMultiplier": "10"
+        "TechRadiusMultiplier": "10",
+        "BonusSprintSpeed": "1m"
     },
     "upgrade_aoe_silence": {
         "Name": "EMP Grenade",
@@ -1197,7 +1199,7 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
-        "BonusFireRate": "20",
+        "BonusFireRate": "18",
         "BonusSprintSpeed": "1.0m"
     },
     "upgrade_blood_tribute": {
@@ -1226,8 +1228,8 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
-        "BonusHealth": "125",
-        "HealthDrainedPerSecond": "50",
+        "TechResist": "8",
+        "HealthDrainedPerSecond": "40",
         "TickRate": "0.1",
         "BonusFireRate": "40",
         "StatusResistancePercent": "50",
@@ -1293,11 +1295,11 @@
         "WeaponPower": "0",
         "BonusHealth": "100",
         "OutOfCombatHealthRegen": "4",
-        "TechPowerPercent": "13"
+        "TechPowerPercent": "15"
     },
     "upgrade_boxing_glove": {
         "Name": "Lifestrike",
-        "Description": "Your <span class=\"highlight\">Melee Attack</span> applies <span class=\"highlight\">Movement Slow</span> and <span class=\"highlight\">heals you</span> for 50% of the <span class=\"highlight\">Melee Damage</span> dealt plus 160. This heal is 40% effective vs non-heroes.",
+        "Description": "Your <span class=\"highlight\">Melee Attack</span> applies <span class=\"highlight\">Movement Slow</span> and <span class=\"highlight\">heals you</span> for 50% of the <span class=\"highlight\">Melee Damage</span> dealt plus 160. <span class=\"diminish\"><br><br>This heal is 40% effective vs non-heroes. <br>Cooldown is 2x as long for Light Melee hits.</span>",
         "Cost": "3200",
         "Tier": "3",
         "Activation": "Passive",
@@ -1327,6 +1329,7 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
+        "LightMeleeCooldownMult": "2",
         "SlowPercent": "60",
         "SlowDuration": "2.5",
         "BonusMeleeDamagePercent": "16",
@@ -1783,7 +1786,7 @@
         ],
         "ShopFilters": null,
         "IsDisabled": false,
-        "AbilityCooldown": 120.0,
+        "AbilityCooldown": 100.0,
         "AbilityDuration": "0",
         "AbilityCastRange": "0",
         "AbilityUnitTargetLimit": "1",
@@ -1798,7 +1801,7 @@
         "WeaponPower": "0",
         "DeathImmunityDuration": "4.5",
         "BonusHealth": "200",
-        "TechResist": "15",
+        "BulletResist": "15",
         "DeathImmunityDamageReduction": "-70",
         "HealAmpReceivePenaltyPercent": "-70",
         "HealAmpRegenPenaltyPercent": "-70",
@@ -1806,7 +1809,7 @@
     },
     "upgrade_chonky": {
         "Name": "Fortitude",
-        "Description": "After not taking damage for <span class=\"highlight\">14s</span>, gain <span class=\"highlight\">3.0% Max Health Regen</span>.",
+        "Description": "After not taking damage for <span class=\"highlight\">14s</span>, gain <span class=\"highlight\">2% Max Health Regen</span>.",
         "Cost": "3200",
         "Tier": "3",
         "Activation": "Passive",
@@ -1836,10 +1839,9 @@
         "TechPower": "0",
         "WeaponPower": "0",
         "RestoreDelay": "14",
-        "HealLifePercentOutOfCombat": "3.0",
+        "HealLifePercentOutOfCombat": "2",
         "HealthThreshold": "75",
         "BonusMoveSpeed": "1.5m",
-        "BaseAttackDamagePercent": "22",
         "BonusHealth": "375"
     },
     "upgrade_clip_size": {
@@ -2046,7 +2048,7 @@
         "RevealOnSpottedDuration": "1.5",
         "FullInvisDistance": "50m",
         "AmbushDuration": "8",
-        "AmbushBonusFireRate": "30",
+        "AmbushBonusFireRate": "35",
         "AmbushBonusTechPower": "35",
         "OutOfCombatHealthRegen": "10",
         "BonusSprintSpeed": "2m"
@@ -2259,11 +2261,12 @@
         "TechPower": "0",
         "WeaponPower": "0",
         "SlowPercent": "20",
-        "GroundDashReductionPercent": "-30"
+        "GroundDashReductionPercent": "-30",
+        "BonusSprintSpeed": "0.5m"
     },
     "upgrade_cooldown_reduction": {
         "Name": "Superior Cooldown",
-        "Description": "Reduces the <span class=\"highlight\">Cooldown</span> of your abilities and items.",
+        "Description": "Reduces the <span class=\"highlight\">Cooldown</span> of your abilities.",
         "Cost": "3200",
         "Tier": "3",
         "Activation": "Passive",
@@ -2289,7 +2292,7 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
-        "CooldownReduction": "24",
+        "CooldownReduction": "25",
         "OutOfCombatHealthRegen": "4"
     },
     "upgrade_corpse_explosion": {
@@ -2331,7 +2334,7 @@
     },
     "upgrade_counterspell": {
         "Name": "Counterspell",
-        "Description": "Your next parry <span class=\"highlight\">protects you from the damage and effects of enemy abilities and items</span>. On a successful spell parry gain <span class=\"highlight\">Move Speed</span> and <span class=\"highlight\">Spirit Power</span>.",
+        "Description": "Your next parry <span class=\"highlight\">protects you from the damage and effects of enemy abilities and items</span>. On a successful spell parry {g:citadel_inline_attribute:'Heal'} and gain {g:citadel_inline_attribute:'MoveSpeed'} and {g:citadel_inline_attribute:'Spirit'}.",
         "Cost": "3200",
         "Tier": "3",
         "Activation": "Passive",
@@ -2346,7 +2349,7 @@
             "Healing"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 25.0,
+        "AbilityCooldown": 20.0,
         "AbilityDuration": "0",
         "AbilityCastRange": "0",
         "AbilityUnitTargetLimit": "1",
@@ -2362,7 +2365,10 @@
         "SpiritPower": "20",
         "BonusMoveSpeed": "2m",
         "BuffDuration": "6",
-        "SpellParryDuration": "1.0"
+        "SpellParryDuration": "1.0",
+        "BonusHealth": "100",
+        "SpiritPowerInnate": "8",
+        "HealOnSuccess": "150"
     },
     "upgrade_crackshot": {
         "Name": "Mystic Shot",
@@ -2675,7 +2681,7 @@
         "TechPower": "0",
         "WeaponPower": "0",
         "CooldownReductionPctOnOthers": "50",
-        "BuffDuration": "5",
+        "BuffDuration": "6",
         "CombatBarrier": "600",
         "BonusMoveSpeed": "3m",
         "TechRangeMultiplier": "15",
@@ -2836,7 +2842,7 @@
     },
     "upgrade_enchanted_holsters": {
         "Name": "Spellslinger",
-        "Description": "Whenever you cast an ability or item, gain a stacking buff that improves fire rate and reload speed. <br><span class=\"diminish\">Each stack refreshes the duration.</span>",
+        "Description": "While in-combat whenever you cast an ability or item, gain a stacking buff that improves fire rate and reload speed. <br><span class=\"diminish\">Each stack refreshes the duration.</span>",
         "Cost": "6400",
         "Tier": "4",
         "Activation": "Passive",
@@ -2974,7 +2980,7 @@
     },
     "upgrade_express_shot": {
         "Name": "Express Shot",
-        "Description": "After not attacking for 4s, your next attack will <span class=\"highlight\">fire twice</span> in quick succession with <span class=\"highlight\">increased damage</span> and velocity.  This attack consumes extra ammo.",
+        "Description": "After not attacking for 3s, your next attack will <span class=\"highlight\">fire twice</span> in quick succession with <span class=\"highlight\">increased damage</span> and velocity.  This attack consumes extra ammo.",
         "Cost": "3200",
         "Tier": "3",
         "Activation": "Passive",
@@ -2987,7 +2993,7 @@
             "WeaponDamage"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": "4",
+        "AbilityCooldown": "3",
         "AbilityDuration": "0",
         "AbilityCastRange": "0",
         "AbilityUnitTargetLimit": "1",
@@ -3004,7 +3010,7 @@
         "BonusFireRate": "5",
         "ProcAmmoConsumed": "30",
         "ProcBulletVelocity": "100",
-        "ProcBaseAttackDamagePercent": "150",
+        "ProcBaseAttackDamagePercent": "165",
         "ProcBaseAttackDamagePercentAltFire": "75"
     },
     "upgrade_extra_charge": {
@@ -3441,7 +3447,7 @@
             "MagicDamage"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 30.0,
+        "AbilityCooldown": 25.0,
         "AbilityDuration": "4",
         "AbilityCastRange": "23m",
         "AbilityUnitTargetLimit": "1",
@@ -3488,7 +3494,7 @@
         "TechPower": "0",
         "WeaponPower": "0",
         "CooldownReductionPctOnOthers": "50",
-        "BuffDuration": "5",
+        "BuffDuration": "6",
         "GuardianWardCombatBarrier": "200",
         "BonusMoveSpeed": "3m",
         "TechRangeMultiplier": "10",
@@ -3575,7 +3581,7 @@
             "FireRate"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 3,
+        "AbilityCooldown": 0,
         "AbilityDuration": "0",
         "AbilityCastRange": "0",
         "AbilityUnitTargetLimit": "1",
@@ -4285,7 +4291,7 @@
     },
     "upgrade_inhibitor": {
         "Name": "Inhibitor",
-        "Description": "Your bullets reduce the target's <span class=\"highlight\">outgoing damage</span> and apply <span class=\"highlight\">healing reduction</span>.",
+        "Description": "Your bullets buildup to reduce the target's <span class=\"highlight\">outgoing damage</span> and apply <span class=\"highlight\">healing reduction</span>.",
         "Cost": "6400",
         "Tier": "4",
         "Activation": "Passive",
@@ -4314,7 +4320,9 @@
         "TechPower": "0",
         "WeaponPower": "0",
         "BonusHealth": "125",
-        "DebuffDuration": "3",
+        "DebuffDuration": "4",
+        "BuildUpPerShot": "0.92",
+        "BuildUpDuration": "5",
         "OutgoingDamagePenaltyPercent": "-35",
         "BaseAttackDamagePercent": "15",
         "HealAmpReceivePenaltyPercent": "-30",
@@ -4425,7 +4433,7 @@
     },
     "upgrade_lifestrike_gauntlets": {
         "Name": "Melee Lifesteal",
-        "Description": "Your next <span class=\"highlight\">Melee</span> attack <span class=\"highlight\">heals you</span>. You heal for 30% of the value against non-heroes.",
+        "Description": "Your next <span class=\"highlight\">Melee</span> attack <span class=\"highlight\">heals you</span>. <span class=\"diminish\"><br><br>This heal is 30% effective vs non-heroes. <br>Cooldown is 2x as long for Light Melee hits.</span>",
         "Cost": "800",
         "Tier": "1",
         "Activation": "Passive",
@@ -4453,6 +4461,7 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
+        "LightMeleeCooldownMult": "2",
         "BonusMeleeDamagePercent": "12",
         "LifestrikeHeal": "100",
         "NonHeroHealPct": "30"
@@ -4910,8 +4919,8 @@
         "WeaponPower": "0",
         "Radius": "1m",
         "ProcChance": "100",
-        "HealFromHero": "40",
-        "HealFromNPC": "15",
+        "HealFromHero": "50",
+        "HealFromNPC": "20",
         "BaseAttackDamagePercent": "8"
     },
     "upgrade_melee_charge": {
@@ -4980,7 +4989,7 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
-        "BonusHealth": "50",
+        "BonusHealth": "75",
         "ParryCooldownReduction": "2",
         "BuffDuration": "6",
         "BuffMeleeDamageBoost": "50",
@@ -5171,7 +5180,7 @@
             "Healing"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": "260",
+        "AbilityCooldown": "250",
         "AbilityDuration": "160",
         "AbilityCastRange": "7m",
         "AbilityUnitTargetLimit": "1",
@@ -5507,7 +5516,7 @@
         "WeaponPower": "0",
         "CooldownBetweenChargeReduction": "50",
         "BonusAbilityCharges": "2",
-        "BonusSpiritForChargedAbilities": "16"
+        "BonusSpiritForChargedAbilities": "20"
     },
     "upgrade_rapid_rounds": {
         "Name": "Rapid Rounds",
@@ -5761,7 +5770,7 @@
         "BonusSprintSpeed": "1m",
         "SelfModifier": "100",
         "TechRangeMultiplier": "8",
-        "TechRadiusMultiplier": "6"
+        "TechRadiusMultiplier": "8"
     },
     "upgrade_resilience": {
         "Name": "Enduring Spirit",
@@ -5932,7 +5941,7 @@
         "RicochetDamagePercent": "65",
         "RicochetRadius": "13m",
         "RicochetTargetsTooltipOnly": "2",
-        "BonusFireRate": "25"
+        "BonusFireRate": "20"
     },
     "upgrade_rocket_booster": {
         "Name": "Majestic Leap",
@@ -6057,7 +6066,7 @@
             "FireRate"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 22.0,
+        "AbilityCooldown": 20.0,
         "AbilityDuration": "4.0",
         "AbilityCastRange": "0",
         "AbilityUnitTargetLimit": "1",
@@ -6075,7 +6084,7 @@
         "DampingFactor": "3",
         "LiftHeight": "120",
         "BonusSpirit": "20",
-        "MoveSpeedMax": "3.5m",
+        "MoveSpeedMax": "4m",
         "BonusMoveSpeed": "3m"
     },
     "upgrade_sharpshooter": {
@@ -6175,7 +6184,7 @@
         "TechPower": "0",
         "WeaponPower": "0",
         "BaseAttackDamagePercent": "15",
-        "TechResist": "10",
+        "BulletResist": "10",
         "StealPerHit": "1",
         "StealPerKill": "1",
         "StackLostPerDeath": "2",
@@ -6448,7 +6457,7 @@
             "Durability"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": "40",
+        "AbilityCooldown": "35",
         "AbilityDuration": "0",
         "AbilityCastRange": "0",
         "AbilityUnitTargetLimit": "1",
@@ -6466,7 +6475,7 @@
         "CombatBarrier": "400",
         "OutOfCombatHealthRegen": "2.5",
         "BarrierDuration": "8",
-        "BonusMoveSpeed": "1m"
+        "BonusMoveSpeed": "1.5m"
     },
     "upgrade_spirit_burn": {
         "Name": "Spirit Burn",
@@ -6541,11 +6550,11 @@
         "WeaponPower": "0",
         "MagicResistReduction": "-12",
         "BonusHealth": "50",
-        "TechPowerReduction": "-12"
+        "TechPowerReduction": "-15"
     },
     "upgrade_spirit_snatch": {
         "Name": "Spirit Snatch",
-        "Description": "When you perform a <span class=\"highlight\">Light or Heavy Melee</span> attack against a hero, the attack deals extra <span class=\"highlight\">Spirit Damage</span> and steals <span class=\"highlight\">Spirit Resist</span> and <span class=\"highlight\">Spirit Power</span>.",
+        "Description": "When you perform a <span class=\"highlight\">Light or Heavy Melee</span> attack against a hero, the attack deals extra <span class=\"highlight\">Spirit Damage</span> and steals <span class=\"highlight\">Spirit Resist</span> and <span class=\"highlight\">Spirit Power</span>.<span class=\"diminish\"><br><br>Cooldown is 2x longer for Light Melee hits.</span>",
         "Cost": "3200",
         "Tier": "3",
         "Activation": "Passive",
@@ -6574,6 +6583,7 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
+        "LightMeleeCooldownMult": "2",
         "SpiritDamage": "75",
         "TechArmorDamageReduction": "-15",
         "TechArmorGain": "15",
@@ -6595,7 +6605,7 @@
             "WeaponDamage"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": "16",
+        "AbilityCooldown": "14",
         "AbilityDuration": "0",
         "AbilityCastRange": "0",
         "AbilityUnitTargetLimit": "1",
@@ -6609,7 +6619,7 @@
         "TechPower": "0",
         "WeaponPower": "0",
         "BonusBulletSpeedPercent": "0",
-        "BonusShotsDuration": "4.5",
+        "BonusShotsDuration": "5",
         "BulletSplitShot": "5",
         "SpreadAngleDegrees": "45",
         "SpecialShotsBonusFireRate": "0",
@@ -6910,7 +6920,7 @@
             "Disruption"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 40.0,
+        "AbilityCooldown": 35.0,
         "AbilityDuration": "0",
         "AbilityCastRange": "45m",
         "AbilityUnitTargetLimit": "1",
@@ -6928,7 +6938,9 @@
         "VisualContractRadius": "3m",
         "BonusHealth": "100",
         "MaxBonusDuration": "1.5",
-        "MaxHeightForBonus": "30m"
+        "MaxHeightForBonus": "30m",
+        "TechRangeMultiplier": "6",
+        "TechRadiusMultiplier": "6"
     },
     "upgrade_targeted_silence": {
         "Name": "Silence Wave",
@@ -7389,12 +7401,44 @@
         "WeaponPower": "0",
         "DotHealthPercent": "2.5",
         "DotDuration": "3",
-        "BuildUpPerShot": "0.92",
+        "BuildUpPerShot": "1.058",
         "BuildUpDuration": "5",
         "TickRate": "0.5",
         "HealAmpReceivePenaltyPercent": "-30",
         "HealAmpRegenPenaltyPercent": "-30",
         "DotMultiplerTroopers": "0.5"
+    },
+    "upgrade_transcendent_cooldown": {
+        "Name": "Transcendent Cooldown",
+        "Description": "Reduces the <span class=\"highlight\">Cooldown</span> of your abilities and items.",
+        "Cost": "6400",
+        "Tier": "4",
+        "Activation": "Passive",
+        "Slot": "Tech",
+        "Components": [
+            "upgrade_cooldown_reduction"
+        ],
+        "TargetTypes": null,
+        "ShopFilters": [
+            "Healing"
+        ],
+        "IsDisabled": false,
+        "AbilityCooldown": "0",
+        "AbilityDuration": "0",
+        "AbilityCastRange": "0",
+        "AbilityUnitTargetLimit": "1",
+        "AbilityCastDelay": "0",
+        "AbilityChannelTime": "0",
+        "AbilityPostCastDuration": "0",
+        "AbilityCharges": "0",
+        "AbilityCooldownBetweenCharge": "0",
+        "ChannelMoveSpeed": "50",
+        "AbilityResourceCost": "0",
+        "TechPower": "0",
+        "WeaponPower": "0",
+        "CooldownReduction": "30",
+        "ItemCooldownReduction": "30",
+        "OutOfCombatHealthRegen": "4"
     },
     "upgrade_trophy_collector": {
         "Name": "Trophy Collector",
@@ -7432,7 +7476,7 @@
         "StackingBonusSprintSpeed": "0.2m",
         "StackingTechRangeMultiplier": "1",
         "StackingTechRadiusMultiplier": "1",
-        "StackingGoldPerMinute": "20",
+        "StackingGoldPerMinute": "23",
         "ThinkRate": "3",
         "MaxStacks": "16"
     },
@@ -7606,7 +7650,7 @@
         "TechPower": "0",
         "WeaponPower": "0",
         "VexBarrierCombatBarrier": "325",
-        "TechResist": "5"
+        "TechResist": "6"
     },
     "upgrade_warp_stone": {
         "Name": "Warp Stone",
@@ -7835,7 +7879,7 @@
             "Durability"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": "40",
+        "AbilityCooldown": "35",
         "AbilityDuration": "0",
         "AbilityCastRange": "0",
         "AbilityUnitTargetLimit": "1",
@@ -7853,7 +7897,7 @@
         "CombatBarrier": "400",
         "OutOfCombatHealthRegen": "2.5",
         "BarrierDuration": "8",
-        "BonusMoveSpeed": "1m"
+        "BonusMoveSpeed": "1.5m"
     },
     "upgrade_weighted_shots": {
         "Name": "Weighted Shots",
@@ -7903,7 +7947,7 @@
             "MagicDamage"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 30.0,
+        "AbilityCooldown": 25.0,
         "AbilityDuration": "5",
         "AbilityCastRange": "23m",
         "AbilityUnitTargetLimit": "1",
@@ -7917,7 +7961,8 @@
         "TechPower": "0",
         "WeaponPower": "0",
         "FireRateSlow": "35",
-        "BonusHealth": "50"
+        "BonusHealth": "60",
+        "BonusSprintSpeed": "0.5m"
     },
     "weapon_upgrade_base": {
         "Name": null,
