@@ -778,7 +778,7 @@
         "TechPower": "0",
         "WeaponPower": "0",
         "BonusBulletSpeedPercent": "35",
-        "ProcChance": "60"
+        "ProcChance": "50"
     },
     "upgrade_arcane_eater": {
         "Name": "Arcane Eater",
@@ -1169,7 +1169,7 @@
         "DamageToStack": "120",
         "WeaponPowerPerStack": "7",
         "MaxStacks": 10,
-        "BulletResist": "16"
+        "BulletResist": "8"
     },
     "upgrade_blitz_bullets": {
         "Name": "Swift Striker",
@@ -1199,7 +1199,7 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
-        "BonusFireRate": "18",
+        "BonusFireRate": "20",
         "BonusSprintSpeed": "1.0m"
     },
     "upgrade_blood_tribute": {
@@ -1233,9 +1233,10 @@
         "TickRate": "0.1",
         "BonusFireRate": "40",
         "StatusResistancePercent": "50",
-        "HealAmpReceivePenaltyPercent": "-50",
-        "HealAmpRegenPenaltyPercent": "-50",
-        "BonusMoveSpeed": "1.75m"
+        "HealAmpReceivePenaltyPercent": "-40",
+        "HealAmpRegenPenaltyPercent": "-40",
+        "BonusMoveSpeed": "2m",
+        "OutOfCombatHealthRegen": "4"
     },
     "upgrade_bonus_ability_charge_3": {
         "Name": "Hyper Charge",
@@ -1429,7 +1430,8 @@
         "Radius": "15m",
         "BulletArmorReduction": "-8",
         "FireRateSlow": "12",
-        "SingleTargetPlayerMultiplier": "3"
+        "SingleTargetPlayerMultiplier": "3",
+        "BonusSprintSpeed": "1m"
     },
     "upgrade_bullet_damage_reduction_aura": {
         "Name": "Weapon Jammer",
@@ -1493,7 +1495,7 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
-        "BulletArmorReduction": "-12",
+        "BulletArmorReduction": "-13",
         "BonusHealth": "90",
         "MeleeResistPercent": "20"
     },
@@ -1635,7 +1637,7 @@
         "TechPower": "0",
         "WeaponPower": "0",
         "ProcCooldown": "0.25",
-        "DamagePerChain": "45",
+        "DamagePerChain": "50",
         "BonusPerChain": "40",
         "ChainRadius": "10m",
         "ProcChance": "20",
@@ -2026,8 +2028,8 @@
             "Movement"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 40.0,
-        "AbilityDuration": "25",
+        "AbilityCooldown": 32.0,
+        "AbilityDuration": "18",
         "AbilityCastRange": "0",
         "AbilityUnitTargetLimit": "1",
         "AbilityCastDelay": "0",
@@ -2050,6 +2052,7 @@
         "AmbushDuration": "8",
         "AmbushBonusFireRate": "35",
         "AmbushBonusTechPower": "35",
+        "AmbushBonusMeleeDamage": "25",
         "OutOfCombatHealthRegen": "10",
         "BonusSprintSpeed": "2m"
     },
@@ -2160,7 +2163,7 @@
         "Damage": "125",
         "DamageHeight": "2.5m",
         "NPCDamageMult": "1",
-        "TechResist": "10"
+        "TechResist": "6"
     },
     "upgrade_colossus": {
         "Name": "Colossus",
@@ -2248,7 +2251,7 @@
         ],
         "IsDisabled": false,
         "AbilityCooldown": "30",
-        "AbilityDuration": "3.0",
+        "AbilityDuration": "3.5",
         "AbilityCastRange": "25m",
         "AbilityUnitTargetLimit": "1",
         "AbilityCastDelay": "0.1",
@@ -2472,9 +2475,9 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
-        "BulletResist": "20",
+        "BulletResist": "12",
         "BonusMeleeDamagePercent": "20",
-        "MeleeDistanceScale": "70",
+        "MeleeDistanceScale": "60",
         "BonusHeavyMeleeDamage": "25",
         "MaxStacks": "6",
         "DebuffDuration": "8",
@@ -2667,7 +2670,7 @@
             "Movement"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": "45",
+        "AbilityCooldown": "40",
         "AbilityDuration": "0",
         "AbilityCastRange": "35m",
         "AbilityUnitTargetLimit": "1",
@@ -2870,7 +2873,7 @@
         "CooldownReduction": "12",
         "BonusFireRate": "10",
         "ReloadSpeedMultipler": "-10",
-        "BuffDuration": "10",
+        "BuffDuration": "14",
         "MaxStacks": "6"
     },
     "upgrade_endurance": {
@@ -3010,7 +3013,7 @@
         "BonusFireRate": "5",
         "ProcAmmoConsumed": "30",
         "ProcBulletVelocity": "100",
-        "ProcBaseAttackDamagePercent": "165",
+        "ProcBaseAttackDamagePercent": "185",
         "ProcBaseAttackDamagePercentAltFire": "75"
     },
     "upgrade_extra_charge": {
@@ -3141,7 +3144,7 @@
         "MoveWhileZoomedSpeedPenaltyReductionPercent": "100",
         "ActiveBonusMoveSpeed": "3.5m",
         "SlideScale": "35",
-        "BulletResist": "10",
+        "BulletResist": "6",
         "SlowResistancePercent": "40"
     },
     "upgrade_focus_lens": {
@@ -3160,7 +3163,7 @@
             "MagicDamage"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": "28",
+        "AbilityCooldown": "25",
         "AbilityDuration": "4.25",
         "AbilityCastRange": "20m",
         "AbilityUnitTargetLimit": "1",
@@ -3447,7 +3450,7 @@
             "MagicDamage"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 25.0,
+        "AbilityCooldown": 20.0,
         "AbilityDuration": "4",
         "AbilityCastRange": "23m",
         "AbilityUnitTargetLimit": "1",
@@ -3480,7 +3483,7 @@
             "Movement"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": "45",
+        "AbilityCooldown": "40",
         "AbilityDuration": "0",
         "AbilityCastRange": "35m",
         "AbilityUnitTargetLimit": "1",
@@ -4723,7 +4726,7 @@
     },
     "upgrade_magic_shock": {
         "Name": "Tankbuster",
-        "Description": "Charges up over time with {g:citadel_inline_attribute:'BonusSpiritDamage'}, causing abilities dealing more than <span class=\"highlight\">165</span> damage to deal additional damage.",
+        "Description": "Charges up over time with {g:citadel_inline_attribute:'BonusSpiritDamage'}, causing abilities dealing more than <span class=\"highlight\">165</span> damage to deal additional damage. <span class=\"highlight\">Ignores Spirit Resistance.</span>",
         "Cost": "3200",
         "Tier": "3",
         "Activation": "Passive",
@@ -4755,7 +4758,7 @@
         "MinimumDamage": "165",
         "ReProcLockoutTime": "5",
         "WatcherMaxDuration": "30",
-        "MaxHealthDamage": "6",
+        "MaxHealthDamage": "5",
         "Damage": "40",
         "AbilityChargeUpTime": "12",
         "BonusHealth": "75"
@@ -4808,7 +4811,7 @@
             "Movement"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 8,
+        "AbilityCooldown": 14,
         "AbilityDuration": "0",
         "AbilityCastRange": "0",
         "AbilityUnitTargetLimit": "1",
@@ -4821,10 +4824,10 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
-        "ImbuedTechPower": "25",
-        "FireRateBonus": "20",
+        "ImbuedTechPower": "28",
+        "FireRateBonus": "22",
         "BonusMoveSpeed": "2m",
-        "MovementSpeedBonusDuration": "6",
+        "MovementSpeedBonusDuration": "8",
         "MoveWhileShootingSpeedPenaltyReductionPercent": "100",
         "MoveWhileZoomedSpeedPenaltyReductionPercent": "100"
     },
@@ -4920,8 +4923,8 @@
         "Radius": "1m",
         "ProcChance": "100",
         "HealFromHero": "50",
-        "HealFromNPC": "20",
-        "BaseAttackDamagePercent": "8"
+        "HealFromNPC": "15",
+        "BaseAttackDamagePercent": "6"
     },
     "upgrade_melee_charge": {
         "Name": "Melee Charge",
@@ -4954,7 +4957,7 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
-        "BulletResist": "10",
+        "BulletResist": "6",
         "BonusMeleeDamagePercent": "10",
         "MeleeDistanceScale": "50",
         "BonusHeavyMeleeDamage": "25"
@@ -5009,7 +5012,7 @@
             "FireRate"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 24.0,
+        "AbilityCooldown": 20.0,
         "AbilityDuration": "4.0",
         "AbilityCastRange": "0",
         "AbilityUnitTargetLimit": "1",
@@ -5590,7 +5593,7 @@
             "WeaponDamage"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 45.0,
+        "AbilityCooldown": 50.0,
         "AbilityDuration": "0",
         "AbilityCastRange": "0",
         "AbilityUnitTargetLimit": "1",
@@ -5607,7 +5610,7 @@
         "ActiveBonusMoveSpeed": "2.5m",
         "BuffDuration": "3",
         "HealOnActivate": "250",
-        "BonusHealth": "125"
+        "BonusHealth": "100"
     },
     "upgrade_regenerating_bullet_shield": {
         "Name": "Battle Vest",
@@ -5900,10 +5903,10 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
-        "BulletDamageReflectedPct": "60",
-        "SpiritDamageReflectedPct": "30",
+        "BulletDamageReflectedPct": "50",
+        "SpiritDamageReflectedPct": "25",
         "ReturnFireBulletResist": "0",
-        "BulletResist": "10"
+        "BulletResist": "6"
     },
     "upgrade_ricochet": {
         "Name": "Ricochet",
@@ -6050,7 +6053,7 @@
         "HealAmpReceivePenaltyPercent": "-40",
         "HealAmpRegenPenaltyPercent": "-40",
         "TickRate": "1.0",
-        "DotHealthPercent": "2.4",
+        "DotHealthPercent": "2.6",
         "BonusHealth": "90"
     },
     "upgrade_self_bubble": {
@@ -6441,7 +6444,7 @@
         "MaxStacks": "4",
         "AbilityLifestealPercentHero": "8",
         "MagicResistReduction": "-7",
-        "TechArmorDamageReduction": "-7",
+        "TechArmorDamageReduction": "-8",
         "DebuffDuration": "7"
     },
     "upgrade_spirit_bubble": {
@@ -6472,7 +6475,7 @@
         "WeaponPower": "0",
         "DamageWindow": "3.5",
         "DamageThreshold": "150",
-        "CombatBarrier": "400",
+        "CombatBarrier": "325",
         "OutOfCombatHealthRegen": "2.5",
         "BarrierDuration": "8",
         "BonusMoveSpeed": "1.5m"
@@ -6537,7 +6540,7 @@
         "IsDisabled": false,
         "AbilityCooldown": "30",
         "AbilityDuration": "12",
-        "AbilityCastRange": "30m",
+        "AbilityCastRange": "40m",
         "AbilityUnitTargetLimit": "1",
         "AbilityCastDelay": "0.1",
         "AbilityChannelTime": "0",
@@ -6549,8 +6552,8 @@
         "TechPower": "0",
         "WeaponPower": "0",
         "MagicResistReduction": "-12",
-        "BonusHealth": "50",
-        "TechPowerReduction": "-15"
+        "BonusHealth": "75",
+        "TechPowerReduction": "-18"
     },
     "upgrade_spirit_snatch": {
         "Name": "Spirit Snatch",
@@ -6861,7 +6864,7 @@
         "AbilityResourceCost": "0",
         "TechPower": "6",
         "WeaponPower": "0",
-        "FireRateSlow": "35",
+        "FireRateSlow": "30",
         "BonusHealth": "75"
     },
     "upgrade_surging_power": {
@@ -7167,7 +7170,7 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
-        "TechArmorDamageReduction": "-7",
+        "TechArmorDamageReduction": "-8",
         "DebuffDuration": "8",
         "AbilityLifestealPercentHero": "8"
     },
@@ -7233,7 +7236,7 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
-        "TechResist": "30",
+        "TechResist": "25",
         "HealthThreshold": "30",
         "TechResistBelowThreshold": "30"
     },
@@ -7399,7 +7402,7 @@
         "AbilityResourceCost": "0",
         "TechPower": "0",
         "WeaponPower": "0",
-        "DotHealthPercent": "2.5",
+        "DotHealthPercent": "2.1",
         "DotDuration": "3",
         "BuildUpPerShot": "1.058",
         "BuildUpDuration": "5",
@@ -7471,7 +7474,7 @@
         "TechPower": "0",
         "WeaponPower": "0",
         "BonusSprintSpeed": "2m",
-        "OutOfCombatHealthRegen": "2",
+        "OutOfCombatHealthRegen": "3.5",
         "StackingBonusHealth": "25",
         "StackingBonusSprintSpeed": "0.2m",
         "StackingTechRangeMultiplier": "1",
@@ -7596,7 +7599,7 @@
             "ClipSize"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 14.0,
+        "AbilityCooldown": 12.0,
         "AbilityDuration": "16",
         "AbilityCastRange": "0",
         "AbilityUnitTargetLimit": "1",
@@ -7894,7 +7897,7 @@
         "WeaponPower": "0",
         "DamageWindow": "3.5",
         "DamageThreshold": "200",
-        "CombatBarrier": "400",
+        "CombatBarrier": "325",
         "OutOfCombatHealthRegen": "2.5",
         "BarrierDuration": "8",
         "BonusMoveSpeed": "1.5m"
@@ -7928,12 +7931,12 @@
         "BaseAttackDamagePercent": "30",
         "StatusResistancePercent": "16",
         "TechResist": "16",
-        "BonusBulletSpeedPercent": "-25",
-        "StaminaCooldownReduction": "-10"
+        "BonusBulletSpeedPercent": "-30",
+        "StaminaCooldownReduction": "-20"
     },
     "upgrade_withering_whip": {
         "Name": "Rusted Barrel",
-        "Description": "Target an enemy to reduce their <span class=\"highlight\">Fire Rate</span>.",
+        "Description": "Target an enemy to reduce their <span class=\"highlight\">Fire Rate</span> and <span class=\"highlight\">Bullet Resistance</span>.",
         "Cost": "800",
         "Tier": "1",
         "Activation": "Press",
@@ -7947,7 +7950,7 @@
             "MagicDamage"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 25.0,
+        "AbilityCooldown": 20.0,
         "AbilityDuration": "5",
         "AbilityCastRange": "23m",
         "AbilityUnitTargetLimit": "1",
@@ -7962,7 +7965,8 @@
         "WeaponPower": "0",
         "FireRateSlow": "35",
         "BonusHealth": "60",
-        "BonusSprintSpeed": "0.5m"
+        "BonusSprintSpeed": "0.5m",
+        "BulletArmorReduction": "-5"
     },
     "weapon_upgrade_base": {
         "Name": null,

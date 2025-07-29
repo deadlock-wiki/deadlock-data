@@ -112,7 +112,7 @@
         "WeaponPowerDebuff": -30
     },
     "ability_blood_bomb": {
-        "AbilityCooldown": 10.5,
+        "AbilityCooldown": 14.5,
         "AbilityUnitTargetLimit": 1,
         "ArmingDuration": 0.65,
         "BeepSoundBuildupCount": 4,
@@ -124,17 +124,17 @@
         "IsDisabled": false,
         "Key": "ability_blood_bomb",
         "Name": "Essence Bomb",
-        "Radius": 7,
+        "Radius": 9,
         "SelfDamage": 30,
         "Upgrades": [
             {
-                "Radius": "2m"
+                "AbilityCooldown": -4
             },
             {
                 "Damage": 55
             },
             {
-                "BloodSpillDPSPercent": 24,
+                "BloodSpillDPSPercent": 26,
                 "BloodSpillDuration": 6
             }
         ]
@@ -1105,7 +1105,7 @@
     "ability_guided_arrow": {
         "AbilityCastDelay": 1.5,
         "AbilityChannelTime": 16,
-        "AbilityCooldown": 135.0,
+        "AbilityCooldown": 120.0,
         "AbilityUnitTargetLimit": 1,
         "BonusTechPowerPerKill": 5,
         "Damage": 230.0,
@@ -1439,7 +1439,7 @@
         "Radius": 6.5,
         "SkipFrames": 6,
         "SlowPercent": 30,
-        "TetherDuration": 1.75,
+        "TetherDuration": 2,
         "TetherRadius": 6,
         "TrapHeight": 2,
         "TripGravity": 0.4,
@@ -2262,11 +2262,11 @@
         "Name": "Power Surge",
         "Upgrades": [
             {
-                "TechResistDebuff": -15,
-                "DebuffDuration": 8
+                "AbilityCooldown": -15.0
             },
             {
-                "AbilityCooldown": -15.0
+                "TechResistDebuff": -15,
+                "DebuffDuration": 8
             },
             {
                 "DamagePerChain": 12,
@@ -3558,12 +3558,12 @@
         "BonusMoveSpeed": 0,
         "BulletResist": 30,
         "ConeAngle": 115,
-        "HealthStealPct": 15,
+        "HealthStealPct": 10,
         "HealthStealPctHero": 65,
         "IsDisabled": false,
         "Key": "ability_warden_riot_protocol",
         "Name": "Last Stand",
-        "PulseDPS": 74,
+        "PulseDPS": 70,
         "PulseInterval": 0.5,
         "Radius": 13,
         "TechResist": 30,
@@ -4271,8 +4271,8 @@
         "SlowPercent": 90,
         "Upgrades": [
             {
-                "BulletAmp": 25,
-                "BulletAmpDuration": 10
+                "BulletAmp": 20,
+                "BulletAmpDuration": 6
             },
             {
                 "AbilityCastRange": "30m"
@@ -4305,7 +4305,7 @@
             },
             {
                 "ChainDuration": 0.5,
-                "CaptureRadius": "2m"
+                "CaptureRadius": "1m"
             }
         ]
     },
@@ -5008,7 +5008,7 @@
         "TurretBaseHealth": 150,
         "TurretDPS": 30,
         "TurretDeployTime": 0.25,
-        "TurretHealthPerBoon": 20,
+        "TurretHealthPerBoon": 10,
         "TurretLifetime": 24,
         "Upgrades": [
             {
@@ -5090,25 +5090,25 @@
     },
     "citadel_ability_shiv_defer_damage": {
         "AbilityCastDelay": 0.25,
-        "AbilityCooldown": 60.0,
+        "AbilityCooldown": 45.0,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
         "DamagePctDeferred": 20,
         "DamagePctDeferredMaxRage": 14,
-        "DeferClearPct": 30,
-        "DeferredDamageDuration": 12,
+        "DeferClearPct": 40,
+        "DeferredDamageDuration": 6,
         "IsDisabled": false,
         "Key": "citadel_ability_shiv_defer_damage",
         "Name": "Bloodletting",
         "Upgrades": [
             {
-                "DamagePctDeferred": 6
-            },
-            {
                 "AbilityCooldown": -25
             },
             {
-                "DeferClearPct": 20
+                "DamagePctDeferred": 6
+            },
+            {
+                "DeferClearPct": 35
             }
         ]
     },
@@ -5130,14 +5130,13 @@
         "MinTimeToTarget": 0.5,
         "MoveSpeedToTarget": 25,
         "Name": "Killing Blow",
-        "NonPlayerRageScale": 0.1,
         "PauseOnTargetTime": 0.66,
-        "RageDrainDelayDuration": 9,
+        "RageDrainDelayDuration": 12,
         "RageDrainRate": 0.25,
-        "RagePerHeavyMelee": 2.75,
-        "RagePerLightMelee": 1.5,
-        "RagePerSpiritDamage": 0.014,
-        "RagePerWeaponDamage": 0.0153,
+        "RagePerHeavyMelee": 3.3,
+        "RagePerLightMelee": 1.8,
+        "RagePerSpiritDamage": 0.0168,
+        "RagePerWeaponDamage": 0.01836,
         "SlashRange": 80,
         "Upgrades": [
             {
@@ -5212,9 +5211,9 @@
         "AbilityCooldownBetweenCharge": 5,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
-        "ClimbHeight": 0.5,
+        "ClimbHeight": 0.7,
         "Damage": 90.0,
-        "DistanceAboveGround": 0.5,
+        "DistanceAboveGround": 0.7,
         "DropDownRate": 8,
         "ImpactInterval": 0.1,
         "IsDisabled": false,
@@ -5242,12 +5241,12 @@
     },
     "citadel_ability_storm_cloud": {
         "AbilityChannelTime": 7,
-        "AbilityCooldown": 170.0,
+        "AbilityCooldown": 180.0,
         "AbilityUnitTargetLimit": 1,
         "BulletResistOnActive": 20,
         "CameraDistance": 600,
         "CloudHeight": 120,
-        "DPS": 95,
+        "DPS": 90,
         "DamageInterval": 0.25,
         "EndingSoonTime": 2,
         "ExpandTime": 1.5,
@@ -5270,7 +5269,7 @@
                 "AbilityChannelTime": 7
             },
             {
-                "DPS": 65,
+                "DPS": 60,
                 "FlightControlEnabled": 1
             }
         ]
@@ -5424,8 +5423,8 @@
                 "AbilityCooldown": -10.5
             },
             {
-                "UppercutBuffOnHit": 12,
-                "BuffBaseWeaponPct": 50
+                "UppercutBuffOnHit": 9,
+                "BuffBaseWeaponPct": 40
             },
             {
                 "RestoreHookCooldown": 1,
@@ -6284,7 +6283,7 @@
         "AbilityUnitTargetLimit": 1,
         "CanBePurged": 1,
         "ChannelMoveSpeed": 50,
-        "CurrentHealthDamage": 10,
+        "CurrentHealthDamage": 12,
         "DPS": 28,
         "DamageInterval": 0.5,
         "DebuffDuration": 12,
@@ -6968,7 +6967,7 @@
     "viscous_telepunch": {
         "AbilityCastRange": 40,
         "AbilityCharges": 1,
-        "AbilityCooldown": 30.0,
+        "AbilityCooldown": 24.0,
         "AbilityCooldownBetweenCharge": 1.5,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 50,
@@ -6996,7 +6995,7 @@
             },
             {
                 "UseHeavyMelee": 1,
-                "AbilityCooldown": -11.5,
+                "AbilityCooldown": -12,
                 "Scale": {
                     "Prop": "Damage",
                     "Value": 0.0,

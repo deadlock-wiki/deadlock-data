@@ -644,12 +644,12 @@
             },
             "Upgrades": [
                 {
-                    "TechResistDebuff": -15,
-                    "DebuffDuration": 8,
-                    "DescKey": "ability_power_surge_t1_desc"
+                    "AbilityCooldown": -15.0
                 },
                 {
-                    "AbilityCooldown": -15.0
+                    "TechResistDebuff": -15,
+                    "DebuffDuration": 8,
+                    "DescKey": "ability_power_surge_t2_desc"
                 },
                 {
                     "DamagePerChain": 12,
@@ -718,10 +718,10 @@
                         {
                             "Key": "DPS",
                             "Name": "Damage Per Second",
-                            "Value": 95,
+                            "Value": 90,
                             "Type": "tech_damage",
                             "Scale": {
-                                "Value": 0.7,
+                                "Value": 0.65,
                                 "Type": "spirit"
                             }
                         }
@@ -778,7 +778,7 @@
                     "DescKey": "citadel_ability_storm_cloud_t2_desc"
                 },
                 {
-                    "DPS": 65,
+                    "DPS": 60,
                     "FlightControlEnabled": 1,
                     "DescKey": "citadel_ability_storm_cloud_t3_desc"
                 }
@@ -833,7 +833,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 170.0,
+                "Value": 180.0,
                 "Type": "cooldown"
             },
             "Radius": {
@@ -901,7 +901,7 @@
                 },
                 {
                     "ChainDuration": 0.5,
-                    "CaptureRadius": "2m",
+                    "CaptureRadius": "1m",
                     "DescKey": "citadel_ability_hornet_chain_t3_desc"
                 }
             ],
@@ -1294,13 +1294,13 @@
             },
             "Upgrades": [
                 {
-                    "Radius": "2m"
+                    "AbilityCooldown": -4
                 },
                 {
                     "Damage": 55
                 },
                 {
-                    "BloodSpillDPSPercent": 24,
+                    "BloodSpillDPSPercent": 26,
                     "BloodSpillDuration": 6,
                     "DescKey": "ability_blood_bomb_t3_desc"
                 }
@@ -1339,12 +1339,12 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 10.5,
+                "Value": 14.5,
                 "Type": "cooldown"
             },
             "Radius": {
                 "Name": "Radius",
-                "Value": 7,
+                "Value": 9,
                 "Type": "distance"
             }
         },
@@ -2452,7 +2452,7 @@
                             "Value": 150,
                             "Type": "health",
                             "Scale": {
-                                "Value": 12,
+                                "Value": 10,
                                 "Type": "power_increase"
                             }
                         },
@@ -2513,7 +2513,7 @@
             "Health": {
                 "TurretHealthPerBoon": {
                     "Name": null,
-                    "Value": 20,
+                    "Value": 10,
                     "Type": "health"
                 }
             },
@@ -3505,11 +3505,11 @@
                 },
                 "ClimbHeight": {
                     "Name": null,
-                    "Value": 0.5
+                    "Value": 0.7
                 },
                 "DistanceAboveGround": {
                     "Name": null,
-                    "Value": 0.5
+                    "Value": 0.7
                 },
                 "DropDownRate": {
                     "Name": null,
@@ -5201,8 +5201,8 @@
                     "AbilityCooldown": -10.5
                 },
                 {
-                    "UppercutBuffOnHit": 12,
-                    "BuffBaseWeaponPct": 50,
+                    "UppercutBuffOnHit": 9,
+                    "BuffBaseWeaponPct": 40,
                     "DescKey": "citadel_ability_uppercut_t2_desc"
                 },
                 {
@@ -5392,8 +5392,8 @@
             },
             "Upgrades": [
                 {
-                    "BulletAmp": 25,
-                    "BulletAmpDuration": 10,
+                    "BulletAmp": 20,
+                    "BulletAmpDuration": 6,
                     "DescKey": "citadel_ability_hook_t1_desc"
                 },
                 {
@@ -6197,7 +6197,7 @@
                         {
                             "Key": "TetherDuration",
                             "Name": "Tether Duration",
-                            "Value": 1.75,
+                            "Value": 2,
                             "Type": "duration"
                         },
                         {
@@ -6389,7 +6389,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 135.0,
+                "Value": 120.0,
                 "Type": "cooldown"
             }
         }
@@ -6984,7 +6984,7 @@
                         {
                             "Key": "DeferredDamageDuration",
                             "Name": "Deferred Damage Duration",
-                            "Value": 12,
+                            "Value": 6,
                             "Type": "duration"
                         }
                     ]
@@ -6999,7 +6999,7 @@
                             "Title": "On Activate",
                             "Key": "DeferClearPct",
                             "Name": "Deferred Damage Cleared",
-                            "Value": 30,
+                            "Value": 40,
                             "Type": "healing"
                         }
                     ]
@@ -7022,13 +7022,13 @@
             },
             "Upgrades": [
                 {
-                    "DamagePctDeferred": 6
-                },
-                {
                     "AbilityCooldown": -25
                 },
                 {
-                    "DeferClearPct": 20
+                    "DamagePctDeferred": 6
+                },
+                {
+                    "DeferClearPct": 35
                 }
             ],
             "Move": {
@@ -7051,7 +7051,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 60.0,
+                "Value": 45.0,
                 "Type": "cooldown"
             }
         },
@@ -7104,7 +7104,7 @@
             "Cooldown": {
                 "RageDrainDelayDuration": {
                     "Name": null,
-                    "Value": 9,
+                    "Value": 12,
                     "Type": "cooldown"
                 }
             },
@@ -7162,29 +7162,25 @@
                     "Name": null,
                     "Value": 25
                 },
-                "NonPlayerRageScale": {
-                    "Name": null,
-                    "Value": 0.1
-                },
                 "PauseOnTargetTime": {
                     "Name": null,
                     "Value": 0.66
                 },
                 "RagePerHeavyMelee": {
                     "Name": null,
-                    "Value": 2.75
+                    "Value": 3.3
                 },
                 "RagePerLightMelee": {
                     "Name": null,
-                    "Value": 1.5
+                    "Value": 1.8
                 },
                 "RagePerSpiritDamage": {
                     "Name": null,
-                    "Value": 0.014
+                    "Value": 0.0168
                 },
                 "RagePerWeaponDamage": {
                     "Name": null,
-                    "Value": 0.0153
+                    "Value": 0.01836
                 },
                 "SlashRange": {
                     "Name": null,
@@ -7938,7 +7934,7 @@
                         {
                             "Key": "PulseDPS",
                             "Name": "DPS",
-                            "Value": 74,
+                            "Value": 70,
                             "Type": "tech_damage",
                             "Scale": {
                                 "Value": 1.6,
@@ -7969,7 +7965,7 @@
                     {
                         "Key": "HealthStealPct",
                         "Name": "Non-Hero Lifesteal",
-                        "Value": 15,
+                        "Value": 10,
                         "Type": "healing"
                     },
                     {
@@ -9187,7 +9183,7 @@
                 },
                 {
                     "UseHeavyMelee": 1,
-                    "AbilityCooldown": -11.5,
+                    "AbilityCooldown": -12,
                     "Scale": {
                         "Prop": "Damage",
                         "Value": 0.0,
@@ -9251,7 +9247,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 30.0,
+                "Value": 24.0,
                 "Type": "cooldown"
             },
             "AbilityCooldownBetweenCharge": {
@@ -10370,7 +10366,7 @@
                         {
                             "Key": "CurrentHealthDamage",
                             "Name": "Current Health Damage",
-                            "Value": 10,
+                            "Value": 12,
                             "Type": "tech_damage",
                             "Scale": {
                                 "Value": 0.0,
