@@ -478,6 +478,9 @@
         "WeaponPower": "0",
         "LightMeleeCooldownMult": "2",
         "SpiritDamage": "40",
+        "SpiritDamage_scaling": {
+            "Spirit Scaling": 0.372
+        },
         "TechArmorDamageReduction": "-6"
     },
     "upgrade_active_bullet_shield": {
@@ -948,6 +951,9 @@
         "SlowPercent": "60",
         "SlowDuration": "4",
         "Damage": "175",
+        "Damage_scaling": {
+            "Spirit Scaling": 0.6975
+        },
         "DamageHeight": "2.5m",
         "NPCDamageMult": "1",
         "TechResist": "10",
@@ -1638,7 +1644,13 @@
         "WeaponPower": "0",
         "ProcCooldown": "0.25",
         "DamagePerChain": "50",
+        "DamagePerChain_scaling": {
+            "Spirit Scaling": 0.1395
+        },
         "BonusPerChain": "40",
+        "BonusPerChain_scaling": {
+            "Spirit Scaling": 0.1395
+        },
         "ChainRadius": "10m",
         "ProcChance": "20",
         "ChainCount": "6",
@@ -1711,7 +1723,13 @@
         "WeaponPower": "0",
         "ProcCooldown": "0.25",
         "DamagePerChain": "40",
+        "DamagePerChain_scaling": {
+            "Spirit Scaling": 0.1395
+        },
         "BonusPerChain": "45",
+        "BonusPerChain_scaling": {
+            "Spirit Scaling": 0.1395
+        },
         "ChainRadius": "8m",
         "ProcChance": "15",
         "ChainCount": "4",
@@ -2161,6 +2179,9 @@
         "EndRadius": "12m",
         "MovementSpeedSlow": "60",
         "Damage": "125",
+        "Damage_scaling": {
+            "Spirit Scaling": 0.465
+        },
         "DamageHeight": "2.5m",
         "NPCDamageMult": "1",
         "TechResist": "6"
@@ -2406,6 +2427,9 @@
         "ProcChance": "100",
         "ProcCooldown": "1",
         "ProcBonusMagicDamage": "60",
+        "ProcBonusMagicDamage_scaling": {
+            "Spirit Scaling": 0.651
+        },
         "SpiritPower": "7"
     },
     "upgrade_critshot": {
@@ -2979,6 +3003,9 @@
         "AmmoReloadPercent": "100",
         "AbilityChargeUpTime": "14",
         "BulletsBonusMagicDamage": "25",
+        "BulletsBonusMagicDamage_scaling": {
+            "Spirit Scaling": 0.465
+        },
         "BonusClipSizePercent": "20"
     },
     "upgrade_express_shot": {
@@ -3308,7 +3335,13 @@
         "TechPower": "0",
         "WeaponPower": "0",
         "DamagePerChain": "50",
+        "DamagePerChain_scaling": {
+            "Spirit Scaling": 0.304668
+        },
         "BonusPerChain": "75",
+        "BonusPerChain_scaling": {
+            "Spirit Scaling": 0.457002
+        },
         "ChainRadius": "7m",
         "ProcChance": "30",
         "ProcCooldown": "0.4",
@@ -3532,9 +3565,15 @@
         "TechPower": "0",
         "WeaponPower": "0",
         "HeadShotBonusDamage": "75",
+        "HeadShotBonusDamage_scaling": {
+            "Boon Scaling": 3.0
+        },
         "BaseAttackDamagePercent": "5",
         "BonusHealth": "75",
         "HealPercentPerHeadshot": "4",
+        "HealPercentPerHeadshot_scaling": {
+            "Boon Scaling": 0.06
+        },
         "BonusMoveSpeed": "2m",
         "MovementSpeedBonusDuration": "3",
         "ProcChance": "100"
@@ -3830,6 +3869,9 @@
         "TechPower": "0",
         "WeaponPower": "0",
         "TotalHealthRegen": "325",
+        "TotalHealthRegen_scaling": {
+            "Boon Scaling": 4.4
+        },
         "HeroTargetBonus": "0",
         "RegenDuration": "2",
         "AuraRadius": "18m",
@@ -3952,6 +3994,9 @@
         "TechPower": "0",
         "WeaponPower": "0",
         "TotalHealthRegen": "300",
+        "TotalHealthRegen_scaling": {
+            "Spirit Scaling": 0.93
+        },
         "RegenDuration": "20",
         "BonusSprintSpeed": "2m"
     },
@@ -5056,8 +5101,17 @@
         "TechPower": "0",
         "WeaponPower": "0",
         "DPS": "50",
+        "DPS_scaling": {
+            "Spirit Scaling": 0.152334
+        },
         "DPSIncrease": "10",
+        "DPSIncrease_scaling": {
+            "Spirit Scaling": 0.030467
+        },
         "DPSMax": "100",
+        "DPSMax_scaling": {
+            "Spirit Scaling": 0.304668
+        },
         "Radius": "8m",
         "TickRate": "0.5",
         "TechResist": "-18"
@@ -5201,7 +5255,13 @@
         "NonPlayerBulletResist": "30",
         "BonusSoulsPct": "150",
         "BonusHealth": "100",
+        "BonusHealth_scaling": {
+            "Boon Scaling": 7.0
+        },
         "BonusFireRate": "10",
+        "BonusFireRate_scaling": {
+            "Boon Scaling": 0.8
+        },
         "BonusAbilityCharges": "1",
         "TechRangeMultiplier": "15",
         "TechRadiusMultiplier": "15"
@@ -5267,7 +5327,10 @@
         "BaseAttackDamagePercent": "15",
         "SlowPercent": "50",
         "SlowDuration": "3",
-        "ImpactDamage": "75"
+        "ImpactDamage": "75",
+        "ImpactDamage_scaling": {
+            "Spirit Scaling": 0.93
+        }
     },
     "upgrade_predator_precision": {
         "Name": "Predator Precision",
@@ -5425,7 +5488,13 @@
         "WeaponPower": "0",
         "ProcCooldown": "1",
         "BaseDamagePct": "0.0001",
+        "BaseDamagePct_scaling": {
+            "Spirit Scaling": 3.04668
+        },
         "NanoTechPerShot": "1",
+        "NanoTechPerShot_scaling": {
+            "Spirit Scaling": 3.04668
+        },
         "BaseDamagePerShot": "1",
         "SpellAmplificationMultiplier": "5"
     },
@@ -5836,8 +5905,14 @@
         "TechPower": "0",
         "WeaponPower": "0",
         "HealingPerCast": "70",
+        "HealingPerCast_scaling": {
+            "Boon Scaling": 1.5
+        },
         "BonusMoveSpeed": "2m",
         "Regeneration": "4",
+        "Regeneration_scaling": {
+            "Spirit Scaling": 0.04
+        },
         "RegenerationDuration": "5"
     },
     "upgrade_restorative_locket": {
@@ -5872,6 +5947,9 @@
         "Radius": "30m",
         "TechResist": "6",
         "HealPerStack": "20",
+        "HealPerStack_scaling": {
+            "Spirit Scaling": 0.17
+        },
         "MaxStacks": "20",
         "StaminaToRestore": "2"
     },
@@ -6040,6 +6118,9 @@
         "AbilityCooldown": 36.0,
         "AbilityDuration": "10",
         "AbilityCastRange": "20m",
+        "AbilityCastRange_scaling": {
+            "Spirit Scaling": 0.1
+        },
         "AbilityUnitTargetLimit": "1",
         "AbilityCastDelay": "0.1",
         "AbilityChannelTime": "0",
@@ -6054,6 +6135,9 @@
         "HealAmpRegenPenaltyPercent": "-40",
         "TickRate": "1.0",
         "DotHealthPercent": "2.6",
+        "DotHealthPercent_scaling": {
+            "Spirit Scaling": 0.0038
+        },
         "BonusHealth": "90"
     },
     "upgrade_self_bubble": {
@@ -6476,6 +6560,9 @@
         "DamageWindow": "3.5",
         "DamageThreshold": "150",
         "CombatBarrier": "325",
+        "CombatBarrier_scaling": {
+            "Boon Scaling": 4.0
+        },
         "OutOfCombatHealthRegen": "2.5",
         "BarrierDuration": "8",
         "BonusMoveSpeed": "1.5m"
@@ -6588,6 +6675,9 @@
         "WeaponPower": "0",
         "LightMeleeCooldownMult": "2",
         "SpiritDamage": "75",
+        "SpiritDamage_scaling": {
+            "Spirit Scaling": 0.744
+        },
         "TechArmorDamageReduction": "-15",
         "TechArmorGain": "15",
         "TechPowerReduction": "-15",
@@ -6755,6 +6845,9 @@
         "StasisRadius": "7m",
         "ExplodeRadius": "7m",
         "ExplodeDamage": "250",
+        "ExplodeDamage_scaling": {
+            "Spirit Scaling": 1.52334
+        },
         "StunDuration": "1.5",
         "ImmunityDuration": "4",
         "EMPDuration": "3",
@@ -6797,6 +6890,9 @@
         "TechPower": "0",
         "WeaponPower": "0",
         "StoredSpiritDamage": "200",
+        "StoredSpiritDamage_scaling": {
+            "Spirit Scaling": 0.93
+        },
         "BonusHealth": "75",
         "BonusHealthRegen": "1",
         "BonusMeleeDamagePercent": "30"
@@ -7111,6 +7207,9 @@
         "WeaponPower": "0",
         "BonusHealth": "125",
         "DamagePulseAmount": "27",
+        "DamagePulseAmount_scaling": {
+            "Spirit Scaling": 0.279
+        },
         "DamagePulseRadius": "9m",
         "MeleeResistPercent": "15"
     },
@@ -7303,13 +7402,25 @@
         "TechPower": "0",
         "WeaponPower": "0",
         "DPS": "45",
+        "DPS_scaling": {
+            "Spirit Scaling": 0.152334
+        },
         "DPSIncrease": "7",
+        "DPSIncrease_scaling": {
+            "Spirit Scaling": 0.030467
+        },
         "DPSMax": "95",
+        "DPSMax_scaling": {
+            "Spirit Scaling": 0.304668
+        },
         "NonHeroReductionPercent": "50",
         "Radius": "10m",
         "HeightOffGround": "50",
         "TickRate": "0.5",
         "BulletArmorReduction": "-8",
+        "BulletArmorReduction_scaling": {
+            "Spirit Scaling": -0.07
+        },
         "SpiritPower": "8"
     },
     "upgrade_titan_round": {
@@ -7403,6 +7514,9 @@
         "TechPower": "0",
         "WeaponPower": "0",
         "DotHealthPercent": "2.1",
+        "DotHealthPercent_scaling": {
+            "Spirit Scaling": 0.005
+        },
         "DotDuration": "3",
         "BuildUpPerShot": "1.058",
         "BuildUpDuration": "5",
@@ -7624,7 +7738,10 @@
         "BonusClipSize": "0",
         "InvisDuration": "6",
         "BonusMoveSpeed": "4m",
-        "HealOnVeil": "150"
+        "HealOnVeil": "150",
+        "HealOnVeil_scaling": {
+            "Boon Scaling": 3.0
+        }
     },
     "upgrade_vex_barrier": {
         "Name": "Reactive Barrier",
@@ -7653,6 +7770,9 @@
         "TechPower": "0",
         "WeaponPower": "0",
         "VexBarrierCombatBarrier": "325",
+        "VexBarrierCombatBarrier_scaling": {
+            "Spirit Scaling": 2.0925
+        },
         "TechResist": "6"
     },
     "upgrade_warp_stone": {
@@ -7898,6 +8018,9 @@
         "DamageWindow": "3.5",
         "DamageThreshold": "200",
         "CombatBarrier": "325",
+        "CombatBarrier_scaling": {
+            "Boon Scaling": 4.0
+        },
         "OutOfCombatHealthRegen": "2.5",
         "BarrierDuration": "8",
         "BonusMoveSpeed": "1.5m"
