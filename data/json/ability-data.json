@@ -2482,6 +2482,175 @@
             }
         ]
     },
+    "ability_punkgoat_blasted": {
+        "AbilityCastDelay": 0.28,
+        "AbilityCooldown": 30,
+        "AbilityDuration": 8.5,
+        "AbilityUnitTargetLimit": 1,
+        "BlastedExtendByBulletDuration": 0.2,
+        "BlastedRateOnBulletPct": 50,
+        "BonusMoveSpeed": 0.0,
+        "BulletDamageAmp": 8,
+        "BulletDamageAmpDuration": 7.0,
+        "BulletsReloadedPerHeavyMeleePct": 100,
+        "BulletsReloadedPerLightMeleePct": 35,
+        "ChannelMoveSpeed": -1,
+        "DurationPerHeavyMelee": 5.0,
+        "DurationPerLightMelee": 3.0,
+        "FireRateSlow": 15,
+        "HealthBoostDuration": 11,
+        "IsDisabled": false,
+        "Key": "ability_punkgoat_blasted",
+        "MaxDuration": 9.0,
+        "MaxHealthMelee": 75,
+        "Name": "Blasted",
+        "NonPlayerResourceScale": 0.35,
+        "Upgrades": [
+            {
+                "BonusMoveSpeed": "1.75m"
+            },
+            {
+                "GainSlamOnUse": 1,
+                "BulletDamageAmp": 5
+            },
+            {
+                "MaxHealthMelee": 65
+            }
+        ]
+    },
+    "ability_punkgoat_goatflip": {
+        "AbilityCastDelay": 0.35,
+        "AbilityCooldown": 33,
+        "AbilityDuration": 0.51,
+        "AbilityUnitTargetLimit": 1,
+        "AirControlAccelPercent": 50.0,
+        "AirControlDashReductionPct": -70.0,
+        "AirControlDebuffDuration": 1.5,
+        "AirControlPercent": 50.0,
+        "AllowRamMultiple": 1,
+        "CameraTurnRateMax": 188,
+        "ChargeMultiHitRadius": 1.5,
+        "ChargeRadius": 2.54,
+        "ChargeSpeed": 1200,
+        "ChargeStrikeDistance": 165,
+        "Damage": 55,
+        "GoingBackAwaySpeed": -100,
+        "GoingUpDistance": 3.1,
+        "GoingUpEnemyDistancePercent": 95,
+        "GoingUpHoverDuration": 0.0,
+        "GoingUpSpeed": 430,
+        "HoverGravityScale": 0.75,
+        "IsDisabled": false,
+        "Key": "ability_punkgoat_goatflip",
+        "KnockAwaySpeed": 170,
+        "Name": "Rising Ram",
+        "NearbyHeroKillDistance": 10,
+        "TimeBeforeGoUpForLagComp": 0.1,
+        "TimeGoingUpEnemy": 0.2,
+        "Upgrades": [
+            {
+                "ReduceCooldownOnHitPct": 50
+            },
+            {
+                "WeaponDamageBurst": 25,
+                "WeaponDamageBurstDuration": 5
+            },
+            {
+                "DealMaxHealthDamagePct": 6,
+                "Scale": {
+                    "Prop": "DealMaxHealthDamagePct",
+                    "Value": 0.017,
+                    "Type": null
+                }
+            }
+        ],
+        "WorldImpactRadius": 25
+    },
+    "ability_punkgoat_tether": {
+        "AbilityCastDelay": 0.0,
+        "AbilityCastRange": 13.0,
+        "AbilityCooldown": 150,
+        "AbilityDuration": 2.8,
+        "AbilityPostCastDuration": 0.2,
+        "AbilityUnitTargetLimit": 1,
+        "BulletResist": 15,
+        "ChannelMoveSpeed": -1,
+        "DPS": 45,
+        "Damage": 150,
+        "IsDisabled": false,
+        "Key": "ability_punkgoat_tether",
+        "MoveSpeedSlowMaxPct": 35,
+        "MoveSpeedSlowMinPct": 25,
+        "Name": "Chain Gang",
+        "PullDistance": 4,
+        "PullDuration": 0.8,
+        "PullForceMax": 2000,
+        "PullTrackCasterDuration": 0.5,
+        "RopeLength": 2.0,
+        "RopeSnapDistance": 40.0,
+        "RopeSnapNoLOSDuration": 0.75,
+        "RopeSoftEdgeLength": 4.5,
+        "TechResist": 15,
+        "TickRate": 0.25,
+        "Upgrades": [
+            {
+                "AbilityCooldown": -25
+            },
+            {
+                "BulletResist": 15,
+                "TechResist": 15
+            },
+            {
+                "Damage": 100,
+                "UnstoppableOnPullDuration": 2.0
+            }
+        ]
+    },
+    "ability_punkgoat_ult": {
+        "AbilityCastRange": 4.5,
+        "AbilityChannelTime": 0.3,
+        "AbilityCharges": 1,
+        "AbilityCooldown": 35,
+        "AbilityCooldownBetweenCharge": 8,
+        "AbilityPostCastDuration": 0.3,
+        "AbilityUnitTargetLimit": 1,
+        "CameraTurnRateMax": 2000,
+        "ChannelMoveSpeed": 190,
+        "CountsAsLightMelee": 1,
+        "Damage": 40,
+        "ExplodeDelay": 0.5,
+        "IsDisabled": false,
+        "Key": "ability_punkgoat_ult",
+        "Name": "Bashdown",
+        "PlaceDistanceInFrontOfCaster": 7,
+        "PullDownDuration": 0.75,
+        "PullDownRange": 3,
+        "SlowDuration": 0.0,
+        "TossDuration": 0.4,
+        "TossForce": 350,
+        "Upgrades": [
+            {
+                "AbilityCooldown": -10
+            },
+            {
+                "AbilityCastRange": "1.3m"
+            },
+            {
+                "CountsAsLightMelee": -1,
+                "CountsAsHeavyMelee": 1,
+                "Scale": {
+                    "Prop": "MeleeDamage",
+                    "Value": 0.0,
+                    "Type": null
+                },
+                "HeavyMeleeDamage": 0,
+                "MeleeDamage": 0
+            }
+        ],
+        "WaveEndRadius": 8.0,
+        "WaveStartRadius": 0.5,
+        "WaveThickness": 1
+    },
     "ability_rolling_fireball": {
         "AbilityCastDelay": 0.2,
         "AbilityCooldown": 26.0,
@@ -3225,7 +3394,6 @@
         "MaxLockonStacks": 1,
         "Name": "Nox Nostra",
         "NotInConeLosesLock": 1,
-        "Radius": 3.5,
         "StacksCanDecay": 1,
         "TargetingConeAngle": 20,
         "TimeToGainLockonStack": 0.01,
@@ -3270,7 +3438,6 @@
         ]
     },
     "ability_vampirebat_lovebites": {
-        "AbilityCooldown": 26.0,
         "AbilityUnitTargetLimit": 1,
         "BonusDamage": 45,
         "BuildUpDuration": 5,
