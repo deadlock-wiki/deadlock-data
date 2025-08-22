@@ -621,6 +621,123 @@
             }
         ]
     },
+    "ability_doorman_bomb": {
+        "AbilityCharges": 1,
+        "AbilityCooldown": 16.0,
+        "AbilityCooldownBetweenCharge": 4,
+        "AbilityDuration": 4,
+        "AbilityPostCastDuration": 0.5,
+        "AbilityUnitTargetLimit": 1,
+        "AccuracyDebuffFalloffBias": 0.3,
+        "ChannelMoveSpeed": -1,
+        "DebuffAccuracy": -100,
+        "ExplosionDamage": 70,
+        "ImpactDamage": 40,
+        "IsDisabled": false,
+        "Key": "ability_doorman_bomb",
+        "Name": "Call Bell",
+        "ProjectileDrag": 0.975,
+        "ProjectileFuse": 3,
+        "Radius": 5,
+        "SlowPercent": 30,
+        "Upgrades": [
+            {
+                "Radius": "2m"
+            },
+            {
+                "ImpactDamage": 30,
+                "ExplosionDamage": 50
+            },
+            {
+                "ExplodeOnImpact": 1
+            }
+        ]
+    },
+    "ability_doorman_doorway": {
+        "AbilityCastRange": 50,
+        "AbilityCooldown": 40,
+        "AbilityDuration": 20,
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": -1,
+        "DoorwayDistance": 60,
+        "IsDisabled": false,
+        "Key": "ability_doorman_doorway",
+        "Name": "Doorway",
+        "Upgrades": [
+            {
+                "AbilityDuration": 10
+            },
+            {
+                "CombatBarrier": 250,
+                "BarrierDuration": 8,
+                "Scale": {
+                    "Prop": "CombatBarrier",
+                    "Value": 1.5,
+                    "Type": "spirit"
+                }
+            },
+            {
+                "DoorwayDistance": "50m",
+                "AbilityCastRange": "30m"
+            }
+        ]
+    },
+    "ability_doorman_hotel": {
+        "AbilityCastRange": 5,
+        "AbilityChannelTime": 1,
+        "AbilityCooldown": 120,
+        "AbilityDuration": 6.5,
+        "AbilityPostCastDuration": 0.7,
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": -1,
+        "Damage": 150,
+        "HotelTimeScale": null,
+        "IsDisabled": false,
+        "Key": "ability_doorman_hotel",
+        "LateCheckoutDamage": 250,
+        "Name": "Hotel Guest",
+        "Upgrades": [
+            {
+                "AbilityCastRange": "2m"
+            },
+            {
+                "UnstoppableWhileChanneling": 1
+            },
+            {
+                "AbilityCooldown": -50
+            }
+        ]
+    },
+    "ability_doorman_luggage_cart": {
+        "AbilityCastDelay": 0.25,
+        "AbilityCastRange": 25,
+        "AbilityCooldown": 30,
+        "AbilityDuration": 6,
+        "AbilityUnitTargetLimit": 1,
+        "CartDamage": 80,
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "ability_doorman_luggage_cart",
+        "Name": "Luggage Cart",
+        "Upgrades": [
+            {
+                "AbilityCooldown": -8
+            },
+            {
+                "AbilityCastRange": "15m"
+            },
+            {
+                "CartDamage": 50,
+                "StunDuration": 1.5,
+                "WallImpactDamage": 130,
+                "Scale": {
+                    "Prop": "WallImpactDamage",
+                    "Value": 0.75,
+                    "Type": null
+                }
+            }
+        ]
+    },
     "ability_druid_ability01": {
         "AbilityCooldown": 26.0,
         "AbilityUnitTargetLimit": 1,
@@ -2501,7 +2618,7 @@
         "HealthBoostDuration": 11,
         "IsDisabled": false,
         "Key": "ability_punkgoat_blasted",
-        "MaxDuration": 9.0,
+        "MaxDuration": 35.0,
         "MaxHealthMelee": 75,
         "Name": "Blasted",
         "NonPlayerResourceScale": 0.35,

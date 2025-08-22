@@ -553,7 +553,7 @@
         "CrouchSpeed": 4.75,
         "GroundDashDistanceInMeters": 10.0,
         "GroundDashDuration": 0.68,
-        "HeavyMeleeDamage": 116,
+        "HeavyMeleeDamage": 125.0,
         "HeroBulletLifestealEffectiveness": 1.0,
         "HeroSpiritLifestealEffectiveness": 1.0,
         "InDevelopment": false,
@@ -566,10 +566,10 @@
             "MaxHealth": 29,
             "PowerIncreases": 1,
             "TechPower": 1.1,
-            "LightMeleeDamage": 1.58,
-            "HeavyMeleeDamage": 3.6656
+            "LightMeleeDamage": 1.2,
+            "HeavyMeleeDamage": 3.5714285714285716
         },
-        "LightMeleeDamage": 50,
+        "LightMeleeDamage": 42.0,
         "Lore": "hero_bookworm_lore",
         "MaxHealth": 600.0,
         "MaxMoveSpeed": 7.0,
@@ -579,7 +579,9 @@
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
         "Role": "hero_bookworm_role",
-        "SpiritScaling": {},
+        "SpiritScaling": {
+            "HeavyMeleeDamage": 0.7
+        },
         "SprintSpeed": 2.0,
         "Stamina": 2,
         "StaminaCooldown": 5.0,
@@ -795,15 +797,45 @@
         "AbilityResourceMax": 0,
         "AbilityResourceRegenPerSecond": 0,
         "AirDashDistanceInMeters": 8.0,
-        "AirDashDuration": 0.47,
+        "AirDashDuration": 0.43,
         "BaseHealthRegen": 2.0,
         "BaseWeaponDamageIncrease": 0,
-        "BoundAbilities": {},
+        "BoundAbilities": {
+            "1": {
+                "Name": "Call Bell",
+                "Key": "ability_doorman_bomb"
+            },
+            "2": {
+                "Name": "Doorway",
+                "Key": "ability_doorman_doorway"
+            },
+            "3": {
+                "Name": "Luggage Cart",
+                "Key": "ability_doorman_luggage_cart"
+            },
+            "4": {
+                "Name": "Hotel Guest",
+                "Key": "ability_doorman_hotel"
+            }
+        },
+        "BulletDamage": 28,
+        "BulletGravityScale": 0.0,
+        "BulletSpeed": 203.2,
+        "BulletsPerBurst": 1,
+        "BulletsPerShot": 1,
+        "BurstInterShotInterval": 0.05,
+        "ClipSize": 8,
         "CritDamageBonusScale": 1.0,
         "CritDamageReceivedScale": 0.0,
         "CrouchSpeed": 4.75,
+        "DPS": 41.17647058823529,
+        "FalloffBias": 0.5,
+        "FalloffEndRange": 57.5056,
+        "FalloffEndScale": 0.1,
+        "FalloffStartRange": 19.9898,
+        "FalloffStartScale": 1.0,
         "GroundDashDistanceInMeters": 10.0,
-        "GroundDashDuration": 0.68,
+        "GroundDashDuration": 0.62,
         "HeavyMeleeDamage": 116,
         "HeroBulletLifestealEffectiveness": 1.0,
         "HeroSpiritLifestealEffectiveness": 1.0,
@@ -818,7 +850,9 @@
             "PowerIncreases": 1,
             "TechPower": 1.1,
             "LightMeleeDamage": 1.58,
-            "HeavyMeleeDamage": 3.6656
+            "HeavyMeleeDamage": 3.6656,
+            "DPS": 1.691176470588232,
+            "SustainedDPS": 1.1734693877550981
         },
         "LightMeleeDamage": 50,
         "Lore": "hero_doorman_lore",
@@ -828,38 +862,30 @@
         "Name": "The Doorman",
         "Playstyle": "hero_doorman_playstyle",
         "ProcBuildUpRateScale": 1,
-        "RecommendedItems": [
-            "upgrade_endurance",
-            "upgrade_improved_spirit",
-            "upgrade_magic_burst",
-            "upgrade_hollow_point_rounds",
-            "upgrade_extra_charge",
-            "upgrade_long_range",
-            "upgrade_slowing_bullets",
-            "upgrade_quick_silver",
-            "upgrade_vampire",
-            "upgrade_spirit_bubble",
-            "upgrade_sharpshooter",
-            "upgrade_rapid_recharge",
-            "upgrade_magic_shock",
-            "upgrade_chonky",
-            "upgrade_pristine_emblem",
-            "upgrade_critshot",
-            "upgrade_boundless_spirit",
-            "upgrade_tech_overflow"
-        ],
+        "RecommendedItems": [],
+        "ReloadDelay": 0,
+        "ReloadMovespeed": 1.0,
+        "ReloadSingle": false,
         "ReloadSpeed": 0,
+        "ReloadTime": 2.4,
         "Role": "hero_doorman_role",
+        "RoundsPerSecond": 1.5873015873015872,
+        "ShootMoveSpeed": 0.75,
         "SpiritScaling": {},
         "SprintSpeed": 2.0,
         "Stamina": 3,
         "StaminaCooldown": 5.0,
         "StaminaRegenPerSecond": 0.2,
+        "SustainedDPS": 28.571428571428573,
         "TechDuration": 0,
         "TechRange": 0,
         "WeaponDescription": "citadel_weapon_hero_doorman_set_desc",
         "WeaponName": "citadel_weapon_hero_doorman_set",
-        "WeaponPowerScale": 1
+        "WeaponPowerScale": 1,
+        "WeaponTypes": [
+            "Attribute_EWeaponAttribute_HeavyHitter",
+            "Attribute_EWeaponAttribute_MediumRange"
+        ]
     },
     "hero_drifter": {
         "AbilityResourceMax": 0,
@@ -883,7 +909,7 @@
         "IsRecommended": false,
         "IsSelectable": true,
         "LevelScaling": {
-            "BulletDamage": 0.77,
+            "BulletDamage": 0.693,
             "MaxHealth": 43,
             "PowerIncreases": 1,
             "TechPower": 1.1,

@@ -14898,7 +14898,387 @@
         }
     },
     "hero_doorman": {
-        "Name": "The Doorman"
+        "Name": "The Doorman",
+        "1": {
+            "Key": "ability_doorman_bomb",
+            "Name": "Call Bell",
+            "DescKey": "ability_doorman_bomb_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "On Impact",
+                            "Key": "ImpactDamage",
+                            "Name": "Damage",
+                            "Value": 40,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 0.7,
+                                "Type": "spirit"
+                            }
+                        }
+                    ]
+                },
+                "Alt": null,
+                "DescKey": "ability_doorman_bomb_desc"
+            },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "Explosion",
+                            "Key": "ExplosionDamage",
+                            "Name": "Explosion Damage",
+                            "Value": 70,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 1.4,
+                                "Type": "spirit"
+                            }
+                        },
+                        {
+                            "Title": "Explosion",
+                            "Key": "DebuffAccuracy",
+                            "Name": "Weapon Accuracy",
+                            "Value": -100,
+                            "Type": "fire_rate"
+                        },
+                        {
+                            "Title": "Explosion",
+                            "Key": "SlowPercent",
+                            "Name": "Move Speed",
+                            "Value": 30,
+                            "Type": "slow"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "AbilityDuration",
+                        "Name": "Duration",
+                        "Value": 4,
+                        "Type": "duration"
+                    }
+                ]
+            },
+            "Upgrades": [
+                {
+                    "Radius": "2m"
+                },
+                {
+                    "ImpactDamage": 30,
+                    "ExplosionDamage": 50,
+                    "DescKey": "ability_doorman_bomb_t2_desc"
+                },
+                {
+                    "ExplodeOnImpact": 1,
+                    "DescKey": "ability_doorman_bomb_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AccuracyDebuffFalloffBias": {
+                    "Name": null,
+                    "Value": 0.3
+                },
+                "ProjectileDrag": {
+                    "Name": null,
+                    "Value": 0.975
+                },
+                "ProjectileFuse": {
+                    "Name": null,
+                    "Value": 3
+                }
+            },
+            "AbilityCharges": {
+                "Name": "Charges",
+                "Value": 1,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 16.0,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": 4,
+                "Type": "charge_cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 4,
+                "Type": "duration"
+            },
+            "Radius": {
+                "Name": "Radius",
+                "Value": 5,
+                "Type": "distance"
+            }
+        },
+        "2": {
+            "Key": "ability_doorman_doorway",
+            "Name": "Doorway",
+            "DescKey": "ability_doorman_doorway_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "DoorwayDistance",
+                            "Name": "Doorway Distance",
+                            "Value": 60,
+                            "Type": "distance"
+                        }
+                    ]
+                },
+                "Alt": [],
+                "DescKey": "ability_doorman_doorway_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityDuration": 10
+                },
+                {
+                    "CombatBarrier": 250,
+                    "BarrierDuration": 8,
+                    "Scale": {
+                        "Prop": "CombatBarrier",
+                        "Value": 1.5,
+                        "Type": "spirit"
+                    },
+                    "DescKey": "ability_doorman_doorway_t2_desc"
+                },
+                {
+                    "DoorwayDistance": "50m",
+                    "AbilityCastRange": "30m",
+                    "DescKey": "ability_doorman_doorway_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                }
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 50,
+                "Type": "range"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 40,
+                "Type": "cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 20,
+                "Type": "duration"
+            }
+        },
+        "3": {
+            "Key": "ability_doorman_luggage_cart",
+            "Name": "Luggage Cart",
+            "DescKey": "ability_doorman_luggage_cart_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "CartDamage",
+                            "Name": "Cart Damage",
+                            "Value": 80,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 0.75,
+                                "Type": "spirit"
+                            }
+                        }
+                    ]
+                },
+                "Alt": [],
+                "DescKey": "ability_doorman_luggage_cart_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -8
+                },
+                {
+                    "AbilityCastRange": "15m"
+                },
+                {
+                    "CartDamage": 50,
+                    "StunDuration": 1.5,
+                    "WallImpactDamage": 130,
+                    "Scale": {
+                        "Prop": "WallImpactDamage",
+                        "Value": 0.75,
+                        "Type": null
+                    },
+                    "DescKey": "ability_doorman_luggage_cart_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.25,
+                "Type": "cast"
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 25,
+                "Type": "range"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 30,
+                "Type": "cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 6,
+                "Type": "duration"
+            }
+        },
+        "4": {
+            "Key": "ability_doorman_hotel",
+            "Name": "Hotel Guest",
+            "DescKey": "ability_doorman_hotel_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "Cost of Stay",
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 150,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 1.0,
+                                "Type": "spirit"
+                            }
+                        },
+                        {
+                            "Title": "Failure to Check-Out",
+                            "Key": "LateCheckoutDamage",
+                            "Name": "Damage",
+                            "Value": 250,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 1.5,
+                                "Type": "spirit"
+                            }
+                        }
+                    ]
+                },
+                "Alt": null,
+                "DescKey": "ability_doorman_hotel_desc"
+            },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "While a Guest",
+                            "Key": "AbilityDuration",
+                            "Name": "Duration",
+                            "Value": 6.5,
+                            "Type": "duration"
+                        },
+                        {
+                            "Title": "While a Guest",
+                            "Key": "HotelTimeScale",
+                            "Name": "Slow",
+                            "Value": null,
+                            "Type": "slow"
+                        }
+                    ]
+                },
+                "Alt": null
+            },
+            "Upgrades": [
+                {
+                    "AbilityCastRange": "2m"
+                },
+                {
+                    "UnstoppableWhileChanneling": 1,
+                    "DescKey": "ability_doorman_hotel_t2_desc"
+                },
+                {
+                    "AbilityCooldown": -50
+                }
+            ],
+            "Cast": {
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Value": 1,
+                    "Type": "cast"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.7
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                }
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 5,
+                "Type": "range"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 120,
+                "Type": "cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 6.5,
+                "Type": "duration"
+            }
+        }
     },
     "hero_skyrunner": {
         "Name": "Skyrunner",
@@ -15915,7 +16295,7 @@
                 },
                 "MaxDuration": {
                     "Name": null,
-                    "Value": 9.0
+                    "Value": 35.0
                 },
                 "NonPlayerResourceScale": {
                     "Name": null,
