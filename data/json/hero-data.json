@@ -547,13 +547,43 @@
         "AirDashDuration": 0.47,
         "BaseHealthRegen": 2.0,
         "BaseWeaponDamageIncrease": 0,
-        "BoundAbilities": {},
+        "BoundAbilities": {
+            "1": {
+                "Name": "Conjure Dragon",
+                "Key": "ability_bookworm_dragonfire"
+            },
+            "2": {
+                "Name": "Defend and Fight!",
+                "Key": "ability_bookworm_knightbarrier"
+            },
+            "3": {
+                "Name": "Captivating Read",
+                "Key": "ability_bookworm_aoemagic"
+            },
+            "4": {
+                "Name": "Rallying Charge",
+                "Key": "ability_bookworm_knightcharge"
+            }
+        },
+        "BulletDamage": 35.0,
+        "BulletGravityScale": 0,
+        "BulletSpeed": 37.719,
+        "BulletsPerBurst": 1,
+        "BulletsPerShot": 1,
+        "BurstInterShotInterval": 0.1,
+        "ClipSize": 14,
         "CritDamageBonusScale": 1.0,
         "CritDamageReceivedScale": 0.0,
         "CrouchSpeed": 4.75,
+        "DPS": 58.333333333333336,
+        "FalloffBias": 0.5,
+        "FalloffEndRange": 57.5056,
+        "FalloffEndScale": 0.1,
+        "FalloffStartRange": 19.9898,
+        "FalloffStartScale": 1.0,
         "GroundDashDistanceInMeters": 10.0,
         "GroundDashDuration": 0.68,
-        "HeavyMeleeDamage": 125.0,
+        "HeavyMeleeDamage": 120.0,
         "HeroBulletLifestealEffectiveness": 1.0,
         "HeroSpiritLifestealEffectiveness": 1.0,
         "InDevelopment": false,
@@ -567,7 +597,9 @@
             "PowerIncreases": 1,
             "TechPower": 1.1,
             "LightMeleeDamage": 1.2,
-            "HeavyMeleeDamage": 3.5714285714285716
+            "HeavyMeleeDamage": 3.4285714285714284,
+            "DPS": 1.3333333333333286,
+            "SustainedDPS": 1.0275229357798068
         },
         "LightMeleeDamage": 42.0,
         "Lore": "hero_bookworm_lore",
@@ -577,20 +609,31 @@
         "Name": "Paige",
         "Playstyle": "hero_bookworm_playstyle",
         "ProcBuildUpRateScale": 1,
+        "ReloadDelay": 0,
+        "ReloadMovespeed": 1.0,
+        "ReloadSingle": false,
         "ReloadSpeed": 0,
+        "ReloadTime": 2.5,
         "Role": "hero_bookworm_role",
+        "RoundsPerSecond": 2.0,
+        "ShootMoveSpeed": 0.75,
         "SpiritScaling": {
-            "HeavyMeleeDamage": 0.7
+            "HeavyMeleeDamage": 0.3
         },
-        "SprintSpeed": 2.0,
+        "SprintSpeed": 4.0,
         "Stamina": 2,
         "StaminaCooldown": 5.0,
         "StaminaRegenPerSecond": 0.2,
+        "SustainedDPS": 44.95412844036697,
         "TechDuration": 0,
         "TechRange": 0,
         "WeaponDescription": "citadel_weapon_hero_bookworm_set_desc",
         "WeaponName": "citadel_weapon_hero_bookworm_set",
-        "WeaponPowerScale": 1
+        "WeaponPowerScale": 1,
+        "WeaponTypes": [
+            "Attribute_EWeaponAttribute_RapidFire",
+            "Attribute_EWeaponAttribute_LongRange"
+        ]
     },
     "hero_cadence": {
         "AbilityResourceMax": 0,
@@ -3404,7 +3447,7 @@
         "AbilityResourceRegenPerSecond": 0,
         "AirDashDistanceInMeters": 8.0,
         "AirDashDuration": 0.47,
-        "BaseHealthRegen": 2.5,
+        "BaseHealthRegen": 3.0,
         "BaseWeaponDamageIncrease": 0,
         "BoundAbilities": {
             "1": {
@@ -3452,7 +3495,7 @@
         "IsSelectable": true,
         "LevelScaling": {
             "BulletDamage": 0.16,
-            "MaxHealth": 44,
+            "MaxHealth": 43,
             "PowerIncreases": 1,
             "TechPower": 1.1,
             "LightMeleeDamage": 1.58,

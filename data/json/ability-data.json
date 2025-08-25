@@ -379,6 +379,157 @@
             }
         ]
     },
+    "ability_bookworm_aoemagic": {
+        "AbilityCastDelay": 0.15,
+        "AbilityCastRange": 30,
+        "AbilityCooldown": 30,
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": -1,
+        "Damage": 120,
+        "DetonationDelay": 1.25,
+        "Height": 8,
+        "ImmobilizeDuration": 1.25,
+        "IsDisabled": false,
+        "Key": "ability_bookworm_aoemagic",
+        "Name": "Captivating Read",
+        "Radius": 7,
+        "SlowPercent": 45,
+        "Upgrades": [
+            {
+                "AbilityCooldown": -6
+            },
+            {
+                "ImmobilizeDuration": 0.75
+            },
+            {
+                "TechArmorDamageReduction": -18,
+                "DebuffDuration": 6
+            }
+        ]
+    },
+    "ability_bookworm_dragonfire": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCharges": 1,
+        "AbilityCooldown": 30,
+        "AbilityCooldownBetweenCharge": 8,
+        "AbilityUnitTargetLimit": 1,
+        "AuraLingerDuration": 0.1,
+        "ChannelMoveSpeed": -1,
+        "DPS": 30,
+        "Damage": 60,
+        "DebuffDuration": 1.5,
+        "DragonConeRange": 5,
+        "DragonRangePerSecond": 500,
+        "DragonSearchRadius": 8.5,
+        "DragonSearchTickRate": 0.1,
+        "DragonTravelRange": 20,
+        "DragonUpwardSpeed": 400,
+        "GroundAuraSpacing": 1,
+        "GroundFlameDuration": 3.0,
+        "IsDisabled": false,
+        "Key": "ability_bookworm_dragonfire",
+        "Name": "Conjure Dragon",
+        "Radius": 4,
+        "StartupDelay": 0.3,
+        "TickRate": 0.3,
+        "Upgrades": [
+            {
+                "AbilityCooldown": -5
+            },
+            {
+                "GroundFlameDuration": 2
+            },
+            {
+                "Damage": 115,
+                "DPS": 30
+            }
+        ]
+    },
+    "ability_bookworm_knightbarrier": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCastRange": 35,
+        "AbilityCooldown": 26.0,
+        "AbilityDuration": 5,
+        "AbilityPostCastDuration": 0.2,
+        "AbilityUnitTargetLimit": 1,
+        "BaseAttackDamagePercent": 25,
+        "BonusTargetRadius": 30,
+        "ChannelMoveSpeed": -1,
+        "CombatBarrier": 200,
+        "IsDisabled": false,
+        "Key": "ability_bookworm_knightbarrier",
+        "Name": "Defend and Fight!",
+        "PushForce": 900,
+        "ShoveRadius": 6,
+        "Upgrades": [
+            {
+                "CombatBarrier": 50
+            },
+            {
+                "BonusFireRate": 25
+            },
+            {
+                "BonusTargets": 2,
+                "BonusTargetsBarrierPercentage": 75
+            }
+        ]
+    },
+    "ability_bookworm_knightcharge": {
+        "AbilityCastRange": 600,
+        "AbilityChannelTime": 0.7,
+        "AbilityCooldown": 190,
+        "AbilityUnitTargetLimit": 1,
+        "AirDrag": 0.8,
+        "AllyHeight": 20,
+        "AllyRadius": 4,
+        "BonusMoveSpeed": 5,
+        "BuffDuration": 9,
+        "CancelCooldownRefundPercentage": 50,
+        "ChannelMoveSpeed": 1.3,
+        "Damage": 150,
+        "FallSpeedMax": 20,
+        "GravityAcceleration": -1900,
+        "GroundStickHeight": 0.05,
+        "HealAmount": 150,
+        "IsDisabled": false,
+        "Key": "ability_bookworm_knightcharge",
+        "KnightBonusPerWave": -99,
+        "KnightChargeHeight": 3.5,
+        "KnightChargeWidth": 2.2,
+        "KnightCount": 5,
+        "KnightCountInFirstWave": 5,
+        "KnightDistanceAboveGround": 0,
+        "KnightJumpSpeed": 900,
+        "KnightMaxFallHeight": -35,
+        "KnightMaxJumpHeight": 30,
+        "KnightNavForwardDistance": 8,
+        "KnightNavSearchDistance": 10,
+        "KnightPositionSpread": 1.5,
+        "KnightPositionStagger": -4,
+        "KnightWhiskerLength": 300,
+        "KnightWhiskerSide": 50,
+        "KnightWhiskerStrength": 0.2,
+        "Name": "Rallying Charge",
+        "StunDuration": 1.0,
+        "TargetFindingDelay": 0.15,
+        "TossBackSpeed": 100,
+        "TossUpSpeed": 800,
+        "Upgrades": [
+            {
+                "HealAmount": 150
+            },
+            {
+                "KnightCount": 4,
+                "KnightCountInFirstWave": 4
+            },
+            {
+                "Damage": 150,
+                "StunDuration": 0.5
+            }
+        ],
+        "WaveCount": 2,
+        "WavePositionStagger": -15
+    },
     "ability_bounce_pad": {
         "AbilityCastDelay": 0.08,
         "AbilityCharges": 1,
@@ -2601,27 +2752,28 @@
     },
     "ability_punkgoat_blasted": {
         "AbilityCastDelay": 0.28,
-        "AbilityCooldown": 30,
-        "AbilityDuration": 8.5,
+        "AbilityCooldown": 27,
+        "AbilityDuration": 8.0,
         "AbilityUnitTargetLimit": 1,
         "BlastedExtendByBulletDuration": 0.2,
         "BlastedRateOnBulletPct": 50,
         "BonusMoveSpeed": 0.0,
-        "BulletDamageAmp": 8,
+        "BulletDamageAmp": 9,
         "BulletDamageAmpDuration": 7.0,
         "BulletsReloadedPerHeavyMeleePct": 100,
         "BulletsReloadedPerLightMeleePct": 35,
         "ChannelMoveSpeed": -1,
-        "DurationPerHeavyMelee": 5.0,
-        "DurationPerLightMelee": 3.0,
+        "DurationPerHeavyMelee": 4.5,
+        "DurationPerLightMelee": 2.8,
         "FireRateSlow": 15,
         "HealthBoostDuration": 11,
         "IsDisabled": false,
         "Key": "ability_punkgoat_blasted",
+        "LightMeleeScalePct": 50,
         "MaxDuration": 35.0,
-        "MaxHealthMelee": 75,
+        "MaxHealthMelee": 80,
         "Name": "Blasted",
-        "NonPlayerResourceScale": 0.35,
+        "NonPlayerResourceScalePct": 35,
         "Upgrades": [
             {
                 "BonusMoveSpeed": "1.75m"
@@ -2631,7 +2783,7 @@
                 "BulletDamageAmp": 5
             },
             {
-                "MaxHealthMelee": 65
+                "MaxHealthMelee": 50
             }
         ]
     },
@@ -2704,8 +2856,8 @@
         "PullForceMax": 2000,
         "PullTrackCasterDuration": 0.5,
         "RopeLength": 2.0,
-        "RopeSnapDistance": 40.0,
-        "RopeSnapNoLOSDuration": 0.75,
+        "RopeSnapDistance": 45.0,
+        "RopeSnapNoLOSDuration": 0.85,
         "RopeSoftEdgeLength": 4.5,
         "TechResist": 15,
         "TickRate": 0.25,
