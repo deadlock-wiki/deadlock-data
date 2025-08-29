@@ -379,6 +379,157 @@
             }
         ]
     },
+    "ability_bookworm_aoemagic": {
+        "AbilityCastDelay": 0.15,
+        "AbilityCastRange": 30,
+        "AbilityCooldown": 30,
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": -1,
+        "Damage": 120,
+        "DetonationDelay": 1.25,
+        "Height": 8,
+        "ImmobilizeDuration": 1.25,
+        "IsDisabled": false,
+        "Key": "ability_bookworm_aoemagic",
+        "Name": "Captivating Read",
+        "Radius": 7,
+        "SlowPercent": 45,
+        "Upgrades": [
+            {
+                "AbilityCooldown": -6
+            },
+            {
+                "ImmobilizeDuration": 0.75
+            },
+            {
+                "TechArmorDamageReduction": -18,
+                "DebuffDuration": 6
+            }
+        ]
+    },
+    "ability_bookworm_dragonfire": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCharges": 1,
+        "AbilityCooldown": 30,
+        "AbilityCooldownBetweenCharge": 8,
+        "AbilityUnitTargetLimit": 1,
+        "AuraLingerDuration": 0.1,
+        "ChannelMoveSpeed": -1,
+        "DPS": 30,
+        "Damage": 60,
+        "DebuffDuration": 1.5,
+        "DragonConeRange": 5,
+        "DragonRangePerSecond": 500,
+        "DragonSearchRadius": 8.5,
+        "DragonSearchTickRate": 0.1,
+        "DragonTravelRange": 20,
+        "DragonUpwardSpeed": 400,
+        "GroundAuraSpacing": 1,
+        "GroundFlameDuration": 3.0,
+        "IsDisabled": false,
+        "Key": "ability_bookworm_dragonfire",
+        "Name": "Conjure Dragon",
+        "Radius": 4,
+        "StartupDelay": 0.3,
+        "TickRate": 0.3,
+        "Upgrades": [
+            {
+                "AbilityCooldown": -5
+            },
+            {
+                "GroundFlameDuration": 2
+            },
+            {
+                "Damage": 115,
+                "DPS": 30
+            }
+        ]
+    },
+    "ability_bookworm_knightbarrier": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCastRange": 35,
+        "AbilityCooldown": 26.0,
+        "AbilityDuration": 5,
+        "AbilityPostCastDuration": 0.2,
+        "AbilityUnitTargetLimit": 1,
+        "BaseAttackDamagePercent": 25,
+        "BonusTargetRadius": 30,
+        "ChannelMoveSpeed": -1,
+        "CombatBarrier": 200,
+        "IsDisabled": false,
+        "Key": "ability_bookworm_knightbarrier",
+        "Name": "Defend and Fight!",
+        "PushForce": 900,
+        "ShoveRadius": 6,
+        "Upgrades": [
+            {
+                "CombatBarrier": 50
+            },
+            {
+                "BonusFireRate": 25
+            },
+            {
+                "BonusTargets": 2,
+                "BonusTargetsBarrierPercentage": 75
+            }
+        ]
+    },
+    "ability_bookworm_knightcharge": {
+        "AbilityCastRange": 600,
+        "AbilityChannelTime": 0.7,
+        "AbilityCooldown": 190,
+        "AbilityUnitTargetLimit": 1,
+        "AirDrag": 0.8,
+        "AllyHeight": 20,
+        "AllyRadius": 4,
+        "BonusMoveSpeed": 5,
+        "BuffDuration": 9,
+        "CancelCooldownRefundPercentage": 50,
+        "ChannelMoveSpeed": 1.3,
+        "Damage": 150,
+        "FallSpeedMax": 20,
+        "GravityAcceleration": -1900,
+        "GroundStickHeight": 0.05,
+        "HealAmount": 150,
+        "IsDisabled": false,
+        "Key": "ability_bookworm_knightcharge",
+        "KnightBonusPerWave": -99,
+        "KnightChargeHeight": 3.5,
+        "KnightChargeWidth": 2.2,
+        "KnightCount": 5,
+        "KnightCountInFirstWave": 5,
+        "KnightDistanceAboveGround": 0,
+        "KnightJumpSpeed": 900,
+        "KnightMaxFallHeight": -35,
+        "KnightMaxJumpHeight": 30,
+        "KnightNavForwardDistance": 8,
+        "KnightNavSearchDistance": 10,
+        "KnightPositionSpread": 1.5,
+        "KnightPositionStagger": -4,
+        "KnightWhiskerLength": 300,
+        "KnightWhiskerSide": 50,
+        "KnightWhiskerStrength": 0.2,
+        "Name": "Rallying Charge",
+        "StunDuration": 1.0,
+        "TargetFindingDelay": 0.15,
+        "TossBackSpeed": 100,
+        "TossUpSpeed": 800,
+        "Upgrades": [
+            {
+                "HealAmount": 150
+            },
+            {
+                "KnightCount": 4,
+                "KnightCountInFirstWave": 4
+            },
+            {
+                "Damage": 150,
+                "StunDuration": 0.5
+            }
+        ],
+        "WaveCount": 2,
+        "WavePositionStagger": -15
+    },
     "ability_bounce_pad": {
         "AbilityCastDelay": 0.08,
         "AbilityCharges": 1,
@@ -623,7 +774,7 @@
     },
     "ability_doorman_bomb": {
         "AbilityCharges": 1,
-        "AbilityCooldown": 16.0,
+        "AbilityCooldown": 18.0,
         "AbilityCooldownBetweenCharge": 4,
         "AbilityDuration": 4,
         "AbilityPostCastDuration": 0.5,
@@ -728,7 +879,7 @@
             },
             {
                 "CartDamage": 50,
-                "StunDuration": 1.5,
+                "StunDuration": 1.2,
                 "WallImpactDamage": 130,
                 "Scale": {
                     "Prop": "WallImpactDamage",
@@ -737,6 +888,43 @@
                 }
             }
         ]
+    },
+    "ability_drifter_hunger": {
+        "AbilityCastRange": 80,
+        "AbilityUnitTargetLimit": 1,
+        "AmpDamagePercent": 15,
+        "BonusMoveSpeed": 0,
+        "ChannelMoveSpeed": -1,
+        "DelayBeforeInvisStarts": 0.6,
+        "InvisFadeToDuration": 0.3,
+        "InvisMoveSpeedMod": 0,
+        "IsDisabled": false,
+        "IsolationAssistPercentValue": 40,
+        "IsolationRange": 25,
+        "Key": "ability_drifter_hunger",
+        "KillDuration": 300,
+        "LowHealthThreshold": 30,
+        "MaxTrailTargets": 2,
+        "Name": "Bloodscent",
+        "RevealOnDamageDuration": 0.25,
+        "RevealOnSpottedDuration": 1.5,
+        "SpottedRadius": 15,
+        "TargetLingerDuration": 3,
+        "TickRate": 1,
+        "TrailDuration": 10,
+        "Upgrades": [
+            {
+                "BonusMoveSpeed": "2m"
+            },
+            {
+                "CooldownReductionOnKill": 15,
+                "StaminaToRestore": 3
+            },
+            {
+                "AmpDamagePercent": 11
+            }
+        ],
+        "WeaponDmgPerIsolationKill": 5
     },
     "ability_druid_ability01": {
         "AbilityCooldown": 26.0,
@@ -1433,7 +1621,7 @@
         "MaxSlowPercent": 40,
         "MaxSlowTime": 2.0,
         "MinSlowPercent": 30,
-        "Name": "Freezing",
+        "Name": "Arctic Beam",
         "PathLength": 25,
         "PathWidth": 1.1,
         "SlowDuration": 0.6,
@@ -2601,27 +2789,28 @@
     },
     "ability_punkgoat_blasted": {
         "AbilityCastDelay": 0.28,
-        "AbilityCooldown": 30,
-        "AbilityDuration": 8.5,
+        "AbilityCooldown": 27,
+        "AbilityDuration": 8.0,
         "AbilityUnitTargetLimit": 1,
         "BlastedExtendByBulletDuration": 0.2,
         "BlastedRateOnBulletPct": 50,
         "BonusMoveSpeed": 0.0,
-        "BulletDamageAmp": 8,
+        "BulletDamageAmp": 9,
         "BulletDamageAmpDuration": 7.0,
         "BulletsReloadedPerHeavyMeleePct": 100,
         "BulletsReloadedPerLightMeleePct": 35,
         "ChannelMoveSpeed": -1,
-        "DurationPerHeavyMelee": 5.0,
-        "DurationPerLightMelee": 3.0,
+        "DurationPerHeavyMelee": 4.5,
+        "DurationPerLightMelee": 2.8,
         "FireRateSlow": 15,
         "HealthBoostDuration": 11,
         "IsDisabled": false,
         "Key": "ability_punkgoat_blasted",
+        "LightMeleeScalePct": 50,
         "MaxDuration": 35.0,
-        "MaxHealthMelee": 75,
+        "MaxHealthMelee": 80,
         "Name": "Blasted",
-        "NonPlayerResourceScale": 0.35,
+        "NonPlayerResourceScalePct": 35,
         "Upgrades": [
             {
                 "BonusMoveSpeed": "1.75m"
@@ -2631,7 +2820,7 @@
                 "BulletDamageAmp": 5
             },
             {
-                "MaxHealthMelee": 65
+                "MaxHealthMelee": 50
             }
         ]
     },
@@ -2704,8 +2893,8 @@
         "PullForceMax": 2000,
         "PullTrackCasterDuration": 0.5,
         "RopeLength": 2.0,
-        "RopeSnapDistance": 40.0,
-        "RopeSnapNoLOSDuration": 0.75,
+        "RopeSnapDistance": 45.0,
+        "RopeSnapNoLOSDuration": 0.8,
         "RopeSoftEdgeLength": 4.5,
         "TechResist": 15,
         "TickRate": 0.25,
@@ -2734,12 +2923,12 @@
         "CameraTurnRateMax": 2000,
         "ChannelMoveSpeed": 190,
         "CountsAsLightMelee": 1,
-        "Damage": 40,
+        "Damage": 35,
         "ExplodeDelay": 0.5,
         "IsDisabled": false,
         "Key": "ability_punkgoat_ult",
         "Name": "Bashdown",
-        "PlaceDistanceInFrontOfCaster": 7,
+        "PlaceDistanceInFrontOfCaster": 6.2,
         "PullDownDuration": 0.75,
         "PullDownRange": 3,
         "SlowDuration": 0.0,
@@ -3455,7 +3644,7 @@
                 "BonusBullets": 8
             },
             {
-                "AbilityCooldown": -7
+                "AbilityCooldown": -12
             }
         ]
     },
@@ -3482,7 +3671,7 @@
     "ability_vampirebat_batswarm": {
         "AbilityCastDelay": 0.5,
         "AbilityCastRange": 40,
-        "AbilityCooldown": 150,
+        "AbilityCooldown": 130,
         "AbilityUnitTargetLimit": 12,
         "AirDrag": 12,
         "BatCount": 75,
@@ -3497,7 +3686,7 @@
         "ChannelMoveSpeed": -1,
         "CurrentHealthDamageCapToBosses": 50,
         "Damage": 6,
-        "DebuffDuration": 1.0,
+        "DebuffDuration": 1.25,
         "FallSpeedMax": 1,
         "GroundAccelerationPercentage": -80,
         "GroundFrictioNpercentage": -80,
@@ -3567,7 +3756,7 @@
         "IsDisabled": false,
         "Key": "ability_vampirebat_lovebites",
         "Name": "Love Bites",
-        "PerTargetCooldown": 8,
+        "PerTargetCooldown": 7,
         "Upgrades": [
             {
                 "BuffDuration": 3,
@@ -3578,7 +3767,9 @@
                 "BonusDamage": 55
             },
             {
-                "PerTargetCooldown": -3
+                "SlowDuration": 3,
+                "SlowPercent": 30,
+                "StaminaReduction": 1
             }
         ]
     },
@@ -5982,6 +6173,108 @@
                 "DamagePerSecond": 50
             }
         ]
+    },
+    "drifter_blood_blast": {
+        "AbilityCastDelay": 0.5,
+        "AbilityCastRange": 18,
+        "AbilityCooldown": 15.0,
+        "AbilityPostCastDuration": 0.5,
+        "AbilityUnitTargetLimit": 30,
+        "BonusDamage": 40.0,
+        "ChannelMoveSpeed": 1.3,
+        "Damage": 0.0,
+        "ExtraSweepConeAngle": 60,
+        "ExtraSweepOffsetBehindCaster": 80,
+        "ExtraSweepRange": 3,
+        "IsDisabled": false,
+        "Key": "drifter_blood_blast",
+        "Name": "Rend",
+        "RangeForBonusDamage": 8,
+        "TargetingConeAngle": 50,
+        "Upgrades": [
+            {
+                "BonusDamage": 40
+            },
+            {
+                "AbilityCooldown": -7.0
+            },
+            {
+                "BulletLifestealPercentHero": 45,
+                "LifestealDuration": 4.0
+            }
+        ]
+    },
+    "drifter_darkness": {
+        "AbilityCastDelay": 1.0,
+        "AbilityCastRange": 100,
+        "AbilityCooldown": 130.0,
+        "AbilityDuration": 7.0,
+        "AbilityUnitTargetLimit": 1,
+        "AuraLingerDuration": 0.001,
+        "BonusSprintSpeed": 3,
+        "ChannelMoveSpeed": 1.3,
+        "DarkFactor": 1.0,
+        "DistanceForMaxProjSpeed": 200,
+        "DrifterNearbyRangeCheck": 40,
+        "IsDisabled": false,
+        "Key": "drifter_darkness",
+        "MaxProjectileSpeed": 3000,
+        "MaxTargets": 2,
+        "MinProjectileSpeed": 3000,
+        "Name": "Eternal Night",
+        "PostProcessFadeInTime": 0.2,
+        "PostProcessFadeOutTime": 1.0,
+        "RevealDuration": 3,
+        "SmallVisionDistance": 15,
+        "SpiritDamagePerAttack": 9,
+        "Upgrades": [
+            {
+                "SpiritDamagePerAttack": 11
+            },
+            {
+                "AbilityCooldown": -30,
+                "BonusSprintSpeed": "3m"
+            },
+            {
+                "AbilityDuration": 2,
+                "MaxTargets": 1
+            }
+        ],
+        "VisionDistance": 35
+    },
+    "drifter_shadow_mark": {
+        "AbilityCastDelay": 0.15,
+        "AbilityCooldown": 20,
+        "AbilityDuration": 6,
+        "AbilityUnitTargetLimit": 1,
+        "AirDrag": 3,
+        "ChannelMoveSpeed": -1,
+        "DotHealthPercent": 2.0,
+        "FallSpeedMax": 0.3,
+        "IsDisabled": false,
+        "Key": "drifter_shadow_mark",
+        "Name": "Stalker's Mark",
+        "TeleportBackOffsetFromTarget": 135,
+        "TickRate": 0.5,
+        "Upgrades": [
+            {
+                "DotHealthPercent": 1.0
+            },
+            {
+                "BonusFireRate": 25,
+                "BuffDuration": 6
+            },
+            {
+                "AbilityCharges": 2,
+                "Scale": {
+                    "Prop": "AbilityCharges",
+                    "Value": 1,
+                    "Type": "max_charges"
+                },
+                "AbilityCooldownBetweenCharge": 5
+            }
+        ],
+        "VerticalDrag": 1
     },
     "fathom_breach": {
         "AbilityCastDelay": 0.0,
