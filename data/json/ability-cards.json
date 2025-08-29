@@ -13891,9 +13891,16 @@
                     "DescKey": "ability_vampirebat_batblink_t2_desc"
                 },
                 {
-                    "AbilityCooldown": -7
+                    "AbilityCooldown": -12
                 }
             ],
+            "Cast": {
+                "MaxRecasts": {
+                    "Name": null,
+                    "Value": 1,
+                    "Type": "cast"
+                }
+            },
             "Move": {
                 "ChannelMoveSpeed": {
                     "Name": "Channel Move Speed",
@@ -13917,10 +13924,6 @@
                 "ExitVelocity": {
                     "Name": null,
                     "Value": 5
-                },
-                "MaxRecasts": {
-                    "Name": null,
-                    "Value": 1
                 }
             },
             "AbilityCastRange": {
@@ -13977,7 +13980,20 @@
                     {
                         "Key": "BuffDuration",
                         "Name": "Buff Duration",
-                        "Value": null
+                        "Value": null,
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "SlowPercent",
+                        "Name": "Move Speed",
+                        "Value": null,
+                        "Type": "slow"
+                    },
+                    {
+                        "Key": "SlowDuration",
+                        "Name": "Slow Duration",
+                        "Value": null,
+                        "Type": "duration"
                     }
                 ],
                 "DescKey": "ability_vampirebat_lovebites_desc"
@@ -13994,13 +14010,16 @@
                     "DescKey": "ability_vampirebat_lovebites_t2_desc"
                 },
                 {
-                    "PerTargetCooldown": -3
+                    "SlowDuration": 3,
+                    "SlowPercent": 30,
+                    "StaminaReduction": 1,
+                    "DescKey": "ability_vampirebat_lovebites_t3_desc"
                 }
             ],
             "Cooldown": {
                 "PerTargetCooldown": {
                     "Name": null,
-                    "Value": 8,
+                    "Value": 7,
                     "Type": "cooldown"
                 }
             },
@@ -14064,7 +14083,7 @@
                             "Title": "On Hit:",
                             "Key": "DebuffDuration",
                             "Name": "Debuff Duration",
-                            "Value": 1.0
+                            "Value": 1.25
                         }
                     ]
                 },
@@ -14222,7 +14241,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 150,
+                "Value": 130,
                 "Type": "cooldown"
             }
         }
@@ -14282,7 +14301,7 @@
                     "AbilityCooldown": -7.0
                 },
                 {
-                    "BulletLifestealPercentHero": 55,
+                    "BulletLifestealPercentHero": 45,
                     "LifestealDuration": 4.0,
                     "DescKey": "drifter_blood_blast_t3_desc"
                 }
@@ -14509,7 +14528,7 @@
                     "DescKey": "ability_drifter_hunger_t2_desc"
                 },
                 {
-                    "AmpDamagePercent": 13
+                    "AmpDamagePercent": 11
                 }
             ],
             "Duration": {
@@ -14605,7 +14624,7 @@
                         },
                         {
                             "Key": "SpiritDamagePerAttack",
-                            "Name": "Spirit Damage",
+                            "Name": "Spirit Damage Proc",
                             "Value": 9,
                             "Type": "tech_damage",
                             "Scale": {
@@ -16074,7 +16093,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 16.0,
+                "Value": 18.0,
                 "Type": "cooldown"
             },
             "AbilityCooldownBetweenCharge": {
@@ -16191,7 +16210,7 @@
                 },
                 {
                     "CartDamage": 50,
-                    "StunDuration": 1.5,
+                    "StunDuration": 1.2,
                     "WallImpactDamage": 130,
                     "Scale": {
                         "Prop": "WallImpactDamage",
@@ -16918,10 +16937,10 @@
                         {
                             "Key": "Damage",
                             "Name": "Damage",
-                            "Value": 40,
+                            "Value": 35,
                             "Type": "tech_damage",
                             "Scale": {
-                                "Value": 1.2,
+                                "Value": 1.1,
                                 "Type": "spirit"
                             }
                         },
@@ -16992,7 +17011,7 @@
             "Range": {
                 "PlaceDistanceInFrontOfCaster": {
                     "Name": null,
-                    "Value": 7,
+                    "Value": 6.2,
                     "Type": "distance"
                 },
                 "PullDownRange": {
@@ -17525,7 +17544,7 @@
                 },
                 "RopeSnapNoLOSDuration": {
                     "Name": null,
-                    "Value": 0.85
+                    "Value": 0.8
                 },
                 "TickRate": {
                     "Name": null,

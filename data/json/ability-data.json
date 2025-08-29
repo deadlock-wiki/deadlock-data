@@ -774,7 +774,7 @@
     },
     "ability_doorman_bomb": {
         "AbilityCharges": 1,
-        "AbilityCooldown": 16.0,
+        "AbilityCooldown": 18.0,
         "AbilityCooldownBetweenCharge": 4,
         "AbilityDuration": 4,
         "AbilityPostCastDuration": 0.5,
@@ -879,7 +879,7 @@
             },
             {
                 "CartDamage": 50,
-                "StunDuration": 1.5,
+                "StunDuration": 1.2,
                 "WallImpactDamage": 130,
                 "Scale": {
                     "Prop": "WallImpactDamage",
@@ -921,7 +921,7 @@
                 "StaminaToRestore": 3
             },
             {
-                "AmpDamagePercent": 13
+                "AmpDamagePercent": 11
             }
         ],
         "WeaponDmgPerIsolationKill": 5
@@ -2894,7 +2894,7 @@
         "PullTrackCasterDuration": 0.5,
         "RopeLength": 2.0,
         "RopeSnapDistance": 45.0,
-        "RopeSnapNoLOSDuration": 0.85,
+        "RopeSnapNoLOSDuration": 0.8,
         "RopeSoftEdgeLength": 4.5,
         "TechResist": 15,
         "TickRate": 0.25,
@@ -2923,12 +2923,12 @@
         "CameraTurnRateMax": 2000,
         "ChannelMoveSpeed": 190,
         "CountsAsLightMelee": 1,
-        "Damage": 40,
+        "Damage": 35,
         "ExplodeDelay": 0.5,
         "IsDisabled": false,
         "Key": "ability_punkgoat_ult",
         "Name": "Bashdown",
-        "PlaceDistanceInFrontOfCaster": 7,
+        "PlaceDistanceInFrontOfCaster": 6.2,
         "PullDownDuration": 0.75,
         "PullDownRange": 3,
         "SlowDuration": 0.0,
@@ -3644,7 +3644,7 @@
                 "BonusBullets": 8
             },
             {
-                "AbilityCooldown": -7
+                "AbilityCooldown": -12
             }
         ]
     },
@@ -3671,7 +3671,7 @@
     "ability_vampirebat_batswarm": {
         "AbilityCastDelay": 0.5,
         "AbilityCastRange": 40,
-        "AbilityCooldown": 150,
+        "AbilityCooldown": 130,
         "AbilityUnitTargetLimit": 12,
         "AirDrag": 12,
         "BatCount": 75,
@@ -3686,7 +3686,7 @@
         "ChannelMoveSpeed": -1,
         "CurrentHealthDamageCapToBosses": 50,
         "Damage": 6,
-        "DebuffDuration": 1.0,
+        "DebuffDuration": 1.25,
         "FallSpeedMax": 1,
         "GroundAccelerationPercentage": -80,
         "GroundFrictioNpercentage": -80,
@@ -3756,7 +3756,7 @@
         "IsDisabled": false,
         "Key": "ability_vampirebat_lovebites",
         "Name": "Love Bites",
-        "PerTargetCooldown": 8,
+        "PerTargetCooldown": 7,
         "Upgrades": [
             {
                 "BuffDuration": 3,
@@ -3767,7 +3767,9 @@
                 "BonusDamage": 55
             },
             {
-                "PerTargetCooldown": -3
+                "SlowDuration": 3,
+                "SlowPercent": 30,
+                "StaminaReduction": 1
             }
         ]
     },
@@ -6197,7 +6199,7 @@
                 "AbilityCooldown": -7.0
             },
             {
-                "BulletLifestealPercentHero": 55,
+                "BulletLifestealPercentHero": 45,
                 "LifestealDuration": 4.0
             }
         ]
