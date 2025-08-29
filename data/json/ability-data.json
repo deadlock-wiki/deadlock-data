@@ -1245,6 +1245,167 @@
             }
         ]
     },
+    "ability_frank_painaura": {
+        "AbilityCooldown": 1,
+        "AbilityDuration": 10,
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": -1,
+        "DebuffDuration": 0.5,
+        "IsDisabled": false,
+        "Key": "ability_frank_painaura",
+        "MaxDPS": 75,
+        "MinDPS": 15,
+        "Name": "Aura of Suffering",
+        "Radius": 9,
+        "SelfDPS": 15,
+        "SelfDamagePercentage": 80,
+        "TickRate": 0.25,
+        "ToggleOffDelay": 0.5,
+        "Upgrades": [
+            {
+                "SlowPercent": 30,
+                "DebuffDuration": 0.5
+            },
+            {
+                "MinDps": 10,
+                "MaxDPS": 50
+            },
+            {
+                "IncomingDamagePercent": 13
+            }
+        ]
+    },
+    "ability_frank_revive": {
+        "AbilityChannelTime": 3,
+        "AbilityCooldown": 180,
+        "AbilityPostCastDuration": 0.66,
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": -1,
+        "Damage": 200,
+        "HalfHeight": 15,
+        "InitialDelay": 0.5,
+        "IsDisabled": false,
+        "Key": "ability_frank_revive",
+        "Name": "Shocking Reanimation",
+        "Radius": 12,
+        "RespawnDelay": 3,
+        "RespawnHealthPercent": 100,
+        "SlowDuration": 3,
+        "SlowPercent": 80,
+        "StunDuration": 1,
+        "Upgrades": [
+            {
+                "BonusDamagePerBullet": 10,
+                "BonusFireRate": 25,
+                "Scale": {
+                    "Prop": "BonusDamagePerBullet",
+                    "Value": 0.08,
+                    "Type": "spirit"
+                },
+                "BuffDuration": 30
+            },
+            {
+                "AbilityCooldown": -20
+            },
+            {
+                "Damage": 200,
+                "Radius": "3m"
+            }
+        ],
+        "ZombieTickRate": 0.02
+    },
+    "ability_frank_selfzap": {
+        "AbilityChannelTime": 0.35,
+        "AbilityCharges": 1,
+        "AbilityCooldown": 22,
+        "AbilityCooldownBetweenCharge": 3,
+        "AbilityDuration": 4,
+        "AbilityUnitTargetLimit": 1,
+        "BonusMoveSpeed": 4,
+        "ChannelMoveSpeed": -1,
+        "CurrentHealthPercentDamage": 15,
+        "IsDisabled": false,
+        "Key": "ability_frank_selfzap",
+        "Name": "Jumpstart",
+        "TotalHealthRegen": 100,
+        "Upgrades": [
+            {
+                "BonusMoveSpeed": "1.5m"
+            },
+            {
+                "TotalHealthRegen": 50
+            },
+            {
+                "AbilityCooldown": -8,
+                "RemoveDebuffs": 1
+            }
+        ]
+    },
+    "ability_frank_shocktarget": {
+        "AbilityCastDelay": 0.35,
+        "AbilityCastRange": 16,
+        "AbilityCooldown": 7,
+        "AbilityUnitTargetLimit": 1,
+        "BoltCount": 5,
+        "BonusDamageCap": 200,
+        "BonusDamageConversionPercent": 20,
+        "BonusDamageDecayLockoutDuration": 5,
+        "BonusDamageDecayPerSecond": 20,
+        "BonusDamageDecayRate": 0.05,
+        "ChannelMoveSpeed": -1,
+        "Damage": 30,
+        "IsDisabled": false,
+        "Key": "ability_frank_shocktarget",
+        "Name": "Pain Battery",
+        "ShockRange": 0,
+        "ShockTickRate": 0.1,
+        "SlowDuration": 1.5,
+        "SlowPercent": 40,
+        "SpreadAngle": 60,
+        "Upgrades": [
+            {
+                "Damage": 30,
+                "BonusDamageCap": 30
+            },
+            {
+                "AbilityCooldown": -2
+            },
+            {
+                "HealOnHit": 175
+            }
+        ]
+    },
+    "ability_frank_shocktarget2": {
+        "AbilityCastDelay": 0.35,
+        "AbilityCastRange": 20,
+        "AbilityChargesConditionally": 1,
+        "AbilityCooldown": 2,
+        "AbilityPostCastDuration": 0.2,
+        "AbilityUnitTargetLimit": 1,
+        "BatteryGenerationPercent": 100,
+        "BoltCount": 5,
+        "BonusShocksDelay": 0.2,
+        "ChannelMoveSpeed": -1,
+        "Damage": 100,
+        "IsDisabled": false,
+        "Key": "ability_frank_shocktarget2",
+        "Name": "Pain Battery",
+        "SpreadAngle": 40,
+        "SpreadRandomness": 0.01,
+        "StoredDamageHealthPercentRequired": 50,
+        "Upgrades": [
+            {
+                "Damage": 40
+            },
+            {
+                "SlowPercent": 40,
+                "SlowDuration": "2s"
+            },
+            {
+                "MissingHealthPercentHeal": 20
+            }
+        ]
+    },
     "ability_graf_ability01": {
         "AbilityCooldown": 26.0,
         "AbilityUnitTargetLimit": 1,

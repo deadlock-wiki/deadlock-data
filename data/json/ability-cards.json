@@ -15122,7 +15122,450 @@
         }
     },
     "hero_frank": {
-        "Name": "Victor"
+        "Name": "Victor",
+        "1": {
+            "Key": "ability_frank_shocktarget2",
+            "Name": "Pain Battery",
+            "DescKey": "ability_frank_shocktarget2_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 100,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 1.6,
+                                "Type": "spirit"
+                            }
+                        }
+                    ]
+                },
+                "Alt": [],
+                "DescKey": "ability_frank_shocktarget2_desc"
+            },
+            "Info2": {
+                "Main": {
+                    "Props": []
+                },
+                "Alt": null
+            },
+            "Upgrades": [
+                {
+                    "Damage": 40
+                },
+                {
+                    "SlowPercent": 40,
+                    "SlowDuration": "2s",
+                    "DescKey": "ability_frank_shocktarget2_t2_desc"
+                },
+                {
+                    "MissingHealthPercentHeal": 20,
+                    "DescKey": "ability_frank_shocktarget2_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityChargesConditionally": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.2
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "BatteryGenerationPercent": {
+                    "Name": "Battery Generation",
+                    "Value": 100,
+                    "Scale": {
+                        "Value": -1.0,
+                        "Type": "cooldown"
+                    }
+                },
+                "BoltCount": {
+                    "Name": null,
+                    "Value": 5
+                },
+                "BonusShocksDelay": {
+                    "Name": null,
+                    "Value": 0.2
+                },
+                "SpreadAngle": {
+                    "Name": null,
+                    "Value": 40
+                },
+                "SpreadRandomness": {
+                    "Name": null,
+                    "Value": 0.01
+                },
+                "StoredDamageHealthPercentRequired": {
+                    "Name": null,
+                    "Value": 50
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.35,
+                "Type": "cast"
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 20,
+                "Type": "range"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 2,
+                "Type": "cooldown"
+            }
+        },
+        "2": {
+            "Key": "ability_frank_selfzap",
+            "Name": "Jumpstart",
+            "DescKey": "ability_frank_selfzap_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "CurrentHealthPercentDamage",
+                            "Name": "Current Health",
+                            "Value": 15,
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Title": "On Buff:",
+                            "Key": "TotalHealthRegen",
+                            "Name": "Total HP Regen",
+                            "Value": 100,
+                            "Type": "healing",
+                            "Scale": {
+                                "Value": 2.0,
+                                "Type": "spirit"
+                            }
+                        },
+                        {
+                            "Title": "On Buff:",
+                            "Key": "BonusMoveSpeed",
+                            "Name": "Move Speed",
+                            "Value": 4,
+                            "Type": "move_speed"
+                        }
+                    ]
+                },
+                "Alt": [],
+                "DescKey": "ability_frank_selfzap_desc"
+            },
+            "Upgrades": [
+                {
+                    "BonusMoveSpeed": "1.5m"
+                },
+                {
+                    "TotalHealthRegen": 50
+                },
+                {
+                    "AbilityCooldown": -8,
+                    "RemoveDebuffs": 1,
+                    "DescKey": "ability_frank_selfzap_t3_desc"
+                }
+            ],
+            "Cast": {
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Value": 0.35,
+                    "Type": "cast"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                }
+            },
+            "AbilityCharges": {
+                "Name": "Charges",
+                "Value": 1,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 22,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": 3,
+                "Type": "charge_cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 4,
+                "Type": "duration"
+            }
+        },
+        "3": {
+            "Key": "ability_frank_painaura",
+            "Name": "Aura of Suffering",
+            "DescKey": "ability_frank_painaura_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "MinDPS",
+                            "Name": "Minimum DPS",
+                            "Value": 15,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 0.25,
+                                "Type": "spirit"
+                            }
+                        },
+                        {
+                            "Key": "MaxDPS",
+                            "Name": "Max DPS",
+                            "Value": 75,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 1.25,
+                                "Type": "spirit"
+                            }
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "SelfDamagePercentage",
+                        "Name": "Self Damage",
+                        "Value": 80,
+                        "Type": "damage"
+                    }
+                ],
+                "DescKey": "ability_frank_painaura_desc"
+            },
+            "Upgrades": [
+                {
+                    "SlowPercent": 30,
+                    "DebuffDuration": 0.5,
+                    "DescKey": "ability_frank_painaura_t1_desc"
+                },
+                {
+                    "MinDps": 10,
+                    "MaxDPS": 50,
+                    "DescKey": "ability_frank_painaura_t2_desc"
+                },
+                {
+                    "IncomingDamagePercent": 13,
+                    "DescKey": "ability_frank_painaura_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "DebuffDuration": {
+                    "Name": "Debuff Duration",
+                    "Value": 0.5
+                },
+                "SelfDPS": {
+                    "Name": null,
+                    "Value": 15
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 0.25
+                },
+                "ToggleOffDelay": {
+                    "Name": null,
+                    "Value": 0.5
+                }
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 1,
+                "Type": "cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 10,
+                "Type": "duration"
+            },
+            "Radius": {
+                "Name": "Radius",
+                "Value": 9,
+                "Type": "distance"
+            }
+        },
+        "4": {
+            "Key": "ability_frank_revive",
+            "Name": "Shocking Reanimation",
+            "DescKey": "ability_frank_revive_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "On Revive:",
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 200,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 1.8,
+                                "Type": "spirit"
+                            }
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "BulletResist",
+                        "Name": "Bullet Resist",
+                        "Value": null,
+                        "Type": "bullet_armor_up"
+                    },
+                    {
+                        "Key": "TechResist",
+                        "Name": "Spirit Resist",
+                        "Value": null,
+                        "Type": "tech_armor_up"
+                    },
+                    {
+                        "Key": "BonusDamagePerBullet",
+                        "Name": "Damage per Bullet",
+                        "Value": null,
+                        "Type": "tech_damage",
+                        "Scale": {
+                            "Value": 0.0,
+                            "Type": "spirit"
+                        }
+                    },
+                    {
+                        "Key": "BonusFireRate",
+                        "Name": "Fire Rate",
+                        "Value": null,
+                        "Type": "fire_rate"
+                    }
+                ],
+                "DescKey": "ability_frank_revive_desc"
+            },
+            "Upgrades": [
+                {
+                    "BonusDamagePerBullet": 10,
+                    "BonusFireRate": 25,
+                    "Scale": {
+                        "Prop": "BonusDamagePerBullet",
+                        "Value": 0.08,
+                        "Type": "spirit"
+                    },
+                    "BuffDuration": 30,
+                    "DescKey": "ability_frank_revive_t1_desc"
+                },
+                {
+                    "AbilityCooldown": -20
+                },
+                {
+                    "Damage": 200,
+                    "Radius": "3m",
+                    "DescKey": "ability_frank_revive_t3_desc"
+                }
+            ],
+            "Cast": {
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Value": 3,
+                    "Type": "cast"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Health": {
+                "RespawnHealthPercent": {
+                    "Name": "Rebirth Health",
+                    "Value": 100,
+                    "Type": "healing"
+                }
+            },
+            "Debuff": {
+                "SlowPercent": {
+                    "Name": "Move Speed",
+                    "Value": 80,
+                    "Type": "slow"
+                }
+            },
+            "Other": {
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.66
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "HalfHeight": {
+                    "Name": null,
+                    "Value": 15
+                },
+                "InitialDelay": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "RespawnDelay": {
+                    "Name": "Respawn Delay",
+                    "Value": 3
+                },
+                "SlowDuration": {
+                    "Name": "Slow Duration",
+                    "Value": 3
+                },
+                "StunDuration": {
+                    "Name": "Stun Duration",
+                    "Value": 1
+                },
+                "ZombieTickRate": {
+                    "Name": null,
+                    "Value": 0.02
+                }
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 180,
+                "Type": "cooldown"
+            },
+            "Radius": {
+                "Name": "Radius",
+                "Value": 12,
+                "Type": "distance"
+            }
+        }
     },
     "hero_bookworm": {
         "Name": "Paige",
