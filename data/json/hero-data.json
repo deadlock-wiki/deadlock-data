@@ -968,7 +968,7 @@
         "BulletGravityScale": 0.0,
         "BulletSpeed": 508.0,
         "BulletsPerBurst": 1,
-        "BulletsPerShot": 5,
+        "BulletsPerShot": 3,
         "BurstInterShotInterval": 0,
         "ClipSize": 12,
         "CritDamageBonusScale": 0.55,
@@ -977,7 +977,7 @@
         "DPS": 47.3922902494331,
         "FalloffBias": 0.5,
         "FalloffEndRange": 27.0002,
-        "FalloffEndScale": 0.8,
+        "FalloffEndScale": 0.6,
         "FalloffStartRange": 24.003,
         "FalloffStartScale": 1.0,
         "GroundDashDistanceInMeters": 10.0,
@@ -1509,17 +1509,48 @@
         "AbilityResourceRegenPerSecond": 0,
         "AirDashDistanceInMeters": 8.0,
         "AirDashDuration": 0.49,
-        "BaseHealthRegen": 3.0,
+        "BaseHealthRegen": 1.5,
         "BaseWeaponDamageIncrease": 0,
-        "BoundAbilities": {},
+        "BoundAbilities": {
+            "1": {
+                "Name": "Pain Battery",
+                "Key": "ability_frank_shocktarget2"
+            },
+            "2": {
+                "Name": "Jumpstart",
+                "Key": "ability_frank_selfzap"
+            },
+            "3": {
+                "Name": "Aura of Suffering",
+                "Key": "ability_frank_painaura"
+            },
+            "4": {
+                "Name": "Shocking Reanimation",
+                "Key": "ability_frank_revive"
+            }
+        },
+        "BulletDamage": 12.0,
+        "BulletGravityScale": 0.0,
+        "BulletSpeed": 203.2,
+        "BulletsPerBurst": 1,
+        "BulletsPerShot": 1,
+        "BurstInterShotInterval": 0,
+        "ClipSize": 24,
         "CritDamageBonusScale": 1.0,
         "CritDamageReceivedScale": 0.0,
         "CrouchSpeed": 4.75,
+        "DPS": 70.17543859649122,
+        "FalloffBias": 0.5,
+        "FalloffEndRange": 57.5056,
+        "FalloffEndScale": 0.1,
+        "FalloffStartRange": 19.9898,
+        "FalloffStartScale": 1.0,
         "GroundDashDistanceInMeters": 10.0,
         "GroundDashDuration": 0.7,
         "HeavyMeleeDamage": 116,
         "HeroBulletLifestealEffectiveness": 1.0,
         "HeroSpiritLifestealEffectiveness": 1.0,
+        "HitOnceAcrossAllBullets": false,
         "InDevelopment": false,
         "InHeroLabs": false,
         "IsDisabled": false,
@@ -1531,7 +1562,9 @@
             "PowerIncreases": 1,
             "TechPower": 1.1,
             "LightMeleeDamage": 1.58,
-            "HeavyMeleeDamage": 3.6656
+            "HeavyMeleeDamage": 3.6656,
+            "DPS": 1.754385964912288,
+            "SustainedDPS": 1.1070110701107083
         },
         "LightMeleeDamage": 50,
         "Lore": "hero_frank_lore",
@@ -1541,8 +1574,17 @@
         "Name": "Victor",
         "Playstyle": "hero_frank_playstyle",
         "ProcBuildUpRateScale": 1,
+        "ReloadDelay": 0,
+        "ReloadMovespeed": 1.0,
+        "ReloadSingle": false,
         "ReloadSpeed": 0,
+        "ReloadTime": 2.4,
         "Role": "hero_frank_role",
+        "RoundsPerSecond": 5.05050505050505,
+        "RoundsPerSecondAtMaxSpin": 5.847953216374268,
+        "ShootMoveSpeed": 0.75,
+        "SpinAcceleration": 0.6,
+        "SpinDeceleration": 1.0,
         "SpiritScaling": {
             "BaseHealthRegen": 0.08
         },
@@ -1550,12 +1592,17 @@
         "Stamina": 3,
         "StaminaCooldown": 5.0,
         "StaminaRegenPerSecond": 0.2,
+        "SustainedDPS": 44.28044280442805,
         "TechDuration": 0,
         "TechRange": 0,
         "TechResist": 0.0,
         "WeaponDescription": "citadel_weapon_hero_frank_set_desc",
         "WeaponName": "citadel_weapon_hero_frank_set",
-        "WeaponPowerScale": 1
+        "WeaponPowerScale": 1,
+        "WeaponTypes": [
+            "Attribute_EWeaponAttribute_MediumRange",
+            "Attribute_EWeaponAttribute_Projectile"
+        ]
     },
     "hero_genericperson": {
         "AbilityResourceMax": 0,
