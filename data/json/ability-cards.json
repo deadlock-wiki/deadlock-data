@@ -4069,7 +4069,7 @@
         },
         "3": {
             "Key": "ability_icebeam",
-            "Name": "Freezing",
+            "Name": "Arctic Beam",
             "DescKey": "ability_icebeam_desc",
             "Info1": {
                 "Main": {
@@ -13891,9 +13891,16 @@
                     "DescKey": "ability_vampirebat_batblink_t2_desc"
                 },
                 {
-                    "AbilityCooldown": -7
+                    "AbilityCooldown": -12
                 }
             ],
+            "Cast": {
+                "MaxRecasts": {
+                    "Name": null,
+                    "Value": 1,
+                    "Type": "cast"
+                }
+            },
             "Move": {
                 "ChannelMoveSpeed": {
                     "Name": "Channel Move Speed",
@@ -13917,10 +13924,6 @@
                 "ExitVelocity": {
                     "Name": null,
                     "Value": 5
-                },
-                "MaxRecasts": {
-                    "Name": null,
-                    "Value": 1
                 }
             },
             "AbilityCastRange": {
@@ -13977,7 +13980,20 @@
                     {
                         "Key": "BuffDuration",
                         "Name": "Buff Duration",
-                        "Value": null
+                        "Value": null,
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "SlowPercent",
+                        "Name": "Move Speed",
+                        "Value": null,
+                        "Type": "slow"
+                    },
+                    {
+                        "Key": "SlowDuration",
+                        "Name": "Slow Duration",
+                        "Value": null,
+                        "Type": "duration"
                     }
                 ],
                 "DescKey": "ability_vampirebat_lovebites_desc"
@@ -13994,13 +14010,16 @@
                     "DescKey": "ability_vampirebat_lovebites_t2_desc"
                 },
                 {
-                    "PerTargetCooldown": -3
+                    "SlowDuration": 3,
+                    "SlowPercent": 30,
+                    "StaminaReduction": 1,
+                    "DescKey": "ability_vampirebat_lovebites_t3_desc"
                 }
             ],
             "Cooldown": {
                 "PerTargetCooldown": {
                     "Name": null,
-                    "Value": 8,
+                    "Value": 7,
                     "Type": "cooldown"
                 }
             },
@@ -14064,7 +14083,7 @@
                             "Title": "On Hit:",
                             "Key": "DebuffDuration",
                             "Name": "Debuff Duration",
-                            "Value": 1.0
+                            "Value": 1.25
                         }
                     ]
                 },
@@ -14222,13 +14241,510 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 150,
+                "Value": 130,
                 "Type": "cooldown"
             }
         }
     },
     "hero_drifter": {
-        "Name": "Drifter"
+        "Name": "Drifter",
+        "1": {
+            "Key": "drifter_blood_blast",
+            "Name": "Rend",
+            "DescKey": "drifter_blood_blast_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 0.0,
+                            "Type": "melee_damage",
+                            "Scale": {
+                                "Value": 1.2,
+                                "Type": "melee"
+                            }
+                        },
+                        {
+                            "Key": "BonusDamage",
+                            "Name": "Bonus Damage",
+                            "Value": 40.0,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 1.4,
+                                "Type": "spirit"
+                            }
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "RangeForBonusDamage",
+                        "Name": "Range for Bonus Damage",
+                        "Value": 8,
+                        "Type": "distance"
+                    },
+                    {
+                        "Key": "LifestealDuration",
+                        "Name": "Lifesteal Duration",
+                        "Value": null,
+                        "Type": "duration"
+                    }
+                ],
+                "DescKey": "drifter_blood_blast_desc"
+            },
+            "Upgrades": [
+                {
+                    "BonusDamage": 35
+                },
+                {
+                    "AbilityCooldown": -7.0
+                },
+                {
+                    "BulletLifestealPercentHero": 45,
+                    "LifestealDuration": 4.0,
+                    "DescKey": "drifter_blood_blast_t3_desc"
+                }
+            ],
+            "Range": {
+                "TargetingConeAngle": {
+                    "Name": "Attack Angle",
+                    "Value": 50,
+                    "Type": "distance"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 1.3,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 30
+                },
+                "ExtraSweepConeAngle": {
+                    "Name": null,
+                    "Value": 60
+                },
+                "ExtraSweepOffsetBehindCaster": {
+                    "Name": null,
+                    "Value": 80
+                },
+                "ExtraSweepRange": {
+                    "Name": null,
+                    "Value": 3
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.5,
+                "Type": "cast"
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 18,
+                "Type": "range"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 15.0,
+                "Type": "cooldown"
+            }
+        },
+        "2": {
+            "Key": "drifter_shadow_mark",
+            "Name": "Stalker's Mark",
+            "DescKey": "drifter_shadow_mark_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "DotHealthPercent",
+                            "Name": "Bleed Damage",
+                            "Value": 2.0,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 0.015,
+                                "Type": "spirit"
+                            }
+                        },
+                        {
+                            "Key": "AbilityDuration",
+                            "Name": "Duration",
+                            "Value": 6,
+                            "Type": "duration"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "AbilityCharges",
+                        "Name": "Charges",
+                        "Value": null,
+                        "Type": "cast",
+                        "Scale": {
+                            "Value": 0.0,
+                            "Type": "max_charges"
+                        }
+                    },
+                    {
+                        "Key": "AbilityCooldownBetweenCharge",
+                        "Name": "Charge Delay",
+                        "Value": null,
+                        "Type": "charge_cooldown"
+                    }
+                ],
+                "DescKey": "drifter_shadow_mark_desc"
+            },
+            "Upgrades": [
+                {
+                    "DotHealthPercent": 1.0
+                },
+                {
+                    "BonusFireRate": 25,
+                    "BuffDuration": 6,
+                    "DescKey": "drifter_shadow_mark_t2_desc"
+                },
+                {
+                    "AbilityCharges": 2,
+                    "Scale": {
+                        "Prop": "AbilityCharges",
+                        "Value": 1,
+                        "Type": "max_charges"
+                    },
+                    "AbilityCooldownBetweenCharge": 5,
+                    "DescKey": "drifter_shadow_mark_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AirDrag": {
+                    "Name": null,
+                    "Value": 3
+                },
+                "FallSpeedMax": {
+                    "Name": null,
+                    "Value": 0.3
+                },
+                "TeleportBackOffsetFromTarget": {
+                    "Name": null,
+                    "Value": 135
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "VerticalDrag": {
+                    "Name": null,
+                    "Value": 1
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.15,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 20,
+                "Type": "cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 6,
+                "Type": "duration"
+            }
+        },
+        "3": {
+            "Key": "ability_drifter_hunger",
+            "Name": "Bloodscent",
+            "DescKey": "ability_drifter_hunger_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "AmpDamagePercent",
+                            "Name": "Amplified Damage",
+                            "Value": 15,
+                            "Type": "damage"
+                        },
+                        {
+                            "Key": "IsolationRange",
+                            "Name": "Isolation Range",
+                            "Value": 25,
+                            "Type": "distance"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "BonusMoveSpeed",
+                        "Name": "Move Speed",
+                        "Value": 0,
+                        "Type": "move_speed"
+                    }
+                ],
+                "DescKey": "ability_drifter_hunger_passive_desc"
+            },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "On Isolated Hero Kill:",
+                            "Key": "WeaponDmgPerIsolationKill",
+                            "Name": "Permanent Weapon Damage",
+                            "Value": 5,
+                            "Type": "bullet_damage"
+                        }
+                    ]
+                },
+                "Alt": null
+            },
+            "Upgrades": [
+                {
+                    "BonusMoveSpeed": "2m",
+                    "DescKey": "ability_drifter_hunger_t1_desc"
+                },
+                {
+                    "CooldownReductionOnKill": 15,
+                    "StaminaToRestore": 3,
+                    "DescKey": "ability_drifter_hunger_t2_desc"
+                },
+                {
+                    "AmpDamagePercent": 11
+                }
+            ],
+            "Duration": {
+                "KillDuration": {
+                    "Name": "Kill Duration",
+                    "Value": 300,
+                    "Type": "duration"
+                },
+                "TrailDuration": {
+                    "Name": "Trail Duration",
+                    "Value": 10,
+                    "Type": "duration"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Health": {
+                "LowHealthThreshold": {
+                    "Name": "Health Threshold",
+                    "Value": 30,
+                    "Type": "health"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "DelayBeforeInvisStarts": {
+                    "Name": null,
+                    "Value": 0.6
+                },
+                "InvisFadeToDuration": {
+                    "Name": "Fade Time",
+                    "Value": 0.3
+                },
+                "InvisMoveSpeedMod": {
+                    "Name": "Invis Sprint Speed",
+                    "Value": 0
+                },
+                "IsolationAssistPercentValue": {
+                    "Name": null,
+                    "Value": 40
+                },
+                "MaxTrailTargets": {
+                    "Name": "Max Trail Targets",
+                    "Value": 2
+                },
+                "RevealOnDamageDuration": {
+                    "Name": null,
+                    "Value": 0.25
+                },
+                "RevealOnSpottedDuration": {
+                    "Name": null,
+                    "Value": 1.5
+                },
+                "SpottedRadius": {
+                    "Name": "Spot Radius",
+                    "Value": 15
+                },
+                "TargetLingerDuration": {
+                    "Name": null,
+                    "Value": 3
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 1
+                }
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 80,
+                "Type": "range"
+            }
+        },
+        "4": {
+            "Key": "drifter_darkness",
+            "Name": "Eternal Night",
+            "DescKey": "drifter_darkness_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "SmallVisionDistance",
+                            "Name": "Reduced Vision",
+                            "Value": 15,
+                            "Type": "distance"
+                        },
+                        {
+                            "Key": "SpiritDamagePerAttack",
+                            "Name": "Spirit Damage Proc",
+                            "Value": 7,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 0.2,
+                                "Type": "spirit"
+                            }
+                        },
+                        {
+                            "Key": "BonusSprintSpeed",
+                            "Name": "Sprint Speed",
+                            "Value": 3,
+                            "Type": "move_speed"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "MaxTargets",
+                        "Name": "Max Targets",
+                        "Value": 2
+                    }
+                ],
+                "DescKey": "drifter_darkness_desc"
+            },
+            "Upgrades": [
+                {
+                    "SpiritDamagePerAttack": 7
+                },
+                {
+                    "AbilityCooldown": -30,
+                    "BonusSprintSpeed": "3m",
+                    "DescKey": "drifter_darkness_t2_desc"
+                },
+                {
+                    "AbilityDuration": 2,
+                    "MaxTargets": 1,
+                    "DescKey": "drifter_darkness_t3_desc"
+                }
+            ],
+            "Duration": {
+                "RevealDuration": {
+                    "Name": "Reveal Duration",
+                    "Value": 3,
+                    "Type": "duration"
+                }
+            },
+            "Range": {
+                "DrifterNearbyRangeCheck": {
+                    "Name": "Drifter Nearby",
+                    "Value": 40,
+                    "Type": "distance"
+                },
+                "VisionDistance": {
+                    "Name": "Vision Range",
+                    "Value": 35,
+                    "Type": "distance"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 1.3,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AuraLingerDuration": {
+                    "Name": null,
+                    "Value": 0.001
+                },
+                "DarkFactor": {
+                    "Name": null,
+                    "Value": 1.0
+                },
+                "DistanceForMaxProjSpeed": {
+                    "Name": null,
+                    "Value": 200
+                },
+                "MaxProjectileSpeed": {
+                    "Name": null,
+                    "Value": 3000
+                },
+                "MinProjectileSpeed": {
+                    "Name": null,
+                    "Value": 3000
+                },
+                "PostProcessFadeInTime": {
+                    "Name": null,
+                    "Value": 0.2
+                },
+                "PostProcessFadeOutTime": {
+                    "Name": null,
+                    "Value": 1.0
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 1.0,
+                "Type": "cast"
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 100,
+                "Type": "range"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 130.0,
+                "Type": "cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 7.0,
+                "Type": "duration"
+            }
+        }
     },
     "hero_priest": {
         "Name": "Venator",
@@ -14606,7 +15122,450 @@
         }
     },
     "hero_frank": {
-        "Name": "Victor"
+        "Name": "Victor",
+        "1": {
+            "Key": "ability_frank_shocktarget2",
+            "Name": "Pain Battery",
+            "DescKey": "ability_frank_shocktarget2_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 100,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 1.6,
+                                "Type": "spirit"
+                            }
+                        }
+                    ]
+                },
+                "Alt": [],
+                "DescKey": "ability_frank_shocktarget2_desc"
+            },
+            "Info2": {
+                "Main": {
+                    "Props": []
+                },
+                "Alt": null
+            },
+            "Upgrades": [
+                {
+                    "Damage": 40
+                },
+                {
+                    "SlowPercent": 40,
+                    "SlowDuration": "2s",
+                    "DescKey": "ability_frank_shocktarget2_t2_desc"
+                },
+                {
+                    "MissingHealthPercentHeal": 20,
+                    "DescKey": "ability_frank_shocktarget2_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityChargesConditionally": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.2
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "BatteryGenerationPercent": {
+                    "Name": "Battery Generation",
+                    "Value": 100,
+                    "Scale": {
+                        "Value": -1.0,
+                        "Type": "cooldown"
+                    }
+                },
+                "BoltCount": {
+                    "Name": null,
+                    "Value": 5
+                },
+                "BonusShocksDelay": {
+                    "Name": null,
+                    "Value": 0.2
+                },
+                "SpreadAngle": {
+                    "Name": null,
+                    "Value": 40
+                },
+                "SpreadRandomness": {
+                    "Name": null,
+                    "Value": 0.01
+                },
+                "StoredDamageHealthPercentRequired": {
+                    "Name": null,
+                    "Value": 50
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.35,
+                "Type": "cast"
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 20,
+                "Type": "range"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 2,
+                "Type": "cooldown"
+            }
+        },
+        "2": {
+            "Key": "ability_frank_selfzap",
+            "Name": "Jumpstart",
+            "DescKey": "ability_frank_selfzap_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "CurrentHealthPercentDamage",
+                            "Name": "Current Health",
+                            "Value": 15,
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Title": "On Buff:",
+                            "Key": "TotalHealthRegen",
+                            "Name": "Total HP Regen",
+                            "Value": 100,
+                            "Type": "healing",
+                            "Scale": {
+                                "Value": 1.8,
+                                "Type": "spirit"
+                            }
+                        },
+                        {
+                            "Title": "On Buff:",
+                            "Key": "BonusMoveSpeed",
+                            "Name": "Move Speed",
+                            "Value": 4,
+                            "Type": "move_speed"
+                        }
+                    ]
+                },
+                "Alt": [],
+                "DescKey": "ability_frank_selfzap_desc"
+            },
+            "Upgrades": [
+                {
+                    "BonusMoveSpeed": "1.5m"
+                },
+                {
+                    "TotalHealthRegen": 50
+                },
+                {
+                    "AbilityCooldown": -4,
+                    "RemoveDebuffs": 1,
+                    "DescKey": "ability_frank_selfzap_t3_desc"
+                }
+            ],
+            "Cast": {
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Value": 0.35,
+                    "Type": "cast"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                }
+            },
+            "AbilityCharges": {
+                "Name": "Charges",
+                "Value": 1,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 22,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": 3,
+                "Type": "charge_cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 4,
+                "Type": "duration"
+            }
+        },
+        "3": {
+            "Key": "ability_frank_painaura",
+            "Name": "Aura of Suffering",
+            "DescKey": "ability_frank_painaura_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "MinDPS",
+                            "Name": "Minimum DPS",
+                            "Value": 15,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 0.25,
+                                "Type": "spirit"
+                            }
+                        },
+                        {
+                            "Key": "MaxDPS",
+                            "Name": "Max DPS",
+                            "Value": 75,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 1.25,
+                                "Type": "spirit"
+                            }
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "SelfDamagePercentage",
+                        "Name": "Self Damage",
+                        "Value": 100,
+                        "Type": "damage"
+                    }
+                ],
+                "DescKey": "ability_frank_painaura_desc"
+            },
+            "Upgrades": [
+                {
+                    "SlowPercent": 30,
+                    "DebuffDuration": 0.5,
+                    "DescKey": "ability_frank_painaura_t1_desc"
+                },
+                {
+                    "MinDps": 10,
+                    "MaxDPS": 50,
+                    "DescKey": "ability_frank_painaura_t2_desc"
+                },
+                {
+                    "IncomingDamagePercent": 13,
+                    "DescKey": "ability_frank_painaura_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "DebuffDuration": {
+                    "Name": "Debuff Duration",
+                    "Value": 0.5
+                },
+                "SelfDPS": {
+                    "Name": null,
+                    "Value": 15
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 0.25
+                },
+                "ToggleOffDelay": {
+                    "Name": null,
+                    "Value": 0.5
+                }
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 1,
+                "Type": "cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 10,
+                "Type": "duration"
+            },
+            "Radius": {
+                "Name": "Radius",
+                "Value": 9,
+                "Type": "distance"
+            }
+        },
+        "4": {
+            "Key": "ability_frank_revive",
+            "Name": "Shocking Reanimation",
+            "DescKey": "ability_frank_revive_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "On Revive:",
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 200,
+                            "Type": "tech_damage",
+                            "Scale": {
+                                "Value": 1.8,
+                                "Type": "spirit"
+                            }
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "BulletResist",
+                        "Name": "Bullet Resist",
+                        "Value": null,
+                        "Type": "bullet_armor_up"
+                    },
+                    {
+                        "Key": "TechResist",
+                        "Name": "Spirit Resist",
+                        "Value": null,
+                        "Type": "tech_armor_up"
+                    },
+                    {
+                        "Key": "BonusDamagePerBullet",
+                        "Name": "Damage per Bullet",
+                        "Value": null,
+                        "Type": "tech_damage",
+                        "Scale": {
+                            "Value": 0.0,
+                            "Type": "spirit"
+                        }
+                    },
+                    {
+                        "Key": "BonusFireRate",
+                        "Name": "Fire Rate",
+                        "Value": null,
+                        "Type": "fire_rate"
+                    }
+                ],
+                "DescKey": "ability_frank_revive_desc"
+            },
+            "Upgrades": [
+                {
+                    "BonusDamagePerBullet": 10,
+                    "BonusFireRate": 25,
+                    "Scale": {
+                        "Prop": "BonusDamagePerBullet",
+                        "Value": 0.08,
+                        "Type": "spirit"
+                    },
+                    "BuffDuration": 30,
+                    "DescKey": "ability_frank_revive_t1_desc"
+                },
+                {
+                    "RespawnHealthPercent": 40
+                },
+                {
+                    "Damage": 200,
+                    "Radius": "3m",
+                    "DescKey": "ability_frank_revive_t3_desc"
+                }
+            ],
+            "Cast": {
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Value": 3,
+                    "Type": "cast"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Health": {
+                "RespawnHealthPercent": {
+                    "Name": "Rebirth Health",
+                    "Value": 60,
+                    "Type": "healing"
+                }
+            },
+            "Debuff": {
+                "SlowPercent": {
+                    "Name": "Move Speed",
+                    "Value": 80,
+                    "Type": "slow"
+                }
+            },
+            "Other": {
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.66
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "HalfHeight": {
+                    "Name": null,
+                    "Value": 15
+                },
+                "InitialDelay": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "RespawnDelay": {
+                    "Name": "Respawn Delay",
+                    "Value": 3
+                },
+                "SlowDuration": {
+                    "Name": "Slow Duration",
+                    "Value": 3
+                },
+                "StunDuration": {
+                    "Name": "Stun Duration",
+                    "Value": 1
+                },
+                "ZombieTickRate": {
+                    "Name": null,
+                    "Value": 0.02
+                }
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 190,
+                "Type": "cooldown"
+            },
+            "Radius": {
+                "Name": "Radius",
+                "Value": 12,
+                "Type": "distance"
+            }
+        }
     },
     "hero_bookworm": {
         "Name": "Paige",
@@ -14645,7 +15604,14 @@
                         }
                     ]
                 },
-                "Alt": [],
+                "Alt": [
+                    {
+                        "Key": "DragonTravelRange",
+                        "Name": "Dragon Travel Range",
+                        "Value": 20,
+                        "Type": "distance"
+                    }
+                ],
                 "DescKey": "ability_bookworm_dragonfire_desc"
             },
             "Upgrades": [
@@ -14666,13 +15632,6 @@
                     "Name": "Debuff Duration",
                     "Value": 1.5,
                     "Type": "duration"
-                }
-            },
-            "Range": {
-                "DragonTravelRange": {
-                    "Name": "Dragon Travel Range",
-                    "Value": 20,
-                    "Type": "distance"
                 }
             },
             "Move": {
@@ -15577,7 +16536,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 16.0,
+                "Value": 18.0,
                 "Type": "cooldown"
             },
             "AbilityCooldownBetweenCharge": {
@@ -15694,7 +16653,7 @@
                 },
                 {
                     "CartDamage": 50,
-                    "StunDuration": 1.5,
+                    "StunDuration": 1.2,
                     "WallImpactDamage": 130,
                     "Scale": {
                         "Prop": "WallImpactDamage",
@@ -16421,10 +17380,10 @@
                         {
                             "Key": "Damage",
                             "Name": "Damage",
-                            "Value": 40,
+                            "Value": 35,
                             "Type": "tech_damage",
                             "Scale": {
-                                "Value": 1.2,
+                                "Value": 1.1,
                                 "Type": "spirit"
                             }
                         },
@@ -16495,7 +17454,7 @@
             "Range": {
                 "PlaceDistanceInFrontOfCaster": {
                     "Name": null,
-                    "Value": 7,
+                    "Value": 6.2,
                     "Type": "distance"
                 },
                 "PullDownRange": {
@@ -17028,7 +17987,7 @@
                 },
                 "RopeSnapNoLOSDuration": {
                     "Name": null,
-                    "Value": 0.85
+                    "Value": 0.8
                 },
                 "TickRate": {
                     "Name": null,

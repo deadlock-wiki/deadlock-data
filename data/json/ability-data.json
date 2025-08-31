@@ -774,7 +774,7 @@
     },
     "ability_doorman_bomb": {
         "AbilityCharges": 1,
-        "AbilityCooldown": 16.0,
+        "AbilityCooldown": 18.0,
         "AbilityCooldownBetweenCharge": 4,
         "AbilityDuration": 4,
         "AbilityPostCastDuration": 0.5,
@@ -879,7 +879,7 @@
             },
             {
                 "CartDamage": 50,
-                "StunDuration": 1.5,
+                "StunDuration": 1.2,
                 "WallImpactDamage": 130,
                 "Scale": {
                     "Prop": "WallImpactDamage",
@@ -888,6 +888,43 @@
                 }
             }
         ]
+    },
+    "ability_drifter_hunger": {
+        "AbilityCastRange": 80,
+        "AbilityUnitTargetLimit": 1,
+        "AmpDamagePercent": 15,
+        "BonusMoveSpeed": 0,
+        "ChannelMoveSpeed": -1,
+        "DelayBeforeInvisStarts": 0.6,
+        "InvisFadeToDuration": 0.3,
+        "InvisMoveSpeedMod": 0,
+        "IsDisabled": false,
+        "IsolationAssistPercentValue": 40,
+        "IsolationRange": 25,
+        "Key": "ability_drifter_hunger",
+        "KillDuration": 300,
+        "LowHealthThreshold": 30,
+        "MaxTrailTargets": 2,
+        "Name": "Bloodscent",
+        "RevealOnDamageDuration": 0.25,
+        "RevealOnSpottedDuration": 1.5,
+        "SpottedRadius": 15,
+        "TargetLingerDuration": 3,
+        "TickRate": 1,
+        "TrailDuration": 10,
+        "Upgrades": [
+            {
+                "BonusMoveSpeed": "2m"
+            },
+            {
+                "CooldownReductionOnKill": 15,
+                "StaminaToRestore": 3
+            },
+            {
+                "AmpDamagePercent": 11
+            }
+        ],
+        "WeaponDmgPerIsolationKill": 5
     },
     "ability_druid_ability01": {
         "AbilityCooldown": 26.0,
@@ -1205,6 +1242,167 @@
             },
             {
                 "AbilityCooldown": 0
+            }
+        ]
+    },
+    "ability_frank_painaura": {
+        "AbilityCooldown": 1,
+        "AbilityDuration": 10,
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": -1,
+        "DebuffDuration": 0.5,
+        "IsDisabled": false,
+        "Key": "ability_frank_painaura",
+        "MaxDPS": 75,
+        "MinDPS": 15,
+        "Name": "Aura of Suffering",
+        "Radius": 9,
+        "SelfDPS": 15,
+        "SelfDamagePercentage": 100,
+        "TickRate": 0.25,
+        "ToggleOffDelay": 0.5,
+        "Upgrades": [
+            {
+                "SlowPercent": 30,
+                "DebuffDuration": 0.5
+            },
+            {
+                "MinDps": 10,
+                "MaxDPS": 50
+            },
+            {
+                "IncomingDamagePercent": 13
+            }
+        ]
+    },
+    "ability_frank_revive": {
+        "AbilityChannelTime": 3,
+        "AbilityCooldown": 190,
+        "AbilityPostCastDuration": 0.66,
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": -1,
+        "Damage": 200,
+        "HalfHeight": 15,
+        "InitialDelay": 0.5,
+        "IsDisabled": false,
+        "Key": "ability_frank_revive",
+        "Name": "Shocking Reanimation",
+        "Radius": 12,
+        "RespawnDelay": 3,
+        "RespawnHealthPercent": 60,
+        "SlowDuration": 3,
+        "SlowPercent": 80,
+        "StunDuration": 1,
+        "Upgrades": [
+            {
+                "BonusDamagePerBullet": 10,
+                "BonusFireRate": 25,
+                "Scale": {
+                    "Prop": "BonusDamagePerBullet",
+                    "Value": 0.08,
+                    "Type": "spirit"
+                },
+                "BuffDuration": 30
+            },
+            {
+                "RespawnHealthPercent": 40
+            },
+            {
+                "Damage": 200,
+                "Radius": "3m"
+            }
+        ],
+        "ZombieTickRate": 0.02
+    },
+    "ability_frank_selfzap": {
+        "AbilityChannelTime": 0.35,
+        "AbilityCharges": 1,
+        "AbilityCooldown": 22,
+        "AbilityCooldownBetweenCharge": 3,
+        "AbilityDuration": 4,
+        "AbilityUnitTargetLimit": 1,
+        "BonusMoveSpeed": 4,
+        "ChannelMoveSpeed": -1,
+        "CurrentHealthPercentDamage": 15,
+        "IsDisabled": false,
+        "Key": "ability_frank_selfzap",
+        "Name": "Jumpstart",
+        "TotalHealthRegen": 100,
+        "Upgrades": [
+            {
+                "BonusMoveSpeed": "1.5m"
+            },
+            {
+                "TotalHealthRegen": 50
+            },
+            {
+                "AbilityCooldown": -4,
+                "RemoveDebuffs": 1
+            }
+        ]
+    },
+    "ability_frank_shocktarget": {
+        "AbilityCastDelay": 0.35,
+        "AbilityCastRange": 16,
+        "AbilityCooldown": 7,
+        "AbilityUnitTargetLimit": 1,
+        "BoltCount": 5,
+        "BonusDamageCap": 200,
+        "BonusDamageConversionPercent": 20,
+        "BonusDamageDecayLockoutDuration": 5,
+        "BonusDamageDecayPerSecond": 20,
+        "BonusDamageDecayRate": 0.05,
+        "ChannelMoveSpeed": -1,
+        "Damage": 30,
+        "IsDisabled": false,
+        "Key": "ability_frank_shocktarget",
+        "Name": "Pain Battery",
+        "ShockRange": 0,
+        "ShockTickRate": 0.1,
+        "SlowDuration": 1.5,
+        "SlowPercent": 40,
+        "SpreadAngle": 60,
+        "Upgrades": [
+            {
+                "Damage": 30,
+                "BonusDamageCap": 30
+            },
+            {
+                "AbilityCooldown": -2
+            },
+            {
+                "HealOnHit": 175
+            }
+        ]
+    },
+    "ability_frank_shocktarget2": {
+        "AbilityCastDelay": 0.35,
+        "AbilityCastRange": 20,
+        "AbilityChargesConditionally": 1,
+        "AbilityCooldown": 2,
+        "AbilityPostCastDuration": 0.2,
+        "AbilityUnitTargetLimit": 1,
+        "BatteryGenerationPercent": 100,
+        "BoltCount": 5,
+        "BonusShocksDelay": 0.2,
+        "ChannelMoveSpeed": -1,
+        "Damage": 100,
+        "IsDisabled": false,
+        "Key": "ability_frank_shocktarget2",
+        "Name": "Pain Battery",
+        "SpreadAngle": 40,
+        "SpreadRandomness": 0.01,
+        "StoredDamageHealthPercentRequired": 50,
+        "Upgrades": [
+            {
+                "Damage": 40
+            },
+            {
+                "SlowPercent": 40,
+                "SlowDuration": "2s"
+            },
+            {
+                "MissingHealthPercentHeal": 20
             }
         ]
     },
@@ -1584,7 +1782,7 @@
         "MaxSlowPercent": 40,
         "MaxSlowTime": 2.0,
         "MinSlowPercent": 30,
-        "Name": "Freezing",
+        "Name": "Arctic Beam",
         "PathLength": 25,
         "PathWidth": 1.1,
         "SlowDuration": 0.6,
@@ -2857,7 +3055,7 @@
         "PullTrackCasterDuration": 0.5,
         "RopeLength": 2.0,
         "RopeSnapDistance": 45.0,
-        "RopeSnapNoLOSDuration": 0.85,
+        "RopeSnapNoLOSDuration": 0.8,
         "RopeSoftEdgeLength": 4.5,
         "TechResist": 15,
         "TickRate": 0.25,
@@ -2886,12 +3084,12 @@
         "CameraTurnRateMax": 2000,
         "ChannelMoveSpeed": 190,
         "CountsAsLightMelee": 1,
-        "Damage": 40,
+        "Damage": 35,
         "ExplodeDelay": 0.5,
         "IsDisabled": false,
         "Key": "ability_punkgoat_ult",
         "Name": "Bashdown",
-        "PlaceDistanceInFrontOfCaster": 7,
+        "PlaceDistanceInFrontOfCaster": 6.2,
         "PullDownDuration": 0.75,
         "PullDownRange": 3,
         "SlowDuration": 0.0,
@@ -3607,7 +3805,7 @@
                 "BonusBullets": 8
             },
             {
-                "AbilityCooldown": -7
+                "AbilityCooldown": -12
             }
         ]
     },
@@ -3634,7 +3832,7 @@
     "ability_vampirebat_batswarm": {
         "AbilityCastDelay": 0.5,
         "AbilityCastRange": 40,
-        "AbilityCooldown": 150,
+        "AbilityCooldown": 130,
         "AbilityUnitTargetLimit": 12,
         "AirDrag": 12,
         "BatCount": 75,
@@ -3649,7 +3847,7 @@
         "ChannelMoveSpeed": -1,
         "CurrentHealthDamageCapToBosses": 50,
         "Damage": 6,
-        "DebuffDuration": 1.0,
+        "DebuffDuration": 1.25,
         "FallSpeedMax": 1,
         "GroundAccelerationPercentage": -80,
         "GroundFrictioNpercentage": -80,
@@ -3719,7 +3917,7 @@
         "IsDisabled": false,
         "Key": "ability_vampirebat_lovebites",
         "Name": "Love Bites",
-        "PerTargetCooldown": 8,
+        "PerTargetCooldown": 7,
         "Upgrades": [
             {
                 "BuffDuration": 3,
@@ -3730,7 +3928,9 @@
                 "BonusDamage": 55
             },
             {
-                "PerTargetCooldown": -3
+                "SlowDuration": 3,
+                "SlowPercent": 30,
+                "StaminaReduction": 1
             }
         ]
     },
@@ -6134,6 +6334,108 @@
                 "DamagePerSecond": 50
             }
         ]
+    },
+    "drifter_blood_blast": {
+        "AbilityCastDelay": 0.5,
+        "AbilityCastRange": 18,
+        "AbilityCooldown": 15.0,
+        "AbilityPostCastDuration": 0.5,
+        "AbilityUnitTargetLimit": 30,
+        "BonusDamage": 40.0,
+        "ChannelMoveSpeed": 1.3,
+        "Damage": 0.0,
+        "ExtraSweepConeAngle": 60,
+        "ExtraSweepOffsetBehindCaster": 80,
+        "ExtraSweepRange": 3,
+        "IsDisabled": false,
+        "Key": "drifter_blood_blast",
+        "Name": "Rend",
+        "RangeForBonusDamage": 8,
+        "TargetingConeAngle": 50,
+        "Upgrades": [
+            {
+                "BonusDamage": 35
+            },
+            {
+                "AbilityCooldown": -7.0
+            },
+            {
+                "BulletLifestealPercentHero": 45,
+                "LifestealDuration": 4.0
+            }
+        ]
+    },
+    "drifter_darkness": {
+        "AbilityCastDelay": 1.0,
+        "AbilityCastRange": 100,
+        "AbilityCooldown": 130.0,
+        "AbilityDuration": 7.0,
+        "AbilityUnitTargetLimit": 1,
+        "AuraLingerDuration": 0.001,
+        "BonusSprintSpeed": 3,
+        "ChannelMoveSpeed": 1.3,
+        "DarkFactor": 1.0,
+        "DistanceForMaxProjSpeed": 200,
+        "DrifterNearbyRangeCheck": 40,
+        "IsDisabled": false,
+        "Key": "drifter_darkness",
+        "MaxProjectileSpeed": 3000,
+        "MaxTargets": 2,
+        "MinProjectileSpeed": 3000,
+        "Name": "Eternal Night",
+        "PostProcessFadeInTime": 0.2,
+        "PostProcessFadeOutTime": 1.0,
+        "RevealDuration": 3,
+        "SmallVisionDistance": 15,
+        "SpiritDamagePerAttack": 7,
+        "Upgrades": [
+            {
+                "SpiritDamagePerAttack": 7
+            },
+            {
+                "AbilityCooldown": -30,
+                "BonusSprintSpeed": "3m"
+            },
+            {
+                "AbilityDuration": 2,
+                "MaxTargets": 1
+            }
+        ],
+        "VisionDistance": 35
+    },
+    "drifter_shadow_mark": {
+        "AbilityCastDelay": 0.15,
+        "AbilityCooldown": 20,
+        "AbilityDuration": 6,
+        "AbilityUnitTargetLimit": 1,
+        "AirDrag": 3,
+        "ChannelMoveSpeed": -1,
+        "DotHealthPercent": 2.0,
+        "FallSpeedMax": 0.3,
+        "IsDisabled": false,
+        "Key": "drifter_shadow_mark",
+        "Name": "Stalker's Mark",
+        "TeleportBackOffsetFromTarget": 135,
+        "TickRate": 0.5,
+        "Upgrades": [
+            {
+                "DotHealthPercent": 1.0
+            },
+            {
+                "BonusFireRate": 25,
+                "BuffDuration": 6
+            },
+            {
+                "AbilityCharges": 2,
+                "Scale": {
+                    "Prop": "AbilityCharges",
+                    "Value": 1,
+                    "Type": "max_charges"
+                },
+                "AbilityCooldownBetweenCharge": 5
+            }
+        ],
+        "VerticalDrag": 1
     },
     "fathom_breach": {
         "AbilityCastDelay": 0.0,
