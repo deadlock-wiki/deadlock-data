@@ -22,6 +22,34 @@
         "MaxHealth": 3000,
         "Name": "destroyable_building"
     },
+    "neutral_sinners_sacrifice": {
+        "GoldReward": 164,
+        "GoldRewardBonusPercentPerMinute": 1.08,
+        "Name": "neutral_sinners_sacrifice",
+        "RetaliateDamage": 60.0
+    },
+    "neutral_trooper_normal": {
+        "GoldReward": 84,
+        "GoldRewardBonusPercentPerMinute": 1.08,
+        "IntrinsicAbilityResistance": 30.0,
+        "IntrinsicBulletResistance": 50.0,
+        "MaxHealth": 500,
+        "Name": "neutral_trooper_normal"
+    },
+    "neutral_trooper_strong": {
+        "GoldReward": 225,
+        "GoldRewardBonusPercentPerMinute": 1.08,
+        "MaxHealth": 1760,
+        "Name": "neutral_trooper_strong"
+    },
+    "neutral_trooper_weak": {
+        "GoldReward": 51,
+        "GoldRewardBonusPercentPerMinute": 1.08,
+        "IntrinsicAbilityResistance": 30.0,
+        "IntrinsicBulletResistance": 50.0,
+        "MaxHealth": 200,
+        "Name": "neutral_trooper_weak"
+    },
     "npc_barrack_boss": {
         "BackdoorBulletResistBase": 40,
         "BackdoorBulletResistReductionPerHero": 20,
@@ -86,13 +114,13 @@
     },
     "npc_super_neutral": {
         "HealthGainPerMinute": 200,
+        "HealthRegenPerSecond": 15.0,
         "Name": "npc_super_neutral",
-        "PlayerDPS": null,
         "StartingHealth": 12500
     },
     "trooper_medic": {
         "BarrackBossDPS": 80.0,
-        "DamageReductionNearEnemyBase": null,
+        "DamageReductionNearEnemyBase": 35.0,
         "MaxHealth": 260,
         "Name": "trooper_medic",
         "PlayerDPS": 28.0,
@@ -103,7 +131,7 @@
     },
     "trooper_melee": {
         "BarrackBossDPS": 80.0,
-        "DamageReductionNearEnemyBase": null,
+        "DamageReductionNearEnemyBase": 35.0,
         "MaxHealth": 400,
         "MeleeAttemptRange": 120,
         "MeleeDamage": 80.0,
@@ -116,7 +144,7 @@
     },
     "trooper_normal": {
         "BarrackBossDPS": 80.0,
-        "DamageReductionNearEnemyBase": null,
+        "DamageReductionNearEnemyBase": 35.0,
         "MaxHealth": 300,
         "Name": "trooper_normal",
         "PlayerDPS": 28.0,
