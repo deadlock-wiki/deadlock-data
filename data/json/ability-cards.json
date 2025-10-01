@@ -197,11 +197,12 @@
                 },
                 {
                     "AbilityCooldown": -15.0,
-                    "AbilityCharges": 1,
-                    "Scale": {
-                        "Prop": "AbilityCharges",
+                    "AbilityCharges": {
                         "Value": 1,
-                        "Type": "max_charges"
+                        "Scale": {
+                            "Value": 1,
+                            "Type": "max_charges"
+                        }
                     },
                     "AbilityCooldownBetweenCharge": 20,
                     "DescKey": "ability_flame_dash_t3_desc"
@@ -659,14 +660,21 @@
                     "DescKey": "ability_power_surge_t2_desc"
                 },
                 {
-                    "DamagePerChain": 12,
-                    "BonusPerChain": 12,
-                    "ChainCount": 3,
-                    "Scale": {
-                        "Prop": "BonusPerChain",
-                        "Value": 0.3,
-                        "Type": "spirit"
+                    "DamagePerChain": {
+                        "Value": 12,
+                        "Scale": {
+                            "Value": 0.3,
+                            "Type": "spirit"
+                        }
                     },
+                    "BonusPerChain": {
+                        "Value": 12,
+                        "Scale": {
+                            "Value": 0.3,
+                            "Type": "spirit"
+                        }
+                    },
+                    "ChainCount": 3,
                     "DescKey": "ability_power_surge_t3_desc"
                 }
             ],
@@ -1399,11 +1407,12 @@
                     "AbilityDuration": 2.0
                 },
                 {
-                    "AbilityCharges": 2,
-                    "Scale": {
-                        "Prop": "AbilityCharges",
-                        "Value": 1,
-                        "Type": "max_charges"
+                    "AbilityCharges": {
+                        "Value": 2,
+                        "Scale": {
+                            "Value": 1,
+                            "Type": "max_charges"
+                        }
                     },
                     "AbilityCooldownBetweenCharge": 0.1,
                     "DescKey": "ability_life_drain_t3_desc"
@@ -2218,13 +2227,14 @@
                     "AbilityCastRange": "15m"
                 },
                 {
-                    "CombatBarrier": 300,
-                    "BarrierDuration": 5,
-                    "Scale": {
-                        "Prop": "CombatBarrier",
-                        "Value": 2.437344,
-                        "Type": "spirit"
+                    "CombatBarrier": {
+                        "Value": 300,
+                        "Scale": {
+                            "Value": 2.437344,
+                            "Type": "spirit"
+                        }
                     },
+                    "BarrierDuration": 5,
                     "DescKey": "citadel_ability_projectmind_t2_desc"
                 },
                 {
@@ -2314,20 +2324,23 @@
                     "AbilityCooldown": -14.0
                 },
                 {
-                    "Scale": {
-                        "Prop": "MagicDamagePerBullet",
-                        "Value": 0.0465,
-                        "Type": null
-                    },
-                    "MagicDamagePerBullet": 2.8
+                    "MagicDamagePerBullet": {
+                        "Value": 2.8,
+                        "Scale": {
+                            "Value": 0.0465,
+                            "Type": null
+                        }
+                    }
                 },
                 {
                     "BulletLifestealPercent": 15,
                     "AbilityLifestealPercent": 15,
-                    "Scale": {
-                        "Prop": "MagicDamagePerBullet",
-                        "Value": 0.0465,
-                        "Type": null
+                    "MagicDamagePerBullet": {
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 0.0465,
+                            "Type": null
+                        }
                     },
                     "DescKey": "citadel_ability_wraith_rapidfire_t3_desc"
                 }
@@ -2908,11 +2921,12 @@
                     "AbilityCooldown": -45.0
                 },
                 {
-                    "DamagePerRocket": 23,
-                    "Scale": {
-                        "Prop": "DamagePerRocket",
-                        "Value": 0.093,
-                        "Type": "spirit"
+                    "DamagePerRocket": {
+                        "Value": 23,
+                        "Scale": {
+                            "Value": 0.093,
+                            "Type": "spirit"
+                        }
                     },
                     "DescKey": "citadel_ability_rocket_barrage_t3_desc"
                 }
@@ -3296,10 +3310,12 @@
                     "DescKey": "citadel_ability_chrono_kinetic_carbine_t2_desc"
                 },
                 {
-                    "Scale": {
-                        "Prop": "MaxBonusBulletDamage",
-                        "Value": 50,
-                        "Type": "weapon_power"
+                    "MaxBonusBulletDamage": {
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 50,
+                            "Type": "weapon_power"
+                        }
                     },
                     "DescKey": "citadel_ability_chrono_kinetic_carbine_t3_desc"
                 }
@@ -3887,11 +3903,12 @@
                     "AbilityCharges": 1
                 },
                 {
-                    "HealAmount": 80,
-                    "Scale": {
-                        "Prop": "HealAmount",
-                        "Value": 1.488,
-                        "Type": "spirit"
+                    "HealAmount": {
+                        "Value": 80,
+                        "Scale": {
+                            "Value": 1.488,
+                            "Type": "spirit"
+                        }
                     },
                     "DescKey": "ability_ice_grenade_t2_desc"
                 },
@@ -4139,11 +4156,12 @@
                     "DPS": 37
                 },
                 {
-                    "BeamSplit": "10m",
-                    "Scale": {
-                        "Prop": "BeamSplit",
-                        "Value": 0.93,
-                        "Type": "range"
+                    "BeamSplit": {
+                        "Value": "10m",
+                        "Scale": {
+                            "Value": 0.93,
+                            "Type": "range"
+                        }
                     },
                     "BeamSplitCount": 2,
                     "DescKey": "ability_icebeam_t3_desc"
@@ -4253,11 +4271,12 @@
                     "AbilityCooldown": -45.0
                 },
                 {
-                    "BonusHealthRegen": 50,
-                    "Scale": {
-                        "Prop": "BonusHealthRegen",
-                        "Value": 1.023,
-                        "Type": "spirit"
+                    "BonusHealthRegen": {
+                        "Value": 50,
+                        "Scale": {
+                            "Value": 1.023,
+                            "Type": "spirit"
+                        }
                     },
                     "DescKey": "ability_ice_dome_t3_desc"
                 }
@@ -4469,11 +4488,12 @@
                     "DescKey": "ability_smoke_bomb_t2_desc"
                 },
                 {
-                    "AbilityCharges": 1,
-                    "Scale": {
-                        "Prop": "AbilityCharges",
+                    "AbilityCharges": {
                         "Value": 1,
-                        "Type": "max_charges"
+                        "Scale": {
+                            "Value": 1,
+                            "Type": "max_charges"
+                        }
                     },
                     "AbilityCooldownBetweenCharge": 7,
                     "PhaseOutDuration": 0.5,
@@ -4553,11 +4573,12 @@
             },
             "Upgrades": [
                 {
-                    "ProcDamage": 55,
-                    "Scale": {
-                        "Prop": "ProcDamage",
-                        "Value": 0.365602,
-                        "Type": "spirit"
+                    "ProcDamage": {
+                        "Value": 55,
+                        "Scale": {
+                            "Value": 0.365602,
+                            "Type": "spirit"
+                        }
                     },
                     "ProcDamageStackCount": 20,
                     "SlowPercent": 15,
@@ -4877,11 +4898,12 @@
                     "DescKey": "ability_bounce_pad_t2_desc"
                 },
                 {
-                    "StompDamage": 75,
-                    "Scale": {
-                        "Prop": "StompDamage",
-                        "Value": 0.32178,
-                        "Type": null
+                    "StompDamage": {
+                        "Value": 75,
+                        "Scale": {
+                            "Value": 0.32178,
+                            "Type": null
+                        }
                     },
                     "DescKey": "ability_bounce_pad_t3_desc"
                 }
@@ -6077,10 +6099,12 @@
                 },
                 {
                     "AbilityCooldownBetweenCharge": -3,
-                    "Scale": {
-                        "Prop": "Damage",
-                        "Value": 1.116,
-                        "Type": "spirit"
+                    "Damage": {
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 1.116,
+                            "Type": "spirit"
+                        }
                     },
                     "DescKey": "ability_charged_shot_t3_desc"
                 }
@@ -7889,11 +7913,12 @@
                     "AbilityCooldown": -19.0
                 },
                 {
-                    "CombatBarrier": 150,
-                    "Scale": {
-                        "Prop": "CombatBarrier",
-                        "Value": 3.656016,
-                        "Type": "spirit"
+                    "CombatBarrier": {
+                        "Value": 150,
+                        "Scale": {
+                            "Value": 3.656016,
+                            "Type": "spirit"
+                        }
                     },
                     "DescKey": "ability_warden_high_alert_t3_desc"
                 }
@@ -8558,10 +8583,19 @@
                     "DescKey": "citadel_ability_lash_down_strike_t2_desc"
                 },
                 {
-                    "Scale": {
-                        "Prop": "StompDamagePerMeterSecondary",
-                        "Value": 0.008137,
-                        "Type": "spirit"
+                    "StompDamagePerMeterPrimary": {
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 0.03255,
+                            "Type": "spirit"
+                        }
+                    },
+                    "StompDamagePerMeterSecondary": {
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 0.008137,
+                            "Type": "spirit"
+                        }
                     },
                     "DescKey": "citadel_ability_lash_down_strike_t3_desc"
                 }
@@ -9271,13 +9305,20 @@
                 {
                     "UseHeavyMelee": 1,
                     "AbilityCooldown": -12,
-                    "Scale": {
-                        "Prop": "Damage",
-                        "Value": 0.0,
-                        "Type": null
+                    "DamageHeavyMelee": {
+                        "Value": 35,
+                        "Scale": {
+                            "Value": 0.93,
+                            "Type": null
+                        }
                     },
-                    "DamageHeavyMelee": 35,
-                    "Damage": -30,
+                    "Damage": {
+                        "Value": -30,
+                        "Scale": {
+                            "Value": 0.0,
+                            "Type": null
+                        }
+                    },
                     "DescKey": "viscous_telepunch_t3_desc"
                 }
             ],
@@ -13571,20 +13612,23 @@
                     "AbilityCooldown": -14.0
                 },
                 {
-                    "Scale": {
-                        "Prop": "MagicDamagePerBullet",
-                        "Value": 0.0465,
-                        "Type": null
-                    },
-                    "MagicDamagePerBullet": 2.8
+                    "MagicDamagePerBullet": {
+                        "Value": 2.8,
+                        "Scale": {
+                            "Value": 0.0465,
+                            "Type": null
+                        }
+                    }
                 },
                 {
                     "BulletLifestealPercent": 15,
                     "AbilityLifestealPercent": 15,
-                    "Scale": {
-                        "Prop": "MagicDamagePerBullet",
-                        "Value": 0.0465,
-                        "Type": null
+                    "MagicDamagePerBullet": {
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 0.0465,
+                            "Type": null
+                        }
                     },
                     "DescKey": "citadel_ability_wraith_rapidfire_t3_desc"
                 }
@@ -14427,11 +14471,12 @@
                     "DescKey": "drifter_shadow_mark_t2_desc"
                 },
                 {
-                    "AbilityCharges": 2,
-                    "Scale": {
-                        "Prop": "AbilityCharges",
-                        "Value": 1,
-                        "Type": "max_charges"
+                    "AbilityCharges": {
+                        "Value": 2,
+                        "Scale": {
+                            "Value": 1,
+                            "Type": "max_charges"
+                        }
                     },
                     "AbilityCooldownBetweenCharge": 5,
                     "DescKey": "drifter_shadow_mark_t3_desc"
@@ -15488,13 +15533,14 @@
             },
             "Upgrades": [
                 {
-                    "BonusDamagePerBullet": 10,
-                    "BonusFireRate": 25,
-                    "Scale": {
-                        "Prop": "BonusDamagePerBullet",
-                        "Value": 0.08,
-                        "Type": "spirit"
+                    "BonusDamagePerBullet": {
+                        "Value": 10,
+                        "Scale": {
+                            "Value": 0.08,
+                            "Type": "spirit"
+                        }
                     },
+                    "BonusFireRate": 25,
                     "BuffDuration": 30,
                     "DescKey": "ability_frank_revive_t1_desc"
                 },
@@ -16602,13 +16648,14 @@
                     "AbilityDuration": 10
                 },
                 {
-                    "CombatBarrier": 250,
-                    "BarrierDuration": 8,
-                    "Scale": {
-                        "Prop": "CombatBarrier",
-                        "Value": 1.5,
-                        "Type": "spirit"
+                    "CombatBarrier": {
+                        "Value": 250,
+                        "Scale": {
+                            "Value": 1.5,
+                            "Type": "spirit"
+                        }
                     },
+                    "BarrierDuration": 8,
                     "DescKey": "ability_doorman_doorway_t2_desc"
                 },
                 {
@@ -16678,11 +16725,12 @@
                 {
                     "CartDamage": 50,
                     "StunDuration": 1.2,
-                    "WallImpactDamage": 130,
-                    "Scale": {
-                        "Prop": "WallImpactDamage",
-                        "Value": 0.75,
-                        "Type": null
+                    "WallImpactDamage": {
+                        "Value": 130,
+                        "Scale": {
+                            "Value": 0.75,
+                            "Type": null
+                        }
                     },
                     "DescKey": "ability_doorman_luggage_cart_t3_desc"
                 }
@@ -17448,13 +17496,20 @@
                 {
                     "CountsAsLightMelee": -1,
                     "CountsAsHeavyMelee": 1,
-                    "Scale": {
-                        "Prop": "MeleeDamage",
-                        "Value": 0.0,
-                        "Type": null
+                    "HeavyMeleeDamage": {
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 0.6,
+                            "Type": null
+                        }
                     },
-                    "HeavyMeleeDamage": 0,
-                    "MeleeDamage": 0,
+                    "MeleeDamage": {
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 0.0,
+                            "Type": null
+                        }
+                    },
                     "DescKey": "ability_punkgoat_ult_t3_desc"
                 }
             ],
@@ -17604,11 +17659,12 @@
                     "DescKey": "ability_punkgoat_goatflip_t2_desc"
                 },
                 {
-                    "DealMaxHealthDamagePct": 6,
-                    "Scale": {
-                        "Prop": "DealMaxHealthDamagePct",
-                        "Value": 0.017,
-                        "Type": null
+                    "DealMaxHealthDamagePct": {
+                        "Value": 6,
+                        "Scale": {
+                            "Value": 0.017,
+                            "Type": null
+                        }
                     },
                     "DescKey": "ability_punkgoat_goatflip_t3_desc"
                 }
