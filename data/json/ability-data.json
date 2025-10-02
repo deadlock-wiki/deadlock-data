@@ -382,7 +382,7 @@
     "ability_bookworm_aoemagic": {
         "AbilityCastDelay": 0.15,
         "AbilityCastRange": 30,
-        "AbilityCooldown": 30,
+        "AbilityCooldown": 25,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
         "Damage": 120,
@@ -392,7 +392,8 @@
         "IsDisabled": false,
         "Key": "ability_bookworm_aoemagic",
         "Name": "Captivating Read",
-        "Radius": 7,
+        "Radius": 7.5,
+        "SlowDuration": 0.5,
         "SlowPercent": 45,
         "Upgrades": [
             {
@@ -449,11 +450,12 @@
     "ability_bookworm_knightbarrier": {
         "AbilityCastDelay": 0.1,
         "AbilityCastRange": 35,
-        "AbilityCooldown": 26.0,
-        "AbilityDuration": 5,
+        "AbilityCooldown": 30.0,
+        "AbilityDuration": 7,
         "AbilityPostCastDuration": 0.2,
         "AbilityUnitTargetLimit": 1,
         "BaseAttackDamagePercent": 25,
+        "BonusSpiritDamagePercent": 15,
         "BonusTargetRadius": 30,
         "ChannelMoveSpeed": -1,
         "CombatBarrier": 200,
@@ -488,11 +490,11 @@
         "BuffDuration": 9,
         "CancelCooldownRefundPercentage": 50,
         "ChannelMoveSpeed": 1.3,
-        "Damage": 150,
+        "Damage": 125,
         "FallSpeedMax": 20,
         "GravityAcceleration": -1900,
         "GroundStickHeight": 0.05,
-        "HealAmount": 150,
+        "HealAmount": 125,
         "IsDisabled": false,
         "Key": "ability_bookworm_knightcharge",
         "KnightBonusPerWave": -99,
@@ -511,11 +513,13 @@
         "KnightWhiskerLength": 300,
         "KnightWhiskerSide": 50,
         "KnightWhiskerStrength": 0.2,
+        "MaxAmp": 100,
+        "MaxAmpDistance": 350,
         "Name": "Rallying Charge",
         "StunDuration": 1.0,
-        "TargetFindingDelay": 0.15,
+        "TargetFindingDelay": 0.04,
         "TossBackSpeed": 100,
-        "TossUpSpeed": 800,
+        "TossUpSpeed": 600,
         "Upgrades": [
             {
                 "HealAmount": 150
@@ -609,7 +613,7 @@
         "AbilityCooldown": 37.0,
         "AbilityUnitTargetLimit": 1,
         "BonusMoveSpeed": 4,
-        "BulletResist": 80,
+        "BulletResist": 60,
         "ChannelMoveSpeed": -1,
         "DPS": 75,
         "EnemyDamageSpeedPenalty": 0.5,
@@ -693,7 +697,7 @@
                 "AbilityCooldownBetweenCharge": -3,
                 "Scale": {
                     "Prop": "Damage",
-                    "Value": 1.116,
+                    "Value": 1.0,
                     "Type": "spirit"
                 }
             }
@@ -1262,7 +1266,7 @@
         "Name": "Aura of Suffering",
         "Radius": 8,
         "SelfDPS": 15,
-        "SelfDamagePercentage": 100,
+        "SelfDamagePercentage": 85,
         "TickRate": 0.25,
         "ToggleOffDelay": 0.5,
         "Upgrades": [
@@ -1296,24 +1300,23 @@
         "RespawnHealthPercent": 60,
         "SlowDuration": 3,
         "SlowPercent": 80,
-        "StunDuration": 1,
+        "StunDuration": 1.5,
         "Upgrades": [
             {
-                "BonusDamagePerBullet": 10,
-                "BonusFireRate": 25,
-                "Scale": {
-                    "Prop": "BonusDamagePerBullet",
-                    "Value": 0.08,
-                    "Type": "spirit"
-                },
-                "BuffDuration": 30
+                "Radius": "3m",
+                "Damage": 100
             },
             {
                 "RespawnHealthPercent": 40
             },
             {
-                "Damage": 200,
-                "Radius": "3m"
+                "BonusDamagePerBullet": 10,
+                "BonusFireRate": 20,
+                "Scale": {
+                    "Prop": "BonusDamagePerBullet",
+                    "Value": 0.06,
+                    "Type": "spirit"
+                }
             }
         ],
         "ZombieTickRate": 0.02
@@ -1340,8 +1343,8 @@
                 "TotalHealthRegen": 50
             },
             {
-                "AbilityCooldown": -4,
-                "RemoveDebuffs": 1
+                "RemoveDebuffs": 1,
+                "AbilityCooldown": -4
             }
         ]
     },
@@ -1396,7 +1399,7 @@
         "Name": "Pain Battery",
         "SpreadAngle": 40,
         "SpreadRandomness": 0.01,
-        "StoredDamageHealthPercentRequired": 50,
+        "StoredDamageHealthPercentRequired": 40,
         "Upgrades": [
             {
                 "Damage": 40
@@ -2348,7 +2351,7 @@
         "AbilityCooldown": 45,
         "AbilityUnitTargetLimit": 1,
         "BonusMoveSpeedPercent": 65,
-        "BuffDuration": 14,
+        "BuffDuration": 16,
         "CatFormDamageDealtReduction": -100,
         "ChannelMoveSpeed": -1,
         "EnemyDamageSpeedPenalty": 65,
@@ -2383,7 +2386,7 @@
         "Lifetime": 0.75,
         "MultiHitPenaltyPercentage": 50,
         "Name": "Gloom Bombs",
-        "Radius": 2.5,
+        "Radius": 3.0,
         "TimeBetweenGrenades": 0.05,
         "TossSpeed": 400,
         "Upgrades": [
@@ -2417,7 +2420,7 @@
         "PostDashMaintainedVelocityRatio": 0.15,
         "SideMoveSpeedReduction": -90,
         "SlashForwardOffset": 1.5,
-        "SlashHeight": 1.5,
+        "SlashHeight": 2.5,
         "SlashRadius": 4.5,
         "Upgrades": [
             {
@@ -2544,7 +2547,7 @@
     },
     "ability_nano_shadow_pulse": {
         "AbilityChannelTime": 3,
-        "AbilityCooldown": 100,
+        "AbilityCooldown": 90,
         "AbilityUnitTargetLimit": 1,
         "AirDrag": 4,
         "AirSpeedMax": 100,
@@ -2555,7 +2558,7 @@
         "IsDisabled": false,
         "Key": "ability_nano_shadow_pulse",
         "Name": "Return to Shadows",
-        "Radius": 7,
+        "Radius": 7.5,
         "Upgrades": [
             {
                 "AbilityCooldown": -25
@@ -2697,7 +2700,7 @@
                 "ChainCount": 3,
                 "Scale": {
                     "Prop": "BonusPerChain",
-                    "Value": 0.3,
+                    "Value": 0.27,
                     "Type": "spirit"
                 }
             }
@@ -2979,7 +2982,7 @@
         "NonPlayerResourceScalePct": 35,
         "Upgrades": [
             {
-                "BonusMoveSpeed": "1.75m"
+                "BonusMoveSpeed": "2.25m"
             },
             {
                 "GainSlamOnUse": 1,
@@ -3765,7 +3768,7 @@
     },
     "ability_ult_combo": {
         "AbilityCastRange": 4.75,
-        "AbilityChannelTime": 2.5,
+        "AbilityChannelTime": 2.4,
         "AbilityCooldown": 90.0,
         "AbilityUnitTargetLimit": 1,
         "BonusHealthOnKill": 50,
@@ -3778,7 +3781,7 @@
                 "BulletResist": 30
             },
             {
-                "AbilityChannelTime": 0.75
+                "AbilityChannelTime": 0.7
             },
             {
                 "DPS": 35,
@@ -3788,7 +3791,7 @@
     },
     "ability_vampirebat_batblink": {
         "AbilityCastRange": 10,
-        "AbilityCooldown": 27,
+        "AbilityCooldown": 30,
         "AbilityDuration": 0.65,
         "AbilityUnitTargetLimit": 1,
         "BonusMoveSpeed": 0,
@@ -3850,7 +3853,7 @@
         "BonusBatsMax": 50,
         "BonusBatsPerProc": 2,
         "ChannelMoveSpeed": -1,
-        "CurrentHealthDamageCapToBosses": 50,
+        "CurrentHealthDamageCapToBosses": 20,
         "Damage": 6,
         "DebuffDuration": 1.25,
         "FallSpeedMax": 1,
@@ -3945,12 +3948,16 @@
         "AbilityCooldown": 10,
         "AbilityPostCastDuration": 0.4,
         "AbilityUnitTargetLimit": 6,
+        "AirDrag": 0.2,
         "ChannelMoveSpeed": -1,
         "Damage": 60,
         "ExtraSweepOffsetBehindCaster": -1.5,
         "ExtraSweepRange": 2,
+        "FallSpeedMax": 3,
+        "FallingDrag": 20,
         "IsDisabled": false,
         "Key": "ability_vampirebat_steallife",
+        "MaxFloatTime": 2.5,
         "MiniJumpVelocity": 200,
         "MissingHealthDamagePercentage": 3,
         "Name": "Rake",
@@ -3963,10 +3970,15 @@
                 "RakeHealPerKill": 20
             },
             {
-                "Damage": 60
+                "Damage": 60,
+                "Scale": {
+                    "Prop": "RakeHealPerKill",
+                    "Value": 1.0,
+                    "Type": "spirit"
+                }
             },
             {
-                "MissingHealthDamagePercentage": 6
+                "MissingHealthDamagePercentage": 7
             }
         ]
     },
@@ -4000,25 +4012,31 @@
     },
     "ability_viper_debuffdagger": {
         "AbilityCastDelay": 0.2,
-        "AbilityCooldown": 9,
+        "AbilityCharges": 2,
+        "AbilityCooldown": 10,
+        "AbilityCooldownBetweenCharge": 4.5,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
         "Damage": 50,
+        "DamagePerStack": 25,
         "IsDisabled": false,
         "Key": "ability_viper_debuffdagger",
+        "MaxStacks": 3,
         "Name": "Screwjab Dagger",
-        "SlowDuration": 1,
-        "SlowPercent": 50,
+        "SlowDuration": 2,
+        "SlowPercent": 35,
+        "SlowPercentPerStack": 15,
+        "StackDuration": 10,
         "Upgrades": [
             {
-                "AbilityCooldown": -4
+                "AbilityCharges": 1
             },
             {
-                "Damage": 50
+                "BulletResistReduction": -8,
+                "BulletResistReductionPerStack": -5
             },
             {
-                "SlowDuration": "2s",
-                "StaminaReduction": 1
+                "CooldownRefundPercent": 40
             }
         ]
     },
@@ -4092,7 +4110,14 @@
                 "Stamina": 2
             },
             {
-                "SlideResist": 20
+                "BuffDuration": 5,
+                "CombatBarrier": 180,
+                "AbilityCooldown": 8,
+                "Scale": {
+                    "Prop": "CombatBarrier",
+                    "Value": 0.6,
+                    "Type": "spirit"
+                }
             }
         ]
     },
@@ -4142,7 +4167,7 @@
                 "HealAmpReceivePenaltyPercent": -40
             },
             {
-                "BuildUpPerShot": 5
+                "BuildUpPerShot": 4.5
             }
         ],
         "VenomBuildupPerShot": 1,
@@ -4563,7 +4588,7 @@
         "TurnRateMax": 140,
         "Upgrades": [
             {
-                "BaseAttackDamagePercent": 25,
+                "WeaponDamageBonus": 2.2,
                 "WeaponPowerIncreaseDuration": 8
             },
             {
@@ -4579,12 +4604,12 @@
         "AbilityDuration": 4,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
-        "DPS": 32,
-        "HealingFactor": 60,
+        "DPS": 29,
+        "HealingFactor": 66,
         "IsDisabled": false,
         "Key": "citadel_ability_bull_heal",
         "Name": "Siphon Life",
-        "NonHeroHealingFactor": 30,
+        "NonHeroHealingFactor": 33,
         "Radius": 10,
         "TickRate": 0.25,
         "Upgrades": [
@@ -4595,7 +4620,7 @@
                 "AbilityDuration": 2
             },
             {
-                "DPS": 38
+                "DPS": 34
             }
         ]
     },
@@ -4629,7 +4654,7 @@
         "AbilityCastRange": 500,
         "AbilityCharges": 1,
         "AbilityChargesConditionally": 1,
-        "AbilityCooldown": 0.75,
+        "AbilityCooldown": 0.7,
         "AbilityPostCastDuration": 0.2,
         "AbilityUnitTargetLimit": 1,
         "BonusAbilityResource": 100,
@@ -4997,7 +5022,7 @@
     "citadel_ability_hornet_leap": {
         "AbilityChannelTime": 0.2,
         "AbilityCooldown": 42.0,
-        "AbilityDuration": 13,
+        "AbilityDuration": 15,
         "AbilityUnitTargetLimit": 1,
         "AirSideMoveSpeedPercentage": -35,
         "AirSpeedBonus": 0,
@@ -5013,7 +5038,7 @@
                 "BonusClipSizePercent": 50
             },
             {
-                "AbilityDuration": 7
+                "AbilityDuration": 8
             },
             {
                 "MagicDamagePerBullet": 14
@@ -5044,7 +5069,7 @@
     },
     "citadel_ability_hornet_snipe": {
         "AbilityCharges": 2,
-        "AbilityCooldown": 60.0,
+        "AbilityCooldown": 50.0,
         "AbilityCooldownBetweenCharge": 2.5,
         "AbilityUnitTargetLimit": 1,
         "BonusGoldOnKill": 250,
@@ -5226,7 +5251,7 @@
     },
     "citadel_ability_lash_down_strike": {
         "AbilityCastDelay": 0.15,
-        "AbilityCooldown": 19.0,
+        "AbilityCooldown": 21.0,
         "AbilityPostCastDuration": 0.4,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
@@ -5234,8 +5259,8 @@
         "Key": "citadel_ability_lash_down_strike",
         "MinAimAngle": 60,
         "Name": "Ground Strike",
-        "Radius": 11,
-        "StompDamage": 70.0,
+        "Radius": 10,
+        "StompDamage": 60.0,
         "StompDamagePerMeterPrimary": 5.5,
         "StompDamagePerMeterSecondary": 4.2,
         "StompDamagePrimaryRange": 25,
@@ -5855,7 +5880,7 @@
                 "AbilityCooldown": -19.0
             },
             {
-                "ShockRadius": "8m"
+                "ShockRadius": "7m"
             },
             {
                 "StunDuration": 0.9
@@ -5880,7 +5905,7 @@
                 "AbilityCooldown": -19.0
             },
             {
-                "ShockRadius": "8m"
+                "ShockRadius": "7m"
             },
             {
                 "StunDuration": 0.9
@@ -5922,9 +5947,9 @@
         "AbilityCooldownBetweenCharge": 5,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 1.3,
-        "ClimbHeight": 0.7,
+        "ClimbHeight": 1.0,
         "Damage": 90.0,
-        "DistanceAboveGround": 0.7,
+        "DistanceAboveGround": 1.0,
         "DropDownRate": 20,
         "ImpactInterval": 0.1,
         "IsDisabled": false,
@@ -5965,7 +5990,7 @@
         "InitialRadius": 10,
         "IsDisabled": false,
         "Key": "citadel_ability_storm_cloud",
-        "LightningStrikeDamage": 90.0,
+        "LightningStrikeDamage": 75.0,
         "LightningStrikeDelay": 0.25,
         "LightningStrikeKnockBackForce": 500,
         "LightningStrikeRadius": 7,
@@ -6029,7 +6054,6 @@
         "ChannelMoveSpeed": 1.3,
         "DebuffDuration": 3,
         "ExplodeDamage": 115.0,
-        "FlyingBulletResist": 40,
         "IsDisabled": false,
         "Key": "citadel_ability_tengu_airlift",
         "Name": "Air Drop",
@@ -6091,7 +6115,7 @@
         "AbilityDuration": 4,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
-        "DPS": 55,
+        "DPS": 50,
         "Height": 2,
         "IsDisabled": false,
         "Key": "citadel_ability_tengu_urn",
@@ -6107,7 +6131,7 @@
                 "AbilityDuration": 2
             },
             {
-                "DPS": 46.0,
+                "DPS": 40.0,
                 "Radius": "2m"
             }
         ]
@@ -6816,7 +6840,6 @@
         "MaxStacks": 8,
         "Name": "Djinn's Mark",
         "ProcChance": 100,
-        "ProcCooldown": 2.5,
         "ProcDamageBase": 11,
         "ProcMaxRange": 45,
         "RevealDuration": 3.0,
@@ -6830,7 +6853,7 @@
                 "ProcDamageBase": 9
             },
             {
-                "ProcCooldown": -0.75,
+                "AbilityCooldown": -0.75,
                 "MaxStacks": 4
             }
         ],
@@ -7697,7 +7720,7 @@
         "AbilityPostCastDuration": 0.2,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
-        "Damage": 80,
+        "Damage": 70,
         "DetonateCooldown": 0.15,
         "IsDisabled": false,
         "Key": "viscous_goo_grenade",
@@ -7709,7 +7732,7 @@
         "ThirdHitDamagePercentage": 0.5,
         "Upgrades": [
             {
-                "AbilityCooldown": -5.75
+                "AbilityCooldown": -6
             },
             {
                 "Damage": 45.0,
