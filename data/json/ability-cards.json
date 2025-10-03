@@ -620,7 +620,7 @@
                     "AbilityCooldown": -19.0
                 },
                 {
-                    "ShockRadius": "8m"
+                    "ShockRadius": "7m"
                 },
                 {
                     "StunDuration": 0.9
@@ -671,7 +671,7 @@
                             "Name": "Shock Damage",
                             "Value": 10,
                             "Scale": {
-                                "Value": 0.16,
+                                "Value": 0.144,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -708,7 +708,7 @@
                     "ChainCount": 3,
                     "Scale": {
                         "Prop": "BonusPerChain",
-                        "Value": 0.3,
+                        "Value": 0.27,
                         "Type": "spirit"
                     },
                     "DescKey": "ability_power_surge_t3_desc"
@@ -730,7 +730,7 @@
                     "Name": "Damage on Jump",
                     "Value": 10,
                     "Scale": {
-                        "Value": 0.12276,
+                        "Value": 0.11,
                         "Type": "spirit"
                     }
                 },
@@ -753,7 +753,7 @@
                 "Name": "Duration",
                 "Value": 10,
                 "Scale": {
-                    "Value": 0.060934,
+                    "Value": 0.055,
                     "Type": "spirit"
                 },
                 "Type": "duration"
@@ -802,9 +802,9 @@
                     {
                         "Key": "LightningStrikeDamage",
                         "Name": "Strike Damage",
-                        "Value": 90.0,
+                        "Value": 75.0,
                         "Scale": {
-                            "Value": 1.395,
+                            "Value": 0.5,
                             "Type": "spirit"
                         },
                         "Type": "tech_damage"
@@ -997,7 +997,7 @@
                             "Name": "Spirit Damage Per Bullet",
                             "Value": 10,
                             "Scale": {
-                                "Value": 0.187488,
+                                "Value": 0.22,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -1013,7 +1013,7 @@
                     "DescKey": "citadel_ability_hornet_leap_t1_desc"
                 },
                 {
-                    "AbilityDuration": 7
+                    "AbilityDuration": 8
                 },
                 {
                     "MagicDamagePerBullet": 14
@@ -1059,7 +1059,7 @@
             },
             "AbilityDuration": {
                 "Name": "Duration",
-                "Value": 13,
+                "Value": 15,
                 "Type": "duration"
             }
         },
@@ -1181,7 +1181,7 @@
                             "Name": "Max Bonus Damage",
                             "Value": 90,
                             "Scale": {
-                                "Value": 1.395,
+                                "Value": 1.7,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -1280,7 +1280,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 60.0,
+                "Value": 50.0,
                 "Type": "cooldown"
             },
             "AbilityCooldownBetweenCharge": {
@@ -1304,7 +1304,7 @@
                             "Name": "Damage",
                             "Value": 90,
                             "Scale": {
-                                "Value": 1.0695,
+                                "Value": 1.22,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -1727,9 +1727,9 @@
                         {
                             "Key": "DPS",
                             "Name": "Damage Per Second",
-                            "Value": 32,
+                            "Value": 29,
                             "Scale": {
-                                "Value": 0.6045,
+                                "Value": 0.54,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -1744,7 +1744,7 @@
                             "Title": "On Hit:",
                             "Key": "HealingFactor",
                             "Name": "Lifesteal",
-                            "Value": 60,
+                            "Value": 66,
                             "Type": "healing"
                         }
                     ]
@@ -1753,7 +1753,7 @@
                     {
                         "Key": "NonHeroHealingFactor",
                         "Name": "Lifesteal vs Non-Heroes",
-                        "Value": 30,
+                        "Value": 33,
                         "Type": "healing"
                     }
                 ],
@@ -1767,7 +1767,7 @@
                     "AbilityDuration": 2
                 },
                 {
-                    "DPS": 38
+                    "DPS": 34
                 }
             ],
             "Move": {
@@ -1820,14 +1820,14 @@
                             "Name": "Damage",
                             "Value": 37,
                             "Scale": {
-                                "Value": 1.949875,
+                                "Value": 1.9,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
                         },
                         {
                             "Title": "On Hero Collide:",
-                            "Key": "BaseAttackDamagePercent",
+                            "Key": "WeaponDamageBonus",
                             "Name": "Weapon Damage",
                             "Value": 0,
                             "Type": "bullet_damage"
@@ -1860,7 +1860,7 @@
             },
             "Upgrades": [
                 {
-                    "BaseAttackDamagePercent": 25,
+                    "WeaponDamageBonus": 2.2,
                     "WeaponPowerIncreaseDuration": 8,
                     "DescKey": "citadel_ability_bull_charge_t1_desc"
                 },
@@ -2247,7 +2247,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 0.75,
+                "Value": 0.7,
                 "Scale": {
                     "Value": 0.0,
                     "Type": "cooldown"
@@ -3643,11 +3643,11 @@
                 },
                 "ClimbHeight": {
                     "Name": null,
-                    "Value": 0.7
+                    "Value": 1.0
                 },
                 "DistanceAboveGround": {
                     "Name": null,
-                    "Value": 0.7
+                    "Value": 1.0
                 },
                 "DropDownRate": {
                     "Name": null,
@@ -3793,7 +3793,7 @@
                             "Name": "Health Restored",
                             "Value": 25,
                             "Scale": {
-                                "Value": 0.372,
+                                "Value": 0.4,
                                 "Type": "spirit"
                             },
                             "Type": "healing"
@@ -5883,7 +5883,7 @@
             },
             "Radius": {
                 "Name": "Radius",
-                "Value": 2.5,
+                "Value": 3.0,
                 "Type": "distance"
             }
         },
@@ -5998,7 +5998,7 @@
                 },
                 "SlashHeight": {
                     "Name": null,
-                    "Value": 1.5
+                    "Value": 2.5
                 }
             },
             "AbilityCastDelay": {
@@ -6028,7 +6028,7 @@
                         {
                             "Key": "BuffDuration",
                             "Name": "Buff Duration",
-                            "Value": 14,
+                            "Value": 16,
                             "Type": "duration"
                         }
                     ]
@@ -6167,12 +6167,12 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 100,
+                "Value": 90,
                 "Type": "cooldown"
             },
             "Radius": {
                 "Name": "Radius",
-                "Value": 7,
+                "Value": 7.5,
                 "Type": "distance"
             }
         }
@@ -6191,7 +6191,7 @@
                             "Name": "Damage",
                             "Value": 80,
                             "Scale": {
-                                "Value": 1.116,
+                                "Value": 1.0,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -6213,7 +6213,7 @@
                     "AbilityCooldownBetweenCharge": -3,
                     "Scale": {
                         "Prop": "Damage",
-                        "Value": 1.116,
+                        "Value": 1.0,
                         "Type": "spirit"
                     },
                     "DescKey": "ability_charged_shot_t3_desc"
@@ -6727,7 +6727,7 @@
                     {
                         "Key": "BulletResist",
                         "Name": "Bullet Resist",
-                        "Value": 80,
+                        "Value": 60,
                         "Type": "bullet_armor_up"
                     },
                     {
@@ -6935,7 +6935,7 @@
                     "DescKey": "ability_ult_combo_t1_desc"
                 },
                 {
-                    "AbilityChannelTime": 0.75,
+                    "AbilityChannelTime": 0.7,
                     "DescKey": "ability_ult_combo_t2_desc"
                 },
                 {
@@ -6947,7 +6947,7 @@
             "Cast": {
                 "AbilityChannelTime": {
                     "Name": "Channel Duration",
-                    "Value": 2.5,
+                    "Value": 2.4,
                     "Type": "cast"
                 }
             },
@@ -7432,7 +7432,7 @@
                         {
                             "Key": "DPS",
                             "Name": "Damage Per Second",
-                            "Value": 55,
+                            "Value": 50,
                             "Scale": {
                                 "Value": 0.558,
                                 "Type": "spirit"
@@ -7458,7 +7458,7 @@
                     "AbilityDuration": 2
                 },
                 {
-                    "DPS": 46.0,
+                    "DPS": 40.0,
                     "Radius": "2m",
                     "DescKey": "citadel_ability_tengu_urn_t3_desc"
                 }
@@ -7636,7 +7636,7 @@
                             "Name": "Damage",
                             "Value": 75,
                             "Scale": {
-                                "Value": 0.974938,
+                                "Value": 1.5,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -7749,12 +7749,6 @@
                                 "Type": "spirit"
                             },
                             "Type": "combat_barrier"
-                        },
-                        {
-                            "Key": "FlyingBulletResist",
-                            "Name": "Bullet Resist",
-                            "Value": 40,
-                            "Type": "bullet_armor_up"
                         },
                         {
                             "Key": "TossDuration",
@@ -8157,7 +8151,7 @@
                             "Name": "DPS",
                             "Value": 70,
                             "Scale": {
-                                "Value": 1.45,
+                                "Value": 1.3,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -8637,7 +8631,7 @@
                         {
                             "Key": "StompDamage",
                             "Name": "Stomp Damage",
-                            "Value": 70.0,
+                            "Value": 60.0,
                             "Scale": {
                                 "Value": 0.7905,
                                 "Type": "spirit"
@@ -8743,12 +8737,12 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 19.0,
+                "Value": 21.0,
                 "Type": "cooldown"
             },
             "Radius": {
                 "Name": "Radius",
-                "Value": 11,
+                "Value": 10,
                 "Type": "distance"
             }
         },
@@ -9122,7 +9116,7 @@
                         {
                             "Key": "Damage",
                             "Name": "Damage",
-                            "Value": 80,
+                            "Value": 70,
                             "Scale": {
                                 "Value": 1.767,
                                 "Type": "spirit"
@@ -9160,7 +9154,7 @@
             },
             "Upgrades": [
                 {
-                    "AbilityCooldown": -5.75
+                    "AbilityCooldown": -6
                 },
                 {
                     "Damage": 45.0,
@@ -11044,12 +11038,6 @@
                             "Key": "MaxStacks",
                             "Name": "Max Stacks",
                             "Value": 8
-                        },
-                        {
-                            "Key": "ProcCooldown",
-                            "Name": "Max Frequency",
-                            "Value": 2.5,
-                            "Type": "cooldown"
                         }
                     ]
                 },
@@ -11094,7 +11082,7 @@
                     "DescKey": "mirage_sand_phantom_t2_desc"
                 },
                 {
-                    "ProcCooldown": -0.75,
+                    "AbilityCooldown": -0.75,
                     "MaxStacks": 4,
                     "DescKey": "mirage_sand_phantom_t3_desc"
                 }
@@ -11978,40 +11966,94 @@
                             "Name": "Damage",
                             "Value": 50,
                             "Scale": {
-                                "Value": 1.0,
+                                "Value": 0.65,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
                         },
                         {
+                            "Title": "On Hit:",
                             "Key": "SlowPercent",
                             "Name": "Move Speed",
-                            "Value": 50
+                            "Value": 35,
+                            "Type": "slow"
                         },
                         {
-                            "Key": "SlowDuration",
-                            "Name": "Slow Duration",
-                            "Value": 1,
-                            "Type": "duration"
+                            "Title": "On Hit:",
+                            "Key": "BulletResistReduction",
+                            "Name": "Bullet Resist",
+                            "Value": 0,
+                            "Type": "tech_armor_down"
                         }
                     ]
                 },
                 "Alt": [],
                 "DescKey": "ability_viper_debuffdagger_desc"
             },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "On Stack:",
+                            "Key": "DamagePerStack",
+                            "Name": "Damage per Stack",
+                            "Value": 25,
+                            "Scale": {
+                                "Value": 0.33,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Title": "On Stack:",
+                            "Key": "SlowPercentPerStack",
+                            "Name": "Move Speed per Stack",
+                            "Value": 15,
+                            "Type": "slow"
+                        },
+                        {
+                            "Title": "On Stack:",
+                            "Key": "BulletResistReductionPerStack",
+                            "Name": "Bullet Resist per Stack",
+                            "Value": 0,
+                            "Type": "tech_armor_down"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "StackDuration",
+                        "Name": "Stack Duration",
+                        "Value": 10
+                    },
+                    {
+                        "Key": "MaxStacks",
+                        "Name": "Max Stacks",
+                        "Value": 3
+                    }
+                ]
+            },
             "Upgrades": [
                 {
-                    "AbilityCooldown": -4
+                    "AbilityCharges": 1
                 },
                 {
-                    "Damage": 50
+                    "BulletResistReduction": -8,
+                    "BulletResistReductionPerStack": -5,
+                    "DescKey": "ability_viper_debuffdagger_t2_desc"
                 },
                 {
-                    "SlowDuration": "2s",
-                    "StaminaReduction": 1,
+                    "CooldownRefundPercent": 40,
                     "DescKey": "ability_viper_debuffdagger_t3_desc"
                 }
             ],
+            "Duration": {
+                "SlowDuration": {
+                    "Name": "Slow Duration",
+                    "Value": 2,
+                    "Type": "duration"
+                }
+            },
             "Move": {
                 "ChannelMoveSpeed": {
                     "Name": "Channel Move Speed",
@@ -12030,10 +12072,20 @@
                 "Value": 0.2,
                 "Type": "cast"
             },
+            "AbilityCharges": {
+                "Name": "Charges",
+                "Value": 2,
+                "Type": "cast"
+            },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 9,
+                "Value": 10,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": 4.5,
+                "Type": "charge_cooldown"
             }
         },
         "2": {
@@ -12093,7 +12145,7 @@
                     "HealAmpReceivePenaltyPercent": -40
                 },
                 {
-                    "BuildUpPerShot": 5,
+                    "BuildUpPerShot": 4.5,
                     "DescKey": "ability_viper_venom_t3_desc"
                 }
             ],
@@ -12145,6 +12197,16 @@
                             "Name": "Slide Distance",
                             "Value": 10,
                             "Type": "move_speed"
+                        },
+                        {
+                            "Title": "On Slide:",
+                            "Key": "CombatBarrier",
+                            "Name": "Barrier",
+                            "Value": 0,
+                            "Scale": {
+                                "Value": 0.0,
+                                "Type": "spirit"
+                            }
                         }
                     ]
                 },
@@ -12159,7 +12221,14 @@
                     "Stamina": 2
                 },
                 {
-                    "SlideResist": 20,
+                    "BuffDuration": 5,
+                    "CombatBarrier": 180,
+                    "AbilityCooldown": 8,
+                    "Scale": {
+                        "Prop": "CombatBarrier",
+                        "Value": 0.6,
+                        "Type": "spirit"
+                    },
                     "DescKey": "ability_viper_snakedash_t3_desc"
                 }
             ],
@@ -13887,7 +13956,7 @@
                             "Name": "Heal Per Kill",
                             "Value": 30,
                             "Scale": {
-                                "Value": 1.5,
+                                "Value": 0.5,
                                 "Type": "spirit"
                             },
                             "Type": "healing"
@@ -13901,10 +13970,16 @@
                     "RakeHealPerKill": 20
                 },
                 {
-                    "Damage": 60
+                    "Damage": 60,
+                    "Scale": {
+                        "Prop": "RakeHealPerKill",
+                        "Value": 1.0,
+                        "Type": "spirit"
+                    },
+                    "DescKey": "ability_vampirebat_steallife_t2_desc"
                 },
                 {
-                    "MissingHealthDamagePercentage": 6
+                    "MissingHealthDamagePercentage": 7
                 }
             ],
             "Move": {
@@ -13923,6 +13998,10 @@
                     "Name": null,
                     "Value": 6
                 },
+                "AirDrag": {
+                    "Name": null,
+                    "Value": 0.2
+                },
                 "ExtraSweepOffsetBehindCaster": {
                     "Name": null,
                     "Value": -1.5
@@ -13930,6 +14009,18 @@
                 "ExtraSweepRange": {
                     "Name": null,
                     "Value": 2
+                },
+                "FallSpeedMax": {
+                    "Name": null,
+                    "Value": 3
+                },
+                "FallingDrag": {
+                    "Name": null,
+                    "Value": 20
+                },
+                "MaxFloatTime": {
+                    "Name": null,
+                    "Value": 2.5
                 },
                 "MiniJumpVelocity": {
                     "Name": null,
@@ -14065,7 +14156,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 27,
+                "Value": 30,
                 "Type": "cooldown"
             },
             "AbilityDuration": {
@@ -14316,7 +14407,7 @@
                 },
                 "CurrentHealthDamageCapToBosses": {
                     "Name": null,
-                    "Value": 50
+                    "Value": 20
                 },
                 "FallSpeedMax": {
                     "Name": null,
@@ -15480,7 +15571,7 @@
                 },
                 "StoredDamageHealthPercentRequired": {
                     "Name": null,
-                    "Value": 50
+                    "Value": 40
                 }
             },
             "AbilityCastDelay": {
@@ -15550,8 +15641,8 @@
                     "TotalHealthRegen": 50
                 },
                 {
-                    "AbilityCooldown": -4,
                     "RemoveDebuffs": 1,
+                    "AbilityCooldown": -4,
                     "DescKey": "ability_frank_selfzap_t3_desc"
                 }
             ],
@@ -15608,7 +15699,7 @@
                             "Name": "Minimum DPS",
                             "Value": 15,
                             "Scale": {
-                                "Value": 0.25,
+                                "Value": 0.22,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -15618,24 +15709,31 @@
                             "Name": "Max DPS",
                             "Value": 75,
                             "Scale": {
-                                "Value": 1.25,
+                                "Value": 1.1,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
                         },
                         {
-                            "Title": "When Active:",
+                            "Title": "On Enemy Hit:",
                             "Key": "SlowPercent",
                             "Name": "Move Speed",
                             "Value": 0,
                             "Type": "slow"
                         },
                         {
-                            "Title": "When Active:",
+                            "Title": "On Enemy Hit:",
                             "Key": "OutgoingDamagePercent",
                             "Name": "Damage",
                             "Value": 0,
                             "Type": "damage"
+                        },
+                        {
+                            "Title": "On Enemy Hit:",
+                            "Key": "IncomingDamagePercent",
+                            "Name": "Damage Taken",
+                            "Value": 0,
+                            "Type": "health"
                         }
                     ]
                 },
@@ -15643,7 +15741,7 @@
                     {
                         "Key": "SelfDamagePercentage",
                         "Name": "Self Damage",
-                        "Value": 100,
+                        "Value": 85,
                         "Type": "damage"
                     }
                 ],
@@ -15741,7 +15839,7 @@
                             "Name": "Damage",
                             "Value": 200,
                             "Scale": {
-                                "Value": 1.8,
+                                "Value": 2.0,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -15782,22 +15880,21 @@
             },
             "Upgrades": [
                 {
-                    "BonusDamagePerBullet": 10,
-                    "BonusFireRate": 25,
-                    "Scale": {
-                        "Prop": "BonusDamagePerBullet",
-                        "Value": 0.08,
-                        "Type": "spirit"
-                    },
-                    "BuffDuration": 30,
+                    "Radius": "3m",
+                    "Damage": 100,
                     "DescKey": "ability_frank_revive_t1_desc"
                 },
                 {
                     "RespawnHealthPercent": 40
                 },
                 {
-                    "Damage": 200,
-                    "Radius": "3m",
+                    "BonusDamagePerBullet": 10,
+                    "BonusFireRate": 20,
+                    "Scale": {
+                        "Prop": "BonusDamagePerBullet",
+                        "Value": 0.06,
+                        "Type": "spirit"
+                    },
                     "DescKey": "ability_frank_revive_t3_desc"
                 }
             ],
@@ -15856,7 +15953,7 @@
                 },
                 "StunDuration": {
                     "Name": "Stun Duration",
-                    "Value": 1
+                    "Value": 1.5
                 },
                 "ZombieTickRate": {
                     "Name": null,
@@ -16103,6 +16200,10 @@
                     "Name": null,
                     "Value": 1
                 },
+                "BonusSpiritDamagePercent": {
+                    "Name": null,
+                    "Value": 15
+                },
                 "BonusTargetRadius": {
                     "Name": null,
                     "Value": 30
@@ -16124,12 +16225,12 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 26.0,
+                "Value": 30.0,
                 "Type": "cooldown"
             },
             "AbilityDuration": {
                 "Name": "Duration",
-                "Value": 5,
+                "Value": 7,
                 "Type": "duration"
             }
         },
@@ -16169,7 +16270,7 @@
                     {
                         "Key": "SlowDuration",
                         "Name": "Slow Duration",
-                        "Value": 0,
+                        "Value": 0.5,
                         "Type": "duration"
                     }
                 ],
@@ -16221,12 +16322,12 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 30,
+                "Value": 25,
                 "Type": "cooldown"
             },
             "Radius": {
                 "Name": "Radius",
-                "Value": 7
+                "Value": 7.5
             }
         },
         "4": {
@@ -16247,9 +16348,9 @@
                             "Title": "On Enemy Hit:",
                             "Key": "Damage",
                             "Name": "Damage",
-                            "Value": 150,
+                            "Value": 125,
                             "Scale": {
-                                "Value": 1.2,
+                                "Value": 1.0,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -16271,9 +16372,9 @@
                             "Title": "On Friendly Hit:",
                             "Key": "HealAmount",
                             "Name": "Heal Amount",
-                            "Value": 150,
+                            "Value": 125,
                             "Scale": {
-                                "Value": 2.0,
+                                "Value": 1.6,
                                 "Type": "spirit"
                             },
                             "Type": "healing"
@@ -16289,10 +16390,14 @@
                 },
                 "Alt": [
                     {
-                        "Key": "BuffDuration",
-                        "Name": "Buff Duration",
-                        "Value": 9,
-                        "Type": "duration"
+                        "Key": "MaxAmp",
+                        "Value": 100,
+                        "Type": "damage"
+                    },
+                    {
+                        "Key": "MaxAmpDistance",
+                        "Value": 350,
+                        "Type": "distance"
                     }
                 ]
             },
@@ -16311,6 +16416,13 @@
                     "DescKey": "ability_bookworm_knightcharge_t3_desc"
                 }
             ],
+            "Duration": {
+                "BuffDuration": {
+                    "Name": "Buff Duration",
+                    "Value": 9,
+                    "Type": "duration"
+                }
+            },
             "Cast": {
                 "AbilityChannelTime": {
                     "Name": "Channel Duration",
@@ -16420,7 +16532,7 @@
                 },
                 "TargetFindingDelay": {
                     "Name": null,
-                    "Value": 0.15
+                    "Value": 0.04
                 },
                 "TossBackSpeed": {
                     "Name": null,
@@ -16428,7 +16540,7 @@
                 },
                 "TossUpSpeed": {
                     "Name": null,
-                    "Value": 800
+                    "Value": 600
                 },
                 "WaveCount": {
                     "Name": null,
@@ -18164,7 +18276,7 @@
             },
             "Upgrades": [
                 {
-                    "BonusMoveSpeed": "1.75m",
+                    "BonusMoveSpeed": "2.25m",
                     "DescKey": "ability_punkgoat_blasted_t1_desc"
                 },
                 {
