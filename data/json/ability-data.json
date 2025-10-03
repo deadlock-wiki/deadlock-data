@@ -57,11 +57,12 @@
                 "DamageAmplificationPerStack": 5
             },
             {
-                "Damage": 48,
-                "Scale": {
-                    "Prop": "Damage",
-                    "Value": 0.584963,
-                    "Type": "spirit"
+                "Damage": {
+                    "Value": 48,
+                    "Scale": {
+                        "Value": 0.584963,
+                        "Type": "spirit"
+                    }
                 }
             }
         ]
@@ -704,11 +705,12 @@
                 "SpeedOnLandDuration": 4
             },
             {
-                "StompDamage": 75,
-                "Scale": {
-                    "Prop": "StompDamage",
-                    "Value": 0.32178,
-                    "Type": null
+                "StompDamage": {
+                    "Value": 75,
+                    "Scale": {
+                        "Value": 0.32178,
+                        "Type": null
+                    }
                 }
             }
         ],
@@ -854,10 +856,12 @@
             },
             {
                 "AbilityCooldownBetweenCharge": -3,
-                "Scale": {
-                    "Prop": "Damage",
-                    "Value": 1.0,
-                    "Type": "spirit"
+                "Damage": {
+                    "Value": 0,
+                    "Scale": {
+                        "Value": 1.0,
+                        "Type": "spirit"
+                    }
                 }
             }
         ]
@@ -1015,13 +1019,14 @@
                 "AbilityDuration": 10
             },
             {
-                "CombatBarrier": 250,
-                "BarrierDuration": 8,
-                "Scale": {
-                    "Prop": "CombatBarrier",
-                    "Value": 1.5,
-                    "Type": "spirit"
-                }
+                "CombatBarrier": {
+                    "Value": 250,
+                    "Scale": {
+                        "Value": 1.5,
+                        "Type": "spirit"
+                    }
+                },
+                "BarrierDuration": 8
             },
             {
                 "DoorwayDistance": "50m",
@@ -1094,11 +1099,12 @@
             {
                 "CartDamage": 50,
                 "StunDuration": 1.2,
-                "WallImpactDamage": 130,
-                "Scale": {
-                    "Prop": "WallImpactDamage",
-                    "Value": 0.75,
-                    "Type": null
+                "WallImpactDamage": {
+                    "Value": 130,
+                    "Scale": {
+                        "Value": 0.75,
+                        "Type": null
+                    }
                 }
             }
         ],
@@ -1425,11 +1431,12 @@
             },
             {
                 "AbilityCooldown": -15.0,
-                "AbilityCharges": 1,
-                "Scale": {
-                    "Prop": "AbilityCharges",
+                "AbilityCharges": {
                     "Value": 1,
-                    "Type": "max_charges"
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "max_charges"
+                    }
                 },
                 "AbilityCooldownBetweenCharge": 20
             }
@@ -1600,13 +1607,14 @@
                 "RespawnHealthPercent": 40
             },
             {
-                "BonusDamagePerBullet": 10,
-                "BonusFireRate": 20,
-                "Scale": {
-                    "Prop": "BonusDamagePerBullet",
-                    "Value": 0.06,
-                    "Type": "spirit"
-                }
+                "BonusDamagePerBullet": {
+                    "Value": 10,
+                    "Scale": {
+                        "Value": 0.06,
+                        "Type": "spirit"
+                    }
+                },
+                "BonusFireRate": 20
             }
         ],
         "ZombieTickRate": 0.02
@@ -2118,11 +2126,12 @@
                 "AbilityCooldown": -45.0
             },
             {
-                "BonusHealthRegen": 50,
-                "Scale": {
-                    "Prop": "BonusHealthRegen",
-                    "Value": 1.023,
-                    "Type": "spirit"
+                "BonusHealthRegen": {
+                    "Value": 50,
+                    "Scale": {
+                        "Value": 1.023,
+                        "Type": "spirit"
+                    }
                 }
             }
         ]
@@ -2160,11 +2169,12 @@
                 "AbilityCharges": 1
             },
             {
-                "HealAmount": 80,
-                "Scale": {
-                    "Prop": "HealAmount",
-                    "Value": 1.488,
-                    "Type": "spirit"
+                "HealAmount": {
+                    "Value": 80,
+                    "Scale": {
+                        "Value": 1.488,
+                        "Type": "spirit"
+                    }
                 }
             },
             {
@@ -2214,11 +2224,12 @@
                 "DPS": 37
             },
             {
-                "BeamSplit": "10m",
-                "Scale": {
-                    "Prop": "BeamSplit",
-                    "Value": 0.93,
-                    "Type": "range"
+                "BeamSplit": {
+                    "Value": "10m",
+                    "Scale": {
+                        "Value": 0.93,
+                        "Type": "range"
+                    }
                 },
                 "BeamSplitCount": 2
             }
@@ -2531,11 +2542,12 @@
                 "AbilityDuration": 2.0
             },
             {
-                "AbilityCharges": 2,
-                "Scale": {
-                    "Prop": "AbilityCharges",
-                    "Value": 1,
-                    "Type": "max_charges"
+                "AbilityCharges": {
+                    "Value": 2,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "max_charges"
+                    }
                 },
                 "AbilityCooldownBetweenCharge": 0.1
             }
@@ -2858,11 +2870,12 @@
                 "AbilityCooldown": -38.0
             },
             {
-                "BonusHealthRegen": 70,
-                "Scale": {
-                    "Prop": "BonusHealthRegen",
-                    "Value": 1.52334,
-                    "Type": "spirit"
+                "BonusHealthRegen": {
+                    "Value": 70,
+                    "Scale": {
+                        "Value": 1.52334,
+                        "Type": "spirit"
+                    }
                 }
             }
         ]
@@ -3317,14 +3330,21 @@
                 "DebuffDuration": 8
             },
             {
-                "DamagePerChain": 12,
-                "BonusPerChain": 12,
-                "ChainCount": 3,
-                "Scale": {
-                    "Prop": "BonusPerChain",
-                    "Value": 0.27,
-                    "Type": "spirit"
-                }
+                "DamagePerChain": {
+                    "Value": 12,
+                    "Scale": {
+                        "Value": 0.27,
+                        "Type": "spirit"
+                    }
+                },
+                "BonusPerChain": {
+                    "Value": 12,
+                    "Scale": {
+                        "Value": 0.27,
+                        "Type": "spirit"
+                    }
+                },
+                "ChainCount": 3
             }
         ]
     },
@@ -3730,11 +3750,12 @@
                 "WeaponDamageBurstDuration": 5
             },
             {
-                "DealMaxHealthDamagePct": 6,
-                "Scale": {
-                    "Prop": "DealMaxHealthDamagePct",
-                    "Value": 0.017,
-                    "Type": null
+                "DealMaxHealthDamagePct": {
+                    "Value": 6,
+                    "Scale": {
+                        "Value": 0.017,
+                        "Type": null
+                    }
                 }
             }
         ],
@@ -3849,13 +3870,20 @@
             {
                 "CountsAsLightMelee": -1,
                 "CountsAsHeavyMelee": 1,
-                "Scale": {
-                    "Prop": "MeleeDamage",
-                    "Value": 0.0,
-                    "Type": null
+                "HeavyMeleeDamage": {
+                    "Value": 0,
+                    "Scale": {
+                        "Value": 0.6,
+                        "Type": null
+                    }
                 },
-                "HeavyMeleeDamage": 0,
-                "MeleeDamage": 0
+                "MeleeDamage": {
+                    "Value": 0,
+                    "Scale": {
+                        "Value": 0.0,
+                        "Type": null
+                    }
+                }
             }
         ],
         "WaveEndRadius": 8.0,
@@ -4188,11 +4216,12 @@
                 "PostInvisBuffDuration": 8
             },
             {
-                "AbilityCharges": 1,
-                "Scale": {
-                    "Prop": "AbilityCharges",
+                "AbilityCharges": {
                     "Value": 1,
-                    "Type": "max_charges"
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "max_charges"
+                    }
                 },
                 "AbilityCooldownBetweenCharge": 7,
                 "PhaseOutDuration": 0.5
@@ -4217,11 +4246,12 @@
         },
         "Upgrades": [
             {
-                "ProcDamage": 55,
-                "Scale": {
-                    "Prop": "ProcDamage",
-                    "Value": 0.365602,
-                    "Type": "spirit"
+                "ProcDamage": {
+                    "Value": 55,
+                    "Scale": {
+                        "Value": 0.365602,
+                        "Type": "spirit"
+                    }
                 },
                 "ProcDamageStackCount": 20,
                 "SlowPercent": 15,
@@ -4870,10 +4900,12 @@
             },
             {
                 "Damage": 60,
-                "Scale": {
-                    "Prop": "RakeHealPerKill",
-                    "Value": 1.0,
-                    "Type": "spirit"
+                "RakeHealPerKill": {
+                    "Value": 0,
+                    "Scale": {
+                        "Value": 1.0,
+                        "Type": "spirit"
+                    }
                 }
             },
             {
@@ -5065,13 +5097,14 @@
             },
             {
                 "BuffDuration": 5,
-                "CombatBarrier": 180,
-                "AbilityCooldown": 8,
-                "Scale": {
-                    "Prop": "CombatBarrier",
-                    "Value": 0.6,
-                    "Type": "spirit"
-                }
+                "CombatBarrier": {
+                    "Value": 180,
+                    "Scale": {
+                        "Value": 0.6,
+                        "Type": "spirit"
+                    }
+                },
+                "AbilityCooldown": 8
             }
         ]
     },
@@ -5214,11 +5247,12 @@
                 "AbilityCooldown": -19.0
             },
             {
-                "CombatBarrier": 150,
-                "Scale": {
-                    "Prop": "CombatBarrier",
-                    "Value": 3.656016,
-                    "Type": "spirit"
+                "CombatBarrier": {
+                    "Value": 150,
+                    "Scale": {
+                        "Value": 3.656016,
+                        "Type": "spirit"
+                    }
                 }
             }
         ]
@@ -5892,10 +5926,12 @@
                 "SpeedBoostDuration": 2
             },
             {
-                "Scale": {
-                    "Prop": "MaxBonusBulletDamage",
-                    "Value": 50,
-                    "Type": "weapon_power"
+                "MaxBonusBulletDamage": {
+                    "Value": 0,
+                    "Scale": {
+                        "Value": 50,
+                        "Type": "weapon_power"
+                    }
                 }
             }
         ]
@@ -6399,11 +6435,12 @@
                 "SlowDuration": 4
             },
             {
-                "Damage": 40,
-                "Scale": {
-                    "Prop": "Damage",
-                    "Value": 1.218672,
-                    "Type": "spirit"
+                "Damage": {
+                    "Value": 40,
+                    "Scale": {
+                        "Value": 1.218672,
+                        "Type": "spirit"
+                    }
                 }
             },
             {
@@ -6484,10 +6521,19 @@
                 "TossDuration": 1
             },
             {
-                "Scale": {
-                    "Prop": "StompDamagePerMeterSecondary",
-                    "Value": 0.008137,
-                    "Type": "spirit"
+                "StompDamagePerMeterPrimary": {
+                    "Value": 0,
+                    "Scale": {
+                        "Value": 0.03255,
+                        "Type": "spirit"
+                    }
+                },
+                "StompDamagePerMeterSecondary": {
+                    "Value": 0,
+                    "Scale": {
+                        "Value": 0.008137,
+                        "Type": "spirit"
+                    }
                 }
             }
         ]
@@ -6770,13 +6816,14 @@
                 "AbilityCastRange": "15m"
             },
             {
-                "CombatBarrier": 300,
-                "BarrierDuration": 5,
-                "Scale": {
-                    "Prop": "CombatBarrier",
-                    "Value": 2.437344,
-                    "Type": "spirit"
-                }
+                "CombatBarrier": {
+                    "Value": 300,
+                    "Scale": {
+                        "Value": 2.437344,
+                        "Type": "spirit"
+                    }
+                },
+                "BarrierDuration": 5
             },
             {
                 "AbilityCooldown": -28.0
@@ -6930,11 +6977,12 @@
                 "AbilityCooldown": -45.0
             },
             {
-                "DamagePerRocket": 23,
-                "Scale": {
-                    "Prop": "DamagePerRocket",
-                    "Value": 0.093,
-                    "Type": "spirit"
+                "DamagePerRocket": {
+                    "Value": 23,
+                    "Scale": {
+                        "Value": 0.093,
+                        "Type": "spirit"
+                    }
                 }
             }
         ]
@@ -7759,20 +7807,23 @@
                 "AbilityCooldown": -14.0
             },
             {
-                "Scale": {
-                    "Prop": "MagicDamagePerBullet",
-                    "Value": 0.0465,
-                    "Type": null
-                },
-                "MagicDamagePerBullet": 2.8
+                "MagicDamagePerBullet": {
+                    "Value": 2.8,
+                    "Scale": {
+                        "Value": 0.0465,
+                        "Type": null
+                    }
+                }
             },
             {
                 "BulletLifestealPercent": 15,
                 "AbilityLifestealPercent": 15,
-                "Scale": {
-                    "Prop": "MagicDamagePerBullet",
-                    "Value": 0.0465,
-                    "Type": null
+                "MagicDamagePerBullet": {
+                    "Value": 0,
+                    "Scale": {
+                        "Value": 0.0465,
+                        "Type": null
+                    }
                 }
             }
         ]
@@ -8003,11 +8054,12 @@
                 "BuffDuration": 6
             },
             {
-                "AbilityCharges": 2,
-                "Scale": {
-                    "Prop": "AbilityCharges",
-                    "Value": 1,
-                    "Type": "max_charges"
+                "AbilityCharges": {
+                    "Value": 2,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "max_charges"
+                    }
                 },
                 "AbilityCooldownBetweenCharge": 5
             }
@@ -9249,11 +9301,12 @@
                 "DelayBetweenShots": -0.2
             },
             {
-                "Damage": 50,
-                "Scale": {
-                    "Prop": "Damage",
-                    "Value": 1.462406,
-                    "Type": "spirit"
+                "Damage": {
+                    "Value": 50,
+                    "Scale": {
+                        "Value": 1.462406,
+                        "Type": "spirit"
+                    }
                 }
             },
             {
@@ -9287,12 +9340,13 @@
                 "AbilityCooldown": -7.5
             },
             {
-                "Scale": {
-                    "Prop": "Damage",
-                    "Value": 0.487469,
-                    "Type": "spirit"
-                },
-                "Damage": 80
+                "Damage": {
+                    "Value": 80,
+                    "Scale": {
+                        "Value": 0.487469,
+                        "Type": "spirit"
+                    }
+                }
             }
         ]
     },
@@ -9365,13 +9419,20 @@
                 "AbilityChannelTime": 0.5
             },
             {
-                "Scale": {
-                    "Prop": "HotDPS",
-                    "Value": 0.292481,
-                    "Type": "spirit"
+                "NormalDPS": {
+                    "Value": 16,
+                    "Scale": {
+                        "Value": 0.097494,
+                        "Type": "spirit"
+                    }
                 },
-                "NormalDPS": 16,
-                "HotDPS": 48
+                "HotDPS": {
+                    "Value": 48,
+                    "Scale": {
+                        "Value": 0.292481,
+                        "Type": "spirit"
+                    }
+                }
             }
         ]
     },
@@ -9405,12 +9466,13 @@
                 "EvasionChance": 20
             },
             {
-                "Scale": {
-                    "Prop": "MaxDPS",
-                    "Value": 0.146241,
-                    "Type": "spirit"
-                },
-                "MaxDPS": 24
+                "MaxDPS": {
+                    "Value": 24,
+                    "Scale": {
+                        "Value": 0.146241,
+                        "Type": "spirit"
+                    }
+                }
             }
         ]
     },
@@ -9617,13 +9679,20 @@
             {
                 "UseHeavyMelee": 1,
                 "AbilityCooldown": -12,
-                "Scale": {
-                    "Prop": "Damage",
-                    "Value": 0.0,
-                    "Type": null
+                "DamageHeavyMelee": {
+                    "Value": 35,
+                    "Scale": {
+                        "Value": 0.93,
+                        "Type": null
+                    }
                 },
-                "DamageHeavyMelee": 35,
-                "Damage": -30
+                "Damage": {
+                    "Value": -30,
+                    "Scale": {
+                        "Value": 0.0,
+                        "Type": null
+                    }
+                }
             }
         ]
     },
