@@ -1,0 +1,113 @@
+{{Update layout
+| prev_update = 
+| month = May
+| day = 3
+| year = 2024
+| next_update = 
+| source = https://forums.playdeadlock.com/threads/05-03-2024-update.427/
+| source_title = 05 03 2024 Update
+| notes = 
+General Changes:
+==
+* Added a Recommend A Friend button to the dashboard that you can use to send us requests for people to include in our playtesting
+* Added a Resources page to the dashboard which contains a browsable item shop
+* Added overhead text display when another hero uses active items
+* The hotkeys F1-F5 to change cameras to allied heroes now maps directly to the order of heroes on the top bar left to right
+* Added the Patron to the spectate-when-dead cycle if the enemy is in your base or everyone on your team is dead
+* Added support for Flex Items in the Hero Sandbox
+
+* Increased the range of the mouse sensitivity slider from 0.5->4.0 to 0.05->8.0
+* Increased the default framerate cap from 120 to 400
+* Improved UI display when endgame objectives are being attacked
+* Added music for when the base is under attack
+* Changed the local player icon on the the minimap to always be on top of enemy icons
+* Shop music will now only play for shops players can access
+* Postgame graphs now default to team stats rather than individual
+* Added borders around hero icons on the minimap when watching replays/spectating
+* Top bar now shows incoming players before they are fully connected
+* Added console command to hide the bar at the bottom in replays ('citadel_hide_replay_hud 1' to hide it, 'citadel_hide_replay_hud 0' to bring it back)
+
+* Various VOIP improvements
+* Fixed open mic threshold
+* Fixed various consistency issues with the presentation of Souls terminology, icons, etc
+* Fixed {{AbilityIcon|Flying Cloak}} teleporting players into geometry or out of the world
+* Fixed {{ItemIcon|Warp Stone}} teleporting you through geometry
+* Fixed {{AbilityIcon|Fixation}} decimal point display
+* Fixed Parry animation not playing
+* Fixed various issues with the spectate UI display
+* Removed the slow climbing vertical recoil on {{HeroIcon|Yamato}}'s alt fire
+* Fixed AP count not showing if you are dead, spectating a team mate or when holding alt/tab to upgrade your abilities
+
+
+
+Gameplay Changes:
+==
+* Troopers DPS vs Lane Guardians reduced from 44 to 36
+* Objectives now have 80% damage reduction anti-backdoor defense when there haven't been creeps nearby in a while
+* The uncapturable zipline nodes near your base now extend out 2 more nodes (this means attackers can't capture ziplines quite as close to the enemy base)
+
+* You are now silenced while carrying the Urn
+* Urn bounty increased from 900 + 160/minute to 900 + 200/minute
+* Vaults base bounty increased from 150 to 200
+
+* {{HeroIcon|Abrams}}: Base Health increased from 550 to 600
+* {{HeroIcon|Abrams}}: Siphon DPS increased from 24 to 35
+
+* {{HeroIcon|Bebop}}: Weapon no longer has horizontal/vertical recoil
+
+* {{HeroIcon|Dynamo}}: {{AbilityIcon|Singularity}} DPS increased from 48 to 60
+* {{HeroIcon|Dynamo}}: {{AbilityIcon|Singularity}} T3 Max HP DPS increased from 3.2% to 3.8%
+
+* {{HeroIcon|Grey Talon}}: Charge Shot damage increased from 95 to 105
+* {{HeroIcon|Grey Talon}}: Charge Shot T2 damage reduced from 80 to 70
+* {{HeroIcon|Grey Talon}}: {{AbilityIcon|Guided Owl}} damage increased from 200 to 300
+
+* {{HeroIcon|Haze}}: {{AbilityIcon|Bullet Dance}} bonus Fire Rate reduced from +30 to +20
+* {{HeroIcon|Haze}}: {{AbilityIcon|Smoke Bomb}} duration scaling from Spirit improved from 0.2 to 0.3
+
+* {{HeroIcon|Infernus}}: Catalyst no longer slows {{HeroIcon|Infernus}} to 1.3 m/s during the cast delay
+* {{HeroIcon|Infernus}}: {{AbilityIcon|Concussive Combustion}} damage increased from 130 to 160
+
+* {{HeroIcon|Kelvin}}: {{AbilityIcon|Frost Grenade}} T3 bonus damage increased from +100 to +175
+
+* {{HeroIcon|Lady Geist}}: Blood Bomb damage increased from 80 to 100
+* {{HeroIcon|Lady Geist}}: Blood Bomb T2 damage increased from +65 to +70
+* {{HeroIcon|Lady Geist}}: Blood Bomb tooltip fixed to reference the correct self damage type and that it can be reduced with armor
+* {{HeroIcon|Lady Geist}}: {{AbilityIcon|Malice}} damage amp per shard increased from 10% to 15%
+
+* {{HeroIcon|Lash}}: {{AbilityIcon|Grapple}} cooldown reduced from 55 to 45
+* {{HeroIcon|Lash}}: {{AbilityIcon|Flog}} Damage increased from 55 to 65
+* {{HeroIcon|Lash}}: {{AbilityIcon|Flog}} lifesteal from heroes increased from 70% to 80% of damage dealt
+* {{HeroIcon|Lash}}: {{AbilityIcon|Flog}} lifesteal from non-heroes reduced from 35% to 30% of damage dealt
+* {{HeroIcon|Lash}}: {{AbilityIcon|Death Slam}} T1 from +3m to +5m
+* {{HeroIcon|Lash}}: Fixed {{AbilityIcon|Death Slam}}'s targeting cone not finding enemies near the edges
+* {{HeroIcon|Lash}}: Fixed {{AbilityIcon|Death Slam}} to only target enemies who stay in the targeting cone
+
+* {{HeroIcon|McGinnis}}: {{AbilityIcon|Heavy Barrage}} now reduces your speed rather than setting it to a low cap (by itself this change isn't a buff or a nerf, but it allows you to buy items to move faster during the ultimate)
+* {{HeroIcon|McGinnis}}: {{AbilityIcon|Heavy Barrage}} camera interaction with {{ItemIcon|Fleetfoot}} Boots has been fixed
+
+* {{HeroIcon|Mo & Krill}}: {{AbilityIcon|Sand Blast}} range increased from 25m to 30m
+* {{HeroIcon|Mo & Krill}}: {{AbilityIcon|Sand Blast}} width increased from 3m to 5m
+* {{HeroIcon|Mo & Krill}}: {{AbilityIcon|Sand Blast}} is now permissive with small obstructions in the way
+* {{HeroIcon|Mo & Krill}}: {{AbilityIcon|Burrow}} no longer loses its state as you change elevations
+* {{HeroIcon|Mo & Krill}}: {{AbilityIcon|Burrow}} now knocks enemies up when you come up
+* {{HeroIcon|Mo & Krill}}: {{AbilityIcon|Combo}} DPS increased from 50 to 60
+* {{HeroIcon|Mo & Krill}}: No longer listed as a recommended new player hero
+
+* {{HeroIcon|Vindicta}}: Base Bullet Damage reduced from 15 to 14
+* {{HeroIcon|Vindicta}}: Bullet Damage gained per boon reduced from 0.88 to 0.7 (these are gained occasionally as you earn souls, up to 11 times)
+* {{HeroIcon|Vindicta}}: {{AbilityIcon|Stake}} T1 bonus duration reduced from +1.5s to +1.0s
+* {{HeroIcon|Vindicta}}: Is now a recommended hero for new players
+
+* {{HeroIcon|Yamato}}: {{AbilityIcon|Crimson Slash}} radius increased from 11m to 12m
+* {{HeroIcon|Yamato}}: {{AbilityIcon|Crimson Slash}} fire rate debuff duration increased from 3s to 4s
+* {{HeroIcon|Yamato}}: {{AbilityIcon|Crimson Slash}} T2 changed from "-5s Cooldown" to "10% Max Health heal on hero hit"
+* {{HeroIcon|Yamato}}: {{AbilityIcon|Crimson Slash}} T3 changed from "12% Max Health heal on hero hit" to "-6s Cooldown"
+* {{HeroIcon|Yamato}}: {{AbilityIcon|Power Slash}} T1 Bullet Resist increased from 40% to 60%
+* {{HeroIcon|Yamato}}: {{AbilityIcon|Flying Strike}} cooldown reduced from 35 to 20
+* {{HeroIcon|Yamato}}: {{AbilityIcon|Flying Strike}} T2 changed from "-15s Cooldown" to "+20 Cast Range"
+* {{HeroIcon|Yamato}}: {{AbilityIcon|Flying Strike}} range no longer scales with Spirit
+* {{HeroIcon|Yamato}}: Shadow Explosion bonus Spirit per victim increased from 10 to 15
+* {{HeroIcon|Yamato}}: Shadow Explosion bonus Fire Rate per victim increased from 5 to 10
+* {{HeroIcon|Yamato}}: Shadow Explosion buff duration increased from 8s to 15s
+}}
