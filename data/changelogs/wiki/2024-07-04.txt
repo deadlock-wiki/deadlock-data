@@ -1,0 +1,235 @@
+{{Update layout
+| prev_update =
+| month = July
+| day = 4
+| year = 2024
+| next_update =
+| source = https://forums.playdeadlock.com/threads/07-04-2024-update.9652/
+| source_title = 07-04-2024 Update
+| notes =
+[ General Changes ]
+
+* Added Asia servers and matchmaking region. Testing times for this region are Mon-Thur 5PM to 3AM and Fri-Sun 3PM to 3AM in China Standard Time (GMT+8).
+
+* Added South America servers and matchmaking region. Testing times for this region are Mon-Thur 5PM to 3AM and Fri-Sun 3PM to 3AM in Atlantic Standard Time (GMT-4).
+
+* Added a new Damage Report feature. You can now open a flyout panel within the shop to view a breakdown of your hero's incoming and outgoing damage throughout the course of a match. You can also hover an enemy hero to view a quick breakdown of their key stats and items. The data can be filtered by last respawn, 10 minutes, 5 minutes, 3 minutes, 1 minute, or 30 seconds.
+
+* Reworked the top bar HUD to reduce overall height
+
+* While spectating or watching replays, the game now has a free cursor mode without needing to hold modifiers down (defaulted to on). Can toggle it off while spectating using the 'J' key.
+* Minimap now displays dead heroes for 5 seconds after their death
+
+* Reworked the default suggested items for heroes to be much more simple (oriented more strongly for new player onboarding)
+
+* Parties will now be a little more likely to be in the same lane, if there isn't a wide skill gap or other factors preventing it
+* All instances of collecting souls (whether claiming your own or denying an opponent) will share the same sound. Being denied a soul orb by an enemy will have its own unique sound.
+* Fixed the HUD cooldown state thrashing while picking up the Soul Urn
+* Fixed {{AbilityIcon|Spectral Wall}} sometimes not spawning depending on the map geometry nearby
+* Added descriptive tooltips to Render and Audio options within settings. Render tooltips include an estimate of performance impact where applicable.
+* Fixed a bug where bullets could penetrate close range targets and hit 2 targets when not intended (was primarily obvious with neutral farming)
+* Reduced the end of match delay from 10s to 4s
+* Added a shatter sound effect for meleeing the mid boss rejuvenator
+* Added ghost models inside the doorways of the juke closets to help clarify which are dead ends
+* Fixed position of the "All Walkers Destroyed" Flex slot to be the 2nd slot rather than the 4th
+* Added a sound for when {{HeroIcon|Infernus}}'s {{AbilityIcon|Afterburn}} procs
+* Added rejuvenator pickup sound
+* Minimap now highlights Soul Urn dropoff location
+* Updated {{HeroIcon|Wraith}} {{AbilityIcon|Full Auto}} cast sound
+* Added audio feedback for environmental damage
+* Fixed sounds associated with last hit playing unreliably
+* Updated sounds for {{HeroIcon|Wraith}} {{AbilityIcon|Card Trick}} projectile, impact, and when you gain a card
+* Added traffic and construction ambient sounds and updated general ambience mix
+
+
+
+[ Misc Gameplay]
+
+* Urn count changed from 2 to 1 (previous souls value restored)
+* Urn pickup location moved to closer to the outer lanes (on the opposite side of the lane pillar, facing towards the bridge)
+* Urn drop-off location now move to the same spot as the pickup (opposite end of the map, depending on which location the Urn spawns in)
+* Urn pickup time reduced from 4s to 2s
+* Urn now has a 2s drop-off time
+* Urn no longer applies a 15% slow
+* Urn now prevents you from using the zipline while carrying it
+* The person delivering the urn now gets +25% soul bonus
+
+* Reworked how Powerups work. There are now only 2 locations where they spawn instead of 6 (the two at the strong camps near the middle far edges of the map). The different powerup types are reduced from 6 to 4 and they have been reworked:
+Gun: +30% Clip and +20% Fire Rate for 100s
+Survival: +400 Max HP and +1% HP Regen for 100s
+Casting: +20% Cooldown Reduction and +25 Spirit for 100s
+Movement: +2 Stamina, +2 Sprint and +30% zipline boost for 100s
+* Powerups now always cycle which ones spawn until they have each spawned, and then they are randomly allocated again
+
+* Base Guardians and Shrines now have +40% Bullet Resistance. They lose 20% for each enemy hero nearby (down to a minimum of 0% bullet resistance). When they haven't taken damage for 60 seconds, they regenerate 4% max hp per second.
+* Fixed Walkers not using their stomp properly
+
+* Troopers now deal 25% less damage to other troopers
+* Troopers spawn rate before 10 minutes is now the same as after 10 minutes (30s->25s)
+
+* Breakables are no longer pre-placed on the map, they now spawn in when they are able to roll for drops (3 minutes)
+* Breakables now use pseudorandom rolls (makes streaks of success or failure less likely)
+* Golden Statue bonuses now have some dynamic weighting based on what has already dropped (makes it less likely that you have too many of one specific bonus over the course of the game)
+* Golden Statue's CD Reduction bonus increased from 0.5% to 0.75%
+* After 25 minutes, the Golden Statue bonuses that drop are slightly stronger:
+Max HP: +15 to +20
+Weapon Damage: +2% to +3%
+Spirit Power: +2 to +3
+Fire Rate: +1.5% to +2%
+CD Reduction: 0.75% to 1%
+Ammo: 3% to 5%
+
+* Bullet falloff damage now starts at 25m instead of 27m
+
+* Inner lane Walker arena (Amber Orange and Sapphire Blue):
+* Added hallway on street level from the warehouse interior to underneath the overpass
+* Reworked stairs for defenders to reach the overpass to start near the Walker and exit with line of sight down the lane
+* Added some juke closets around the map
+* Added some balconies/awnings around the map
+* Shortened the underground tunnels from the Subway entrance side
+* Doorways into the Authority Building and Jazz Club are now offset
+* Moved the new cover barrier in front of the inner lane Guardian closer to the Guardian
+
+
+
+[ Item Gameplay ]
+
+* {{ItemIcon|Headshot Booster}}: Cooldown increased from 5s to 7s
+* {{ItemIcon|Headshot Booster}}: Fixed the item not visually going on cooldown when it procs
+* Basic Magazine: Ammo increased from 15% to 20%
+* Medic Bullets: Renamed to {{ItemIcon|Restorative Shot}}
+* {{ItemIcon|Restorative Shot}}: Cooldown increased from 4s to 6s
+* {{ItemIcon|Monster Rounds}}: Damage vs NPCs increased from +30% to +35%
+* {{ItemIcon|Active Reload}}: Cooldown reduced from 25s to 23s
+* {{ItemIcon|Active Reload}}: Active fire rate bonus increased from 15% to 18%
+* {{ItemIcon|Berserker}}: Weapon Damage per stack reduced from +6% to +5%
+
+* {{ItemIcon|Titanic Magazine}}: Reload penalty reduced from -15% to -10%
+* {{ItemIcon|Intensifying Magazine}}: Ammo reduced from 30% to 25%
+* {{ItemIcon|Point Blank}}: Now gives +1 Stamina
+* {{ItemIcon|Hunter's Aura}}: Bullet Resist reduction reduced from -15% to -10%
+* {{ItemIcon|Hunter's Aura}}: Fire Rate slow reduced from -15% to -10%
+* {{ItemIcon|Hunter's Aura}}: Solo enemy hero case increased from 2x to 3x
+* {{ItemIcon|Burst Fire}}: Slide distance increased from +35% to +50%
+* {{ItemIcon|Tesla Bullets}}: Damage is now affected by falloff
+* {{ItemIcon|Tesla Bullets}}: Proc chance reduced from 30% to 25%
+* {{ItemIcon|Tesla Bullets}}: Jump radius reduced from 9m to 8m
+* {{ItemIcon|Escalating Resilience}}: Now gives +14% Ammo
+
+* {{ItemIcon|Lucky Shot}}: Slow duration reduced from 2s to 1.5s
+* {{ItemIcon|Lucky Shot}}: No longer provides +20% Weapon Damage
+* {{ItemIcon|Ricochet}}: {{ItemIcon|Ricochet}} damage increased from 45% to 50%
+* {{ItemIcon|Silencer}}: Debuff duration reduced from 3s to 2s
+* {{ItemIcon|Crippling Headshot}}: Bullet and Spirit Resist reductions reduced from -30% to -24%
+* {{ItemIcon|Siphon Bullets}}: Steal duration increased from 15s to 20s
+
+
+* {{ItemIcon|Sprint Boots}}: Sprint Speed reduced from +3 to +2
+* {{ItemIcon|Sprint Boots}}: Now a component of {{ItemIcon|Enduring Speed}}
+* {{ItemIcon|Extra Stamina}}: Now provides +10% Stamina Recovery
+* {{ItemIcon|Extra Health}}: Increased from +140 to +150
+
+* {{ItemIcon|Enduring Speed}}: Now requires {{ItemIcon|Sprint Boots}}
+* {{ItemIcon|Enduring Speed}}: Now grants +2 Sprint
+* {{ItemIcon|Restorative Locket}}: Can now be cast on allies (30m cast range)
+* {{ItemIcon|Restorative Locket}}: Radius on gaining charges increased from 40m to 50m
+* {{ItemIcon|Restorative Locket}}: Cooldown increased from 18s to 24s
+* {{ItemIcon|Reactive Barrier}}: Now procs on displacement abilities (e.g. Hook, {{AbilityIcon|Paradoxical Swap}}, Upper Cut)
+* {{ItemIcon|Healbane}}: Debuff duration reduced from 7s to 6s
+* {{ItemIcon|Return Fire}}: Health bonus increased from +75 to +100
+* {{ItemIcon|Return Fire}}: Fixed spirit damage returned counting as bullet damage
+* {{ItemIcon|Bullet Lifesteal}}: Increased from 22% to 24%
+
+* {{ItemIcon|Rescue Beam}}: Cooldown reduced from 40s to 35s
+* Superior Stamina: Removed spirit bonus when doing 2x air jumps/dash
+* Superior Stamina: Now grants +8 Spirit
+* Superior Stamina: Now grants +30% Air Dash and Air Jump distance
+* {{ItemIcon|Fortitude}}: Duration required to start regenerating reduced from 14s to 13s
+* {{ItemIcon|Majestic Leap}}: Shields no longer prevent the item from being disabled
+* {{ItemIcon|Debuff Reducer}}: The active now reduces the duration of existing debuffs by 80% of their current values. Grants +2m/s for 3s if a debuff was reduced.
+* {{ItemIcon|Debuff Reducer}}: Passive debuff resistance increased from 30% to 35%
+* {{ItemIcon|Debuff Reducer}}: Now gives +125 Health
+* {{ItemIcon|Debuff Reducer}}: Cooldown reduced from 45s to 25s
+
+* {{ItemIcon|Unstoppable}}: No longer has components (loses slow resist and movespeed bonus)
+* {{ItemIcon|Colossus}}: Cooldown reduced from 65s to 45s
+* {{ItemIcon|Colossus}}: Model size increase from 10% to 20%
+* {{ItemIcon|Inhibitor}}: No longer grants +10% Fire Rate
+* {{ItemIcon|Inhibitor}}: Slow reduced from 35% to 25%
+* {{ItemIcon|Leech}}: Spirit Power increased from +7 to +10
+* {{ItemIcon|Leech}}: Weapon Damage increased from +8% to +12%
+* {{ItemIcon|Leech}}: Bonus Health increased from +125 to +150
+* {{ItemIcon|Shadow Weave}}: Ambush Fire Rate reduced from +60% to +40%
+* {{ItemIcon|Shadow Weave}}: Cooldown increased from 35s to 45s
+* {{ItemIcon|Shadow Weave}}: No longer instantly grants sprint
+
+
+* {{ItemIcon|Infuser}}: Spirit Power reduced from +18 to +16
+* {{ItemIcon|Extra Spirit}}: Now gives +25 Health
+
+* {{ItemIcon|Quicksilver Reload}}: Cooldown increased from 5s to 12s
+* Withering Whip: Now grants +50 Health
+* {{ItemIcon|Suppressor}}: Duration reduced from 2.5s to 2s
+* {{ItemIcon|Decay}}: Bleed damage increased from 2.6% of current HP to 2.8%
+* {{ItemIcon|Decay}}: Spirit bonus increased from +5 to +7
+* {{ItemIcon|Duration Extender}}: Now grants +1.5 hp regen
+* {{ItemIcon|Bullet Resist Shredder}}: Debuff duration increased from 6s to 8s
+* {{ItemIcon|Bullet Resist Shredder}}: Now gives +5% Bullet Armor
+
+* {{ItemIcon|Mystic Slow}}: Duration reduced from 2.5s to 2s
+* Improved Burst: No longer applies 50% slow
+* Improved Burst: Now grants +100 Spirit Shield Health
+* Improved Burst: Now grants +12% Weapon Damage
+* {{ItemIcon|Superior Duration}}: Imbued duration increased from +30% to +32%
+* {{ItemIcon|Superior Duration}}: Non-imbued duration increased from +22% to +24%
+* {{ItemIcon|Improved Spirit}}: Now grants +75 Health
+* {{ItemIcon|Knockdown}}: Cooldown increased from 30s to 45s
+* {{ItemIcon|Ethereal Shift}}: Cooldown reduced from 30s to 25s
+
+* {{ItemIcon|Mystic Reverb}}: The target is now slowed by 50% during the 3s delay
+* {{ItemIcon|Diviner's Kevlar}}: Now provides +8% Cooldown Reduction
+* {{ItemIcon|Diviner's Kevlar}}: Fixed the duration missing in the tooltip
+* {{ItemIcon|Diviner's Kevlar}}: Buff duration increased from 10s to 12s
+* {{ItemIcon|Diviner's Kevlar}}: Now grants +700 Spirit Shield and +700 Bullet Shield
+* {{ItemIcon|Escalating Exposure}} now has a base of -12% Spirit Resist reduction
+* {{ItemIcon|Boundless Spirit}}: Health Regen increased from +10 to +15
+* {{ItemIcon|Boundless Spirit}}: Bonus Health increased from +200 to +300
+
+
+
+[ Hero Gameplay ]
+
+* {{HeroIcon|Abrams}}: {{AbilityIcon|Seismic Impact}} T3 is now Gain +100 Max HP and +15% Fire Rate per enemy hero hit for 25s
+* {{HeroIcon|Bebop}}: Base HP regen reduced from 2 to 1
+* {{HeroIcon|Bebop}}: {{AbilityIcon|Hyper Beam}} cast range increased from 60m to 70m
+* {{HeroIcon|Grey Talon}}: {{AbilityIcon|Guided Owl}} now grants +4 permanent Spirit Power for each hero killed with it
+* {{HeroIcon|Grey Talon}}: Fixed {{AbilityIcon|Charged Shot}} not piercing if it collides with a {{AbilityIcon|Mini Turret}}
+* {{HeroIcon|Haze}}: {{AbilityIcon|Smoke Bomb}} no longer instantly grants sprint
+* {{HeroIcon|Haze}}: {{AbilityIcon|Smoke Bomb}} duration increased from 6s to 8s
+* {{HeroIcon|Haze}}: {{AbilityIcon|Smoke Bomb}} T1 is now -15s CD
+* {{HeroIcon|Haze}}: {{AbilityIcon|Smoke Bomb}} T2 is now +6 Invis Sprint
+* {{HeroIcon|Haze}}: {{AbilityIcon|Smoke Bomb}} T3 is now Gain +30% {{ItemIcon|Bullet Lifesteal}} for 8s
+* {{HeroIcon|Haze}}: {{AbilityIcon|Sleep Dagger}} T1 changed from +1s Sleep Duration to Drains 1 Stamina
+* {{HeroIcon|Infernus}}: {{AbilityIcon|Flame Dash}} dps linger duration increased from 0.4s to 1s
+* {{HeroIcon|Ivy}}: Fixed some bugs with {{AbilityIcon|Watcher's Covenant}} that caused it to sometimes disconnect/reconnect unintentionally
+* {{HeroIcon|Ivy}}: {{AbilityIcon|Watcher's Covenant}} distance threshold to pick a new target increased from 2.5m to 6m
+* {{HeroIcon|Ivy}}: {{AbilityIcon|Watcher's Covenant}} can now be cast again on an ally while the buff is active to make it prioritize that hero when possible
+* {{HeroIcon|Kelvin}}: Fixed {{AbilityIcon|Frost Grenade}} not going where you had targeted if you moved quickly during the cast
+* {{HeroIcon|Kelvin}}: {{AbilityIcon|Ice Path}} T3 bonus now lingers for 6s extra
+* {{HeroIcon|Lash}}: {{AbilityIcon|Death Slam}} time to lock on increased from 0.8s to 0.9s
+* {{HeroIcon|McGinnis}}: {{AbilityIcon|Mini Turret}} damage reduction against troopers/neutrals increased from -30% to -40%
+* {{HeroIcon|McGinnis}}: {{AbilityIcon|Mini Turret}} damage reduction against objectives increased from -50% to -60%
+* {{HeroIcon|McGinnis}}: {{AbilityIcon|Mini Turret}} falloff damage increased from -30% to -35%
+* {{HeroIcon|McGinnis}}: {{AbilityIcon|Mini Turret}} cooldown reduced from 30s to 28s
+* {{HeroIcon|McGinnis}}: {{AbilityIcon|Mini Turret}} recharge time reduced from 6s to 5s
+* {{HeroIcon|McGinnis}}: {{AbilityIcon|Spectral Wall}} T1 and T2 swapped
+* {{HeroIcon|McGinnis}}: {{AbilityIcon|Spectral Wall}} T1 stamina drain reduced from 2 to 1
+* {{HeroIcon|Mo & Krill}}: Fixed {{AbilityIcon|Combo}} not gaining bonus HP when enemies died during it unless you got the killing blow
+* {{HeroIcon|Mo & Krill}}: Health growth per boon reduced from 47 to 44
+* {{HeroIcon|Mo & Krill}}: While burrowed you have the same cast rules as the unborrow phase (i.e. can cast items and {{AbilityIcon|Scorn}})
+* {{HeroIcon|Seven}}: {{AbilityIcon|Static Charge}} cast range now scales with Spirit (0.1)
+* {{HeroIcon|Vindicta}}: {{AbilityIcon|Flight}} cooldown reduced from 50s to 45s
+* {{HeroIcon|Vindicta}}: {{AbilityIcon|Flight}} up and down speed improved a bit
+* {{HeroIcon|Warden}}: {{AbilityIcon|Binding Word}} now drains 1 stamina from the target on cast
+* {{HeroIcon|Wraith}}: {{AbilityIcon|Project Mind}} T3 cooldown reduced from -35s to -30s
+}}
