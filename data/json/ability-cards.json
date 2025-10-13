@@ -321,6 +321,13 @@
                             "Name": "Burn Duration",
                             "Value": 3,
                             "Type": "duration"
+                        },
+                        {
+                            "Title": "Burn Effect:",
+                            "Key": "OutgoingTechDamagePercent",
+                            "Name": "Spirit Damage",
+                            "Value": 0,
+                            "Type": "tech_damage"
                         }
                     ]
                 },
@@ -1404,6 +1411,11 @@
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "SilenceOnDrain",
+                            "Name": "Unknown(SilenceOnDrain)",
+                            "Value": 0
                         }
                     ]
                 },
@@ -1858,6 +1870,13 @@
                     "Props": [
                         {
                             "Title": "On Wall Hit:",
+                            "Key": "StunDuration",
+                            "Name": "Stun Duration",
+                            "Value": 0.6,
+                            "Type": "duration"
+                        },
+                        {
+                            "Title": "On Wall Hit:",
                             "Key": "SlowPercent",
                             "Name": "Move Speed",
                             "Value": 0,
@@ -1881,13 +1900,6 @@
                     "AbilityCooldown": -22
                 }
             ],
-            "Duration": {
-                "StunDuration": {
-                    "Name": "Stun Duration",
-                    "Value": 0.6,
-                    "Type": "duration"
-                }
-            },
             "Move": {
                 "ChannelMoveSpeed": {
                     "Name": "Channel Move Speed",
@@ -2023,6 +2035,12 @@
             "Info1": {
                 "Main": {
                     "Props": [
+                        {
+                            "Key": "ImmunityDuration",
+                            "Name": "Immunity Duration",
+                            "Value": 0,
+                            "Type": "duration"
+                        },
                         {
                             "Key": "Damage",
                             "Name": "Damage",
@@ -2287,6 +2305,17 @@
                             "Name": "Cast Range",
                             "Value": 25,
                             "Type": "range"
+                        },
+                        {
+                            "Title": "Barrier:",
+                            "Key": "CombatBarrier",
+                            "Name": "Barrier",
+                            "Value": 0,
+                            "Scale": {
+                                "Value": 0.0,
+                                "Type": "spirit"
+                            },
+                            "Type": "bullet_armor_up"
                         }
                     ]
                 },
@@ -2323,17 +2352,6 @@
                     "Name": "Channel Move Speed",
                     "Value": 5.1,
                     "Type": "move_speed"
-                }
-            },
-            "Buff": {
-                "CombatBarrier": {
-                    "Name": "Barrier",
-                    "Value": 0,
-                    "Scale": {
-                        "Value": 0.0,
-                        "Type": "spirit"
-                    },
-                    "Type": "bullet_armor_up"
                 }
             },
             "Other": {
@@ -2739,6 +2757,22 @@
                             "Name": "Health Regen",
                             "Value": 25,
                             "Type": "healing"
+                        },
+                        {
+                            "Key": "HealRadius",
+                            "Name": "Heal Radius",
+                            "Value": 5,
+                            "Scale": {
+                                "Value": 0.0465,
+                                "Type": "spirit"
+                            },
+                            "Type": "distance"
+                        },
+                        {
+                            "Key": "AuraFireRateBonus",
+                            "Name": "Unknown(AuraFireRateBonus)",
+                            "Value": 0,
+                            "Type": "fire_rate"
                         }
                     ]
                 },
@@ -2771,17 +2805,6 @@
                     "DescKey": "citadel_ability_mobile_resupply_t3_desc"
                 }
             ],
-            "Range": {
-                "HealRadius": {
-                    "Name": "Heal Radius",
-                    "Value": 5,
-                    "Scale": {
-                        "Value": 0.0465,
-                        "Type": "spirit"
-                    },
-                    "Type": "distance"
-                }
-            },
             "Move": {
                 "ChannelMoveSpeed": {
                     "Name": "Channel Move Speed",
@@ -2853,6 +2876,12 @@
                             "Name": "Move Speed",
                             "Value": 20,
                             "Type": "slow"
+                        },
+                        {
+                            "Key": "WallStunDuration",
+                            "Name": "Stun Duration",
+                            "Value": 0,
+                            "Type": "duration"
                         }
                     ]
                 },
@@ -3976,6 +4005,16 @@
                             "Type": "tech_damage"
                         },
                         {
+                            "Key": "HealAmount",
+                            "Name": "Heal Amount",
+                            "Value": 0,
+                            "Scale": {
+                                "Value": 0.0,
+                                "Type": "spirit"
+                            },
+                            "Type": "healing"
+                        },
+                        {
                             "Key": "SlowPercent",
                             "Name": "Move Speed",
                             "Value": 40,
@@ -4021,17 +4060,6 @@
                     "Name": "Channel Move Speed",
                     "Value": -1,
                     "Type": "move_speed"
-                }
-            },
-            "Health": {
-                "HealAmount": {
-                    "Name": "Heal Amount",
-                    "Value": 0,
-                    "Scale": {
-                        "Value": 0.0,
-                        "Type": "spirit"
-                    },
-                    "Type": "healing"
                 }
             },
             "Other": {
@@ -4084,6 +4112,12 @@
                             "Name": "Sprint Speed",
                             "Value": 2,
                             "Type": "move_speed"
+                        },
+                        {
+                            "Key": "BonusTechDamagePercent",
+                            "Name": "Bonus Spirit Damage",
+                            "Value": 0,
+                            "Type": "tech_damage"
                         }
                     ]
                 },
@@ -4691,6 +4725,16 @@
                             "Key": "MaxStacks",
                             "Name": "Max Stacks",
                             "Value": 40
+                        },
+                        {
+                            "Key": "ProcDamage",
+                            "Name": "Spirit Damage",
+                            "Value": 0,
+                            "Scale": {
+                                "Value": 0.0,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
                         }
                     ]
                 },
@@ -4725,17 +4769,6 @@
                     "Name": "Channel Move Speed",
                     "Value": -1,
                     "Type": "move_speed"
-                }
-            },
-            "Damage": {
-                "ProcDamage": {
-                    "Name": "Spirit Damage",
-                    "Value": 0,
-                    "Scale": {
-                        "Value": 0.0,
-                        "Type": "spirit"
-                    },
-                    "Type": "tech_damage"
                 }
             },
             "Other": {
@@ -6052,6 +6085,12 @@
                             "Name": "Buff Duration",
                             "Value": 16,
                             "Type": "duration"
+                        },
+                        {
+                            "Key": "HealthRegen",
+                            "Name": "Health Regen",
+                            "Value": 0,
+                            "Type": "healing"
                         }
                     ]
                 },
@@ -6571,6 +6610,12 @@
                             "Name": "Explosion Radius",
                             "Value": 12,
                             "Type": "distance"
+                        },
+                        {
+                            "Key": "StunDuration",
+                            "Name": "Stun Duration",
+                            "Value": 0.75,
+                            "Type": "duration"
                         }
                     ]
                 },
@@ -6596,13 +6641,6 @@
                     "DescKey": "ability_guided_arrow_t3_desc"
                 }
             ],
-            "Duration": {
-                "StunDuration": {
-                    "Name": "Stun Duration",
-                    "Value": 0.75,
-                    "Type": "duration"
-                }
-            },
             "Cast": {
                 "AbilityChannelTime": {
                     "Name": "Channel Duration",
@@ -6855,6 +6893,12 @@
                             "Name": "Duration",
                             "Value": 3.0,
                             "Type": "duration"
+                        },
+                        {
+                            "Key": "SlowPercent",
+                            "Name": "Move Speed",
+                            "Value": 0,
+                            "Type": "slow"
                         }
                     ]
                 },
@@ -7325,6 +7369,12 @@
                             "Name": "Full Rage Damage Bonus",
                             "Value": 17,
                             "Type": "damage"
+                        },
+                        {
+                            "Key": "BonusMoveSpeed",
+                            "Name": "Move Speed",
+                            "Value": 0.0,
+                            "Type": "move_speed"
                         }
                     ]
                 },
@@ -8672,6 +8722,11 @@
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "TossDuration",
+                            "Name": "Duration",
+                            "Value": 0
                         }
                     ]
                 },
@@ -9156,6 +9211,11 @@
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "MaxBounces",
+                            "Name": "Bounces",
+                            "Value": 0
                         }
                     ]
                 },
@@ -10137,6 +10197,12 @@
                             "Name": "Fire Rate per bonus",
                             "Value": 0,
                             "Type": "bullet_damage"
+                        },
+                        {
+                            "Key": "ConsumeHealPercentage",
+                            "Name": "Consume Heal Percentage",
+                            "Value": 50,
+                            "Type": "healing"
                         }
                     ]
                 },
@@ -10173,13 +10239,6 @@
                     "Name": "Channel Move Speed",
                     "Value": 3.8,
                     "Type": "move_speed"
-                }
-            },
-            "Health": {
-                "ConsumeHealPercentage": {
-                    "Name": "Consume Heal Percentage",
-                    "Value": 50,
-                    "Type": "healing"
                 }
             },
             "Other": {
@@ -12155,6 +12214,12 @@
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "VenomMissingHealthDamagePercentage",
+                            "Name": "Missing Health Damage",
+                            "Value": 0,
+                            "Type": "tech_damage"
                         }
                     ]
                 },
@@ -13239,6 +13304,11 @@
                             "Key": "DebuffDuration",
                             "Name": "Debuff Duration",
                             "Value": 3
+                        },
+                        {
+                            "Key": "SilenceDuration",
+                            "Name": "Silence Duration",
+                            "Value": 0
                         }
                     ]
                 },
@@ -14554,6 +14624,12 @@
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "BulletLifestealPercentHero",
+                            "Name": "Bullet Lifesteal",
+                            "Value": 0,
+                            "Type": "healing"
                         }
                     ]
                 },
@@ -15875,6 +15951,12 @@
                 "Main": {
                     "Props": [
                         {
+                            "Key": "RespawnHealthPercent",
+                            "Name": "Rebirth Health",
+                            "Value": 60,
+                            "Type": "healing"
+                        },
+                        {
                             "Title": "On Revive:",
                             "Key": "CombatBarrier",
                             "Name": "Barrier",
@@ -15891,6 +15973,12 @@
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
+                        },
+                        {
+                            "Title": "On Revive:",
+                            "Key": "StunDuration",
+                            "Name": "Stun Duration",
+                            "Value": 1.5
                         }
                     ]
                 },
@@ -15961,13 +16049,6 @@
                     "Type": "move_speed"
                 }
             },
-            "Health": {
-                "RespawnHealthPercent": {
-                    "Name": "Rebirth Health",
-                    "Value": 60,
-                    "Type": "healing"
-                }
-            },
             "Debuff": {
                 "SlowPercent": {
                     "Name": "Move Speed",
@@ -15999,10 +16080,6 @@
                 "SlowDuration": {
                     "Name": "Slow Duration",
                     "Value": 3
-                },
-                "StunDuration": {
-                    "Name": "Stun Duration",
-                    "Value": 1.5
                 },
                 "ZombieTickRate": {
                     "Name": null,
@@ -16312,6 +16389,13 @@
                             "Key": "ImmobilizeDuration",
                             "Name": "Immobilize Duration",
                             "Value": 1.25
+                        },
+                        {
+                            "Title": "On Hit:",
+                            "Key": "TechArmorDamageReduction",
+                            "Name": "Spirit Resist",
+                            "Value": 0,
+                            "Type": "tech_armor_down"
                         }
                     ]
                 },
