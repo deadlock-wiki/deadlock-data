@@ -95,7 +95,7 @@
     },
     "npc_boss_tier2": {
         "Abilities": {
-            "RocketBarrage": {
+            "Rocket Barrage": {
                 "Cooldown": 10,
                 "CastRange": 1400,
                 "RocketsPerVolley": 6,
@@ -103,14 +103,16 @@
                 "DirectDamage": 200,
                 "ExplosionRadius": "5m",
                 "GroundFireDuration": 5,
-                "GroundFireDPS": 25
+                "GroundFireDPS": 25,
+                "Key": "citadel_ability_tier2boss_rocket_barrage"
             },
-            "LaserBeam": {
+            "Laser": {
                 "Cooldown": 1,
                 "MaxRange": 1800,
                 "DamageVsHeroes": 125,
                 "MaxHealthPercentDamage": 2,
-                "DamageVsCreeps": 190
+                "DamageVsCreeps": 190,
+                "Key": "citadel_ability_tier2boss_laser_beam"
             },
             "Stomp": {
                 "AttemptRange": 600.0,
@@ -149,7 +151,7 @@
     },
     "npc_boss_tier2_weak": {
         "Abilities": {
-            "RocketBarrage": {
+            "Rocket Barrage": {
                 "Cooldown": 10,
                 "CastRange": 1400,
                 "RocketsPerVolley": 6,
@@ -157,14 +159,16 @@
                 "DirectDamage": 200,
                 "ExplosionRadius": "5m",
                 "GroundFireDuration": 5,
-                "GroundFireDPS": 25
+                "GroundFireDPS": 25,
+                "Key": "citadel_ability_tier2boss_rocket_barrage"
             },
-            "LaserBeam": {
+            "Laser": {
                 "Cooldown": 1,
                 "MaxRange": 1800,
                 "DamageVsHeroes": 125,
                 "MaxHealthPercentDamage": 2,
-                "DamageVsCreeps": 190
+                "DamageVsCreeps": 190,
+                "Key": "citadel_ability_tier2boss_laser_beam"
             },
             "Stomp": {
                 "AttemptRange": 600.0,
@@ -203,11 +207,19 @@
     },
     "npc_boss_tier3": {
         "Abilities": {
-            "DamagePulse": {
+            "Damage Pulse": {
                 "PulseRadius": 1100,
                 "MaxTargets": 2,
                 "DamagePerPulse": 75.0,
-                "PulseInterval": 1.0
+                "PulseInterval": 1.0,
+                "Key": "citadel_ability_tier3boss_damage_pulse"
+            },
+            "LaserBeam": {
+                "DPSToPlayers": 440.0,
+                "DPSToNPCs": 80.0,
+                "DPSMaxHealthPercent": 3,
+                "DPSToPlayersNoShield": 780,
+                "DPSToNPCsNoShield": 210
             }
         },
         "BackdoorHealthRegen": 75.0,
@@ -218,11 +230,6 @@
         "HealthGrowthStartTimePhase2": 1,
         "IntrinsicAbilityResistance": 0.0,
         "IsUnkillableInPhase1": true,
-        "LaserDPSMaxHealthPercent": 3,
-        "LaserDPSToNPCs": 80.0,
-        "LaserDPSToNPCsNoShield": 210,
-        "LaserDPSToPlayers": 440.0,
-        "LaserDPSToPlayersNoShield": 780,
         "MaxHealthPhase1": 5625,
         "MaxHealthPhase2": 10125,
         "MoveSpeed": 200.0,
@@ -248,12 +255,13 @@
     },
     "trooper_medic": {
         "Abilities": {
-            "Heal": {
+            "Trooper Heal": {
                 "Cooldown": 6,
                 "CastRange": "15m",
                 "HealTroopers": 80,
                 "HealPlayers": 40,
-                "HealPlayersPostLane": 80
+                "HealPlayersPostLane": 80,
+                "Key": "ability_medic_trooper_heal"
             }
         },
         "BarrackBossDPS": 80.0,
