@@ -7,10 +7,31 @@
     ],
     "CurrencyTypeSounds": {
         "AbilityPoints": {
-            "SourceSounds": {}
+            "SourceSounds": {
+                "BossKill": "Player.AcquireAp",
+                "Cheats": "Player.AcquireAp",
+                "LevelUp": "Player.AcquireAp"
+            }
         },
         "Gold": {
-            "SourceSounds": {}
+            "SourceSounds": {
+                "ItemSale": "",
+                "TreasureChest": "",
+                "OrbPlayer": "Player.ClaimOrb",
+                "OrbDeny": "Player.ClaimOrb",
+                "OrbLaneTrooper": "Player.ClaimOrb",
+                "OrbNeutralTrooper": "Player.ClaimOrb",
+                "OrbTier1TrooperBoss": "Player.ClaimOrb",
+                "OrbTier2TrooperBoss": "Player.ClaimOrb",
+                "OrbTier3TrooperBoss": "Player.ClaimOrb",
+                "OrbBaseSentry": "Player.ClaimOrb",
+                "OrbDeployable": "Player.ClaimOrb",
+                "OrbTrophyKill": "Player.ClaimOrb",
+                "OrbTreasureChest": "Player.ClaimOrb",
+                "NeutralWorldPickup": "Neutral.Bounty.Pickup",
+                "ItemPurchase": "Player.PurchaseUpgrade",
+                "ItemUpgrade": "Player.PurchaseUpgrade"
+            }
         }
     },
     "DamageFlash": {
@@ -71,8 +92,22 @@
             "Hardness": 0.0
         }
     },
-    "DamageIndicatorSounds": {},
-    "DamageReceivedSounds": {},
+    "DamageIndicatorSounds": {
+        "DamageDefault": "Damage.Send",
+        "DamageCrit": "Damage.Send.Crit",
+        "DamageLethal": "Damage.Send.Lethal",
+        "DamageInvulnerable": "Damage.Send.Invulnerable",
+        "DamageDOT": "Damage.Send.DOT",
+        "DamageHealthTransfer": "Player.Heal.SiphonTick"
+    },
+    "DamageReceivedSounds": {
+        "DamageReceiveDefault": "Damage.Receive.Default",
+        "DamageReceiveNPC": "Damage.Receive.NPC",
+        "DamageReceiveDOT": "Damage.Receive.DOT",
+        "DamageReceiveMeleeNPC": "Damage.Receive.Melee.NPC",
+        "DamageReceiveMelee": "Damage.Receive.Melee",
+        "DamageReceiveShield": "Damage.Receive.Shield"
+    },
     "DefaultDOF": {
         "DofNearBlurry": 0.0,
         "DofNearCrisp": 0.0,
@@ -92,7 +127,12 @@
         "ScanlineStrength": 1.5,
         "BreakupStrength": 0.0
     },
-    "HealingReceivedSounds": {},
+    "HealingReceivedSounds": {
+        "HealingInBaseLoop": "Player.Heal.Base.Loop",
+        "HealingInBaseToppedOff": "Player.Heal.BaseEnd",
+        "DirectHealing": "",
+        "HealingInBaseStart": "Player.Heal.BaseStart"
+    },
     "HeroKillGoldShareFrac": [
         1.0,
         0.5,
@@ -110,8 +150,14 @@
         "upgrade_zipine_mastery"
     ],
     "IdolParams": {
+        "IdolModel": "models/props_gameplay/idol_urn/idol_urn.vmdl",
         "LoopingSequenceName": "golden_idol_idle",
+        "ParachuteModel": "models/props_gameplay/gold_crate_parachute.vmdl",
+        "CrateModel": "models/props_gameplay/gold_crate.vmdl",
+        "IdolReturnLocationParticle": "particles/environment/soul_jar_return_location.vpcf",
         "IdolReturnLocationParticleScale": 2.0,
+        "IdolSpawnLocationParticle": "particles/environment/soul_jar_summon.vpcf",
+        "IdolDroppingParticle": "particles/environment/soul_jar_drop.vpcf",
         "IdolDropHeight": 1400.0,
         "IdolDropDuration": 12.5
     },
@@ -123,6 +169,7 @@
         6400,
         9999
     ],
+    "KillStreakFireParticle": "particles/ui/ui_topbar_killstreak.vpcf",
     "LaneInfo": [
         {
             "LaneName": "Yellow",
@@ -217,6 +264,8 @@
             ]
         }
     ],
+    "MidbossIndicatorRespawningParticle": "particles/environment/rejuv_indicator_timer.vpcf",
+    "MidbossIndicatorSpawnedParticle": "particles/environment/rejuv_indicator.vpcf",
     "MiniMapOffsets": [
         {
             "eEntityClass": "CLASS_BOSS_TIER_3",
@@ -260,6 +309,7 @@
         91,
         66
     ],
+    "MinimapZiplinesParticle": "particles/ui/ui_minimap.vpcf",
     "NewPlayerMetrics": [
         {
             "SkillTierName": "Bronze",
@@ -338,6 +388,7 @@
         "RejuvinatorBuffDuration": 240,
         "RejuvinatorDropHeight": 500,
         "RejuvinatorDropDuration": 7,
+        "RejuvPickupSound": "Rejuv.Pickup",
         "TrooperHealthMult": [
             1.7,
             2.0,
@@ -360,6 +411,7 @@
             "CantCastOutOfResourceToken": "#CITADEL_ABILITY_INVALID_NOT_RAGE"
         }
     },
+    "ShoppingEffect": "particles/generic/hero_shopping_status.vpcf",
     "StatTypeImages": {
         "BaseHealthRegen": "file://{images}/upgrades/mods_armor/health_regen.psd",
         "BulletArmorDamageReduction": "file://{images}/upgrades/mods_armor/bullet_armor.psd",
@@ -371,7 +423,13 @@
         10.0,
         30.0
     ],
-    "TeleporterParams": {},
+    "TeleporterParams": {
+        "StartEffect": "particles/environment/teleporter_pad_start.vpcf",
+        "EndEffect": "particles/environment/teleporter_pad_end.vpcf",
+        "EnterSound": "Teleport.Enter",
+        "StartSound": "Teleport.Buildup",
+        "TeleportedSound": "Teleport.Appear"
+    },
     "TrooperKillGoldShareFrac": [
         1.0,
         0.65,
