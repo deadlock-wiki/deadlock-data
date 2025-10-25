@@ -1237,7 +1237,7 @@
             "FireRate"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 40,
+        "AbilityCooldown": 50,
         "AbilityUnitTargetLimit": 1,
         "AbilityCastDelay": 0.2,
         "ChannelMoveSpeed": -1,
@@ -1263,7 +1263,7 @@
         "Damage": 100,
         "MaxSlowPercent": 100,
         "SlowDuration": 5,
-        "BonusFireRate": 8
+        "BonusFireRate": 5
     },
     "upgrade_cardio_calibrator": {
         "Name": "Enduring Speed",
@@ -1388,7 +1388,7 @@
     },
     "upgrade_chonky": {
         "Name": "Fortitude",
-        "Description": "After not taking damage for <span class=\"highlight\">14s</span>, gain <span class=\"highlight\">2% Max Health Regen</span>.",
+        "Description": "After not taking damage for <span class=\"highlight\">13s</span>, gain <span class=\"highlight\">2% Max Health Regen</span>.",
         "Cost": 3200,
         "Tier": 3,
         "Activation": "Passive",
@@ -1406,7 +1406,7 @@
         "IsDisabled": false,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
-        "RestoreDelay": 14,
+        "RestoreDelay": 13,
         "HealLifePercentOutOfCombat": 2,
         "HealthThreshold": 75,
         "BonusMoveSpeed": "1.5m",
@@ -1806,9 +1806,9 @@
         "ProcChance": 100,
         "ProcCooldown": 1,
         "ProcBonusMagicDamage": {
-            "Value": 55,
+            "Value": 45,
             "Scale": {
-                "Value": 0.651,
+                "Value": 0.75,
                 "Type": "spirit"
             }
         },
@@ -2008,7 +2008,7 @@
             "Movement"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 40,
+        "AbilityCooldown": 45,
         "AbilityCastRange": "40m",
         "AbilityUnitTargetLimit": 1,
         "AbilityCastDelay": 0.2,
@@ -2546,7 +2546,7 @@
             "WeaponDamage"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 50.0,
+        "AbilityCooldown": 45.0,
         "AbilityDuration": 3.25,
         "AbilityCastRange": "20m",
         "AbilityUnitTargetLimit": 1,
@@ -2599,7 +2599,7 @@
             "Movement"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 40,
+        "AbilityCooldown": 45,
         "AbilityCastRange": "40m",
         "AbilityUnitTargetLimit": 1,
         "AbilityCastDelay": 0.2,
@@ -4394,7 +4394,7 @@
             "Movement"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 28,
+        "AbilityCooldown": 32,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
         "JumpVelocityHidden": "27m",
@@ -4495,7 +4495,7 @@
             "FireRate"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 20.0,
+        "AbilityCooldown": 45.0,
         "AbilityDuration": 4.0,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
@@ -4504,7 +4504,7 @@
         "DampingFactor": 3,
         "LiftHeight": 120,
         "BonusSpirit": 20,
-        "MoveSpeedMax": "4m",
+        "MoveSpeedMax": "3m",
         "BonusMoveSpeed": "3m"
     },
     "upgrade_sharpshooter": {
@@ -4775,9 +4775,9 @@
         "DamageWindow": 3.5,
         "DamageThreshold": 150,
         "CombatBarrier": {
-            "Value": 325,
+            "Value": 300,
             "Scale": {
-                "Value": 4,
+                "Value": 5,
                 "Type": "power_increase"
             }
         },
@@ -4833,7 +4833,7 @@
             "MagicDamage"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 30,
+        "AbilityCooldown": 35,
         "AbilityDuration": 12,
         "AbilityCastRange": "40m",
         "AbilityUnitTargetLimit": 1,
@@ -4862,12 +4862,12 @@
         ],
         "IsDisabled": false,
         "AbilityCooldown": 6,
-        "AbilityDuration": 14,
+        "AbilityDuration": 10,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
         "LightMeleeCooldownMult": 2,
         "SpiritDamage": {
-            "Value": 75,
+            "Value": 50,
             "Scale": {
                 "Value": 0.744,
                 "Type": "spirit"
@@ -5163,7 +5163,7 @@
             "Disruption"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 30.0,
+        "AbilityCooldown": 35.0,
         "AbilityDuration": 3,
         "AbilityCastRange": "40m",
         "AbilityUnitTargetLimit": 1,
@@ -5550,7 +5550,7 @@
         "StackingBonusSprintSpeed": "0.2m",
         "StackingTechRangeMultiplier": 1,
         "StackingTechRadiusMultiplier": 1,
-        "StackingGoldPerMinute": 25,
+        "StackingGoldPerMinute": 30,
         "ThinkRate": 3,
         "MaxStacks": 16
     },
@@ -5674,7 +5674,7 @@
             "Durability"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 24.0,
+        "AbilityCooldown": 26.0,
         "AbilityDuration": 12,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
@@ -5705,7 +5705,7 @@
         "AbilityCastRange": "11m",
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
-        "BulletResist": 40,
+        "BulletResist": 35,
         "CasterBuffDuration": 6
     },
     "upgrade_weapon_backstabber": {
@@ -5851,9 +5851,9 @@
         "DamageWindow": 3.5,
         "DamageThreshold": 150,
         "CombatBarrier": {
-            "Value": 325,
+            "Value": 300,
             "Scale": {
-                "Value": 4,
+                "Value": 5,
                 "Type": "power_increase"
             }
         },
@@ -5905,7 +5905,7 @@
         "AbilityCastDelay": 0.1,
         "ChannelMoveSpeed": -1,
         "FireRateSlow": 35,
-        "BonusHealth": 60,
+        "BonusHealth": 70,
         "BonusSprintSpeed": "0.5m",
         "BulletArmorReduction": -8
     },
