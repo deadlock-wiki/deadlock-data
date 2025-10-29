@@ -94,43 +94,21 @@
         "TrooperDamageResistanceRampUpTime": 600.0
     },
     "npc_boss_tier2": {
-        "Abilities": {
-            "Rocket Barrage": {
-                "Cooldown": 10,
-                "CastRange": 1400,
-                "RocketsPerVolley": 6,
-                "VolleyInterval": 0.5,
-                "DirectDamage": 200,
-                "ExplosionRadius": "5m",
-                "GroundFireDuration": 5,
-                "GroundFireDPS": 25,
-                "Key": "citadel_ability_tier2boss_rocket_barrage"
-            },
-            "Laser": {
-                "Cooldown": 1,
-                "MaxRange": 1800,
-                "DamageVsHeroes": 125,
-                "MaxHealthPercentDamage": 2,
-                "DamageVsCreeps": 190,
-                "Key": "citadel_ability_tier2boss_laser_beam"
-            },
-            "Stomp": {
-                "AttemptRange": 600.0,
-                "Damage": 350.0,
-                "MaxHealthPercentDamage": 10.0,
-                "EffectRadius": 905.51,
-                "StunDuration": 2.0,
-                "Knockup": 1.25
-            }
-        },
         "BackdoorHealthRegen": 65.0,
         "BackdoorPlayerDamageMitigation": 65.0,
+        "BoundAbilities": {
+            "ESlot_Weapon_Primary": "citadel_weapon_bosstier2_set",
+            "ESlot_Signature_1": "citadel_ability_tier2boss_rocket_barrage",
+            "ESlot_Signature_2": "citadel_ability_tier2boss_laser_beam",
+            "ESlot_Signature_3": "citadel_ability_tier2boss_stomp"
+        },
         "FriendlyAuraBulletArmor": 15,
         "FriendlyAuraRadius": 1259.84,
         "FriendlyAuraSpiritArmor": 15,
         "IntrinsicAbilityResistance": 0.0,
         "InvulnerabilityRange": 1338.58,
         "MaxHealth": 9200,
+        "MeleeAttemptRange": 600.0,
         "Name": "npc_boss_tier2",
         "NearbyEnemyResistanceRange": 2000.0,
         "NearbyEnemyResistanceValues": [
@@ -147,46 +125,29 @@
         "RangedResistanceMaxValue": 100.0,
         "RangedResistanceMinRange": 1200,
         "SightRangeNPCs": 1600.0,
-        "SightRangePlayers": 1600.0
+        "SightRangePlayers": 1600.0,
+        "StompDamage": 350.0,
+        "StompDamageMaxHealthPercent": 10.0,
+        "StompKnockup": 1.25,
+        "StompRadius": 905.51,
+        "StompStunDuration": 2.0
     },
     "npc_boss_tier2_weak": {
-        "Abilities": {
-            "Rocket Barrage": {
-                "Cooldown": 10,
-                "CastRange": 1400,
-                "RocketsPerVolley": 6,
-                "VolleyInterval": 0.5,
-                "DirectDamage": 200,
-                "ExplosionRadius": "5m",
-                "GroundFireDuration": 5,
-                "GroundFireDPS": 25,
-                "Key": "citadel_ability_tier2boss_rocket_barrage"
-            },
-            "Laser": {
-                "Cooldown": 1,
-                "MaxRange": 1800,
-                "DamageVsHeroes": 125,
-                "MaxHealthPercentDamage": 2,
-                "DamageVsCreeps": 190,
-                "Key": "citadel_ability_tier2boss_laser_beam"
-            },
-            "Stomp": {
-                "AttemptRange": 600.0,
-                "Damage": 350.0,
-                "MaxHealthPercentDamage": 10.0,
-                "EffectRadius": 905.51,
-                "StunDuration": 2.0,
-                "Knockup": 1.25
-            }
-        },
         "BackdoorHealthRegen": 65.0,
         "BackdoorPlayerDamageMitigation": 65.0,
+        "BoundAbilities": {
+            "ESlot_Weapon_Primary": "citadel_weapon_bosstier2_set",
+            "ESlot_Signature_1": "citadel_ability_tier2boss_rocket_barrage",
+            "ESlot_Signature_2": "citadel_ability_tier2boss_laser_beam",
+            "ESlot_Signature_3": "citadel_ability_tier2boss_stomp"
+        },
         "FriendlyAuraBulletArmor": 15,
         "FriendlyAuraRadius": 1259.84,
         "FriendlyAuraSpiritArmor": 15,
         "IntrinsicAbilityResistance": 0.0,
         "InvulnerabilityRange": 1338.58,
         "MaxHealth": 5800,
+        "MeleeAttemptRange": 600.0,
         "Name": "npc_boss_tier2_weak",
         "NearbyEnemyResistanceRange": 2000.0,
         "NearbyEnemyResistanceValues": [
@@ -203,33 +164,32 @@
         "RangedResistanceMaxValue": 100.0,
         "RangedResistanceMinRange": 1200,
         "SightRangeNPCs": 1600.0,
-        "SightRangePlayers": 1600.0
+        "SightRangePlayers": 1600.0,
+        "StompDamage": 350.0,
+        "StompDamageMaxHealthPercent": 10.0,
+        "StompKnockup": 1.25,
+        "StompRadius": 905.51,
+        "StompStunDuration": 2.0
     },
     "npc_boss_tier3": {
-        "Abilities": {
-            "Damage Pulse": {
-                "PulseRadius": 1100,
-                "MaxTargets": 2,
-                "DamagePerPulse": 75.0,
-                "PulseInterval": 1.0,
-                "Key": "citadel_ability_tier3boss_damage_pulse"
-            },
-            "LaserBeam": {
-                "DPSToPlayers": 440.0,
-                "DPSToNPCs": 80.0,
-                "DPSMaxHealthPercent": 3,
-                "DPSToPlayersNoShield": 780,
-                "DPSToNPCsNoShield": 210
-            }
-        },
         "BackdoorHealthRegen": 75.0,
         "BackdoorPlayerDamageMitigation": 65.0,
+        "BoundAbilities": {
+            "ESlot_Weapon_Primary": "citadel_weapon_bosstier3_set",
+            "ESlot_Signature_1": "citadel_ability_tier3boss_laser_beam",
+            "ESlot_Signature_2": "citadel_ability_tier3boss_damage_pulse"
+        },
         "HealthGrowthPerMinutePhase1": 250,
         "HealthGrowthPerMinutePhase2": 450,
         "HealthGrowthStartTimePhase1": 20,
         "HealthGrowthStartTimePhase2": 1,
         "IntrinsicAbilityResistance": 0.0,
         "IsUnkillableInPhase1": true,
+        "LaserDPSMaxHealthPercent": 3,
+        "LaserDPSToNPCs": 80.0,
+        "LaserDPSToNPCsNoShield": 210,
+        "LaserDPSToPlayers": 440.0,
+        "LaserDPSToPlayersNoShield": 780,
         "MaxHealthPhase1": 5625,
         "MaxHealthPhase2": 10125,
         "MoveSpeed": 200.0,
@@ -254,17 +214,10 @@
         "StartingHealth": 13000
     },
     "trooper_medic": {
-        "Abilities": {
-            "Trooper Heal": {
-                "Cooldown": 6,
-                "CastRange": "15m",
-                "HealTroopers": 80,
-                "HealPlayers": 40,
-                "HealPlayersPostLane": 80,
-                "Key": "ability_medic_trooper_heal"
-            }
-        },
         "BarrackBossDPS": 80.0,
+        "BoundAbilities": {
+            "ESlot_Signature_2": "ability_medic_trooper_heal"
+        },
         "DamageReductionNearEnemyBase": 35.0,
         "MaxHealth": 260,
         "Name": "trooper_medic",
