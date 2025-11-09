@@ -440,7 +440,7 @@
                         }
                     ]
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -1349,6 +1349,21 @@
                 ],
                 "DescKey": "ability_blood_bomb_desc"
             },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "BloodSpillDuration",
+                            "Name": "Toxic Mess Duration",
+                            "Value": 0,
+                            "Type": "tech_damage"
+                        }
+                    ]
+                },
+                "Alt": [],
+                "RequiresUpgradeIndex": 2,
+                "DescKey": "ability_blood_bomb_t3_desc"
+            },
             "Upgrades": [
                 {
                     "AbilityCooldown": -4
@@ -1866,7 +1881,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "citadel_ability_bull_charge_desc"
             },
             "Info2": {
@@ -1889,7 +1904,7 @@
                         }
                     ]
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -2299,8 +2314,8 @@
             "Name": "Project Mind",
             "DescKey": "citadel_ability_projectmind_desc",
             "Info1": {
-                "Main": null,
-                "Alt": null,
+                "Main": {},
+                "Alt": [],
                 "DescKey": "citadel_ability_projectmind_desc"
             },
             "Info2": {
@@ -2520,7 +2535,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "citadel_ability_psychic_lift_desc"
             },
             "Upgrades": [
@@ -2914,6 +2929,28 @@
                     }
                 ],
                 "DescKey": "citadel_ability_fissure_wall_desc"
+            },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "On Hit:",
+                            "Key": "DebuffDuration",
+                            "Name": "Debuff Duration",
+                            "Value": 0,
+                            "Type": "duration"
+                        },
+                        {
+                            "Title": "On Hit:",
+                            "Key": "BonusDamagePercent",
+                            "Name": "Bonus Damage",
+                            "Value": 0
+                        }
+                    ]
+                },
+                "Alt": [],
+                "RequiresUpgradeIndex": 0,
+                "DescKey": "citadel_ability_fissure_wall_t1_desc"
             },
             "Upgrades": [
                 {
@@ -3522,7 +3559,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "citadel_ability_chrono_swap_desc"
             },
             "Upgrades": [
@@ -3663,7 +3700,7 @@
                         }
                     ]
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -4747,7 +4784,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "ability_stacking_damage_desc"
             },
             "Upgrades": [
@@ -4920,7 +4957,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "ability_explosive_barrel_desc"
             },
             "Upgrades": [
@@ -5207,7 +5244,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "ability_crackshot_desc"
             },
             "Upgrades": [
@@ -5566,6 +5603,21 @@
                 "Alt": [],
                 "DescKey": "citadel_ability_sticky_bomb_desc"
             },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "On Attach:",
+                            "Key": "DebuffDuration",
+                            "Name": "Debuff Duration",
+                            "Value": 0,
+                            "Type": "duration"
+                        }
+                    ]
+                },
+                "Alt": [],
+                "RequiresUpgradeIndex": 2
+            },
             "Info3": {
                 "Main": {
                     "Props": [
@@ -5585,7 +5637,7 @@
                         }
                     ]
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -5656,7 +5708,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "citadel_ability_hook_desc"
             },
             "Upgrades": [
@@ -5891,7 +5943,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "ability_nano_clustergrenade_desc"
             },
             "Upgrades": [
@@ -6271,7 +6323,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "ability_charged_shot_desc"
             },
             "Upgrades": [
@@ -6916,7 +6968,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "ability_throw_sand_desc"
             },
             "Upgrades": [
@@ -7008,7 +7060,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "ability_ult_combo_desc"
             },
             "Upgrades": [
@@ -7102,7 +7154,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "citadel_ability_shiv_dagger_max_rage_desc"
             },
             "Upgrades": [
@@ -7198,8 +7250,23 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "citadel_ability_shiv_dash_desc"
+            },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "On hit",
+                            "Key": "CooldownReductionOnHit",
+                            "Name": "Cooldown Reduced on Hit",
+                            "Value": 0,
+                            "Type": "cooldown"
+                        }
+                    ]
+                },
+                "Alt": [],
+                "RequiresUpgradeIndex": 2
             },
             "Upgrades": [
                 {
@@ -7307,7 +7374,7 @@
                         }
                     ]
                 },
-                "Alt": null
+                "Alt": []
             },
             "Info3": {
                 "Main": {
@@ -7320,7 +7387,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "citadel_ability_shiv_defer_damage_max_rage_desc"
             },
             "Upgrades": [
@@ -7372,7 +7439,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "citadel_ability_shiv_killing_blow_active_desc"
             },
             "Info2": {
@@ -7392,7 +7459,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "citadel_ability_shiv_killing_blow_passive_desc"
             },
             "Upgrades": [
@@ -8102,7 +8169,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "ability_warden_high_alert_desc"
             },
             "Upgrades": [
@@ -8492,6 +8559,28 @@
                     }
                 ],
                 "DescKey": "citadel_ability_flying_strike_desc"
+            },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "Upon reaching target:",
+                            "Key": "WeaponDamageBonus",
+                            "Name": "Weapon Damage",
+                            "Value": 0.0,
+                            "Type": "bullet_damage"
+                        },
+                        {
+                            "Title": "Upon reaching target:",
+                            "Key": "WeaponPowerIncreaseDuration",
+                            "Name": "Weapon Damage Duration",
+                            "Value": 0,
+                            "Type": "duration"
+                        }
+                    ]
+                },
+                "Alt": [],
+                "RequiresUpgradeIndex": 2
             },
             "Upgrades": [
                 {
@@ -9239,6 +9328,12 @@
                 "Alt": [],
                 "DescKey": "viscous_goo_grenade_desc"
             },
+            "Info2": {
+                "Main": {},
+                "Alt": [],
+                "RequiresUpgradeIndex": 2,
+                "DescKey": "viscous_goo_grenade_bounce_desc"
+            },
             "Info3": {
                 "Main": {
                     "Props": [
@@ -9350,6 +9445,30 @@
                 "Alt": [],
                 "DescKey": "viscous_restorative_goo_desc"
             },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "BonusMoveSpeed",
+                            "Name": "Move Speed",
+                            "Value": 0
+                        },
+                        {
+                            "Key": "StaminaCooldownReduction",
+                            "Name": "Stamina Recovery",
+                            "Value": 0
+                        },
+                        {
+                            "Key": "PostCubeBuffDuration",
+                            "Name": "Buff Duration",
+                            "Value": 8
+                        }
+                    ]
+                },
+                "Alt": [],
+                "RequiresUpgradeIndex": 0,
+                "DescKey": "viscous_restorative_goo_buff_desc"
+            },
             "Upgrades": [
                 {
                     "BonusMoveSpeed": "2.5m",
@@ -9401,10 +9520,6 @@
                 "LightMeleeForce": {
                     "Name": null,
                     "Value": 300
-                },
-                "PostCubeBuffDuration": {
-                    "Name": "Buff Duration",
-                    "Value": 8
                 },
                 "PushBackForce": {
                     "Name": null,
@@ -11348,7 +11463,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "fathom_scalding_spray_desc"
             },
             "Upgrades": [
@@ -11493,8 +11608,8 @@
                 "DescKey": "fathom_reefdweller_harpoon_desc"
             },
             "Info2": {
-                "Main": null,
-                "Alt": null
+                "Main": {},
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -11711,7 +11826,7 @@
                 "Main": {
                     "Props": []
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -11787,7 +11902,7 @@
                 "Main": {
                     "Props": []
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -11826,7 +11941,7 @@
                 "Main": {
                     "Props": []
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -11872,7 +11987,7 @@
                         }
                     ]
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -11914,7 +12029,7 @@
                 "Main": {
                     "Props": []
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -11953,7 +12068,7 @@
                 "Main": {
                     "Props": []
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -11992,7 +12107,7 @@
                 "Main": {
                     "Props": []
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -12038,7 +12153,7 @@
                         }
                     ]
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -12335,7 +12450,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "ability_viper_snakedash_desc"
             },
             "Upgrades": [
@@ -12490,7 +12605,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "citadel_ability_psychic_lift_desc"
             },
             "Upgrades": [
@@ -12726,7 +12841,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "citadel_ability_psychic_lift_desc"
             },
             "Upgrades": [
@@ -13703,7 +13818,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "operative_blindside_passive_desc"
             },
             "Upgrades": [
@@ -14098,7 +14213,7 @@
                         }
                     ]
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -14217,7 +14332,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "ability_vampirebat_batblink_desc"
             },
             "Info2": {
@@ -14238,7 +14353,7 @@
                         }
                     ]
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -14788,6 +14903,21 @@
                 ],
                 "DescKey": "drifter_shadow_mark_desc"
             },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "After ambushing:",
+                            "Key": "BonusFireRate",
+                            "Name": "Fire Rate",
+                            "Value": 0,
+                            "Type": "fire_rate"
+                        }
+                    ]
+                },
+                "Alt": [],
+                "RequiresUpgradeIndex": 1
+            },
             "Upgrades": [
                 {
                     "DotHealthPercent": 1.0
@@ -14934,7 +15064,7 @@
                         }
                     ]
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -15340,7 +15470,7 @@
                         }
                     ]
                 },
-                "Alt": null
+                "Alt": []
             },
             "Info2": {
                 "Main": {
@@ -15365,7 +15495,7 @@
                         }
                     ]
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -15644,7 +15774,7 @@
                 "Main": {
                     "Props": []
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -16521,7 +16651,7 @@
                         }
                     ]
                 },
-                "Alt": null
+                "Alt": []
             },
             "Info3": {
                 "Main": {
@@ -17034,7 +17164,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "ability_doorman_bomb_desc"
             },
             "Info2": {
@@ -17253,6 +17383,34 @@
                 "Alt": [],
                 "DescKey": "ability_doorman_luggage_cart_desc"
             },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "On Wall Hit",
+                            "Key": "WallImpactDamage",
+                            "Name": "Impact Damage",
+                            "Value": 0,
+                            "Scale": {
+                                "Value": 0.0,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Title": "On Wall Hit",
+                            "Key": "StunDuration",
+                            "Name": "Stun Duration",
+                            "StatusEffect": "Stun",
+                            "Value": 0,
+                            "Type": "duration"
+                        }
+                    ]
+                },
+                "Alt": [],
+                "RequiresUpgradeIndex": 2,
+                "DescKey": "ability_doorman_luggage_cart_t3_note"
+            },
             "Upgrades": [
                 {
                     "AbilityCooldown": -8
@@ -17278,17 +17436,6 @@
                     "Name": "Channel Move Speed",
                     "Value": -1,
                     "Type": "move_speed"
-                }
-            },
-            "Damage": {
-                "WallImpactDamage": {
-                    "Name": null,
-                    "Value": 0,
-                    "Scale": {
-                        "Value": 0.0,
-                        "Type": "spirit"
-                    },
-                    "Type": "tech_damage"
                 }
             },
             "Other": {
@@ -17349,7 +17496,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "ability_doorman_hotel_desc"
             },
             "Info2": {
@@ -17371,7 +17518,7 @@
                         }
                     ]
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -17443,7 +17590,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "ability_skyrunner_swingline_desc"
             },
             "Upgrades": [
@@ -17497,7 +17644,7 @@
                 "Main": {
                     "Props": []
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -17601,7 +17748,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "ability_skyrunner_flakshot_desc"
             },
             "Upgrades": [
@@ -17757,7 +17904,7 @@
                 "Main": {
                     "Props": []
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -17830,7 +17977,7 @@
                 "Main": {
                     "Props": []
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "ability_swan_leap_desc"
             },
             "Upgrades": [
@@ -17911,7 +18058,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "ability_swan_acrobat_desc"
             },
             "Upgrades": [
@@ -17963,7 +18110,7 @@
                         }
                     ]
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -18695,7 +18842,7 @@
                 "Main": {
                     "Props": []
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -18734,7 +18881,7 @@
                 "Main": {
                     "Props": []
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -18773,7 +18920,7 @@
                 "Main": {
                     "Props": []
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -18819,7 +18966,7 @@
                         }
                     ]
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -18861,7 +19008,7 @@
                 "Main": {
                     "Props": []
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -18900,7 +19047,7 @@
                 "Main": {
                     "Props": []
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -18939,7 +19086,7 @@
                 "Main": {
                     "Props": []
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -18985,7 +19132,7 @@
                         }
                     ]
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -19027,7 +19174,7 @@
                 "Main": {
                     "Props": []
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -19066,7 +19213,7 @@
                 "Main": {
                     "Props": []
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -19105,7 +19252,7 @@
                 "Main": {
                     "Props": []
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -19151,7 +19298,7 @@
                         }
                     ]
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
