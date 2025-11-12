@@ -4,44 +4,58 @@
         "BonusMaxHealth": 10.0,
         "BonusSpiritDamage": 15.0,
         "Name": "citadel_item_pickup_rejuv",
-        "RespawnDelay": 3.0
+        "RespawnDelay": 3.0,
+        "RespawnLifePercent": 100.0
     },
     "destroyable_building": {
-        "AntiSnipeRange": 1200.0,
+        "AntiSnipeRange": 30.48,
         "BulletResistBase": 60,
         "BulletResistReductionPerHero": 20,
+        "IntrinsicAbilityResistance": 0.0,
         "MaxHealth": 3000,
         "Name": "destroyable_building"
     },
     "neutral_sinners_sacrifice": {
+        "DamagedByAbilities": false,
+        "DamagedByBullets": false,
         "GoldReward": 164,
         "GoldRewardBonusPercentPerMinute": 1.08,
+        "InitialSpawnDelay": 480,
+        "MinigameDuration": 3.0,
+        "MinigameHitWindow": 0.5,
         "Name": "neutral_sinners_sacrifice",
-        "RetaliateDamage": 60.0
+        "RetaliateDamage": 60.0,
+        "SpawnInterval": 300
     },
     "neutral_trooper_normal": {
         "GoldReward": 84,
         "GoldRewardBonusPercentPerMinute": 1.08,
+        "InitialSpawnDelay": 360,
         "IntrinsicAbilityResistance": 30.0,
         "IntrinsicBulletResistance": 50.0,
         "MaxHealth": 500,
-        "Name": "neutral_trooper_normal"
+        "Name": "neutral_trooper_normal",
+        "SpawnInterval": 420
     },
     "neutral_trooper_strong": {
         "GoldReward": 225,
         "GoldRewardBonusPercentPerMinute": 1.08,
+        "InitialSpawnDelay": 480,
         "IntrinsicAbilityResistance": 35.0,
         "IntrinsicBulletResistance": 60.0,
         "MaxHealth": 1760,
-        "Name": "neutral_trooper_strong"
+        "Name": "neutral_trooper_strong",
+        "SpawnInterval": 480
     },
     "neutral_trooper_weak": {
         "GoldReward": 51,
         "GoldRewardBonusPercentPerMinute": 1.08,
+        "InitialSpawnDelay": 120,
         "IntrinsicAbilityResistance": 30.0,
         "IntrinsicBulletResistance": 50.0,
         "MaxHealth": 200,
-        "Name": "neutral_trooper_weak"
+        "Name": "neutral_trooper_weak",
+        "SpawnInterval": 180
     },
     "npc_barrack_boss": {
         "BackdoorBulletResistBase": 40,
@@ -49,13 +63,15 @@
         "BackdoorHealthRegen": 65.0,
         "BackdoorPlayerDamageMitigation": 65.0,
         "IntrinsicAbilityResistance": 0.0,
-        "InvulnerabilityRange": 944.882,
+        "InvulnerabilityRange": 24.0,
         "MaxHealth": 3225,
-        "MeleeAttemptRange": 196.85,
+        "MeleeAttemptRange": 5.0,
         "MeleeDamage": 100.0,
         "Name": "npc_barrack_boss",
         "PlayerDPS": 116.0,
         "PlayerDamageResistance": -25.0,
+        "SightRangeNPCs": 38.1,
+        "SightRangePlayers": 38.1,
         "TrooperDPS": 35.0,
         "TrooperDamageResistanceBase": 60.0,
         "TrooperDamageResistanceMax": -50.0,
@@ -63,13 +79,15 @@
     },
     "npc_boss_tier1": {
         "IntrinsicAbilityResistance": 0.0,
-        "InvulnerabilityRange": 944.882,
+        "InvulnerabilityRange": 24.0,
         "MaxHealth": 3500,
-        "MeleeAttemptRange": 196.85,
+        "MeleeAttemptRange": 5.0,
         "MeleeDamage": 100.0,
         "Name": "npc_boss_tier1",
         "PlayerDPS": 116.0,
         "PlayerDamageResistance": -25.0,
+        "SightRangeNPCs": 34.0,
+        "SightRangePlayers": 34.0,
         "TrooperDPS": 35.0,
         "TrooperDamageResistanceBase": 60.0,
         "TrooperDamageResistanceMax": -50.0,
@@ -79,20 +97,28 @@
         "BackdoorHealthRegen": 65.0,
         "BackdoorPlayerDamageMitigation": 65.0,
         "BoundAbilities": {
-            "ESlot_Weapon_Primary": "citadel_weapon_bosstier2_set",
-            "ESlot_Signature_1": "citadel_ability_tier2boss_rocket_barrage",
-            "ESlot_Signature_2": "citadel_ability_tier2boss_laser_beam",
-            "ESlot_Signature_3": "citadel_ability_tier2boss_stomp"
+            "1": {
+                "Name": "Rocket Barrage",
+                "Key": "citadel_ability_tier2boss_rocket_barrage"
+            },
+            "2": {
+                "Name": "Laser",
+                "Key": "citadel_ability_tier2boss_laser_beam"
+            },
+            "3": {
+                "Name": "Stomp",
+                "Key": "citadel_ability_tier2boss_stomp"
+            }
         },
         "FriendlyAuraBulletArmor": 15,
-        "FriendlyAuraRadius": 1259.84,
+        "FriendlyAuraRadius": 32.0,
         "FriendlyAuraSpiritArmor": 15,
         "IntrinsicAbilityResistance": 0.0,
-        "InvulnerabilityRange": 1338.58,
+        "InvulnerabilityRange": 34.0,
         "MaxHealth": 9200,
-        "MeleeAttemptRange": 600.0,
+        "MeleeAttemptRange": 15.24,
         "Name": "npc_boss_tier2",
-        "NearbyEnemyResistanceRange": 2000.0,
+        "NearbyEnemyResistanceRange": 50.8,
         "NearbyEnemyResistanceValues": [
             0,
             0,
@@ -102,36 +128,44 @@
             40,
             50
         ],
-        "PlayerInitialSightRange": 1200.0,
-        "RangedResistanceMaxRange": 2000,
+        "PlayerInitialSightRange": 30.48,
+        "RangedResistanceMaxRange": 50.8,
         "RangedResistanceMaxValue": 100.0,
-        "RangedResistanceMinRange": 1200,
-        "SightRangeNPCs": 1600.0,
-        "SightRangePlayers": 1600.0,
+        "RangedResistanceMinRange": 30.48,
+        "SightRangeNPCs": 40.64,
+        "SightRangePlayers": 40.64,
         "StompDamage": 350.0,
         "StompDamageMaxHealthPercent": 10.0,
         "StompKnockup": 1.25,
-        "StompRadius": 905.51,
+        "StompRadius": 23.0,
         "StompStunDuration": 2.0
     },
     "npc_boss_tier2_weak": {
         "BackdoorHealthRegen": 65.0,
         "BackdoorPlayerDamageMitigation": 65.0,
         "BoundAbilities": {
-            "ESlot_Weapon_Primary": "citadel_weapon_bosstier2_set",
-            "ESlot_Signature_1": "citadel_ability_tier2boss_rocket_barrage",
-            "ESlot_Signature_2": "citadel_ability_tier2boss_laser_beam",
-            "ESlot_Signature_3": "citadel_ability_tier2boss_stomp"
+            "1": {
+                "Name": "Rocket Barrage",
+                "Key": "citadel_ability_tier2boss_rocket_barrage"
+            },
+            "2": {
+                "Name": "Laser",
+                "Key": "citadel_ability_tier2boss_laser_beam"
+            },
+            "3": {
+                "Name": "Stomp",
+                "Key": "citadel_ability_tier2boss_stomp"
+            }
         },
         "FriendlyAuraBulletArmor": 15,
-        "FriendlyAuraRadius": 1259.84,
+        "FriendlyAuraRadius": 32.0,
         "FriendlyAuraSpiritArmor": 15,
         "IntrinsicAbilityResistance": 0.0,
-        "InvulnerabilityRange": 1338.58,
+        "InvulnerabilityRange": 34.0,
         "MaxHealth": 5800,
-        "MeleeAttemptRange": 600.0,
+        "MeleeAttemptRange": 15.24,
         "Name": "npc_boss_tier2_weak",
-        "NearbyEnemyResistanceRange": 2000.0,
+        "NearbyEnemyResistanceRange": 50.8,
         "NearbyEnemyResistanceValues": [
             0,
             0,
@@ -141,65 +175,108 @@
             40,
             50
         ],
-        "PlayerInitialSightRange": 1200.0,
-        "RangedResistanceMaxRange": 2000,
+        "PlayerInitialSightRange": 30.48,
+        "RangedResistanceMaxRange": 50.8,
         "RangedResistanceMaxValue": 100.0,
-        "RangedResistanceMinRange": 1200,
-        "SightRangeNPCs": 1600.0,
-        "SightRangePlayers": 1600.0,
+        "RangedResistanceMinRange": 30.48,
+        "SightRangeNPCs": 40.64,
+        "SightRangePlayers": 40.64,
         "StompDamage": 350.0,
         "StompDamageMaxHealthPercent": 10.0,
         "StompKnockup": 1.25,
-        "StompRadius": 905.51,
+        "StompRadius": 23.0,
         "StompStunDuration": 2.0
     },
     "npc_boss_tier3": {
         "BackdoorHealthRegen": 75.0,
         "BackdoorPlayerDamageMitigation": 65.0,
+        "BoundAbilities": {
+            "1": {
+                "Name": "Patron Laser",
+                "Key": "citadel_ability_tier3boss_laser_beam"
+            },
+            "2": {
+                "Name": null,
+                "Key": "citadel_ability_tier3boss_damage_pulse"
+            }
+        },
         "HealthGrowthPerMinutePhase1": 250,
         "HealthGrowthPerMinutePhase2": 450,
+        "HealthGrowthStartTimePhase1": 20,
+        "HealthGrowthStartTimePhase2": 1,
+        "IntrinsicAbilityResistance": 0.0,
         "IsUnkillableInPhase1": true,
         "LaserDPSMaxHealthPercent": 3,
         "LaserDPSToNPCs": 80.0,
+        "LaserDPSToNPCsNoShield": 210,
         "LaserDPSToPlayers": 440.0,
+        "LaserDPSToPlayersNoShield": 780,
         "MaxHealthPhase1": 5625,
         "MaxHealthPhase2": 10125,
+        "MoveSpeed": 5.08,
+        "MoveSpeedNoShield": 12.7,
         "Name": "npc_boss_tier3",
         "OutOfCombatHealthRegen": 120.0,
-        "RangedResistanceMaxRange": 2000,
-        "RangedResistanceMinRange": 1000,
-        "SightRangePlayers": 3000.0
+        "RangedResistanceMaxRange": 50.8,
+        "RangedResistanceMinRange": 25.4,
+        "SightRangePlayers": 76.2
     },
     "npc_super_neutral": {
         "HealthGainPerMinute": 200,
         "HealthRegenPerSecond": 15.0,
+        "InitialSpawnDelay": 600,
         "IntrinsicAbilityResistance": 0.0,
         "Name": "npc_super_neutral",
+        "Shield": {
+            "BaseAbsorptionPerSecond": 35,
+            "ScalingAbsorptionPerMinute": 5
+        },
+        "SpawnInterval": 420,
         "StartingHealth": 13000
     },
     "trooper_medic": {
         "BarrackBossDPS": 80.0,
+        "BoundAbilities": {
+            "2": {
+                "Name": null,
+                "Key": "ability_medic_trooper_heal"
+            }
+        },
         "DamageReductionNearEnemyBase": 35.0,
         "MaxHealth": 260,
         "Name": "trooper_medic",
         "PlayerDPS": 28.0,
-        "RunSpeed": 512,
-        "SightRangePlayers": 700.0,
+        "PlayerDamageResistance": -25.0,
+        "RunSpeed": 13.0,
+        "SightRangeNPCs": 40.64,
+        "SightRangePlayers": 17.78,
         "T1BossDPS": 36.0,
-        "TrooperDPS": 35.0
+        "T2BossDamageResistance": 80.0,
+        "T3BossDamageResistance": 80.0,
+        "TrooperDPS": 35.0,
+        "TrooperDamageResistance": 42.5,
+        "WalkSpeed": 6.299,
+        "WeaponRange": 35.56
     },
     "trooper_melee": {
         "BarrackBossDPS": 80.0,
         "DamageReductionNearEnemyBase": 35.0,
         "MaxHealth": 400,
-        "MeleeAttemptRange": 120,
+        "MeleeAttemptRange": 3.048,
         "MeleeDamage": 80.0,
         "Name": "trooper_melee",
         "PlayerDPS": 28.0,
-        "RunSpeed": 512,
-        "SightRangePlayers": 700.0,
+        "PlayerDamageResistance": -25.0,
+        "RunSpeed": 13.0,
+        "SightRangeNPCs": 40.64,
+        "SightRangePlayers": 17.78,
         "T1BossDPS": 36.0,
-        "TrooperDPS": 35.0
+        "T2BossDamageResistance": 80.0,
+        "T3BossDamageResistance": 80.0,
+        "TrooperDPS": 35.0,
+        "TrooperDamageResistance": 42.5,
+        "WalkSpeed": 8.128,
+        "WeaponRange": 35.56
     },
     "trooper_normal": {
         "BarrackBossDPS": 80.0,
@@ -207,9 +284,16 @@
         "MaxHealth": 300,
         "Name": "trooper_normal",
         "PlayerDPS": 28.0,
-        "RunSpeed": 512,
-        "SightRangePlayers": 700.0,
+        "PlayerDamageResistance": -25.0,
+        "RunSpeed": 13.0,
+        "SightRangeNPCs": 40.64,
+        "SightRangePlayers": 17.78,
         "T1BossDPS": 36.0,
-        "TrooperDPS": 35.0
+        "T2BossDamageResistance": 80.0,
+        "T3BossDamageResistance": 80.0,
+        "TrooperDPS": 35.0,
+        "TrooperDamageResistance": 42.5,
+        "WalkSpeed": 6.299,
+        "WeaponRange": 25.4
     }
 }

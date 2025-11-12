@@ -2880,6 +2880,23 @@
             }
         ]
     },
+    "ability_medic_trooper_heal": {
+        "AbilityCastRange": 15,
+        "AbilityCharges": 1,
+        "AbilityCooldown": 6,
+        "AbilityCooldownBetweenCharge": 6,
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": -1,
+        "Heal_Players": 40,
+        "Heal_Players_Post_Lane": 80,
+        "Heal_Troopers": 80,
+        "HeroNearbyRange": 30,
+        "IsDisabled": false,
+        "Key": "ability_medic_trooper_heal",
+        "Name": null,
+        "SecondaryHealHeroRange": 25,
+        "Upgrades": []
+    },
     "ability_nano_catform": {
         "AbilityCooldown": 45,
         "AbilityUnitTargetLimit": 1,
@@ -3218,6 +3235,41 @@
                 "DamageAmplification": 20
             }
         ]
+    },
+    "ability_npc_health_nova": {
+        "AbilityCooldown": 5,
+        "AbilityUnitTargetLimit": 1,
+        "AuraRadius": 18,
+        "ChannelMoveSpeed": -1,
+        "HeroAndSelfHPS": 5,
+        "HeroAndSelfHPSGrowthPerMinute": 0.4,
+        "IsDisabled": false,
+        "Key": "ability_npc_health_nova",
+        "NPCHPS": 2,
+        "NPCHPSGrowthPerMinute": 0.2,
+        "Name": null,
+        "RegenDuration": 5,
+        "Upgrades": []
+    },
+    "ability_npc_shield": {
+        "AbilityCooldown": 1,
+        "AbilityDuration": -1,
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "ability_npc_shield",
+        "Name": null,
+        "ShieldHealth": 10000,
+        "ShieldScale": 2.5,
+        "Upgrades": []
+    },
+    "ability_npc_tier2_beam": {
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "ability_npc_tier2_beam",
+        "Name": null,
+        "Upgrades": []
     },
     "ability_perched_predator": {
         "AbilityCastDelay": 0.2,
@@ -7605,6 +7657,80 @@
             }
         ]
     },
+    "citadel_ability_tier2boss_laser_beam": {
+        "AbilityCastRange": 450.0,
+        "AbilityCooldown": 1,
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": -1,
+        "CreepDPS": 190,
+        "DPS": 125,
+        "IsDisabled": false,
+        "Key": "citadel_ability_tier2boss_laser_beam",
+        "MaxHPDPS": 2,
+        "Name": "Laser",
+        "PathLength": 1600,
+        "PathWidth": 30,
+        "SweepSpeed": 1,
+        "TrackingSpeed": 30,
+        "Upgrades": []
+    },
+    "citadel_ability_tier2boss_rocket_barrage": {
+        "AbilityCastRange": 350.0,
+        "AbilityCooldown": 10,
+        "AbilityUnitTargetLimit": 100,
+        "ChannelMoveSpeed": -1,
+        "Damage": 200,
+        "DetonateTimer": 10,
+        "ExplosionFalloffDisabled": 1,
+        "FireDPS": 25,
+        "FireDuration": 5,
+        "FireRadius": 5,
+        "FireTickInterval": 0.5,
+        "GrenadesInVolley": 6,
+        "InitialVolleyInaccuracy": 100,
+        "IsDisabled": false,
+        "Key": "citadel_ability_tier2boss_rocket_barrage",
+        "MaxSimultaneousVolley": 1,
+        "Name": "Rocket Barrage",
+        "PerVolleyInaccuracy": 25,
+        "Radius": 5,
+        "Upgrades": [],
+        "VolleyInterval": 0.5
+    },
+    "citadel_ability_tier2boss_stomp": {
+        "AbilityCastRange": 125.0,
+        "AbilityCooldown": 10,
+        "AbilityUnitTargetLimit": 100,
+        "ActivationDistance": 600,
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "citadel_ability_tier2boss_stomp",
+        "Name": "Stomp",
+        "Upgrades": []
+    },
+    "citadel_ability_tier3boss_damage_pulse": {
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": -1,
+        "DamagePerPulse": 75.0,
+        "IsDisabled": false,
+        "Key": "citadel_ability_tier3boss_damage_pulse",
+        "MaxTargets": 2,
+        "Name": null,
+        "PulseInterval": 1.0,
+        "PulseRadius": 1100,
+        "Upgrades": []
+    },
+    "citadel_ability_tier3boss_laser_beam": {
+        "AbilityCastRange": 300.0,
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "citadel_ability_tier3boss_laser_beam",
+        "Name": "Patron Laser",
+        "PathLength": 2000,
+        "PathWidth": 40,
+        "Upgrades": []
+    },
     "citadel_ability_uppercut": {
         "AbilityCooldown": 19.0,
         "AbilityUnitTargetLimit": 1,
@@ -7915,6 +8041,17 @@
                 "DamagePerSecond": 50
             }
         ]
+    },
+    "citadel_base_lockon_ability": {
+        "IsDisabled": false,
+        "Key": "citadel_base_lockon_ability",
+        "LockonConeAngle": 40,
+        "LosingLockGraceTime": 0.5,
+        "MaxLockonStacks": 1,
+        "Name": null,
+        "TimeToGainLockonStack": 0.7,
+        "TimeToLoseLockonStack": 2,
+        "Upgrades": []
     },
     "drifter_blood_blast": {
         "AbilityCastDelay": 0.5,
@@ -8579,6 +8716,22 @@
         "WhirlwindDuration": 3.5,
         "WhirlwindEvasionChance": 25
     },
+    "npc_base": {
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "npc_base",
+        "Name": null,
+        "Upgrades": []
+    },
+    "npc_ultimate_base": {
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "npc_ultimate_base",
+        "Name": null,
+        "Upgrades": []
+    },
     "operative_blindside": {
         "AbilityCastDelay": 0.1,
         "AbilityCooldown": 30.0,
@@ -8816,6 +8969,49 @@
                 "AbilityCooldown": -7.5
             }
         ]
+    },
+    "signature_base": {
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "signature_base",
+        "Name": null,
+        "Upgrades": []
+    },
+    "super_neutral_charge": {
+        "AbilityCooldown": 10,
+        "AbilityUnitTargetLimit": 1,
+        "CameraDistance": 120,
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+            "Value": 120,
+            "Scale": {
+                "Value": 0.609336,
+                "Type": "spirit"
+            }
+        },
+        "IsDisabled": false,
+        "Key": "super_neutral_charge",
+        "Name": "Mid Boss Charge",
+        "PrepareTime": 0.8,
+        "StunDuration": 0.5,
+        "TackleDurationMax": 1.0,
+        "TackleDurationMin": 0.5,
+        "TackleRadius": 2.5,
+        "TackleSpeed": 1000,
+        "Upgrades": []
+    },
+    "super_neutral_shield": {
+        "AbilityCooldown": 1,
+        "AbilityDuration": -1,
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "super_neutral_shield",
+        "Name": null,
+        "ShieldHealth": 10000,
+        "ShieldScale": 2.5,
+        "Upgrades": []
     },
     "synth_affliction": {
         "AbilityCastDelay": 0.6,
@@ -9476,6 +9672,67 @@
             }
         ]
     },
+    "trooper_boss_grenade": {
+        "AbilityCastDelay": 0.5,
+        "AbilityCastRange": "375.0 500.0",
+        "AbilityCooldown": "40 30 20",
+        "AbilityUnitTargetLimit": 1,
+        "BlastRadius": 300,
+        "ChannelMoveSpeed": -1,
+        "Damage": 100,
+        "FuseDuration": 3,
+        "Grenades": "1 1 3",
+        "ImpulseVelocity": 1200,
+        "IsDisabled": false,
+        "Key": "trooper_boss_grenade",
+        "Name": "Stun Grenade",
+        "PlayerDamage": 100,
+        "StunDuration": "1 2 3",
+        "Upgrades": []
+    },
+    "trooper_grenade": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCastRange": 400.0,
+        "AbilityCooldown": 4,
+        "AbilityUnitTargetLimit": 1,
+        "ArmingDuration": 5,
+        "BlastRadius": 4,
+        "ChannelMoveSpeed": -1,
+        "Damage": 200,
+        "Grenades": 1,
+        "ImpulseVelocity": 400,
+        "IsDisabled": false,
+        "Key": "trooper_grenade",
+        "Name": null,
+        "PlayerDamage": 100,
+        "Upgrades": []
+    },
+    "trooper_neutral_grenade": {
+        "AbilityCastDelay": 0.5,
+        "AbilityCastRange": 500.0,
+        "AbilityCooldown": 40,
+        "AbilityUnitTargetLimit": 1,
+        "BlastRadius": 300,
+        "ChannelMoveSpeed": -1,
+        "Damage": 50,
+        "FuseDuration": 3,
+        "Grenades": 1,
+        "ImpulseVelocity": 1200,
+        "IsDisabled": false,
+        "Key": "trooper_neutral_grenade",
+        "Name": "Stun Grenade",
+        "PlayerDamage": 100,
+        "StunDuration": 1,
+        "Upgrades": []
+    },
+    "ultimate_base": {
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "ultimate_base",
+        "Name": null,
+        "Upgrades": []
+    },
     "viscous_goo_bowling_ball": {
         "AbilityCastDelay": 0.55,
         "AbilityCooldown": 115.0,
@@ -9696,6 +9953,34 @@
             }
         ]
     },
+    "yakuza_fealty": {
+        "AbilityCastRange": 25,
+        "AbilityChannelTime": 3,
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": 1.3,
+        "DPS": 50,
+        "IsDisabled": false,
+        "Key": "yakuza_fealty",
+        "Name": null,
+        "ThinkInterval": 0.25,
+        "Upgrades": []
+    },
+    "yakuza_gang_activity": {
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "yakuza_gang_activity",
+        "Name": null,
+        "Upgrades": []
+    },
+    "yakuza_gang_activity_cancel": {
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "yakuza_gang_activity_cancel",
+        "Name": null,
+        "Upgrades": []
+    },
     "yakuza_kobun": {
         "AbilityCastRange": 30,
         "AbilityCooldown": 32.0,
@@ -9814,5 +10099,23 @@
                 "ShareDamagePercent": 67
             }
         ]
+    },
+    "yakuza_summon_gangster": {
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": 1.3,
+        "GangsterHealth": 200,
+        "IsDisabled": false,
+        "Key": "yakuza_summon_gangster",
+        "Name": null,
+        "Upgrades": []
+    },
+    "yakuza_teleport_to_gangster": {
+        "AbilityCastDelay": 5,
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": 1.3,
+        "IsDisabled": false,
+        "Key": "yakuza_teleport_to_gangster",
+        "Name": null,
+        "Upgrades": []
     }
 }
