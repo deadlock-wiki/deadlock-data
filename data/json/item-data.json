@@ -346,11 +346,10 @@
         "AbilityUnitTargetLimit": 1,
         "AbilityCastDelay": 0.2,
         "ChannelMoveSpeed": -1,
+        "CooldownReduction": 5,
         "BonusFireRate": 5,
         "TechResist": 5,
-        "BulletResist": 5,
-        "TechRangeMultiplier": 5,
-        "TechRadiusMultiplier": 5
+        "BulletResist": 5
     },
     "upgrade_ability_refresher": {
         "Name": "Refresher",
@@ -659,7 +658,7 @@
         "IsDisabled": false,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
-        "BonusBulletSpeedPercent": 50,
+        "BonusBulletSpeedPercent": 45,
         "ProcChance": 50
     },
     "upgrade_arcane_eater": {
@@ -865,8 +864,8 @@
         "BonusHealth": 150,
         "BulletResistReduction": -18,
         "MagicResistReduction": -18,
-        "HealAmpReceivePenaltyPercent": -35,
-        "HealAmpRegenPenaltyPercent": -35,
+        "HealAmpReceivePenaltyPercent": -30,
+        "HealAmpRegenPenaltyPercent": -30,
         "DebuffDuration": 12,
         "DiminishingMultiplier": 0.5
     },
@@ -968,7 +967,7 @@
         "HealthDrainedPerSecond": 40,
         "TickRate": 0.1,
         "BonusFireRate": 40,
-        "StatusResistancePercent": 40,
+        "StatusResistancePercent": 50,
         "HealAmpReceivePenaltyPercent": -30,
         "HealAmpRegenPenaltyPercent": -30,
         "BonusMoveSpeed": "2.25m",
@@ -1146,7 +1145,7 @@
         "AbilityDuration": 8,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
-        "BulletArmorReduction": -12,
+        "BulletArmorReduction": -13,
         "BonusHealth": 90,
         "BulletResist": 7
     },
@@ -1219,7 +1218,7 @@
     },
     "upgrade_capacitor": {
         "Name": "Capacitor",
-        "Description": "Launch a projectile that deals <span class=\"highlight\">{g:citadel_inline_attribute:'SpiritIcon'}damage</span>, applies a strong slow that recovers over time, <span class=\"highlight\">prevents Stamina usage</span> and <span class=\"highlight\">Silences</span> their <span class=\"highlight\">movement-based items and abilities</span>.",
+        "Description": "Launch a projectile that deals <span class=\"highlight\">{g:citadel_inline_attribute:'SpiritIcon'}damage</span>, removes all their non-ultimate buffs and applies a strong slow that recovers over time.",
         "Cost": 6400,
         "Tier": 4,
         "Activation": "InstantCast",
@@ -1238,22 +1237,22 @@
             "FireRate"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 50,
+        "AbilityCooldown": 60,
         "AbilityUnitTargetLimit": 1,
         "AbilityCastDelay": 0.2,
         "ChannelMoveSpeed": -1,
         "ProcCooldown": 0.25,
         "DamagePerChain": {
-            "Value": 43,
+            "Value": 50,
             "Scale": {
-                "Value": 0.19,
+                "Value": 0.1395,
                 "Type": "spirit"
             }
         },
         "BonusPerChain": {
-            "Value": 43,
+            "Value": 50,
             "Scale": {
-                "Value": 0.19,
+                "Value": 0.1395,
                 "Type": "spirit"
             }
         },
@@ -1262,8 +1261,8 @@
         "ChainCount": 6,
         "ChainTickRate": 0.4,
         "Damage": 100,
-        "MaxSlowPercent": 75,
-        "SlowDuration": 4,
+        "MaxSlowPercent": 100,
+        "SlowDuration": 5,
         "BonusFireRate": 5
     },
     "upgrade_cardio_calibrator": {
@@ -1308,16 +1307,16 @@
         "ChannelMoveSpeed": -1,
         "ProcCooldown": 0.25,
         "DamagePerChain": {
-            "Value": 33,
+            "Value": 40,
             "Scale": {
-                "Value": 0.19,
+                "Value": 0.1395,
                 "Type": "spirit"
             }
         },
         "BonusPerChain": {
-            "Value": 33,
+            "Value": 40,
             "Scale": {
-                "Value": 0.19,
+                "Value": 0.1395,
                 "Type": "spirit"
             }
         },
@@ -1538,10 +1537,10 @@
         "InvisCancelOnDamage": 1,
         "InvisFadeToDuration": 0.6,
         "InvisMoveSpeedMod": "5m",
-        "SpottedRadius": "18m",
+        "SpottedRadius": "20m",
         "RevealOnDamageDuration": 1.5,
         "RevealOnSpottedDuration": 1.5,
-        "FullInvisDistance": "30m",
+        "FullInvisDistance": "50m",
         "AmbushDuration": 8,
         "AmbushBonusFireRate": 35,
         "AmbushBonusTechPower": 35,
@@ -1726,7 +1725,7 @@
         "IsDisabled": false,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
-        "CooldownReduction": 20,
+        "CooldownReduction": 25,
         "OutOfCombatHealthRegen": 4
     },
     "upgrade_corpse_explosion": {
@@ -1807,9 +1806,9 @@
         "ProcChance": 100,
         "ProcCooldown": 1,
         "ProcBonusMagicDamage": {
-            "Value": 40,
+            "Value": 45,
             "Scale": {
-                "Value": 0.8,
+                "Value": 0.75,
                 "Type": "spirit"
             }
         },
@@ -1835,7 +1834,7 @@
         "ChannelMoveSpeed": -1,
         "Radius": "1m",
         "ProcChance": 25,
-        "CritDamagePercent": 110,
+        "CritDamagePercent": 125,
         "BonusClipSizePercent": 40
     },
     "upgrade_crushing_fists": {
@@ -1978,18 +1977,18 @@
         ],
         "ShopFilters": null,
         "IsDisabled": false,
-        "AbilityCooldown": 35.0,
+        "AbilityCooldown": 38.0,
         "AbilityDuration": 10,
         "AbilityCastRange": "35m",
         "AbilityUnitTargetLimit": 1,
         "AbilityCastDelay": 0.25,
         "ChannelMoveSpeed": -1,
         "TickRate": 0.25,
-        "MaxHealthPercentAsDPS": 3.5,
+        "MaxHealthPercentAsDPS": 3.25,
         "AuraRadius": "10m",
         "TechResist": 40,
         "BonusHealth": 125,
-        "CooldownReduction": 4
+        "CooldownReduction": 6
     },
     "upgrade_divine_barrier": {
         "Name": "Divine Barrier",
@@ -2140,8 +2139,8 @@
         "IsDisabled": false,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
-        "CooldownReduction": 6,
-        "BonusFireRate": 12,
+        "CooldownReduction": 12,
+        "BonusFireRate": 10,
         "ReloadSpeedMultipler": -10,
         "BuffDuration": 18,
         "MaxStacks": 6
@@ -2245,24 +2244,12 @@
         "AbilityCooldown": 3,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
-        "BonusBulletSpeedPercent": 50,
+        "BonusBulletSpeedPercent": 45,
         "BonusFireRate": 5,
-        "ProcAmmoConsumed": 40,
+        "ProcAmmoConsumed": 30,
         "ProcBulletVelocity": 100,
-        "ProcBaseAttackDamagePercent": {
-            "Value": 170,
-            "Scale": {
-                "Value": 2,
-                "Type": "power_increase"
-            }
-        },
-        "ProcBaseAttackDamagePercentAltFire": {
-            "Value": 45,
-            "Scale": {
-                "Value": 1,
-                "Type": "power_increase"
-            }
-        }
+        "ProcBaseAttackDamagePercent": 185,
+        "ProcBaseAttackDamagePercentAltFire": 75
     },
     "upgrade_extra_charge": {
         "Name": "Extra Charge",
@@ -2360,9 +2347,7 @@
         "Tier": 4,
         "Activation": "Press",
         "Slot": "Tech",
-        "Components": [
-            "upgrade_spirit_sap"
-        ],
+        "Components": null,
         "TargetTypes": [
             "HeroEnemy"
         ],
@@ -2378,10 +2363,7 @@
         "AbilityCastDelay": 0.1,
         "ChannelMoveSpeed": -1,
         "PercentDamage": 30,
-        "BonusFireRate": 13,
-        "MagicResistReduction": -12,
-        "TechPowerReduction": -30,
-        "ResistReductionDuration": 12
+        "BonusFireRate": 16
     },
     "upgrade_frenzy": {
         "Name": null,
@@ -2515,7 +2497,7 @@
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
         "BaseAttackDamagePercent": 80,
-        "MaxHealthLossPercent": -13,
+        "MaxHealthLossPercent": -10,
         "BonusClipPerKill": 2,
         "FireRatePerKill": 8,
         "MaxStacks": 8,
@@ -2550,7 +2532,7 @@
     },
     "upgrade_glitch": {
         "Name": "Curse",
-        "Description": "Curses an enemy - <span class=\"highlight\">interrupting, Silencing, Disarming</span>, and <span class=\"highlight\">preventing item usage</span>. <span class=\"highlight\">Removes all non-ultimate buffs</span>.",
+        "Description": "Curses an enemy - <span class=\"highlight\">interrupting, Silencing, Disarming</span>, and <span class=\"highlight\">preventing item usage</span>.",
         "Cost": 6400,
         "Tier": 4,
         "Activation": "Press",
@@ -2564,14 +2546,14 @@
             "WeaponDamage"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 55.0,
+        "AbilityCooldown": 45.0,
         "AbilityDuration": 3.25,
         "AbilityCastRange": "20m",
         "AbilityUnitTargetLimit": 1,
         "AbilityCastDelay": 0.1,
         "ChannelMoveSpeed": -1,
         "SkipFrames": 6,
-        "BaseAttackDamagePercent": 15
+        "BaseAttackDamagePercent": 20
     },
     "upgrade_greater_withering_whip": {
         "Name": "Disarming Hex",
@@ -2681,7 +2663,7 @@
             "FireRate"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 9,
+        "AbilityCooldown": 8,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
         "HeadShotBonusDamage": 45,
@@ -3005,7 +2987,7 @@
         "IsDisabled": false,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
-        "BonusBulletSpeedPercent": 50,
+        "BonusBulletSpeedPercent": 45,
         "BonusFireRate": 5
     },
     "upgrade_hollow_point_rounds": {
@@ -3205,8 +3187,8 @@
         "BuildUpDuration": 5,
         "OutgoingDamagePenaltyPercent": -35,
         "BaseAttackDamagePercent": 15,
-        "HealAmpReceivePenaltyPercent": -40,
-        "HealAmpRegenPenaltyPercent": -40
+        "HealAmpReceivePenaltyPercent": -35,
+        "HealAmpRegenPenaltyPercent": -35
     },
     "upgrade_intensifying_clip": {
         "Name": "Intensifying Magazine",
@@ -3476,7 +3458,7 @@
         "TechResist": 15,
         "OutOfCombatHealthRegen": 2,
         "LifeThreshold": 65,
-        "CooldownReduction": 5
+        "CooldownReduction": 7
     },
     "upgrade_magic_shock": {
         "Name": "Tankbuster",
@@ -3571,7 +3553,7 @@
         "IsDisabled": false,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
-        "CooldownReduction": 18
+        "CooldownReduction": 22
     },
     "upgrade_magic_vulnerability": {
         "Name": "Mystic Vulnerability",
@@ -3589,7 +3571,7 @@
             "Disruption"
         ],
         "IsDisabled": false,
-        "AbilityDuration": 7,
+        "AbilityDuration": 6,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
         "TechArmorDamageReduction": -8,
@@ -3841,7 +3823,7 @@
                 "Type": "power_increase"
             }
         },
-        "BaseAttackDamagePercent": {
+        "BonusFireRate": {
             "Value": 8,
             "Scale": {
                 "Value": 0.7,
@@ -3940,7 +3922,7 @@
         "IsDisabled": false,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
-        "TechPower": 8,
+        "TechPower": 7,
         "EnemyLifeThreshold": 50,
         "BaseAttackDamagePercentBonus": 40
     },
@@ -3982,7 +3964,7 @@
         "IsDisabled": false,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
-        "TechResist": 15,
+        "TechResist": 14,
         "TechDamageReduction": -25,
         "SilenceDuration": 2.5,
         "DebuffDuration": 6,
@@ -4206,7 +4188,7 @@
         "BulletResistPerStack": 2,
         "BulletResistDuration": 24,
         "BaseAttackDamagePercent": 15,
-        "BonusHealth": 100,
+        "BonusHealth": 125,
         "BonusClipSizePercent": 30
     },
     "upgrade_reload_speed": {
@@ -4412,7 +4394,7 @@
             "Movement"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 34,
+        "AbilityCooldown": 32,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
         "JumpVelocityHidden": "27m",
@@ -4488,8 +4470,8 @@
         "AbilityCastDelay": 0.1,
         "ChannelMoveSpeed": -1,
         "TechPower": 8,
-        "HealAmpReceivePenaltyPercent": -45,
-        "HealAmpRegenPenaltyPercent": -45,
+        "HealAmpReceivePenaltyPercent": -40,
+        "HealAmpRegenPenaltyPercent": -40,
         "TickRate": 1.0,
         "DotHealthPercent": {
             "Value": 2.6,
@@ -4718,7 +4700,7 @@
             "Durability"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 9,
+        "AbilityCooldown": 10,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
         "TechResist": 25,
@@ -4787,11 +4769,11 @@
             "Durability"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 45,
+        "AbilityCooldown": 35,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
         "DamageWindow": 3.5,
-        "DamageThreshold": 225,
+        "DamageThreshold": 150,
         "CombatBarrier": {
             "Value": 300,
             "Scale": {
@@ -4800,7 +4782,7 @@
             }
         },
         "OutOfCombatHealthRegen": 2.5,
-        "BarrierDuration": 7,
+        "BarrierDuration": 8,
         "BonusMoveSpeed": "1.75m"
     },
     "upgrade_spirit_burn": {
@@ -4851,7 +4833,7 @@
             "MagicDamage"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 25,
+        "AbilityCooldown": 35,
         "AbilityDuration": 12,
         "AbilityCastRange": "40m",
         "AbilityUnitTargetLimit": 1,
@@ -4863,7 +4845,7 @@
     },
     "upgrade_spirit_snatch": {
         "Name": "Spirit Snatch",
-        "Description": "When you perform a <span class=\"highlight\">Light or Heavy Melee</span> attack against a hero, the attack deals extra <span class=\"highlight\">Spirit Damage</span> and steals <span class=\"highlight\">Spirit Resist</span> and <span class=\"highlight\">Spirit Power</span>.<span class=\"diminish\"><br><br>Effects are reduced to 70% for Light Melee hits.</span>",
+        "Description": "When you perform a <span class=\"highlight\">Light or Heavy Melee</span> attack against a hero, the attack deals extra <span class=\"highlight\">Spirit Damage</span> and steals <span class=\"highlight\">Spirit Resist</span> and <span class=\"highlight\">Spirit Power</span>.<span class=\"diminish\"><br><br>Cooldown is 2x longer for Light Melee hits.</span>",
         "Cost": 3200,
         "Tier": 3,
         "Activation": "Passive",
@@ -4883,7 +4865,7 @@
         "AbilityDuration": 10,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
-        "LightMeleeScale": 70,
+        "LightMeleeCooldownMult": 2,
         "SpiritDamage": {
             "Value": 50,
             "Scale": {
@@ -4911,7 +4893,7 @@
             "WeaponDamage"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 32,
+        "AbilityCooldown": 14,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
         "BonusShotsDuration": 5,
@@ -5165,12 +5147,14 @@
     },
     "upgrade_targeted_silence": {
         "Name": "Silence Wave",
-        "Description": "Launch an expanding projectile which <span class=\"highlight\">Silences</span> enemies for a short duration and deals impact damage. <br><br><span class=\"diminish\">Silence does not interrupt channeling abilities.</span>",
+        "Description": "Launch an expanding projectile which <span class=\"highlight\">Silences</span> enemies for a short duration. Affected enemies also have their <span class=\"highlight\">Spirit Resist</span> and <span class=\"highlight\">Spirit Power</span> reduced for a longer duration. <br><br><span class=\"diminish\">Silence does not interrupt channeling abilities.</span>",
         "Cost": 3200,
         "Tier": 3,
         "Activation": "InstantCast",
         "Slot": "Tech",
-        "Components": null,
+        "Components": [
+            "upgrade_spirit_sap"
+        ],
         "TargetTypes": [
             "HeroEnemy"
         ],
@@ -5190,13 +5174,9 @@
         "HeightOffGround": "1m",
         "GrowthPerMeter": "0.15m",
         "InitialWidth": "5.0m",
-        "Damage": {
-            "Value": 100,
-            "Scale": {
-                "Value": 0.3,
-                "Type": "spirit"
-            }
-        }
+        "MagicResistReduction": -12,
+        "ResistReductionDuration": 12,
+        "TechPowerReduction": -24
     },
     "upgrade_tech_armor": {
         "Name": "Spirit Armor",
@@ -5350,9 +5330,9 @@
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
         "AbilityLifestealPercentHero": 15,
-        "BonusFireRate": 35,
+        "BonusFireRate": 30,
         "BonusSpirit": 30,
-        "CooldownReduction": 12,
+        "CooldownReduction": 20,
         "BuildUpPerShot": 0.75,
         "BuildUpDuration": 5
     },
@@ -5516,7 +5496,7 @@
                 "Type": "spirit"
             }
         },
-        "DotDuration": 4,
+        "DotDuration": 3,
         "BuildUpPerShot": 1.058,
         "BuildUpDuration": 5,
         "TickRate": 0.5,
@@ -5541,8 +5521,8 @@
         "IsDisabled": false,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
-        "CooldownReduction": 25,
-        "ItemCooldownReduction": 25,
+        "CooldownReduction": 30,
+        "ItemCooldownReduction": 30,
         "OutOfCombatHealthRegen": 4
     },
     "upgrade_trophy_collector": {
@@ -5694,8 +5674,8 @@
             "Durability"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 40,
-        "AbilityDuration": 10,
+        "AbilityCooldown": 26.0,
+        "AbilityDuration": 12,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
         "VexBarrierCombatBarrier": {
@@ -5725,7 +5705,7 @@
         "AbilityCastRange": "11m",
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
-        "BulletResist": 30,
+        "BulletResist": 35,
         "CasterBuffDuration": 6
     },
     "upgrade_weapon_backstabber": {
@@ -5865,7 +5845,7 @@
             "Durability"
         ],
         "IsDisabled": false,
-        "AbilityCooldown": 45,
+        "AbilityCooldown": 35,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
         "DamageWindow": 3.5,
@@ -5878,7 +5858,7 @@
             }
         },
         "OutOfCombatHealthRegen": 2.5,
-        "BarrierDuration": 7,
+        "BarrierDuration": 8,
         "BonusMoveSpeed": "1.75m"
     },
     "upgrade_weighted_shots": {
@@ -5896,7 +5876,7 @@
         "IsDisabled": false,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
-        "BaseAttackDamagePercent": 35,
+        "BaseAttackDamagePercent": 30,
         "StatusResistancePercent": 16,
         "TechResist": 16,
         "BonusBulletSpeedPercent": -30,

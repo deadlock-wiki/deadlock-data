@@ -1,8 +1,8 @@
 {
     "citadel_item_pickup_rejuv": {
-        "BonusFireRate": 0.0,
-        "BonusMaxHealth": 0.0,
-        "BonusSpiritDamage": 0.0,
+        "BonusFireRate": 15.0,
+        "BonusMaxHealth": 10.0,
+        "BonusSpiritDamage": 15.0,
         "Name": "citadel_item_pickup_rejuv",
         "RespawnDelay": 3.0,
         "RespawnLifePercent": 100.0
@@ -24,38 +24,38 @@
         "MinigameDuration": 3.0,
         "MinigameHitWindow": 0.5,
         "Name": "neutral_sinners_sacrifice",
-        "RetaliateDamage": 80.0,
+        "RetaliateDamage": 60.0,
         "SpawnInterval": 300
     },
     "neutral_trooper_normal": {
-        "GoldReward": 92,
+        "GoldReward": 84,
         "GoldRewardBonusPercentPerMinute": 1.08,
         "InitialSpawnDelay": 360,
-        "IntrinsicAbilityResistance": 40.0,
+        "IntrinsicAbilityResistance": 30.0,
         "IntrinsicBulletResistance": 50.0,
-        "MaxHealth": 575,
+        "MaxHealth": 500,
         "Name": "neutral_trooper_normal",
         "SpawnInterval": 420
     },
     "neutral_trooper_strong": {
-        "GoldReward": 247,
+        "GoldReward": 225,
         "GoldRewardBonusPercentPerMinute": 1.08,
         "InitialSpawnDelay": 480,
-        "IntrinsicAbilityResistance": 50.0,
+        "IntrinsicAbilityResistance": 35.0,
         "IntrinsicBulletResistance": 60.0,
-        "MaxHealth": 2024,
+        "MaxHealth": 1760,
         "Name": "neutral_trooper_strong",
         "SpawnInterval": 480
     },
     "neutral_trooper_weak": {
-        "GoldReward": 56,
+        "GoldReward": 51,
         "GoldRewardBonusPercentPerMinute": 1.08,
         "InitialSpawnDelay": 120,
         "IntrinsicAbilityResistance": 30.0,
         "IntrinsicBulletResistance": 50.0,
-        "MaxHealth": 230,
+        "MaxHealth": 200,
         "Name": "neutral_trooper_weak",
-        "SpawnInterval": 120
+        "SpawnInterval": 180
     },
     "npc_barrack_boss": {
         "BackdoorBulletResistBase": 40,
@@ -80,7 +80,7 @@
     "npc_boss_tier1": {
         "IntrinsicAbilityResistance": 0.0,
         "InvulnerabilityRange": 24.0,
-        "MaxHealth": 4250,
+        "MaxHealth": 3500,
         "MeleeAttemptRange": 5.0,
         "MeleeDamage": 100.0,
         "Name": "npc_boss_tier1",
@@ -114,8 +114,8 @@
         "FriendlyAuraRadius": 32.0,
         "FriendlyAuraSpiritArmor": 15,
         "IntrinsicAbilityResistance": 0.0,
-        "InvulnerabilityRange": 22.0,
-        "MaxHealth": 12880,
+        "InvulnerabilityRange": 34.0,
+        "MaxHealth": 9200,
         "MeleeAttemptRange": 15.24,
         "Name": "npc_boss_tier2",
         "NearbyEnemyResistanceRange": 50.8,
@@ -125,19 +125,19 @@
             0,
             20,
             30,
-            35,
-            40
+            40,
+            50
         ],
-        "PlayerInitialSightRange": 22.0,
+        "PlayerInitialSightRange": 30.48,
         "RangedResistanceMaxRange": 50.8,
         "RangedResistanceMaxValue": 100.0,
         "RangedResistanceMinRange": 30.48,
-        "SightRangeNPCs": 28.0,
-        "SightRangePlayers": 23.98,
+        "SightRangeNPCs": 40.64,
+        "SightRangePlayers": 40.64,
         "StompDamage": 350.0,
-        "StompDamageMaxHealthPercent": 15.0,
+        "StompDamageMaxHealthPercent": 10.0,
         "StompKnockup": 1.25,
-        "StompRadius": 14.5,
+        "StompRadius": 23.0,
         "StompStunDuration": 2.0
     },
     "npc_boss_tier2_weak": {
@@ -161,8 +161,8 @@
         "FriendlyAuraRadius": 32.0,
         "FriendlyAuraSpiritArmor": 15,
         "IntrinsicAbilityResistance": 0.0,
-        "InvulnerabilityRange": 22.0,
-        "MaxHealth": 12880,
+        "InvulnerabilityRange": 34.0,
+        "MaxHealth": 5800,
         "MeleeAttemptRange": 15.24,
         "Name": "npc_boss_tier2_weak",
         "NearbyEnemyResistanceRange": 50.8,
@@ -172,19 +172,19 @@
             0,
             20,
             30,
-            35,
-            40
+            40,
+            50
         ],
-        "PlayerInitialSightRange": 22.0,
+        "PlayerInitialSightRange": 30.48,
         "RangedResistanceMaxRange": 50.8,
         "RangedResistanceMaxValue": 100.0,
         "RangedResistanceMinRange": 30.48,
-        "SightRangeNPCs": 28.0,
-        "SightRangePlayers": 23.98,
+        "SightRangeNPCs": 40.64,
+        "SightRangePlayers": 40.64,
         "StompDamage": 350.0,
-        "StompDamageMaxHealthPercent": 15.0,
+        "StompDamageMaxHealthPercent": 10.0,
         "StompKnockup": 1.25,
-        "StompRadius": 14.5,
+        "StompRadius": 23.0,
         "StompStunDuration": 2.0
     },
     "npc_boss_tier3": {
@@ -218,11 +218,12 @@
         "Name": "npc_boss_tier3",
         "OutOfCombatHealthRegen": 120.0,
         "RangedResistanceMaxRange": 50.8,
+        "RangedResistanceMaxValue": 100.0,
         "RangedResistanceMinRange": 25.4,
         "SightRangePlayers": 76.2
     },
     "npc_super_neutral": {
-        "HealthGainPerMinute": 230,
+        "HealthGainPerMinute": 200,
         "HealthRegenPerSecond": 15.0,
         "InitialSpawnDelay": 600,
         "IntrinsicAbilityResistance": 0.0,
@@ -232,7 +233,7 @@
             "ScalingAbsorptionPerMinute": 5
         },
         "SpawnInterval": 420,
-        "StartingHealth": 14000
+        "StartingHealth": 13000
     },
     "trooper_medic": {
         "BarrackBossDPS": 80.0,
