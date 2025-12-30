@@ -1329,7 +1329,7 @@
     "ability_explosive_barrel": {
         "AbilityCastDelay": 0.125,
         "AbilityCharges": 1,
-        "AbilityCooldown": 32.0,
+        "AbilityCooldown": 28.0,
         "AbilityCooldownBetweenCharge": 3.5,
         "AbilityUnitTargetLimit": 1,
         "ArmTime": 0.5,
@@ -1893,10 +1893,10 @@
     },
     "ability_guided_arrow": {
         "AbilityCastDelay": 1.5,
-        "AbilityChannelTime": 16,
+        "AbilityChannelTime": 18,
         "AbilityCooldown": 120.0,
         "AbilityUnitTargetLimit": 1,
-        "BonusTechPowerPerKill": 5,
+        "BonusTechPowerPerKill": 8,
         "Damage": {
             "Value": 230.0,
             "Scale": {
@@ -1911,7 +1911,7 @@
         "StunDuration": 0.75,
         "Upgrades": [
             {
-                "Damage": 81.0
+                "Damage": 85.0
             },
             {
                 "AbilityCooldown": -45.0
@@ -2194,7 +2194,8 @@
                 }
             },
             {
-                "Damage": 144.0
+                "Damage": 144.0,
+                "StaminaCooldownIncrease": -30
             }
         ]
     },
@@ -2284,8 +2285,8 @@
             },
             {
                 "BonusSpiritMeter": 1,
-                "BonusSpiritMax": 55,
-                "BonusSpiritLingerDuration": 6
+                "BonusSpiritMax": 75,
+                "BonusSpiritLingerDuration": 8
             }
         ]
     },
@@ -2606,7 +2607,7 @@
     "ability_magician_animalhexarea": {
         "AbilityCastDelay": 0.15,
         "AbilityCastRange": 24,
-        "AbilityCooldown": 30,
+        "AbilityCooldown": 26,
         "AbilityUnitTargetLimit": 1,
         "AirDampingDuration": 1,
         "ChannelMoveSpeed": -1,
@@ -2624,7 +2625,7 @@
         "Key": "ability_magician_animalhexarea",
         "MoveSpeedBonusPct": 36,
         "Name": "Rabbit Hex",
-        "Radius": 6,
+        "Radius": 6.5,
         "SelfBumpImpulse": 500,
         "Upgrades": [
             {
@@ -2786,7 +2787,7 @@
         "ChannelMoveSpeed": -1,
         "CloneBoltDelay": 0.1,
         "CloneDamagePercentage": 50.0,
-        "InitialProjectileVelocity": 1000,
+        "InitialProjectileVelocity": 800,
         "IsDisabled": false,
         "Key": "ability_magician_magicbolt",
         "MaxDamage": {
@@ -2805,7 +2806,7 @@
             }
         },
         "Name": "Vexing Bolt",
-        "ProjectileLifetime": 3,
+        "ProjectileLifetime": 4,
         "ProjectileRedirectCount": 1,
         "Radius": 3.25,
         "RedirectVelocity": 1500,
@@ -3327,7 +3328,7 @@
     },
     "ability_power_jump": {
         "AbilityCastDelay": 0.5,
-        "AbilityCooldown": 35.0,
+        "AbilityCooldown": 30.0,
         "AbilityDuration": 7,
         "AbilityUnitTargetLimit": 1,
         "AirMoveIncreasePercent": -9,
@@ -3352,7 +3353,8 @@
             },
             {
                 "BulletLifestealPercent": 30,
-                "TechLifestealPercent": 30
+                "TechLifestealPercent": 30,
+                "EvasionPercent": 30
             }
         ],
         "WeaponDamageBonus": 4
@@ -3394,8 +3396,8 @@
                 "AbilityCooldown": -15.0
             },
             {
-                "TechResistDebuff": -15,
-                "DebuffDuration": 8
+                "TechResistDebuff": -10,
+                "DebuffDuration": 6
             },
             {
                 "DamagePerChain": {
@@ -4461,9 +4463,10 @@
         "AbilityCastDelay": 0.15,
         "AbilityCastRange": 35,
         "AbilityCooldown": 42.0,
-        "AbilityDuration": 3.0,
+        "AbilityDuration": 3,
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": 1.3,
+        "Damage": 40,
         "GrowthPerMeter": 0.5,
         "HeightOffGround": 20,
         "InitialWidth": 5,
@@ -4475,10 +4478,11 @@
                 "AbilityDuration": 1
             },
             {
-                "AbilityCooldown": -19.0
+                "AbilityCooldown": -23.0
             },
             {
-                "SlowPercent": 40
+                "SlowPercent": 40,
+                "GroundDashReductionPercent": -40
             }
         ]
     },
@@ -5946,7 +5950,7 @@
         ]
     },
     "citadel_ability_chrono_kinetic_carbine": {
-        "AbilityCooldown": 30.0,
+        "AbilityCooldown": 27.0,
         "AbilityUnitTargetLimit": 1,
         "BonusBulletSpeed": 100,
         "BulletRadiusOverride": 13.7,
@@ -6097,7 +6101,7 @@
         "TimeWallFormationTime": 0.5,
         "TimeWallHeight": 3.5,
         "TimeWallTimeScale": 0.0001,
-        "TimeWallWidth": 7,
+        "TimeWallWidth": 7.5,
         "Upgrades": [
             {
                 "TimeWallWidth": 2,
@@ -6431,7 +6435,7 @@
         "BulletResist": 40,
         "IsDisabled": false,
         "Key": "citadel_ability_infinity_slash",
-        "MaxHealthRegen": 12,
+        "MaxHealthRegen": 15,
         "Name": "Shadow Transformation",
         "ShadowFormDurationOnKill": 2.0,
         "TechResist": 40,
@@ -6689,7 +6693,7 @@
             },
             {
                 "DPS": 58.5,
-                "ShockRadius": 1
+                "ShockRadius": 1.5
             }
         ]
     },
@@ -6858,7 +6862,13 @@
                 "AbilityCooldown": -2
             },
             {
-                "FullChargeDamage": 166.5
+                "FullChargeDamage": {
+                    "Value": 150,
+                    "Scale": {
+                        "Value": 0.5,
+                        "Type": "spirit"
+                    }
+                }
             }
         ]
     },
@@ -7390,13 +7400,25 @@
         "AbilityCooldown": 18.0,
         "AbilityDuration": 3.0,
         "AbilityUnitTargetLimit": 1,
-        "BonusDamagePctPerPlayerHit": 1.5,
-        "BonusDamagePctPerPlayerKilled": 4,
+        "BonusDamagePctPerPlayerHit": {
+            "Value": 1.0,
+            "Scale": {
+                "Value": 0.0025,
+                "Type": "spirit"
+            }
+        },
+        "BonusDamagePctPerPlayerKilled": {
+            "Value": 2.5,
+            "Scale": {
+                "Value": 0.015,
+                "Type": "spirit"
+            }
+        },
         "ChannelMoveSpeed": -1,
         "Damage": {
-            "Value": 100,
+            "Value": 75,
             "Scale": {
-                "Value": 1.116,
+                "Value": 1.5,
                 "Type": "spirit"
             }
         },
@@ -7411,7 +7433,7 @@
                 "AbilityCooldown": -8
             },
             {
-                "Damage": 63.0
+                "Damage": 60.0
             },
             {
                 "MovementSpeedBonus": 5,
@@ -7475,7 +7497,7 @@
         "CameraDistance": 600,
         "CloudHeight": 120,
         "DPS": {
-            "Value": 90,
+            "Value": 95,
             "Scale": {
                 "Value": 0.6,
                 "Type": "spirit"
@@ -7509,7 +7531,7 @@
                 "AbilityChannelTime": 7
             },
             {
-                "DPS": 54.0,
+                "DPS": 65.0,
                 "FlightControlEnabled": 1
             }
         ]
@@ -7540,7 +7562,13 @@
         "MoveWhileShootingSpeedPenaltyReductionPercent": 100,
         "MoveWhileZoomedSpeedPenaltyReductionPercent": 100,
         "Name": "Watcher's Covenant",
-        "TetherSharedHealPct": 25,
+        "TetherSharedHealPct": {
+            "Value": 35,
+            "Scale": {
+                "Value": 0.5,
+                "Type": "power_increase"
+            }
+        },
         "TickRate": 0.1,
         "TotalTetherTargets": 1,
         "Upgrades": [
@@ -7569,7 +7597,7 @@
             }
         },
         "AllyCastDelay": 0.2,
-        "AllyOutgoingDamagePercent": -30,
+        "AllyOutgoingDamagePercent": -20,
         "BuffDuration": 5,
         "ChannelMoveSpeed": 1.3,
         "DebuffDuration": 3,

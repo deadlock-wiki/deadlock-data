@@ -544,7 +544,7 @@
                 },
                 {
                     "DPS": 58.5,
-                    "ShockRadius": 1,
+                    "ShockRadius": 1.5,
                     "DescKey": "citadel_ability_lightning_ball_t3_desc"
                 }
             ],
@@ -719,8 +719,8 @@
                     "AbilityCooldown": -15.0
                 },
                 {
-                    "TechResistDebuff": -15,
-                    "DebuffDuration": 8,
+                    "TechResistDebuff": -10,
+                    "DebuffDuration": 6,
                     "DescKey": "ability_power_surge_t2_desc"
                 },
                 {
@@ -797,7 +797,7 @@
                         {
                             "Key": "DPS",
                             "Name": "Damage Per Second",
-                            "Value": 90,
+                            "Value": 95,
                             "Scale": {
                                 "Value": 0.6,
                                 "Type": "spirit"
@@ -857,7 +857,7 @@
                     "DescKey": "citadel_ability_storm_cloud_t2_desc"
                 },
                 {
-                    "DPS": 54.0,
+                    "DPS": 65.0,
                     "FlightControlEnabled": 1,
                     "DescKey": "citadel_ability_storm_cloud_t3_desc"
                 }
@@ -3265,7 +3265,7 @@
                     {
                         "Key": "TimeWallWidth",
                         "Name": "Wall Width",
-                        "Value": 7,
+                        "Value": 7.5,
                         "Type": "range"
                     },
                     {
@@ -3503,7 +3503,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 30.0,
+                "Value": 27.0,
                 "Type": "cooldown"
             }
         },
@@ -4071,7 +4071,9 @@
                     "DescKey": "ability_ice_grenade_t2_desc"
                 },
                 {
-                    "Damage": 144.0
+                    "Damage": 144.0,
+                    "StaminaCooldownIncrease": -30,
+                    "DescKey": "ability_ice_grenade_t3_desc"
                 }
             ],
             "Move": {
@@ -4159,8 +4161,8 @@
                 },
                 {
                     "BonusSpiritMeter": 1,
-                    "BonusSpiritMax": 55,
-                    "BonusSpiritLingerDuration": 6,
+                    "BonusSpiritMax": 75,
+                    "BonusSpiritLingerDuration": 8,
                     "DescKey": "ability_icepath_t3_desc"
                 }
             ],
@@ -5023,7 +5025,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 32.0,
+                "Value": 28.0,
                 "Type": "cooldown"
             },
             "AbilityCooldownBetweenCharge": {
@@ -5564,9 +5566,9 @@
                             "Title": "On Hit:",
                             "Key": "Damage",
                             "Name": "Damage",
-                            "Value": 100,
+                            "Value": 75,
                             "Scale": {
-                                "Value": 1.116,
+                                "Value": 1.5,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -5583,14 +5585,22 @@
                             "Title": "On Hero Hit:",
                             "Key": "BonusDamagePctPerPlayerHit",
                             "Name": "Sticky Bomb Damage",
-                            "Value": 1.5,
+                            "Value": 1.0,
+                            "Scale": {
+                                "Value": 0.0025,
+                                "Type": "spirit"
+                            },
                             "Type": "damage"
                         },
                         {
                             "Title": "On Hero Kill:",
                             "Key": "BonusDamagePctPerPlayerKilled",
                             "Name": "Sticky Bomb Damage",
-                            "Value": 4,
+                            "Value": 2.5,
+                            "Scale": {
+                                "Value": 0.015,
+                                "Type": "spirit"
+                            },
                             "Type": "damage"
                         }
                     ]
@@ -5602,7 +5612,7 @@
                     "AbilityCooldown": -8
                 },
                 {
-                    "Damage": 63.0
+                    "Damage": 60.0
                 },
                 {
                     "MovementSpeedBonus": 5,
@@ -6410,6 +6420,11 @@
                         "Name": "Spirit Lifesteal",
                         "Value": 0,
                         "Type": "healing"
+                    },
+                    {
+                        "Key": "EvasionPercent",
+                        "Name": "Bullet Evasion",
+                        "Value": 0
                     }
                 ],
                 "DescKey": "ability_power_jump_desc"
@@ -6427,6 +6442,7 @@
                 {
                     "BulletLifestealPercent": 30,
                     "TechLifestealPercent": 30,
+                    "EvasionPercent": 30,
                     "DescKey": "ability_power_jump_t3_desc"
                 }
             ],
@@ -6471,7 +6487,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 35.0,
+                "Value": 30.0,
                 "Type": "cooldown"
             },
             "AbilityDuration": {
@@ -6645,7 +6661,7 @@
                     {
                         "Key": "BonusTechPowerPerKill",
                         "Name": "Spirit Power Per Kill",
-                        "Value": 5,
+                        "Value": 8,
                         "Type": "tech_damage"
                     }
                 ],
@@ -6653,7 +6669,7 @@
             },
             "Upgrades": [
                 {
-                    "Damage": 81.0
+                    "Damage": 85.0
                 },
                 {
                     "AbilityCooldown": -45.0
@@ -6666,7 +6682,7 @@
             "Cast": {
                 "AbilityChannelTime": {
                     "Name": "Channel Duration",
-                    "Value": 16,
+                    "Value": 18,
                     "Type": "cast"
                 }
             },
@@ -6915,8 +6931,14 @@
                             "Key": "AbilityDuration",
                             "Name": "Duration",
                             "StatusEffect": "Disarmed",
-                            "Value": 3.0,
+                            "Value": 3,
                             "Type": "duration"
+                        },
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 40,
+                            "Type": "tech_damage"
                         },
                         {
                             "Key": "SlowPercent",
@@ -6934,10 +6956,11 @@
                     "AbilityDuration": 1
                 },
                 {
-                    "AbilityCooldown": -19.0
+                    "AbilityCooldown": -23.0
                 },
                 {
                     "SlowPercent": 40,
+                    "GroundDashReductionPercent": -40,
                     "DescKey": "ability_throw_sand_t3_desc"
                 }
             ],
@@ -6983,7 +7006,7 @@
             },
             "AbilityDuration": {
                 "Name": "Duration",
-                "Value": 3.0,
+                "Value": 3,
                 "Type": "duration"
             }
         },
@@ -7643,7 +7666,11 @@
                         {
                             "Key": "TetherSharedHealPct",
                             "Name": "Replicated Healing",
-                            "Value": 25,
+                            "Value": 35,
+                            "Scale": {
+                                "Value": 0.5,
+                                "Type": "power_increase"
+                            },
                             "Type": "healing"
                         }
                     ]
@@ -7935,7 +7962,7 @@
             "Damage": {
                 "AllyOutgoingDamagePercent": {
                     "Name": null,
-                    "Value": -30,
+                    "Value": -20,
                     "Type": "damage"
                 }
             },
@@ -8410,7 +8437,14 @@
                     "DescKey": "citadel_ability_power_slash_t2_desc"
                 },
                 {
-                    "FullChargeDamage": 166.5
+                    "FullChargeDamage": {
+                        "Value": 150,
+                        "Scale": {
+                            "Value": 0.5,
+                            "Type": "spirit"
+                        }
+                    },
+                    "DescKey": "citadel_ability_power_slash_t3_desc"
                 }
             ],
             "Move": {
@@ -8651,7 +8685,7 @@
                         {
                             "Key": "MaxHealthRegen",
                             "Name": "Max Health Heal",
-                            "Value": 12,
+                            "Value": 15,
                             "Type": "healing"
                         }
                     ]
@@ -12902,11 +12936,11 @@
                 },
                 "InitialProjectileVelocity": {
                     "Name": null,
-                    "Value": 1000
+                    "Value": 800
                 },
                 "ProjectileLifetime": {
                     "Name": null,
-                    "Value": 3
+                    "Value": 4
                 },
                 "ProjectileRedirectCount": {
                     "Name": "Max Redirects",
@@ -13086,7 +13120,7 @@
                     {
                         "Key": "Radius",
                         "Name": "Radius",
-                        "Value": 6,
+                        "Value": 6.5,
                         "Type": "distance"
                     }
                 ],
@@ -13151,12 +13185,12 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 30,
+                "Value": 26,
                 "Type": "cooldown"
             },
             "Radius": {
                 "Name": "Radius",
-                "Value": 6,
+                "Value": 6.5,
                 "Type": "distance"
             }
         },
