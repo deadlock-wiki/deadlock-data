@@ -2780,7 +2780,7 @@
                             "Name": "Heal Radius",
                             "Value": 5,
                             "Scale": {
-                                "Value": 0.0465,
+                                "Value": 0.03,
                                 "Type": "spirit"
                             },
                             "Type": "distance"
@@ -2818,7 +2818,7 @@
                     "AbilityCooldown": -17.0
                 },
                 {
-                    "MaxHealthRegenPct": 3,
+                    "MaxHealthRegenPct": 2.5,
                     "DescKey": "citadel_ability_mobile_resupply_t3_desc"
                 }
             ],
@@ -2865,7 +2865,7 @@
                 "Name": "Duration",
                 "Value": 6,
                 "Scale": {
-                    "Value": 0.1116,
+                    "Value": 0.05,
                     "Type": "spirit"
                 },
                 "Type": "duration"
@@ -3048,7 +3048,8 @@
             },
             "Upgrades": [
                 {
-                    "MoveSlowPercent": 30,
+                    "MoveSlowPercent": 40,
+                    "EnemyDashSlowPercent": -20,
                     "MoveSlowDuration": 2.0,
                     "DescKey": "citadel_ability_rocket_barrage_t1_desc"
                 },
@@ -3059,7 +3060,7 @@
                     "DamagePerRocket": {
                         "Value": 20.7,
                         "Scale": {
-                            "Value": 0.093,
+                            "Value": 0.2,
                             "Type": "spirit"
                         }
                     },
@@ -5566,7 +5567,7 @@
                             "Title": "On Hit:",
                             "Key": "Damage",
                             "Name": "Damage",
-                            "Value": 75,
+                            "Value": 85,
                             "Scale": {
                                 "Value": 1.5,
                                 "Type": "spirit"
@@ -5612,7 +5613,7 @@
                     "AbilityCooldown": -8
                 },
                 {
-                    "Damage": 60.0
+                    "Damage": 70.0
                 },
                 {
                     "MovementSpeedBonus": 5,
@@ -5638,6 +5639,14 @@
                 "AbilityUnitTargetLimit": {
                     "Name": null,
                     "Value": 1
+                },
+                "OnHitDiminish": {
+                    "Name": null,
+                    "Value": 100
+                },
+                "OnKillDiminish": {
+                    "Name": null,
+                    "Value": 10
                 }
             },
             "AbilityCastRange": {

@@ -6745,7 +6745,7 @@
         "AbilityDuration": {
             "Value": 6,
             "Scale": {
-                "Value": 0.1116,
+                "Value": 0.05,
                 "Type": "spirit"
             }
         },
@@ -6756,7 +6756,7 @@
         "HealRadius": {
             "Value": 5,
             "Scale": {
-                "Value": 0.0465,
+                "Value": 0.03,
                 "Type": "spirit"
             }
         },
@@ -6773,7 +6773,7 @@
                 "AbilityCooldown": -17.0
             },
             {
-                "MaxHealthRegenPct": 3
+                "MaxHealthRegenPct": 2.5
             }
         ]
     },
@@ -7049,7 +7049,8 @@
         "TrackingTime": 0.4,
         "Upgrades": [
             {
-                "MoveSlowPercent": 30,
+                "MoveSlowPercent": 40,
+                "EnemyDashSlowPercent": -20,
                 "MoveSlowDuration": 2.0
             },
             {
@@ -7059,7 +7060,7 @@
                 "DamagePerRocket": {
                     "Value": 20.7,
                     "Scale": {
-                        "Value": 0.093,
+                        "Value": 0.2,
                         "Type": "spirit"
                     }
                 }
@@ -7416,7 +7417,7 @@
         },
         "ChannelMoveSpeed": -1,
         "Damage": {
-            "Value": 75,
+            "Value": 85,
             "Scale": {
                 "Value": 1.5,
                 "Type": "spirit"
@@ -7427,13 +7428,15 @@
         "Key": "citadel_ability_sticky_bomb",
         "KillCheckWindow": 12.0,
         "Name": "Sticky Bomb",
+        "OnHitDiminish": 100,
+        "OnKillDiminish": 10,
         "Radius": 12,
         "Upgrades": [
             {
                 "AbilityCooldown": -8
             },
             {
-                "Damage": 60.0
+                "Damage": 70.0
             },
             {
                 "MovementSpeedBonus": 5,
