@@ -11,13 +11,13 @@
 
 * This update includes a new version of the matchmaker. The matchmaking pools are no longer split between normal and ranked, there is only one primary matchmaking mode and there are no limited hours.
 
-* Badges will update immediately whenever you gain or lose enough MMR to change badges. You no longer have to wait a week or play a certain game count. There will sometimes be monthly global maintenance updates where we readjust the global curve based on the population, cheaters banned, recalculation adjustments, etc (this will be done as needed and not necessarily every month).
+* Badges will update immediately whenever you gain or lose enough MMR to change badges. You no longer have to wait a week or play a certain game count. There will sometimes be monthly global maintenance [[Updates|updates]] where we readjust the global curve based on the population, cheaters banned, recalculation adjustments, etc (this will be done as needed and not necessarily every month).
 
-* Hero MMR is now used in the Matchmaker. Each player will have a "core" MMR and your MMR per hero will be offsets of your core MMR. When you queue, we will match you based on that hero's MMR. So if you are unfamiliar or play worse with a given hero, you will be put in an easier match than your usual. Judgement on your skill and familiarity with a hero will be based on the 20 most recent games with that hero. In your profile, we have UI that shows you what the matchmaker thinks your relative ranking for each hero is (give us feedback on this, we expect to iterate on this calculation).
+* [[Hero]] MMR is now used in the Matchmaker. Each player will have a "core" MMR and your MMR per [[Hero|hero]] will be offsets of your core MMR. When you queue, we will match you based on that [[Hero|hero]]'s MMR. So if you are unfamiliar or play worse with a given [[Hero|hero]], you will be put in an easier match than your usual. Judgement on your skill and familiarity with a [[Hero|hero]] will be based on the 20 most recent games with that [[Hero|hero]]. In your profile, we have UI that shows you what the matchmaker thinks your relative ranking for each [[Hero|hero]] is (give us feedback on this, we expect to iterate on this calculation).
 
-* Leaderboards are also included per region (North America, South America, Europe, Asia, Oceania). There is a top 1000 Core MMR leaderboard as well as a top 1000 Hero MMR leaderboard for each hero (for each region separately). To qualify for being considered in leaderboards in general, you must have 50 games played in the last 30 days. To qualify for a specific hero's leaderboard, you must have played at least 20 games on that hero in the past 30 days.
+* Leaderboards are also included per region (North America, South America, Europe, Asia, Oceania). There is a top 1000 Core MMR leaderboard as well as a top 1000 [[Hero]] MMR leaderboard for each [[Hero|hero]] (for each region separately). To qualify for being considered in leaderboards in general, you must have 50 games played in the last 30 days. To qualify for a specific [[Hero|hero]]'s leaderboard, you must have played at least 20 games on that [[Hero|hero]] in the past 30 days.
 
-* You can queue as any party size, however there are a few details. If the range of skill in your party is too wide, the amount of MMR you can gain will be reduced somewhat based on the degree. This is especially true if it’s a player we don't know anything about (like a very high mmr player queuing with a  "new" player, we will minimize updates to the known player until we are more confident we can trust the skill of that party overall).
+* You can queue as any party size, however there are a few details. If the range of skill in your party is too wide, the amount of MMR you can gain will be reduced somewhat based on the degree. This is especially true if it’s a player we don't know anything about (like a very high mmr player queuing with a  "new" player, we will minimize [[Updates|updates]] to the known player until we are more confident we can trust the skill of that party overall).
 
 * The previous limit on high MMR party sizes is increased from 2 to 3. This applies to Ascendant 1 and above. This is the old limit we had on disallowing too many high MMR players to be in the same party together, for matchmaking quality reasons.
 
@@ -25,9 +25,9 @@
 
 * If you prefer playing with only solos, there is a convar (mm_prefer_solo_only true) you can use.
 
-* When queuing as a party, you will have an option to override the default balance oriented lane assignment system and make the system prioritize putting your party members in the same lanes together.
+* When queuing as a party, you will have an option to override the default balance oriented lane assignment system and make the system prioritize putting your party members in the same [[Lanes|lanes]] together.
 
-* Added Swap Lanes feature. During the rooftop and zipline phase at the start of the game, you can now request to swap lanes with your teammates by clicking the button below their portrait on the scoreboard. If the other player accepts your request, you will immediately be swapped. You may decline an incoming request by right clicking it.
+* Added Swap [[Lanes]] feature. During the rooftop and zipline phase at the start of the game, you can now request to swap [[Lanes|lanes]] with your teammates by clicking the button below their portrait on the scoreboard. If the other player accepts your request, you will immediately be swapped. You may decline an incoming request by right clicking it.
 
 * There is an option to notify you anytime your rank levels up. There is also an option to show the average badge of each team for the post game.
 
@@ -38,87 +38,87 @@
 
 * Added secondary key binds for actions
 * You are now able to browse and favorite builds in the dashboard
-* Sandbox mode now shows the souls value of the current items you have in your inventory
-* Abilitiy tooltips now list exactly which items the ability has been imbued with rather than "Ability is imbued"
-* Items in the shop that imbue abilities are tagged with a label with a similar styling to active items
+* Sandbox mode now shows the [[Souls|souls]] value of the current [[Items|items]] you have in your inventory
+* Abilitiy tooltips now list exactly which [[Items|items]] the [[Ability|ability]] has been imbued with rather than "[[Ability]] is imbued"
+* [[Items]] in the [[Shop|shop]] that [[Imbue|imbue]] [[Abilities|abilities]] are tagged with a label with a similar styling to [[Active Items|active items]]
 * Commend toasts now stay on your screen until they are dismissed
 * Commend toasts now have a button to return the commend to the player that commended you
-* Adjusted the behavior of the Incoming Damage UI so that it can still be used in Sandbox mode
-* There is now a Change Hero button in the Build Browser which brings up the hero picker to choose a different hero in both Sandbox and in the Dashboard
+* Adjusted the behavior of the Incoming [[Damage]] UI so that it can still be used in Sandbox mode
+* There is now a Change [[Hero]] button in the Build Browser which brings up the [[Hero|hero]] picker to choose a different [[Hero|hero]] in both Sandbox and in the Dashboard
 
 Quickbuy:
-   - Decision dialogs for dealing with item limits, imbuing, and activation slots are now shown at queue time rather than purchase time whenever possible
-   - You can now queue items to sell.  If you right click on items that you own it will add them to the front of your quickbuy queue, and they will be queued to sell. The sale price of these items will be added to your current souls to calculate when you can afford to purchase the next item in your quickbuy queue..
+   - Decision dialogs for dealing with [[Item|item]] limits, imbuing, and activation slots are now shown at queue time rather than purchase time whenever possible
+   - You can now queue [[Items|items]] to sell.  If you right click on [[Items|items]] that you own it will add them to the front of your quickbuy queue, and they will be queued to sell. The sale price of these [[Items|items]] will be added to your current [[Souls|souls]] to calculate when you can afford to purchase the next [[Item|item]] in your quickbuy queue..
 
-* Adjusted Powerup Runes' design to look more visually breakable (due to melee change explained later in the gameplay section)
+* Adjusted [[Powerup]] [[Runes]]' design to look more visually breakable (due to [[Melee|melee]] change explained later in the gameplay section)
 
 * Low priority games now require wins to count
 
-* Gaining Rejuvenator buff now shows what stats have been improved on your hero (like powerups and other buffs)
+* Gaining [[Rejuvenator]] buff now shows what [[Stats|stats]] have been improved on your [[Hero|hero]] (like [[Powerups|powerups]] and other buffs)
 * Fixed {{HeroIcon|Abrams}} camera
 * Added icon variants for high or low ground for small/medium/large camps
-* Adding note below Cancel key in Settings explaining that "Abilities will be cancelled with the Cancel Key when possible"
-* Purchase Log in the shop now shows enemy and ally purchases with different colors
+* Adding note below Cancel key in Settings explaining that "[[Abilities]] will be cancelled with the Cancel Key when possible"
+* Purchase Log in the [[Shop|shop]] now shows enemy and ally purchases with different colors
 * Fixed F1-F5 Keys not working (for moving camera to allies)
 
-* Updated active items to have uniform sliding/cast delay behavior
+* Updated [[Active Items|active items]] to have uniform sliding/cast delay behavior
     - {{ItemIcon|Curse}}: Cast delay changed from 0.0s to 0.1s, to match other similar actives
     - {{ItemIcon|Slowing Hex}}: No longer interrupts sliding, to match other similar actives
     - {{ItemIcon|Decay}}: Cast delay changed from 0.25s to 0.1s, to match other similar actives
     - {{ItemIcon|Decay}}: No longer interrupts sliding, to match other similar actives
-    - Withering Whip: No longer interrupts sliding, to match other similar actives
-    - Silence Glyph: Cast delay changed from 0.0s to 0.1s, to match other similar actives
+    - [[Withering Whip]]: No longer interrupts sliding, to match other similar actives
+    - [[Silence Glyph]]: Cast delay changed from 0.0s to 0.1s, to match other similar actives
     - {{ItemIcon|Knockdown}}: Cast delay changed from 0.25s to 0.1s, to match other similar actives
     - {{ItemIcon|Knockdown}}: No longer interrupts sliding, to match other similar actives
 
-* The through-wall ally silhouette health bars are now more accurate
-* Optimized lighting in the map for better rendering performance
-* Fixed a bug where you would be prompted to sell an item if the component wasn't in the same category as the component you were buying (i.e. you go to buy slowing hex with your item slots full and you already own the component)
+* The through-wall ally silhouette [[Health|health]] bars are now more accurate
+* Optimized lighting in the [[Map|map]] for better rendering performance
+* Fixed a bug where you would be prompted to sell an [[Item|item]] if the [[Component|component]] wasn't in the same category as the [[Component|component]] you were buying (i.e. you go to buy slowing hex with your [[Item|item]] slots full and you already own the [[Component|component]])
 * Removed redundant Replay keybinds (now shares with Spectating)
 * Added Chat Wheel Options as keybinds so you can bind keys to certain responses
-* Fixed not being able to ping enemy items
-* Added music and ambient sounds to hotel
+* Fixed not being able to ping enemy [[Items|items]]
+* Added [[Music|music]] and ambient sounds to hotel
 * Added new run animation for {{HeroIcon|Seven}}
 * Revised {{HeroIcon|Mirage}} {{AbilityIcon|Fire Scarabs}} projectile and cast sounds
-* Revised Casting bridge buff loop
-* Remastered weapon fire for {{HeroIcon|Seven}}
-* Remastered weapon fire for {{HeroIcon|Paradox}}
+* Revised Casting [[Bridge Buff|bridge buff]] loop
+* Remastered [[Weapon|weapon]] fire for {{HeroIcon|Seven}}
+* Remastered [[Weapon|weapon]] fire for {{HeroIcon|Paradox}}
 * Fixed a bug where nearly all sound stops and never returns
-* Fixed respawn music cue failing to play with shop menu open
-* Fixed music not playing while the player is outside their base and their base is under attack
+* Fixed [[Respawn|respawn]] [[Music|music]] cue failing to play with [[Shop|shop]] menu open
+* Fixed [[Music|music]] not playing while the player is outside their base and their base is under attack
 * Fixed haze smoke bomb loop not playing for teammates
 * Improved negative feedback sound effect timing
 * Fixed some cases where some sounds could overpower everything else
 * Added key and button name localization support for keybinds
-* Visual update to {{HeroIcon|Mirage}} {{AbilityIcon|Tornado}} bullet evasion buff
+* Visual update to {{HeroIcon|Mirage}} {{AbilityIcon|Tornado}} [[Bullet Evasion|bullet evasion]] buff
 * Visual update to {{AbilityIcon|Medicinal Specter}} to improve visibility
 * Visual update to turret tracers, muzzle flash and impacts
 * {{AbilityIcon|Sand Blast}} revision to help user judge distance and AOE
 * Added preview state to {{AbilityIcon|Flying Strike}}
-* Added effect to when the zipline ability first starts
+* Added effect to when the zipline [[Ability|ability]] first starts
 * Added an AOE landing indicator for where units will be thrown with {{AbilityIcon|Death Slam}} (only shows for allies)
 * Fixed {{AbilityIcon|Ground Strike}} preview cone visual to be more accurate
-* Updated Patron VO to give the Amber Hand more lines that are unique to him as opposed to having the identical script of the Sapphire Flame (for instance, while the Sapphire Flame might praise {{HeroIcon|Haze}} by saying "you are perfection, {{HeroIcon|Haze}}", the Amber Hand would say "{{HeroIcon|Haze}} will dance, and they will fall")
-* Related to the above, both patrons will now call out the Greenwich/Green Lane objectives specifically when they are destroyed
+* Updated [[Patron]] VO to give the [[Amber Hand]] more lines that are unique to him as opposed to having the identical script of the [[Sapphire Flame]] (for instance, while the [[Sapphire Flame]] might praise {{HeroIcon|Haze}} by saying "you are perfection, {{HeroIcon|Haze}}", the [[Amber Hand]] would say "{{HeroIcon|Haze}} will dance, and they will fall")
+* Related to the above, both [[Patrons|patrons]] will now call out the Greenwich/Green Lane objectives specifically when they are destroyed
 * Updated {{HeroIcon|Bebop}} VO: remaster pass and added some content
 * Updated {{HeroIcon|Viscous}} VO: he now comments on a lot more interactions in the game (no longer a small pool of reused lines for Goo Punch)
 * Updated {{HeroIcon|Paradox}} VO: remaster pass and added some content
 * Updated {{HeroIcon|Kelvin}} VO: remaster pass and added some content
-* Stubbed in first pass VO for Fathom, Magician, Trapper, and Viper - the primary goal for these is to give coverage for pings, but we also added lines for hero select and ability usage
+* Stubbed in first pass VO for [[Fathom]], [[Magician]], [[Trapper]], and [[Viper]] - the primary goal for these is to give coverage for pings, but we also added lines for [[Hero|hero]] select and [[Ability|ability]] usage
 * Updated {{HeroIcon|Holliday}} VO: remaster pass and added some content
 * Some rendering performance improvements
 * Fixed some lightmap quality regressions
 * Fixed textures being slightly too blurry in FSR2
 * Fixed some rendering features (such as distance field shadows) running despite being disabled in UI
-* Fixed right-clicking on an item in the shop in build editing mode causing it to be added to your Quickbuy queue
+* Fixed right-clicking on an [[Item|item]] in the [[Shop|shop]] in build editing mode causing it to be added to your Quickbuy queue
 * Steam Game Recording no longer records kills/deaths if you're dead and spectating another player
-* Steam Game Recording timeline no longer records Shrine objectives as "The World"
+* Steam Game Recording [[Timeline|timeline]] no longer records [[Shrine]] objectives as "The World"
 * Fixed fps_max accidentally being changed to slider maximum value when out of slider range
 * Video Settings slider for fps_max goes up to 400
 * Fixing tooltips on keybind dropdowns not working correctly
 * New sounds added to {{HeroIcon|Yamato}}'s {{AbilityIcon|Flying Strike}} while aiming
-* New sounds added to {{HeroIcon|Mo & Krill}}'s {{AbilityIcon|Burrow}} and {{AbilityIcon|Sand Blast}} abilities
-* Hit confirm sound added to {{HeroIcon|Lash}}'s {{AbilityIcon|Flog}} ability
+* New sounds added to {{HeroIcon|Mo & Krill}}'s {{AbilityIcon|Burrow}} and {{AbilityIcon|Sand Blast}} [[Abilities|abilities]]
+* Hit confirm sound added to {{HeroIcon|Lash}}'s {{AbilityIcon|Flog}} [[Ability|ability]]
 * Fixed a bug causing {{HeroIcon|Mo & Krill}}'s {{AbilityIcon|Burrow}} emerge sound to double up when not cancelling the burrow early
 * Fixed {{HeroIcon|Mo & Krill}}'s {{AbilityIcon|Burrow}} traveling/underground sound not looping correctly
 
@@ -133,53 +133,53 @@ Quickbuy:
 
 [ Misc Gameplay ]
 
-* Soul Sharing ratios post-lane reduced from 100/70/45/33/25/20% to 100/60/35/25/20/16%  (for 1/2/3/4/5/6 players, original was 100/50/33/25/20/16%)
-* Hero Kill souls decreased from 175->2000 to 175->1600 (from 0 min to 45 min)
+* [[Soul]] Sharing ratios post-lane reduced from 100/70/45/33/25/20% to 100/60/35/25/20/16%  (for 1/2/3/4/5/6 players, original was 100/50/33/25/20/16%)
+* [[Hero]] Kill [[Souls|souls]] decreased from 175->2000 to 175->1600 (from 0 min to 45 min)
 
-* Walkers {{AbilityIcon|Stomp}} now also deals 10% Max HP as damage
-* Walkers {{AbilityIcon|Laser}} now also deals 2% Max HP DPS
-* Walkers now provide nearby allied heroes 25% Bullet and Spirit Resistance
-* Walkers now have Resistance based on how many nearby enemies there are (0/8/16/24/32/40% for 1/2/3/4/5/6 players; they are more tanky against a large attacking team)
-* Middle Lane Walkers HP increased from 5800 to 8000 (side walkers HP is 5175)
+* [[Walkers]] {{AbilityIcon|Stomp}} now also deals 10% Max [[HP]] as [[Damage|damage]]
+* [[Walkers]] {{AbilityIcon|Laser}} now also deals 2% Max [[HP]] [[DPS]]
+* [[Walkers]] now provide nearby allied [[Heroes|heroes]] 25% Bullet and [[Spirit]] Resistance
+* [[Walkers]] now have Resistance based on how many nearby enemies there are (0/8/16/24/32/40% for 1/2/3/4/5/6 players; they are more tanky against a large attacking team)
+* Middle Lane [[Walkers]] [[HP]] increased from 5800 to 8000 (side [[Walkers|walkers]] [[HP]] is 5175)
 
-* {{AbilityIcon|Patron Laser}} now also deals 3% Max HP DPS
-* Flex Slot changed from All Shrines to 1 Shrine and 2 Base Guardians
+* {{AbilityIcon|Patron Laser}} now also deals 3% Max [[HP]] [[DPS]]
+* [[Flex]] Slot changed from All [[Shrines]] to 1 [[Shrine]] and 2 Base [[Guardians]]
 
-* Mid Boss trooper health for first spawn reduced from 95% to 70%
-* Trooper Spirit Resist at 25 minutes reduced from 30% to 20% (still scales to 70% at 50 minutes)
+* [[Mid Boss]] [[Trooper|trooper]] [[Health|health]] for first spawn reduced from 95% to 70%
+* [[Trooper]] [[Spirit Resist]] at 25 minutes reduced from 30% to 20% (still scales to 70% at 50 minutes)
 
-* Respawn time curves changed from happening at 17/30 minutes for 40s/70s respawn to 20/40 minutes
+* [[Respawn]] time curves changed from happening at 17/30 minutes for 40s/70s [[Respawn|respawn]] to 20/40 minutes
 
-* Trooper soul changed from 60/40% in the kill/orb to 65/35%
-* Medic Trooper now has 3 charges of heal rather than 2
+* [[Trooper]] [[Soul|soul]] changed from 60/40% in the kill/[[Orb|orb]] to 65/35%
+* Medic [[Trooper]] now has 3 [[Charges|charges]] of heal rather than 2
 * Falloff min range reduced from 22m to 20m
 
 * Air Drag when getting off the zipline increased from 20% to 25% (default in general is 20%)
 
-* Improved various issues with Heavy Melee vs Dash/Parry when there is latency
+* Improved various issues with Heavy [[Melee]] vs [[Dash]]/[[Parry]] when there is latency
 
-* Killing the first Patron now causes any existing enemy hero respawns to be reduced by 20 seconds. However, it does not reduce remaining respawn time lower than 10s.
+* Killing the first [[Patron]] now causes any existing enemy [[Hero|hero]] respawns to be reduced by 20 seconds. However, it does not reduce remaining [[Respawn|respawn]] time lower than 10s.
 
-* Powerups now require a heavy melee to claim (art visuals updated)
-* Powerups now start weaker and grow stronger (from 10 minutes to 40  minutes)
-* Gun Powerup:
-    - Previously was +20% Fire Rate and +40% Ammo for 160s.
-    - Now starts at "+10% Fire Rate and +30% Ammo" and ends at "30% Fire Rate and +60% Ammo"
-* Survival Powerup:
-    - Previously was +400 Health and +1% Max Health Regen for 160s.
-    - Now starts at "+250 Health and 1% Max Health Regen" and ends at "+700 Health and 1.5% Max Health Regen"
-* Casting Powerup:
-    - Previously was +25 Spirit Power and +20% Cooldown Reduction for 160s.
-    - Now starts at "+20 Spirit Power and +15% Cooldown Reduction" and ends at "+40 Spirit Power and +25% Cooldown Reduction"
-* Movement Powerup:
-    - Previously was +2 Stamina, +3 Sprint, +30% Stamina Regen and +50% Zipline Boost for 160s.
-    - Now starts at "+1 Stamina, +2 Sprint, +20% Stamina Regen and +40% Zipline Boost" and ends at "+4 Stamina, +4 Sprint, +50% Stamina Regen and +80% Zipline Boost"
+* [[Powerups]] now require a heavy [[Melee|melee]] to claim (art visuals updated)
+* [[Powerups]] now start weaker and grow stronger (from 10 minutes to 40  minutes)
+* Gun [[Powerup]]:
+    - Previously was +20% [[Fire Rate]] and +40% [[Ammo]] for 160s.
+    - Now starts at "+10% [[Fire Rate]] and +30% [[Ammo]]" and ends at "30% [[Fire Rate]] and +60% [[Ammo]]"
+* Survival [[Powerup]]:
+    - Previously was +400 [[Health]] and +1% [[Max Health]] Regen for 160s.
+    - Now starts at "+250 [[Health]] and 1% [[Max Health]] Regen" and ends at "+700 [[Health]] and 1.5% [[Max Health]] Regen"
+* Casting [[Powerup]]:
+    - Previously was +25 [[Spirit Power]] and +20% [[Cooldown Reduction]] for 160s.
+    - Now starts at "+20 [[Spirit Power]] and +15% [[Cooldown Reduction]]" and ends at "+40 [[Spirit Power]] and +25% [[Cooldown Reduction]]"
+* [[Movement]] [[Powerup]]:
+    - Previously was +2 [[Stamina]], +3 [[Sprint]], +30% [[Stamina]] Regen and +50% Zipline Boost for 160s.
+    - Now starts at "+1 [[Stamina]], +2 [[Sprint]], +20% [[Stamina]] Regen and +40% Zipline Boost" and ends at "+4 [[Stamina]], +4 [[Sprint]], +50% [[Stamina]] Regen and +80% Zipline Boost"
 
-* Urn time to reveal increased from 20s to 25s
-* Initial Urn bounty reduced from 4050 to 3000 (changed from 1750 + 230*Min to 700 + 230*Min)
-* Adding an alternate Urn mechanic as an experiment for 2 days. This will be enabled this weekend only and Monday will be back to normal. Urn pickup location is the same, but drop-off location is now always at the top of mid temple. The bonus souls the team gets is reduced by 60% (the delivering player reward is unchanged). The reveal time is now 40s.
+* [[Urn]] time to reveal increased from 20s to 25s
+* Initial [[Urn]] bounty reduced from 4050 to 3000 (changed from 1750 + 230*Min to 700 + 230*Min)
+* Adding an alternate [[Urn]] mechanic as an experiment for 2 days. This will be enabled this weekend only and Monday will be back to normal. [[Urn]] pickup location is the same, but drop-off location is now always at the top of mid temple. The bonus [[Souls|souls]] the team gets is reduced by 60% (the delivering player reward is unchanged). The reveal time is now 40s.
 
-* Moved rooftop neutral camps on Amber Yellow and Sapphire Purple to rooftops closer to the Guardian
+* Moved rooftop [[Neutral|neutral]] camps on Amber Yellow and Sapphire Purple to rooftops closer to the [[Guardian]]
 
 
 
@@ -189,7 +189,7 @@ Quickbuy:
 View attachment truck_update.mp4
 
 
-* Moved stairs up from the central canal to the Radio Station interior closer to the inner lanes
+* Moved stairs up from the central canal to the Radio Station interior closer to the inner [[Lanes|lanes]]
 * Removed stairs up to the Radio Station interior from the underground Teleport Station
 * Redesigned Radio Station interior to be more open
 
@@ -197,7 +197,7 @@ View attachment canal_update.mp4
 
 
 
-* Moved connection corridor between Inner and Outer lanes (Amber Yellow and Sapphire Purple) to be farther from the base entrances
+* Moved connection corridor between Inner and Outer [[Lanes|lanes]] (Amber Yellow and Sapphire Purple) to be farther from the base entrances
 * Removed the cosmic veils from the entrances of the connection corridor
 
 View attachment connection_update.mp4
@@ -231,80 +231,80 @@ View attachment teleporter_update.mp4
 
 
 * Added zapper effect to the antenna models on rooftops
-* New building facade art in Amber Blue and Purple lanes
+* New building facade art in Amber Blue and Purple [[Lanes|lanes]]
 
 
 
 
-* Added a street gate structure between the Garage and the Record Shop
+* Added a street gate structure between the Garage and the Record [[Shop]]
 
 
 
 
 [ Heal / Anti-Heal Rebalance ]
 
-* Below is a group of changes bundled together that pairs reducing sustain abilities/items as well as anti-heal mechanics by some percentage (some things less than others depending on the specific circumstances of the ability)
+* Below is a group of changes bundled together that pairs reducing sustain [[Abilities|abilities]]/[[Items|items]] as well as anti-heal [[Mechanics|mechanics]] by some percentage (some things less than others depending on the specific circumstances of the [[Ability|ability]])
 
 * {{HeroIcon|Abrams}}: {{AbilityIcon|Infernal Resilience}} reduced from 14% to 11% and T3 from 7% to 5.5%
-* {{HeroIcon|Abrams}}: {{AbilityIcon|Siphon Life}} Heal vs Heroes reduced from 100% to 75%
-* {{HeroIcon|Abrams}}: {{AbilityIcon|Siphon Life}} Heal vs Non-Heroes reduced from 50% to 40%
+* {{HeroIcon|Abrams}}: {{AbilityIcon|Siphon Life}} Heal vs [[Heroes]] reduced from 100% to 75%
+* {{HeroIcon|Abrams}}: {{AbilityIcon|Siphon Life}} Heal vs Non-[[Heroes]] reduced from 50% to 40%
 
-* {{HeroIcon|Bebop}}: {{AbilityIcon|Hyper Beam}} T3 reduced from 100/33% for Heroes/Creeps to 80%/25%
+* {{HeroIcon|Bebop}}: {{AbilityIcon|Hyper Beam}} T3 reduced from 100/33% for [[Heroes]]/[[Creeps]] to 80%/25%
 
 * {{HeroIcon|Dynamo}}: {{AbilityIcon|Rejuvenating Aurora}} regen reduced from 32 to 30
-* {{HeroIcon|Dynamo}}: {{AbilityIcon|Rejuvenating Aurora}} Spirit Power scaling reduced from 0.5 to 0.45
+* {{HeroIcon|Dynamo}}: {{AbilityIcon|Rejuvenating Aurora}} [[Spirit Power]] scaling reduced from 0.5 to 0.45
 * {{HeroIcon|Dynamo}}: {{AbilityIcon|Rejuvenating Aurora}} T3 reduced from 3.8% to 3.4%
 
-* {{HeroIcon|Grey Talon}}: {{AbilityIcon|Rain of Arrows}} T3 reduced from 50% Lifesteal to 40%
+* {{HeroIcon|Grey Talon}}: {{AbilityIcon|Rain of Arrows}} T3 reduced from 50% [[Lifesteal]] to 40%
 
-* {{HeroIcon|Infernus}}: Catalyst T2 reduced from 15% Lifesteal to 12%
+* {{HeroIcon|Infernus}}: Catalyst T2 reduced from 15% [[Lifesteal]] to 12%
 * {{HeroIcon|Infernus}}: Catalyst T3 reduced from -40% Heal Degen to -33%
 * {{HeroIcon|Infernus}}: {{AbilityIcon|Concussive Combustion}} T3 reduced from 100% to 85%
 
 * {{HeroIcon|Ivy}}: {{AbilityIcon|Watcher's Covenant}} {{ItemIcon|Bullet Lifesteal}} reduced from 15% to 12%
-* {{HeroIcon|Ivy}}: {{AbilityIcon|Stone Form}} Max Health Heal reduced from 10% to 8%
-* {{HeroIcon|Ivy}}: {{AbilityIcon|Stone Form}} T3 Max Health Heal reduced from +20% to +16%
+* {{HeroIcon|Ivy}}: {{AbilityIcon|Stone Form}} [[Max Health]] Heal reduced from 10% to 8%
+* {{HeroIcon|Ivy}}: {{AbilityIcon|Stone Form}} T3 [[Max Health]] Heal reduced from +20% to +16%
 
 * {{HeroIcon|Kelvin}}: {{AbilityIcon|Frost Grenade}} T2 reduced from +125 Heal to +100
 * {{HeroIcon|Kelvin}}: {{AbilityIcon|Frozen Shelter}} regen reduced from 120 to 110
-* {{HeroIcon|Kelvin}}: {{AbilityIcon|Frozen Shelter}} T3 reduced from +70 (1.6 Spirit Power) to +60 ( 1.4 Spirit Power)
+* {{HeroIcon|Kelvin}}: {{AbilityIcon|Frozen Shelter}} T3 reduced from +70 (1.6 [[Spirit Power]]) to +60 ( 1.4 [[Spirit Power]])
 
-* {{HeroIcon|Lash}}: {{AbilityIcon|Flog}} heal vs heroes reduced from 70% to 65%
-* {{HeroIcon|Lash}}: {{AbilityIcon|Flog}} heal vs creeps reduced from 25% to 20%
+* {{HeroIcon|Lash}}: {{AbilityIcon|Flog}} heal vs [[Heroes|heroes]] reduced from 70% to 65%
+* {{HeroIcon|Lash}}: {{AbilityIcon|Flog}} heal vs [[Creeps|creeps]] reduced from 25% to 20%
 
 * {{HeroIcon|McGinnis}}: {{AbilityIcon|Medicinal Specter}} T3 reduced from 5% to 4.5%
 
-* {{HeroIcon|Mo & Krill}}: {{AbilityIcon|Scorn}} heal vs heroes reduced from 2x to 1.6x
-* {{HeroIcon|Mo & Krill}}: {{AbilityIcon|Scorn}} heal vs creeps reduced from 0.7x to 0.6x
+* {{HeroIcon|Mo & Krill}}: {{AbilityIcon|Scorn}} heal vs [[Heroes|heroes]] reduced from 2x to 1.6x
+* {{HeroIcon|Mo & Krill}}: {{AbilityIcon|Scorn}} heal vs [[Creeps|creeps]] reduced from 0.7x to 0.6x
 
-* {{HeroIcon|Pocket}}: {{AbilityIcon|Affliction}} T2 Healing Reduction reduced from 60% to 50%
+* {{HeroIcon|Pocket}}: {{AbilityIcon|Affliction}} T2 [[Healing]] Reduction reduced from 60% to 50%
 
-* {{HeroIcon|Warden}}: {{AbilityIcon|Last Stand}} non-hero lifesteal reduced from 50% to 20%
-* {{HeroIcon|Warden}}: {{AbilityIcon|Last Stand}} hero lifesteal reduced from 100% to 80%
+* {{HeroIcon|Warden}}: {{AbilityIcon|Last Stand}} non-[[Hero|hero]] [[Lifesteal|lifesteal]] reduced from 50% to 20%
+* {{HeroIcon|Warden}}: {{AbilityIcon|Last Stand}} [[Hero|hero]] [[Lifesteal|lifesteal]] reduced from 100% to 80%
 
-* {{HeroIcon|Wraith}}: {{AbilityIcon|Full Auto}} T3 lifesteal reduced from 35% to 30%
+* {{HeroIcon|Wraith}}: {{AbilityIcon|Full Auto}} T3 [[Lifesteal|lifesteal]] reduced from 35% to 30%
 
 * {{HeroIcon|Viscous}}: {{AbilityIcon|The Cube}} regen reduced from 40 to 35
 * {{HeroIcon|Viscous}}: {{AbilityIcon|The Cube}} T2 regen reduced from +35 to +30
-* {{HeroIcon|Viscous}}: {{AbilityIcon|The Cube}} regen spirit power scaling reduced from 0.2 to 0.18
+* {{HeroIcon|Viscous}}: {{AbilityIcon|The Cube}} regen [[Spirit Power|spirit power]] scaling reduced from 0.2 to 0.18
 
 * {{HeroIcon|Shiv}}: {{AbilityIcon|Bloodletting}} reduced from 22% to 20%
 * {{HeroIcon|Shiv}}: {{AbilityIcon|Bloodletting}} T1 reduced from +8% to +6%
 * {{HeroIcon|Shiv}}: {{AbilityIcon|Bloodletting}} rage bonus reduced from +15% to 14%
 
-* Soul Shredder Bullets: {{ItemIcon|Spirit Lifesteal}} reduced from 20% to 18%
+* [[Soul Shredder Bullets]]: {{ItemIcon|Spirit Lifesteal}} reduced from 20% to 18%
 * {{ItemIcon|Active Reload}}: {{ItemIcon|Bullet Lifesteal}} reduced from 20% to 18%
-* {{ItemIcon|Headhunter}}: Heal per Headshot reduced from 8% to 7%
+* {{ItemIcon|Headhunter}}: Heal per [[Headshot]] reduced from 8% to 7%
 * {{ItemIcon|Heroic Aura}}: {{ItemIcon|Bullet Lifesteal}} reduced from 20% to 18%
-* {{ItemIcon|Toxic Bullets}}: Healing Reduction reduced from 65% to 50%
+* {{ItemIcon|Toxic Bullets}}: [[Healing]] Reduction reduced from 65% to 50%
 * {{ItemIcon|Vampiric Burst}}: {{ItemIcon|Bullet Lifesteal}} reduced from 100% to 80%
-* {{ItemIcon|Melee Lifesteal}}: Lifesteal reduced from 20% to 18%
-* {{ItemIcon|Bullet Lifesteal}}: Lifesteal reduced from 28% to 26%
-* {{ItemIcon|Restorative Locket}}: Regen per stack reduced from 35 to 32
-* {{ItemIcon|Spirit Lifesteal}}: Lifesteal reduced from 23% to 22%
-* {{ItemIcon|Healbane}}: Healing Reduction reduced from 45% to 40%
-* {{ItemIcon|Lifestrike}}: Lifesteal reduced from 65% to 55%
-* {{ItemIcon|Decay}}: Healing Reduction reduced from 70% to 55%
+* {{ItemIcon|Melee Lifesteal}}: [[Lifesteal]] reduced from 20% to 18%
+* {{ItemIcon|Bullet Lifesteal}}: [[Lifesteal]] reduced from 28% to 26%
+* {{ItemIcon|Restorative Locket}}: Regen per [[Stack|stack]] reduced from 35 to 32
+* {{ItemIcon|Spirit Lifesteal}}: [[Lifesteal]] reduced from 23% to 22%
+* {{ItemIcon|Healbane}}: [[Healing]] Reduction reduced from 45% to 40%
+* {{ItemIcon|Lifestrike}}: [[Lifesteal]] reduced from 65% to 55%
+* {{ItemIcon|Decay}}: [[Healing]] Reduction reduced from 70% to 55%
 * {{ItemIcon|Leech}}: {{ItemIcon|Bullet Lifesteal}} reduced from 35% to 32%
 * {{ItemIcon|Leech}}: {{ItemIcon|Spirit Lifesteal}} reduced from 35% to 32%
 
@@ -312,53 +312,53 @@ View attachment teleporter_update.mp4
 
 
 
-[ Weapon Items ]
+[ [[Weapon Items]] ]
 
-* {{ItemIcon|Rapid Rounds}}: Fire Rate increased from 10% to 11%
-* {{ItemIcon|Monster Rounds}}: Bonus Health reduced from 50 to 30
+* {{ItemIcon|Rapid Rounds}}: [[Fire Rate]] increased from 10% to 11%
+* {{ItemIcon|Monster Rounds}}: [[Bonus Health]] reduced from 50 to 30
 
-* {{ItemIcon|Berserker}}: Weapon Damage per stack increased from 5% to 6%
-* Soul Shredder Bullets: Spirit Amp reduced from 10% to 8%
+* {{ItemIcon|Berserker}}: [[Weapon Damage]] per [[Stack|stack]] increased from 5% to 6%
+* [[Soul Shredder Bullets]]: [[Spirit Amp]] reduced from 10% to 8%
 
-* {{ItemIcon|Headhunter}}: Head Shot Bonus Damage reduced from +140 to +130
-* {{ItemIcon|Heroic Aura}}: Cooldown reduced from 25s to 20s
-* {{ItemIcon|Alchemical Fire}}: DPS burn lingers on targets for 1s
-* {{ItemIcon|Hunter's Aura}}: Fire Rate slow reduced from 10% to 9%
+* {{ItemIcon|Headhunter}}: Head Shot Bonus [[Damage]] reduced from +140 to +130
+* {{ItemIcon|Heroic Aura}}: [[Cooldown]] reduced from 25s to 20s
+* {{ItemIcon|Alchemical Fire}}: [[DPS]] burn lingers on targets for 1s
+* {{ItemIcon|Hunter's Aura}}: [[Fire Rate]] slow reduced from 10% to 9%
 
-* New T3 Weapon Item, {{ItemIcon|Spellslinger}} Headshots: Requires Soul Shredder Bullets. Landing a headshot on enemy heroes increases your total Spirit Power by 3% for 12s. Cooldown 1.5s. Max stacks 12. Grants +12% Weapon Damage, +8% Spirit Amp/18% {{ItemIcon|Spirit Lifesteal}} (component passive), and +150 Health.
+* New T3 [[Weapon Item]], [[Spellslinger Headshots]]: Requires [[Soul Shredder Bullets]]. Landing a [[Headshot|headshot]] on enemy [[Heroes|heroes]] increases your total [[Spirit Power]] by 3% for 12s. [[Cooldown]] 1.5s. Max stacks 12. Grants +12% [[Weapon Damage]], +8% [[Spirit Amp]]/18% {{ItemIcon|Spirit Lifesteal}} ([[Component|component]] passive), and +150 [[Health]].
 
 * {{ItemIcon|Glass Cannon}}: Now requires {{ItemIcon|Slowing Bullets}} and grants the slow passive
-* {{ItemIcon|Silencer}}: Reworked item. Passively builds up on enemies, silencing for 2s and then reducing spirit damage output by 40% for 4s. Enemies affected cannot be affected again for 12s. Grants +20% Weapon Damage, +15% Spirit Resist and 20% Debuff Reduction. (Buildup is a bit slower than {{ItemIcon|Toxic Bullets}})
-* {{ItemIcon|Lucky Shot}}: Damage multiplier increased from 90% to 110%
-* {{ItemIcon|Lucky Shot}}: Now grants +150 Bullet Shield
+* {{ItemIcon|Silencer}}: Reworked [[Item|item]]. Passively builds up on enemies, silencing for 2s and then reducing [[Spirit Damage|spirit damage]] output by 40% for 4s. Enemies affected cannot be affected again for 12s. Grants +20% [[Weapon Damage]], +15% [[Spirit Resist]] and 20% [[Debuff]] Reduction. (Buildup is a bit slower than {{ItemIcon|Toxic Bullets}})
+* {{ItemIcon|Lucky Shot}}: [[Damage]] multiplier increased from 90% to 110%
+* {{ItemIcon|Lucky Shot}}: Now grants +150 [[Bullet Shield]]
 
 
 
 
 
-[ Vitality Items ]
+[ [[Vitality Items]] ]
 
-* {{ItemIcon|Melee Lifesteal}}: Now grants +3% Bullet Resist
+* {{ItemIcon|Melee Lifesteal}}: Now grants +3% [[Bullet Resist]]
 
-* {{ItemIcon|Reactive Barrier}}: Bullet Shield health reduced from 400 to 350
+* {{ItemIcon|Reactive Barrier}}: [[Bullet Shield]] [[Health|health]] reduced from 400 to 350
 * {{ItemIcon|Return Fire}}: Now requires {{ItemIcon|Extra Regen}}
-* {{ItemIcon|Debuff Reducer}}: Debuff Resist reduced from 30% to 28%
-* {{ItemIcon|Debuff Reducer}}: Weapon Damage increased from 6% to 8%
-* {{ItemIcon|Divine Barrier}}: Now has +8% Ability Range again instead of +6 Spirit Power
-* {{ItemIcon|Divine Barrier}}: No longer grants +1 Sprint
-* {{ItemIcon|Healing Nova}}: No longer has +6% Ability Range
+* {{ItemIcon|Debuff Reducer}}: [[Debuff Resist]] reduced from 30% to 28%
+* {{ItemIcon|Debuff Reducer}}: [[Weapon Damage]] increased from 6% to 8%
+* {{ItemIcon|Divine Barrier}}: Now has +8% [[Ability Range]] again instead of +6 [[Spirit Power]]
+* {{ItemIcon|Divine Barrier}}: No longer grants +1 [[Sprint]]
+* {{ItemIcon|Healing Nova}}: No longer has +6% [[Ability Range]]
 * {{ItemIcon|Healbane}}: Duration increased from 6s to 7s
 
-* {{ItemIcon|Debuff Remover}}: Active buff duration on purge increased from 3s to 4s
-* {{ItemIcon|Debuff Remover}}: Purging a debuff now also heals you for 10% Max HP
+* {{ItemIcon|Debuff Remover}}: [[Active]] buff duration on purge increased from 3s to 4s
+* {{ItemIcon|Debuff Remover}}: Purging a [[Debuff|debuff]] now also heals you for 10% Max [[HP]]
 * {{ItemIcon|Rescue Beam}}: Heal reduced from 26% to 24%
-* {{ItemIcon|Rescue Beam}}: Now grants +6% Ability Range
-* {{ItemIcon|Rescue Beam}}: Cooldown increased from 26s to 36s
+* {{ItemIcon|Rescue Beam}}: Now grants +6% [[Ability Range]]
+* {{ItemIcon|Rescue Beam}}: [[Cooldown]] increased from 26s to 36s
 * {{ItemIcon|Rescue Beam}}: Pull speed reduced by 15%
-* {{ItemIcon|Metal Skin}}: Active now reduces your Move Speed by 1.5
-* Superior Stamina: Now grants +75 Health
-* Superior Stamina: Now increases Wall Jump count by 1 as well
-* {{ItemIcon|Majestic Leap}}: Now grants +6% Spirit Resist
+* {{ItemIcon|Metal Skin}}: [[Active]] now reduces your [[Move Speed]] by 1.5
+* [[Superior Stamina]]: Now grants +75 [[Health]]
+* [[Superior Stamina]]: Now increases Wall Jump count by 1 as well
+* {{ItemIcon|Majestic Leap}}: Now grants +6% [[Spirit Resist]]
 
 * {{ItemIcon|Phantom Strike}}: Cast range now ignores the Z height (similar to {{HeroIcon|Lash}}'s {{AbilityIcon|Death Slam}})
 
@@ -366,47 +366,47 @@ View attachment teleporter_update.mp4
 
 
 
-[ Spirit Items ]
+[ [[Spirit Items]] ]
 
-* Ammo Scavenger: While at max stacks you gain +2 Sprint
-* {{ItemIcon|Infuser}}: Cooldown reduced from 37s to 32s
+* [[Ammo Scavenger]]: While at max stacks you gain +2 [[Sprint]]
+* {{ItemIcon|Infuser}}: [[Cooldown]] reduced from 37s to 32s
 
-* {{ItemIcon|Decay}}: Healing Reduction reduced from 70% to 55%
-* {{ItemIcon|Decay}}: Damage increased from 1% to 1.4%
-* Withering Whip: Cooldown reduced from 18s to 15s
+* {{ItemIcon|Decay}}: [[Healing]] Reduction reduced from 70% to 55%
+* {{ItemIcon|Decay}}: [[Damage]] increased from 1% to 1.4%
+* [[Withering Whip]]: [[Cooldown]] reduced from 18s to 15s
 
-* {{ItemIcon|Improved Spirit}}: Health increased from 100 to 125
-* Silence Glyph: No longer a tracking projectile using a unit target, releases an aim-based projectile that silences on impact
-* Silence Glyph: Cooldown reduced from 32s to 24s
-* {{ItemIcon|Ethereal Shift}}: Post Shift now also grants +20 Spirit Power
-* {{ItemIcon|Rapid Recharge}}: Time between charges reduced from 65% to 60%
+* {{ItemIcon|Improved Spirit}}: [[Health]] increased from 100 to 125
+* [[Silence Glyph]]: No longer a tracking projectile using a [[Unit|unit]] target, releases an aim-based projectile that silences on impact
+* [[Silence Glyph]]: [[Cooldown]] reduced from 32s to 24s
+* {{ItemIcon|Ethereal Shift}}: Post Shift now also grants +20 [[Spirit Power]]
+* {{ItemIcon|Rapid Recharge}}: Time between [[Charges|charges]] reduced from 65% to 60%
 * Knock Down: Cast range now ignores the Z height (similar to {{HeroIcon|Lash}}'s {{AbilityIcon|Death Slam}})
-* {{ItemIcon|Mystic Slow}}: Now grants +1 Sprint
-* {{ItemIcon|Mystic Slow}}: Health increased from 140 to 160
-* {{ItemIcon|Torment Pulse}}: Now grants +15% Melee Resistance
+* {{ItemIcon|Mystic Slow}}: Now grants +1 [[Sprint]]
+* {{ItemIcon|Mystic Slow}}: [[Health]] increased from 140 to 160
+* {{ItemIcon|Torment Pulse}}: Now grants +15% [[Melee]] Resistance
 
-* New T3 Spirit Item, {{ItemIcon|Spirit Snatch}}: Requires {{ItemIcon|Spirit Strike}}. Causes your melee attacks to steal 12% Spirit Resist and 26 Spirit Power for 16s. Cooldown 6s. Buff you receive stacks if you hit different heroes. Grants +15% Melee Damage, +8% Spirit Resist,  +125 Health  and +1 Sprint. (Thanks to https://forums.playdeadlock.com/threads/spirt-snatch-3k-soul-spirit-strike-upgrade.46932/ )
+* New T3 [[Spirit Item]], {{ItemIcon|Spirit Snatch}}: Requires {{ItemIcon|Spirit Strike}}. Causes your [[Melee|melee]] attacks to steal 12% [[Spirit Resist]] and 26 [[Spirit Power]] for 16s. [[Cooldown]] 6s. Buff you receive stacks if you hit different [[Heroes|heroes]]. Grants +15% [[Melee Damage]], +8% [[Spirit Resist]],  +125 [[Health]]  and +1 [[Sprint]]. (Thanks to https://forums.playdeadlock.com/threads/spirt-snatch-3k-[[Soul|soul]]-[[Spirit|spirit]]-strike-upgrade.46932/ )
 
-* New T3 Spirit Item, {{ItemIcon|Arcane Surge}}: Requires {{ItemIcon|Kinetic Dash}}. After successful Dash Jump, the next ability you use will also have +20% Range, +20% Duration and +20 Spirit Power. Grants +100 Health, +1 Stamina and +15% Slow Resist.
+* New T3 [[Spirit Item]], {{ItemIcon|Arcane Surge}}: Requires {{ItemIcon|Kinetic Dash}}. After successful [[Dash]] Jump, the next [[Ability|ability]] you use will also have +20% Range, +20% Duration and +20 [[Spirit Power]]. Grants +100 [[Health]], +1 [[Stamina]] and +15% Slow Resist.
 
 * {{ItemIcon|Diviner's Kevlar}}: No longer grants +20% {{ItemIcon|Spirit Lifesteal}}
-* {{ItemIcon|Diviner's Kevlar}}: Now grants +7% Ability Duration
+* {{ItemIcon|Diviner's Kevlar}}: Now grants +7% [[Ability Duration]]
 * {{ItemIcon|Echo Shard}}: Cast delay reduced from 0.3s to 0.25s
-* {{ItemIcon|Mystic Reverb}}: Damage increased from 40% to 45%
-* {{ItemIcon|Refresher}}: Cooldown increased from 230s to 260s
+* {{ItemIcon|Mystic Reverb}}: [[Damage]] increased from 40% to 45%
+* {{ItemIcon|Refresher}}: [[Cooldown]] increased from 230s to 260s
 
 
 
 
 
-[ Heroes ]
+[ [[Heroes]] ]
 
 * {{HeroIcon|Abrams}}: Base regen increased from 1 to 1.5
-* {{HeroIcon|Abrams}}: {{AbilityIcon|Siphon Life}} range now scales with Spirit Power (0.05)
-* {{HeroIcon|Abrams}}: {{AbilityIcon|Siphon Life}} damage scaling with Spirit Power increased from 0.4 to 0.5
+* {{HeroIcon|Abrams}}: {{AbilityIcon|Siphon Life}} range now scales with [[Spirit Power]] (0.05)
+* {{HeroIcon|Abrams}}: {{AbilityIcon|Siphon Life}} [[Damage|damage]] scaling with [[Spirit Power]] increased from 0.4 to 0.5
 * {{HeroIcon|Abrams}}: {{AbilityIcon|Seismic Impact}} drag down collision improved a bit
 
-* {{HeroIcon|Bebop}}: {{AbilityIcon|Exploding Uppercut}} T2 bonus now applies to melee damage too
+* {{HeroIcon|Bebop}}: {{AbilityIcon|Exploding Uppercut}} T2 bonus now applies to [[Melee Damage|melee damage]] too
 * {{HeroIcon|Bebop}}: Hook can now be canceled by allies with exit key (i.e. space bar, similar to existing {{HeroIcon|Viscous}} Cube)
 
 * {{HeroIcon|Dynamo}}: {{AbilityIcon|Kinetic Pulse}} now slides around geometry when it hits an obstruction
@@ -414,12 +414,12 @@ View attachment teleporter_update.mp4
 * {{HeroIcon|Dynamo}}: {{AbilityIcon|Quantum Entanglement}} pulling allies no longer cancels their channel
 * {{HeroIcon|Dynamo}}: {{AbilityIcon|Quantum Entanglement}} now has a visual indicator for allies that will teleport
 * {{HeroIcon|Dynamo}}: {{AbilityIcon|Quantum Entanglement}} ally range increased from 9m to 10m
-* {{HeroIcon|Dynamo}}: {{AbilityIcon|Quantum Entanglement}} cooldown increased from 15s to 16s
-* {{HeroIcon|Dynamo}}: {{AbilityIcon|Quantum Entanglement}} T3 cooldown reduction improved from -4s to -5s
-* {{HeroIcon|Dynamo}}: {{AbilityIcon|Rejuvenating Aurora}} now allows you to use melee before T3 upgrade
+* {{HeroIcon|Dynamo}}: {{AbilityIcon|Quantum Entanglement}} [[Cooldown|cooldown]] increased from 15s to 16s
+* {{HeroIcon|Dynamo}}: {{AbilityIcon|Quantum Entanglement}} T3 [[Cooldown Reduction|cooldown reduction]] improved from -4s to -5s
+* {{HeroIcon|Dynamo}}: {{AbilityIcon|Rejuvenating Aurora}} now allows you to use [[Melee|melee]] before T3 upgrade
 
-* {{HeroIcon|Grey Talon}}: Bullet damage increased from 24 to 25
-* {{HeroIcon|Grey Talon}}: Health growth per boon increased from 27 to 29
+* {{HeroIcon|Grey Talon}}: Bullet [[Damage|damage]] increased from 24 to 25
+* {{HeroIcon|Grey Talon}}: [[Health]] growth per [[Boon|boon]] increased from 27 to 29
 * {{HeroIcon|Grey Talon}}: Immobilizing Trap now tethers targets rather than rooting them
 * {{HeroIcon|Grey Talon}}: Immobilizing Trap tether duration increased 1.25s to 1.5s
 * {{HeroIcon|Grey Talon}}: Immobilizing Trap no longer applies 50% slow for 1s
@@ -430,14 +430,14 @@ View attachment teleporter_update.mp4
 * {{HeroIcon|Grey Talon}}: {{AbilityIcon|Guided Owl}} camera now returns more quickly when the Owl collides very far away
 
 * {{HeroIcon|Haze}}: Fixed {{AbilityIcon|Bullet Dance}} sometimes freezing your client
-* {{HeroIcon|Haze}}: Using items during {{AbilityIcon|Smoke Bomb}} no longer breaks invisibility
-* {{HeroIcon|Haze}}: {{AbilityIcon|Smoke Bomb}} cooldown reduced from 37s to 30s
-* {{HeroIcon|Haze}}: {{AbilityIcon|Smoke Bomb}} T1 changed from -14s to +6 Invis Sprint Speed
-* {{HeroIcon|Haze}}: {{AbilityIcon|Smoke Bomb}} T2 changed from +6 Invis Sprint Speed to +15% {{ItemIcon|Bullet Lifesteal}} for 8s
-* {{HeroIcon|Haze}}: {{AbilityIcon|Smoke Bomb}} T3 changed from +30% {{ItemIcon|Bullet Lifesteal}} for 8s to Phases Out for 0.5s on cast and enables charges with 10s charge time (causes you to be "out of world" and fizzle incoming projectiles during this time, you are still able to move. You need to buy charges still)
-* {{HeroIcon|Haze}}: {{AbilityIcon|Fixation}} damage vs objectives reduced by 30%
-* {{HeroIcon|Haze}}: {{AbilityIcon|Bullet Dance}} Bonus Damage changed from +5 Bullet Damage to +6 Spirit Damage (with 0.1 Spirit Scaling)
-* {{HeroIcon|Haze}}: {{AbilityIcon|Bullet Dance}} T1 changed to +7 Spirit Damage
+* {{HeroIcon|Haze}}: Using [[Items|items]] during {{AbilityIcon|Smoke Bomb}} no longer breaks invisibility
+* {{HeroIcon|Haze}}: {{AbilityIcon|Smoke Bomb}} [[Cooldown|cooldown]] reduced from 37s to 30s
+* {{HeroIcon|Haze}}: {{AbilityIcon|Smoke Bomb}} T1 changed from -14s to +6 Invis [[Sprint Speed]]
+* {{HeroIcon|Haze}}: {{AbilityIcon|Smoke Bomb}} T2 changed from +6 Invis [[Sprint Speed]] to +15% {{ItemIcon|Bullet Lifesteal}} for 8s
+* {{HeroIcon|Haze}}: {{AbilityIcon|Smoke Bomb}} T3 changed from +30% {{ItemIcon|Bullet Lifesteal}} for 8s to Phases Out for 0.5s on cast and enables [[Charges|charges]] with 10s charge time (causes you to be "out of world" and fizzle incoming projectiles during this time, you are still able to move. You need to buy [[Charges|charges]] still)
+* {{HeroIcon|Haze}}: {{AbilityIcon|Fixation}} [[Damage|damage]] vs objectives reduced by 30%
+* {{HeroIcon|Haze}}: {{AbilityIcon|Bullet Dance}} Bonus [[Damage]] changed from +5 [[Bullet Damage]] to +6 [[Spirit Damage]] (with 0.1 [[Spirit Scaling]])
+* {{HeroIcon|Haze}}: {{AbilityIcon|Bullet Dance}} T1 changed to +7 [[Spirit Damage]]
 
 * {{HeroIcon|Infernus}}: {{AbilityIcon|Afterburn}} buildup decay time is now 15% slower
 * {{HeroIcon|Infernus}}: {{AbilityIcon|Concussive Combustion}} radius increased from 12m to 13m
@@ -445,92 +445,92 @@ View attachment teleporter_update.mp4
 
 * {{HeroIcon|Ivy}}: {{AbilityIcon|Stone Form}} drag down collision improved a bit
 
-* {{HeroIcon|Ivy}}: Bullet damage increased from 5 to 5.2
-* {{HeroIcon|Ivy}}: Bullet damage growth reduced from 0.36 to 0.34
+* {{HeroIcon|Ivy}}: Bullet [[Damage|damage]] increased from 5 to 5.2
+* {{HeroIcon|Ivy}}: Bullet [[Damage|damage]] growth reduced from 0.36 to 0.34
 * {{HeroIcon|Ivy}}: Fixed being launched incorrectly when using {{AbilityIcon|Stone Form}} on certain geometry
 * {{HeroIcon|Ivy}}: Fixed {{AbilityIcon|Stone Form}} having a brief period of vulnerability after cast
 * {{HeroIcon|Ivy}}: {{AbilityIcon|Air Drop}} flight controls improved a bit
 * {{HeroIcon|Ivy}}: {{AbilityIcon|Air Drop}} duration reduced from 17s to 16s
-* {{HeroIcon|Ivy}}: {{AbilityIcon|Air Drop}} cooldown increased from 85s to 90s
-* {{HeroIcon|Ivy}}: {{AbilityIcon|Air Drop}} speed can now be increased with movespeed or sprint items (when out of combat)
-* {{HeroIcon|Ivy}}: {{AbilityIcon|Air Drop}} now amplifies Sprint values by 1.5x
+* {{HeroIcon|Ivy}}: {{AbilityIcon|Air Drop}} [[Cooldown|cooldown]] increased from 85s to 90s
+* {{HeroIcon|Ivy}}: {{AbilityIcon|Air Drop}} speed can now be increased with movespeed or [[Sprint|sprint]] [[Items|items]] (when out of combat)
+* {{HeroIcon|Ivy}}: {{AbilityIcon|Air Drop}} now amplifies [[Sprint]] values by 1.5x
 
 * {{HeroIcon|Kelvin}}: {{AbilityIcon|Seismic Impact}}, {{AbilityIcon|Death Slam}} and {{AbilityIcon|Ground Strike}} now smash through {{AbilityIcon|Ice Path}}
 
-* {{HeroIcon|Lady Geist}}: {{AbilityIcon|Essence Bomb}} Self Damage spirit scaling reduced from 2 to 1.8
+* {{HeroIcon|Lady Geist}}: {{AbilityIcon|Essence Bomb}} Self [[Damage]] [[Spirit Scaling|spirit scaling]] reduced from 2 to 1.8
 
 * {{HeroIcon|Lash}}: {{AbilityIcon|Ground Strike}} drag down collision improved a bit
 
-* {{HeroIcon|McGinnis}}: Bullet Velocity increased from 533 to 590
-* {{HeroIcon|McGinnis}}: Fixed Wall triggering {{ItemIcon|Reactive Barrier}} before T3 stun
-* {{HeroIcon|McGinnis}}: Mini Turrets health no longer scales with your hero's health.
-* {{HeroIcon|McGinnis}}: Mini Turrets Spirit Resist reduced from 70% to 30%
-* {{HeroIcon|McGinnis}}: Mini Turrets base health increased from 75 to 150 (roughly same overall health as previous start of game)
-* {{HeroIcon|McGinnis}}: Mini Turrets now gain +20 Health per Boon
-* {{HeroIcon|McGinnis}}: Mini Turrets now take at most 33% of their Max HP per second from any damage source.  Any excess damage is move to the following second. (In effect this means that turrets will always live at least 3 seconds)
-* {{HeroIcon|McGinnis}}: Fixed Mini Turrets dying causing you to lose sprint
-* {{HeroIcon|McGinnis}}: Mini Turrets cycle time reduced from 0.5 to 0.25 (DPS unchanged)
-* {{HeroIcon|McGinnis}}: Mini Turrets bullet velocity increased from 406 to 500
+* {{HeroIcon|McGinnis}}: [[Bullet Velocity]] increased from 533 to 590
+* {{HeroIcon|McGinnis}}: Fixed Wall triggering {{ItemIcon|Reactive Barrier}} before T3 [[Stun|stun]]
+* {{HeroIcon|McGinnis}}: Mini Turrets [[Health|health]] no longer scales with your [[Hero|hero]]'s [[Health|health]].
+* {{HeroIcon|McGinnis}}: Mini Turrets [[Spirit Resist]] reduced from 70% to 30%
+* {{HeroIcon|McGinnis}}: Mini Turrets base [[Health|health]] increased from 75 to 150 (roughly same overall [[Health|health]] as previous start of game)
+* {{HeroIcon|McGinnis}}: Mini Turrets now gain +20 [[Health]] per [[Boon]]
+* {{HeroIcon|McGinnis}}: Mini Turrets now take at most 33% of their Max [[HP]] per second from any [[Damage|damage]] source.  Any excess [[Damage|damage]] is move to the following second. (In effect this means that turrets will always live at least 3 seconds)
+* {{HeroIcon|McGinnis}}: Fixed Mini Turrets dying causing you to lose [[Sprint|sprint]]
+* {{HeroIcon|McGinnis}}: Mini Turrets cycle time reduced from 0.5 to 0.25 ([[DPS]] unchanged)
+* {{HeroIcon|McGinnis}}: Mini Turrets [[Bullet Velocity|bullet velocity]] increased from 406 to 500
 
 * {{HeroIcon|Mirage}}: {{AbilityIcon|Tornado}} speed reduced by 10%
 * {{HeroIcon|Mirage}}: Fixed {{AbilityIcon|Tornado}} being usable while immobilized
-* {{HeroIcon|Mirage}}: {{AbilityIcon|Tornado}} and {{AbilityIcon|Fire Scarabs}} ability slots swapped
-* {{HeroIcon|Mirage}}: {{AbilityIcon|Traveler}} cooldown increased from 130s to 145s
+* {{HeroIcon|Mirage}}: {{AbilityIcon|Tornado}} and {{AbilityIcon|Fire Scarabs}} [[Ability|ability]] slots swapped
+* {{HeroIcon|Mirage}}: {{AbilityIcon|Traveler}} [[Cooldown|cooldown]] increased from 130s to 145s
 * {{HeroIcon|Mirage}}: {{AbilityIcon|Traveler}} T2 increased from -40s to -55s
 * {{HeroIcon|Mirage}}: {{AbilityIcon|Traveler}} can now be cast by targeting the top bar portraits
 
-* {{HeroIcon|Mo & Krill}}: Headshot resistance now only applies to the big head
+* {{HeroIcon|Mo & Krill}}: [[Headshot]] resistance now only applies to the big head
 * {{HeroIcon|Mo & Krill}}: {{AbilityIcon|Burrow}} can now go under {{AbilityIcon|Spectral Wall}}
 * {{HeroIcon|Mo & Krill}}: {{AbilityIcon|Combo}} now pulls the target closer to you over time
-* {{HeroIcon|Mo & Krill}}: {{AbilityIcon|Combo}} health gain increased from 30 to 70
+* {{HeroIcon|Mo & Krill}}: {{AbilityIcon|Combo}} [[Health|health]] gain increased from 30 to 70
 * {{HeroIcon|Mo & Krill}}: {{AbilityIcon|Sand Blast}} duration reduced from 3.5s to 3s
 * {{HeroIcon|Mo & Krill}}: {{AbilityIcon|Sand Blast}} T3 slow reduced from 50% to 40%
 
-* {{HeroIcon|Paradox}}: Fixed {{AbilityIcon|Kinetic Carbine}} not proccing Headshot effects (Headshot booster, {{ItemIcon|Headhunter}}, {{ItemIcon|Crippling Headshot}})
+* {{HeroIcon|Paradox}}: Fixed {{AbilityIcon|Kinetic Carbine}} not proccing [[Headshot]] effects ([[Headshot]] booster, {{ItemIcon|Headhunter}}, {{ItemIcon|Crippling Headshot}})
 * {{HeroIcon|Paradox}}: {{AbilityIcon|Paradoxical Swap}} time min/max increased by 0.2/0.3s (to help with camera)
-* {{HeroIcon|Paradox}}: {{AbilityIcon|Time Wall}} now deals 50 damage for going through it
+* {{HeroIcon|Paradox}}: {{AbilityIcon|Time Wall}} now deals 50 [[Damage|damage]] for going through it
 
 * {{HeroIcon|Seven}}: {{AbilityIcon|Storm Cloud}} now causes you to levitate up and down a little bit in a cycle rather than being fully stationary
 * {{HeroIcon|Seven}}: {{AbilityIcon|Storm Cloud}} expand time reduced from 2s to 1.5s
 
-* {{HeroIcon|Shiv}}: {{AbilityIcon|Serrated Knives}} cooldown reduced from 19s to 16s
-* {{HeroIcon|Shiv}}: {{AbilityIcon|Serrated Knives}} can now capture souls
-* {{HeroIcon|Shiv}}: {{AbilityIcon|Slice and Dice}} base damage increased from 105 to 110
+* {{HeroIcon|Shiv}}: {{AbilityIcon|Serrated Knives}} [[Cooldown|cooldown]] reduced from 19s to 16s
+* {{HeroIcon|Shiv}}: {{AbilityIcon|Serrated Knives}} can now capture [[Souls|souls]]
+* {{HeroIcon|Shiv}}: {{AbilityIcon|Slice and Dice}} base [[Damage|damage]] increased from 105 to 110
 * {{HeroIcon|Shiv}}: {{AbilityIcon|Slice and Dice}} T2 reduced from +75 to +70
-* {{HeroIcon|Shiv}}: {{AbilityIcon|Slice and Dice}} cooldown reduced from 16s to 15s
+* {{HeroIcon|Shiv}}: {{AbilityIcon|Slice and Dice}} [[Cooldown|cooldown]] reduced from 16s to 15s
 * {{HeroIcon|Shiv}}: {{AbilityIcon|Slice and Dice}} T1 reduced from -4s to -3s
 * {{HeroIcon|Shiv}}: {{AbilityIcon|Killing Blow}} threshold increased from 20% to 22%
-* {{HeroIcon|Shiv}}: {{AbilityIcon|Killing Blow}} T2 reduced from +8% Enemy Health Threshold to +6%
-* {{HeroIcon|Shiv}}: {{AbilityIcon|Killing Blow}} Full Rage Damage Bonus increased from 15% to 17%
-* {{HeroIcon|Shiv}}: {{AbilityIcon|Killing Blow}} T2 reduced from +10% Full Rage Bonus Damage to +8%
+* {{HeroIcon|Shiv}}: {{AbilityIcon|Killing Blow}} T2 reduced from +8% Enemy [[Health]] Threshold to +6%
+* {{HeroIcon|Shiv}}: {{AbilityIcon|Killing Blow}} Full Rage [[Damage]] Bonus increased from 15% to 17%
+* {{HeroIcon|Shiv}}: {{AbilityIcon|Killing Blow}} T2 reduced from +10% Full Rage Bonus [[Damage]] to +8%
 * {{HeroIcon|Shiv}}: Fixed an issue where using {{AbilityIcon|Serrated Knives}} and immediately holding M1 after to shoot not firing your gun
-* {{HeroIcon|Shiv}}: {{AbilityIcon|Killing Blow}} Rage per spirit damage increased from 0.013 to 0.014
+* {{HeroIcon|Shiv}}: {{AbilityIcon|Killing Blow}} Rage per [[Spirit Damage|spirit damage]] increased from 0.013 to 0.014
 * {{HeroIcon|Shiv}}: {{AbilityIcon|Killing Blow}} cast range increased from 14m to 15m
 
 * {{HeroIcon|Vindicta}}: {{AbilityIcon|Crow Familiar}} changed from 0.2s cast delay to 0.2s post cast time
-* {{HeroIcon|Vindicta}}: {{AbilityIcon|Crow Familiar}} now also reduces spirit resistance by 6%
-* {{HeroIcon|Vindicta}}: {{AbilityIcon|Crow Familiar}} T3 changed from "+3% Bleed and -40% Anti Heal" to -12% Spirit and Bullet Resistance
+* {{HeroIcon|Vindicta}}: {{AbilityIcon|Crow Familiar}} now also reduces [[Spirit|spirit]] resistance by 6%
+* {{HeroIcon|Vindicta}}: {{AbilityIcon|Crow Familiar}} T3 changed from "+3% [[Bleed]] and -40% Anti Heal" to -12% [[Spirit]] and Bullet Resistance
 * {{HeroIcon|Vindicta}}: {{AbilityIcon|Stake}} radius increased from 8m to 9m
-* {{HeroIcon|Vindicta}}: {{AbilityIcon|Stake}} now sucks enemies 3m towards the center (and limits movement to 6m from center)
-* {{HeroIcon|Vindicta}}: {{AbilityIcon|Stake}} T1 changed from +0.5s to -40% Fire Rate
-* {{HeroIcon|Vindicta}}: {{AbilityIcon|Stake}} T3 changed from Disarm to +0.75s
+* {{HeroIcon|Vindicta}}: {{AbilityIcon|Stake}} now sucks enemies 3m towards the center (and limits [[Movement|movement]] to 6m from center)
+* {{HeroIcon|Vindicta}}: {{AbilityIcon|Stake}} T1 changed from +0.5s to -40% [[Fire Rate]]
+* {{HeroIcon|Vindicta}}: {{AbilityIcon|Stake}} T3 changed from [[Disarm]] to +0.75s
 * {{HeroIcon|Vindicta}}: {{AbilityIcon|Assassinate}} min charge up increased from 25% to 50%
-* {{HeroIcon|Vindicta}}: {{AbilityIcon|Assassinate}} bonus damage on low hp base damage reduced from 135 to 120
-* {{HeroIcon|Vindicta}}: Fixed {{AbilityIcon|Assassinate}} being stuck if you zoom in and get silenced
+* {{HeroIcon|Vindicta}}: {{AbilityIcon|Assassinate}} bonus [[Damage|damage]] on low [[HP|hp]] base [[Damage|damage]] reduced from 135 to 120
+* {{HeroIcon|Vindicta}}: Fixed {{AbilityIcon|Assassinate}} being stuck if you zoom in and get [[Silenced|silenced]]
 
-* {{HeroIcon|Viscous}}: {{AbilityIcon|Puddle Punch}} can now be parried (does not stun {{HeroIcon|Viscous}}, only blocks the puddle effect for the parrying player)
+* {{HeroIcon|Viscous}}: {{AbilityIcon|Puddle Punch}} can now be parried (does not [[Stun|stun]] {{HeroIcon|Viscous}}, only blocks the puddle effect for the parrying player)
 
-* {{HeroIcon|Warden}}: Fire Rate spirit scaling reduced from 0.3 to 0.25
+* {{HeroIcon|Warden}}: [[Fire Rate]] [[Spirit Scaling|spirit scaling]] reduced from 0.3 to 0.25
 * {{HeroIcon|Warden}}: {{AbilityIcon|Alchemical Flask}} now respects LOS
-* {{HeroIcon|Warden}}: {{AbilityIcon|Last Stand}} cooldown increased from 138s to 140s
+* {{HeroIcon|Warden}}: {{AbilityIcon|Last Stand}} [[Cooldown|cooldown]] increased from 138s to 140s
 * {{HeroIcon|Warden}}: {{AbilityIcon|Last Stand}} resistance during channel increased from 50% to 60%
 
-* {{HeroIcon|Wraith}}: {{AbilityIcon|Full Auto}} T2 no longer has spirit scaling (moved to T3)
-* {{HeroIcon|Wraith}}: {{AbilityIcon|Full Auto}} T3 now also adds spirit scaling
+* {{HeroIcon|Wraith}}: {{AbilityIcon|Full Auto}} T2 no longer has [[Spirit Scaling|spirit scaling]] (moved to T3)
+* {{HeroIcon|Wraith}}: {{AbilityIcon|Full Auto}} T3 now also adds [[Spirit Scaling|spirit scaling]]
 * {{HeroIcon|Wraith}}: {{AbilityIcon|Telekinesis}} now causes the target to oscillate up and down a little bit
 
 * {{HeroIcon|Yamato}}: Improved cases where {{AbilityIcon|Power Slash}} would hit enemies behind cover
 * {{HeroIcon|Yamato}}: {{AbilityIcon|Shadow Transformation}} no longer heals on cast
 * {{HeroIcon|Yamato}}: {{AbilityIcon|Shadow Transformation}} T3 increased from +2s to +3s
-* {{HeroIcon|Yamato}}: {{AbilityIcon|Shadow Transformation}} now heals for 15% of your max hp on hero kill
+* {{HeroIcon|Yamato}}: {{AbilityIcon|Shadow Transformation}} now heals for 15% of your max [[HP|hp]] on [[Hero|hero]] kill
 }}
