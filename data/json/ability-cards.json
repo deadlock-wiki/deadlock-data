@@ -42,14 +42,6 @@
                     "Props": [
                         {
                             "Title": "Napalm Effects:",
-                            "Key": "DebuffDuration",
-                            "Name": "Debuff Duration",
-                            "StatusEffect": "CustomDebuff",
-                            "Value": 8,
-                            "Type": "duration"
-                        },
-                        {
-                            "Title": "Napalm Effects:",
                             "Key": "IncomingDamagePercentFromCaster",
                             "Name": "Damage Taken",
                             "Value": 20,
@@ -71,7 +63,14 @@
                         }
                     ]
                 },
-                "Alt": []
+                "Alt": [
+                    {
+                        "Key": "DebuffDuration",
+                        "Name": "Debuff Duration",
+                        "Value": 8,
+                        "Type": "duration"
+                    }
+                ]
             },
             "Upgrades": [
                 {
@@ -219,13 +218,7 @@
                 },
                 {
                     "AbilityCooldown": -15.0,
-                    "AbilityCharges": {
-                        "Value": 1,
-                        "Scale": {
-                            "Value": 1,
-                            "Type": "max_charges"
-                        }
-                    },
+                    "AbilityCharges": 1,
                     "AbilityCooldownBetweenCharge": 20,
                     "DescKey": "ability_flame_dash_t3_desc"
                 }
@@ -276,15 +269,6 @@
             "AbilityCastDelay": {
                 "Name": "Cast Delay",
                 "Value": 0.2,
-                "Type": "cast"
-            },
-            "AbilityCharges": {
-                "Name": "Charges",
-                "Value": 0,
-                "Scale": {
-                    "Value": 0.0,
-                    "Type": "max_charges"
-                },
                 "Type": "cast"
             },
             "AbilityCooldown": {
@@ -393,6 +377,11 @@
                     "Name": null,
                     "Value": 0.5
                 }
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "4": {
@@ -484,6 +473,11 @@
                 "Name": "Cooldown",
                 "Value": 140.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "Radius": {
                 "Name": "Radius",
@@ -678,6 +672,11 @@
                 "Name": "Cooldown",
                 "Value": 42.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "3": {
@@ -776,6 +775,11 @@
                 "Name": "Cooldown",
                 "Value": 48.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "AbilityDuration": {
                 "Name": "Duration",
@@ -915,6 +919,11 @@
                 "Value": 180.0,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "Radius": {
                 "Name": "Radius",
                 "Value": 30,
@@ -1011,6 +1020,11 @@
                 "Name": "Cooldown",
                 "Value": 40.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "2": {
@@ -1085,6 +1099,11 @@
                 "Value": 42.0,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 15,
@@ -1100,7 +1119,7 @@
                     "Props": [
                         {
                             "Key": "ImpactDamage",
-                            "Name": "Damage",
+                            "Name": "Impact Damage",
                             "Value": 37,
                             "Scale": {
                                 "Value": 0.744,
@@ -1185,6 +1204,11 @@
                 "Name": "Cooldown",
                 "Value": 28.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "4": {
@@ -1402,6 +1426,11 @@
                 "Value": 14.5,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "Radius": {
                 "Name": "Radius",
                 "Value": 9,
@@ -1457,13 +1486,7 @@
                     "AbilityDuration": 2.0
                 },
                 {
-                    "AbilityCharges": {
-                        "Value": 2,
-                        "Scale": {
-                            "Value": 1,
-                            "Type": "max_charges"
-                        }
-                    },
+                    "AbilityCharges": 2,
                     "AbilityCooldownBetweenCharge": 0.1,
                     "DescKey": "ability_life_drain_t3_desc"
                 }
@@ -1501,15 +1524,6 @@
                 "Name": "Cast Range",
                 "Value": 18,
                 "Type": "distance"
-            },
-            "AbilityCharges": {
-                "Name": "Charges",
-                "Value": 0,
-                "Scale": {
-                    "Value": 0.0,
-                    "Type": "max_charges"
-                },
-                "Type": "cast"
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
@@ -1640,6 +1654,11 @@
                 "Name": "Cooldown",
                 "Value": 6,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "4": {
@@ -1743,6 +1762,11 @@
                 "Value": 185.0,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 0.25,
@@ -1826,6 +1850,11 @@
                 "Name": "Cooldown",
                 "Value": 42.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "AbilityDuration": {
                 "Name": "Duration",
@@ -1969,6 +1998,11 @@
                 "Value": 33.0,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 1.4,
@@ -2041,6 +2075,11 @@
                     "Name": null,
                     "Value": 1.0
                 }
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "4": {
@@ -2066,12 +2105,6 @@
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
-                        },
-                        {
-                            "Key": "ImpactRadius",
-                            "Name": "Impact Radius",
-                            "Value": 10.5,
-                            "Type": "distance"
                         },
                         {
                             "Title": "On Hit:",
@@ -2129,6 +2162,13 @@
                     "DescKey": "citadel_ability_bull_leap_t3_desc"
                 }
             ],
+            "Range": {
+                "ImpactRadius": {
+                    "Name": "Impact Radius",
+                    "Value": 10.5,
+                    "Type": "distance"
+                }
+            },
             "Move": {
                 "ChannelMoveSpeed": {
                     "Name": "Channel Move Speed",
@@ -2154,6 +2194,11 @@
                 "Name": "Cooldown",
                 "Value": 185.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         }
     },
@@ -2177,20 +2222,14 @@
                             "Type": "tech_damage"
                         },
                         {
-                            "Key": "AbilityCharges",
-                            "Name": "Charges",
-                            "Value": 1,
-                            "Type": "cast"
+                            "Key": "SlowPercent",
+                            "Name": "Move Speed",
+                            "Value": 0,
+                            "Type": "slow"
                         }
                     ]
                 },
                 "Alt": [
-                    {
-                        "Key": "SlowPercent",
-                        "Name": "Move Speed",
-                        "Value": 0,
-                        "Type": "slow"
-                    },
                     {
                         "Key": "SlowDuration",
                         "Name": "Slow Duration",
@@ -2298,6 +2337,11 @@
                 },
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "Radius": {
                 "Name": "Radius",
                 "Value": 4,
@@ -2399,6 +2443,11 @@
                 "Name": "Cooldown",
                 "Value": 42.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "3": {
@@ -2489,6 +2538,11 @@
                 "Name": "Cooldown",
                 "Value": 48.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "AbilityDuration": {
                 "Name": "Duration",
@@ -2584,6 +2638,11 @@
                 "Name": "Cooldown",
                 "Value": 110.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "AbilityDuration": {
                 "Name": "Duration",
@@ -2861,6 +2920,11 @@
                 "Value": 48.0,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 6,
@@ -2982,6 +3046,11 @@
                 "Name": "Cooldown",
                 "Value": 50.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "AbilityDuration": {
                 "Name": "Duration",
@@ -3126,6 +3195,11 @@
                 "Value": 165.0,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 13,
@@ -3223,6 +3297,11 @@
                 "Name": "Cooldown",
                 "Value": 28.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "AbilityDuration": {
                 "Name": "Duration",
@@ -3357,6 +3436,11 @@
                 "Name": "Cooldown",
                 "Value": 25.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "AbilityDuration": {
                 "Name": "Duration",
@@ -3506,6 +3590,11 @@
                 "Name": "Cooldown",
                 "Value": 27.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "4": {
@@ -3598,6 +3687,11 @@
                 "Name": "Cooldown",
                 "Value": 75.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         }
     },
@@ -3840,6 +3934,11 @@
                 "Value": 16,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 1.4,
@@ -3913,6 +4012,11 @@
                 "Name": "Cooldown",
                 "Value": 45.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "4": {
@@ -4002,6 +4106,11 @@
                 "Name": "Cooldown",
                 "Value": 230.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         }
     },
@@ -4246,6 +4355,11 @@
                 "Value": 46.0,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 8,
@@ -4392,6 +4506,11 @@
                 "Name": "Cooldown",
                 "Value": 25.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "4": {
@@ -4489,6 +4608,11 @@
                 "Value": 170,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 5.0,
@@ -4522,7 +4646,7 @@
                         },
                         {
                             "Key": "SleepWakeUpDelay",
-                            "Name": "Wake Up Time",
+                            "Name": "Wake Up Delay",
                             "Value": 0.1,
                             "Scale": {
                                 "Value": 0.003047,
@@ -4607,6 +4731,11 @@
                 "Name": "Cooldown",
                 "Value": 26.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "2": {
@@ -4661,13 +4790,7 @@
                     "DescKey": "ability_smoke_bomb_t2_desc"
                 },
                 {
-                    "AbilityCharges": {
-                        "Value": 1,
-                        "Scale": {
-                            "Value": 1,
-                            "Type": "max_charges"
-                        }
-                    },
+                    "AbilityCharges": 1,
                     "AbilityCooldownBetweenCharge": 7,
                     "PhaseOutDuration": 0.5,
                     "DescKey": "ability_smoke_bomb_t3_desc"
@@ -4705,15 +4828,6 @@
                     "Name": null,
                     "Value": 1
                 }
-            },
-            "AbilityCharges": {
-                "Name": "Charges",
-                "Value": 0,
-                "Scale": {
-                    "Value": 0.0,
-                    "Type": "max_charges"
-                },
-                "Type": "cast"
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
@@ -4799,6 +4913,11 @@
                     "Value": 1
                 }
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 6,
@@ -4883,6 +5002,11 @@
                 "Name": "Cooldown",
                 "Value": 165.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "AbilityDuration": {
                 "Name": "Duration",
@@ -5263,6 +5387,11 @@
                 "Name": "Cooldown",
                 "Value": 20,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "4": {
@@ -5399,6 +5528,11 @@
                 "Name": "Cooldown",
                 "Value": 115,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "AbilityDuration": {
                 "Name": "Duration",
@@ -5548,6 +5682,11 @@
                 "Name": "Cooldown",
                 "Value": 22.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "2": {
@@ -5659,6 +5798,11 @@
                 "Value": 18.0,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 3.0,
@@ -5759,6 +5903,11 @@
                 "Name": "Cooldown",
                 "Value": 23.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "4": {
@@ -5891,6 +6040,11 @@
                 "Name": "Cooldown",
                 "Value": 105.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         }
     },
@@ -5977,6 +6131,11 @@
                 "Value": 14,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "Radius": {
                 "Name": "Radius",
                 "Value": 3.0,
@@ -5992,7 +6151,7 @@
                     "Props": [
                         {
                             "Key": "ImpactDamage",
-                            "Name": "Damage",
+                            "Name": "Impact Damage",
                             "Value": 0.0,
                             "Scale": {
                                 "Value": 1.5,
@@ -6106,6 +6265,11 @@
                 "Name": "Cooldown",
                 "Value": 11,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "3": {
@@ -6172,7 +6336,7 @@
                     "Value": 65
                 },
                 "InterruptCooldown": {
-                    "Name": null,
+                    "Name": "Interrupt Cooldown",
                     "Value": 6
                 },
                 "SpeedLostDuration": {
@@ -6184,6 +6348,11 @@
                 "Name": "Cooldown",
                 "Value": 45,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "4": {
@@ -6271,6 +6440,11 @@
                 "Name": "Cooldown",
                 "Value": 90,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "Radius": {
                 "Name": "Radius",
@@ -6499,6 +6673,11 @@
                 "Value": 30.0,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 7,
@@ -6629,6 +6808,11 @@
                 "Value": 34,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "Radius": {
                 "Name": "Radius",
                 "Value": 6.5,
@@ -6710,6 +6894,11 @@
                 "Name": "Cooldown",
                 "Value": 120.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         }
     },
@@ -6789,6 +6978,11 @@
                 "Name": "Cooldown",
                 "Value": 12.5,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "Radius": {
                 "Name": "Radius",
@@ -6923,6 +7117,11 @@
                 "Value": 37.0,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "Radius": {
                 "Name": "Radius",
                 "Value": 5,
@@ -7013,6 +7212,11 @@
                 "Value": 42.0,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 3,
@@ -7090,6 +7294,11 @@
                 "Name": "Cooldown",
                 "Value": 90.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         }
     },
@@ -7104,7 +7313,7 @@
                     "Props": [
                         {
                             "Key": "ImpactDamage",
-                            "Name": "Damage",
+                            "Name": "Impact Damage",
                             "Value": 32,
                             "Scale": {
                                 "Value": 0.558,
@@ -7224,7 +7433,7 @@
                     "Props": [
                         {
                             "Key": "ImpactDamage",
-                            "Name": "Damage",
+                            "Name": "Impact Damage",
                             "Value": 75,
                             "Scale": {
                                 "Value": 1.4415,
@@ -7311,6 +7520,11 @@
                 "Name": "Cooldown",
                 "Value": 15.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "3": {
@@ -7398,6 +7612,11 @@
                 "Name": "Cooldown",
                 "Value": 20.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "4": {
@@ -7547,6 +7766,11 @@
                 "Name": "Cooldown",
                 "Value": 105.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         }
     },
@@ -7752,6 +7976,11 @@
                 "Value": 37.0,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 12,
@@ -7852,6 +8081,11 @@
                 "Value": 37.0,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "Radius": {
                 "Name": "Radius",
                 "Value": 6,
@@ -7884,12 +8118,6 @@
                                 "Type": "spirit"
                             },
                             "Type": "combat_barrier"
-                        },
-                        {
-                            "Key": "TossDuration",
-                            "Name": "Duration",
-                            "StatusEffect": "Displacement",
-                            "Value": 1
                         }
                     ]
                 },
@@ -7988,6 +8216,10 @@
                     "Name": null,
                     "Value": 12
                 },
+                "TossDuration": {
+                    "Name": null,
+                    "Value": 1
+                },
                 "TossSpeed": {
                     "Name": null,
                     "Value": 10.16
@@ -8007,6 +8239,11 @@
                 "Name": "Cooldown",
                 "Value": 100.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "AbilityDuration": {
                 "Name": "Duration",
@@ -8119,6 +8356,11 @@
                 "Value": 12.0,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "Radius": {
                 "Name": "Radius",
                 "Value": 5.5,
@@ -8188,6 +8430,11 @@
                 "Name": "Cooldown",
                 "Value": 42.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "AbilityDuration": {
                 "Name": "Duration",
@@ -8276,6 +8523,11 @@
                 "Name": "Cooldown",
                 "Value": 37.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "4": {
@@ -8372,6 +8624,11 @@
                 "Name": "Cooldown",
                 "Value": 155.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "AbilityDuration": {
                 "Name": "Duration",
@@ -8511,6 +8768,11 @@
                 "Name": "Cooldown",
                 "Value": 10.5,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "2": {
@@ -8588,6 +8850,11 @@
                 "Name": "Cooldown",
                 "Value": 21.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "3": {
@@ -8665,6 +8932,11 @@
                 "Name": "Cooldown",
                 "Value": 15,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "Radius": {
                 "Name": "Radius",
@@ -8757,6 +9029,11 @@
                 "Name": "Cooldown",
                 "Value": 110.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "AbilityDuration": {
                 "Name": "Duration",
@@ -8900,6 +9177,11 @@
                 "Name": "Cooldown",
                 "Value": 21.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "Radius": {
                 "Name": "Radius",
@@ -9106,6 +9388,11 @@
                 "Name": "Cooldown",
                 "Value": 24.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "4": {
@@ -9117,7 +9404,7 @@
                     "Props": [
                         {
                             "Key": "ImpactDamage",
-                            "Name": "Damage",
+                            "Name": "Impact Damage",
                             "Value": 105,
                             "Scale": {
                                 "Value": 0.974938,
@@ -9262,6 +9549,11 @@
                 "Name": "Cooldown",
                 "Value": 145.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         }
     },
@@ -9377,6 +9669,11 @@
                 "Name": "Cooldown",
                 "Value": 30.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "Radius": {
                 "Name": "Radius",
@@ -9497,6 +9794,11 @@
                 "Name": "Cooldown",
                 "Value": 42.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "AbilityDuration": {
                 "Name": "Duration",
@@ -9777,6 +10079,11 @@
                 "Value": 115.0,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 9,
@@ -9875,6 +10182,11 @@
                 "Value": 28.0,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 3.2,
@@ -9960,6 +10272,11 @@
                 "Name": "Cast Range",
                 "Value": 8,
                 "Type": "range"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "3": {
@@ -10058,6 +10375,11 @@
                 "Name": "Cooldown",
                 "Value": 14,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "4": {
@@ -10151,6 +10473,11 @@
                 "Name": "Cooldown",
                 "Value": 90,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         }
     },
@@ -10248,6 +10575,11 @@
                 "Value": 31,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 6,
@@ -10343,6 +10675,11 @@
                 "Name": "Cooldown",
                 "Value": 12.5,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "3": {
@@ -10546,6 +10883,11 @@
                 "Name": "Cooldown",
                 "Value": 130,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         }
     },
@@ -10661,6 +11003,11 @@
                 "Value": 32.0,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "Radius": {
                 "Name": "Radius",
                 "Value": 4.5,
@@ -10735,6 +11082,11 @@
                 "Name": "Cooldown",
                 "Value": 32.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "Radius": {
                 "Name": "Radius",
@@ -10823,6 +11175,11 @@
                 "Name": "Cooldown",
                 "Value": 17.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "Radius": {
                 "Name": "Radius",
@@ -10921,6 +11278,11 @@
                 "Name": "Cooldown",
                 "Value": 140.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "Radius": {
                 "Name": "Radius",
@@ -11194,6 +11556,11 @@
                 "Value": 32.0,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "Radius": {
                 "Name": "Radius",
                 "Value": 3.5,
@@ -11291,6 +11658,11 @@
                 "Name": "Cooldown",
                 "Value": 2.6,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "4": {
@@ -11374,6 +11746,11 @@
                 "Name": "Cooldown",
                 "Value": 155.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         }
     },
@@ -11524,7 +11901,7 @@
                     "Value": 1
                 },
                 "GravityScale": {
-                    "Name": null,
+                    "Name": "Gravity Scale",
                     "Value": 1.4
                 },
                 "TossSpeed": {
@@ -11545,6 +11922,11 @@
                 "Name": "Cooldown",
                 "Value": 22.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "3": {
@@ -11759,6 +12141,11 @@
                 "Name": "Cooldown",
                 "Value": 50.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         }
     },
@@ -11840,6 +12227,11 @@
                 "Value": 10.5,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "Radius": {
                 "Name": "Radius",
                 "Value": 7,
@@ -11883,6 +12275,11 @@
                 "Name": "Cooldown",
                 "Value": 26.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "3": {
@@ -11922,6 +12319,11 @@
                 "Name": "Cooldown",
                 "Value": 26.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "4": {
@@ -11968,6 +12370,11 @@
                 "Name": "Cooldown",
                 "Value": 127.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         }
     },
@@ -12010,6 +12417,11 @@
                 "Name": "Cooldown",
                 "Value": 26.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "2": {
@@ -12049,6 +12461,11 @@
                 "Name": "Cooldown",
                 "Value": 26.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "3": {
@@ -12088,6 +12505,11 @@
                 "Name": "Cooldown",
                 "Value": 26.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "4": {
@@ -12134,6 +12556,11 @@
                 "Name": "Cooldown",
                 "Value": 127.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         }
     },
@@ -12374,6 +12801,11 @@
                 "Name": "Cooldown",
                 "Value": 20.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "3": {
@@ -12436,6 +12868,11 @@
                     "Name": null,
                     "Value": 1
                 }
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "4": {
@@ -12530,6 +12967,11 @@
                 "Value": 90,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "Radius": {
                 "Name": "Radius",
                 "Value": 8
@@ -12605,6 +13047,11 @@
                 "Name": "Cooldown",
                 "Value": 16,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "AbilityDuration": {
                 "Name": "Duration",
@@ -12697,6 +13144,11 @@
                 "Value": 60,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "Radius": {
                 "Name": "Radius",
                 "Value": 4
@@ -12772,6 +13224,11 @@
                     "Name": null,
                     "Value": 0.5
                 }
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "4": {
@@ -12841,6 +13298,11 @@
                 "Name": "Cooldown",
                 "Value": 16,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "AbilityDuration": {
                 "Name": "Duration",
@@ -12918,7 +13380,7 @@
                     "AbilityCooldown": -13
                 },
                 {
-                    "MaxDamage": 126,
+                    "MaxDamage": 126.0,
                     "CloneDamagePercentage": 50.0,
                     "DescKey": "ability_magician_magicbolt_t3_desc"
                 }
@@ -13088,6 +13550,11 @@
                 "Value": 40,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 6,
@@ -13197,6 +13664,11 @@
                 "Value": 26,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "Radius": {
                 "Name": "Radius",
                 "Value": 6.5,
@@ -13269,6 +13741,11 @@
                 "Name": "Cooldown",
                 "Value": 85,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         }
     },
@@ -13357,6 +13834,11 @@
                 "Name": "Cooldown",
                 "Value": 30,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "AbilityDuration": {
                 "Name": "Duration",
@@ -13576,6 +14058,11 @@
                 "Value": 30,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 5,
@@ -13725,6 +14212,11 @@
                 "Value": 160,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "Radius": {
                 "Name": "Radius",
                 "Value": 3.5
@@ -13815,6 +14307,11 @@
                 "Value": 30.0,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "Radius": {
                 "Name": "Radius",
                 "Value": 6.5,
@@ -13903,6 +14400,11 @@
                 "Name": "Cooldown",
                 "Value": 32.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "3": {
@@ -13993,6 +14495,11 @@
                 "Name": "Cooldown",
                 "Value": 48.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "AbilityDuration": {
                 "Name": "Duration",
@@ -14105,6 +14612,11 @@
                 "Name": "Cooldown",
                 "Value": 90.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "AbilityDuration": {
                 "Name": "Duration",
@@ -14257,6 +14769,11 @@
                 "Name": "Cooldown",
                 "Value": 10,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "2": {
@@ -14323,7 +14840,7 @@
             ],
             "Cast": {
                 "MaxRecasts": {
-                    "Name": null,
+                    "Name": "Max Recasts",
                     "Value": 1,
                     "Type": "cast"
                 }
@@ -14362,6 +14879,11 @@
                 "Name": "Cooldown",
                 "Value": 32,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "AbilityDuration": {
                 "Name": "Duration",
@@ -14484,7 +15006,20 @@
                 "BuildUpPerShot": {
                     "Name": null,
                     "Value": 18.4
+                },
+                "EffectivenessVolumeScaleMax": {
+                    "Name": null,
+                    "Value": 1.0
+                },
+                "EffectivenessVolumeScaleMin": {
+                    "Name": null,
+                    "Value": 0.5
                 }
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "4": {
@@ -14681,6 +15216,11 @@
                 "Name": "Cooldown",
                 "Value": 115,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         }
     },
@@ -14808,6 +15348,11 @@
                 "Name": "Cooldown",
                 "Value": 13.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "2": {
@@ -14865,13 +15410,7 @@
                     "DescKey": "drifter_shadow_mark_t2_desc"
                 },
                 {
-                    "AbilityCharges": {
-                        "Value": 2,
-                        "Scale": {
-                            "Value": 1,
-                            "Type": "max_charges"
-                        }
-                    },
+                    "AbilityCharges": 2,
                     "AbilityCooldownBetweenCharge": 5,
                     "DescKey": "drifter_shadow_mark_t3_desc"
                 }
@@ -15107,6 +15646,11 @@
                 "Name": "Cast Range",
                 "Value": 80,
                 "Type": "range"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "4": {
@@ -15250,6 +15794,11 @@
                 "Value": 130.0,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 7.0,
@@ -15258,412 +15807,7 @@
         }
     },
     "hero_priest": {
-        "Name": "Venator",
-        "1": {
-            "Key": "ability_priest_flashbang",
-            "Name": "Unknown(ability_priest_flashbang)",
-            "Info1": {
-                "Main": {
-                    "Props": [
-                        {
-                            "Key": "Damage",
-                            "Name": "Damage",
-                            "Value": 35,
-                            "Scale": {
-                                "Value": 1.0,
-                                "Type": "weapon_damage_increase"
-                            },
-                            "Type": "bullet_damage"
-                        },
-                        {
-                            "Title": "On Hit:",
-                            "Key": "DPS",
-                            "Name": "Damage Per Second",
-                            "Value": 10,
-                            "Scale": {
-                                "Value": 0.5,
-                                "Type": "spirit"
-                            },
-                            "Type": "damage"
-                        },
-                        {
-                            "Title": "On Hit:",
-                            "Key": "SlowPercent",
-                            "Name": "Move Speed",
-                            "Value": 0
-                        },
-                        {
-                            "Title": "On Hit:",
-                            "Key": "FireRateSlow",
-                            "Name": "Fire Rate",
-                            "Value": 0
-                        },
-                        {
-                            "Title": "On Hit:",
-                            "Key": "HealAmpReceivePenaltyPercent",
-                            "Name": "Healing Reduction",
-                            "Value": -50,
-                            "Type": "damage"
-                        }
-                    ]
-                },
-                "Alt": [
-                    {
-                        "Key": "DebuffDuration",
-                        "Name": "Debuff Duration",
-                        "Value": 4
-                    }
-                ]
-            },
-            "Upgrades": [
-                {
-                    "DebuffDuration": 2
-                },
-                {
-                    "DPS": 15
-                },
-                {
-                    "Radius": 2
-                }
-            ],
-            "Move": {
-                "ChannelMoveSpeed": {
-                    "Name": "Channel Move Speed",
-                    "Value": -1,
-                    "Type": "move_speed"
-                }
-            },
-            "Damage": {
-                "HealAmpRegenPenaltyPercent": {
-                    "Name": "Healing Reduction",
-                    "Value": -50,
-                    "Type": "damage"
-                }
-            },
-            "Other": {
-                "AbilityUnitTargetLimit": {
-                    "Name": null,
-                    "Value": 1
-                },
-                "BounceGrenadeSpeed": {
-                    "Name": null,
-                    "Value": 500
-                },
-                "CameraTurnRateMax": {
-                    "Name": null,
-                    "Value": 15
-                },
-                "MaxBounceRange": {
-                    "Name": null,
-                    "Value": 8
-                },
-                "TickRate": {
-                    "Name": null,
-                    "Value": 0.2
-                }
-            },
-            "AbilityCastDelay": {
-                "Name": "Cast Delay",
-                "Value": 0.1,
-                "Type": "cast"
-            },
-            "AbilityCastRange": {
-                "Name": "Cast Range",
-                "Value": 20,
-                "Type": "range"
-            },
-            "AbilityCooldown": {
-                "Name": "Cooldown",
-                "Value": 30.0,
-                "Type": "cooldown"
-            },
-            "Radius": {
-                "Name": "Radius",
-                "Value": 7,
-                "Type": "distance"
-            }
-        },
-        "2": {
-            "Key": "ability_priest_knockback",
-            "Name": "Unknown(ability_priest_knockback)",
-            "Info1": {
-                "Main": {
-                    "Props": [
-                        {
-                            "Key": "Damage",
-                            "Name": "Damage",
-                            "Value": 40,
-                            "Scale": {
-                                "Value": 0.3,
-                                "Type": "weapon_damage_increase"
-                            },
-                            "Type": "bullet_damage"
-                        },
-                        {
-                            "Key": "SlowPercent",
-                            "Name": "Move Speed",
-                            "Value": 60,
-                            "Type": "slow"
-                        }
-                    ]
-                },
-                "Alt": null
-            },
-            "Info2": {
-                "Main": {
-                    "Props": [
-                        {
-                            "Title": "On Wall Hit:",
-                            "Key": "BonusDamage",
-                            "Name": "Bonus Damage",
-                            "Value": 60,
-                            "Scale": {
-                                "Value": 0.8,
-                                "Type": "weapon_damage_increase"
-                            },
-                            "Type": "bullet_damage"
-                        },
-                        {
-                            "Title": "On Wall Hit:",
-                            "Key": "StunDuration",
-                            "Name": "Stun Duration",
-                            "StatusEffect": "Stun",
-                            "Value": 0.6
-                        }
-                    ]
-                },
-                "Alt": null
-            },
-            "Upgrades": [
-                {
-                    "AbilityCastRange": 2.5
-                },
-                {
-                    "Damage": 40,
-                    "BonusDamage": 20
-                },
-                {
-                    "StunDuration": 0.3
-                }
-            ],
-            "Move": {
-                "ChannelMoveSpeed": {
-                    "Name": "Channel Move Speed",
-                    "Value": -1,
-                    "Type": "move_speed"
-                }
-            },
-            "Other": {
-                "AbilityUnitTargetLimit": {
-                    "Name": null,
-                    "Value": 99
-                },
-                "BonusKnockbackDistance": {
-                    "Name": null,
-                    "Value": 3.5
-                },
-                "KnockbackSpeed": {
-                    "Name": null,
-                    "Value": 1200
-                },
-                "PushBackDistance": {
-                    "Name": null,
-                    "Value": 12
-                },
-                "PushForce": {
-                    "Name": null,
-                    "Value": 4
-                },
-                "SelfPushForce": {
-                    "Name": null,
-                    "Value": 500
-                },
-                "TargetingConeAngle": {
-                    "Name": "Attack Angle",
-                    "Value": 60
-                }
-            },
-            "AbilityCastDelay": {
-                "Name": "Cast Delay",
-                "Value": 0.25,
-                "Type": "cast"
-            },
-            "AbilityCastRange": {
-                "Name": "Cast Range",
-                "Value": 10,
-                "Type": "range"
-            },
-            "AbilityCooldown": {
-                "Name": "Cooldown",
-                "Value": 15,
-                "Type": "cooldown"
-            }
-        },
-        "3": {
-            "Key": "ability_priest_stackingdefense",
-            "Name": "Unknown(ability_priest_stackingdefense)",
-            "Info1": {
-                "Main": {
-                    "Props": [
-                        {
-                            "Key": "MaxStacks",
-                            "Name": "Max Stacks",
-                            "Value": 20
-                        },
-                        {
-                            "Key": "ResistancePerStack",
-                            "Name": "Unknown(ResistancePerStack)",
-                            "Value": 1,
-                            "Type": "bullet_armor_up"
-                        },
-                        {
-                            "Key": "WeaponDamagePerStack",
-                            "Name": "Weapon Damage per Stack",
-                            "Value": 0,
-                            "Type": "bullet_damage"
-                        }
-                    ]
-                },
-                "Alt": [
-                    {
-                        "Key": "StackDuration",
-                        "Name": "Stack Duration",
-                        "Value": 8,
-                        "Type": "duration"
-                    }
-                ]
-            },
-            "Upgrades": [
-                {
-                    "StackDuration": 2
-                },
-                {
-                    "MaxStacks": 10
-                },
-                {
-                    "WeaponDamagePerStack": 1.5
-                }
-            ],
-            "Move": {
-                "ChannelMoveSpeed": {
-                    "Name": "Channel Move Speed",
-                    "Value": -1,
-                    "Type": "move_speed"
-                }
-            },
-            "Other": {
-                "AbilityUnitTargetLimit": {
-                    "Name": null,
-                    "Value": 1
-                },
-                "CooldownPerStack": {
-                    "Name": null,
-                    "Value": 0.5
-                }
-            },
-            "AbilityCooldown": {
-                "Name": "Cooldown",
-                "Value": 26.0,
-                "Type": "cooldown"
-            }
-        },
-        "4": {
-            "Key": "ability_priest_weaponswap",
-            "Name": "Unknown(ability_priest_weaponswap)",
-            "Info1": {
-                "Main": {
-                    "Props": [
-                        {
-                            "Key": "StakeCount",
-                            "Name": "Unknown(StakeCount)",
-                            "Value": 4
-                        },
-                        {
-                            "Key": "Damage",
-                            "Name": "Damage",
-                            "Value": 80,
-                            "Scale": {
-                                "Value": 0.8,
-                                "Type": "weapon_damage_increase"
-                            },
-                            "Type": "bullet_damage"
-                        },
-                        {
-                            "Title": "On Hit:",
-                            "Key": "SlowPercent",
-                            "Name": "Move Speed",
-                            "Value": 0,
-                            "Type": "slow"
-                        },
-                        {
-                            "Title": "On Hit:",
-                            "Key": "ExecuteThreshold",
-                            "Name": "Execute Threshold",
-                            "Value": 0,
-                            "Type": "damage"
-                        },
-                        {
-                            "Title": "On Hit:",
-                            "Key": "BonusDamage",
-                            "Name": "Bonus Damage",
-                            "Value": 50,
-                            "Scale": {
-                                "Value": 0.8,
-                                "Type": "spirit"
-                            },
-                            "Type": "tech_damage"
-                        }
-                    ]
-                },
-                "Alt": []
-            },
-            "Upgrades": [
-                {
-                    "AbilityCooldown": -25
-                },
-                {
-                    "BonusDamage": 40
-                },
-                {
-                    "ExecuteThreshold": 15
-                }
-            ],
-            "Move": {
-                "ChannelMoveSpeed": {
-                    "Name": "Channel Move Speed",
-                    "Value": -1,
-                    "Type": "move_speed"
-                }
-            },
-            "Other": {
-                "AbilityUnitTargetLimit": {
-                    "Name": null,
-                    "Value": 1
-                },
-                "ExplodeRadius": {
-                    "Name": "Explosion Radius",
-                    "Value": 0.2
-                },
-                "PushForce": {
-                    "Name": null,
-                    "Value": 500
-                },
-                "SwapEndDelay": {
-                    "Name": null,
-                    "Value": 0.6
-                }
-            },
-            "AbilityCastDelay": {
-                "Name": "Cast Delay",
-                "Value": 0.6,
-                "Type": "cast"
-            },
-            "AbilityCooldown": {
-                "Name": "Cooldown",
-                "Value": 120,
-                "Type": "cooldown"
-            }
-        }
+        "Name": "Venator"
     },
     "hero_frank": {
         "Name": "Victor",
@@ -15801,6 +15945,11 @@
                 "Name": "Cooldown",
                 "Value": 2,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "2": {
@@ -16021,6 +16170,11 @@
                 "Value": 2.5,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 10,
@@ -16180,6 +16334,11 @@
                 "Name": "Cooldown",
                 "Value": 190,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "Radius": {
                 "Name": "Radius",
@@ -16561,6 +16720,11 @@
                 "Value": 25,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "Radius": {
                 "Name": "Radius",
                 "Value": 7.5
@@ -16798,6 +16962,11 @@
                 "Value": 190,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 13,
@@ -17006,6 +17175,11 @@
                 "Name": "Cooldown",
                 "Value": 14,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "3": {
@@ -17084,6 +17258,11 @@
                 "Value": 26.0,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 5,
@@ -17103,7 +17282,7 @@
                         {
                             "Title": "On Impact",
                             "Key": "ImpactDamage",
-                            "Name": "Damage",
+                            "Name": "Impact Damage",
                             "Value": 40,
                             "Scale": {
                                 "Value": 1.0,
@@ -17304,6 +17483,11 @@
                 "Value": 40,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 20,
@@ -17390,6 +17574,11 @@
                 "Name": "Cooldown",
                 "Value": 30,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "AbilityDuration": {
                 "Name": "Duration",
@@ -17497,6 +17686,11 @@
                 "Name": "Cooldown",
                 "Value": 120,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "AbilityDuration": {
                 "Name": "Duration",
@@ -17728,6 +17922,11 @@
                 "Value": 26.0,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "Radius": {
                 "Name": "Radius",
                 "Value": 5
@@ -17824,6 +18023,11 @@
                 "Name": "Cooldown",
                 "Value": 90,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         }
     },
@@ -17896,6 +18100,11 @@
                 "Value": 8,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "Radius": {
                 "Name": "Radius",
                 "Value": 4
@@ -17959,6 +18168,11 @@
                 "Name": "Cooldown",
                 "Value": 14,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "3": {
@@ -18022,6 +18236,11 @@
                 "Value": 26.0,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 7,
@@ -18072,6 +18291,11 @@
                 "Name": "Cooldown",
                 "Value": 127.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         }
     },
@@ -18438,6 +18662,11 @@
                 "Value": 30,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 0.51,
@@ -18585,6 +18814,11 @@
                 "Name": "Cooldown",
                 "Value": 27,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "AbilityDuration": {
                 "Name": "Duration",
@@ -18758,6 +18992,11 @@
                 "Value": 150,
                 "Type": "cooldown"
             },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
             "AbilityDuration": {
                 "Name": "Duration",
                 "Value": 2.8,
@@ -18768,8 +19007,8 @@
     "hero_druid": {
         "Name": "Druid",
         "1": {
-            "Key": "ability_druid_ability01",
-            "Name": "Unknown(ability_druid_ability01)",
+            "Key": "ability_druid_leech_seed",
+            "Name": "Unknown(ability_druid_leech_seed)",
             "Info1": {
                 "Main": {
                     "Props": []
@@ -18798,17 +19037,35 @@
                 "AbilityUnitTargetLimit": {
                     "Name": null,
                     "Value": 1
+                },
+                "Damage": {
+                    "Name": "Damage",
+                    "Value": 50
+                },
+                "DamagePulses": {
+                    "Name": null,
+                    "Value": 5
                 }
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
                 "Value": 26.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 5,
+                "Type": "duration"
             }
         },
         "2": {
-            "Key": "ability_druid_ability02",
-            "Name": "Unknown(ability_druid_ability02)",
+            "Key": "ability_druid_helicopter_seeds",
+            "Name": "Unknown(ability_druid_helicopter_seeds)",
             "Info1": {
                 "Main": {
                     "Props": []
@@ -18843,6 +19100,11 @@
                 "Name": "Cooldown",
                 "Value": 26.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "3": {
@@ -18882,6 +19144,11 @@
                 "Name": "Cooldown",
                 "Value": 1,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "4": {
@@ -18928,6 +19195,11 @@
                 "Name": "Cooldown",
                 "Value": 127.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         }
     },
@@ -18970,6 +19242,11 @@
                 "Name": "Cooldown",
                 "Value": 26.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "2": {
@@ -19009,6 +19286,11 @@
                 "Name": "Cooldown",
                 "Value": 26.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "3": {
@@ -19048,6 +19330,11 @@
                 "Name": "Cooldown",
                 "Value": 26.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "4": {
@@ -19094,6 +19381,11 @@
                 "Name": "Cooldown",
                 "Value": 127.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         }
     },
@@ -19136,6 +19428,11 @@
                 "Name": "Cooldown",
                 "Value": 26.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "2": {
@@ -19175,6 +19472,11 @@
                 "Name": "Cooldown",
                 "Value": 26.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "3": {
@@ -19214,6 +19516,11 @@
                 "Name": "Cooldown",
                 "Value": 26.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         },
         "4": {
@@ -19260,7 +19567,170 @@
                 "Name": "Cooldown",
                 "Value": 127.0,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             }
         }
+    },
+    "hero_necro": {
+        "Name": "Graves"
+    },
+    "hero_fencer": {
+        "Name": "Apollo"
+    },
+    "hero_airheart": {
+        "Name": null,
+        "4": {
+            "Key": "citadel_ability_bebop_laser_beam",
+            "Name": "Hyper Beam",
+            "DescKey": "citadel_ability_bebop_laser_beam_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "DPS",
+                            "Name": "Damage Per Second",
+                            "Value": 160,
+                            "Scale": {
+                                "Value": 2.511,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Title": "On Hit:",
+                            "Key": "SlowPercent",
+                            "Name": "Move Speed",
+                            "Value": 25,
+                            "Type": "slow"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "BeamLength",
+                        "Name": "Beam Length",
+                        "Value": 70,
+                        "Type": "distance"
+                    },
+                    {
+                        "Key": "BeamWidth",
+                        "Name": "Beam Width",
+                        "Value": 2.9
+                    }
+                ],
+                "DescKey": "citadel_ability_bebop_laser_beam_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -25.0
+                },
+                {
+                    "DPS": 108.0
+                },
+                {
+                    "BeamLifesteal": 65,
+                    "BeamLifestealNonHeroPercent": 20,
+                    "DescKey": "citadel_ability_bebop_laser_beam_t3_desc"
+                }
+            ],
+            "Duration": {
+                "SlowTargetDuration": {
+                    "Name": null,
+                    "Value": 0.5,
+                    "Type": "duration"
+                }
+            },
+            "Cast": {
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Value": 11,
+                    "Type": "cast"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 1.8,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AirSpeedMax": {
+                    "Name": null,
+                    "Value": 70
+                },
+                "BeamCloseDamagePercent": {
+                    "Name": null,
+                    "Value": 75
+                },
+                "BeamCloseRadius": {
+                    "Name": null,
+                    "Value": 5.0
+                },
+                "BeamEndRadius": {
+                    "Name": null,
+                    "Value": 4.0
+                },
+                "FallSpeedMax": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "GroundDashReductionPercent": {
+                    "Name": "Dash Distance",
+                    "Value": -40
+                },
+                "Interval": {
+                    "Name": null,
+                    "Value": 0.1
+                },
+                "TrackingSpeed": {
+                    "Name": null,
+                    "Value": 55
+                },
+                "ZoomBias": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "ZoomTime": {
+                    "Name": null,
+                    "Value": 0.1
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 1.0,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 105.0,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            }
+        }
+    },
+    "hero_familiar": {
+        "Name": "Rem"
+    },
+    "hero_werewolf": {
+        "Name": "Silver"
+    },
+    "hero_unicorn": {
+        "Name": "Celeste"
+    },
+    "hero_opera": {
+        "Name": "Opera"
     }
 }
