@@ -11335,12 +11335,6 @@
                         "Type": "duration"
                     },
                     {
-                        "Key": "LaunchWindowCooldown",
-                        "Name": "Cooldown",
-                        "Value": 40,
-                        "Type": "cooldown"
-                    },
-                    {
                         "Key": "StatStealDuration",
                         "Name": "Health Stealing Duration",
                         "Value": 4,
@@ -11351,7 +11345,8 @@
             },
             "Upgrades": [
                 {
-                    "LaunchWindowCooldown": -15
+                    "LaunchWindowCooldown": -15,
+                    "AbilityCooldown": -15
                 },
                 {
                     "BulletArmorReduction": -8
@@ -11360,6 +11355,13 @@
                     "HealthSteal": 63.0
                 }
             ],
+            "Cooldown": {
+                "LaunchWindowCooldown": {
+                    "Name": "Cooldown",
+                    "Value": 40,
+                    "Type": "cooldown"
+                }
+            },
             "Duration": {
                 "StealDuration": {
                     "Name": "Steal Duration",
@@ -11409,6 +11411,11 @@
                 "Name": "Charges",
                 "Value": 4,
                 "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 40,
+                "Type": "cooldown"
             },
             "AbilityCooldownBetweenCharge": {
                 "Name": "Charge Delay",
