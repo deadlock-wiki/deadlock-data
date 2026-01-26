@@ -19533,7 +19533,580 @@
         }
     },
     "hero_familiar": {
-        "Name": "Rem"
+        "Name": "Rem",
+        "1": {
+            "Key": "ability_familiar_ability02",
+            "Name": "Pillow Toss",
+            "DescKey": "ability_familiar_ability02_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 75,
+                            "Scale": {
+                                "Value": 1.6,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "FadingSlowPercent",
+                            "Name": "Fading Move Speed",
+                            "Value": 45,
+                            "Type": "slow"
+                        },
+                        {
+                            "Key": "TossDuration",
+                            "Name": "Duration",
+                            "StatusEffect": "Displacement",
+                            "Value": 0.4,
+                            "Type": "duration"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "EffectDuration",
+                        "Name": "Debuff Duration",
+                        "Value": 3.0,
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "CDReduceOnPillowHit",
+                        "Value": 4
+                    }
+                ],
+                "DescKey": "ability_familiar_ability02_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -7
+                },
+                {
+                    "FireRateSlow": 40,
+                    "DescKey": "ability_familiar_ability02_t2_desc"
+                },
+                {
+                    "Damage": 90,
+                    "Radius": 2,
+                    "DescKey": "ability_familiar_ability02_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.2
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "OrbsToFire": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "TossForce": {
+                    "Name": null,
+                    "Value": 300
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.3,
+                "Type": "cast"
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 40,
+                "Type": "range"
+            },
+            "AbilityCharges": {
+                "Name": "Charges",
+                "Value": 1,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 25.0,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": 12,
+                "Type": "charge_cooldown"
+            },
+            "Radius": {
+                "Name": "Radius",
+                "Value": 5,
+                "Type": "distance"
+            }
+        },
+        "2": {
+            "Key": "ability_familiar_attach",
+            "Name": "Tag Along",
+            "DescKey": "ability_familiar_attach_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "MissingHealthBurstPct",
+                            "Name": "Missing Health Burst",
+                            "Value": 15,
+                            "Scale": {
+                                "Value": 0.03,
+                                "Type": "spirit"
+                            },
+                            "Type": "health"
+                        },
+                        {
+                            "Key": "HealingPerSecond",
+                            "Name": "Health Restored",
+                            "Value": 28,
+                            "Scale": {
+                                "Value": 0.44,
+                                "Type": "spirit"
+                            },
+                            "Type": "healing"
+                        },
+                        {
+                            "Key": "BonusBarrierAmpPercent",
+                            "Name": "Barrier Effectiveness",
+                            "Value": 0,
+                            "Type": "healing"
+                        },
+                        {
+                            "Key": "BonusItemDurationPercent",
+                            "Name": "Bonus Item Duration/Range",
+                            "Value": 0,
+                            "Type": "duration"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "HealthRegenDuration",
+                        "Name": "Regen Duration",
+                        "Value": 3.0,
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "TechPowerPercent",
+                        "Name": "Spirit Power",
+                        "Value": 0,
+                        "Type": "tech_damage"
+                    },
+                    {
+                        "Key": "HopOffEffecDuration",
+                        "Name": "Buff Duration",
+                        "Value": 0,
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "BonusSpiritPower",
+                        "Name": "Bonus Spirit Power",
+                        "Value": 0,
+                        "Type": "tech_damage"
+                    }
+                ],
+                "DescKey": "ability_familiar_attach_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -8
+                },
+                {
+                    "BonusBarrierAmpPercent": 20,
+                    "BonusItemDurationPercent": 20,
+                    "BonusItemRangePercent": 20,
+                    "DescKey": "ability_familiar_attach_t2_desc"
+                },
+                {
+                    "TechPowerPercent": 15,
+                    "BonusSpiritPower": 35,
+                    "HopOffEffecDuration": 10,
+                    "DescKey": "ability_familiar_attach_t3_desc"
+                }
+            ],
+            "Move": {
+                "BonusMoveSpeed": {
+                    "Name": "Move Speed",
+                    "Value": 4,
+                    "Type": "move_speed"
+                },
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 5,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "HopOutLockoutDuration": {
+                    "Name": null,
+                    "Value": 1.0
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.5,
+                "Type": "cast"
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 23,
+                "Type": "range"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 40,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 5.5,
+                "Type": "duration"
+            }
+        },
+        "3": {
+            "Key": "ability_familiar_helpinghands",
+            "Name": "Lil Helpers",
+            "DescKey": "ability_familiar_helpinghands_desc",
+            "Info1": {
+                "Main": {
+                    "Props": []
+                },
+                "Alt": [],
+                "DescKey": "ability_familiar_helpinghands_desc"
+            },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "Following Hero:",
+                            "Key": "TechArmorGain",
+                            "Name": "Spirit Resist",
+                            "Value": 15,
+                            "Type": "tech_armor_up"
+                        },
+                        {
+                            "Title": "Following Hero:",
+                            "Key": "BonusMoveSpeed",
+                            "Name": "Move Speed",
+                            "Value": 3.0,
+                            "Type": "move_speed"
+                        },
+                        {
+                            "Title": "Following Hero:",
+                            "Key": "PlayerInfestDuration",
+                            "Name": "Duration",
+                            "Value": 8
+                        }
+                    ]
+                },
+                "Alt": null
+            },
+            "Info3": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "Following Trooper:",
+                            "Key": "InfestDamageTakenPercent",
+                            "Name": "Damage / Resists",
+                            "Value": 35
+                        },
+                        {
+                            "Title": "Following Trooper:",
+                            "Key": "InfestHeal",
+                            "Name": "Trooper Heal",
+                            "Value": 14,
+                            "Scale": {
+                                "Value": 0.1,
+                                "Type": "spirit"
+                            },
+                            "Type": "healing"
+                        },
+                        {
+                            "Title": "Following Trooper:",
+                            "Key": "NPCInfestDuration",
+                            "Name": "Duration",
+                            "Value": 50
+                        }
+                    ]
+                },
+                "Alt": null
+            },
+            "Upgrades": [
+                {
+                    "HelperCount": 1,
+                    "DescKey": "ability_familiar_helpinghands_t1_desc"
+                },
+                {
+                    "TechArmorGain": 8,
+                    "BonusMoveSpeed": 1.0,
+                    "DescKey": "ability_familiar_helpinghands_t2_desc"
+                },
+                {
+                    "HelperCount": 2,
+                    "InfestDamageTakenPercent": 15,
+                    "DescKey": "ability_familiar_helpinghands_t3_desc"
+                }
+            ],
+            "Duration": {
+                "ArmTime": {
+                    "Name": "Arm Time",
+                    "Value": 0.1,
+                    "Type": "duration"
+                },
+                "HelperChoreCooldownDuration": {
+                    "Name": null,
+                    "Value": 5,
+                    "Type": "duration"
+                },
+                "HelperDowntimeDuration": {
+                    "Name": null,
+                    "Value": 15.1,
+                    "Type": "duration"
+                },
+                "InfestHealInterval": {
+                    "Name": null,
+                    "Value": 3.0,
+                    "Type": "duration"
+                },
+                "PatrolDamageCooldown": {
+                    "Name": null,
+                    "Value": 10,
+                    "Type": "duration"
+                }
+            },
+            "Range": {
+                "AuraAttackHeight": {
+                    "Name": null,
+                    "Value": 10,
+                    "Type": "distance"
+                },
+                "AuraRadius": {
+                    "Name": null,
+                    "Value": 10,
+                    "Type": "distance"
+                },
+                "AuraSoftRadius": {
+                    "Name": null,
+                    "Value": 10,
+                    "Type": "distance"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Damage": {
+                "DPSPerSprite": {
+                    "Name": null,
+                    "Value": 1,
+                    "Type": "tech_damage"
+                },
+                "Damage": {
+                    "Name": "Damage",
+                    "Value": 20,
+                    "Type": "tech_damage"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "HelperCount": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "HelpersPerPatrol": {
+                    "Name": null,
+                    "Value": 4
+                },
+                "InfestBurstHealthPercent": {
+                    "Name": null,
+                    "Value": 75
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 0.2
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.1,
+                "Type": "cast"
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 45,
+                "Scale": {
+                    "Value": 0.0,
+                    "Type": "range"
+                },
+                "Type": "range"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            }
+        },
+        "4": {
+            "Key": "ability_familiar_ability01",
+            "Name": "Naptime",
+            "DescKey": "ability_familiar_ability01_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "AwakeDamage",
+                            "Name": "Wake Damage",
+                            "Value": 120,
+                            "Scale": {
+                                "Value": 1.6,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "SleepDamageThreshold",
+                            "Name": "Sleep Damage Threshold",
+                            "Value": 100,
+                            "Scale": {
+                                "Value": 3.1,
+                                "Type": "power_increase"
+                            },
+                            "Type": "damage"
+                        },
+                        {
+                            "Key": "MoveSpeedAndDashSlowPct",
+                            "Name": "Move/Dash Slow",
+                            "Value": 25,
+                            "Type": "slow"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "Radius",
+                        "Name": "Radius",
+                        "Value": 20,
+                        "Type": "distance"
+                    },
+                    {
+                        "Key": "SleepDuration",
+                        "Name": "Sleep Duration",
+                        "Value": 4.25,
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "MinSleepTime",
+                        "Value": 0.5,
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "DamageResistPctWhileChanneling",
+                        "Value": 0
+                    }
+                ],
+                "DescKey": "ability_familiar_ability01_desc"
+            },
+            "Upgrades": [
+                {
+                    "ConsumeStaminaOnWake": 1,
+                    "NoStaminaRegenDuringSleep": 1,
+                    "DescKey": "ability_familiar_ability01_t1_desc"
+                },
+                {
+                    "UnstoppableWhileChanneling": 1,
+                    "DamageResistPctWhileChanneling": 30,
+                    "DescKey": "ability_familiar_ability01_t2_desc"
+                },
+                {
+                    "AbilityCooldown": -40
+                }
+            ],
+            "Cast": {
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Value": 1.9,
+                    "Scale": {
+                        "Value": 0.0,
+                        "Type": "duration"
+                    },
+                    "Type": "cast"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                },
+                "SleepMoveSpeed": {
+                    "Name": "Sleep Movespeed",
+                    "Value": 1.5,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "Height": {
+                    "Name": null,
+                    "Value": 20
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.18,
+                "Type": "cast"
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 24,
+                "Type": "distance"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 175.0,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
+            "Radius": {
+                "Name": "Radius",
+                "Value": 20,
+                "Type": "distance"
+            }
+        }
     },
     "hero_werewolf": {
         "Name": "Silver"
