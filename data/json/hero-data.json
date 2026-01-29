@@ -3153,7 +3153,24 @@
         "AirDashDuration": 0.47,
         "BaseHealthRegen": 1.0,
         "BaseWeaponDamageIncrease": 0,
-        "BoundAbilities": {},
+        "BoundAbilities": {
+            "1": {
+                "Name": "Jar of Dead",
+                "Key": "ability_necro_hauntingskull"
+            },
+            "2": {
+                "Name": "Grasping Hands",
+                "Key": "ability_necro_zombiewall"
+            },
+            "3": {
+                "Name": "Essence Theft",
+                "Key": "ability_necro_fear"
+            },
+            "4": {
+                "Name": "Borrowed Decree",
+                "Key": "ability_necro_gravestone"
+            }
+        },
         "BuildUpRate": -50.0,
         "BulletLifesteal": 8.0,
         "CritDamageBonusPercent": 0.0,
@@ -3175,7 +3192,9 @@
             "PowerIncreases": 1,
             "TechPower": 1.1,
             "LightMeleeDamage": 1.58,
-            "HeavyMeleeDamage": 3.6656
+            "HeavyMeleeDamage": 3.6656,
+            "DPS": 0.58823,
+            "SustainedDPS": 0.34884
         },
         "LightMeleeDamage": 50,
         "Lore": "hero_necro_lore",
@@ -3196,6 +3215,31 @@
         "TechRange": 0,
         "Type": "Marksman",
         "Weapon": {
+            "BulletSpeed": 635.0,
+            "BulletDamage": 4.2,
+            "RoundsPerSecond": 9.8039,
+            "ClipSize": 40,
+            "ReloadTime": 2.8,
+            "ReloadMovespeed": 1.0,
+            "ReloadDelay": 0,
+            "ReloadSingle": false,
+            "FalloffStartRange": 7.62,
+            "FalloffEndRange": 17.78,
+            "FalloffStartScale": 1.0,
+            "FalloffEndScale": 0.5,
+            "FalloffBias": 0.5,
+            "BulletGravityScale": 0.0,
+            "BulletsPerShot": 1,
+            "BulletsPerBurst": 1,
+            "BurstInterShotInterval": 0,
+            "ShootMoveSpeed": 0.75,
+            "HitOnceAcrossAllBullets": false,
+            "CanCrit": true,
+            "AmmoConsumedPerShot": 1,
+            "DPS": 41.176,
+            "SustainedDPS": 24.419,
+            "NameKey": "citadel_weapon_hero_necro_set",
+            "DescKey": "citadel_weapon_hero_necro_set_desc",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_BurstFire",
                 "Attribute_EWeaponAttribute_MediumRange"
@@ -5444,7 +5488,7 @@
         "IsRecommended": false,
         "IsSelectable": true,
         "LevelScaling": {
-            "BulletDamage": 0.168,
+            "BulletDamage": 0.134,
             "BulletDamageAltFire": 0.819,
             "MaxHealth": 29.0,
             "PowerIncreases": 1,
