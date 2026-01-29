@@ -19387,7 +19387,758 @@
         }
     },
     "hero_necro": {
-        "Name": "Graves"
+        "Name": "Graves",
+        "1": {
+            "Key": "ability_necro_hauntingskull",
+            "Name": "Jar of Dead",
+            "DescKey": "ability_necro_hauntingskull_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "SkullCount",
+                            "Name": "Deadheads",
+                            "Value": 4,
+                            "Type": "cast"
+                        },
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 20,
+                            "Scale": {
+                                "Value": 0.3,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "HealOnHit",
+                        "Value": 0
+                    },
+                    {
+                        "Key": "TargetSearchRadius",
+                        "Name": "Search Range",
+                        "Value": 7,
+                        "Type": "distance"
+                    },
+                    {
+                        "Key": "TargetDashRadius",
+                        "Name": "Dash Range",
+                        "Value": 15,
+                        "Scale": {
+                            "Value": 1.0,
+                            "Type": "spirit"
+                        },
+                        "Type": "distance"
+                    },
+                    {
+                        "Key": "SlowPercent",
+                        "Name": "Move Speed",
+                        "Value": 0,
+                        "Type": "slow"
+                    },
+                    {
+                        "Key": "SlowDuration",
+                        "Name": "Slow Duration",
+                        "Value": 0
+                    },
+                    {
+                        "Key": "HealPerPickup",
+                        "Name": "Heal On Pickup",
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 0.0,
+                            "Type": "spirit"
+                        },
+                        "Type": "healing"
+                    }
+                ],
+                "DescKey": "ability_necro_hauntingskull_desc"
+            },
+            "Upgrades": [
+                {
+                    "HealPerPickup": {
+                        "Value": 5,
+                        "Scale": {
+                            "Value": 0.1,
+                            "Type": "spirit"
+                        }
+                    },
+                    "DescKey": "ability_necro_hauntingskull_t1_desc"
+                },
+                {
+                    "SlowPercent": 30,
+                    "SlowDuration": 1,
+                    "DescKey": "ability_necro_hauntingskull_t2_desc"
+                },
+                {
+                    "SkullCount": 2,
+                    "SkullsApplyPassive": 1,
+                    "DescKey": "ability_necro_hauntingskull_t3_desc"
+                }
+            ],
+            "Duration": {
+                "SkullLifetime": {
+                    "Name": "Deadhead Lifetime",
+                    "Value": 15,
+                    "Type": "duration"
+                }
+            },
+            "Cast": {
+                "ResourceCost": {
+                    "Name": null,
+                    "Value": 100,
+                    "Scale": {
+                        "Value": 1.0,
+                        "Type": "cooldown"
+                    },
+                    "Type": "cast"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Health": {
+                "SummonHealth": {
+                    "Name": "Summon Health",
+                    "Value": 20,
+                    "Scale": {
+                        "Value": 1.0,
+                        "Type": "power_increase"
+                    },
+                    "Type": "health"
+                }
+            },
+            "Other": {
+                "AbilityChargesConditionally": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "DelayBeforeRespawning": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "KillTime": {
+                    "Name": null,
+                    "Value": 0.25
+                },
+                "MaxHits": {
+                    "Name": "Max Hits",
+                    "Value": -1
+                },
+                "PickupsPerBossDeath": {
+                    "Name": null,
+                    "Value": 5
+                },
+                "PickupsPerDeath": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "PickupsPerHeroDeath": {
+                    "Name": null,
+                    "Value": 5
+                },
+                "PickupsPerNeutralTrooperDeath": {
+                    "Name": null,
+                    "Value": 2
+                },
+                "ResourceGenerationPercent": {
+                    "Name": null,
+                    "Value": 100
+                },
+                "ResourcePerPickup": {
+                    "Name": null,
+                    "Value": 10
+                },
+                "ResourceRadius": {
+                    "Name": null,
+                    "Value": 40
+                },
+                "SkullImmuneDuration": {
+                    "Name": null,
+                    "Value": 0.15
+                },
+                "SkullKillGold": {
+                    "Name": null,
+                    "Value": 5,
+                    "Scale": {
+                        "Value": 0.25,
+                        "Type": "power_increase"
+                    }
+                },
+                "SpawnRadius": {
+                    "Name": null,
+                    "Value": 2
+                },
+                "SummonTakesDamage": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "TargetSearchDelayMax": {
+                    "Name": null,
+                    "Value": 1.25
+                },
+                "TargetSearchDelayMin": {
+                    "Name": null,
+                    "Value": 1.5
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 0.2
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.15,
+                "Type": "cast"
+            },
+            "AbilityCharges": {
+                "Name": "Charges",
+                "Value": 4,
+                "Type": "cast"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": 13,
+                "Type": "charge_cooldown"
+            }
+        },
+        "2": {
+            "Key": "ability_necro_zombiewall",
+            "Name": "Grasping Hands",
+            "DescKey": "ability_necro_zombiewall_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 90,
+                            "Scale": {
+                                "Value": 1.3,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "DamagePctPerWallHit",
+                            "Name": "Max Health Damage",
+                            "Value": 0,
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "ImmobilizeDuration",
+                            "Name": "Immobilize Duration",
+                            "StatusEffect": "Immobilize",
+                            "Value": 1.5
+                        }
+                    ]
+                },
+                "Alt": [],
+                "DescKey": "ability_necro_zombiewall_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityDuration": 2
+                },
+                {
+                    "ImmobilizeDuration": 0.75
+                },
+                {
+                    "ZombieWallLength": 15,
+                    "AbilityCooldown": -10,
+                    "DescKey": "ability_necro_zombiewall_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Debuff": {
+                "SlowPercent": {
+                    "Name": "Move Speed",
+                    "Value": 40,
+                    "Type": "slow"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AuraRadius": {
+                    "Name": "Aura Radius",
+                    "Value": 0.75
+                },
+                "DebuffDuration": {
+                    "Name": "Debuff Duration",
+                    "Value": 0.5
+                },
+                "GroundAuraPopDelay": {
+                    "Name": null,
+                    "Value": 1.1
+                },
+                "GroundAuraSpacing": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "TechResist": {
+                    "Name": "Spirit Resist",
+                    "Value": 40
+                },
+                "TetherDuration": {
+                    "Name": "Tether Duration",
+                    "Value": 1
+                },
+                "TetherRadius": {
+                    "Name": "Tether Radius",
+                    "Value": 0.1
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 0.1
+                },
+                "ZombieWallDeployTime": {
+                    "Name": null,
+                    "Value": 0.7
+                },
+                "ZombieWallHeight": {
+                    "Name": null,
+                    "Value": 2.5
+                },
+                "ZombieWallLength": {
+                    "Name": "Wall Length",
+                    "Value": 20,
+                    "Scale": {
+                        "Value": 0.05,
+                        "Type": "spirit"
+                    }
+                }
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 24,
+                "Type": "range"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 38,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 7,
+                "Type": "duration"
+            }
+        },
+        "3": {
+            "Key": "ability_necro_fear",
+            "Name": "Essence Theft",
+            "DescKey": "ability_necro_fear_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "MaxStolenAttackDamage",
+                            "Name": "Max Weapon Damage Stolen",
+                            "Value": 25,
+                            "Scale": {
+                                "Value": 0.25,
+                                "Type": "spirit"
+                            },
+                            "Type": "bullet_damage"
+                        },
+                        {
+                            "Key": "MaxStolenSpiritResist",
+                            "Name": "Max Spirit Resist Stolen",
+                            "Value": 10,
+                            "Type": "tech_armor_down"
+                        },
+                        {
+                            "Key": "MaxStolenFireRate",
+                            "Name": "Max Fire Rate Stolen",
+                            "Value": 0,
+                            "Type": "fire_rate"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "MaxStolenTargets",
+                        "Name": "Max Steal Targets",
+                        "Value": 3
+                    },
+                    {
+                        "Key": "ShootDurationForMax",
+                        "Name": "Time for Max Damage",
+                        "Value": 4,
+                        "Type": "duration"
+                    }
+                ],
+                "DescKey": "ability_necro_fear_desc"
+            },
+            "Upgrades": [
+                {
+                    "MaxStolenSpiritResist": 5
+                },
+                {
+                    "MaxStolenAttackDamage": 20
+                },
+                {
+                    "BonusTetherUpgrade": 2,
+                    "DescKey": "ability_necro_fear_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "DelayBeforeLoss": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "ProgressLossMultiplier": {
+                    "Name": null,
+                    "Value": 2.3
+                },
+                "ProgressLossPerSecond": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "SkullBuildUp": {
+                    "Name": null,
+                    "Value": 0.15
+                },
+                "TickInterval": {
+                    "Name": null,
+                    "Value": 0.15
+                }
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 4,
+                "Type": "duration"
+            }
+        },
+        "4": {
+            "Key": "ability_necro_gravestone",
+            "Name": "Borrowed Decree",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "AbilityDuration",
+                            "Name": "Duration",
+                            "Value": 20,
+                            "Scale": {
+                                "Value": 0.05,
+                                "Type": "spirit"
+                            },
+                            "Type": "duration"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "SummonFrequency",
+                        "Name": "Time to Summon",
+                        "Value": 5,
+                        "Type": "duration"
+                    }
+                ],
+                "DescKey": "ability_necro_gravestone_desc_1"
+            },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 150,
+                            "Scale": {
+                                "Value": 1.5,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "StunDuration",
+                            "Name": "Stun Duration",
+                            "StatusEffect": "Stun",
+                            "Value": 0
+                        },
+                        {
+                            "Key": "SlowPercent",
+                            "Name": "Move Speed",
+                            "Value": 80,
+                            "Type": "slow"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "SummonHealth",
+                        "Name": "Summon Health",
+                        "Value": 200,
+                        "Scale": {
+                            "Value": 12.0,
+                            "Type": "power_increase"
+                        },
+                        "Type": "health"
+                    },
+                    {
+                        "Key": "SummonMeleeDamage",
+                        "Name": "Melee Damage",
+                        "Value": 40,
+                        "Scale": {
+                            "Value": 0.5,
+                            "Type": "spirit"
+                        },
+                        "Type": "bullet_damage"
+                    },
+                    {
+                        "Key": "SummonLifetime",
+                        "Name": "Summon Lifetime",
+                        "Value": 20,
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "SlowDuration",
+                        "Name": "Slow Duration",
+                        "Value": 1.25,
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "ExplosionRadius",
+                        "Name": "Explosion Radius",
+                        "Value": 6.5
+                    }
+                ],
+                "DescKey": "ability_necro_gravestone_desc_2"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -20
+                },
+                {
+                    "MoveSpeedPercent": 25,
+                    "AbilityDuration": 10,
+                    "DescKey": "ability_necro_gravestone_t2_desc"
+                },
+                {
+                    "SummonBurstCount": 3,
+                    "MaxHealthDamagePercentage": 5,
+                    "DescKey": "ability_necro_gravestone_t3_desc"
+                }
+            ],
+            "Range": {
+                "AuraRadius": {
+                    "Name": "Aura Radius",
+                    "Value": 5,
+                    "Type": "distance"
+                }
+            },
+            "Cast": {
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Value": 0.66,
+                    "Type": "cast"
+                }
+            },
+            "Damage": {
+                "BonusSpiritDamagePercentage": {
+                    "Name": "Bonus Spirit Damage",
+                    "Value": 15,
+                    "Type": "tech_damage"
+                },
+                "TechPower": {
+                    "Name": "Spirit Power",
+                    "Value": 0,
+                    "Scale": {
+                        "Value": 1.0,
+                        "Type": "power_increase"
+                    },
+                    "Type": "tech_damage"
+                }
+            },
+            "Health": {
+                "BonusHealthRegen": {
+                    "Name": "Health Regen",
+                    "Value": 0,
+                    "Scale": {
+                        "Value": 0.0,
+                        "Type": "spirit"
+                    },
+                    "Type": "healing"
+                },
+                "GravestoneHealth": {
+                    "Name": "Gravestone Health",
+                    "Value": 100,
+                    "Type": "health"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "BlockerScaleFactor": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "BuffDuration": {
+                    "Name": "Buff Duration",
+                    "Value": -1
+                },
+                "BulletResist": {
+                    "Name": "Bullet Resist",
+                    "Value": 12.5
+                },
+                "DecayDuration": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "DecayTickRate": {
+                    "Name": null,
+                    "Value": 0.1
+                },
+                "ExplodeDelay": {
+                    "Name": "Explosion Delay",
+                    "Value": 0.23
+                },
+                "GravestoneTakesDamage": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "GrowTime": {
+                    "Name": null,
+                    "Value": 0.1
+                },
+                "KnockupRadius": {
+                    "Name": null,
+                    "Value": 4
+                },
+                "KnockupSideRatio": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "KnockupSpeed": {
+                    "Name": null,
+                    "Value": 240
+                },
+                "MaxGravestones": {
+                    "Name": "Max Gravestones",
+                    "Value": 3
+                },
+                "MaxStacks": {
+                    "Name": "Max Stacks",
+                    "Value": 40
+                },
+                "PushForce": {
+                    "Name": null,
+                    "Value": 300
+                },
+                "ReplicateZombieCast": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "SlowPercentPerStack": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "SpawnDuration": {
+                    "Name": null,
+                    "Value": 1.5
+                },
+                "StackDuration": {
+                    "Name": "Stack Duration",
+                    "Value": 5
+                },
+                "StackingDebuffTickRate": {
+                    "Name": null,
+                    "Value": 0.25
+                },
+                "SummonBurstFrequency": {
+                    "Name": null,
+                    "Value": 0.1
+                },
+                "SummonInitialDelay": {
+                    "Name": null,
+                    "Value": 0.3
+                },
+                "SummonMaxCount": {
+                    "Name": null,
+                    "Value": 32
+                },
+                "SummonSearchRadius": {
+                    "Name": null,
+                    "Value": 4
+                },
+                "TechArmorDamageReductionPerStack": {
+                    "Name": "Spirit Resistance per Stack",
+                    "Value": -0.5
+                },
+                "TechResist": {
+                    "Name": "Spirit Resist",
+                    "Value": 20
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 0.4
+                }
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 20,
+                "Type": "range"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 110,
+                "Type": "cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 20,
+                "Scale": {
+                    "Value": 0.05,
+                    "Type": "spirit"
+                },
+                "Type": "duration"
+            }
+        }
     },
     "hero_fencer": {
         "Name": "Apollo"
@@ -19902,7 +20653,7 @@
                     "Type": "distance"
                 },
                 "AuraRadius": {
-                    "Name": null,
+                    "Name": "Aura Radius",
                     "Value": 10,
                     "Type": "distance"
                 },
