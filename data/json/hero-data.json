@@ -1205,12 +1205,29 @@
         "AirDashDuration": 0.49,
         "BaseHealthRegen": 2.0,
         "BaseWeaponDamageIncrease": 0,
-        "BoundAbilities": {},
+        "BoundAbilities": {
+            "1": {
+                "Name": "Pillow Toss",
+                "Key": "ability_familiar_ability02"
+            },
+            "2": {
+                "Name": "Tag Along",
+                "Key": "ability_familiar_attach"
+            },
+            "3": {
+                "Name": "Lil Helpers",
+                "Key": "ability_familiar_helpinghands"
+            },
+            "4": {
+                "Name": "Naptime",
+                "Key": "ability_familiar_ability01"
+            }
+        },
         "CritDamageBonusPercent": -20.0,
         "CritDamageReceivedPercent": -10.0,
         "CrouchSpeed": 4.75,
         "GroundDashDistanceInMeters": 10.0,
-        "GroundDashDuration": 0.7,
+        "GroundDashDuration": 0.68,
         "HeavyMeleeDamage": 116,
         "HeroBulletLifestealEffectiveness": 1.0,
         "HeroSpiritLifestealEffectiveness": 1.0,
@@ -1221,16 +1238,19 @@
         "IsSelectable": true,
         "LevelScaling": {
             "BulletDamage": 0.34,
-            "MaxHealth": 30,
+            "MaxHealth": 29,
             "PowerIncreases": 1,
             "TechPower": 1.1,
             "LightMeleeDamage": 1.58,
-            "HeavyMeleeDamage": 3.6656
+            "HeavyMeleeDamage": 3.6656,
+            "DPS": 1.3077,
+            "SustainedDPS": 0.82157
         },
         "LightMeleeDamage": 50,
         "Lore": "hero_familiar_lore",
         "MaxHealth": 650.0,
         "MaxMoveSpeed": 7.2,
+        "MeleeResist": -5.0,
         "MoveAcceleration": 4,
         "Name": "Rem",
         "Playstyle": "hero_familiar_playstyle",
@@ -1238,7 +1258,7 @@
         "ReloadSpeed": 0,
         "Role": "hero_familiar_role",
         "SpiritScaling": {},
-        "SprintSpeed": 1.6,
+        "SprintSpeed": 4.0,
         "Stamina": 3.0,
         "StaminaCooldown": 4.5000045000045,
         "StaminaRegenPerSecond": 0.222222,
@@ -1246,6 +1266,31 @@
         "TechRange": 0,
         "Type": null,
         "Weapon": {
+            "BulletSpeed": 160.0,
+            "BulletDamage": 16,
+            "RoundsPerSecond": 3.8462,
+            "ClipSize": 13,
+            "ReloadTime": 2.0,
+            "ReloadMovespeed": 1.0,
+            "ReloadDelay": 0,
+            "ReloadSingle": false,
+            "FalloffStartRange": 19.99,
+            "FalloffEndRange": 57.51,
+            "FalloffStartScale": 1.0,
+            "FalloffEndScale": 0.1,
+            "FalloffBias": 0.5,
+            "BulletGravityScale": 0.8,
+            "BulletsPerShot": 1,
+            "BulletsPerBurst": 1,
+            "BurstInterShotInterval": 0,
+            "ShootMoveSpeed": 0.85,
+            "HitOnceAcrossAllBullets": false,
+            "CanCrit": true,
+            "AmmoConsumedPerShot": 1,
+            "DPS": 61.539,
+            "SustainedDPS": 38.662,
+            "NameKey": "citadel_weapon_hero_familiar_set",
+            "DescKey": "citadel_weapon_hero_familiar_set_desc",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_BurstFire",
                 "Attribute_EWeaponAttribute_MediumRange"
@@ -3125,7 +3170,7 @@
         "IsRecommended": false,
         "IsSelectable": true,
         "LevelScaling": {
-            "BulletDamage": 0.1,
+            "BulletDamage": 0.06,
             "MaxHealth": 33.0,
             "PowerIncreases": 1,
             "TechPower": 1.1,
@@ -3142,9 +3187,7 @@
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
         "Role": "hero_necro_role",
-        "SpiritScaling": {
-            "BulletDamage": 0.03
-        },
+        "SpiritScaling": {},
         "SprintSpeed": 1.6,
         "Stamina": 2.0,
         "StaminaCooldown": 4.5000045000045,
@@ -5401,7 +5444,7 @@
         "IsRecommended": false,
         "IsSelectable": true,
         "LevelScaling": {
-            "BulletDamage": 0.1872,
+            "BulletDamage": 0.168,
             "BulletDamageAltFire": 0.819,
             "MaxHealth": 29.0,
             "PowerIncreases": 1,

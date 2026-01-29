@@ -1284,6 +1284,195 @@
             }
         ]
     },
+    "ability_familiar_ability01": {
+        "AbilityCastDelay": 0.18,
+        "AbilityCastRange": 24,
+        "AbilityChannelTime": {
+            "Value": 1.9,
+            "Scale": {
+                "Value": 0.0,
+                "Type": "duration"
+            }
+        },
+        "AbilityCooldown": 175.0,
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "AwakeDamage": {
+            "Value": 120,
+            "Scale": {
+                "Value": 1.6,
+                "Type": "spirit"
+            }
+        },
+        "ChannelMoveSpeed": -1,
+        "Height": 20,
+        "IsDisabled": false,
+        "Key": "ability_familiar_ability01",
+        "MinSleepTime": 0.5,
+        "MoveSpeedAndDashSlowPct": 25,
+        "Name": "Naptime",
+        "Radius": 20,
+        "SleepDamageThreshold": {
+            "Value": 100,
+            "Scale": {
+                "Value": 3.1,
+                "Type": "power_increase"
+            }
+        },
+        "SleepDuration": 4.25,
+        "SleepMoveSpeed": 1.5,
+        "Upgrades": [
+            {
+                "ConsumeStaminaOnWake": 1,
+                "NoStaminaRegenDuringSleep": 1
+            },
+            {
+                "UnstoppableWhileChanneling": 1,
+                "DamageResistPctWhileChanneling": 30
+            },
+            {
+                "AbilityCooldown": -40
+            }
+        ]
+    },
+    "ability_familiar_ability02": {
+        "AbilityCastDelay": 0.3,
+        "AbilityCastRange": 40,
+        "AbilityCharges": 1,
+        "AbilityCooldown": 25.0,
+        "AbilityCooldownBetweenCharge": 12,
+        "AbilityPostCastDuration": 0.2,
+        "AbilityUnitTargetLimit": 1,
+        "CDReduceOnPillowHit": 4,
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+            "Value": 75,
+            "Scale": {
+                "Value": 1.6,
+                "Type": "spirit"
+            }
+        },
+        "EffectDuration": 3.0,
+        "FadingSlowPercent": 45,
+        "IsDisabled": false,
+        "Key": "ability_familiar_ability02",
+        "Name": "Pillow Toss",
+        "OrbsToFire": 1,
+        "Radius": 5,
+        "TossDuration": 0.4,
+        "TossForce": 300,
+        "Upgrades": [
+            {
+                "AbilityCooldown": -7
+            },
+            {
+                "FireRateSlow": 40
+            },
+            {
+                "Damage": 90,
+                "Radius": 2
+            }
+        ]
+    },
+    "ability_familiar_attach": {
+        "AbilityCastDelay": 0.5,
+        "AbilityCastRange": 23,
+        "AbilityCooldown": 40,
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityDuration": 5.5,
+        "AbilityUnitTargetLimit": 1,
+        "BonusMoveSpeed": 4,
+        "ChannelMoveSpeed": 5,
+        "HealingPerSecond": {
+            "Value": 28,
+            "Scale": {
+                "Value": 0.44,
+                "Type": "spirit"
+            }
+        },
+        "HealthRegenDuration": 3.0,
+        "HopOutLockoutDuration": 1.0,
+        "IsDisabled": false,
+        "Key": "ability_familiar_attach",
+        "MissingHealthBurstPct": {
+            "Value": 15,
+            "Scale": {
+                "Value": 0.03,
+                "Type": "spirit"
+            }
+        },
+        "Name": "Tag Along",
+        "Upgrades": [
+            {
+                "AbilityCooldown": -8
+            },
+            {
+                "BonusBarrierAmpPercent": 20,
+                "BonusItemDurationPercent": 20,
+                "BonusItemRangePercent": 20
+            },
+            {
+                "TechPowerPercent": 15,
+                "BonusSpiritPower": 35,
+                "HopOffEffecDuration": 10
+            }
+        ]
+    },
+    "ability_familiar_helpinghands": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCastRange": {
+            "Value": 45,
+            "Scale": {
+                "Value": 0.0,
+                "Type": "range"
+            }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "ArmTime": 0.1,
+        "AuraAttackHeight": 10,
+        "AuraRadius": 10,
+        "AuraSoftRadius": 10,
+        "BonusMoveSpeed": 3.0,
+        "ChannelMoveSpeed": -1,
+        "DPSPerSprite": 1,
+        "Damage": 20,
+        "HelperChoreCooldownDuration": 5,
+        "HelperCount": 1,
+        "HelperDowntimeDuration": 15.1,
+        "HelpersPerPatrol": 4,
+        "InfestBurstHealthPercent": 75,
+        "InfestDamageTakenPercent": 35,
+        "InfestHeal": {
+            "Value": 14,
+            "Scale": {
+                "Value": 0.1,
+                "Type": "spirit"
+            }
+        },
+        "InfestHealInterval": 3.0,
+        "IsDisabled": false,
+        "Key": "ability_familiar_helpinghands",
+        "NPCInfestDuration": 50,
+        "Name": "Lil Helpers",
+        "PatrolDamageCooldown": 10,
+        "PlayerInfestDuration": 8,
+        "TechArmorGain": 15,
+        "TickRate": 0.2,
+        "Upgrades": [
+            {
+                "HelperCount": 1
+            },
+            {
+                "TechArmorGain": 8,
+                "BonusMoveSpeed": 1.0
+            },
+            {
+                "HelperCount": 2,
+                "InfestDamageTakenPercent": 15
+            }
+        ]
+    },
     "ability_fire_bomb": {
         "AbilityCooldown": 140.0,
         "AbilityCooldownBetweenCharge": -1.0,
@@ -8320,7 +8509,8 @@
         "AbilityCastDelay": 0.05,
         "AbilityCharges": 4,
         "AbilityChargesConditionally": 1,
-        "AbilityCooldownBetweenCharge": 0.05,
+        "AbilityCooldown": 40,
+        "AbilityCooldownBetweenCharge": 1,
         "AbilityUnitTargetLimit": 1,
         "BulletArmorReduction": -8,
         "ChannelMoveSpeed": -1,
@@ -8346,7 +8536,8 @@
         "StealDuration": 14,
         "Upgrades": [
             {
-                "LaunchWindowCooldown": -15
+                "LaunchWindowCooldown": -15,
+                "AbilityCooldown": -15
             },
             {
                 "BulletArmorReduction": -8
