@@ -3513,7 +3513,7 @@
         "CrouchSpeed": 4.75,
         "GroundDashDistanceInMeters": 10.0,
         "GroundDashDuration": 0.7,
-        "HeavyMeleeDamage": 116,
+        "HeavyMeleeDamage": 125.0,
         "HeroBulletLifestealEffectiveness": 1.0,
         "HeroSpiritLifestealEffectiveness": 1.0,
         "InDevelopment": false,
@@ -3526,8 +3526,8 @@
             "MaxHealth": 38.0,
             "PowerIncreases": 1,
             "TechPower": 1.1,
-            "LightMeleeDamage": 1.58,
-            "HeavyMeleeDamage": 3.6656
+            "LightMeleeDamage": 1.7,
+            "HeavyMeleeDamage": 4.25
         },
         "LightMeleeDamage": 50,
         "Lore": "hero_priest_lore",
@@ -5473,7 +5473,24 @@
         "AirDashDuration": 0.47,
         "BaseHealthRegen": 2.0,
         "BaseWeaponDamageIncrease": 0,
-        "BoundAbilities": {},
+        "BoundAbilities": {
+            "1": {
+                "Name": "Slam Fire",
+                "Key": "ability_werewolf_unloadgun"
+            },
+            "2": {
+                "Name": "Boot Kick",
+                "Key": "ability_werewolf_kickflip"
+            },
+            "3": {
+                "Name": "Entangling Bola",
+                "Key": "ability_werewolf_netshot"
+            },
+            "4": {
+                "Name": "Lycan Curse",
+                "Key": "ability_werewolf_transformation"
+            }
+        },
         "CritDamageBonusPercent": 0.0,
         "CritDamageReceivedPercent": 0.0,
         "CrouchSpeed": 4.75,
@@ -5488,13 +5505,15 @@
         "IsRecommended": false,
         "IsSelectable": true,
         "LevelScaling": {
-            "BulletDamage": 0.134,
+            "BulletDamage": 0.1206,
             "BulletDamageAltFire": 0.819,
             "MaxHealth": 29.0,
             "PowerIncreases": 1,
             "TechPower": 1.1,
             "LightMeleeDamage": 1.58,
-            "HeavyMeleeDamage": 3.6656
+            "HeavyMeleeDamage": 3.6656,
+            "DPS": 0.8442,
+            "SustainedDPS": 0.603
         },
         "LightMeleeDamage": 50,
         "Lore": "hero_werewolf_lore",
@@ -5515,6 +5534,31 @@
         "TechRange": 0,
         "Type": "Marksman",
         "Weapon": {
+            "BulletSpeed": 812.8,
+            "BulletDamage": 5.5,
+            "RoundsPerSecond": 1.0,
+            "ClipSize": 5,
+            "ReloadTime": 0.3,
+            "ReloadMovespeed": 1.0,
+            "ReloadDelay": 0.5,
+            "ReloadSingle": true,
+            "FalloffStartRange": 16.0,
+            "FalloffEndRange": 45.72,
+            "FalloffStartScale": 1.0,
+            "FalloffEndScale": 0.1,
+            "FalloffBias": 0.5,
+            "BulletGravityScale": 0,
+            "BulletsPerShot": 7,
+            "BulletsPerBurst": 1,
+            "BurstInterShotInterval": 0,
+            "ShootMoveSpeed": 1.0,
+            "HitOnceAcrossAllBullets": false,
+            "CanCrit": true,
+            "AmmoConsumedPerShot": 1,
+            "DPS": 38.5,
+            "SustainedDPS": 27.5,
+            "NameKey": "citadel_weapon_hero_werewolf_set",
+            "DescKey": "citadel_weapon_hero_werewolf_set_desc",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_RapidFire",
                 "Attribute_EWeaponAttribute_LongRange"

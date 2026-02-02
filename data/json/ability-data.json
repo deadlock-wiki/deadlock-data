@@ -5762,6 +5762,288 @@
             }
         ]
     },
+    "ability_werewolf_hunt": {
+        "AbilityCastDelay": 0.4,
+        "AbilityChannelTime": 1,
+        "AbilityCooldown": 127.0,
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "BonusMoveSpeed": 2,
+        "BuffDuration": 8,
+        "ChannelMoveSpeed": -1,
+        "DPS": 5,
+        "IsDisabled": false,
+        "Key": "ability_werewolf_hunt",
+        "Name": null,
+        "Radius": 20,
+        "TickRate": 0.1,
+        "Upgrades": [
+            {
+                "AbilityCooldown": 0
+            },
+            {
+                "AbilityCooldown": 0
+            },
+            {
+                "AbilityCooldown": 0
+            }
+        ]
+    },
+    "ability_werewolf_kickflip": {
+        "AbilityCastDelay": 0.25,
+        "AbilityChannelTime": 0.35,
+        "AbilityCooldown": 21,
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityPostCastDuration": 0.25,
+        "AbilityUnitTargetLimit": 1,
+        "AirDrag": 0.8,
+        "BonusDamage": {
+            "Value": 25,
+            "Scale": {
+                "Value": 1.0,
+                "Type": "spirit"
+            }
+        },
+        "CameraTurnRateMax": 188,
+        "Damage": {
+            "Value": 0,
+            "Scale": {
+                "Value": 0.9,
+                "Type": "melee"
+            }
+        },
+        "EnemyPushForceAway": 300,
+        "EnemyPushForceUp": 300,
+        "FallSpeedMax": 20,
+        "IsDisabled": false,
+        "Key": "ability_werewolf_kickflip",
+        "LeapForwardOffset": 2.5,
+        "LeapRadius": 1.7,
+        "LeapSpeed": 1200,
+        "MarkDuration": {
+            "Value": 3,
+            "Scale": {
+                "Value": 1.0,
+                "Type": "spirit"
+            }
+        },
+        "Name": "Boot Kick",
+        "SelfPushForceCameraAway": 600,
+        "SelfPushForceUp": 200,
+        "SlowDuration": 0.1,
+        "SuccessInputWindow": 0.3,
+        "TimeScaleDebuff": 95,
+        "Upgrades": [
+            {
+                "AbilityCooldown": -6
+            },
+            {
+                "StaminaRestore": 2
+            },
+            {
+                "OutgoingDamagePercent": -25,
+                "DebuffDuration": 5
+            }
+        ]
+    },
+    "ability_werewolf_netshot": {
+        "AbilityCastDelay": 0.24,
+        "AbilityCooldown": 20,
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+            "Value": 40,
+            "Scale": {
+                "Value": 1.0,
+                "Type": "spirit"
+            }
+        },
+        "DebuffDuration": 1.5,
+        "IsDisabled": false,
+        "Key": "ability_werewolf_netshot",
+        "Name": "Entangling Bola",
+        "SlowPercent": 20,
+        "Upgrades": [
+            {
+                "SlowPercent": 25
+            },
+            {
+                "DebuffDuration": 0.75
+            },
+            {
+                "RicochetCount": 2,
+                "RicochetRange": 15
+            }
+        ]
+    },
+    "ability_werewolf_passive": {
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "ability_werewolf_passive",
+        "Name": null,
+        "Upgrades": []
+    },
+    "ability_werewolf_trackingbomb": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCooldown": 12,
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "BountyThreshold": 500,
+        "ChannelMoveSpeed": -1,
+        "Damage": 55,
+        "EnhancedHowlDebuffDuration": 10,
+        "ForwardVelocity": 800,
+        "HowlDebuffDuration": 2,
+        "HowlRadius": 80,
+        "IsDisabled": false,
+        "Key": "ability_werewolf_trackingbomb",
+        "MinHealthFractionToTrack": 30,
+        "MoveSpeedSlowPct": 20,
+        "Name": null,
+        "ProjectileLifetime": 60,
+        "Radius": 7.5,
+        "SlowDuration": 3,
+        "TickRate": 0.1,
+        "TrackingRangeHuman": 50,
+        "TrackingRangeWerewolf": 100,
+        "Upgrades": [
+            {
+                "StaminaReduction": 1
+            },
+            {
+                "Damage": 40.0
+            },
+            {
+                "FireRateSlow": 35,
+                "AbilityCooldown": -6.5
+            }
+        ],
+        "VialDebuffDuration": 9,
+        "WeaponPowerDebuff": -30
+    },
+    "ability_werewolf_transformation": {
+        "AbilityCastDelay": 0.2,
+        "AbilityChargesConditionally": 1,
+        "AbilityCooldown": 22,
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityDuration": 15,
+        "AbilityPostCastDuration": 0.5,
+        "AbilityUnitTargetLimit": 1,
+        "AutoActivateHealthThreshold": 20,
+        "BonusDurationOnBullet": 0.15,
+        "BonusDurationOnHeavyMelee": 1.5,
+        "BonusDurationOnLightMelee": 0.5,
+        "BonusDurationPerHealthPercentLost": 0.1,
+        "BonusFireRate": {
+            "Value": 80,
+            "Scale": {
+                "Value": 0.25,
+                "Type": "spirit"
+            }
+        },
+        "BonusHealth": {
+            "Value": 350,
+            "Scale": {
+                "Value": 15.0,
+                "Type": "power_increase"
+            }
+        },
+        "BonusMoveSpeed": 3,
+        "BulletResist": 20,
+        "CameraTurnRateMax": 188,
+        "ChannelMoveSpeed": 7.62,
+        "EndingWarningSoundDuration": 3.0,
+        "HeadshotResist": -35,
+        "HealAmount": {
+            "Value": 0,
+            "Scale": {
+                "Value": 1.0,
+                "Type": "healing"
+            }
+        },
+        "IsDisabled": false,
+        "Key": "ability_werewolf_transformation",
+        "LowHealthFraction": 30,
+        "LowHealthRageBonus": {
+            "Value": 40,
+            "Scale": {
+                "Value": 1.8,
+                "Type": "power_increase"
+            }
+        },
+        "MaxRage": {
+            "Value": 100,
+            "Scale": {
+                "Value": 7.5,
+                "Type": "power_increase"
+            }
+        },
+        "MaxStacks": 15,
+        "MissingHealthPercentHeal": 30,
+        "Name": "Lycan Curse",
+        "RagePerDamage": 0.255,
+        "RagePercentagePerSecondInCombat": 1,
+        "RagePercentagePerSecondOutOfCombat": -3,
+        "ReadyDuration": 3,
+        "StackDuration": 5,
+        "TechResist": 20,
+        "Upgrades": [
+            {
+                "BulletResist": 15,
+                "TechResist": 15
+            },
+            {
+                "BonusMoveSpeed": 3,
+                "BonusHealth": 125
+            },
+            {
+                "KillDurationBonus": 15
+            }
+        ]
+    },
+    "ability_werewolf_unloadgun": {
+        "AbilityCastDelay": 0.45,
+        "AbilityCooldown": 20,
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityDuration": 5,
+        "AbilityUnitTargetLimit": 1,
+        "AccuracyPercentage": -25,
+        "BonusFireRate": 300,
+        "BulletEffectiveness": 0.1,
+        "BulletRadiusOverride": 7,
+        "BulletSpread": -1,
+        "ChannelMoveSpeed": 5.08,
+        "CurrentHealthDamagePercentage": 4,
+        "Damage": 40,
+        "DebuffDuration": 3,
+        "IsDisabled": false,
+        "Key": "ability_werewolf_unloadgun",
+        "LingerDuration": 0.1,
+        "MaxShots": 3,
+        "Name": "Slam Fire",
+        "ProcChance": 100,
+        "RecoilDelayFactor": 0.05,
+        "RecoilRecoverySpeed": 0.1,
+        "RecoilSpeed": 12,
+        "RecoilStrength": 12,
+        "SpreadPenaltyPerShot": 0.5,
+        "Upgrades": [
+            {
+                "AbilityCooldown": -4
+            },
+            {
+                "BaseAttackDamagePercent": 30
+            },
+            {
+                "StackDuration": 3,
+                "MaxStacks": 3,
+                "BonusCurrentHealthDamagePercentage": 10
+            }
+        ]
+    },
     "ability_wrecker_salvage": {
         "AbilityCastRange": 15,
         "AbilityCooldown": 12.5,
