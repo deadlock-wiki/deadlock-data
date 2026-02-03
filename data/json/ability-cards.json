@@ -21487,5 +21487,563 @@
     },
     "hero_opera": {
         "Name": "Opera"
+    },
+    "hero_werewolf_transformed": {
+        "Name": null,
+        "1": {
+            "Key": "ability_werewolf_frenzy",
+            "Name": "Go For The Throat",
+            "DescKey": "ability_werewolf_frenzy_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 0.0,
+                            "Scale": {
+                                "Value": 1.5,
+                                "Type": "melee"
+                            },
+                            "Type": "melee_damage"
+                        },
+                        {
+                            "Key": "MissingHealthDamagePercentage",
+                            "Name": "Missing Health Damage",
+                            "Value": 8,
+                            "Type": "melee_damage"
+                        },
+                        {
+                            "Key": "LifeStealPercentOnHit",
+                            "Name": "Unknown(LifeStealPercentOnHit)",
+                            "Value": 40,
+                            "Type": "healing"
+                        }
+                    ]
+                },
+                "Alt": [],
+                "DescKey": "ability_werewolf_frenzy_desc"
+            },
+            "Upgrades": [
+                {
+                    "Damage": 30
+                },
+                {
+                    "LifeStealPercentOnHit": 25
+                },
+                {
+                    "MissingHealthDamagePercentage": 5
+                }
+            ],
+            "Range": {
+                "TargetingConeAngle": {
+                    "Name": "Attack Angle",
+                    "Value": 40,
+                    "Type": "distance"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 16
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.2,
+                "Type": "cast"
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 7,
+                "Type": "range"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 5,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            }
+        },
+        "2": {
+            "Key": "ability_werewolf_maulingleap",
+            "Name": "Mauling Leap",
+            "DescKey": "ability_werewolf_maulingleap_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 0,
+                            "Scale": {
+                                "Value": 1.9,
+                                "Type": "melee"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Title": "On Hit:",
+                            "Key": "DPS",
+                            "Name": "Damage Per Second",
+                            "Value": 15,
+                            "Scale": {
+                                "Value": 0.15,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Title": "On Hit:",
+                            "Key": "BulletArmorReduction",
+                            "Name": "Bullet Resist",
+                            "Value": -8,
+                            "Type": "bullet_armor_down"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "DebuffDuration",
+                        "Name": "Debuff Duration",
+                        "Value": 6,
+                        "Type": "duration"
+                    }
+                ],
+                "DescKey": "ability_werewolf_maulingleap_desc"
+            },
+            "Upgrades": [
+                {
+                    "DPS": 10
+                },
+                {
+                    "AbilityCooldown": -9
+                },
+                {
+                    "BulletArmorReduction": -12
+                }
+            ],
+            "Range": {
+                "LeapMultiHitRadius": {
+                    "Name": null,
+                    "Value": 1.5,
+                    "Type": "distance"
+                },
+                "LeapRadius": {
+                    "Name": null,
+                    "Value": 2.8,
+                    "Type": "distance"
+                }
+            },
+            "Cast": {
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Value": 0.55,
+                    "Type": "cast"
+                }
+            },
+            "Other": {
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.1
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AllowRamMultiple": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "CameraTurnRateMax": {
+                    "Name": null,
+                    "Value": 188
+                },
+                "LeapForwardOffset": {
+                    "Name": null,
+                    "Value": 0.3
+                },
+                "LeapSpeed": {
+                    "Name": null,
+                    "Value": 1300
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "WorldImpactRadius": {
+                    "Name": null,
+                    "Value": 25
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.35,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 16,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            }
+        },
+        "3": {
+            "Key": "ability_werewolf_cripplingslash",
+            "Name": "Tail Whack",
+            "DescKey": "ability_werewolf_cripplingslash_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 45,
+                            "Scale": {
+                                "Value": 1.0,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Title": "On Hit:",
+                            "Key": "DisarmDuration",
+                            "Name": "Disarm Duration",
+                            "StatusEffect": "Disarmed",
+                            "Value": 2.5
+                        },
+                        {
+                            "Title": "On Hit:",
+                            "Key": "SlowPercent",
+                            "Name": "Move Speed",
+                            "Value": 30,
+                            "Type": "slow"
+                        },
+                        {
+                            "Title": "On Hit:",
+                            "Key": "FireRateSlow",
+                            "Name": "Fire Rate",
+                            "Value": 0,
+                            "Type": "fire_rate"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "DebuffDuration",
+                        "Name": "Debuff Duration",
+                        "Value": 0
+                    },
+                    {
+                        "Key": "SlowDuration",
+                        "Name": "Slow Duration",
+                        "Value": 1.5,
+                        "Type": "duration"
+                    }
+                ],
+                "DescKey": "ability_werewolf_cripplingslash_desc"
+            },
+            "Upgrades": [
+                {
+                    "Damage": 25
+                },
+                {
+                    "SlowPercent": 40
+                },
+                {
+                    "DisarmDuration": 1
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.2
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "BulletArmorReduction": {
+                    "Name": "Bullet Resist",
+                    "Value": -12
+                },
+                "LeftForce": {
+                    "Name": null,
+                    "Value": 400
+                },
+                "PushForce": {
+                    "Name": null,
+                    "Value": 300
+                },
+                "SlashHeight": {
+                    "Name": null,
+                    "Value": 3
+                },
+                "SlashRadius": {
+                    "Name": "Slash Radius",
+                    "Value": 10
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.15,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 18,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            }
+        },
+        "4": {
+            "Key": "ability_werewolf_transformation",
+            "Name": "Lycan Curse",
+            "DescKey": "ability_werewolf_transformation_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "BonusHealth",
+                            "Name": "Bonus Health",
+                            "Value": 350,
+                            "Scale": {
+                                "Value": 15.0,
+                                "Type": "power_increase"
+                            },
+                            "Type": "health"
+                        },
+                        {
+                            "Key": "BonusMoveSpeed",
+                            "Name": "Move Speed",
+                            "Value": 3,
+                            "Type": "move_speed"
+                        },
+                        {
+                            "Key": "BonusSprintSpeed",
+                            "Name": "Sprint Speed",
+                            "Value": 0,
+                            "Type": "move_speed"
+                        },
+                        {
+                            "Key": "BonusFireRate",
+                            "Name": "Fire Rate",
+                            "Value": 80,
+                            "Scale": {
+                                "Value": 0.25,
+                                "Type": "spirit"
+                            },
+                            "Type": "fire_rate"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "MissingHealthPercentHeal",
+                        "Name": "Missing Health as Healing",
+                        "Value": 30,
+                        "Type": "healing"
+                    },
+                    {
+                        "Key": "KillDurationBonus",
+                        "Name": "Kill Duration Bonus",
+                        "Value": 0,
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "HealAmount",
+                        "Name": "Heal Amount",
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 1.0,
+                            "Type": "healing"
+                        },
+                        "Type": "healing"
+                    },
+                    {
+                        "Key": "BulletResist",
+                        "Name": "Bullet Resist",
+                        "Value": 20,
+                        "Type": "bullet_armor_up"
+                    },
+                    {
+                        "Key": "TechResist",
+                        "Name": "Spirit Resist",
+                        "Value": 20,
+                        "Type": "tech_armor_up"
+                    },
+                    {
+                        "Key": "Stamina",
+                        "Name": "Stamina",
+                        "Value": 0,
+                        "Type": "move_speed"
+                    }
+                ],
+                "DescKey": "ability_werewolf_transformation_desc"
+            },
+            "Upgrades": [
+                {
+                    "BulletResist": 15,
+                    "TechResist": 15,
+                    "DescKey": "ability_werewolf_transformation_t1_desc"
+                },
+                {
+                    "BonusMoveSpeed": 3,
+                    "BonusHealth": 125,
+                    "DescKey": "ability_werewolf_transformation_t2_desc"
+                },
+                {
+                    "KillDurationBonus": 15,
+                    "DescKey": "ability_werewolf_transformation_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 7.62,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityChargesConditionally": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AutoActivateHealthThreshold": {
+                    "Name": null,
+                    "Value": 20
+                },
+                "BonusDurationOnBullet": {
+                    "Name": null,
+                    "Value": 0.15
+                },
+                "BonusDurationOnHeavyMelee": {
+                    "Name": null,
+                    "Value": 1.5
+                },
+                "BonusDurationOnLightMelee": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "BonusDurationPerHealthPercentLost": {
+                    "Name": null,
+                    "Value": 0.1
+                },
+                "CameraTurnRateMax": {
+                    "Name": null,
+                    "Value": 188
+                },
+                "EndingWarningSoundDuration": {
+                    "Name": null,
+                    "Value": 3.0
+                },
+                "HeadshotResist": {
+                    "Name": null,
+                    "Value": -35
+                },
+                "LowHealthFraction": {
+                    "Name": null,
+                    "Value": 30
+                },
+                "LowHealthRageBonus": {
+                    "Name": null,
+                    "Value": 40,
+                    "Scale": {
+                        "Value": 1.8,
+                        "Type": "power_increase"
+                    }
+                },
+                "MaxRage": {
+                    "Name": null,
+                    "Value": 100,
+                    "Scale": {
+                        "Value": 7.5,
+                        "Type": "power_increase"
+                    }
+                },
+                "MaxStacks": {
+                    "Name": "Max Stacks",
+                    "Value": 15
+                },
+                "RagePerDamage": {
+                    "Name": null,
+                    "Value": 0.255
+                },
+                "RagePercentagePerSecondInCombat": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "RagePercentagePerSecondOutOfCombat": {
+                    "Name": null,
+                    "Value": -3
+                },
+                "ReadyDuration": {
+                    "Name": null,
+                    "Value": 3
+                },
+                "StackDuration": {
+                    "Name": "Stack Duration",
+                    "Value": 5
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.2,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 22,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 15,
+                "Type": "duration"
+            }
+        }
     }
 }
