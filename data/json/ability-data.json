@@ -1359,7 +1359,7 @@
                 "DamageResistPctWhileChanneling": 30
             },
             {
-                "AbilityCooldown": -40
+                "AbilityCooldown": -55
             }
         ]
     },
@@ -1371,7 +1371,7 @@
         "AbilityCooldownBetweenCharge": 12,
         "AbilityPostCastDuration": 0.2,
         "AbilityUnitTargetLimit": 1,
-        "CDReduceOnPillowHit": 4,
+        "CDReduceOnPillowHit": 5,
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 75,
@@ -1435,9 +1435,9 @@
                 "AbilityCooldown": -8
             },
             {
-                "BonusBarrierAmpPercent": 20,
-                "BonusItemDurationPercent": 20,
-                "BonusItemRangePercent": 20
+                "BonusBarrierAmpPercent": 25,
+                "BonusItemDurationPercent": 25,
+                "BonusItemRangePercent": 25
             },
             {
                 "TechPowerPercent": 15,
@@ -1503,7 +1503,7 @@
             },
             {
                 "TechArmorGain": 8,
-                "BonusMoveSpeed": 1.0
+                "BonusMoveSpeed": 1.5
             },
             {
                 "HelperCount": 2,
@@ -3638,7 +3638,7 @@
             },
             {
                 "SummonBurstCount": 3,
-                "MaxHealthDamagePercentage": 5
+                "CurrentHealthDamagePercentage": 5
             }
         ]
     },
@@ -3698,9 +3698,9 @@
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
         "Damage": {
-            "Value": 20,
+            "Value": 16,
             "Scale": {
-                "Value": 0.3,
+                "Value": 0.25,
                 "Type": "spirit"
             }
         },
@@ -3714,7 +3714,7 @@
         },
         "IsDisabled": false,
         "Key": "ability_necro_hauntingskull",
-        "KillTime": 0.25,
+        "KillTime": 0.2,
         "MaxHits": -1,
         "Name": "Jar of Dead",
         "PickupsPerBossDeath": 5,
@@ -8333,9 +8333,9 @@
         "AbilityPostCastDuration": 0.3,
         "AbilityUnitTargetLimit": 1,
         "BleedDPSPerStack": {
-            "Value": 4.6,
+            "Value": 4.0,
             "Scale": {
-                "Value": 0.1488,
+                "Value": 0.13,
                 "Type": "spirit"
             }
         },
@@ -8343,9 +8343,9 @@
         "BleedTickRate": 1,
         "ChannelMoveSpeed": -1,
         "ImpactDamage": {
-            "Value": 32,
+            "Value": 28,
             "Scale": {
-                "Value": 0.25,
+                "Value": 0.22,
                 "Type": "spirit"
             }
         },
@@ -8362,8 +8362,8 @@
                 "BleedDuration": 2
             },
             {
-                "ImpactDamage": 36.0,
-                "BleedDPSPerStack": 6.3
+                "ImpactDamage": 30.0,
+                "BleedDPSPerStack": 5.5
             }
         ]
     },
@@ -8576,14 +8576,14 @@
         "BonusDamagePctPerPlayerHit": {
             "Value": 1.0,
             "Scale": {
-                "Value": 0.0025,
+                "Value": 0.002,
                 "Type": "spirit"
             }
         },
         "BonusDamagePctPerPlayerKilled": {
             "Value": 2.5,
             "Scale": {
-                "Value": 0.015,
+                "Value": 0.012,
                 "Type": "spirit"
             }
         },
@@ -8612,7 +8612,8 @@
             },
             {
                 "MovementSpeedBonus": 5,
-                "MovementSpeedBonusDuration": 3
+                "BonusFireRate": 20,
+                "MovementSpeedBonusDuration": 5
             }
         ]
     },

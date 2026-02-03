@@ -5737,7 +5737,7 @@
                             "Name": "Sticky Bomb Damage",
                             "Value": 1.0,
                             "Scale": {
-                                "Value": 0.0025,
+                                "Value": 0.002,
                                 "Type": "spirit"
                             },
                             "Type": "damage"
@@ -5748,7 +5748,7 @@
                             "Name": "Sticky Bomb Damage",
                             "Value": 2.5,
                             "Scale": {
-                                "Value": 0.015,
+                                "Value": 0.012,
                                 "Type": "spirit"
                             },
                             "Type": "damage"
@@ -5766,7 +5766,8 @@
                 },
                 {
                     "MovementSpeedBonus": 5,
-                    "MovementSpeedBonusDuration": 3,
+                    "BonusFireRate": 20,
+                    "MovementSpeedBonusDuration": 5,
                     "DescKey": "citadel_ability_sticky_bomb_t3_desc"
                 }
             ],
@@ -7324,9 +7325,9 @@
                         {
                             "Key": "ImpactDamage",
                             "Name": "Impact Damage",
-                            "Value": 32,
+                            "Value": 28,
                             "Scale": {
-                                "Value": 0.25,
+                                "Value": 0.22,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -7334,9 +7335,9 @@
                         {
                             "Key": "BleedDPSPerStack",
                             "Name": "Bleed DPS Per Knife",
-                            "Value": 4.6,
+                            "Value": 4.0,
                             "Scale": {
-                                "Value": 0.1488,
+                                "Value": 0.13,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -7374,8 +7375,8 @@
                     "BleedDuration": 2
                 },
                 {
-                    "ImpactDamage": 36.0,
-                    "BleedDPSPerStack": 6.3,
+                    "ImpactDamage": 30.0,
+                    "BleedDPSPerStack": 5.5,
                     "DescKey": "citadel_ability_shiv_dagger_t3_desc"
                 }
             ],
@@ -19410,9 +19411,9 @@
                         {
                             "Key": "Damage",
                             "Name": "Damage",
-                            "Value": 20,
+                            "Value": 16,
                             "Scale": {
-                                "Value": 0.3,
+                                "Value": 0.25,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -19543,7 +19544,7 @@
                 },
                 "KillTime": {
                     "Name": null,
-                    "Value": 0.25
+                    "Value": 0.2
                 },
                 "MaxHits": {
                     "Name": "Max Hits",
@@ -19971,7 +19972,7 @@
                 },
                 {
                     "SummonBurstCount": 3,
-                    "MaxHealthDamagePercentage": 5,
+                    "CurrentHealthDamagePercentage": 5,
                     "DescKey": "ability_necro_gravestone_t3_desc"
                 }
             ],
@@ -20338,7 +20339,7 @@
                     },
                     {
                         "Key": "CDReduceOnPillowHit",
-                        "Value": 4
+                        "Value": 5
                     }
                 ],
                 "DescKey": "ability_familiar_ability02_desc"
@@ -20487,9 +20488,9 @@
                     "AbilityCooldown": -8
                 },
                 {
-                    "BonusBarrierAmpPercent": 20,
-                    "BonusItemDurationPercent": 20,
-                    "BonusItemRangePercent": 20,
+                    "BonusBarrierAmpPercent": 25,
+                    "BonusItemDurationPercent": 25,
+                    "BonusItemRangePercent": 25,
                     "DescKey": "ability_familiar_attach_t2_desc"
                 },
                 {
@@ -20622,7 +20623,7 @@
                 },
                 {
                     "TechArmorGain": 8,
-                    "BonusMoveSpeed": 1.0,
+                    "BonusMoveSpeed": 1.5,
                     "DescKey": "ability_familiar_helpinghands_t2_desc"
                 },
                 {
@@ -20808,7 +20809,7 @@
                     "DescKey": "ability_familiar_ability01_t2_desc"
                 },
                 {
-                    "AbilityCooldown": -40
+                    "AbilityCooldown": -55
                 }
             ],
             "Cast": {
