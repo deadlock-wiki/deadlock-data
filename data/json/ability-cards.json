@@ -15821,7 +15821,531 @@
         }
     },
     "hero_priest": {
-        "Name": "Venator"
+        "Name": "Venator",
+        "1": {
+            "Key": "ability_priest_flashbang",
+            "Name": "Consecrating Grenade",
+            "DescKey": "ability_priest_flashbang_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 35,
+                            "Scale": {
+                                "Value": 1.2,
+                                "Type": "weapon_damage_increase"
+                            },
+                            "Type": "bullet_damage"
+                        },
+                        {
+                            "Key": "HealAmpReceivePenaltyPercent",
+                            "Name": "Healing Reduction",
+                            "Value": -30,
+                            "Type": "damage"
+                        },
+                        {
+                            "Title": "On Hit:",
+                            "Key": "DPS",
+                            "Name": "Damage Per Second",
+                            "Value": 10,
+                            "Scale": {
+                                "Value": 1.6,
+                                "Type": "power_increase"
+                            },
+                            "Type": "damage"
+                        },
+                        {
+                            "Title": "On Hit:",
+                            "Key": "DPSPercentHealth",
+                            "Name": "Max Health as Damage",
+                            "Value": 0
+                        },
+                        {
+                            "Title": "On Hit:",
+                            "Key": "SlowPercent",
+                            "Name": "Move Speed",
+                            "Value": 0
+                        },
+                        {
+                            "Title": "On Hit:",
+                            "Key": "FireRateSlow",
+                            "Name": "Fire Rate",
+                            "Value": 0
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "DebuffDuration",
+                        "Name": "Debuff Duration",
+                        "Value": 3.5,
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "BurnRadius",
+                        "Name": "Burn Radius",
+                        "Value": 4.5,
+                        "Type": "distance"
+                    }
+                ],
+                "DescKey": "ability_priest_flashbang_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -5
+                },
+                {
+                    "Radius": 1.5,
+                    "BurnRadius": 1.5,
+                    "DescKey": "ability_priest_flashbang_t2_desc"
+                },
+                {
+                    "HealAmpReceivePenaltyPercent": -20,
+                    "HealAmpRegenPenaltyPercent": -20,
+                    "AbilityCharges": 1,
+                    "AbilityCooldownBetweenCharge": 3,
+                    "DescKey": "ability_priest_flashbang_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Damage": {
+                "HealAmpRegenPenaltyPercent": {
+                    "Name": "Healing Reduction",
+                    "Value": -30,
+                    "Type": "damage"
+                }
+            },
+            "Other": {
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.15
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "BounceGrenadeSpeed": {
+                    "Name": null,
+                    "Value": 1100
+                },
+                "BounceLifetime": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "BurnLingerDuration": {
+                    "Name": null,
+                    "Value": 0.15
+                },
+                "CameraTurnRateMax": {
+                    "Name": null,
+                    "Value": 15
+                },
+                "PreBounceLifetime": {
+                    "Name": null,
+                    "Value": 15
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 0.2
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.03,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 25,
+                "Type": "cooldown"
+            },
+            "Radius": {
+                "Name": "Radius",
+                "Value": 4.5,
+                "Type": "distance"
+            }
+        },
+        "2": {
+            "Key": "ability_priest_knockback",
+            "Name": "Gutshot",
+            "DescKey": "ability_priest_knockback_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 60,
+                            "Scale": {
+                                "Value": 1.0,
+                                "Type": "weapon_damage_increase"
+                            },
+                            "Type": "bullet_damage"
+                        },
+                        {
+                            "Title": "On Wall Hit:",
+                            "Key": "BonusDamage",
+                            "Name": "Bonus Damage",
+                            "Value": 30,
+                            "Scale": {
+                                "Value": 0.4,
+                                "Type": "weapon_damage_increase"
+                            },
+                            "Type": "bullet_damage"
+                        },
+                        {
+                            "Title": "On Wall Hit:",
+                            "Key": "StunDuration",
+                            "Name": "Stun Duration",
+                            "StatusEffect": "Stun",
+                            "Value": 0.65
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "DebuffDuration",
+                        "Name": "Debuff Duration",
+                        "Value": 0
+                    }
+                ],
+                "DescKey": "ability_priest_knockback_desc"
+            },
+            "Upgrades": [
+                {
+                    "Damage": 25
+                },
+                {
+                    "AbilityCooldown": -8,
+                    "AbilityCastRange": 2.5,
+                    "DescKey": "ability_priest_knockback_t2_desc"
+                },
+                {
+                    "BuffDuration": 5,
+                    "DescKey": "ability_priest_knockback_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 99
+                },
+                "BonusKnockbackDistance": {
+                    "Name": null,
+                    "Value": 3.5
+                },
+                "KnockbackSpeed": {
+                    "Name": null,
+                    "Value": 1200
+                },
+                "MaxPushForceHorizontal": {
+                    "Name": null,
+                    "Value": 1400
+                },
+                "MaxPushForceVertical": {
+                    "Name": null,
+                    "Value": 500
+                },
+                "PushForce": {
+                    "Name": null,
+                    "Value": 6
+                },
+                "SelfPushForce": {
+                    "Name": null,
+                    "Value": 500
+                },
+                "TargetingConeAngle": {
+                    "Name": "Attack Angle",
+                    "Value": 60
+                },
+                "TraceDistanceForStun": {
+                    "Name": null,
+                    "Value": 6.5
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.25,
+                "Type": "cast"
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 10,
+                "Type": "range"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 26,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            }
+        },
+        "3": {
+            "Key": "ability_priest_beartrap",
+            "Name": "Hex-Lined Snap Trap",
+            "DescKey": "ability_priest_beartrap_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 80,
+                            "Scale": {
+                                "Value": 1.6,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "ImmobilizeDuration",
+                            "Name": "Immobilize Duration",
+                            "StatusEffect": "Immobilize",
+                            "Value": 1.5,
+                            "Type": "duration"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "IncomingDamagePercentFromCaster",
+                        "Name": "Damage Taken",
+                        "Value": 0,
+                        "Type": "damage"
+                    },
+                    {
+                        "Key": "DebuffDuration",
+                        "Name": "Debuff Duration",
+                        "Value": 5,
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "Lifetime",
+                        "Name": "Lifetime",
+                        "Value": 30,
+                        "Type": "duration"
+                    }
+                ],
+                "DescKey": "ability_priest_beartrap_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -12
+                },
+                {
+                    "ImmobilizeDuration": 0.75
+                },
+                {
+                    "IncomingDamagePercentFromCaster": 20,
+                    "DescKey": "ability_priest_beartrap_t3_desc"
+                }
+            ],
+            "Duration": {
+                "ArmTime": {
+                    "Name": "Arm Time",
+                    "Value": 0.5,
+                    "Type": "duration"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "TetherDuration": {
+                    "Name": "Tether Duration",
+                    "Value": 0.6
+                },
+                "TetherRadius": {
+                    "Name": "Tether Radius",
+                    "Value": 0.3
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 0.1
+                },
+                "TrapHeight": {
+                    "Name": null,
+                    "Value": 2
+                },
+                "TripUpSpeed": {
+                    "Name": null,
+                    "Value": 6.35
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.1,
+                "Type": "cast"
+            },
+            "AbilityCharges": {
+                "Name": "Charges",
+                "Value": 2,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 30,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": 8,
+                "Type": "charge_cooldown"
+            },
+            "Radius": {
+                "Name": "Radius",
+                "Value": 2,
+                "Type": "distance"
+            }
+        },
+        "4": {
+            "Key": "ability_priest_weaponswap",
+            "Name": "Ira Domini",
+            "DescKey": "ability_priest_weaponswap_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 120,
+                            "Scale": {
+                                "Value": 1.7,
+                                "Type": "weapon_damage_increase"
+                            },
+                            "Type": "bullet_damage"
+                        },
+                        {
+                            "Title": "While Blessed:",
+                            "Key": "BonusDamage",
+                            "Name": "Bonus Damage",
+                            "Value": 100,
+                            "Scale": {
+                                "Value": 3.0,
+                                "Type": "power_increase"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Title": "While Blessed:",
+                            "Key": "ExecuteThreshold",
+                            "Name": "Execute Threshold",
+                            "Value": 8,
+                            "Type": "damage"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "SlowPercent",
+                        "Name": "Move Speed",
+                        "Value": 0,
+                        "Type": "slow"
+                    },
+                    {
+                        "Key": "SlowDuration",
+                        "Name": "Slow Duration",
+                        "Value": 0
+                    }
+                ],
+                "DescKey": "ability_priest_weaponswap_desc"
+            },
+            "Upgrades": [
+                {
+                    "BonusMoveSpeed": 1.2,
+                    "DescKey": "ability_priest_weaponswap_t1_desc"
+                },
+                {
+                    "BonusDamage": 150,
+                    "AbilityCooldown": -15,
+                    "DescKey": "ability_priest_weaponswap_t2_desc"
+                },
+                {
+                    "AllStakesBlessed": 1,
+                    "DescKey": "ability_priest_weaponswap_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "BonusAmpToVampire": {
+                    "Name": null,
+                    "Value": 5
+                },
+                "ExplodeRadius": {
+                    "Name": "Explosion Radius",
+                    "Value": 0.2
+                },
+                "PushForce": {
+                    "Name": null,
+                    "Value": 500
+                },
+                "StakeCount": {
+                    "Name": "Total Stakes",
+                    "Value": 3
+                },
+                "SwapEndDelay": {
+                    "Name": null,
+                    "Value": 0.6
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.3,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 140,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 15,
+                "Type": "duration"
+            }
+        }
     },
     "hero_frank": {
         "Name": "Victor",

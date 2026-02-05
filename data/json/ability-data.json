@@ -4205,6 +4205,375 @@
             }
         ]
     },
+    "ability_priest_antispiritvest": {
+        "AbilityCooldown": 12,
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "BlockBufferDuration": 0.5,
+        "BulletResist": 20,
+        "ChannelMoveSpeed": -1,
+        "CombatBarrier": {
+            "Value": 100,
+            "Scale": {
+                "Value": 1.0,
+                "Type": "spirit"
+            }
+        },
+        "IsDisabled": false,
+        "Key": "ability_priest_antispiritvest",
+        "Name": "Blessed Tac-Vest",
+        "TechResist": 20,
+        "Upgrades": [
+            {
+                "CombatBarrier": 50
+            },
+            {
+                "AbilityCooldown": -4
+            },
+            {
+                "BaseAttackDamagePercent": 35,
+                "BuffDuration": 6
+            }
+        ]
+    },
+    "ability_priest_barrage": {
+        "AbilityCastDelay": 0.3,
+        "AbilityChannelTime": 3,
+        "AbilityCooldown": 60,
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": 1.3,
+        "Damage": {
+            "Value": 80,
+            "Scale": {
+                "Value": 1.0,
+                "Type": "weapon_damage_increase"
+            }
+        },
+        "ExplodeRadius": 0.2,
+        "IsDisabled": false,
+        "Key": "ability_priest_barrage",
+        "Name": "Witching Hour",
+        "PushForce": 300000,
+        "SlowDuration": 1,
+        "SlowPercent": 60,
+        "TimeBetweenShots": 0.3,
+        "TotalShotCount": 4,
+        "Upgrades": [
+            {
+                "AbilityCooldown": -25
+            },
+            {
+                "Damage": 40
+            },
+            {
+                "ExecuteThreshold": 30
+            }
+        ]
+    },
+    "ability_priest_beartrap": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCharges": 2,
+        "AbilityCooldown": 30,
+        "AbilityCooldownBetweenCharge": 8,
+        "AbilityUnitTargetLimit": 1,
+        "ArmTime": 0.5,
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+            "Value": 80,
+            "Scale": {
+                "Value": 1.6,
+                "Type": "spirit"
+            }
+        },
+        "DebuffDuration": 5,
+        "ImmobilizeDuration": 1.5,
+        "IsDisabled": false,
+        "Key": "ability_priest_beartrap",
+        "Lifetime": 30,
+        "Name": "Hex-Lined Snap Trap",
+        "Radius": 2,
+        "TetherDuration": 0.6,
+        "TetherRadius": 0.3,
+        "TickRate": 0.1,
+        "TrapHeight": 2,
+        "TripUpSpeed": 6.35,
+        "Upgrades": [
+            {
+                "AbilityCooldown": -12
+            },
+            {
+                "ImmobilizeDuration": 0.75
+            },
+            {
+                "IncomingDamagePercentFromCaster": 20
+            }
+        ]
+    },
+    "ability_priest_flashbang": {
+        "AbilityCastDelay": 0.03,
+        "AbilityCooldown": 25,
+        "AbilityPostCastDuration": 0.15,
+        "AbilityUnitTargetLimit": 1,
+        "BounceGrenadeSpeed": 1100,
+        "BounceLifetime": 0.5,
+        "BurnLingerDuration": 0.15,
+        "BurnRadius": 4.5,
+        "CameraTurnRateMax": 15,
+        "ChannelMoveSpeed": -1,
+        "DPS": {
+            "Value": 10,
+            "Scale": {
+                "Value": 1.6,
+                "Type": "power_increase"
+            }
+        },
+        "Damage": {
+            "Value": 35,
+            "Scale": {
+                "Value": 1.2,
+                "Type": "weapon_damage_increase"
+            }
+        },
+        "DebuffDuration": 3.5,
+        "HealAmpReceivePenaltyPercent": -30,
+        "HealAmpRegenPenaltyPercent": -30,
+        "IsDisabled": false,
+        "Key": "ability_priest_flashbang",
+        "Name": "Consecrating Grenade",
+        "PreBounceLifetime": 15,
+        "Radius": 4.5,
+        "TickRate": 0.2,
+        "Upgrades": [
+            {
+                "AbilityCooldown": -5
+            },
+            {
+                "Radius": 1.5,
+                "BurnRadius": 1.5
+            },
+            {
+                "HealAmpReceivePenaltyPercent": -20,
+                "HealAmpRegenPenaltyPercent": -20,
+                "AbilityCharges": 1,
+                "AbilityCooldownBetweenCharge": 3
+            }
+        ]
+    },
+    "ability_priest_knockback": {
+        "AbilityCastDelay": 0.25,
+        "AbilityCastRange": 10,
+        "AbilityCooldown": 26,
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 99,
+        "BonusDamage": {
+            "Value": 30,
+            "Scale": {
+                "Value": 0.4,
+                "Type": "weapon_damage_increase"
+            }
+        },
+        "BonusKnockbackDistance": 3.5,
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+            "Value": 60,
+            "Scale": {
+                "Value": 1.0,
+                "Type": "weapon_damage_increase"
+            }
+        },
+        "IsDisabled": false,
+        "Key": "ability_priest_knockback",
+        "KnockbackSpeed": 1200,
+        "MaxPushForceHorizontal": 1400,
+        "MaxPushForceVertical": 500,
+        "Name": "Gutshot",
+        "PushForce": 6,
+        "SelfPushForce": 500,
+        "StunDuration": 0.65,
+        "TargetingConeAngle": 60,
+        "TraceDistanceForStun": 6.5,
+        "Upgrades": [
+            {
+                "Damage": 25
+            },
+            {
+                "AbilityCooldown": -8,
+                "AbilityCastRange": 2.5
+            },
+            {
+                "BuffDuration": 5
+            }
+        ]
+    },
+    "ability_priest_selfheal": {
+        "AbilityCastDelay": 0.125,
+        "AbilityChannelTime": 4,
+        "AbilityCooldown": 45,
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityPostCastDuration": 0.125,
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": -1,
+        "FlatHealthHealing": {
+            "Value": 120,
+            "Scale": {
+                "Value": 2.79,
+                "Type": "spirit"
+            }
+        },
+        "IncomingDamagePercent": -35,
+        "IsDisabled": false,
+        "Key": "ability_priest_selfheal",
+        "Name": "Potent Vapors",
+        "TickRate": 0.25,
+        "Upgrades": [
+            {
+                "FlatHealthHealing": 80
+            },
+            {
+                "AbilityCooldown": -15
+            },
+            {
+                "SlowResistance": 100
+            }
+        ]
+    },
+    "ability_priest_silencebomb": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCooldown": 33,
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityDuration": 8,
+        "AbilityUnitTargetLimit": 99,
+        "ChannelMoveSpeed": -1,
+        "DPS": 5,
+        "DebuffDuration": 3,
+        "InitialRadius": {
+            "Value": 4,
+            "Scale": {
+                "Value": 0.01,
+                "Type": "spirit"
+            }
+        },
+        "IsDisabled": false,
+        "Key": "ability_priest_silencebomb",
+        "Name": "Choking Incense",
+        "RadiusPerSecond": 0.2,
+        "SlowDuration": 2,
+        "SlowPercent": 30,
+        "TickRate": 0.15,
+        "Upgrades": [
+            {
+                "AbilityDuration": 3
+            },
+            {
+                "SlowPercent": 20
+            },
+            {
+                "SilenceStamina": 1
+            }
+        ]
+    },
+    "ability_priest_smokegrenade": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCastRange": 10,
+        "AbilityCooldown": 24,
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityDuration": 8,
+        "AbilityUnitTargetLimit": 99,
+        "BlockerScaleFactor": 115,
+        "BombFriction": 12,
+        "BombRestitution": 2.0,
+        "BonusDamge": 12,
+        "BonusFireRate": -30,
+        "BonusHealthRegen": 1,
+        "ChannelMoveSpeed": -1,
+        "DebuffDuration": 3,
+        "GrowTime": 0.2,
+        "IsDisabled": false,
+        "Key": "ability_priest_smokegrenade",
+        "Name": "Teargas Grenade",
+        "ProjectileLifetime": 2,
+        "Radius": 6,
+        "SlowDuration": 2,
+        "Upgrades": [
+            {
+                "AbilityDuration": 3
+            },
+            {
+                "StaminaDrain": -1
+            },
+            {
+                "Radius": 2
+            }
+        ]
+    },
+    "ability_priest_stackingdefense": {
+        "AbilityCooldown": 26.0,
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "ChannelMoveSpeed": -1,
+        "CooldownPerStack": 0.5,
+        "IsDisabled": false,
+        "Key": "ability_priest_stackingdefense",
+        "MaxStacks": 20,
+        "Name": "Grit",
+        "ResistancePerStack": 1,
+        "StackDuration": 8,
+        "Upgrades": [
+            {
+                "StackDuration": 2
+            },
+            {
+                "MaxStacks": 10
+            },
+            {
+                "WeaponDamagePerStack": 1.5
+            }
+        ]
+    },
+    "ability_priest_weaponswap": {
+        "AbilityCastDelay": 0.3,
+        "AbilityCooldown": 140,
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityDuration": 15,
+        "AbilityUnitTargetLimit": 1,
+        "BonusAmpToVampire": 5,
+        "BonusDamage": {
+            "Value": 100,
+            "Scale": {
+                "Value": 3.0,
+                "Type": "power_increase"
+            }
+        },
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+            "Value": 120,
+            "Scale": {
+                "Value": 1.7,
+                "Type": "weapon_damage_increase"
+            }
+        },
+        "ExecuteThreshold": 8,
+        "ExplodeRadius": 0.2,
+        "IsDisabled": false,
+        "Key": "ability_priest_weaponswap",
+        "Name": "Ira Domini",
+        "PushForce": 500,
+        "StakeCount": 3,
+        "SwapEndDelay": 0.6,
+        "Upgrades": [
+            {
+                "BonusMoveSpeed": 1.2
+            },
+            {
+                "BonusDamage": 150,
+                "AbilityCooldown": -15
+            },
+            {
+                "AllStakesBlessed": 1
+            }
+        ]
+    },
     "ability_punkgoat_blasted": {
         "AbilityCastDelay": 0.28,
         "AbilityCooldown": 27,

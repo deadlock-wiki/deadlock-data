@@ -3507,7 +3507,24 @@
         "AirDashDuration": 0.49,
         "BaseHealthRegen": 2.0,
         "BaseWeaponDamageIncrease": 0,
-        "BoundAbilities": {},
+        "BoundAbilities": {
+            "1": {
+                "Name": "Consecrating Grenade",
+                "Key": "ability_priest_flashbang"
+            },
+            "2": {
+                "Name": "Gutshot",
+                "Key": "ability_priest_knockback"
+            },
+            "3": {
+                "Name": "Hex-Lined Snap Trap",
+                "Key": "ability_priest_beartrap"
+            },
+            "4": {
+                "Name": "Ira Domini",
+                "Key": "ability_priest_weaponswap"
+            }
+        },
         "CritDamageBonusPercent": 0.0,
         "CritDamageReceivedPercent": 0.0,
         "CrouchSpeed": 4.75,
@@ -3527,7 +3544,9 @@
             "PowerIncreases": 1,
             "TechPower": 1.1,
             "LightMeleeDamage": 1.7,
-            "HeavyMeleeDamage": 4.25
+            "HeavyMeleeDamage": 4.25,
+            "DPS": 2.1429,
+            "SustainedDPS": 1.2805
         },
         "LightMeleeDamage": 50,
         "Lore": "hero_priest_lore",
@@ -3551,9 +3570,34 @@
         "TechRange": 0,
         "Type": "Marksman",
         "Weapon": {
+            "BulletSpeed": 1588.0,
+            "BulletDamage": 8.0,
+            "RoundsPerSecond": 7.9365,
+            "ClipSize": 33,
+            "ReloadTime": 2.8,
+            "ReloadMovespeed": 1.0,
+            "ReloadDelay": 0,
+            "ReloadSingle": false,
+            "FalloffStartRange": 19.99,
+            "FalloffEndRange": 50.8,
+            "FalloffStartScale": 1.0,
+            "FalloffEndScale": 0.1,
+            "FalloffBias": 0.5,
+            "BulletGravityScale": 0,
+            "BulletsPerShot": 1,
+            "BulletsPerBurst": 1,
+            "BurstInterShotInterval": 0,
+            "ShootMoveSpeed": 0.75,
+            "HitOnceAcrossAllBullets": false,
+            "CanCrit": true,
+            "AmmoConsumedPerShot": 1,
+            "DPS": 63.492,
+            "SustainedDPS": 37.942,
+            "NameKey": "citadel_weapon_hero_priest_set",
+            "DescKey": "citadel_weapon_hero_priest_set_desc",
             "WeaponTypes": [
-                "Attribute_EWeaponAttribute_MediumRange",
-                "Attribute_EWeaponAttribute_Projectile"
+                "Attribute_EWeaponAttribute_RapidFire",
+                "Attribute_EWeaponAttribute_MediumRange"
             ]
         },
         "WeaponPowerScale": 1
@@ -4881,7 +4925,7 @@
         "BaseHealthRegen": 2.0,
         "BaseWeaponDamageIncrease": 0,
         "BoundAbilities": {},
-        "CritDamageBonusPercent": 0.0,
+        "CritDamageBonusPercent": -25.0,
         "CritDamageReceivedPercent": 0.0,
         "CrouchSpeed": 4.75,
         "GroundDashDistanceInMeters": 10.0,
@@ -4914,7 +4958,7 @@
         "Role": "hero_unicorn_role",
         "SpiritScaling": {},
         "SprintSpeed": 1.6,
-        "Stamina": 3,
+        "Stamina": 4,
         "StaminaCooldown": 4.5000045000045,
         "StaminaRegenPerSecond": 0.222222,
         "TechDuration": 0,
