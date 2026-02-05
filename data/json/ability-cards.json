@@ -5628,7 +5628,7 @@
                 },
                 {
                     "RestoreHookCooldown": 1,
-                    "MissingHPHeal": 20,
+                    "MissingHPHeal": 17,
                     "DescKey": "citadel_ability_uppercut_t3_desc"
                 }
             ],
@@ -5709,7 +5709,7 @@
                         {
                             "Key": "FuseTime",
                             "Name": "Fuse Time",
-                            "Value": 3.0,
+                            "Value": 3.5,
                             "Type": "duration"
                         },
                         {
@@ -5737,7 +5737,7 @@
                             "Name": "Sticky Bomb Damage",
                             "Value": 1.0,
                             "Scale": {
-                                "Value": 0.002,
+                                "Value": 0.0015,
                                 "Type": "spirit"
                             },
                             "Type": "damage"
@@ -5748,7 +5748,7 @@
                             "Name": "Sticky Bomb Damage",
                             "Value": 2.5,
                             "Scale": {
-                                "Value": 0.012,
+                                "Value": 0.01,
                                 "Type": "spirit"
                             },
                             "Type": "damage"
@@ -5774,7 +5774,7 @@
             "Duration": {
                 "KillCheckWindow": {
                     "Name": null,
-                    "Value": 12.0,
+                    "Value": 10.0,
                     "Type": "duration"
                 }
             },
@@ -5816,12 +5816,12 @@
             },
             "AbilityDuration": {
                 "Name": "Duration",
-                "Value": 3.0,
+                "Value": 3.5,
                 "Type": "duration"
             },
             "Radius": {
                 "Name": "Radius",
-                "Value": 12,
+                "Value": 10,
                 "Type": "distance"
             }
         },
@@ -19606,6 +19606,18 @@
                     "Name": null,
                     "Value": 1.5
                 },
+                "TargetSearchInitialDelayMax": {
+                    "Name": null,
+                    "Value": 0.2
+                },
+                "TargetSearchInitialDelayMin": {
+                    "Name": null,
+                    "Value": 0.15
+                },
+                "TargetSearchInitialStagger": {
+                    "Name": null,
+                    "Value": 0.125
+                },
                 "TickRate": {
                     "Name": null,
                     "Value": 0.2
@@ -19979,7 +19991,7 @@
             "Range": {
                 "AuraRadius": {
                     "Name": "Aura Radius",
-                    "Value": 5,
+                    "Value": 8,
                     "Type": "distance"
                 }
             },
@@ -20038,6 +20050,14 @@
                 "BulletResist": {
                     "Name": "Bullet Resist",
                     "Value": 12.5
+                },
+                "DamageSlowDuration": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "DamageSlowPercent": {
+                    "Name": null,
+                    "Value": 20
                 },
                 "DecayDuration": {
                     "Name": null,
@@ -20139,7 +20159,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 110,
+                "Value": 120,
                 "Type": "cooldown"
             },
             "AbilityDuration": {
@@ -20925,15 +20945,15 @@
             },
             "Upgrades": [
                 {
-                    "AbilityCooldown": -4
+                    "BaseAttackDamagePercent": 15
                 },
                 {
-                    "BaseAttackDamagePercent": 30
+                    "AbilityCooldown": -7
                 },
                 {
                     "StackDuration": 3,
                     "MaxStacks": 3,
-                    "BonusCurrentHealthDamagePercentage": 10,
+                    "BonusCurrentHealthDamagePercentage": 8,
                     "DescKey": "ability_werewolf_unloadgun_t3_desc"
                 }
             ],
@@ -21005,7 +21025,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 20,
+                "Value": 22,
                 "Type": "cooldown"
             },
             "AbilityCooldownBetweenCharge": {
@@ -21094,6 +21114,7 @@
                 {
                     "OutgoingDamagePercent": -25,
                     "DebuffDuration": 5,
+                    "BonusDamage": 80,
                     "DescKey": "ability_werewolf_kickflip_t3_desc"
                 }
             ],
@@ -21218,7 +21239,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "ability_werewolf_netshot_desc"
             },
             "Upgrades": [
@@ -21231,6 +21252,7 @@
                 {
                     "RicochetCount": 2,
                     "RicochetRange": 15,
+                    "AbilityCooldown": -5,
                     "DescKey": "ability_werewolf_netshot_t3_desc"
                 }
             ],
@@ -21273,7 +21295,7 @@
                         {
                             "Key": "BonusHealth",
                             "Name": "Bonus Health",
-                            "Value": 350,
+                            "Value": 100,
                             "Scale": {
                                 "Value": 15.0,
                                 "Type": "power_increase"
@@ -21283,7 +21305,7 @@
                         {
                             "Key": "BonusMoveSpeed",
                             "Name": "Move Speed",
-                            "Value": 3,
+                            "Value": 2,
                             "Type": "move_speed"
                         },
                         {
@@ -21414,7 +21436,7 @@
                 },
                 "HeadshotResist": {
                     "Name": null,
-                    "Value": -35
+                    "Value": -20
                 },
                 "LowHealthFraction": {
                     "Name": null,
@@ -21432,7 +21454,7 @@
                     "Name": null,
                     "Value": 100,
                     "Scale": {
-                        "Value": 7.5,
+                        "Value": 11.0,
                         "Type": "power_increase"
                     }
                 },
@@ -21468,7 +21490,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 22,
+                "Value": 35,
                 "Type": "cooldown"
             },
             "AbilityCooldownBetweenCharge": {
@@ -21511,7 +21533,7 @@
                         {
                             "Key": "MissingHealthDamagePercentage",
                             "Name": "Missing Health Damage",
-                            "Value": 8,
+                            "Value": 6,
                             "Type": "melee_damage"
                         },
                         {
@@ -21533,7 +21555,7 @@
                     "LifeStealPercentOnHit": 25
                 },
                 {
-                    "MissingHealthDamagePercentage": 5
+                    "MissingHealthDamagePercentage": 4
                 }
             ],
             "Range": {
@@ -21572,7 +21594,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 5,
+                "Value": 6.5,
                 "Type": "cooldown"
             },
             "AbilityCooldownBetweenCharge": {
@@ -21837,7 +21859,7 @@
                         {
                             "Key": "BonusHealth",
                             "Name": "Bonus Health",
-                            "Value": 350,
+                            "Value": 100,
                             "Scale": {
                                 "Value": 15.0,
                                 "Type": "power_increase"
@@ -21847,7 +21869,7 @@
                         {
                             "Key": "BonusMoveSpeed",
                             "Name": "Move Speed",
-                            "Value": 3,
+                            "Value": 2,
                             "Type": "move_speed"
                         },
                         {
@@ -21978,7 +22000,7 @@
                 },
                 "HeadshotResist": {
                     "Name": null,
-                    "Value": -35
+                    "Value": -20
                 },
                 "LowHealthFraction": {
                     "Name": null,
@@ -21996,7 +22018,7 @@
                     "Name": null,
                     "Value": 100,
                     "Scale": {
-                        "Value": 7.5,
+                        "Value": 11.0,
                         "Type": "power_increase"
                     }
                 },
@@ -22032,7 +22054,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 22,
+                "Value": 35,
                 "Type": "cooldown"
             },
             "AbilityCooldownBetweenCharge": {
