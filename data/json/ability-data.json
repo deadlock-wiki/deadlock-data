@@ -3547,7 +3547,7 @@
     "ability_necro_gravestone": {
         "AbilityCastRange": 20,
         "AbilityChannelTime": 0.66,
-        "AbilityCooldown": 110,
+        "AbilityCooldown": 120,
         "AbilityDuration": {
             "Value": 20,
             "Scale": {
@@ -3556,7 +3556,7 @@
             }
         },
         "AbilityUnitTargetLimit": 1,
-        "AuraRadius": 5,
+        "AuraRadius": 8,
         "BlockerScaleFactor": 1,
         "BonusHealthRegen": {
             "Value": 0,
@@ -3575,6 +3575,8 @@
                 "Type": "spirit"
             }
         },
+        "DamageSlowDuration": 0.5,
+        "DamageSlowPercent": 20,
         "DecayDuration": 1,
         "DecayTickRate": 0.1,
         "ExplodeDelay": 0.23,
@@ -3759,6 +3761,9 @@
         },
         "TargetSearchDelayMax": 1.25,
         "TargetSearchDelayMin": 1.5,
+        "TargetSearchInitialDelayMax": 0.2,
+        "TargetSearchInitialDelayMin": 0.15,
+        "TargetSearchInitialStagger": 0.125,
         "TargetSearchRadius": 7,
         "TickRate": 0.2,
         "Upgrades": [
@@ -5983,7 +5988,7 @@
     "ability_werewolf_frenzy": {
         "AbilityCastDelay": 0.2,
         "AbilityCastRange": 7,
-        "AbilityCooldown": 5,
+        "AbilityCooldown": 6.5,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.5,
         "AbilityUnitTargetLimit": 16,
@@ -5998,7 +6003,7 @@
         "IsDisabled": false,
         "Key": "ability_werewolf_frenzy",
         "LifeStealPercentOnHit": 40,
-        "MissingHealthDamagePercentage": 8,
+        "MissingHealthDamagePercentage": 6,
         "Name": "Go For The Throat",
         "TargetingConeAngle": 40,
         "Upgrades": [
@@ -6009,7 +6014,7 @@
                 "LifeStealPercentOnHit": 25
             },
             {
-                "MissingHealthDamagePercentage": 5
+                "MissingHealthDamagePercentage": 4
             }
         ]
     },
@@ -6092,8 +6097,9 @@
                 "StaminaRestore": 2
             },
             {
-                "OutgoingDamagePercent": -25,
-                "DebuffDuration": 5
+                "OutgoingDamagePercent": -35,
+                "DebuffDuration": 5,
+                "BonusDamage": 80
             }
         ]
     },
@@ -6215,7 +6221,8 @@
             },
             {
                 "RicochetCount": 2,
-                "RicochetRange": 15
+                "RicochetRange": 15,
+                "AbilityCooldown": -5
             }
         ]
     },
@@ -6300,7 +6307,7 @@
     "ability_werewolf_transformation": {
         "AbilityCastDelay": 0.2,
         "AbilityChargesConditionally": 1,
-        "AbilityCooldown": 22,
+        "AbilityCooldown": 35,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 15,
         "AbilityPostCastDuration": 0.5,
@@ -6318,18 +6325,18 @@
             }
         },
         "BonusHealth": {
-            "Value": 350,
+            "Value": 100,
             "Scale": {
                 "Value": 15.0,
                 "Type": "power_increase"
             }
         },
-        "BonusMoveSpeed": 3,
+        "BonusMoveSpeed": 2,
         "BulletResist": 20,
         "CameraTurnRateMax": 188,
         "ChannelMoveSpeed": 7.62,
         "EndingWarningSoundDuration": 3.0,
-        "HeadshotResist": -35,
+        "HeadshotResist": -20,
         "HealAmount": {
             "Value": 0,
             "Scale": {
@@ -6350,7 +6357,7 @@
         "MaxRage": {
             "Value": 100,
             "Scale": {
-                "Value": 7.5,
+                "Value": 11.0,
                 "Type": "power_increase"
             }
         },
@@ -6388,7 +6395,7 @@
     },
     "ability_werewolf_unloadgun": {
         "AbilityCastDelay": 0.45,
-        "AbilityCooldown": 20,
+        "AbilityCooldown": 22,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 5,
         "AbilityUnitTargetLimit": 1,
@@ -6414,15 +6421,15 @@
         "SpreadPenaltyPerShot": 0.5,
         "Upgrades": [
             {
-                "AbilityCooldown": -4
+                "BaseAttackDamagePercent": 15
             },
             {
-                "BaseAttackDamagePercent": 30
+                "AbilityCooldown": -7
             },
             {
                 "StackDuration": 3,
                 "MaxStacks": 3,
-                "BonusCurrentHealthDamagePercentage": 10
+                "BonusCurrentHealthDamagePercentage": 8
             }
         ]
     },
@@ -8571,19 +8578,19 @@
         "AbilityCastRange": 6,
         "AbilityCooldown": 18.0,
         "AbilityCooldownBetweenCharge": -1.0,
-        "AbilityDuration": 3.0,
+        "AbilityDuration": 3.5,
         "AbilityUnitTargetLimit": 1,
         "BonusDamagePctPerPlayerHit": {
             "Value": 1.0,
             "Scale": {
-                "Value": 0.002,
+                "Value": 0.0015,
                 "Type": "spirit"
             }
         },
         "BonusDamagePctPerPlayerKilled": {
             "Value": 2.5,
             "Scale": {
-                "Value": 0.012,
+                "Value": 0.01,
                 "Type": "spirit"
             }
         },
@@ -8595,14 +8602,14 @@
                 "Type": "spirit"
             }
         },
-        "FuseTime": 3.0,
+        "FuseTime": 3.5,
         "IsDisabled": false,
         "Key": "citadel_ability_sticky_bomb",
-        "KillCheckWindow": 12.0,
+        "KillCheckWindow": 10.0,
         "Name": "Sticky Bomb",
         "OnHitDiminish": 60,
         "OnKillDiminish": 7,
-        "Radius": 12,
+        "Radius": 10,
         "Upgrades": [
             {
                 "AbilityCooldown": -8
@@ -9056,7 +9063,7 @@
             },
             {
                 "RestoreHookCooldown": 1,
-                "MissingHPHeal": 20
+                "MissingHPHeal": 17
             }
         ],
         "UppercutDamage": {
