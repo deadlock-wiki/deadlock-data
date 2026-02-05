@@ -209,7 +209,7 @@
             },
             "Upgrades": [
                 {
-                    "FireRateSlow": 30,
+                    "FireRateSlow": 25,
                     "DebuffDuration": 6,
                     "DescKey": "ability_flame_dash_t1_desc"
                 },
@@ -982,7 +982,7 @@
             },
             "Upgrades": [
                 {
-                    "FireRateSlow": 40
+                    "FireRateSlow": 35
                 },
                 {
                     "AbilityCooldown": -20.0
@@ -990,7 +990,6 @@
                 {
                     "ChainDuration": 0.5,
                     "CaptureRadius": 1,
-                    "ChainLength": 1,
                     "DescKey": "citadel_ability_hornet_chain_t3_desc"
                 }
             ],
@@ -1239,9 +1238,10 @@
                             "Type": "tech_damage"
                         },
                         {
-                            "Key": "BonusGoldOnKill",
-                            "Name": "Bonus Souls Per Assassination",
-                            "Value": 250
+                            "Key": "WeaponDamageBonusPerKill",
+                            "Name": "Weapon Damage Per Kill",
+                            "Value": 5,
+                            "Type": "bullet_damage"
                         }
                     ]
                 },
@@ -1274,7 +1274,7 @@
                     "LowHealthEnemyDamageBonus": 80
                 },
                 {
-                    "BonusGoldOnKill": 600,
+                    "WeaponDamageBonusPerKill": 4,
                     "DescKey": "citadel_ability_hornet_snipe_t3_desc"
                 }
             ],
@@ -1292,17 +1292,14 @@
                     "Type": "move_speed"
                 }
             },
-            "Damage": {
-                "WeaponDamageBonus": {
-                    "Name": "Weapon Damage",
-                    "Value": 13,
-                    "Type": "bullet_damage"
-                }
-            },
             "Other": {
                 "AbilityUnitTargetLimit": {
                     "Name": null,
                     "Value": 1
+                },
+                "BonusGoldOnKill": {
+                    "Name": "Bonus Souls Per Assassination",
+                    "Value": 250
                 },
                 "LowHealthEnemyThresholdPct": {
                     "Name": "Low Health Threshold",
@@ -1709,7 +1706,7 @@
                 },
                 {
                     "SelfBuffDuration": 8,
-                    "BonusFireRate": 40,
+                    "BonusFireRate": 35,
                     "DescKey": "ability_health_swap_t2_desc"
                 },
                 {
@@ -1826,7 +1823,14 @@
                     "AbilityDuration": 2
                 },
                 {
-                    "DPS": 30.6
+                    "DPS": {
+                        "Value": 20,
+                        "Scale": {
+                            "Value": 0.12,
+                            "Type": "spirit"
+                        }
+                    },
+                    "DescKey": "citadel_ability_bull_heal_t3_desc"
                 }
             ],
             "Move": {
@@ -2099,7 +2103,7 @@
                         {
                             "Key": "Damage",
                             "Name": "Damage",
-                            "Value": 55,
+                            "Value": 75,
                             "Scale": {
                                 "Value": 2.325,
                                 "Type": "spirit"
@@ -2111,7 +2115,7 @@
                             "Key": "StunDuration",
                             "Name": "Stun Duration",
                             "StatusEffect": "Stun",
-                            "Value": 1.5,
+                            "Value": 1.6,
                             "Type": "duration"
                         }
                     ]
@@ -2153,7 +2157,7 @@
                 },
                 {
                     "BonusMaxHealthPerHero": 100,
-                    "BonusFireRatePerHero": 15,
+                    "BonusFireRatePerHero": 14,
                     "LandingBonusesDuration": 25,
                     "DescKey": "citadel_ability_bull_leap_t2_desc"
                 },
@@ -2870,7 +2874,7 @@
             },
             "Upgrades": [
                 {
-                    "AuraFireRateBonus": 35,
+                    "AuraFireRateBonus": 30,
                     "DescKey": "citadel_ability_mobile_resupply_t1_desc"
                 },
                 {
@@ -3772,7 +3776,7 @@
             },
             "Upgrades": [
                 {
-                    "BonusFireRate": -35,
+                    "BonusFireRate": -30,
                     "SlowPercent": 35,
                     "SlowDuration": 4,
                     "DescKey": "citadel_ability_stomp_t1_desc"
@@ -3863,7 +3867,7 @@
                             "Title": "On Buff:",
                             "Key": "FireRateBonus",
                             "Name": "Fire Rate Bonus",
-                            "Value": 30,
+                            "Value": 26,
                             "Type": "fire_rate"
                         },
                         {
@@ -3895,7 +3899,7 @@
                     "AbilityCastRange": 4
                 },
                 {
-                    "FireRateBonus": 25
+                    "FireRateBonus": 22
                 },
                 {
                     "BonusClipSizePercent": 120,
@@ -4267,12 +4271,12 @@
                     "SprintSpeedBonus": 4
                 },
                 {
-                    "AbilityCooldown": -15.0
+                    "AbilityCooldown": -17.0
                 },
                 {
                     "BonusSpiritMeter": 1,
-                    "BonusSpiritMax": 75,
-                    "BonusSpiritLingerDuration": 8,
+                    "BonusSpiritMax": 90,
+                    "BonusSpiritLingerDuration": 9,
                     "DescKey": "ability_icepath_t3_desc"
                 }
             ],
@@ -4392,7 +4396,7 @@
                         {
                             "Key": "MaxFireRateSlowPercent",
                             "Name": "Max Fire Rate",
-                            "Value": 40,
+                            "Value": 35,
                             "Type": "fire_rate"
                         }
                     ]
@@ -4556,7 +4560,7 @@
             },
             "Upgrades": [
                 {
-                    "FireRateSlow": 40,
+                    "FireRateSlow": 35,
                     "DescKey": "ability_ice_dome_t1_desc"
                 },
                 {
@@ -4615,7 +4619,7 @@
             },
             "AbilityDuration": {
                 "Name": "Duration",
-                "Value": 5.0,
+                "Value": 5.25,
                 "Type": "duration"
             },
             "Radius": {
@@ -4696,7 +4700,7 @@
                 },
                 {
                     "BulletResistReduction": -12,
-                    "FireRateSlow": 40,
+                    "FireRateSlow": 35,
                     "BulletResistReductionDuration": 6,
                     "DescKey": "ability_sleep_dagger_t3_desc"
                 }
@@ -4934,7 +4938,7 @@
                         {
                             "Key": "BonusFireRate",
                             "Name": "Fire Rate",
-                            "Value": 35
+                            "Value": 30
                         },
                         {
                             "Key": "WeaponDamageBonus",
@@ -5561,6 +5565,12 @@
                             "Type": "melee_damage"
                         },
                         {
+                            "Key": "MissingHPHeal",
+                            "Name": "Missing HP Heal",
+                            "Value": 0,
+                            "Type": "healing"
+                        },
+                        {
                             "Key": "TossDuration",
                             "Name": "Duration",
                             "StatusEffect": "Displacement",
@@ -5589,7 +5599,7 @@
                             "Title": "On Landing:",
                             "Key": "BonusFireRate",
                             "Name": "Fire Rate",
-                            "Value": -15,
+                            "Value": -14,
                             "Scale": {
                                 "Value": -0.186,
                                 "Type": "spirit"
@@ -5618,7 +5628,7 @@
                 },
                 {
                     "RestoreHookCooldown": 1,
-                    "ClipSizeBonus": 100,
+                    "MissingHPHeal": 17,
                     "DescKey": "citadel_ability_uppercut_t3_desc"
                 }
             ],
@@ -5699,7 +5709,7 @@
                         {
                             "Key": "FuseTime",
                             "Name": "Fuse Time",
-                            "Value": 3.0,
+                            "Value": 3.5,
                             "Type": "duration"
                         },
                         {
@@ -5727,7 +5737,7 @@
                             "Name": "Sticky Bomb Damage",
                             "Value": 1.0,
                             "Scale": {
-                                "Value": 0.0025,
+                                "Value": 0.0015,
                                 "Type": "spirit"
                             },
                             "Type": "damage"
@@ -5738,7 +5748,7 @@
                             "Name": "Sticky Bomb Damage",
                             "Value": 2.5,
                             "Scale": {
-                                "Value": 0.015,
+                                "Value": 0.01,
                                 "Type": "spirit"
                             },
                             "Type": "damage"
@@ -5752,18 +5762,19 @@
                     "AbilityCooldown": -8
                 },
                 {
-                    "Damage": 70.0
+                    "Damage": 75
                 },
                 {
                     "MovementSpeedBonus": 5,
-                    "MovementSpeedBonusDuration": 3,
+                    "BonusFireRate": 20,
+                    "MovementSpeedBonusDuration": 5,
                     "DescKey": "citadel_ability_sticky_bomb_t3_desc"
                 }
             ],
             "Duration": {
                 "KillCheckWindow": {
                     "Name": null,
-                    "Value": 12.0,
+                    "Value": 10.0,
                     "Type": "duration"
                 }
             },
@@ -5781,11 +5792,11 @@
                 },
                 "OnHitDiminish": {
                     "Name": null,
-                    "Value": 100
+                    "Value": 60
                 },
                 "OnKillDiminish": {
                     "Name": null,
-                    "Value": 10
+                    "Value": 7
                 }
             },
             "AbilityCastRange": {
@@ -5805,12 +5816,12 @@
             },
             "AbilityDuration": {
                 "Name": "Duration",
-                "Value": 3.0,
+                "Value": 3.5,
                 "Type": "duration"
             },
             "Radius": {
                 "Name": "Radius",
-                "Value": 12,
+                "Value": 10,
                 "Type": "distance"
             }
         },
@@ -6518,7 +6529,7 @@
                 },
                 "AirSpeedMax": {
                     "Name": null,
-                    "Value": 3.81
+                    "Value": 4.1
                 },
                 "CameraHeightOffset": {
                     "Name": null,
@@ -6640,7 +6651,7 @@
                 },
                 "AirSpeedMax": {
                     "Name": null,
-                    "Value": 3.81
+                    "Value": 4.1
                 },
                 "AltJumpSpeed": {
                     "Name": null,
@@ -6706,7 +6717,7 @@
                         {
                             "Key": "Lifetime",
                             "Name": "Lifetime",
-                            "Value": 20,
+                            "Value": 22,
                             "Type": "duration"
                         }
                     ]
@@ -6854,7 +6865,7 @@
                     {
                         "Key": "BonusTechPowerPerKill",
                         "Name": "Spirit Power Per Kill",
-                        "Value": 8,
+                        "Value": 10,
                         "Type": "tech_damage"
                     }
                 ],
@@ -6892,7 +6903,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 120.0,
+                "Value": 110.0,
                 "Type": "cooldown"
             },
             "AbilityCooldownBetweenCharge": {
@@ -7314,9 +7325,9 @@
                         {
                             "Key": "ImpactDamage",
                             "Name": "Impact Damage",
-                            "Value": 32,
+                            "Value": 28,
                             "Scale": {
-                                "Value": 0.558,
+                                "Value": 0.22,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -7324,9 +7335,9 @@
                         {
                             "Key": "BleedDPSPerStack",
                             "Name": "Bleed DPS Per Knife",
-                            "Value": 4.6,
+                            "Value": 4.0,
                             "Scale": {
-                                "Value": 0.1488,
+                                "Value": 0.13,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -7364,8 +7375,8 @@
                     "BleedDuration": 2
                 },
                 {
-                    "ImpactDamage": 36.0,
-                    "BleedDPSPerStack": 6.3,
+                    "ImpactDamage": 30.0,
+                    "BleedDPSPerStack": 5.5,
                     "DescKey": "citadel_ability_shiv_dagger_t3_desc"
                 }
             ],
@@ -7881,7 +7892,7 @@
                             "Name": "Fire Rate",
                             "Value": 10,
                             "Scale": {
-                                "Value": 0.279,
+                                "Value": 0.25,
                                 "Type": "spirit"
                             },
                             "Type": "fire_rate"
@@ -7925,7 +7936,7 @@
             },
             "Upgrades": [
                 {
-                    "BonusFireRate": 10
+                    "BonusFireRate": 8
                 },
                 {
                     "MoveSpeedBonus": 2.0,
@@ -8320,7 +8331,7 @@
                     "DescKey": "ability_warden_crowd_control_t2_desc"
                 },
                 {
-                    "FireRateSlow": 35,
+                    "FireRateSlow": 30,
                     "AbilityCooldown": -6.5,
                     "DescKey": "ability_warden_crowd_control_t3_desc"
                 }
@@ -8887,7 +8898,7 @@
                         {
                             "Key": "FireRateSlow",
                             "Name": "Fire Rate",
-                            "Value": 20,
+                            "Value": 18,
                             "Type": "bullet_damage"
                         }
                     ]
@@ -8904,7 +8915,7 @@
             },
             "Upgrades": [
                 {
-                    "FireRateSlow": 30
+                    "FireRateSlow": 26
                 },
                 {
                     "HealMaxHealth": 6
@@ -9000,7 +9011,7 @@
             },
             "Upgrades": [
                 {
-                    "BonusFireRate": 15
+                    "BonusFireRate": 14
                 },
                 {
                     "BonusMoveSpeed": 4
@@ -9228,7 +9239,7 @@
             },
             "Upgrades": [
                 {
-                    "AbilityCooldown": -19.0
+                    "AbilityCooldown": -17.0
                 },
                 {
                     "AbilityCastRange": 20,
@@ -9295,7 +9306,7 @@
                             "Name": "Damage",
                             "Value": 65,
                             "Scale": {
-                                "Value": 1.1,
+                                "Value": 0.85,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -9357,7 +9368,7 @@
                 },
                 {
                     "Damage": 85.5,
-                    "FireRateSlow": 35,
+                    "FireRateSlow": 30,
                     "DescKey": "ability_lash_flog_t3_desc"
                 }
             ],
@@ -9843,7 +9854,7 @@
                             "Key": "TossDuration",
                             "Name": "Duration",
                             "StatusEffect": "Displacement",
-                            "Value": 1
+                            "Value": 0.8
                         }
                     ]
                 },
@@ -10318,6 +10329,7 @@
                     },
                     {
                         "Key": "MarkDuration",
+                        "Name": "Mark Duration",
                         "Value": 5
                     },
                     {
@@ -11143,7 +11155,7 @@
                     "Damage": 90.0
                 },
                 {
-                    "FireRateSlow": 40,
+                    "FireRateSlow": 35,
                     "DebuffDuration": 4.0,
                     "AbilityChannelTime": 0.5,
                     "DescKey": "synth_pulse_t3_desc"
@@ -11694,7 +11706,7 @@
                         {
                             "Key": "BonusFireRate",
                             "Name": "Fire Rate",
-                            "Value": 30,
+                            "Value": 26,
                             "Type": "fire_rate"
                         }
                     ]
@@ -12662,7 +12674,7 @@
                     "DescKey": "ability_viper_debuffdagger_t2_desc"
                 },
                 {
-                    "CooldownRefundPercent": 40,
+                    "CooldownRefundPercent": 55,
                     "DescKey": "ability_viper_debuffdagger_t3_desc"
                 }
             ],
@@ -12727,7 +12739,7 @@
                         {
                             "Key": "VenomMaxDamage",
                             "Name": "Max Venom Damage",
-                            "Value": 165,
+                            "Value": 140,
                             "Scale": {
                                 "Value": 2.79,
                                 "Type": "spirit"
@@ -12746,7 +12758,7 @@
                     {
                         "Key": "VenomMaxDamageHealthPercentage",
                         "Name": "Health for Max Damage",
-                        "Value": 25
+                        "Value": 30
                     },
                     {
                         "Key": "VenomDuration",
@@ -12767,7 +12779,9 @@
                 },
                 {
                     "HealAmpRegenPenaltyPercent": -40,
-                    "HealAmpReceivePenaltyPercent": -40
+                    "HealAmpReceivePenaltyPercent": -40,
+                    "AbilityCooldown": -8,
+                    "DescKey": "ability_viper_venom_t2_desc"
                 },
                 {
                     "BuildUpPerShot": 4.5,
@@ -12806,7 +12820,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 20.0,
+                "Value": 24.0,
                 "Type": "cooldown"
             },
             "AbilityCooldownBetweenCharge": {
@@ -12893,12 +12907,12 @@
                             "Key": "PetrifyDuration",
                             "Name": "Petrify Duration",
                             "StatusEffect": "Petrify",
-                            "Value": 2
+                            "Value": 2.0
                         },
                         {
                             "Key": "Damage",
                             "Name": "Damage",
-                            "Value": 45.0,
+                            "Value": 50.0,
                             "Scale": {
                                 "Value": 0.744,
                                 "Type": "spirit"
@@ -12908,7 +12922,7 @@
                         {
                             "Key": "PetrifyDamage",
                             "Name": "Petrify Damage",
-                            "Value": 165,
+                            "Value": 180,
                             "Scale": {
                                 "Value": 2.046,
                                 "Type": "spirit"
@@ -14677,7 +14691,7 @@
                             "Name": "Heal Per Kill",
                             "Value": 30,
                             "Scale": {
-                                "Value": 0.5,
+                                "Value": 0.43,
                                 "Type": "spirit"
                             },
                             "Type": "healing"
@@ -14836,7 +14850,7 @@
                     "AbilityCastRange": 3
                 },
                 {
-                    "BonusFireRate": 30,
+                    "BonusFireRate": 25,
                     "BuffDuration": 8,
                     "BonusBullets": 8,
                     "DescKey": "ability_vampirebat_batblink_t2_desc"
@@ -14921,7 +14935,7 @@
                             "Name": "Bonus Damage",
                             "Value": 55,
                             "Scale": {
-                                "Value": 1.7,
+                                "Value": 1.6,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -14971,7 +14985,7 @@
                 {
                     "SlowDuration": 3,
                     "SlowPercent": 30,
-                    "StaminaReduction": 2,
+                    "StaminaReduction": 1,
                     "DescKey": "ability_vampirebat_lovebites_t3_desc"
                 }
             ],
@@ -15392,16 +15406,12 @@
                         "Key": "AbilityCharges",
                         "Name": "Charges",
                         "Value": 0,
-                        "Scale": {
-                            "Value": 0.0,
-                            "Type": "max_charges"
-                        },
                         "Type": "cast"
                     },
                     {
                         "Key": "AbilityCooldownBetweenCharge",
                         "Name": "Charge Delay",
-                        "Value": 0,
+                        "Value": -1.0,
                         "Type": "charge_cooldown"
                     }
                 ],
@@ -15412,13 +15422,14 @@
                     "DotHealthPercent": 1.0
                 },
                 {
-                    "BonusFireRate": 25,
+                    "BonusFireRate": 22,
                     "BuffDuration": 6,
                     "DescKey": "drifter_shadow_mark_t2_desc"
                 },
                 {
                     "AbilityCharges": 2,
                     "AbilityCooldownBetweenCharge": 5,
+                    "AbilityDuration": 2,
                     "DescKey": "drifter_shadow_mark_t3_desc"
                 }
             ],
@@ -15471,19 +15482,15 @@
                 "Value": 0.15,
                 "Type": "cast"
             },
-            "AbilityCharges": {
-                "Name": "Charges",
-                "Value": 0,
-                "Scale": {
-                    "Value": 0.0,
-                    "Type": "max_charges"
-                },
-                "Type": "cast"
-            },
             "AbilityCooldown": {
                 "Name": "Cooldown",
                 "Value": 20,
                 "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
             },
             "AbilityDuration": {
                 "Name": "Duration",
@@ -15507,7 +15514,7 @@
                         {
                             "Key": "IsolationRange",
                             "Name": "Isolation Range",
-                            "Value": 25,
+                            "Value": 20,
                             "Type": "distance"
                         }
                     ]
@@ -15798,7 +15805,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 130.0,
+                "Value": 120.0,
                 "Type": "cooldown"
             },
             "AbilityCooldownBetweenCharge": {
@@ -16068,7 +16075,7 @@
                             "Name": "Minimum DPS",
                             "Value": 16,
                             "Scale": {
-                                "Value": 0.23,
+                                "Value": 0.18,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -16078,7 +16085,7 @@
                             "Name": "Max DPS",
                             "Value": 70,
                             "Scale": {
-                                "Value": 1.15,
+                                "Value": 0.92,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -16282,7 +16289,7 @@
                             "Type": "spirit"
                         }
                     },
-                    "BonusFireRate": 20,
+                    "BonusFireRate": 18,
                     "DescKey": "ability_frank_revive_t3_desc"
                 }
             ],
@@ -16511,7 +16518,7 @@
                         {
                             "Key": "CombatBarrier",
                             "Name": "Barrier",
-                            "Value": 150,
+                            "Value": 125,
                             "Scale": {
                                 "Value": 1.6,
                                 "Type": "spirit"
@@ -16552,9 +16559,9 @@
             "Upgrades": [
                 {
                     "BonusFireRate": {
-                        "Value": 16,
+                        "Value": 14,
                         "Scale": {
-                            "Value": 0.15,
+                            "Value": 0.13,
                             "Type": "spirit"
                         }
                     },
@@ -16645,7 +16652,7 @@
                             "Title": "On Hit:",
                             "Key": "Damage",
                             "Name": "Damage",
-                            "Value": 120,
+                            "Value": 90,
                             "Scale": {
                                 "Value": 1.3,
                                 "Type": "spirit"
@@ -18691,7 +18698,7 @@
                             "Title": "Wrecked:",
                             "Key": "FireRateSlow",
                             "Name": "Fire Rate",
-                            "Value": 15,
+                            "Value": 14,
                             "Type": "bullet_damage"
                         },
                         {
@@ -18713,9 +18720,9 @@
                             "Title": "On Blasted Melee:",
                             "Key": "MaxHealthMelee",
                             "Name": "Melee Bonus Health",
-                            "Value": 80,
+                            "Value": 70,
                             "Scale": {
-                                "Value": 0.7,
+                                "Value": 0.8,
                                 "Type": "spirit"
                             },
                             "Type": "healing"
@@ -18724,7 +18731,7 @@
                             "Title": "While Blasted:",
                             "Key": "BulletDamageAmp",
                             "Name": "Wrecked Bullet Amp",
-                            "Value": 9,
+                            "Value": 10,
                             "Type": "bullet_damage"
                         },
                         {
@@ -18843,7 +18850,7 @@
                         {
                             "Key": "Damage",
                             "Name": "Damage",
-                            "Value": 150,
+                            "Value": 120,
                             "Scale": {
                                 "Value": 1.0,
                                 "Type": "spirit"
@@ -19404,9 +19411,9 @@
                         {
                             "Key": "Damage",
                             "Name": "Damage",
-                            "Value": 20,
+                            "Value": 16,
                             "Scale": {
-                                "Value": 0.3,
+                                "Value": 0.25,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -19461,10 +19468,16 @@
             "Upgrades": [
                 {
                     "HealPerPickup": {
-                        "Value": 5,
+                        "Value": {
+                            "Value": 5,
+                            "Scale": {
+                                "Value": 0.1,
+                                "Type": "spirit"
+                            }
+                        },
                         "Scale": {
-                            "Value": 0.1,
-                            "Type": "spirit"
+                            "Value": 1.0,
+                            "Type": "healing"
                         }
                     },
                     "DescKey": "ability_necro_hauntingskull_t1_desc"
@@ -19531,7 +19544,7 @@
                 },
                 "KillTime": {
                     "Name": null,
-                    "Value": 0.25
+                    "Value": 0.2
                 },
                 "MaxHits": {
                     "Name": "Max Hits",
@@ -19592,6 +19605,18 @@
                 "TargetSearchDelayMin": {
                     "Name": null,
                     "Value": 1.5
+                },
+                "TargetSearchInitialDelayMax": {
+                    "Name": null,
+                    "Value": 0.2
+                },
+                "TargetSearchInitialDelayMin": {
+                    "Name": null,
+                    "Value": 0.15
+                },
+                "TargetSearchInitialStagger": {
+                    "Name": null,
+                    "Value": 0.125
                 },
                 "TickRate": {
                     "Name": null,
@@ -19959,14 +19984,14 @@
                 },
                 {
                     "SummonBurstCount": 3,
-                    "MaxHealthDamagePercentage": 5,
+                    "CurrentHealthDamagePercentage": 5,
                     "DescKey": "ability_necro_gravestone_t3_desc"
                 }
             ],
             "Range": {
                 "AuraRadius": {
                     "Name": "Aura Radius",
-                    "Value": 5,
+                    "Value": 8,
                     "Type": "distance"
                 }
             },
@@ -20025,6 +20050,14 @@
                 "BulletResist": {
                     "Name": "Bullet Resist",
                     "Value": 12.5
+                },
+                "DamageSlowDuration": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "DamageSlowPercent": {
+                    "Name": null,
+                    "Value": 20
                 },
                 "DecayDuration": {
                     "Name": null,
@@ -20126,7 +20159,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 110,
+                "Value": 120,
                 "Type": "cooldown"
             },
             "AbilityDuration": {
@@ -20326,7 +20359,7 @@
                     },
                     {
                         "Key": "CDReduceOnPillowHit",
-                        "Value": 4
+                        "Value": 5
                     }
                 ],
                 "DescKey": "ability_familiar_ability02_desc"
@@ -20336,7 +20369,7 @@
                     "AbilityCooldown": -7
                 },
                 {
-                    "FireRateSlow": 40,
+                    "FireRateSlow": 35,
                     "DescKey": "ability_familiar_ability02_t2_desc"
                 },
                 {
@@ -20475,9 +20508,9 @@
                     "AbilityCooldown": -8
                 },
                 {
-                    "BonusBarrierAmpPercent": 20,
-                    "BonusItemDurationPercent": 20,
-                    "BonusItemRangePercent": 20,
+                    "BonusBarrierAmpPercent": 25,
+                    "BonusItemDurationPercent": 25,
+                    "BonusItemRangePercent": 25,
                     "DescKey": "ability_familiar_attach_t2_desc"
                 },
                 {
@@ -20610,7 +20643,7 @@
                 },
                 {
                     "TechArmorGain": 8,
-                    "BonusMoveSpeed": 1.0,
+                    "BonusMoveSpeed": 1.5,
                     "DescKey": "ability_familiar_helpinghands_t2_desc"
                 },
                 {
@@ -20796,7 +20829,7 @@
                     "DescKey": "ability_familiar_ability01_t2_desc"
                 },
                 {
-                    "AbilityCooldown": -40
+                    "AbilityCooldown": -55
                 }
             ],
             "Cast": {
@@ -20860,12 +20893,1180 @@
         }
     },
     "hero_werewolf": {
-        "Name": "Silver"
+        "Name": "Silver",
+        "1": {
+            "Key": "ability_werewolf_unloadgun",
+            "Name": "Slam Fire",
+            "DescKey": "ability_werewolf_unloadgun_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "MaxShots",
+                            "Name": "Max Shots",
+                            "Value": 3,
+                            "Type": "cast"
+                        },
+                        {
+                            "Key": "BonusFireRate",
+                            "Name": "Fire Rate",
+                            "Value": 300,
+                            "Type": "fire_rate"
+                        },
+                        {
+                            "Key": "CurrentHealthDamagePercentage",
+                            "Name": "Current Health as Damage",
+                            "Value": 4,
+                            "Type": "bullet_damage"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "AccuracyPercentage",
+                        "Name": "Weapon Accuracy",
+                        "Value": -25,
+                        "Type": "distance"
+                    },
+                    {
+                        "Key": "BaseAttackDamagePercent",
+                        "Name": "Weapon Damage",
+                        "Value": 0,
+                        "Type": "bullet_damage"
+                    },
+                    {
+                        "Key": "BonusCurrentHealthDamagePercentage",
+                        "Name": "Bonus Current Health as Damage",
+                        "Value": 0,
+                        "Type": "bullet_damage"
+                    }
+                ],
+                "DescKey": "ability_werewolf_unloadgun_desc"
+            },
+            "Upgrades": [
+                {
+                    "BaseAttackDamagePercent": 15
+                },
+                {
+                    "AbilityCooldown": -7
+                },
+                {
+                    "StackDuration": 3,
+                    "MaxStacks": 3,
+                    "BonusCurrentHealthDamagePercentage": 8,
+                    "DescKey": "ability_werewolf_unloadgun_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 5.08,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "BulletEffectiveness": {
+                    "Name": null,
+                    "Value": 0.1
+                },
+                "BulletRadiusOverride": {
+                    "Name": null,
+                    "Value": 7
+                },
+                "BulletSpread": {
+                    "Name": "Gun Spread",
+                    "Value": -1
+                },
+                "Damage": {
+                    "Name": "Damage",
+                    "Value": 40
+                },
+                "DebuffDuration": {
+                    "Name": "Debuff Duration",
+                    "Value": 3
+                },
+                "LingerDuration": {
+                    "Name": "Linger Duration",
+                    "Value": 0.1
+                },
+                "ProcChance": {
+                    "Name": "Proc Chance",
+                    "Value": 100
+                },
+                "RecoilDelayFactor": {
+                    "Name": null,
+                    "Value": 0.05
+                },
+                "RecoilRecoverySpeed": {
+                    "Name": null,
+                    "Value": 0.1
+                },
+                "RecoilSpeed": {
+                    "Name": null,
+                    "Value": 12
+                },
+                "RecoilStrength": {
+                    "Name": null,
+                    "Value": 12
+                },
+                "SpreadPenaltyPerShot": {
+                    "Name": null,
+                    "Value": 0.5
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.45,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 22,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 5,
+                "Type": "duration"
+            }
+        },
+        "2": {
+            "Key": "ability_werewolf_kickflip",
+            "Name": "Boot Kick",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 0,
+                            "Scale": {
+                                "Value": 0.9,
+                                "Type": "melee"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "DisarmDuration",
+                            "Name": "Disarm Duration",
+                            "StatusEffect": "Disarmed",
+                            "Value": 0,
+                            "Type": "duration"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "DebuffDuration",
+                        "Name": "Debuff Duration",
+                        "Value": 0,
+                        "Type": "duration"
+                    }
+                ],
+                "DescKey": "ability_werewolf_kickflip_desc_1"
+            },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "BonusDamage",
+                            "Name": "Bonus Damage",
+                            "Value": 25,
+                            "Scale": {
+                                "Value": 1.0,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "MarkDuration",
+                        "Name": "Mark Duration",
+                        "Value": 3,
+                        "Scale": {
+                            "Value": 1.0,
+                            "Type": "spirit"
+                        },
+                        "Type": "duration"
+                    }
+                ],
+                "DescKey": "ability_werewolf_kickflip_desc_2"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -6
+                },
+                {
+                    "StaminaRestore": 2,
+                    "DescKey": "ability_werewolf_kickflip_t2_desc"
+                },
+                {
+                    "OutgoingDamagePercent": -35,
+                    "DebuffDuration": 5,
+                    "BonusDamage": 80,
+                    "DescKey": "ability_werewolf_kickflip_t3_desc"
+                }
+            ],
+            "Range": {
+                "LeapRadius": {
+                    "Name": null,
+                    "Value": 1.7,
+                    "Type": "distance"
+                }
+            },
+            "Cast": {
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Value": 0.35,
+                    "Type": "cast"
+                }
+            },
+            "Other": {
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.25
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AirDrag": {
+                    "Name": null,
+                    "Value": 0.8
+                },
+                "CameraTurnRateMax": {
+                    "Name": null,
+                    "Value": 188
+                },
+                "EnemyPushForceAway": {
+                    "Name": null,
+                    "Value": 300
+                },
+                "EnemyPushForceUp": {
+                    "Name": null,
+                    "Value": 300
+                },
+                "FallSpeedMax": {
+                    "Name": null,
+                    "Value": 20
+                },
+                "LeapForwardOffset": {
+                    "Name": null,
+                    "Value": 2.5
+                },
+                "LeapSpeed": {
+                    "Name": null,
+                    "Value": 1200
+                },
+                "SelfPushForceCameraAway": {
+                    "Name": null,
+                    "Value": 600
+                },
+                "SelfPushForceUp": {
+                    "Name": null,
+                    "Value": 200
+                },
+                "SlowDuration": {
+                    "Name": "Slow Duration",
+                    "Value": 0.1
+                },
+                "SuccessInputWindow": {
+                    "Name": null,
+                    "Value": 0.3
+                },
+                "TimeScaleDebuff": {
+                    "Name": null,
+                    "Value": 95
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.25,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 21,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            }
+        },
+        "3": {
+            "Key": "ability_werewolf_netshot",
+            "Name": "Entangling Bola",
+            "DescKey": "ability_werewolf_netshot_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 40,
+                            "Scale": {
+                                "Value": 1.0,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Title": "On Hit:",
+                            "Key": "SlowPercent",
+                            "Name": "Move Speed",
+                            "Value": 20,
+                            "Type": "slow"
+                        },
+                        {
+                            "Title": "On Hit:",
+                            "Key": "DebuffDuration",
+                            "Name": "Debuff Duration",
+                            "Value": 1.5,
+                            "Type": "duration"
+                        }
+                    ]
+                },
+                "Alt": [],
+                "DescKey": "ability_werewolf_netshot_desc"
+            },
+            "Upgrades": [
+                {
+                    "SlowPercent": 25
+                },
+                {
+                    "DebuffDuration": 0.75
+                },
+                {
+                    "RicochetCount": 2,
+                    "RicochetRange": 15,
+                    "AbilityCooldown": -5,
+                    "DescKey": "ability_werewolf_netshot_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.24,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 20,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            }
+        },
+        "4": {
+            "Key": "ability_werewolf_transformation",
+            "Name": "Lycan Curse",
+            "DescKey": "ability_werewolf_transformation_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "BonusHealth",
+                            "Name": "Bonus Health",
+                            "Value": 100,
+                            "Scale": {
+                                "Value": 15.0,
+                                "Type": "power_increase"
+                            },
+                            "Type": "health"
+                        },
+                        {
+                            "Key": "BonusMoveSpeed",
+                            "Name": "Move Speed",
+                            "Value": 2,
+                            "Type": "move_speed"
+                        },
+                        {
+                            "Key": "BonusSprintSpeed",
+                            "Name": "Sprint Speed",
+                            "Value": 0,
+                            "Type": "move_speed"
+                        },
+                        {
+                            "Key": "BonusFireRate",
+                            "Name": "Fire Rate",
+                            "Value": 80,
+                            "Scale": {
+                                "Value": 0.25,
+                                "Type": "spirit"
+                            },
+                            "Type": "fire_rate"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "MissingHealthPercentHeal",
+                        "Name": "Missing Health as Healing",
+                        "Value": 30,
+                        "Type": "healing"
+                    },
+                    {
+                        "Key": "KillDurationBonus",
+                        "Name": "Kill Duration Bonus",
+                        "Value": 0,
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "HealAmount",
+                        "Name": "Heal Amount",
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 1.0,
+                            "Type": "healing"
+                        },
+                        "Type": "healing"
+                    },
+                    {
+                        "Key": "BulletResist",
+                        "Name": "Bullet Resist",
+                        "Value": 20,
+                        "Type": "bullet_armor_up"
+                    },
+                    {
+                        "Key": "TechResist",
+                        "Name": "Spirit Resist",
+                        "Value": 20,
+                        "Type": "tech_armor_up"
+                    },
+                    {
+                        "Key": "Stamina",
+                        "Name": "Stamina",
+                        "Value": 0,
+                        "Type": "move_speed"
+                    }
+                ],
+                "DescKey": "ability_werewolf_transformation_desc"
+            },
+            "Upgrades": [
+                {
+                    "BulletResist": 15,
+                    "TechResist": 15,
+                    "DescKey": "ability_werewolf_transformation_t1_desc"
+                },
+                {
+                    "BonusMoveSpeed": 3,
+                    "BonusHealth": 125,
+                    "DescKey": "ability_werewolf_transformation_t2_desc"
+                },
+                {
+                    "KillDurationBonus": 15,
+                    "DescKey": "ability_werewolf_transformation_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 7.62,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityChargesConditionally": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AutoActivateHealthThreshold": {
+                    "Name": null,
+                    "Value": 20
+                },
+                "BonusDurationOnBullet": {
+                    "Name": null,
+                    "Value": 0.15
+                },
+                "BonusDurationOnHeavyMelee": {
+                    "Name": null,
+                    "Value": 1.5
+                },
+                "BonusDurationOnLightMelee": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "BonusDurationPerHealthPercentLost": {
+                    "Name": null,
+                    "Value": 0.1
+                },
+                "CameraTurnRateMax": {
+                    "Name": null,
+                    "Value": 188
+                },
+                "EndingWarningSoundDuration": {
+                    "Name": null,
+                    "Value": 3.0
+                },
+                "HeadshotResist": {
+                    "Name": null,
+                    "Value": -20
+                },
+                "LowHealthFraction": {
+                    "Name": null,
+                    "Value": 30
+                },
+                "LowHealthRageBonus": {
+                    "Name": null,
+                    "Value": 40,
+                    "Scale": {
+                        "Value": 1.8,
+                        "Type": "power_increase"
+                    }
+                },
+                "MaxRage": {
+                    "Name": null,
+                    "Value": 100,
+                    "Scale": {
+                        "Value": 11.0,
+                        "Type": "power_increase"
+                    }
+                },
+                "MaxStacks": {
+                    "Name": "Max Stacks",
+                    "Value": 15
+                },
+                "RagePerDamage": {
+                    "Name": null,
+                    "Value": 0.255
+                },
+                "RagePercentagePerSecondInCombat": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "RagePercentagePerSecondOutOfCombat": {
+                    "Name": null,
+                    "Value": -3
+                },
+                "ReadyDuration": {
+                    "Name": null,
+                    "Value": 3
+                },
+                "StackDuration": {
+                    "Name": "Stack Duration",
+                    "Value": 5
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.2,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 35,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 15,
+                "Type": "duration"
+            }
+        }
     },
     "hero_unicorn": {
         "Name": "Celeste"
     },
     "hero_opera": {
         "Name": "Opera"
+    },
+    "hero_werewolf_transformed": {
+        "Name": null,
+        "1": {
+            "Key": "ability_werewolf_frenzy",
+            "Name": "Go For The Throat",
+            "DescKey": "ability_werewolf_frenzy_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 0.0,
+                            "Scale": {
+                                "Value": 1.5,
+                                "Type": "melee"
+                            },
+                            "Type": "melee_damage"
+                        },
+                        {
+                            "Key": "MissingHealthDamagePercentage",
+                            "Name": "Missing Health Damage",
+                            "Value": 6,
+                            "Type": "melee_damage"
+                        },
+                        {
+                            "Key": "LifeStealPercentOnHit",
+                            "Name": "Unknown(LifeStealPercentOnHit)",
+                            "Value": 40,
+                            "Type": "healing"
+                        }
+                    ]
+                },
+                "Alt": [],
+                "DescKey": "ability_werewolf_frenzy_desc"
+            },
+            "Upgrades": [
+                {
+                    "Damage": 30
+                },
+                {
+                    "LifeStealPercentOnHit": 25
+                },
+                {
+                    "MissingHealthDamagePercentage": 4
+                }
+            ],
+            "Range": {
+                "TargetingConeAngle": {
+                    "Name": "Attack Angle",
+                    "Value": 40,
+                    "Type": "distance"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 16
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.2,
+                "Type": "cast"
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 7,
+                "Type": "range"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 6.5,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            }
+        },
+        "2": {
+            "Key": "ability_werewolf_maulingleap",
+            "Name": "Mauling Leap",
+            "DescKey": "ability_werewolf_maulingleap_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 0,
+                            "Scale": {
+                                "Value": 1.9,
+                                "Type": "melee"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Title": "On Hit:",
+                            "Key": "DPS",
+                            "Name": "Damage Per Second",
+                            "Value": 15,
+                            "Scale": {
+                                "Value": 0.15,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Title": "On Hit:",
+                            "Key": "BulletArmorReduction",
+                            "Name": "Bullet Resist",
+                            "Value": -8,
+                            "Type": "bullet_armor_down"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "DebuffDuration",
+                        "Name": "Debuff Duration",
+                        "Value": 6,
+                        "Type": "duration"
+                    }
+                ],
+                "DescKey": "ability_werewolf_maulingleap_desc"
+            },
+            "Upgrades": [
+                {
+                    "DPS": 10
+                },
+                {
+                    "AbilityCooldown": -9
+                },
+                {
+                    "BulletArmorReduction": -12
+                }
+            ],
+            "Range": {
+                "LeapMultiHitRadius": {
+                    "Name": null,
+                    "Value": 1.5,
+                    "Type": "distance"
+                },
+                "LeapRadius": {
+                    "Name": null,
+                    "Value": 2.8,
+                    "Type": "distance"
+                }
+            },
+            "Cast": {
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Value": 0.55,
+                    "Type": "cast"
+                }
+            },
+            "Other": {
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.1
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AllowRamMultiple": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "CameraTurnRateMax": {
+                    "Name": null,
+                    "Value": 188
+                },
+                "LeapForwardOffset": {
+                    "Name": null,
+                    "Value": 0.3
+                },
+                "LeapSpeed": {
+                    "Name": null,
+                    "Value": 1300
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "WorldImpactRadius": {
+                    "Name": null,
+                    "Value": 25
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.35,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 16,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            }
+        },
+        "3": {
+            "Key": "ability_werewolf_cripplingslash",
+            "Name": "Tail Whack",
+            "DescKey": "ability_werewolf_cripplingslash_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 45,
+                            "Scale": {
+                                "Value": 1.0,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Title": "On Hit:",
+                            "Key": "DisarmDuration",
+                            "Name": "Disarm Duration",
+                            "StatusEffect": "Disarmed",
+                            "Value": 2.5
+                        },
+                        {
+                            "Title": "On Hit:",
+                            "Key": "SlowPercent",
+                            "Name": "Move Speed",
+                            "Value": 30,
+                            "Type": "slow"
+                        },
+                        {
+                            "Title": "On Hit:",
+                            "Key": "FireRateSlow",
+                            "Name": "Fire Rate",
+                            "Value": 0,
+                            "Type": "fire_rate"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "DebuffDuration",
+                        "Name": "Debuff Duration",
+                        "Value": 0
+                    },
+                    {
+                        "Key": "SlowDuration",
+                        "Name": "Slow Duration",
+                        "Value": 1.5,
+                        "Type": "duration"
+                    }
+                ],
+                "DescKey": "ability_werewolf_cripplingslash_desc"
+            },
+            "Upgrades": [
+                {
+                    "Damage": 25
+                },
+                {
+                    "SlowPercent": 40
+                },
+                {
+                    "DisarmDuration": 1
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.2
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "BulletArmorReduction": {
+                    "Name": "Bullet Resist",
+                    "Value": -12
+                },
+                "LeftForce": {
+                    "Name": null,
+                    "Value": 400
+                },
+                "PushForce": {
+                    "Name": null,
+                    "Value": 300
+                },
+                "SlashHeight": {
+                    "Name": null,
+                    "Value": 3
+                },
+                "SlashRadius": {
+                    "Name": "Slash Radius",
+                    "Value": 10
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.15,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 18,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            }
+        },
+        "4": {
+            "Key": "ability_werewolf_transformation",
+            "Name": "Lycan Curse",
+            "DescKey": "ability_werewolf_transformation_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "BonusHealth",
+                            "Name": "Bonus Health",
+                            "Value": 100,
+                            "Scale": {
+                                "Value": 15.0,
+                                "Type": "power_increase"
+                            },
+                            "Type": "health"
+                        },
+                        {
+                            "Key": "BonusMoveSpeed",
+                            "Name": "Move Speed",
+                            "Value": 2,
+                            "Type": "move_speed"
+                        },
+                        {
+                            "Key": "BonusSprintSpeed",
+                            "Name": "Sprint Speed",
+                            "Value": 0,
+                            "Type": "move_speed"
+                        },
+                        {
+                            "Key": "BonusFireRate",
+                            "Name": "Fire Rate",
+                            "Value": 80,
+                            "Scale": {
+                                "Value": 0.25,
+                                "Type": "spirit"
+                            },
+                            "Type": "fire_rate"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "MissingHealthPercentHeal",
+                        "Name": "Missing Health as Healing",
+                        "Value": 30,
+                        "Type": "healing"
+                    },
+                    {
+                        "Key": "KillDurationBonus",
+                        "Name": "Kill Duration Bonus",
+                        "Value": 0,
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "HealAmount",
+                        "Name": "Heal Amount",
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 1.0,
+                            "Type": "healing"
+                        },
+                        "Type": "healing"
+                    },
+                    {
+                        "Key": "BulletResist",
+                        "Name": "Bullet Resist",
+                        "Value": 20,
+                        "Type": "bullet_armor_up"
+                    },
+                    {
+                        "Key": "TechResist",
+                        "Name": "Spirit Resist",
+                        "Value": 20,
+                        "Type": "tech_armor_up"
+                    },
+                    {
+                        "Key": "Stamina",
+                        "Name": "Stamina",
+                        "Value": 0,
+                        "Type": "move_speed"
+                    }
+                ],
+                "DescKey": "ability_werewolf_transformation_desc"
+            },
+            "Upgrades": [
+                {
+                    "BulletResist": 15,
+                    "TechResist": 15,
+                    "DescKey": "ability_werewolf_transformation_t1_desc"
+                },
+                {
+                    "BonusMoveSpeed": 3,
+                    "BonusHealth": 125,
+                    "DescKey": "ability_werewolf_transformation_t2_desc"
+                },
+                {
+                    "KillDurationBonus": 15,
+                    "DescKey": "ability_werewolf_transformation_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 7.62,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityChargesConditionally": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AutoActivateHealthThreshold": {
+                    "Name": null,
+                    "Value": 20
+                },
+                "BonusDurationOnBullet": {
+                    "Name": null,
+                    "Value": 0.15
+                },
+                "BonusDurationOnHeavyMelee": {
+                    "Name": null,
+                    "Value": 1.5
+                },
+                "BonusDurationOnLightMelee": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "BonusDurationPerHealthPercentLost": {
+                    "Name": null,
+                    "Value": 0.1
+                },
+                "CameraTurnRateMax": {
+                    "Name": null,
+                    "Value": 188
+                },
+                "EndingWarningSoundDuration": {
+                    "Name": null,
+                    "Value": 3.0
+                },
+                "HeadshotResist": {
+                    "Name": null,
+                    "Value": -20
+                },
+                "LowHealthFraction": {
+                    "Name": null,
+                    "Value": 30
+                },
+                "LowHealthRageBonus": {
+                    "Name": null,
+                    "Value": 40,
+                    "Scale": {
+                        "Value": 1.8,
+                        "Type": "power_increase"
+                    }
+                },
+                "MaxRage": {
+                    "Name": null,
+                    "Value": 100,
+                    "Scale": {
+                        "Value": 11.0,
+                        "Type": "power_increase"
+                    }
+                },
+                "MaxStacks": {
+                    "Name": "Max Stacks",
+                    "Value": 15
+                },
+                "RagePerDamage": {
+                    "Name": null,
+                    "Value": 0.255
+                },
+                "RagePercentagePerSecondInCombat": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "RagePercentagePerSecondOutOfCombat": {
+                    "Name": null,
+                    "Value": -3
+                },
+                "ReadyDuration": {
+                    "Name": null,
+                    "Value": 3
+                },
+                "StackDuration": {
+                    "Name": "Stack Duration",
+                    "Value": 5
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.2,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 35,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 15,
+                "Type": "duration"
+            }
+        }
     }
 }

@@ -2606,7 +2606,7 @@
     "npc_familiar_helper": {
         "MeleeAttemptRange": 0.0,
         "Name": "npc_familiar_helper",
-        "OutlineWhenVisible": true,
+        "OutlineWhenVisible": false,
         "SightRange": 40.64,
         "StepHeight": 508.0,
         "TurnRate": 10000.0
@@ -2618,6 +2618,11 @@
     },
     "npc_necro_skele": {
         "Acceleration": 0,
+        "DamageSlowModifier": {
+            "AutoRegisterModifierValueFromAbilityPropertyName": [
+                "DamageSlowPercent"
+            ]
+        },
         "ExplodeModifier": {
             "EnabledStateMask": "MODIFIER_STATE_UNKILLABLE"
         },
@@ -3841,8 +3846,43 @@
         "BarrackGuardianDamageResistPct": 67.5,
         "BoundAbilities": {
             "ESlot_Ability_ZipLine": {
+                "AbilityCastDelay": 0,
+                "AbilityCastRange": 0,
+                "AbilityChannelTime": 0,
+                "AbilityCharges": 0,
+                "AbilityCooldown": 1,
+                "AbilityCooldownBetweenCharge": -1.0,
+                "AbilityDuration": 0,
+                "AbilityPostCastDuration": 0,
+                "AbilityResourceCost": 0,
+                "AbilityUnitTargetLimit": 1,
+                "ChannelMoveSpeed": -1,
+                "DamageCooldown": 3,
+                "DismountHorizontalMaxSpeedPercent": 85,
+                "DismountHorizontalMinSpeedPercent": 40,
+                "DismountVerticalSpeed": 300,
+                "IsDisabled": false,
                 "Key": "citadel_ability_trooper_zip_line",
-                "Name": "citadel_ability_trooper_zip_line"
+                "KnockedOffDamagePct": 15,
+                "LatchEndSpeed": 750,
+                "LatchInitialSpeed": 600,
+                "LatchMaxTime": 0.5,
+                "LatchSpeed": 1500,
+                "LatchVisualSnapProgress": 0.85,
+                "MaxMountDistance2D": 1200,
+                "Name": null,
+                "PlayerSpeedCheckScale": 0.55,
+                "RegenZoneDismountHorizontalMaxSpeed": 300,
+                "SlowDuration": 8,
+                "StunDuration": 2.5,
+                "TechPower": 0,
+                "Upgrades": [],
+                "WeaponPower": 0,
+                "ZipAcc": 1000,
+                "ZipSpeedInner": 700,
+                "ZipSpeedOuter": 830,
+                "ZiplineProtectionDamageAmp": 35,
+                "ZiplineProtectionSlowDurationOnHit": 2.0
             }
         },
         "BreakableForceScale": 5.0,
