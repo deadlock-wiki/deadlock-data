@@ -22030,7 +22030,487 @@
         }
     },
     "hero_unicorn": {
-        "Name": "Celeste"
+        "Name": "Celeste",
+        "1": {
+            "Key": "ability_unicorn_radiantblast",
+            "Name": "Light Eater",
+            "DescKey": "ability_unicorn_radiantblast_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "AbilityLifestealPercentHero",
+                            "Name": "Spirit Lifesteal",
+                            "Value": 20,
+                            "Type": "healing"
+                        },
+                        {
+                            "Key": "FlareDamage",
+                            "Name": "Flare Damage",
+                            "Value": 50,
+                            "Scale": {
+                                "Value": 0.35,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "AbilityDuration",
+                        "Name": "Duration",
+                        "Value": 12,
+                        "Type": "duration"
+                    }
+                ],
+                "DescKey": "ability_unicorn_radiantblast_desc"
+            },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "On Bullet Hit",
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 25,
+                            "Scale": {
+                                "Value": 0.23,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        }
+                    ]
+                },
+                "Alt": null
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -10
+                },
+                {
+                    "AbilityCastRange": 3,
+                    "AbilityLifestealPercentHero": 15,
+                    "DescKey": "ability_unicorn_radiantblast_t2_desc"
+                },
+                {
+                    "Damage": {
+                        "Value": 25,
+                        "Scale": {
+                            "Value": 0.2,
+                            "Type": "spirit"
+                        }
+                    },
+                    "DescKey": "ability_unicorn_radiantblast_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "ExtraSweepRadius": {
+                    "Name": null,
+                    "Value": 2
+                },
+                "TargetingConeAngle": {
+                    "Name": "Attack Angle",
+                    "Value": 70
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 0.5
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.3,
+                "Type": "cast"
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 10,
+                "Type": "range"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 20,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 12,
+                "Type": "duration"
+            }
+        },
+        "2": {
+            "Key": "ability_unicorn_prismaticguard",
+            "Name": "Dazzling Trick",
+            "DescKey": "ability_unicorn_prismaticguard_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "BonusMoveSpeed",
+                            "Name": "Move Speed",
+                            "Value": 1.0,
+                            "Type": "move_speed"
+                        },
+                        {
+                            "Key": "CombatBarrier",
+                            "Name": "Barrier",
+                            "Value": 120,
+                            "Scale": {
+                                "Value": 1.1,
+                                "Type": "spirit"
+                            },
+                            "Type": "bullet_armor_up"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "BuffDuration",
+                        "Name": "Buff Duration",
+                        "Value": 4,
+                        "Type": "duration"
+                    }
+                ],
+                "DescKey": "ability_unicorn_prismaticguard_desc"
+            },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "On Explode",
+                            "Key": "DebuffDuration",
+                            "Name": "Debuff Duration",
+                            "Value": 1.75,
+                            "Type": "duration"
+                        },
+                        {
+                            "Title": "On Explode",
+                            "Key": "BarrierDamagePercentage",
+                            "Name": "Barrier Damage",
+                            "Value": 50,
+                            "Type": "tech_damage"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "ExplodeRadius",
+                        "Name": "Explosion Radius",
+                        "Value": 15,
+                        "Type": "distance"
+                    }
+                ]
+            },
+            "Upgrades": [
+                {
+                    "BonusMoveSpeed": 2.5
+                },
+                {
+                    "CombatBarrier": {
+                        "Value": 100,
+                        "Scale": {
+                            "Value": 0.7,
+                            "Type": "spirit"
+                        }
+                    },
+                    "DescKey": "ability_unicorn_prismaticguard_t2_desc"
+                },
+                {
+                    "DebuffDuration": 2.0,
+                    "AbilityCooldown": -18,
+                    "DescKey": "ability_unicorn_prismaticguard_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "MaxLifetime": {
+                    "Name": "Lifetime",
+                    "Value": 4
+                }
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 35,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            }
+        },
+        "3": {
+            "Key": "ability_unicorn_luminousstrike",
+            "Name": "Radiant Daggers",
+            "DescKey": "ability_unicorn_luminousstrike_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "ImpactDamage",
+                            "Name": "Impact Damage",
+                            "Value": 65,
+                            "Scale": {
+                                "Value": 0.49,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "MagicIncreasePerStack",
+                            "Name": "Spirit Amp per Stack",
+                            "Value": 8,
+                            "Type": "tech_armor_down"
+                        },
+                        {
+                            "Key": "FireRatePerStack",
+                            "Name": "Fire Rate per Stack",
+                            "Value": 0,
+                            "Type": "fire_rate"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "ExplosionRadius",
+                        "Name": "Explosion Radius",
+                        "Value": 8,
+                        "Type": "distance"
+                    },
+                    {
+                        "Key": "PreExplosionDuration",
+                        "Value": 1.4,
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "BuffMaxStacks",
+                        "Value": 6,
+                        "Type": "cast"
+                    },
+                    {
+                        "Key": "BuffDuration",
+                        "Name": "Buff Duration",
+                        "Value": 25,
+                        "Type": "duration"
+                    }
+                ],
+                "DescKey": "ability_unicorn_luminousstrike_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCharges": 2
+                },
+                {
+                    "ImpactDamage": 60,
+                    "AbilityCooldown": -12,
+                    "DescKey": "ability_unicorn_luminousstrike_t2_desc"
+                },
+                {
+                    "MagicIncreasePerStack": 3,
+                    "FireRatePerStack": 6
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "BuffDelay": {
+                    "Name": null,
+                    "Value": 0.75
+                },
+                "ClimbHeight": {
+                    "Name": null,
+                    "Value": 50.0
+                },
+                "ExplosionInterval": {
+                    "Name": "Beam Interval",
+                    "Value": 0.7
+                },
+                "PostExplosionDuration": {
+                    "Name": null,
+                    "Value": 0.8
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 0.5
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.2,
+                "Type": "cast"
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 30,
+                "Type": "range"
+            },
+            "AbilityCharges": {
+                "Name": "Charges",
+                "Value": 1,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 30,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": 2,
+                "Type": "charge_cooldown"
+            }
+        },
+        "4": {
+            "Key": "ability_unicorn_dazzlingorb",
+            "Name": "Shining Wonder",
+            "DescKey": "ability_unicorn_dazzlingorb_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 115,
+                            "Scale": {
+                                "Value": 0.63,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "SlowPercent",
+                            "Name": "Move Speed",
+                            "Value": 40,
+                            "Type": "slow"
+                        },
+                        {
+                            "Key": "MaxBounces",
+                            "Name": "Bounces",
+                            "Value": 8
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "GroundDashReductionPercent",
+                        "Name": "Dash Distance",
+                        "Value": -25,
+                        "Type": "slow"
+                    },
+                    {
+                        "Key": "SlowDuration",
+                        "Name": "Slow Duration",
+                        "Value": 1.5,
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "BounceRadius",
+                        "Name": "Bounce Range",
+                        "Value": 17,
+                        "Type": "distance"
+                    },
+                    {
+                        "Key": "BounceGrace",
+                        "Value": 4.5
+                    }
+                ],
+                "DescKey": "ability_unicorn_dazzlingorb_desc"
+            },
+            "Upgrades": [
+                {
+                    "GroundDashReductionPercent": -15,
+                    "SlowPercent": 20,
+                    "DescKey": "ability_unicorn_dazzlingorb_t1_desc"
+                },
+                {
+                    "Damage": 50
+                },
+                {
+                    "MaxBounces": 10,
+                    "AbilityCooldown": -35,
+                    "DescKey": "ability_unicorn_dazzlingorb_t3_desc"
+                }
+            ],
+            "Cast": {
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Value": 9999,
+                    "Type": "cast"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "NextTargetDuration": {
+                    "Name": null,
+                    "Value": 4
+                },
+                "PriorityBounceRadius": {
+                    "Name": null,
+                    "Value": 13
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.75,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 140,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            }
+        }
     },
     "hero_opera": {
         "Name": "Opera"
