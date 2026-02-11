@@ -36,25 +36,26 @@
     },
     "DamageFlash": {
         "FlashType_BulletDamage": {
-            "Duration": 0.25,
-            "Coverage": 0.5,
-            "Hardness": 0.7,
-            "Brightness": 1.2,
+            "Duration": 0.1,
+            "Coverage": 1.0,
+            "Hardness": 1.0,
+            "Brightness": 0.2,
             "Color": [
                 255,
-                0,
+                128,
                 0
-            ]
+            ],
+            "BrightnessInLightSensitivityMode": 0.0
         },
         "FlashType_TechDamage": {
-            "Duration": 0.25,
-            "Coverage": 0.5,
-            "Hardness": 0.5,
-            "Brightness": 1.5,
+            "Duration": 0.1,
+            "Coverage": 1.0,
+            "Hardness": 1.0,
+            "Brightness": 0.2,
             "Color": [
-                35,
-                17,
-                236
+                165,
+                51,
+                255
             ]
         },
         "FlashType_Healing": {
@@ -71,25 +72,50 @@
         },
         "FlashType_CritDamage": {
             "Duration": 0.33,
-            "Coverage": 0.6,
+            "Coverage": 0.8,
             "Hardness": 0.9,
-            "Brightness": 1.7,
+            "Brightness": 0.5,
             "Color": [
                 255,
                 255,
                 0
-            ]
+            ],
+            "m_bHeadOnly": true
         },
         "FlashType_MeleeActivate": {
-            "Duration": 0.275,
-            "Coverage": 0.5,
+            "Duration": 0.1,
+            "Coverage": 1.0,
             "Color": [
-                254,
-                101,
-                40
+                49,
+                169,
+                250
             ],
-            "Brightness": 3.0,
+            "Brightness": 0.8,
             "Hardness": 0.0
+        },
+        "FlashType_PatronHit": {
+            "Duration": 0.05,
+            "Coverage": 0.99,
+            "Color": [
+                255,
+                134,
+                5
+            ],
+            "Brightness": 0.3,
+            "Hardness": 1.0
+        }
+    },
+    "DamageFlashLowViolence": {
+        "FlashType_BulletDamage": {
+            "Duration": 0.25,
+            "Coverage": 0.5,
+            "Hardness": 0.7,
+            "Brightness": 3.5,
+            "Color": [
+                12,
+                0,
+                15
+            ]
         }
     },
     "DamageIndicatorSounds": {
@@ -128,10 +154,15 @@
         "BreakupStrength": 0.0
     },
     "HealingReceivedSounds": {
-        "HealingInBaseLoop": "Player.Heal.Base.Loop",
-        "HealingInBaseToppedOff": "Player.Heal.BaseEnd",
-        "DirectHealing": "",
-        "HealingInBaseStart": "Player.Heal.BaseStart"
+        "HOTLoopSounds": {
+            "CITADEL_AUDIO_LOOP_LOOP_SOUND": "Player.Heal.OverTime.Lp",
+            "CITADEL_AUDIO_LOOP_STOP_SOUND": "Player.Heal.OverTime.Stop",
+            "CITADEL_AUDIO_LOOP_START_SOUND": "Player.Heal.OverTime.Start"
+        },
+        "Priority": 1,
+        "HOTToppedOff": "Player.Heal.OverTime.TopOff",
+        "DirectHealingSmall": "Player.Heal.Burst.Small",
+        "DirectHealingMedium": "Player.Heal.Burst.Medium"
     },
     "HeroKillGoldShareFrac": [
         1.25,
@@ -171,6 +202,25 @@
     ],
     "KillStreakFireParticle": "particles/ui/ui_topbar_killstreak.vpcf",
     "LaneInfo": [
+        {
+            "LaneName": "White",
+            "CSSClass": "whiteLane",
+            "Color": [
+                200,
+                200,
+                200
+            ],
+            "MinimapZiplineColorOverride": [
+                200,
+                200,
+                200
+            ],
+            "ObjectiveColor": [
+                200,
+                200,
+                200
+            ]
+        },
         {
             "LaneName": "Yellow",
             "CSSClass": "yellowLane",
@@ -383,6 +433,42 @@
         "PatronPhase1GoldKill": 0,
         "PatronPhase1GoldOrbs": 0
     },
+    "OutlineColorEnemy": [
+        230,
+        25,
+        25,
+        255
+    ],
+    "OutlineColorEnemyHero": [
+        162,
+        34,
+        34,
+        255
+    ],
+    "OutlineColorFriend": [
+        215,
+        201,
+        175,
+        255
+    ],
+    "OutlineColorNeutral": [
+        0,
+        125,
+        125,
+        255
+    ],
+    "OutlineColorTeam1": [
+        231,
+        182,
+        89,
+        255
+    ],
+    "OutlineColorTeam2": [
+        91,
+        121,
+        230,
+        255
+    ],
     "RejuvParams": {
         "RejuvinatorExpirationWarningTiming": 30,
         "RejuvinatorBuffDuration": 240,
@@ -417,6 +503,362 @@
         "BulletArmorDamageReduction": "file://{images}/upgrades/mods_armor/bullet_armor.psd",
         "TechArmorDamageReduction": "file://{images}/upgrades/mods_armor/tech_armor.psd"
     },
+    "StreetBrawl": {
+        "m_vecRespawnTimes": [
+            25,
+            25,
+            30,
+            30,
+            30
+        ],
+        "m_vecGoldPerRound": [
+            5600,
+            7400,
+            9400,
+            11600,
+            14000
+        ],
+        "m_vecAPPerRound": [
+            6,
+            6,
+            5,
+            5,
+            5
+        ],
+        "m_vecItemDraftRerollsPerRound": [
+            1,
+            1,
+            1,
+            1,
+            1
+        ],
+        "m_vecRoundLengthMinutes": [
+            3,
+            3,
+            3,
+            3,
+            3
+        ],
+        "m_vecRoundLengthMinutesUrgent": [
+            4.5,
+            4.5,
+            4.5,
+            4.5,
+            4.5
+        ],
+        "OvertimeRespawnTimeIncrease": [
+            25,
+            25,
+            25,
+            25,
+            30
+        ],
+        "OvertimeRespawnTimeIncreaseUrgent": [
+            40,
+            40,
+            40,
+            40,
+            45
+        ],
+        "OvertimeTrooperHealthScale": [
+            1.75,
+            1.75,
+            1.75,
+            2.0,
+            2.5
+        ],
+        "OvertimeTrooperDamageScale": [
+            1.44,
+            1.44,
+            1.44,
+            1.44,
+            1.56
+        ],
+        "m_vecBuyTime": [
+            50,
+            50,
+            50,
+            50,
+            50
+        ],
+        "m_vecPreBuyTime": [
+            6.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "m_iScoreToWin": 3,
+        "ScoringTime": 6,
+        "m_iLaneNumber": 4,
+        "m_vecObjectiveMaxHealth": [
+            1800,
+            3200,
+            4600,
+            6000,
+            7400
+        ],
+        "Tier2BonusHealth": 4000,
+        "ComebackBonusHealth": 1200,
+        "ComebackBonusHealthCritical": 2800,
+        "TrooperSpawnTimer": [
+            18,
+            18,
+            15,
+            15,
+            15
+        ],
+        "TrooperSpawnBeforeRoundStartTimer": 5.0,
+        "ZipBoostCooldownOnStart": 20.0,
+        "BuyTimeGracePeriod": 60.0,
+        "Tier1MaxResistTime": 2.2,
+        "Tier2MaxResistTime": 2.2,
+        "m_iUltimateUnlockRound": 1,
+        "m_vecItemDraftRoundsPerGameRound": [
+            {
+                "m_chanceRare": {
+                    "OutcomesToWeights": {
+                        "0": 0.0,
+                        "1": 0.0,
+                        "2": 10.0,
+                        "3": 60.0,
+                        "4": 40.0,
+                        "5": 20.0,
+                        "6": 0.0
+                    }
+                },
+                "m_chanceEnhanced": {
+                    "OutcomesToWeights": {
+                        "0": 10.0,
+                        "1": 20.0,
+                        "2": 20.0,
+                        "3": 35.0,
+                        "4": 15.0,
+                        "5": 0.0,
+                        "6": 0.0
+                    }
+                },
+                "m_vecItemDraftRounds": [
+                    {
+                        "DraftParams": {
+                            "LootTable": "all_items"
+                        },
+                        "m_eNormalModTier": "EModTier_1",
+                        "m_eRareModTier": "EModTier_2"
+                    },
+                    {
+                        "DraftParams": {
+                            "LootTable": "all_items"
+                        },
+                        "m_eNormalModTier": "EModTier_2",
+                        "m_eRareModTier": "EModTier_3"
+                    },
+                    {
+                        "DraftParams": {
+                            "LootTable": "all_items"
+                        },
+                        "m_eNormalModTier": "EModTier_3",
+                        "m_eRareModTier": "EModTier_4"
+                    }
+                ]
+            },
+            {
+                "m_chanceRare": {
+                    "OutcomesToWeights": {
+                        "0": 0.0,
+                        "1": 0.0,
+                        "2": 10.0,
+                        "3": 60.0,
+                        "4": 40.0,
+                        "5": 20.0,
+                        "6": 0.0
+                    }
+                },
+                "m_chanceEnhanced": {
+                    "OutcomesToWeights": {
+                        "0": 10.0,
+                        "1": 20.0,
+                        "2": 20.0,
+                        "3": 35.0,
+                        "4": 15.0,
+                        "5": 0.0,
+                        "6": 0.0
+                    }
+                },
+                "m_vecItemDraftRounds": [
+                    {
+                        "DraftParams": {
+                            "LootTable": "all_items"
+                        },
+                        "m_eNormalModTier": "EModTier_2",
+                        "m_eRareModTier": "EModTier_3"
+                    },
+                    {
+                        "DraftParams": {
+                            "LootTable": "all_items"
+                        },
+                        "m_eNormalModTier": "EModTier_3",
+                        "m_eRareModTier": "EModTier_4"
+                    },
+                    {
+                        "DraftParams": {
+                            "LootTable": "all_items"
+                        },
+                        "m_eNormalModTier": "EModTier_3",
+                        "m_eRareModTier": "EModTier_4"
+                    }
+                ]
+            },
+            {
+                "m_chanceRare": {
+                    "OutcomesToWeights": {
+                        "0": 0.0,
+                        "1": 0.0,
+                        "2": 10.0,
+                        "3": 60.0,
+                        "4": 40.0,
+                        "5": 20.0,
+                        "6": 0.0
+                    }
+                },
+                "m_chanceEnhanced": {
+                    "OutcomesToWeights": {
+                        "0": 10.0,
+                        "1": 20.0,
+                        "2": 20.0,
+                        "3": 35.0,
+                        "4": 15.0,
+                        "5": 0.0,
+                        "6": 0.0
+                    }
+                },
+                "m_vecItemDraftRounds": [
+                    {
+                        "DraftParams": {
+                            "LootTable": "all_items"
+                        },
+                        "m_eNormalModTier": "EModTier_2",
+                        "m_eRareModTier": "EModTier_3",
+                        "RareWeight": 50
+                    },
+                    {
+                        "DraftParams": {
+                            "LootTable": "all_items"
+                        },
+                        "m_eNormalModTier": "EModTier_3",
+                        "m_eRareModTier": "EModTier_4",
+                        "RareWeight": 50
+                    },
+                    {
+                        "DraftParams": {
+                            "LootTable": "all_items"
+                        },
+                        "m_eNormalModTier": "EModTier_4",
+                        "m_eRareModTier": "EModTier_5",
+                        "RareWeight": 0
+                    }
+                ]
+            },
+            {
+                "m_chanceRare": {
+                    "OutcomesToWeights": {
+                        "0": 0.0,
+                        "1": 0.0,
+                        "2": 10.0,
+                        "3": 60.0,
+                        "4": 40.0,
+                        "5": 20.0,
+                        "6": 0.0
+                    }
+                },
+                "m_chanceEnhanced": {
+                    "OutcomesToWeights": {
+                        "0": 10.0,
+                        "1": 20.0,
+                        "2": 20.0,
+                        "3": 35.0,
+                        "4": 15.0,
+                        "5": 0.0,
+                        "6": 0.0
+                    }
+                },
+                "m_vecItemDraftRounds": [
+                    {
+                        "DraftParams": {
+                            "LootTable": "all_items"
+                        },
+                        "m_eNormalModTier": "EModTier_3",
+                        "m_eRareModTier": "EModTier_4",
+                        "RareWeight": 40
+                    },
+                    {
+                        "DraftParams": {
+                            "LootTable": "all_items"
+                        },
+                        "m_eNormalModTier": "EModTier_3",
+                        "m_eRareModTier": "EModTier_4",
+                        "RareWeight": 40
+                    },
+                    {
+                        "DraftParams": {
+                            "LootTable": "all_items"
+                        },
+                        "m_eNormalModTier": "EModTier_4",
+                        "m_eRareModTier": "EModTier_5",
+                        "RareWeight": 20
+                    }
+                ]
+            },
+            {
+                "m_chanceRare": {
+                    "OutcomesToWeights": {
+                        "0": 5.0,
+                        "1": 10.0,
+                        "2": 40.0,
+                        "3": 10.0,
+                        "4": 0.0,
+                        "5": 0.0
+                    }
+                },
+                "m_chanceEnhanced": {
+                    "OutcomesToWeights": {
+                        "0": 0.0,
+                        "1": 0.0,
+                        "2": 5.0,
+                        "3": 35.0,
+                        "4": 15.0,
+                        "5": 0.0,
+                        "6": 0.0
+                    }
+                },
+                "m_vecItemDraftRounds": [
+                    {
+                        "DraftParams": {
+                            "LootTable": "all_items"
+                        },
+                        "m_eNormalModTier": "EModTier_4",
+                        "m_eRareModTier": "EModTier_5"
+                    },
+                    {
+                        "DraftParams": {
+                            "LootTable": "all_items"
+                        },
+                        "m_eNormalModTier": "EModTier_4",
+                        "m_eRareModTier": "EModTier_5"
+                    },
+                    {
+                        "DraftParams": {
+                            "LootTable": "all_items"
+                        },
+                        "m_eNormalModTier": "EModTier_4",
+                        "m_eRareModTier": "EModTier_5"
+                    }
+                ]
+            }
+        ],
+        "TrooperModifier": "modifier_streetbrawl_trooper",
+        "TrooperOvertimeModifier": "modifier_streetbrawl_trooper_overtime"
+    },
     "TargetingSpringStrength": [
         0.0,
         2.0,
@@ -439,12 +881,6 @@
         0.16
     ],
     "generic_data_type": "CitadelGenericData_t",
-    "m_enemyObjectivesAndZiplineColor": [
-        220,
-        76,
-        47,
-        null
-    ],
     "m_enemyObjectivesColor": [
         220,
         76,
@@ -626,7 +1062,7 @@
             "m_vecUpgrades": [
                 "upgrade_suppressor",
                 "upgrade_magic_slow",
-                "upgrade_tech_bleed"
+                "upgrade_mystic_reverb"
             ]
         },
         {
