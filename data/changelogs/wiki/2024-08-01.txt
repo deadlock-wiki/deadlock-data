@@ -15,7 +15,7 @@
 
 * Improved client performance
 
-* Reworked the Hero Builds system. Browsing and editing builds now happens within the Shop UI (accessible via [[Sandbox]] or during a normal game). You can create custom categories for items with unique names and descriptions that can be independently resized and positioned. The interface for browsing builds has also been improved, public builds will now be sorted by popularity (number of favorites). Old builds are incompatible with this system, so they won't be visible in this UI, but we'll have a console command we'll release soon that you can use to print out your older guides if you need them for reference.
+* Reworked the Hero Builds system. Browsing and editing builds now happens within the [[Shop]] UI (accessible via [[Sandbox]] or during a normal game). You can create custom categories for items with unique names and descriptions that can be independently resized and positioned. The interface for browsing builds has also been improved, public builds will now be sorted by popularity (number of favorites). Old builds are incompatible with this system, so they won't be visible in this UI, but we'll have a console command we'll release soon that you can use to print out your older guides if you need them for reference.
 
 
 
@@ -44,7 +44,7 @@
 * Your vision through a [[Cosmic Veil]] is now based on your hero position rather than camera position
 * Adjusted [[Zipline]] camera positions for various heroes to help with visibility
 * Double tap threshold increased from 0.2s to 0.3s
-* Fixed Candle [[Trooper|Troopers]] near-death flash sometimes occurring while moving or doing other active animations
+* Fixed Candle Troopers near-death flash sometimes occurring while moving or doing other active animations
 * Candle [[Trooper]] behind-wall HUD indicator now also shows near-death state
 
 * Fixed taking damage not interrupting teleporters
@@ -54,17 +54,17 @@
 * Fixed {{HeroIcon|Paradox}} Swap sometimes putting players behind walls
 * Fixed {{HeroIcon|Lash}}'s {{AbilityIcon|Ground Strike}} sometimes causing the hero to be stuck for the rest of the match
 * Fixed {{HeroIcon|Abrams}}' Charge and Siphon pings not playing the correct VO
-* Fixed Walkers having a pause at the end of their {{AbilityIcon|Rocket Barrage}}
+* Fixed [[Walker|Walkers]] having a pause at the end of their {{AbilityIcon|Rocket Barrage}}
 * Fixed multiple instances of "{{AbilityIcon|Killing Blow}}" in the Damage Report
-* Temporarily disabled the audio reminder on being unable to damage the patron while the shrines are alive
+* Temporarily disabled the audio reminder on being unable to damage the [[Patron|patron]] while the [[Shrine|shrines]] are alive
 * Fixed {{AbilityIcon|Spectral Wall}} forcing itself into the first ability slot if its cooldown is refreshed
 * Changed camera to more closely track the followed hero angles when watching replays
 * Player names no longer show up above hero's heads when in replay free-cam mode
 * Increased post-game time by 1s
 * Fixed upgrading abilities via hotkeys not working while dead
-* Fixed dead player minimap icons showing over enemy players who are below street level and over shop icons
+* Fixed dead player minimap icons showing over enemy players who are below street level and over [[Shop|shop]] icons
 * Fixed various bugs with {{HeroIcon|Infernus}} that caused significant lag
-* Fixed Shrines not having collision
+* Fixed [[Shrine|Shrines]] not having collision
 * Fixed crosshair sometimes being stuck hidden for {{HeroIcon|Yamato}} after {{AbilityIcon|Flying Strike}} was interrupted
 * Added a bunch of new {{HeroIcon|Ivy}} lines including updated pings, kill lines, etc
 * Improved mix clarity for game dialog
@@ -78,9 +78,9 @@
 * Updated {{HeroIcon|Warden}} {{AbilityIcon|Binding Word}} sound mix for teammates
 * Updated {{HeroIcon|Pocket}} Enchanted Satchel cast and delay sounds
 * Added sleep status sound
-* Updated {{HeroIcon|Wraith}} zipline animations
+* Updated {{HeroIcon|Wraith}} [[Zipline|zipline]] animations
 * Fixed a bug with [[Urn]] that could cause you to be permanently silenced
-* Fixed shop close sounds playing whenever the player enters the radius of a closed shop
+* Fixed [[Shop|shop]] close sounds playing whenever the player enters the radius of a closed [[Shop|shop]]
 * Added new visual effects for {{HeroIcon|Lash}}'s {{AbilityIcon|Ground Strike}}
 * Improved ground impact effects for {{HeroIcon|Ivy}}'s True Form
 * The client now culls more sounds when they are below a volume threshold
@@ -88,7 +88,7 @@
 * Shortened weapons and abilities volume attenuation over distance
 * Fixed the console command zoom_sensitivity_ratio affecting both zoomed in and out
 * Replaced two oil trucks with a new vehicle prop
-* Improved visibility of low health state on troopers about to die
+* Improved visibility of low health state on [[Trooper|troopers]] about to die
 * Fixed {{HeroIcon|Pocket}}'s Cloak being able to tunnel through some ceilings and out of the world
 
 
@@ -118,11 +118,11 @@ teleporter_locations_map.jpg
 
 * Added steam tunnel connection from Amber Blue [[Guardian]] and Sapphire Orange [[Guardian]] to Mid (one-way)
 
-* Each trooper you shoot at will now consider you a higher priority than Guardians/Walkers; that trooper will stop shooting the Guardians/Walkers and consider you its target for a few seconds
-* [[Walker]] laser DPS vs troopers increased from 150 to 190
+* Each [[Trooper|trooper]] you shoot at will now consider you a higher priority than [[Guardian|Guardians]]/[[Walker|Walkers]]; that [[Trooper|trooper]] will stop shooting the [[Guardian|Guardians]]/[[Walker|Walkers]] and consider you its target for a few seconds
+* [[Walker]] laser DPS vs [[Trooper|troopers]] increased from 150 to 190
 * Parrying a [[Guardian]] attack will no longer cause the [[Guardian]] to be stunned
 
-* When Shrines are destroyed the [[Patron]] gets more aggressive, moves faster, and does more damage
+* When [[Shrine|Shrines]] are destroyed the [[Patron]] gets more aggressive, moves faster, and does more damage
 * [[Weakened Patron]] HP regen increased from 80 to 120
 * [[Weakened Patron]] out of combat delay reduced from 30s to 20s
 
@@ -132,21 +132,21 @@ teleporter_locations_map.jpg
 * [[Urn]] now gives the team that is behind +2 more sprint when carrying it
 * Bullet damage falloff now maxes out at ~60m instead of ~65m
 
-* Movement [[PowerUp|Powerup]]: Stamina regen increased from 20% to 30%
-* Movement [[PowerUp|Powerup]]: Sprint speed increased from +2 to +3
-* Movement [[PowerUp|Powerup]]: [[Zipline]] bonus increased from 30% to 50%
-* Gun [[PowerUp|Powerup]]: Ammo increased from +30% to +40%
-* [[PowerUp|Powerup]] durations increased from 150s to 160s
+* Movement Powerup: Stamina regen increased from 20% to 30%
+* Movement Powerup: Sprint speed increased from +2 to +3
+* Movement Powerup: [[Zipline]] bonus increased from 30% to 50%
+* Gun Powerup: Ammo increased from +30% to +40%
+* Powerup durations increased from 150s to 160s
 
 * Reworked the climb-up exit from the [[Cosmic Veil]] space on the outer lanes
 
 
-* Moved kiosk cover prop in the outer lanes to space out trooper paths
-* Moved delivery truck out from the street curb near the underground shop
-* Moved breakable idols from the street level juke spots to other locations
-* Removed the tree in front of the Walkers on Amber Orange and Sapphire Blue
+* Moved kiosk cover prop in the outer lanes to space out [[Trooper|trooper]] paths
+* Moved delivery truck out from the street curb near the underground [[Shop|shop]]
+* Moved [[Breakable|breakable]] idols from the street level juke spots to other locations
+* Removed the tree in front of the [[Walker|Walkers]] on Amber Orange and Sapphire Blue
 * Replaced some trees on the Amber side with steam vents
-* Moved barrel cover barrier to block the [[Guardian]] shop opening on Amber Purple and Sapphire Yellow
+* Moved barrel cover barrier to block the [[Guardian]] [[Shop|shop]] opening on Amber Purple and Sapphire Yellow
 * Raised the sign on the roof of the garage
 * Removed the smoke wall from the end of the alleys
 
@@ -259,7 +259,7 @@ teleporter_locations_map.jpg
 * {{HeroIcon|Grey Talon}}: {{AbilityIcon|Guided Owl}} cooldown reduced from 120s to 110s
 
 * {{HeroIcon|Haze}}: Bullet damage falloff is now 20% more falloff than default
-* {{HeroIcon|Haze}}: Can now cast {{AbilityIcon|Smoke Bomb}} while on zipline
+* {{HeroIcon|Haze}}: Can now cast {{AbilityIcon|Smoke Bomb}} while on [[Zipline|zipline]]
 
 * {{HeroIcon|Infernus}}: Fixed {{HeroIcon|Infernus}} being unable to slide out of {{AbilityIcon|Flame Dash}}
 * {{HeroIcon|Infernus}}: {{AbilityIcon|Afterburn}} T1 and T2 Swapped
@@ -269,7 +269,7 @@ teleporter_locations_map.jpg
 
 * {{HeroIcon|Kelvin}}: Fixed {{AbilityIcon|Arctic Beam}} not having proper lag compensation
 * {{HeroIcon|Kelvin}}: Fixed some cases where {{AbilityIcon|Frost Grenade}} would explode and not hit anyone
-* {{HeroIcon|Kelvin}}: {{AbilityIcon|Arctic Beam}} can now be canceled directly by using parry
+* {{HeroIcon|Kelvin}}: {{AbilityIcon|Arctic Beam}} can now be canceled directly by using [[Parry|parry]]
 * {{HeroIcon|Kelvin}}: {{AbilityIcon|Frost Grenade}} cast time reduced from 0.2s to 0.1s
 * {{HeroIcon|Kelvin}}: {{AbilityIcon|Frost Grenade}} recharge time reduced from 8s to 7s
 * {{HeroIcon|Kelvin}}: {{AbilityIcon|Ice Path}} sprint is now granted immediately on use
