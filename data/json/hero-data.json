@@ -1320,7 +1320,7 @@
         "IsRecommended": false,
         "IsSelectable": true,
         "LevelScaling": {
-            "BulletDamage": 1.2,
+            "BulletDamage": 0.6,
             "BulletDamageAltFire": 0.5,
             "MaxHealth": 41,
             "PowerIncreases": 1,
@@ -4924,7 +4924,24 @@
         "AirDashDuration": 0.43,
         "BaseHealthRegen": 2.0,
         "BaseWeaponDamageIncrease": 0,
-        "BoundAbilities": {},
+        "BoundAbilities": {
+            "1": {
+                "Name": "Light Eater",
+                "Key": "ability_unicorn_radiantblast"
+            },
+            "2": {
+                "Name": "Dazzling Trick",
+                "Key": "ability_unicorn_prismaticguard"
+            },
+            "3": {
+                "Name": "Radiant Daggers",
+                "Key": "ability_unicorn_luminousstrike"
+            },
+            "4": {
+                "Name": "Shining Wonder",
+                "Key": "ability_unicorn_dazzlingorb"
+            }
+        },
         "CritDamageBonusPercent": -25.0,
         "CritDamageReceivedPercent": 0.0,
         "CrouchSpeed": 4.75,
@@ -4944,12 +4961,14 @@
             "PowerIncreases": 1,
             "TechPower": 1.1,
             "LightMeleeDamage": 1.58,
-            "HeavyMeleeDamage": 3.6656
+            "HeavyMeleeDamage": 3.6656,
+            "DPS": 0.66668,
+            "SustainedDPS": 0.47059
         },
         "LightMeleeDamage": 50,
         "Lore": "hero_unicorn_lore",
         "MaxHealth": 750,
-        "MaxMoveSpeed": 6.4,
+        "MaxMoveSpeed": 6.2,
         "MoveAcceleration": 4,
         "Name": "Celeste",
         "Playstyle": "hero_unicorn_playstyle",
@@ -4965,6 +4984,32 @@
         "TechRange": 0,
         "Type": "Marksman",
         "Weapon": {
+            "BulletSpeed": 50.0,
+            "BulletDamage": 28.75,
+            "RoundsPerSecond": 1.6667,
+            "ClipSize": 8,
+            "ReloadTime": 2.0,
+            "ReloadMovespeed": 1.0,
+            "ReloadDelay": 0,
+            "ReloadSingle": false,
+            "FalloffStartRange": 150.0,
+            "FalloffEndRange": 200.0,
+            "FalloffStartScale": 1.0,
+            "FalloffEndScale": 0.1,
+            "FalloffBias": 0.5,
+            "BulletGravityScale": 0.2,
+            "BulletsPerShot": 1,
+            "BulletsPerBurst": 1,
+            "BurstInterShotInterval": 0,
+            "ShootMoveSpeed": 0.75,
+            "HitOnceAcrossAllBullets": false,
+            "CanCrit": true,
+            "AmmoConsumedPerShot": 1,
+            "ExplosionRadius": 0.0,
+            "DPS": 47.918,
+            "SustainedDPS": 33.824,
+            "NameKey": "citadel_weapon_hero_unicorn_set",
+            "DescKey": "citadel_weapon_hero_unicorn_set_desc",
             "WeaponTypes": [
                 "Attribute_EWeaponAttribute_MediumRange",
                 "Attribute_EWeaponAttribute_Projectile",
