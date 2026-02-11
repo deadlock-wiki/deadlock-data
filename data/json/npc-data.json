@@ -1204,40 +1204,296 @@
         }
     },
     "neutral_trooper_normal": {
+        "FaceEnemyWhileIdle": true,
         "GoldReward": 68,
         "GoldRewardBonusPercentPerMinute": 1.08,
         "HullCapsuleHeight": 4.318,
         "HullCapsuleRadius": 0.762,
         "InitialSpawnDelay": 360,
-        "IntrinsicAbilityResistance": 45.0,
-        "IntrinsicBulletResistance": 50.0,
+        "IntrinsicModifiers": [
+            {
+                "BULLET_DAMAGE_REDUCTION_PERCENT": 50.0,
+                "ABILITY_DAMAGE_REDUCTION_PERCENT": 45.0
+            }
+        ],
         "MaxHealth": 322,
         "Name": "neutral_trooper_normal",
-        "SpawnInterval": 290
+        "NeutralDamageGrowth": {
+            "DamageGrowthPctPerMin": 0.5
+        },
+        "OutlineRange": 20.32,
+        "OutlineThroughWalls": true,
+        "PhysicsImpulseMultiplier": 0.0,
+        "ShieldReactivateDelay": 2.0,
+        "SightRangePlayers": 50.8,
+        "SpawnInterval": 290,
+        "SuppressOtherOutlinesWhenVisible": true,
+        "WeakPointCount": 2,
+        "WeakPointRespawnTime": 3.0,
+        "WeakPointType": "ENWP_Med",
+        "WeaponInfo": {
+            "Spread": 0.5,
+            "StandingSpread": 1.5,
+            "ScatterYawScale": 1,
+            "ShootingUpSpreadPenalty": 5,
+            "ZoomMoveSpeedPercent": 0.75,
+            "ShootMoveSpeedPercent": 0.75,
+            "HorizontalPunch": 0,
+            "VerticalPunch": 0,
+            "RecoilRecoverySpeed": 0.254,
+            "VerticallRecoil": {
+                "Range": [
+                    -0.2,
+                    0.2
+                ],
+                "BurstSlope": 0.0,
+                "BurstExponent": 0.0,
+                "BurstConstant": 0.0
+            },
+            "HorizontalRecoil": {
+                "Range": [
+                    -0.1,
+                    0.1
+                ],
+                "BurstExponent": 0.0
+            },
+            "RecoilSpeed": 0.0254,
+            "ZoomFOV": 40.0,
+            "ZoomFOV_Relative": -35.0,
+            "DamageFalloffStartRange": 38.1,
+            "DamageFalloffEndRange": 38.1,
+            "Range": 38.1,
+            "BulletLifetime": 2,
+            "DamageFalloffEndScale": 0.3,
+            "DamageFalloffBias": 0.5,
+            "Bullets": 1,
+            "CycleTime": 0.5,
+            "reloadDuration": 0.25,
+            "ClipSize": -1,
+            "BurstShotCount": 1,
+            "BurstShotCooldown": 0,
+            "BulletGravityScale": 0.0,
+            "BulletRadius": 0.0762,
+            "BulletDrag": 1,
+            "BulletDragBias": 0.5,
+            "BulletReflectScale": 0,
+            "BulletReflectAmount": 1,
+            "BulletInheritShooterVelocityScale": 0,
+            "BulletSpeed": 152.4,
+            "CritBonusStart": 1.15,
+            "CritBonusEnd": 1.35,
+            "CritBonusStartRange": 12.7,
+            "CritBonusEndRange": 38.1,
+            "CritBonusAgainstNPCs": 0.25,
+            "ShootSpreadPenaltyPerShot": 0.0,
+            "ShootSpreadPenaltyDecayDelay": 0.0,
+            "ShootSpreadPenaltyDecay": 2.0,
+            "RecoilShotIndexRecoveryTimeFactor": 0.25,
+            "CanZoom": true,
+            "ReloadMoveSpeed": 6.0,
+            "AutoReplenishClip": 4,
+            "NpcAimingSpread": [
+                0.2,
+                0.6
+            ],
+            "BulletDamage": 6.125
+        }
     },
     "neutral_trooper_strong": {
+        "FaceEnemyWhileIdle": true,
         "GoldReward": 181,
         "GoldRewardBonusPercentPerMinute": 1.08,
         "HullCapsuleHeight": 5.08,
         "HullCapsuleRadius": 2.54,
         "InitialSpawnDelay": 480,
-        "IntrinsicAbilityResistance": 55.0,
-        "IntrinsicBulletResistance": 60.0,
+        "IntrinsicModifiers": [
+            {
+                "BULLET_DAMAGE_REDUCTION_PERCENT": 60.0,
+                "ABILITY_DAMAGE_REDUCTION_PERCENT": 55.0,
+                "MELEE_DAMAGE_INCREASE_PERCENT": 20.0
+            }
+        ],
         "MaxHealth": 1133,
         "Name": "neutral_trooper_strong",
-        "SpawnInterval": 335
+        "NeutralDamageGrowth": {
+            "DamageGrowthPctPerMin": 0.5
+        },
+        "OutlineRange": 20.32,
+        "OutlineThroughWalls": true,
+        "PhysicsImpulseMultiplier": 0.0,
+        "ShieldReactivateDelay": 2.0,
+        "SightRangePlayers": 50.8,
+        "SpawnInterval": 335,
+        "SuppressOtherOutlinesWhenVisible": true,
+        "TrooperType": "NEUTRAL_TROOPER_STRONG",
+        "WeakPointCount": 3,
+        "WeakPointRespawnTime": 3.0,
+        "WeakPointType": "ENWP_Strong",
+        "WeaponInfo": {
+            "Spread": 0.5,
+            "StandingSpread": 1.5,
+            "ScatterYawScale": 1,
+            "ShootingUpSpreadPenalty": 5,
+            "ZoomMoveSpeedPercent": 0.75,
+            "ShootMoveSpeedPercent": 0.75,
+            "HorizontalPunch": 0,
+            "VerticalPunch": 0,
+            "RecoilRecoverySpeed": 0.254,
+            "VerticallRecoil": {
+                "Range": [
+                    -0.2,
+                    0.2
+                ],
+                "BurstSlope": 0.0,
+                "BurstExponent": 0.0,
+                "BurstConstant": 0.0
+            },
+            "HorizontalRecoil": {
+                "Range": [
+                    -0.1,
+                    0.1
+                ],
+                "BurstExponent": 0.0
+            },
+            "RecoilSpeed": 0.0254,
+            "ZoomFOV": 40.0,
+            "ZoomFOV_Relative": -35.0,
+            "DamageFalloffStartRange": 38.1,
+            "DamageFalloffEndRange": 38.1,
+            "Range": 38.1,
+            "BulletLifetime": 2,
+            "DamageFalloffEndScale": 0.3,
+            "DamageFalloffBias": 0.5,
+            "Bullets": 1,
+            "CycleTime": 0.5,
+            "reloadDuration": 0.25,
+            "ClipSize": -1,
+            "BurstShotCount": 1,
+            "BurstShotCooldown": 0,
+            "BulletGravityScale": 0.0,
+            "BulletRadius": 0.0762,
+            "BulletDrag": 1,
+            "BulletDragBias": 0.5,
+            "BulletReflectScale": 0,
+            "BulletReflectAmount": 1,
+            "BulletInheritShooterVelocityScale": 0,
+            "BulletSpeed": 152.4,
+            "CritBonusStart": 1.15,
+            "CritBonusEnd": 1.35,
+            "CritBonusStartRange": 12.7,
+            "CritBonusEndRange": 38.1,
+            "CritBonusAgainstNPCs": 0.25,
+            "ShootSpreadPenaltyPerShot": 0.0,
+            "ShootSpreadPenaltyDecayDelay": 0.0,
+            "ShootSpreadPenaltyDecay": 2.0,
+            "RecoilShotIndexRecoveryTimeFactor": 0.25,
+            "CanZoom": true,
+            "ReloadMoveSpeed": 6.0,
+            "AutoReplenishClip": 6,
+            "NpcAimingSpread": [
+                0.2,
+                0.6
+            ],
+            "BulletDamage": 9.1
+        }
     },
     "neutral_trooper_weak": {
+        "CapSimultanousAttackers": true,
+        "FaceEnemyWhileIdle": true,
         "GoldReward": 41,
         "GoldRewardBonusPercentPerMinute": 1.08,
         "HullCapsuleHeight": 3.302,
         "HullCapsuleRadius": 0.508,
         "InitialSpawnDelay": 120,
-        "IntrinsicAbilityResistance": 35.0,
-        "IntrinsicBulletResistance": 50.0,
+        "IntrinsicModifiers": [
+            {
+                "BULLET_DAMAGE_REDUCTION_PERCENT": 50.0,
+                "ABILITY_DAMAGE_REDUCTION_PERCENT": 35.0
+            }
+        ],
         "MaxHealth": 129,
         "Name": "neutral_trooper_weak",
-        "SpawnInterval": 85
+        "NeutralDamageGrowth": {
+            "DamageGrowthPctPerMin": 0.5
+        },
+        "OutlineRange": 20.32,
+        "OutlineThroughWalls": true,
+        "PhysicsImpulseMultiplier": 0.0,
+        "ShieldReactivateDelay": 2.0,
+        "SightRangePlayers": 50.8,
+        "SpawnInterval": 85,
+        "SuppressOtherOutlinesWhenVisible": true,
+        "TrooperType": "NEUTRAL_TROOPER_WEAK",
+        "WeakPointCount": 1,
+        "WeakPointRespawnTime": 6.0,
+        "WeakPointType": "ENWP_Weak",
+        "WeaponInfo": {
+            "Spread": 0.5,
+            "StandingSpread": 1.5,
+            "ScatterYawScale": 1,
+            "ShootingUpSpreadPenalty": 5,
+            "ZoomMoveSpeedPercent": 0.75,
+            "ShootMoveSpeedPercent": 0.75,
+            "HorizontalPunch": 0,
+            "VerticalPunch": 0,
+            "RecoilRecoverySpeed": 0.254,
+            "VerticallRecoil": {
+                "Range": [
+                    -0.2,
+                    0.2
+                ],
+                "BurstSlope": 0.0,
+                "BurstExponent": 0.0,
+                "BurstConstant": 0.0
+            },
+            "HorizontalRecoil": {
+                "Range": [
+                    -0.1,
+                    0.1
+                ],
+                "BurstExponent": 0.0
+            },
+            "RecoilSpeed": 0.0254,
+            "ZoomFOV": 40.0,
+            "ZoomFOV_Relative": -35.0,
+            "DamageFalloffStartRange": 38.1,
+            "DamageFalloffEndRange": 38.1,
+            "Range": 38.1,
+            "BulletLifetime": 2,
+            "DamageFalloffEndScale": 0.3,
+            "DamageFalloffBias": 0.5,
+            "Bullets": 1,
+            "CycleTime": 0.5,
+            "reloadDuration": 0.25,
+            "ClipSize": -1,
+            "BurstShotCount": 1,
+            "BurstShotCooldown": 0,
+            "BulletGravityScale": 0.0,
+            "BulletRadius": 0.0762,
+            "BulletDrag": 1,
+            "BulletDragBias": 0.5,
+            "BulletReflectScale": 0,
+            "BulletReflectAmount": 1,
+            "BulletInheritShooterVelocityScale": 0,
+            "BulletSpeed": 152.4,
+            "CritBonusStart": 1.15,
+            "CritBonusEnd": 1.35,
+            "CritBonusStartRange": 12.7,
+            "CritBonusEndRange": 38.1,
+            "CritBonusAgainstNPCs": 0.25,
+            "ShootSpreadPenaltyPerShot": 0.0,
+            "ShootSpreadPenaltyDecayDelay": 0.0,
+            "ShootSpreadPenaltyDecay": 2.0,
+            "RecoilShotIndexRecoveryTimeFactor": 0.25,
+            "CanZoom": true,
+            "ReloadMoveSpeed": 6.0,
+            "AutoReplenishClip": 4,
+            "NpcAimingSpread": [
+                0.2,
+                0.6
+            ],
+            "BulletDamage": 2.415
+        }
     },
     "npc_barrack_boss": {
         "BackDoorProtectionRange": 50.8,
