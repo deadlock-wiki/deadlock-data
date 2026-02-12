@@ -1511,6 +1511,251 @@
             }
         ]
     },
+    "ability_fencer_lunge": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCooldown": 26,
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityDuration": 8,
+        "AbilityPostCastDuration": 0.2,
+        "AbilityUnitTargetLimit": 1,
+        "AttackDashRange": 3.0,
+        "AttackingDashSpeed": 55.88,
+        "BaseDamage": {
+            "Value": 30,
+            "Scale": {
+                "Value": 0.7,
+                "Type": "spirit"
+            }
+        },
+        "ChannelMoveSpeed": -1,
+        "DashAngleThreshold": 89,
+        "DashRadius": 2.0,
+        "DashRange": 5.0,
+        "DashSpeed": 27.94,
+        "HealFixedHealth": {
+            "Value": 0,
+            "Scale": {
+                "Value": 0.0,
+                "Type": "spirit"
+            }
+        },
+        "HoldDurationMax": 1.1,
+        "HoldDurationMin": 0.25,
+        "IsDisabled": false,
+        "Key": "ability_fencer_lunge",
+        "MaxDamageBeforePerfect": {
+            "Value": 45,
+            "Scale": {
+                "Value": 1.1,
+                "Type": "spirit"
+            }
+        },
+        "MaxProcBleedDamagePercent": 50,
+        "MaxStabs": 3,
+        "MaxStacks": 2,
+        "Name": "Flawless Advance",
+        "ParryCooldownReduction": 5,
+        "PctTravelDistanceToDamageIn": 80,
+        "PerfectDamage": {
+            "Value": 75,
+            "Scale": {
+                "Value": 1.65,
+                "Type": "spirit"
+            }
+        },
+        "PerfectHoldTimeStart": 0.525,
+        "PerfectWindowDuration": 0.25,
+        "RecastTime": 5,
+        "SlashCollisionRadius": 5,
+        "SlashLength": 13,
+        "SlashRadius": 1.75,
+        "Upgrades": [
+            {
+                "HealFixedHealth": {
+                    "Value": 35,
+                    "Scale": {
+                        "Value": 0.75,
+                        "Type": "spirit"
+                    }
+                }
+            },
+            {
+                "AbilityCooldown": -10,
+                "DashSpeed": 13.97
+            },
+            {
+                "BaseDamage": {
+                    "Value": 30,
+                    "Scale": {
+                        "Value": 1.15,
+                        "Type": "spirit"
+                    }
+                },
+                "MaxDamageBeforePerfect": {
+                    "Value": 45,
+                    "Scale": {
+                        "Value": 1.15,
+                        "Type": "spirit"
+                    }
+                },
+                "PerfectDamage": {
+                    "Value": 75,
+                    "Scale": {
+                        "Value": 1.15,
+                        "Type": "spirit"
+                    }
+                },
+                "AttackDashRange": 3.0
+            }
+        ]
+    },
+    "ability_fencer_riposte": {
+        "AbilityChannelTime": 0.8,
+        "AbilityCooldown": 22,
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityLifestealPercentHero": 50,
+        "AbilityUnitTargetLimit": 1,
+        "BulletResistReduction": -15,
+        "BulletResistReductionDuration": 3.0,
+        "ChannelMoveSpeed": -1,
+        "CounterattackAntiMashDelay": 0.2,
+        "DamageThreshold": {
+            "Value": 60,
+            "Scale": {
+                "Value": 4,
+                "Type": "power_increase"
+            }
+        },
+        "DampingFactor": 0.5,
+        "DashRadius": 2.2,
+        "DashRange": 20,
+        "DashSpeed": 60.96,
+        "IsDisabled": false,
+        "Key": "ability_fencer_riposte",
+        "LiftHeight": 240,
+        "MoveSpeedMax": 4,
+        "Name": "Riposte",
+        "ParryWindow": 0.3,
+        "SideMoveSpeed": -100,
+        "SlashConeAngle": 90,
+        "SlashHalfWidth": 1,
+        "SlashRadius": 6,
+        "SlowDuration": 4,
+        "SlowPercent": 40,
+        "StunDuration": 0.6,
+        "TurnRateMax": 10,
+        "Upgrades": [
+            {
+                "AbilityCooldown": -7
+            },
+            {
+                "BulletResistReduction": -15
+            },
+            {
+                "StunDuration": 1.2
+            }
+        ]
+    },
+    "ability_fencer_throwblade": {
+        "AbilityCastDelay": 0.5,
+        "AbilityCooldown": 12,
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "AirDrag": 2.0,
+        "AirSpeedMax": 70,
+        "ChannelMoveSpeed": 1.3,
+        "Damage": {
+            "Value": 100,
+            "Scale": {
+                "Value": 1.3,
+                "Type": "spirit"
+            }
+        },
+        "FallSpeedMax": 1,
+        "IsDisabled": false,
+        "JumpVelocityHidden": 10.5,
+        "Key": "ability_fencer_throwblade",
+        "Name": "Disengaging Sigil",
+        "SigilHeight": 15,
+        "SigilRadius": 6.5,
+        "SlowDuration": 4,
+        "SlowPercent": 30,
+        "TraceToGroundDistance": 1000,
+        "Upgrades": [
+            {
+                "Damage": 30
+            },
+            {
+                "BonusFireRate": 20,
+                "BonusBulletSpeedPercent": 50,
+                "BuffDuration": 10
+            },
+            {
+                "StaminaToRestore": 2,
+                "ResetsAirLimit": 1
+            }
+        ]
+    },
+    "ability_fencer_ultimate": {
+        "AbilityCastDelay": 1.5,
+        "AbilityChannelTime": 9999,
+        "AbilityCooldown": 125,
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityPostCastDuration": 0.2,
+        "AbilityUnitTargetLimit": 1,
+        "AirSpeedMax": 70,
+        "BonusDamagePercent": 60,
+        "CameraDistance": 250,
+        "CasterLockDuration": 1.8,
+        "DashAngleThreshold": 89,
+        "DashRadius": 7,
+        "DashRange": 27,
+        "DashSpeed": 254.0,
+        "DebuffDuration": 1.8,
+        "DelayedDamage": {
+            "Value": 250,
+            "Scale": {
+                "Value": 1.75,
+                "Type": "spirit"
+            }
+        },
+        "FallSpeedMax": 1,
+        "GapDistanceToWall": 180,
+        "GroundDashReductionPercent": -30,
+        "HealAmpReceivePenaltyPercent": 100,
+        "HealAmpRegenPenaltyPercent": 100,
+        "ImpactDamage": {
+            "Value": 70,
+            "Scale": {
+                "Value": 0.77,
+                "Type": "spirit"
+            }
+        },
+        "IncomingDamageReductionPercent": 70,
+        "IsDisabled": false,
+        "Key": "ability_fencer_ultimate",
+        "LowHealthEnemyThresholdPct": 50,
+        "MoveSpeedPenaltyMaxSpeed": 200,
+        "Name": "Itani Lo Sahn",
+        "SideMoveSpeedReduction": -100,
+        "TechCleaveExpireTime": 0.35,
+        "TimeScaleDebuff": 70,
+        "TimerSoundDuration": 1,
+        "TravelDistPctBeforeWallGapCheck": 70,
+        "TurnRateMaxDuringCast": 999,
+        "Upgrades": [
+            {
+                "DashRange": 8
+            },
+            {
+                "AbilityCooldown": -40
+            },
+            {
+                "BonusDamagePercent": 40
+            }
+        ],
+        "VacuumSpeed": 10.16
+    },
     "ability_fire_bomb": {
         "AbilityCooldown": 140.0,
         "AbilityCooldownBetweenCharge": -1.0,
