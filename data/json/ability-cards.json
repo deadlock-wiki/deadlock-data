@@ -6193,7 +6193,7 @@
                 "Alt": [
                     {
                         "Key": "DashRange",
-                        "Name": "Dash Range",
+                        "Name": "Time Window",
                         "Value": 9,
                         "Type": "distance"
                     },
@@ -6239,7 +6239,7 @@
                     "Value": 89
                 },
                 "DashRadius": {
-                    "Name": null,
+                    "Name": "Radius",
                     "Value": 2.0
                 },
                 "DashSpeed": {
@@ -7454,7 +7454,7 @@
                         },
                         {
                             "Key": "DashRange",
-                            "Name": "Dash Range",
+                            "Name": "Time Window",
                             "Value": 12,
                             "Type": "distance"
                         }
@@ -7502,7 +7502,7 @@
                     "Value": 89
                 },
                 "DashRadius": {
-                    "Name": null,
+                    "Name": "Radius",
                     "Value": 2.5
                 },
                 "DashSpeed": {
@@ -16856,7 +16856,7 @@
                     "Value": 0.5
                 },
                 "RespawnDelay": {
-                    "Name": "Respawn Delay",
+                    "Name": null,
                     "Value": 3
                 },
                 "SlowDuration": {
@@ -20698,7 +20698,703 @@
         }
     },
     "hero_fencer": {
-        "Name": "Apollo"
+        "Name": "Apollo",
+        "1": {
+            "Key": "ability_fencer_throwblade",
+            "Name": "Disengaging Sigil",
+            "DescKey": "ability_fencer_throwblade_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 100,
+                            "Scale": {
+                                "Value": 1.3,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "SlowPercent",
+                            "Name": "Move Speed",
+                            "Value": 30,
+                            "Type": "slow"
+                        },
+                        {
+                            "Key": "FireRateSlow",
+                            "Name": "Fire Rate",
+                            "Value": 0,
+                            "Type": "fire_rate"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "SlowDuration",
+                        "Name": "Slow Duration",
+                        "Value": 4
+                    },
+                    {
+                        "Key": "SigilRadius",
+                        "Name": "Radius",
+                        "Value": 6.5,
+                        "Type": "distance"
+                    }
+                ],
+                "DescKey": "ability_fencer_throwblade_desc"
+            },
+            "Upgrades": [
+                {
+                    "Damage": 30
+                },
+                {
+                    "BonusFireRate": 20,
+                    "BonusBulletSpeedPercent": 50,
+                    "BuffDuration": 10,
+                    "DescKey": "ability_fencer_throwblade_t2_desc"
+                },
+                {
+                    "StaminaToRestore": 2,
+                    "ResetsAirLimit": 1,
+                    "DescKey": "ability_fencer_throwblade_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 1.3,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AirDrag": {
+                    "Name": null,
+                    "Value": 2.0
+                },
+                "AirSpeedMax": {
+                    "Name": null,
+                    "Value": 70
+                },
+                "FallSpeedMax": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "JumpVelocityHidden": {
+                    "Name": null,
+                    "Value": 10.5
+                },
+                "SigilHeight": {
+                    "Name": null,
+                    "Value": 15
+                },
+                "TraceToGroundDistance": {
+                    "Name": null,
+                    "Value": 1000
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.5,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 12,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            }
+        },
+        "2": {
+            "Key": "ability_fencer_riposte",
+            "Name": "Riposte",
+            "DescKey": "ability_fencer_riposte_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "ParryWindow",
+                            "Name": "Invulnerability Duration",
+                            "Value": 0.3
+                        }
+                    ]
+                },
+                "Alt": null,
+                "DescKey": "ability_fencer_riposte_desc"
+            },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "On Pommel Hit:",
+                            "Key": "StunDuration",
+                            "Name": "Stun Duration",
+                            "Value": 0.6,
+                            "Type": "duration"
+                        },
+                        {
+                            "Title": "On Pommel Hit:",
+                            "Key": "BulletResistReduction",
+                            "Name": "Bullet Resist",
+                            "Value": -15,
+                            "Type": "bullet_armor_down"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "BulletResistReductionDuration",
+                        "Name": "Bullet Resist Reduction Duration",
+                        "Value": 3.0,
+                        "Type": "duration"
+                    }
+                ]
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -7
+                },
+                {
+                    "BulletResistReduction": -15
+                },
+                {
+                    "StunDuration": 1.2
+                }
+            ],
+            "Range": {
+                "DashRange": {
+                    "Name": "Time Window",
+                    "Value": 20,
+                    "Type": "distance"
+                }
+            },
+            "Cast": {
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Value": 0.8,
+                    "Type": "cast"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Health": {
+                "AbilityLifestealPercentHero": {
+                    "Name": "Spirit Lifesteal",
+                    "Value": 50,
+                    "Type": "healing"
+                }
+            },
+            "Debuff": {
+                "MoveSpeedMax": {
+                    "Name": "Move Speed",
+                    "Value": 4,
+                    "Type": "slow"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "CounterattackAntiMashDelay": {
+                    "Name": null,
+                    "Value": 0.2
+                },
+                "DamageThreshold": {
+                    "Name": "Damage Threshold",
+                    "Value": 60,
+                    "Scale": {
+                        "Value": 4,
+                        "Type": "power_increase"
+                    }
+                },
+                "DampingFactor": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "DashRadius": {
+                    "Name": "Radius",
+                    "Value": 2.2
+                },
+                "DashSpeed": {
+                    "Name": "Dash Speed",
+                    "Value": 60.96
+                },
+                "LiftHeight": {
+                    "Name": null,
+                    "Value": 240
+                },
+                "SideMoveSpeed": {
+                    "Name": null,
+                    "Value": -100
+                },
+                "SlashConeAngle": {
+                    "Name": null,
+                    "Value": 90
+                },
+                "SlashHalfWidth": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "SlashRadius": {
+                    "Name": "Slash Radius",
+                    "Value": 6
+                },
+                "SlowDuration": {
+                    "Name": "Slow Duration",
+                    "Value": 4
+                },
+                "SlowPercent": {
+                    "Name": "Move Speed",
+                    "Value": 40
+                },
+                "TurnRateMax": {
+                    "Name": null,
+                    "Value": 10
+                }
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 22,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            }
+        },
+        "3": {
+            "Key": "ability_fencer_lunge",
+            "Name": "Flawless Advance",
+            "DescKey": "ability_fencer_lunge_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "BaseDamage",
+                            "Name": "Base Damage",
+                            "Value": 30,
+                            "Scale": {
+                                "Value": 0.7,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "MaxDamageBeforePerfect",
+                            "Name": "Max Hold Damage",
+                            "Value": 45,
+                            "Scale": {
+                                "Value": 1.1,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "MaxStabs",
+                        "Name": "Max Lunges",
+                        "Value": 3
+                    }
+                ],
+                "DescKey": "ability_fencer_lunge_desc"
+            },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "On Perfect Hold:",
+                            "Key": "PerfectDamage",
+                            "Name": "Perfect Damage",
+                            "Value": 75,
+                            "Scale": {
+                                "Value": 1.65,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Title": "On Perfect Hold:",
+                            "Key": "HealFixedHealth",
+                            "Name": "Heal on hero hit",
+                            "Value": 0,
+                            "Scale": {
+                                "Value": 0.0,
+                                "Type": "spirit"
+                            },
+                            "Type": "healing"
+                        }
+                    ]
+                },
+                "Alt": null
+            },
+            "Upgrades": [
+                {
+                    "HealFixedHealth": {
+                        "Value": 35,
+                        "Scale": {
+                            "Value": 0.75,
+                            "Type": "spirit"
+                        }
+                    },
+                    "DescKey": "ability_fencer_lunge_t1_desc"
+                },
+                {
+                    "AbilityCooldown": -10,
+                    "DashSpeed": 13.97,
+                    "DescKey": "ability_fencer_lunge_t2_desc"
+                },
+                {
+                    "BaseDamage": {
+                        "Value": 30,
+                        "Scale": {
+                            "Value": 1.15,
+                            "Type": "spirit"
+                        }
+                    },
+                    "MaxDamageBeforePerfect": {
+                        "Value": 45,
+                        "Scale": {
+                            "Value": 1.15,
+                            "Type": "spirit"
+                        }
+                    },
+                    "PerfectDamage": {
+                        "Value": 75,
+                        "Scale": {
+                            "Value": 1.15,
+                            "Type": "spirit"
+                        }
+                    },
+                    "AttackDashRange": 3.0,
+                    "DescKey": "ability_fencer_lunge_t3_desc"
+                }
+            ],
+            "Range": {
+                "AttackDashRange": {
+                    "Name": "Attacking Lunge Distance",
+                    "Value": 3.0,
+                    "Type": "distance"
+                },
+                "DashRange": {
+                    "Name": "Time Window",
+                    "Value": 5.0,
+                    "Type": "distance"
+                },
+                "SlashLength": {
+                    "Name": "Slash Length",
+                    "Value": 13,
+                    "Type": "distance"
+                },
+                "SlashRadius": {
+                    "Name": "Slash Radius",
+                    "Value": 1.75,
+                    "Type": "distance"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Damage": {
+                "MaxProcBleedDamagePercent": {
+                    "Name": null,
+                    "Value": 50,
+                    "Type": "tech_damage"
+                }
+            },
+            "Other": {
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.2
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AttackingDashSpeed": {
+                    "Name": null,
+                    "Value": 55.88
+                },
+                "DashAngleThreshold": {
+                    "Name": null,
+                    "Value": 89
+                },
+                "DashRadius": {
+                    "Name": "Radius",
+                    "Value": 2.0
+                },
+                "DashSpeed": {
+                    "Name": "Dash Speed",
+                    "Value": 27.94
+                },
+                "HoldDurationMax": {
+                    "Name": null,
+                    "Value": 1.1
+                },
+                "HoldDurationMin": {
+                    "Name": null,
+                    "Value": 0.25
+                },
+                "MaxStacks": {
+                    "Name": "Max Stacks",
+                    "Value": 2
+                },
+                "ParryCooldownReduction": {
+                    "Name": "Parry Cooldown",
+                    "Value": 5
+                },
+                "PctTravelDistanceToDamageIn": {
+                    "Name": null,
+                    "Value": 80
+                },
+                "PerfectHoldTimeStart": {
+                    "Name": "Perfect Window Start",
+                    "Value": 0.525
+                },
+                "PerfectWindowDuration": {
+                    "Name": "Perfect Window Duration",
+                    "Value": 0.25
+                },
+                "RecastTime": {
+                    "Name": null,
+                    "Value": 5
+                },
+                "SlashCollisionRadius": {
+                    "Name": null,
+                    "Value": 5
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 0.1,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 26,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 8,
+                "Type": "duration"
+            }
+        },
+        "4": {
+            "Key": "ability_fencer_ultimate",
+            "Name": "Itani Lo Sahn",
+            "DescKey": "ability_fencer_ultimate_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "DelayedDamage",
+                            "Name": "Delayed Damage",
+                            "Value": 250,
+                            "Scale": {
+                                "Value": 1.75,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "BonusDamagePercent",
+                            "Name": "Bonus Damage",
+                            "Value": 60
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "IncomingDamageReductionPercent",
+                        "Name": "Time Slow Damage Reduction",
+                        "Value": 70
+                    },
+                    {
+                        "Key": "LowHealthEnemyThresholdPct",
+                        "Name": "Low Health Threshold",
+                        "Value": 50
+                    }
+                ],
+                "DescKey": "ability_fencer_ultimate_desc"
+            },
+            "Upgrades": [
+                {
+                    "DashRange": 8
+                },
+                {
+                    "AbilityCooldown": -40
+                },
+                {
+                    "BonusDamagePercent": 40,
+                    "DescKey": "ability_fencer_ultimate_t3_desc"
+                }
+            ],
+            "Duration": {
+                "CasterLockDuration": {
+                    "Name": null,
+                    "Value": 1.8,
+                    "Type": "duration"
+                },
+                "DebuffDuration": {
+                    "Name": "Debuff Duration",
+                    "Value": 1.8,
+                    "Type": "duration"
+                }
+            },
+            "Range": {
+                "DashRadius": {
+                    "Name": "Radius",
+                    "Value": 7,
+                    "Type": "distance"
+                },
+                "DashRange": {
+                    "Name": "Time Window",
+                    "Value": 27,
+                    "Type": "distance"
+                }
+            },
+            "Cast": {
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Value": 9999,
+                    "Type": "cast"
+                }
+            },
+            "Damage": {
+                "ImpactDamage": {
+                    "Name": "Impact Damage",
+                    "Value": 70,
+                    "Scale": {
+                        "Value": 0.77,
+                        "Type": "spirit"
+                    },
+                    "Type": "tech_damage"
+                }
+            },
+            "Debuff": {
+                "GroundDashReductionPercent": {
+                    "Name": "Dash Distance",
+                    "Value": -30,
+                    "Type": "slow"
+                }
+            },
+            "Other": {
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.2
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AirSpeedMax": {
+                    "Name": null,
+                    "Value": 70
+                },
+                "CameraDistance": {
+                    "Name": null,
+                    "Value": 250
+                },
+                "DashAngleThreshold": {
+                    "Name": null,
+                    "Value": 89
+                },
+                "DashSpeed": {
+                    "Name": "Dash Speed",
+                    "Value": 254.0
+                },
+                "FallSpeedMax": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "GapDistanceToWall": {
+                    "Name": null,
+                    "Value": 180
+                },
+                "HealAmpReceivePenaltyPercent": {
+                    "Name": "Healing Reduction",
+                    "Value": 100
+                },
+                "HealAmpRegenPenaltyPercent": {
+                    "Name": "Healing Reduction",
+                    "Value": 100
+                },
+                "MoveSpeedPenaltyMaxSpeed": {
+                    "Name": null,
+                    "Value": 200
+                },
+                "SideMoveSpeedReduction": {
+                    "Name": null,
+                    "Value": -100
+                },
+                "TechCleaveExpireTime": {
+                    "Name": null,
+                    "Value": 0.35
+                },
+                "TimeScaleDebuff": {
+                    "Name": null,
+                    "Value": 70
+                },
+                "TimerSoundDuration": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "TravelDistPctBeforeWallGapCheck": {
+                    "Name": null,
+                    "Value": 70
+                },
+                "TurnRateMaxDuringCast": {
+                    "Name": null,
+                    "Value": 999
+                },
+                "VacuumSpeed": {
+                    "Name": null,
+                    "Value": 10.16
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 1.5,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 125,
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            }
+        }
     },
     "hero_airheart": {
         "Name": null,
