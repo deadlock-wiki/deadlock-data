@@ -1334,7 +1334,24 @@
         "AirDashSpeed": 17.0,
         "BaseHealthRegen": 2.0,
         "BaseWeaponDamageIncrease": 0,
-        "BoundAbilities": {},
+        "BoundAbilities": {
+            "1": {
+                "Name": "Disengaging Sigil",
+                "Key": "ability_fencer_throwblade"
+            },
+            "2": {
+                "Name": "Riposte",
+                "Key": "ability_fencer_riposte"
+            },
+            "3": {
+                "Name": "Flawless Advance",
+                "Key": "ability_fencer_lunge"
+            },
+            "4": {
+                "Name": "Itani Lo Sahn",
+                "Key": "ability_fencer_ultimate"
+            }
+        },
         "CritDamageBonusPercent": 0.0,
         "CritDamageReceivedPercent": 0.0,
         "CrouchSpeed": 4.75,
@@ -1352,15 +1369,17 @@
         "LevelScaling": {
             "BulletDamage": 0.6,
             "BulletDamageAltFire": 0.5,
-            "MaxHealth": 41,
+            "MaxHealth": 44,
             "PowerIncreases": 1,
             "TechPower": 1.1,
             "LightMeleeDamage": 1.58,
-            "HeavyMeleeDamage": 2.9092
+            "HeavyMeleeDamage": 2.9092,
+            "DPS": 1.579,
+            "SustainedDPS": 1.0976
         },
         "LightMeleeDamage": 63,
         "Lore": "hero_fencer_lore",
-        "MaxHealth": 700.0,
+        "MaxHealth": 740.0,
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "Apollo",
@@ -1377,9 +1396,34 @@
         "TechRange": 0,
         "Type": "Assassin",
         "Weapon": {
+            "BulletSpeed": 127.0,
+            "BulletDamage": 17.0,
+            "RoundsPerSecond": 2.6316,
+            "ClipSize": 15,
+            "ReloadTime": 2.5,
+            "ReloadMovespeed": 1.0,
+            "ReloadDelay": 0,
+            "ReloadSingle": false,
+            "FalloffStartRange": 25.4,
+            "FalloffEndRange": 25.4,
+            "FalloffStartScale": 1.0,
+            "FalloffEndScale": 1.0,
+            "FalloffBias": 0.5,
+            "BulletGravityScale": 0,
+            "BulletsPerShot": 1,
+            "BulletsPerBurst": 1,
+            "BurstInterShotInterval": 0,
+            "ShootMoveSpeed": 0.75,
+            "HitOnceAcrossAllBullets": true,
+            "CanCrit": true,
+            "AmmoConsumedPerShot": 1,
+            "DPS": 44.737,
+            "SustainedDPS": 31.098,
+            "NameKey": "citadel_weapon_hero_fencer_set",
+            "DescKey": "citadel_weapon_hero_fencer_set_desc",
             "WeaponTypes": [
-                "Attribute_EWeaponAttribute_Spreadshot",
-                "Attribute_EWeaponAttribute_CloseRange"
+                "Attribute_EWeaponAttribute_MediumRange",
+                "Attribute_EWeaponAttribute_Projectile"
             ]
         },
         "WeaponPowerScale": 1
