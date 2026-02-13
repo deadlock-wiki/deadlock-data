@@ -1359,7 +1359,7 @@
                 "DamageResistPctWhileChanneling": 30
             },
             {
-                "AbilityCooldown": -55
+                "AbilityCooldown": -65
             }
         ]
     },
@@ -1368,7 +1368,7 @@
         "AbilityCastRange": 40,
         "AbilityCharges": 1,
         "AbilityCooldown": 25.0,
-        "AbilityCooldownBetweenCharge": 12,
+        "AbilityCooldownBetweenCharge": 10,
         "AbilityPostCastDuration": 0.2,
         "AbilityUnitTargetLimit": 1,
         "CDReduceOnPillowHit": 5,
@@ -1394,11 +1394,12 @@
                 "AbilityCooldown": -7
             },
             {
-                "FireRateSlow": 35
+                "FireRateSlow": 35,
+                "Radius": 2
             },
             {
                 "Damage": 90,
-                "Radius": 2
+                "AbilityCharges": 1
             }
         ]
     },
@@ -1480,11 +1481,11 @@
         "HelperDowntimeDuration": 15.1,
         "HelpersPerPatrol": 4,
         "InfestBurstHealthPercent": 75,
-        "InfestDamageTakenPercent": 35,
+        "InfestDamageTakenPercent": 30,
         "InfestHeal": {
-            "Value": 14,
+            "Value": 10,
             "Scale": {
-                "Value": 0.1,
+                "Value": 0.125,
                 "Type": "spirit"
             }
         },
@@ -1507,7 +1508,7 @@
             },
             {
                 "HelperCount": 2,
-                "InfestDamageTakenPercent": 15
+                "InfestDamageTakenPercent": 20
             }
         ]
     },
@@ -3794,9 +3795,9 @@
         "AbilityChannelTime": 0.66,
         "AbilityCooldown": 120,
         "AbilityDuration": {
-            "Value": 20,
+            "Value": 16,
             "Scale": {
-                "Value": 0.05,
+                "Value": 0.04,
                 "Type": "spirit"
             }
         },
@@ -3846,7 +3847,7 @@
         "StackDuration": 5,
         "StackingDebuffTickRate": 0.25,
         "SummonBurstFrequency": 0.1,
-        "SummonFrequency": 5,
+        "SummonFrequency": 4,
         "SummonHealth": {
             "Value": 200,
             "Scale": {
@@ -3945,7 +3946,7 @@
         "AbilityUnitTargetLimit": 1,
         "ChannelMoveSpeed": -1,
         "Damage": {
-            "Value": 16,
+            "Value": 20,
             "Scale": {
                 "Value": 0.25,
                 "Type": "spirit"
@@ -3987,7 +3988,7 @@
                 "Type": "power_increase"
             }
         },
-        "SkullLifetime": 15,
+        "SkullLifetime": 10,
         "SpawnRadius": 2,
         "SummonHealth": {
             "Value": 20,
@@ -4250,14 +4251,14 @@
         "AbilityCastRange": 24,
         "AbilityCooldown": 38,
         "AbilityCooldownBetweenCharge": -1.0,
-        "AbilityDuration": 7,
+        "AbilityDuration": 5,
         "AbilityUnitTargetLimit": 1,
         "AuraRadius": 0.75,
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 90,
             "Scale": {
-                "Value": 1.3,
+                "Value": 1.9,
                 "Type": "spirit"
             }
         },
@@ -4288,7 +4289,7 @@
         "ZombieWallDeployTime": 0.7,
         "ZombieWallHeight": 2.5,
         "ZombieWallLength": {
-            "Value": 20,
+            "Value": 14,
             "Scale": {
                 "Value": 0.05,
                 "Type": "spirit"
@@ -4517,9 +4518,9 @@
         ]
     },
     "ability_priest_beartrap": {
-        "AbilityCastDelay": 0.1,
+        "AbilityCastDelay": 0.2,
         "AbilityCharges": 2,
-        "AbilityCooldown": 30,
+        "AbilityCooldown": 25,
         "AbilityCooldownBetweenCharge": 8,
         "AbilityUnitTargetLimit": 1,
         "ArmTime": 0.5,
@@ -4527,17 +4528,17 @@
         "Damage": {
             "Value": 80,
             "Scale": {
-                "Value": 1.6,
+                "Value": 2.2,
                 "Type": "spirit"
             }
         },
-        "DebuffDuration": 5,
         "ImmobilizeDuration": 1.5,
         "IsDisabled": false,
         "Key": "ability_priest_beartrap",
         "Lifetime": 30,
         "Name": "Hex-Lined Snap Trap",
         "Radius": 2,
+        "RevealDuration": 6,
         "TetherDuration": 0.6,
         "TetherRadius": 0.3,
         "TickRate": 0.1,
@@ -4545,13 +4546,13 @@
         "TripUpSpeed": 6.35,
         "Upgrades": [
             {
-                "AbilityCooldown": -12
+                "AbilityCooldown": -8
             },
             {
                 "ImmobilizeDuration": 0.75
             },
             {
-                "IncomingDamagePercentFromCaster": 20
+                "IncomingDamagePercentFromCaster": 25
             }
         ]
     },
@@ -4562,6 +4563,7 @@
         "AbilityUnitTargetLimit": 1,
         "BounceGrenadeSpeed": 1100,
         "BounceLifetime": 0.5,
+        "BurnDuration": 3.5,
         "BurnLingerDuration": 0.15,
         "BurnRadius": 4.5,
         "CameraTurnRateMax": 15,
@@ -4580,7 +4582,6 @@
                 "Type": "weapon_damage_increase"
             }
         },
-        "DebuffDuration": 3.5,
         "HealAmpReceivePenaltyPercent": -30,
         "HealAmpRegenPenaltyPercent": -30,
         "IsDisabled": false,
@@ -4595,7 +4596,8 @@
             },
             {
                 "Radius": 1.5,
-                "BurnRadius": 1.5
+                "BurnRadius": 1.5,
+                "BurnDuration": 1.0
             },
             {
                 "HealAmpReceivePenaltyPercent": -20,
@@ -4608,13 +4610,13 @@
     "ability_priest_knockback": {
         "AbilityCastDelay": 0.25,
         "AbilityCastRange": 10,
-        "AbilityCooldown": 26,
+        "AbilityCooldown": 23,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 99,
         "BonusDamage": {
             "Value": 30,
             "Scale": {
-                "Value": 0.4,
+                "Value": 0.9,
                 "Type": "weapon_damage_increase"
             }
         },
@@ -4637,19 +4639,19 @@
         "SelfPushForce": 500,
         "StunDuration": 0.65,
         "TargetingConeAngle": 60,
-        "TraceDistanceForStun": 6.5,
         "Upgrades": [
             {
                 "Damage": 25
             },
             {
-                "AbilityCooldown": -8,
-                "AbilityCastRange": 2.5
+                "AbilityCooldown": -10,
+                "StunDuration": 0.4
             },
             {
                 "BuffDuration": 5
             }
-        ]
+        ],
+        "WallStunDistance": 6.5
     },
     "ability_priest_selfheal": {
         "AbilityCastDelay": 0.125,
@@ -4794,7 +4796,7 @@
         "Damage": {
             "Value": 120,
             "Scale": {
-                "Value": 1.7,
+                "Value": 1.5,
                 "Type": "weapon_damage_increase"
             }
         },
@@ -4811,7 +4813,7 @@
                 "BonusMoveSpeed": 1.2
             },
             {
-                "BonusDamage": 150,
+                "BonusDamage": 65,
                 "AbilityCooldown": -15
             },
             {
@@ -5869,7 +5871,7 @@
         "BounceRadius": 17,
         "ChannelMoveSpeed": -1,
         "Damage": {
-            "Value": 115,
+            "Value": 105,
             "Scale": {
                 "Value": 0.63,
                 "Type": "spirit"
@@ -5913,9 +5915,9 @@
         "ExplosionInterval": 0.7,
         "ExplosionRadius": 8,
         "ImpactDamage": {
-            "Value": 65,
+            "Value": 60,
             "Scale": {
-                "Value": 0.49,
+                "Value": 0.42,
                 "Type": "spirit"
             }
         },
@@ -5956,7 +5958,7 @@
             }
         },
         "DebuffDuration": 1.75,
-        "ExplodeRadius": 15,
+        "ExplodeRadius": 14,
         "IsDisabled": false,
         "Key": "ability_unicorn_prismaticguard",
         "MaxLifetime": 4,
@@ -6770,7 +6772,7 @@
     },
     "ability_werewolf_frenzy": {
         "AbilityCastDelay": 0.2,
-        "AbilityCastRange": 7,
+        "AbilityCastRange": 7.5,
         "AbilityCooldown": 6.5,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.5,
@@ -6839,7 +6841,7 @@
         "BonusDamage": {
             "Value": 25,
             "Scale": {
-                "Value": 1.0,
+                "Value": 2.0,
                 "Type": "spirit"
             }
         },
@@ -6986,7 +6988,7 @@
         "Damage": {
             "Value": 40,
             "Scale": {
-                "Value": 1.0,
+                "Value": 1.6,
                 "Type": "spirit"
             }
         },
@@ -7115,7 +7117,7 @@
             }
         },
         "BonusMoveSpeed": 2,
-        "BulletResist": 20,
+        "BulletResist": 14,
         "CameraTurnRateMax": 188,
         "ChannelMoveSpeed": 7.62,
         "EndingWarningSoundDuration": 3.0,
@@ -7140,7 +7142,7 @@
         "MaxRage": {
             "Value": 100,
             "Scale": {
-                "Value": 11.0,
+                "Value": 9.4,
                 "Type": "power_increase"
             }
         },
@@ -7152,11 +7154,11 @@
         "RagePercentagePerSecondOutOfCombat": -3,
         "ReadyDuration": 3,
         "StackDuration": 5,
-        "TechResist": 20,
+        "TechResist": 14,
         "Upgrades": [
             {
-                "BulletResist": 15,
-                "TechResist": 15
+                "BulletResist": 14,
+                "TechResist": 14
             },
             {
                 "BonusMoveSpeed": 3,
