@@ -21015,6 +21015,11 @@
                         "Key": "MaxStabs",
                         "Name": "Max Lunges",
                         "Value": 3
+                    },
+                    {
+                        "Key": "BulletResist",
+                        "Name": "Bullet Resist",
+                        "Value": 0
                     }
                 ],
                 "DescKey": "ability_fencer_lunge_desc"
@@ -21062,6 +21067,8 @@
                 {
                     "AbilityCooldown": -10,
                     "DashSpeed": 13.97,
+                    "BulletResist": 60,
+                    "DashBuffDuration": 1.5,
                     "DescKey": "ability_fencer_lunge_t2_desc"
                 },
                 {
@@ -22786,11 +22793,11 @@
             },
             "Upgrades": [
                 {
-                    "AbilityCooldown": -10
+                    "AbilityLifestealPercentHero": 15
                 },
                 {
                     "AbilityCastRange": 3,
-                    "AbilityLifestealPercentHero": 15,
+                    "AbilityCooldown": -10,
                     "DescKey": "ability_unicorn_radiantblast_t2_desc"
                 },
                 {
@@ -22976,7 +22983,7 @@
                         {
                             "Key": "ImpactDamage",
                             "Name": "Impact Damage",
-                            "Value": 60,
+                            "Value": 55,
                             "Scale": {
                                 "Value": 0.42,
                                 "Type": "spirit"
@@ -23029,7 +23036,7 @@
                 },
                 {
                     "ImpactDamage": 60,
-                    "AbilityCooldown": -12,
+                    "AbilityCooldown": -15,
                     "DescKey": "ability_unicorn_luminousstrike_t2_desc"
                 },
                 {
@@ -23087,7 +23094,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 30,
+                "Value": 33,
                 "Type": "cooldown"
             },
             "AbilityCooldownBetweenCharge": {
