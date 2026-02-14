@@ -1582,7 +1582,9 @@
             },
             {
                 "AbilityCooldown": -10,
-                "DashSpeed": 13.97
+                "DashSpeed": 13.97,
+                "BulletResist": 60,
+                "DashBuffDuration": 1.5
             },
             {
                 "BaseDamage": {
@@ -5904,7 +5906,7 @@
         "AbilityCastDelay": 0.2,
         "AbilityCastRange": 30,
         "AbilityCharges": 1,
-        "AbilityCooldown": 30,
+        "AbilityCooldown": 33,
         "AbilityCooldownBetweenCharge": 2,
         "AbilityUnitTargetLimit": 1,
         "BuffDelay": 0.75,
@@ -5915,7 +5917,7 @@
         "ExplosionInterval": 0.7,
         "ExplosionRadius": 8,
         "ImpactDamage": {
-            "Value": 60,
+            "Value": 55,
             "Scale": {
                 "Value": 0.42,
                 "Type": "spirit"
@@ -5934,7 +5936,7 @@
             },
             {
                 "ImpactDamage": 60,
-                "AbilityCooldown": -12
+                "AbilityCooldown": -15
             },
             {
                 "MagicIncreasePerStack": 3,
@@ -6013,11 +6015,11 @@
         "TickRate": 0.5,
         "Upgrades": [
             {
-                "AbilityCooldown": -10
+                "AbilityLifestealPercentHero": 15
             },
             {
                 "AbilityCastRange": 3,
-                "AbilityLifestealPercentHero": 15
+                "AbilityCooldown": -10
             },
             {
                 "Damage": {
