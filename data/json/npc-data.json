@@ -75,140 +75,36 @@
         "BoundAbilities": {
             "ESlot_Signature_1": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 10,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "1400",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange",
-                            "FunctionDisabled": true
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "100",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "VolleyInterval": {
-                        "Value": "0.5"
-                    },
-                    "GrenadesInVolley": {
-                        "Value": "6"
-                    },
-                    "MaxSimultaneousVolley": {
-                        "Value": "1"
-                    },
-                    "InitialVolleyInaccuracy": {
-                        "Value": "100"
-                    },
-                    "PerVolleyInaccuracy": {
-                        "Value": "25"
-                    },
-                    "Damage": {
-                        "Value": "200"
-                    },
-                    "DetonateTimer": {
-                        "Value": "10"
-                    },
-                    "ExplosionFalloffDisabled": {
-                        "Value": "1"
-                    },
-                    "Radius": {
-                        "Value": "5m"
-                    },
-                    "FireDuration": {
-                        "Value": "5"
-                    },
-                    "FireDPS": {
-                        "Value": "25"
-                    },
-                    "FireDPSTrooperFactor": {
-                        "Value": "0.3"
-                    },
-                    "FireTickInterval": {
-                        "Value": "0.5"
-                    },
-                    "FireRadius": {
-                        "Value": "6m"
-                    },
-                    "FireEscalationPerSecond": {
-                        "Value": "0"
-                    },
-                    "BulletArmorReduction": {
-                        "Value": "-10",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST_REDUCTION",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    },
-                    "TechArmorReduction": {
-                        "Value": "-10",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_ARMOR_DAMAGE_RESIST_REDUCTION",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    }
+                    "AbilityCooldown": 10,
+                    "AbilityDuration": 0,
+                    "AbilityCastRange": 35.56,
+                    "AbilityUnitTargetLimit": 100,
+                    "AbilityCastDelay": 0,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "VolleyInterval": 0.5,
+                    "GrenadesInVolley": 6,
+                    "MaxSimultaneousVolley": 1,
+                    "InitialVolleyInaccuracy": 100,
+                    "PerVolleyInaccuracy": 25,
+                    "Damage": 200,
+                    "DetonateTimer": 10,
+                    "ExplosionFalloffDisabled": 1,
+                    "Radius": "5m",
+                    "FireDuration": 5,
+                    "FireDPS": 25,
+                    "FireDPSTrooperFactor": 0.3,
+                    "FireTickInterval": 0.5,
+                    "FireRadius": "6m",
+                    "FireEscalationPerSecond": 0,
+                    "BulletArmorReduction": -10,
+                    "TechArmorReduction": -10
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -265,106 +161,26 @@
             },
             "ESlot_Signature_2": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 0,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": 6.0,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "1375",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange",
-                            "FunctionDisabled": true
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": 1.0,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "PathLength": {
-                        "Value": "1250"
-                    },
-                    "PathWidth": {
-                        "Value": "30"
-                    },
-                    "MaxHPDPS": {
-                        "Value": "2"
-                    },
-                    "DPS": {
-                        "Value": "125"
-                    },
-                    "CreepDPS": {
-                        "Value": "190"
-                    },
-                    "TrackingSpeed": {
-                        "Value": "30"
-                    },
-                    "SweepSpeed": {
-                        "Value": "1"
-                    }
+                    "AbilityCooldown": 0,
+                    "AbilityDuration": 6.0,
+                    "AbilityCastRange": 34.92,
+                    "AbilityUnitTargetLimit": 1,
+                    "AbilityCastDelay": 1.0,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "PathLength": 1250,
+                    "PathWidth": 0.762,
+                    "MaxHPDPS": 2,
+                    "DPS": 125,
+                    "CreepDPS": 190,
+                    "TrackingSpeed": 0.762,
+                    "SweepSpeed": 0.0254
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -418,88 +234,20 @@
             },
             "ESlot_Signature_3": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 6,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "472.441",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange",
-                            "FunctionDisabled": true
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "100",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": 1.5,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "ActivationDistance": {
-                        "Value": "472.441"
-                    }
+                    "AbilityCooldown": 6,
+                    "AbilityDuration": 0,
+                    "AbilityCastRange": 12.0,
+                    "AbilityUnitTargetLimit": 100,
+                    "AbilityCastDelay": 1.5,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "ActivationDistance": 12.0
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -538,104 +286,25 @@
             },
             "ESlot_Signature_4": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 3,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "1000",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange"
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": 2.5,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "Damage": {
-                        "Value": "300"
-                    },
-                    "DamageHealthPercent": {
-                        "Value": "20"
-                    },
-                    "SlowPercent": {
-                        "Value": "30",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    },
-                    "WaveSpeed": {
-                        "Value": "16m"
-                    },
-                    "WaveStartRadius": {
-                        "Value": "4m"
-                    },
-                    "WaveFinalRadius": {
-                        "Value": "40m"
-                    }
+                    "AbilityCooldown": 3,
+                    "AbilityDuration": 0,
+                    "AbilityCastRange": 25.4,
+                    "AbilityUnitTargetLimit": 1,
+                    "AbilityCastDelay": 2.5,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "Damage": 300,
+                    "DamageHealthPercent": 20,
+                    "SlowPercent": 30,
+                    "WaveSpeed": "16m",
+                    "WaveStartRadius": "4m",
+                    "WaveFinalRadius": "40m"
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -821,140 +490,36 @@
         "BoundAbilities": {
             "ESlot_Signature_1": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 10,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "1400",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange",
-                            "FunctionDisabled": true
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "100",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "VolleyInterval": {
-                        "Value": "0.5"
-                    },
-                    "GrenadesInVolley": {
-                        "Value": "6"
-                    },
-                    "MaxSimultaneousVolley": {
-                        "Value": "1"
-                    },
-                    "InitialVolleyInaccuracy": {
-                        "Value": "100"
-                    },
-                    "PerVolleyInaccuracy": {
-                        "Value": "25"
-                    },
-                    "Damage": {
-                        "Value": "200"
-                    },
-                    "DetonateTimer": {
-                        "Value": "10"
-                    },
-                    "ExplosionFalloffDisabled": {
-                        "Value": "1"
-                    },
-                    "Radius": {
-                        "Value": "5m"
-                    },
-                    "FireDuration": {
-                        "Value": "5"
-                    },
-                    "FireDPS": {
-                        "Value": "25"
-                    },
-                    "FireDPSTrooperFactor": {
-                        "Value": "0.3"
-                    },
-                    "FireTickInterval": {
-                        "Value": "0.5"
-                    },
-                    "FireRadius": {
-                        "Value": "6m"
-                    },
-                    "FireEscalationPerSecond": {
-                        "Value": "0"
-                    },
-                    "BulletArmorReduction": {
-                        "Value": "-10",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST_REDUCTION",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    },
-                    "TechArmorReduction": {
-                        "Value": "-10",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_ARMOR_DAMAGE_RESIST_REDUCTION",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    }
+                    "AbilityCooldown": 10,
+                    "AbilityDuration": 0,
+                    "AbilityCastRange": 35.56,
+                    "AbilityUnitTargetLimit": 100,
+                    "AbilityCastDelay": 0,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "VolleyInterval": 0.5,
+                    "GrenadesInVolley": 6,
+                    "MaxSimultaneousVolley": 1,
+                    "InitialVolleyInaccuracy": 100,
+                    "PerVolleyInaccuracy": 25,
+                    "Damage": 200,
+                    "DetonateTimer": 10,
+                    "ExplosionFalloffDisabled": 1,
+                    "Radius": "5m",
+                    "FireDuration": 5,
+                    "FireDPS": 25,
+                    "FireDPSTrooperFactor": 0.3,
+                    "FireTickInterval": 0.5,
+                    "FireRadius": "6m",
+                    "FireEscalationPerSecond": 0,
+                    "BulletArmorReduction": -10,
+                    "TechArmorReduction": -10
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -1011,106 +576,26 @@
             },
             "ESlot_Signature_2": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 0,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": 6.0,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "1375",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange",
-                            "FunctionDisabled": true
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": 1.0,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "PathLength": {
-                        "Value": "1250"
-                    },
-                    "PathWidth": {
-                        "Value": "30"
-                    },
-                    "MaxHPDPS": {
-                        "Value": "2"
-                    },
-                    "DPS": {
-                        "Value": "125"
-                    },
-                    "CreepDPS": {
-                        "Value": "190"
-                    },
-                    "TrackingSpeed": {
-                        "Value": "30"
-                    },
-                    "SweepSpeed": {
-                        "Value": "1"
-                    }
+                    "AbilityCooldown": 0,
+                    "AbilityDuration": 6.0,
+                    "AbilityCastRange": 34.92,
+                    "AbilityUnitTargetLimit": 1,
+                    "AbilityCastDelay": 1.0,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "PathLength": 1250,
+                    "PathWidth": 0.762,
+                    "MaxHPDPS": 2,
+                    "DPS": 125,
+                    "CreepDPS": 190,
+                    "TrackingSpeed": 0.762,
+                    "SweepSpeed": 0.0254
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -1164,88 +649,20 @@
             },
             "ESlot_Signature_3": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 6,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "472.441",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange",
-                            "FunctionDisabled": true
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "100",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": 1.5,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "ActivationDistance": {
-                        "Value": "472.441"
-                    }
+                    "AbilityCooldown": 6,
+                    "AbilityDuration": 0,
+                    "AbilityCastRange": 12.0,
+                    "AbilityUnitTargetLimit": 100,
+                    "AbilityCastDelay": 1.5,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "ActivationDistance": 12.0
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -1284,104 +701,25 @@
             },
             "ESlot_Signature_4": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 3,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "1000",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange"
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": 2.5,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "Damage": {
-                        "Value": "300"
-                    },
-                    "DamageHealthPercent": {
-                        "Value": "20"
-                    },
-                    "SlowPercent": {
-                        "Value": "30",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    },
-                    "WaveSpeed": {
-                        "Value": "16m"
-                    },
-                    "WaveStartRadius": {
-                        "Value": "4m"
-                    },
-                    "WaveFinalRadius": {
-                        "Value": "40m"
-                    }
+                    "AbilityCooldown": 3,
+                    "AbilityDuration": 0,
+                    "AbilityCastRange": 25.4,
+                    "AbilityUnitTargetLimit": 1,
+                    "AbilityCastDelay": 2.5,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "Damage": 300,
+                    "DamageHealthPercent": 20,
+                    "SlowPercent": 30,
+                    "WaveSpeed": "16m",
+                    "WaveStartRadius": "4m",
+                    "WaveFinalRadius": "40m"
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -1566,84 +904,19 @@
         "BoundAbilities": {
             "ESlot_Weapon_Primary": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange"
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    }
+                    "AbilityCooldown": 0,
+                    "AbilityDuration": 0,
+                    "AbilityCastRange": 0,
+                    "AbilityUnitTargetLimit": 1,
+                    "AbilityCastDelay": 0,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 635.0,
@@ -1696,101 +969,23 @@
             },
             "ESlot_Signature_1": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "1200",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange",
-                            "FunctionDisabled": true
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "PathLength": {
-                        "Value": "2000"
-                    },
-                    "PathWidth": {
-                        "Value": "40"
-                    },
-                    "BulletArmorReduction": {
-                        "Value": "-10",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST_REDUCTION",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    },
-                    "TechArmorReduction": {
-                        "Value": "-10",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_ARMOR_DAMAGE_RESIST_REDUCTION",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    }
+                    "AbilityCooldown": 0,
+                    "AbilityDuration": 0,
+                    "AbilityCastRange": 30.48,
+                    "AbilityUnitTargetLimit": 1,
+                    "AbilityCastDelay": 0,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "PathLength": 2000,
+                    "PathWidth": 1.016,
+                    "BulletArmorReduction": -10,
+                    "TechArmorReduction": -10
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -1851,112 +1046,27 @@
             },
             "ESlot_Signature_2": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 1,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "1000",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange"
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": 3.5,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "Damage": {
-                        "Value": "300"
-                    },
-                    "DamageNonHero": {
-                        "Value": "500"
-                    },
-                    "DamageHealthPercent": {
-                        "Value": "20"
-                    },
-                    "SlowPercent": {
-                        "Value": "30",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    },
-                    "SkipFrames": {
-                        "Value": "6",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_ANIMATION_FRAME_SKIP_RATE",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    },
-                    "WaveSpeed": {
-                        "Value": "16m"
-                    },
-                    "WaveStartRadius": {
-                        "Value": "2m"
-                    },
-                    "WaveFinalRadius": {
-                        "Value": "12m"
-                    }
+                    "AbilityCooldown": 1,
+                    "AbilityDuration": 0,
+                    "AbilityCastRange": 25.4,
+                    "AbilityUnitTargetLimit": 1,
+                    "AbilityCastDelay": 3.5,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "Damage": 300,
+                    "DamageNonHero": 500,
+                    "DamageHealthPercent": 20,
+                    "SlowPercent": 30,
+                    "SkipFrames": 6,
+                    "WaveSpeed": "16m",
+                    "WaveStartRadius": "2m",
+                    "WaveFinalRadius": "12m"
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -2017,94 +1127,21 @@
             },
             "ESlot_Signature_3": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 4,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange"
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "SkipFrames": {
-                        "Value": "6",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_ANIMATION_FRAME_SKIP_RATE",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    },
-                    "SlowPercent": {
-                        "Value": "30",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    }
+                    "AbilityCooldown": 4,
+                    "AbilityDuration": 0,
+                    "AbilityCastRange": 0,
+                    "AbilityUnitTargetLimit": 1,
+                    "AbilityCastDelay": 0,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "SkipFrames": 6,
+                    "SlowPercent": 30
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -2169,137 +1206,35 @@
             },
             "ESlot_Signature_4": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 12,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "1400",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange",
-                            "FunctionDisabled": true
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "100",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "VolleyInterval": {
-                        "Value": "0.5"
-                    },
-                    "GrenadesInVolley": {
-                        "Value": "6"
-                    },
-                    "MaxSimultaneousVolley": {
-                        "Value": "1"
-                    },
-                    "InitialVolleyInaccuracy": {
-                        "Value": "100"
-                    },
-                    "PerVolleyInaccuracy": {
-                        "Value": "25"
-                    },
-                    "Damage": {
-                        "Value": "200"
-                    },
-                    "DetonateTimer": {
-                        "Value": "10"
-                    },
-                    "ExplosionFalloffDisabled": {
-                        "Value": "1"
-                    },
-                    "Radius": {
-                        "Value": "6m"
-                    },
-                    "FireDuration": {
-                        "Value": "5"
-                    },
-                    "FireDPS": {
-                        "Value": "25"
-                    },
-                    "FireTickInterval": {
-                        "Value": "0.5"
-                    },
-                    "FireRadius": {
-                        "Value": "6m"
-                    },
-                    "FireEscalationPerSecond": {
-                        "Value": "0"
-                    },
-                    "BulletArmorReduction": {
-                        "Value": "-10",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST_REDUCTION",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    },
-                    "TechArmorReduction": {
-                        "Value": "-10",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_ARMOR_DAMAGE_RESIST_REDUCTION",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    }
+                    "AbilityCooldown": 12,
+                    "AbilityDuration": 0,
+                    "AbilityCastRange": 35.56,
+                    "AbilityUnitTargetLimit": 100,
+                    "AbilityCastDelay": 0,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "VolleyInterval": 0.5,
+                    "GrenadesInVolley": 6,
+                    "MaxSimultaneousVolley": 1,
+                    "InitialVolleyInaccuracy": 100,
+                    "PerVolleyInaccuracy": 25,
+                    "Damage": 200,
+                    "DetonateTimer": 10,
+                    "ExplosionFalloffDisabled": 1,
+                    "Radius": "6m",
+                    "FireDuration": 5,
+                    "FireDPS": 25,
+                    "FireTickInterval": 0.5,
+                    "FireRadius": "6m",
+                    "FireEscalationPerSecond": 0,
+                    "BulletArmorReduction": -10,
+                    "TechArmorReduction": -10
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -3264,140 +2199,36 @@
         "BoundAbilities": {
             "ESlot_Signature_1": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 10,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "1400",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange",
-                            "FunctionDisabled": true
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "100",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "VolleyInterval": {
-                        "Value": "0.5"
-                    },
-                    "GrenadesInVolley": {
-                        "Value": "6"
-                    },
-                    "MaxSimultaneousVolley": {
-                        "Value": "1"
-                    },
-                    "InitialVolleyInaccuracy": {
-                        "Value": "100"
-                    },
-                    "PerVolleyInaccuracy": {
-                        "Value": "25"
-                    },
-                    "Damage": {
-                        "Value": "200"
-                    },
-                    "DetonateTimer": {
-                        "Value": "10"
-                    },
-                    "ExplosionFalloffDisabled": {
-                        "Value": "1"
-                    },
-                    "Radius": {
-                        "Value": "5m"
-                    },
-                    "FireDuration": {
-                        "Value": "5"
-                    },
-                    "FireDPS": {
-                        "Value": "25"
-                    },
-                    "FireDPSTrooperFactor": {
-                        "Value": "0.3"
-                    },
-                    "FireTickInterval": {
-                        "Value": "0.5"
-                    },
-                    "FireRadius": {
-                        "Value": "6m"
-                    },
-                    "FireEscalationPerSecond": {
-                        "Value": "0"
-                    },
-                    "BulletArmorReduction": {
-                        "Value": "-10",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST_REDUCTION",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    },
-                    "TechArmorReduction": {
-                        "Value": "-10",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_ARMOR_DAMAGE_RESIST_REDUCTION",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    }
+                    "AbilityCooldown": 10,
+                    "AbilityDuration": 0,
+                    "AbilityCastRange": 35.56,
+                    "AbilityUnitTargetLimit": 100,
+                    "AbilityCastDelay": 0,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "VolleyInterval": 0.5,
+                    "GrenadesInVolley": 6,
+                    "MaxSimultaneousVolley": 1,
+                    "InitialVolleyInaccuracy": 100,
+                    "PerVolleyInaccuracy": 25,
+                    "Damage": 200,
+                    "DetonateTimer": 10,
+                    "ExplosionFalloffDisabled": 1,
+                    "Radius": "5m",
+                    "FireDuration": 5,
+                    "FireDPS": 25,
+                    "FireDPSTrooperFactor": 0.3,
+                    "FireTickInterval": 0.5,
+                    "FireRadius": "6m",
+                    "FireEscalationPerSecond": 0,
+                    "BulletArmorReduction": -10,
+                    "TechArmorReduction": -10
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -3454,106 +2285,26 @@
             },
             "ESlot_Signature_2": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 0,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": 6.0,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "1375",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange",
-                            "FunctionDisabled": true
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": 1.0,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "PathLength": {
-                        "Value": "1250"
-                    },
-                    "PathWidth": {
-                        "Value": "30"
-                    },
-                    "MaxHPDPS": {
-                        "Value": "2"
-                    },
-                    "DPS": {
-                        "Value": "125"
-                    },
-                    "CreepDPS": {
-                        "Value": "190"
-                    },
-                    "TrackingSpeed": {
-                        "Value": "30"
-                    },
-                    "SweepSpeed": {
-                        "Value": "1"
-                    }
+                    "AbilityCooldown": 0,
+                    "AbilityDuration": 6.0,
+                    "AbilityCastRange": 34.92,
+                    "AbilityUnitTargetLimit": 1,
+                    "AbilityCastDelay": 1.0,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "PathLength": 1250,
+                    "PathWidth": 0.762,
+                    "MaxHPDPS": 2,
+                    "DPS": 125,
+                    "CreepDPS": 190,
+                    "TrackingSpeed": 0.762,
+                    "SweepSpeed": 0.0254
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -3607,88 +2358,20 @@
             },
             "ESlot_Signature_3": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 6,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "472.441",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange",
-                            "FunctionDisabled": true
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "100",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": 1.5,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "ActivationDistance": {
-                        "Value": "472.441"
-                    }
+                    "AbilityCooldown": 6,
+                    "AbilityDuration": 0,
+                    "AbilityCastRange": 12.0,
+                    "AbilityUnitTargetLimit": 100,
+                    "AbilityCastDelay": 1.5,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "ActivationDistance": 12.0
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -3727,104 +2410,25 @@
             },
             "ESlot_Signature_4": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 3,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "1000",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange"
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": 2.5,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "Damage": {
-                        "Value": "300"
-                    },
-                    "DamageHealthPercent": {
-                        "Value": "20"
-                    },
-                    "SlowPercent": {
-                        "Value": "30",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    },
-                    "WaveSpeed": {
-                        "Value": "16m"
-                    },
-                    "WaveStartRadius": {
-                        "Value": "4m"
-                    },
-                    "WaveFinalRadius": {
-                        "Value": "40m"
-                    }
+                    "AbilityCooldown": 3,
+                    "AbilityDuration": 0,
+                    "AbilityCastRange": 25.4,
+                    "AbilityUnitTargetLimit": 1,
+                    "AbilityCastDelay": 2.5,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "Damage": 300,
+                    "DamageHealthPercent": 20,
+                    "SlowPercent": 30,
+                    "WaveSpeed": "16m",
+                    "WaveStartRadius": "4m",
+                    "WaveFinalRadius": "40m"
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -4010,140 +2614,36 @@
         "BoundAbilities": {
             "ESlot_Signature_1": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 10,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "1400",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange",
-                            "FunctionDisabled": true
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "100",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "VolleyInterval": {
-                        "Value": "0.5"
-                    },
-                    "GrenadesInVolley": {
-                        "Value": "6"
-                    },
-                    "MaxSimultaneousVolley": {
-                        "Value": "1"
-                    },
-                    "InitialVolleyInaccuracy": {
-                        "Value": "100"
-                    },
-                    "PerVolleyInaccuracy": {
-                        "Value": "25"
-                    },
-                    "Damage": {
-                        "Value": "200"
-                    },
-                    "DetonateTimer": {
-                        "Value": "10"
-                    },
-                    "ExplosionFalloffDisabled": {
-                        "Value": "1"
-                    },
-                    "Radius": {
-                        "Value": "5m"
-                    },
-                    "FireDuration": {
-                        "Value": "5"
-                    },
-                    "FireDPS": {
-                        "Value": "25"
-                    },
-                    "FireDPSTrooperFactor": {
-                        "Value": "0.3"
-                    },
-                    "FireTickInterval": {
-                        "Value": "0.5"
-                    },
-                    "FireRadius": {
-                        "Value": "6m"
-                    },
-                    "FireEscalationPerSecond": {
-                        "Value": "0"
-                    },
-                    "BulletArmorReduction": {
-                        "Value": "-10",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST_REDUCTION",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    },
-                    "TechArmorReduction": {
-                        "Value": "-10",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_ARMOR_DAMAGE_RESIST_REDUCTION",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    }
+                    "AbilityCooldown": 10,
+                    "AbilityDuration": 0,
+                    "AbilityCastRange": 35.56,
+                    "AbilityUnitTargetLimit": 100,
+                    "AbilityCastDelay": 0,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "VolleyInterval": 0.5,
+                    "GrenadesInVolley": 6,
+                    "MaxSimultaneousVolley": 1,
+                    "InitialVolleyInaccuracy": 100,
+                    "PerVolleyInaccuracy": 25,
+                    "Damage": 200,
+                    "DetonateTimer": 10,
+                    "ExplosionFalloffDisabled": 1,
+                    "Radius": "5m",
+                    "FireDuration": 5,
+                    "FireDPS": 25,
+                    "FireDPSTrooperFactor": 0.3,
+                    "FireTickInterval": 0.5,
+                    "FireRadius": "6m",
+                    "FireEscalationPerSecond": 0,
+                    "BulletArmorReduction": -10,
+                    "TechArmorReduction": -10
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -4200,106 +2700,26 @@
             },
             "ESlot_Signature_2": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 0,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": 6.0,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "1375",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange",
-                            "FunctionDisabled": true
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": 1.0,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "PathLength": {
-                        "Value": "1250"
-                    },
-                    "PathWidth": {
-                        "Value": "30"
-                    },
-                    "MaxHPDPS": {
-                        "Value": "2"
-                    },
-                    "DPS": {
-                        "Value": "125"
-                    },
-                    "CreepDPS": {
-                        "Value": "190"
-                    },
-                    "TrackingSpeed": {
-                        "Value": "30"
-                    },
-                    "SweepSpeed": {
-                        "Value": "1"
-                    }
+                    "AbilityCooldown": 0,
+                    "AbilityDuration": 6.0,
+                    "AbilityCastRange": 34.92,
+                    "AbilityUnitTargetLimit": 1,
+                    "AbilityCastDelay": 1.0,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "PathLength": 1250,
+                    "PathWidth": 0.762,
+                    "MaxHPDPS": 2,
+                    "DPS": 125,
+                    "CreepDPS": 190,
+                    "TrackingSpeed": 0.762,
+                    "SweepSpeed": 0.0254
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -4353,88 +2773,20 @@
             },
             "ESlot_Signature_3": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 6,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "472.441",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange",
-                            "FunctionDisabled": true
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "100",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": 1.5,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "ActivationDistance": {
-                        "Value": "472.441"
-                    }
+                    "AbilityCooldown": 6,
+                    "AbilityDuration": 0,
+                    "AbilityCastRange": 12.0,
+                    "AbilityUnitTargetLimit": 100,
+                    "AbilityCastDelay": 1.5,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "ActivationDistance": 12.0
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -4473,104 +2825,25 @@
             },
             "ESlot_Signature_4": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 3,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "1000",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange"
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": 2.5,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "Damage": {
-                        "Value": "300"
-                    },
-                    "DamageHealthPercent": {
-                        "Value": "20"
-                    },
-                    "SlowPercent": {
-                        "Value": "30",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    },
-                    "WaveSpeed": {
-                        "Value": "16m"
-                    },
-                    "WaveStartRadius": {
-                        "Value": "4m"
-                    },
-                    "WaveFinalRadius": {
-                        "Value": "40m"
-                    }
+                    "AbilityCooldown": 3,
+                    "AbilityDuration": 0,
+                    "AbilityCastRange": 25.4,
+                    "AbilityUnitTargetLimit": 1,
+                    "AbilityCastDelay": 2.5,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "Damage": 300,
+                    "DamageHealthPercent": 20,
+                    "SlowPercent": 30,
+                    "WaveSpeed": "16m",
+                    "WaveStartRadius": "4m",
+                    "WaveFinalRadius": "40m"
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -4755,84 +3028,19 @@
         "BoundAbilities": {
             "ESlot_Weapon_Primary": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange"
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    }
+                    "AbilityCooldown": 0,
+                    "AbilityDuration": 0,
+                    "AbilityCastRange": 0,
+                    "AbilityUnitTargetLimit": 1,
+                    "AbilityCastDelay": 0,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 635.0,
@@ -4885,101 +3093,23 @@
             },
             "ESlot_Signature_1": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "1200",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange",
-                            "FunctionDisabled": true
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "PathLength": {
-                        "Value": "2000"
-                    },
-                    "PathWidth": {
-                        "Value": "40"
-                    },
-                    "BulletArmorReduction": {
-                        "Value": "-10",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST_REDUCTION",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    },
-                    "TechArmorReduction": {
-                        "Value": "-10",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_ARMOR_DAMAGE_RESIST_REDUCTION",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    }
+                    "AbilityCooldown": 0,
+                    "AbilityDuration": 0,
+                    "AbilityCastRange": 30.48,
+                    "AbilityUnitTargetLimit": 1,
+                    "AbilityCastDelay": 0,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "PathLength": 2000,
+                    "PathWidth": 1.016,
+                    "BulletArmorReduction": -10,
+                    "TechArmorReduction": -10
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -5040,112 +3170,27 @@
             },
             "ESlot_Signature_2": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 1,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "1000",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange"
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": 3.5,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "Damage": {
-                        "Value": "300"
-                    },
-                    "DamageNonHero": {
-                        "Value": "500"
-                    },
-                    "DamageHealthPercent": {
-                        "Value": "20"
-                    },
-                    "SlowPercent": {
-                        "Value": "30",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    },
-                    "SkipFrames": {
-                        "Value": "6",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_ANIMATION_FRAME_SKIP_RATE",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    },
-                    "WaveSpeed": {
-                        "Value": "16m"
-                    },
-                    "WaveStartRadius": {
-                        "Value": "2m"
-                    },
-                    "WaveFinalRadius": {
-                        "Value": "12m"
-                    }
+                    "AbilityCooldown": 1,
+                    "AbilityDuration": 0,
+                    "AbilityCastRange": 25.4,
+                    "AbilityUnitTargetLimit": 1,
+                    "AbilityCastDelay": 3.5,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "Damage": 300,
+                    "DamageNonHero": 500,
+                    "DamageHealthPercent": 20,
+                    "SlowPercent": 30,
+                    "SkipFrames": 6,
+                    "WaveSpeed": "16m",
+                    "WaveStartRadius": "2m",
+                    "WaveFinalRadius": "12m"
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -5206,94 +3251,21 @@
             },
             "ESlot_Signature_3": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 4,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange"
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "SkipFrames": {
-                        "Value": "6",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_ANIMATION_FRAME_SKIP_RATE",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    },
-                    "SlowPercent": {
-                        "Value": "30",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_MOVEMENT_SPEED_SLOW_PERCENT",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    }
+                    "AbilityCooldown": 4,
+                    "AbilityDuration": 0,
+                    "AbilityCastRange": 0,
+                    "AbilityUnitTargetLimit": 1,
+                    "AbilityCastDelay": 0,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "SkipFrames": 6,
+                    "SlowPercent": 30
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -5358,137 +3330,35 @@
             },
             "ESlot_Signature_4": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 12,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "1400",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange",
-                            "FunctionDisabled": true
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "100",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "VolleyInterval": {
-                        "Value": "0.5"
-                    },
-                    "GrenadesInVolley": {
-                        "Value": "6"
-                    },
-                    "MaxSimultaneousVolley": {
-                        "Value": "1"
-                    },
-                    "InitialVolleyInaccuracy": {
-                        "Value": "100"
-                    },
-                    "PerVolleyInaccuracy": {
-                        "Value": "25"
-                    },
-                    "Damage": {
-                        "Value": "200"
-                    },
-                    "DetonateTimer": {
-                        "Value": "10"
-                    },
-                    "ExplosionFalloffDisabled": {
-                        "Value": "1"
-                    },
-                    "Radius": {
-                        "Value": "6m"
-                    },
-                    "FireDuration": {
-                        "Value": "5"
-                    },
-                    "FireDPS": {
-                        "Value": "25"
-                    },
-                    "FireTickInterval": {
-                        "Value": "0.5"
-                    },
-                    "FireRadius": {
-                        "Value": "6m"
-                    },
-                    "FireEscalationPerSecond": {
-                        "Value": "0"
-                    },
-                    "BulletArmorReduction": {
-                        "Value": "-10",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST_REDUCTION",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    },
-                    "TechArmorReduction": {
-                        "Value": "-10",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_ARMOR_DAMAGE_RESIST_REDUCTION",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    }
+                    "AbilityCooldown": 12,
+                    "AbilityDuration": 0,
+                    "AbilityCastRange": 35.56,
+                    "AbilityUnitTargetLimit": 100,
+                    "AbilityCastDelay": 0,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "VolleyInterval": 0.5,
+                    "GrenadesInVolley": 6,
+                    "MaxSimultaneousVolley": 1,
+                    "InitialVolleyInaccuracy": 100,
+                    "PerVolleyInaccuracy": 25,
+                    "Damage": 200,
+                    "DetonateTimer": 10,
+                    "ExplosionFalloffDisabled": 1,
+                    "Radius": "6m",
+                    "FireDuration": 5,
+                    "FireDPS": 25,
+                    "FireTickInterval": 0.5,
+                    "FireRadius": "6m",
+                    "FireEscalationPerSecond": 0,
+                    "BulletArmorReduction": -10,
+                    "TechArmorReduction": -10
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -5983,90 +3853,21 @@
         "BoundAbilities": {
             "ESlot_Signature_1": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 1,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "-1",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange"
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "ShieldHealth": {
-                        "Value": "10000"
-                    },
-                    "ShieldScale": {
-                        "Value": "2.5"
-                    }
+                    "AbilityCooldown": 1,
+                    "AbilityDuration": -1,
+                    "AbilityCastRange": 0,
+                    "AbilityUnitTargetLimit": 1,
+                    "AbilityCastDelay": 0,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "ShieldHealth": 10000,
+                    "ShieldScale": 2.5
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -6102,116 +3903,27 @@
             },
             "ESlot_Signature_2": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 10,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange"
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "PrepareTime": {
-                        "Value": "0.8"
-                    },
-                    "TackleDurationMin": {
-                        "Value": "0.5"
-                    },
-                    "TackleDurationMax": {
-                        "Value": "1.0"
-                    },
-                    "TackleSpeed": {
-                        "Value": "1000"
-                    },
-                    "TackleRadius": {
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange"
-                        }
-                    },
-                    "Damage": {
-                        "Value": "120",
-                        "ScaleFunction": {
-                            "StatScale": 0.609336
-                        }
-                    },
-                    "StunDuration": {
-                        "Value": "0.5",
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "CameraDistance": {
-                        "Value": "120"
-                    }
+                    "AbilityCooldown": 10,
+                    "AbilityDuration": 0,
+                    "AbilityCastRange": 0,
+                    "AbilityUnitTargetLimit": 1,
+                    "AbilityCastDelay": 0,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "PrepareTime": 0.8,
+                    "TackleDurationMin": 0.5,
+                    "TackleDurationMax": 1.0,
+                    "TackleSpeed": 25.4,
+                    "TackleRadius": "2.5m",
+                    "Damage": 120,
+                    "StunDuration": 0.5,
+                    "CameraDistance": 3.048
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -6306,115 +4018,27 @@
         "BoundAbilities": {
             "ESlot_Signature_1": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": "5",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "10",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange"
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "HeroAndSelfHPS": {
-                        "Value": "5"
-                    },
-                    "HeroAndSelfHPSGrowthPerMinute": {
-                        "Value": "0.4"
-                    },
-                    "NPCHPS": {
-                        "Value": "2"
-                    },
-                    "NPCHPSGrowthPerMinute": {
-                        "Value": "0.2"
-                    },
-                    "AuraRadius": {
-                        "Value": "50m",
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange"
-                        }
-                    },
-                    "TotalHealthRegen": {
-                        "Value": "0"
-                    },
-                    "BonusFireRate": {
-                        "Value": "15",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_FIRE_RATE",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    },
-                    "BonusSpirit": {
-                        "Value": "20",
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER",
-                        "StatsUsageFlags": "ConditionallyApplied"
-                    }
+                    "AbilityCooldown": 5,
+                    "AbilityDuration": 10,
+                    "AbilityCastRange": 0,
+                    "AbilityUnitTargetLimit": 1,
+                    "AbilityCastDelay": 0,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "HeroAndSelfHPS": 5,
+                    "HeroAndSelfHPSGrowthPerMinute": 0.4,
+                    "NPCHPS": 2,
+                    "NPCHPSGrowthPerMinute": 0.2,
+                    "AuraRadius": "50m",
+                    "TotalHealthRegen": 0,
+                    "BonusFireRate": 15,
+                    "BonusSpirit": 20
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -6463,90 +4087,21 @@
             },
             "ESlot_Signature_2": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 1,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "-1",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange"
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "ShieldHealth": {
-                        "Value": "10000"
-                    },
-                    "ShieldScale": {
-                        "Value": "2.5"
-                    }
+                    "AbilityCooldown": 1,
+                    "AbilityDuration": -1,
+                    "AbilityCastRange": 0,
+                    "AbilityUnitTargetLimit": 1,
+                    "AbilityCastDelay": 0,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "ShieldHealth": 10000,
+                    "ShieldScale": 2.5
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -6704,99 +4259,24 @@
         "BoundAbilities": {
             "ESlot_Signature_2": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 6,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "15m",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange"
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ]
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "1",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "6",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "Heal_Troopers": {
-                        "Value": "80"
-                    },
-                    "Heal_Players": {
-                        "Value": "40"
-                    },
-                    "Heal_Players_Post_Lane": {
-                        "Value": "80"
-                    },
-                    "HeroNearbyRange": {
-                        "Value": "30m"
-                    },
-                    "SecondaryHealHeroRange": {
-                        "Value": "25m"
-                    }
+                    "AbilityCooldown": 6,
+                    "AbilityDuration": 0,
+                    "AbilityCastRange": "15m",
+                    "AbilityUnitTargetLimit": 1,
+                    "AbilityCastDelay": 0,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 1,
+                    "AbilityCooldownBetweenCharge": 6,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "Heal_Troopers": 80,
+                    "Heal_Players": 40,
+                    "Heal_Players_Post_Lane": 80,
+                    "HeroNearbyRange": "30m",
+                    "SecondaryHealHeroRange": "25m"
                 },
                 "WeaponInfo": {
                     "BulletSpeed": 254.0,
@@ -7156,145 +4636,38 @@
         "BoundAbilities": {
             "ESlot_Ability_ZipLine": {
                 "AbilityProperties": {
-                    "AbilityCooldown": {
-                        "Value": 1,
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "AbilityDuration": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechDuration"
-                        }
-                    },
-                    "AbilityCastRange": {
-                        "Value": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechRange"
-                        }
-                    },
-                    "AbilityUnitTargetLimit": {
-                        "Value": "1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCastDelay": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityChannelTime": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ScaleFunction": {
-                            "ScalingStats": [
-                                "EChannelDuration",
-                                "ETechDuration"
-                            ],
-                            "FunctionDisabled": true
-                        }
-                    },
-                    "AbilityPostCastDuration": {
-                        "Value": "0",
-                        "DisableValue": "0"
-                    },
-                    "AbilityCharges": {
-                        "Value": "0",
-                        "DisableValue": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityCooldownBetweenCharge": {
-                        "Value": "-1.0",
-                        "DisableValue": "-2",
-                        "CanSetTokenOverride": true
-                    },
-                    "ChannelMoveSpeed": {
-                        "Value": "-1",
-                        "CanSetTokenOverride": true
-                    },
-                    "AbilityResourceCost": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true
-                    },
-                    "TechPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_TECH_POWER"
-                    },
-                    "WeaponPower": {
-                        "Value": "0",
-                        "DisableValue": "0",
-                        "CanSetTokenOverride": true,
-                        "ProvidedPropertyType": "MODIFIER_VALUE_WEAPON_POWER"
-                    },
-                    "MaxMountDistance2D": {
-                        "Value": "1200"
-                    },
-                    "StunDuration": {
-                        "Value": "2.5"
-                    },
-                    "SlowDuration": {
-                        "Value": "8"
-                    },
-                    "KnockedOffDamagePct": {
-                        "Value": "15"
-                    },
-                    "DismountHorizontalMinSpeedPercent": {
-                        "Value": "40"
-                    },
-                    "DismountHorizontalMaxSpeedPercent": {
-                        "Value": "85"
-                    },
-                    "RegenZoneDismountHorizontalMaxSpeed": {
-                        "Value": "300"
-                    },
-                    "PlayerSpeedCheckScale": {
-                        "Value": "0.55"
-                    },
-                    "DismountVerticalSpeed": {
-                        "Value": "300"
-                    },
-                    "DamageCooldown": {
-                        "Value": 3,
-                        "ScaleFunction": {
-                            "SpecificStatScaleType": "ETechCooldown"
-                        }
-                    },
-                    "ZipSpeedInner": {
-                        "Value": "700"
-                    },
-                    "ZipSpeedOuter": {
-                        "Value": "830"
-                    },
-                    "ZipAcc": {
-                        "Value": "1000"
-                    },
-                    "LatchSpeed": {
-                        "Value": "1500"
-                    },
-                    "LatchInitialSpeed": {
-                        "Value": "600"
-                    },
-                    "LatchEndSpeed": {
-                        "Value": "750"
-                    },
-                    "LatchMaxTime": {
-                        "Value": "0.5"
-                    },
-                    "LatchVisualSnapProgress": {
-                        "Value": "0.85"
-                    },
-                    "ZiplineProtectionSlowDurationOnHit": {
-                        "Value": "2.0"
-                    },
+                    "AbilityCooldown": 1,
+                    "AbilityDuration": 0,
+                    "AbilityCastRange": 0,
+                    "AbilityUnitTargetLimit": 1,
+                    "AbilityCastDelay": 0,
+                    "AbilityChannelTime": 0,
+                    "AbilityPostCastDuration": 0,
+                    "AbilityCharges": 0,
+                    "AbilityCooldownBetweenCharge": -1.0,
+                    "ChannelMoveSpeed": -0.0254,
+                    "AbilityResourceCost": 0,
+                    "TechPower": 0,
+                    "WeaponPower": 0,
+                    "MaxMountDistance2D": 30.48,
+                    "StunDuration": 2.5,
+                    "SlowDuration": 8,
+                    "KnockedOffDamagePct": 15,
+                    "DismountHorizontalMinSpeedPercent": 40,
+                    "DismountHorizontalMaxSpeedPercent": 85,
+                    "RegenZoneDismountHorizontalMaxSpeed": 7.62,
+                    "PlayerSpeedCheckScale": 0.55,
+                    "DismountVerticalSpeed": 7.62,
+                    "DamageCooldown": 3,
+                    "ZipSpeedInner": 17.78,
+                    "ZipSpeedOuter": 21.08,
+                    "ZipAcc": 1000,
+                    "LatchSpeed": 38.1,
+                    "LatchInitialSpeed": 15.24,
+                    "LatchEndSpeed": 19.05,
+                    "LatchMaxTime": 0.5,
+                    "LatchVisualSnapProgress": 0.85,
+                    "ZiplineProtectionSlowDurationOnHit": 2.0,
                     "ZiplineProtectionDamageAmp": {
                         "VAlue": "35"
                     }
