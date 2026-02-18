@@ -16020,7 +16020,7 @@
                     {
                         "Key": "WallStunDistance",
                         "Name": "Wall Stun Range",
-                        "Value": 6.5,
+                        "Value": 7,
                         "Type": "distance"
                     }
                 ],
@@ -20846,17 +20846,17 @@
                         },
                         {
                             "Title": "On Pommel Hit:",
-                            "Key": "BulletResistReduction",
-                            "Name": "Bullet Resist",
-                            "Value": -15,
+                            "Key": "MeleeResistReduction",
+                            "Name": "Melee Resist",
+                            "Value": -22,
                             "Type": "bullet_armor_down"
                         }
                     ]
                 },
                 "Alt": [
                     {
-                        "Key": "BulletResistReductionDuration",
-                        "Name": "Bullet Resist Reduction Duration",
+                        "Key": "MeleeResistReductionDuration",
+                        "Name": "Melee Resist Reduction Duration",
                         "Value": 3.0,
                         "Type": "duration"
                     }
@@ -20867,7 +20867,7 @@
                     "AbilityCooldown": -7
                 },
                 {
-                    "BulletResistReduction": -15
+                    "MeleeResistReduction": -22
                 },
                 {
                     "StunDuration": 1.2
@@ -20991,9 +20991,9 @@
                         {
                             "Key": "BaseDamage",
                             "Name": "Base Damage",
-                            "Value": 30,
+                            "Value": 25,
                             "Scale": {
-                                "Value": 0.7,
+                                "Value": 0.55,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -21001,9 +21001,9 @@
                         {
                             "Key": "MaxDamageBeforePerfect",
                             "Name": "Max Hold Damage",
-                            "Value": 45,
+                            "Value": 40,
                             "Scale": {
-                                "Value": 1.1,
+                                "Value": 0.9,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -21015,6 +21015,11 @@
                         "Key": "MaxStabs",
                         "Name": "Max Lunges",
                         "Value": 3
+                    },
+                    {
+                        "Key": "BulletResist",
+                        "Name": "Bullet Resist",
+                        "Value": 0
                     }
                 ],
                 "DescKey": "ability_fencer_lunge_desc"
@@ -21026,9 +21031,9 @@
                             "Title": "On Perfect Hold:",
                             "Key": "PerfectDamage",
                             "Name": "Perfect Damage",
-                            "Value": 75,
+                            "Value": 65,
                             "Scale": {
-                                "Value": 1.65,
+                                "Value": 1.55,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -21051,7 +21056,7 @@
             "Upgrades": [
                 {
                     "HealFixedHealth": {
-                        "Value": 35,
+                        "Value": 30,
                         "Scale": {
                             "Value": 0.75,
                             "Type": "spirit"
@@ -21062,6 +21067,8 @@
                 {
                     "AbilityCooldown": -10,
                     "DashSpeed": 13.97,
+                    "BulletResist": 60,
+                    "DashBuffDuration": 1.5,
                     "DescKey": "ability_fencer_lunge_t2_desc"
                 },
                 {
@@ -21080,7 +21087,7 @@
                         }
                     },
                     "PerfectDamage": {
-                        "Value": 75,
+                        "Value": 65,
                         "Scale": {
                             "Value": 1.15,
                             "Type": "spirit"
@@ -21108,7 +21115,7 @@
                 },
                 "SlashRadius": {
                     "Name": "Slash Radius",
-                    "Value": 1.75,
+                    "Value": 1.6,
                     "Type": "distance"
                 }
             },
@@ -21145,7 +21152,7 @@
                 },
                 "DashRadius": {
                     "Name": "Radius",
-                    "Value": 2.0
+                    "Value": 1.85
                 },
                 "DashSpeed": {
                     "Name": "Dash Speed",
@@ -21185,7 +21192,7 @@
                 },
                 "SlashCollisionRadius": {
                     "Name": null,
-                    "Value": 5
+                    "Value": 4.5
                 }
             },
             "AbilityCastDelay": {
@@ -21219,9 +21226,9 @@
                         {
                             "Key": "DelayedDamage",
                             "Name": "Delayed Damage",
-                            "Value": 250,
+                            "Value": 225,
                             "Scale": {
-                                "Value": 1.75,
+                                "Value": 1.6,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -21340,14 +21347,6 @@
                 "GapDistanceToWall": {
                     "Name": null,
                     "Value": 180
-                },
-                "HealAmpReceivePenaltyPercent": {
-                    "Name": "Healing Reduction",
-                    "Value": 100
-                },
-                "HealAmpRegenPenaltyPercent": {
-                    "Name": "Healing Reduction",
-                    "Value": 100
                 },
                 "MoveSpeedPenaltyMaxSpeed": {
                     "Name": null,
@@ -22786,11 +22785,11 @@
             },
             "Upgrades": [
                 {
-                    "AbilityCooldown": -10
+                    "AbilityLifestealPercentHero": 15
                 },
                 {
                     "AbilityCastRange": 3,
-                    "AbilityLifestealPercentHero": 15,
+                    "AbilityCooldown": -10,
                     "DescKey": "ability_unicorn_radiantblast_t2_desc"
                 },
                 {
@@ -22814,7 +22813,7 @@
             "Other": {
                 "AbilityUnitTargetLimit": {
                     "Name": null,
-                    "Value": 1
+                    "Value": 100
                 },
                 "ExtraSweepRadius": {
                     "Name": null,
@@ -22976,7 +22975,7 @@
                         {
                             "Key": "ImpactDamage",
                             "Name": "Impact Damage",
-                            "Value": 60,
+                            "Value": 55,
                             "Scale": {
                                 "Value": 0.42,
                                 "Type": "spirit"
@@ -23029,7 +23028,7 @@
                 },
                 {
                     "ImpactDamage": 60,
-                    "AbilityCooldown": -12,
+                    "AbilityCooldown": -15,
                     "DescKey": "ability_unicorn_luminousstrike_t2_desc"
                 },
                 {
@@ -23087,7 +23086,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 30,
+                "Value": 33,
                 "Type": "cooldown"
             },
             "AbilityCooldownBetweenCharge": {
