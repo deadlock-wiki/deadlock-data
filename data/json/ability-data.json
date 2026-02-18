@@ -1522,15 +1522,15 @@
         "AttackDashRange": 3.0,
         "AttackingDashSpeed": 55.88,
         "BaseDamage": {
-            "Value": 30,
+            "Value": 25,
             "Scale": {
-                "Value": 0.7,
+                "Value": 0.55,
                 "Type": "spirit"
             }
         },
         "ChannelMoveSpeed": -1,
         "DashAngleThreshold": 89,
-        "DashRadius": 2.0,
+        "DashRadius": 1.85,
         "DashRange": 5.0,
         "DashSpeed": 27.94,
         "HealFixedHealth": {
@@ -1545,9 +1545,9 @@
         "IsDisabled": false,
         "Key": "ability_fencer_lunge",
         "MaxDamageBeforePerfect": {
-            "Value": 45,
+            "Value": 40,
             "Scale": {
-                "Value": 1.1,
+                "Value": 0.9,
                 "Type": "spirit"
             }
         },
@@ -1558,22 +1558,22 @@
         "ParryCooldownReduction": 5,
         "PctTravelDistanceToDamageIn": 80,
         "PerfectDamage": {
-            "Value": 75,
+            "Value": 65,
             "Scale": {
-                "Value": 1.65,
+                "Value": 1.55,
                 "Type": "spirit"
             }
         },
         "PerfectHoldTimeStart": 0.525,
         "PerfectWindowDuration": 0.25,
         "RecastTime": 5,
-        "SlashCollisionRadius": 5,
+        "SlashCollisionRadius": 4.5,
         "SlashLength": 13,
-        "SlashRadius": 1.75,
+        "SlashRadius": 1.6,
         "Upgrades": [
             {
                 "HealFixedHealth": {
-                    "Value": 35,
+                    "Value": 30,
                     "Scale": {
                         "Value": 0.75,
                         "Type": "spirit"
@@ -1602,7 +1602,7 @@
                     }
                 },
                 "PerfectDamage": {
-                    "Value": 75,
+                    "Value": 65,
                     "Scale": {
                         "Value": 1.15,
                         "Type": "spirit"
@@ -1618,8 +1618,6 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityLifestealPercentHero": 50,
         "AbilityUnitTargetLimit": 1,
-        "BulletResistReduction": -15,
-        "BulletResistReductionDuration": 3.0,
         "ChannelMoveSpeed": -1,
         "CounterattackAntiMashDelay": 0.2,
         "DamageThreshold": {
@@ -1636,6 +1634,8 @@
         "IsDisabled": false,
         "Key": "ability_fencer_riposte",
         "LiftHeight": 240,
+        "MeleeResistReduction": -22,
+        "MeleeResistReductionDuration": 3.0,
         "MoveSpeedMax": 4,
         "Name": "Riposte",
         "ParryWindow": 0.3,
@@ -1652,7 +1652,7 @@
                 "AbilityCooldown": -7
             },
             {
-                "BulletResistReduction": -15
+                "MeleeResistReduction": -22
             },
             {
                 "StunDuration": 1.2
@@ -1716,9 +1716,9 @@
         "DashSpeed": 254.0,
         "DebuffDuration": 1.8,
         "DelayedDamage": {
-            "Value": 250,
+            "Value": 225,
             "Scale": {
-                "Value": 1.75,
+                "Value": 1.6,
                 "Type": "spirit"
             }
         },
@@ -5989,7 +5989,7 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 12,
         "AbilityLifestealPercentHero": 20,
-        "AbilityUnitTargetLimit": 1,
+        "AbilityUnitTargetLimit": 100,
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 25,
