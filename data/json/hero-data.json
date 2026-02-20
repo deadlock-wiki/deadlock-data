@@ -204,7 +204,7 @@
         "InDevelopment": false,
         "InHeroLabs": false,
         "IsDisabled": false,
-        "IsRecommended": true,
+        "IsRecommended": false,
         "IsSelectable": true,
         "LevelScaling": {
             "BulletDamage": 0.13,
@@ -1159,7 +1159,7 @@
         "InDevelopment": false,
         "InHeroLabs": false,
         "IsDisabled": false,
-        "IsRecommended": true,
+        "IsRecommended": false,
         "IsSelectable": true,
         "LevelScaling": {
             "BulletDamage": 0.44,
@@ -1270,11 +1270,11 @@
             "PowerIncreases": 1,
             "TechPower": 1.1,
             "LightMeleeDamage": 1.58,
-            "HeavyMeleeDamage": 3.6656,
+            "HeavyMeleeDamage": 3.16,
             "DPS": 1.3077,
             "SustainedDPS": 0.82157
         },
-        "LightMeleeDamage": 50,
+        "LightMeleeDamage": 58,
         "Lore": "hero_familiar_lore",
         "MaxHealth": 650.0,
         "MaxMoveSpeed": 7.2,
@@ -1334,7 +1334,24 @@
         "AirDashSpeed": 17.0,
         "BaseHealthRegen": 2.0,
         "BaseWeaponDamageIncrease": 0,
-        "BoundAbilities": {},
+        "BoundAbilities": {
+            "1": {
+                "Name": "Disengaging Sigil",
+                "Key": "ability_fencer_throwblade"
+            },
+            "2": {
+                "Name": "Riposte",
+                "Key": "ability_fencer_riposte"
+            },
+            "3": {
+                "Name": "Flawless Advance",
+                "Key": "ability_fencer_lunge"
+            },
+            "4": {
+                "Name": "Itani Lo Sahn",
+                "Key": "ability_fencer_ultimate"
+            }
+        },
         "CritDamageBonusPercent": 0.0,
         "CritDamageReceivedPercent": 0.0,
         "CrouchSpeed": 4.75,
@@ -1350,17 +1367,19 @@
         "IsRecommended": false,
         "IsSelectable": true,
         "LevelScaling": {
-            "BulletDamage": 0.6,
+            "BulletDamage": 0.75,
             "BulletDamageAltFire": 0.5,
-            "MaxHealth": 41,
+            "MaxHealth": 44,
             "PowerIncreases": 1,
             "TechPower": 1.1,
             "LightMeleeDamage": 1.58,
-            "HeavyMeleeDamage": 2.9092
+            "HeavyMeleeDamage": 2.9092,
+            "DPS": 1.9737,
+            "SustainedDPS": 1.372
         },
         "LightMeleeDamage": 63,
         "Lore": "hero_fencer_lore",
-        "MaxHealth": 700.0,
+        "MaxHealth": 740.0,
         "MaxMoveSpeed": 7.2,
         "MoveAcceleration": 4,
         "Name": "Apollo",
@@ -1377,9 +1396,34 @@
         "TechRange": 0,
         "Type": "Assassin",
         "Weapon": {
+            "BulletSpeed": 127.0,
+            "BulletDamage": 17.0,
+            "RoundsPerSecond": 2.6316,
+            "ClipSize": 15,
+            "ReloadTime": 2.5,
+            "ReloadMovespeed": 1.0,
+            "ReloadDelay": 0,
+            "ReloadSingle": false,
+            "FalloffStartRange": 25.4,
+            "FalloffEndRange": 25.4,
+            "FalloffStartScale": 1.0,
+            "FalloffEndScale": 1.0,
+            "FalloffBias": 0.5,
+            "BulletGravityScale": 0,
+            "BulletsPerShot": 1,
+            "BulletsPerBurst": 1,
+            "BurstInterShotInterval": 0,
+            "ShootMoveSpeed": 0.75,
+            "HitOnceAcrossAllBullets": true,
+            "CanCrit": true,
+            "AmmoConsumedPerShot": 1,
+            "DPS": 44.737,
+            "SustainedDPS": 31.098,
+            "NameKey": "citadel_weapon_hero_fencer_set",
+            "DescKey": "citadel_weapon_hero_fencer_set_desc",
             "WeaponTypes": [
-                "Attribute_EWeaponAttribute_Spreadshot",
-                "Attribute_EWeaponAttribute_CloseRange"
+                "Attribute_EWeaponAttribute_MediumRange",
+                "Attribute_EWeaponAttribute_Projectile"
             ]
         },
         "WeaponPowerScale": 1
@@ -1422,7 +1466,7 @@
         "InDevelopment": false,
         "InHeroLabs": false,
         "IsDisabled": false,
-        "IsRecommended": true,
+        "IsRecommended": false,
         "IsSelectable": true,
         "LevelScaling": {
             "BulletDamage": 0.198,
@@ -2337,7 +2381,7 @@
         "InDevelopment": false,
         "InHeroLabs": false,
         "IsDisabled": false,
-        "IsRecommended": true,
+        "IsRecommended": false,
         "IsSelectable": true,
         "LevelScaling": {
             "BulletDamage": 0.495,
@@ -2638,7 +2682,7 @@
         "InDevelopment": false,
         "InHeroLabs": false,
         "IsDisabled": false,
-        "IsRecommended": true,
+        "IsRecommended": false,
         "IsSelectable": true,
         "LevelScaling": {
             "BulletDamage": 0.418,
@@ -3149,7 +3193,7 @@
         "InDevelopment": false,
         "InHeroLabs": false,
         "IsDisabled": false,
-        "IsRecommended": true,
+        "IsRecommended": false,
         "IsSelectable": true,
         "LevelScaling": {
             "BulletDamage": 0.0484,
@@ -3252,7 +3296,7 @@
         "InDevelopment": false,
         "InHeroLabs": false,
         "IsDisabled": false,
-        "IsRecommended": false,
+        "IsRecommended": true,
         "IsSelectable": true,
         "LevelScaling": {
             "BulletDamage": 0.06,
@@ -3284,7 +3328,7 @@
         "Type": "Marksman",
         "Weapon": {
             "BulletSpeed": 635.0,
-            "BulletDamage": 4.2,
+            "BulletDamage": 4.0,
             "RoundsPerSecond": 9.8039,
             "ClipSize": 40,
             "ReloadTime": 2.8,
@@ -3292,7 +3336,7 @@
             "ReloadDelay": 0,
             "ReloadSingle": false,
             "FalloffStartRange": 7.62,
-            "FalloffEndRange": 15.98,
+            "FalloffEndRange": 17.02,
             "FalloffStartScale": 1.0,
             "FalloffEndScale": 0.5,
             "FalloffBias": 0.5,
@@ -3304,8 +3348,8 @@
             "HitOnceAcrossAllBullets": false,
             "CanCrit": true,
             "AmmoConsumedPerShot": 1,
-            "DPS": 41.176,
-            "SustainedDPS": 24.419,
+            "DPS": 39.216,
+            "SustainedDPS": 23.256,
             "NameKey": "citadel_weapon_hero_necro_set",
             "DescKey": "citadel_weapon_hero_necro_set_desc",
             "WeaponTypes": [
@@ -3505,7 +3549,7 @@
         "InDevelopment": false,
         "InHeroLabs": false,
         "IsDisabled": false,
-        "IsRecommended": true,
+        "IsRecommended": false,
         "IsSelectable": true,
         "LevelScaling": {
             "BulletDamage": 1.001,
@@ -3612,7 +3656,7 @@
         "InDevelopment": false,
         "InHeroLabs": false,
         "IsDisabled": false,
-        "IsRecommended": false,
+        "IsRecommended": true,
         "IsSelectable": true,
         "LevelScaling": {
             "BulletDamage": 0.27,
@@ -3626,7 +3670,7 @@
         },
         "LightMeleeDamage": 50,
         "Lore": "hero_priest_lore",
-        "MaxHealth": 720.0,
+        "MaxHealth": 750.0,
         "MaxMoveSpeed": 6.4,
         "MoveAcceleration": 4,
         "Name": "Venator",
@@ -5045,6 +5089,7 @@
                 "Key": "ability_unicorn_dazzlingorb"
             }
         },
+        "BulletResist": -6,
         "CritDamageBonusPercent": -25.0,
         "CritDamageReceivedPercent": 0.0,
         "CrouchSpeed": 4.75,
@@ -5060,14 +5105,14 @@
         "IsRecommended": false,
         "IsSelectable": true,
         "LevelScaling": {
-            "BulletDamage": 0.4,
+            "BulletDamage": 0.6,
             "MaxHealth": 35,
             "PowerIncreases": 1,
             "TechPower": 1.1,
             "LightMeleeDamage": 1.58,
             "HeavyMeleeDamage": 3.6656,
-            "DPS": 0.66668,
-            "SustainedDPS": 0.47059
+            "DPS": 1.0,
+            "SustainedDPS": 0.70589
         },
         "LightMeleeDamage": 50,
         "Lore": "hero_unicorn_lore",
@@ -5089,7 +5134,7 @@
         "Type": "Marksman",
         "Weapon": {
             "BulletSpeed": 50.0,
-            "BulletDamage": 28.75,
+            "BulletDamage": 18,
             "RoundsPerSecond": 1.6667,
             "ClipSize": 8,
             "ReloadTime": 2.0,
@@ -5110,8 +5155,8 @@
             "CanCrit": true,
             "AmmoConsumedPerShot": 1,
             "ExplosionRadius": 0.0,
-            "DPS": 47.918,
-            "SustainedDPS": 33.824,
+            "DPS": 30.001,
+            "SustainedDPS": 21.177,
             "NameKey": "citadel_weapon_hero_unicorn_set",
             "DescKey": "citadel_weapon_hero_unicorn_set_desc",
             "WeaponTypes": [
@@ -5160,7 +5205,7 @@
         "InDevelopment": false,
         "InHeroLabs": false,
         "IsDisabled": false,
-        "IsRecommended": false,
+        "IsRecommended": true,
         "IsSelectable": true,
         "LevelScaling": {
             "BulletDamage": 0.275,
@@ -5718,11 +5763,11 @@
             "LightMeleeDamage": 1.58,
             "HeavyMeleeDamage": 3.6656,
             "DPS": 0.93799,
-            "SustainedDPS": 0.65781
+            "SustainedDPS": 0.66397
         },
         "LightMeleeDamage": 50,
         "Lore": "hero_werewolf_lore",
-        "MaxHealth": 725.0,
+        "MaxHealth": 800.0,
         "MaxMoveSpeed": 6.7,
         "MoveAcceleration": 4,
         "Name": "Silver",
@@ -5742,12 +5787,12 @@
             "BulletSpeed": 812.8,
             "BulletDamage": 5.5,
             "RoundsPerSecond": 1.1111,
-            "ClipSize": 6,
+            "ClipSize": 7,
             "ReloadTime": 0.3,
             "ReloadMovespeed": 1.0,
             "ReloadDelay": 0.5,
             "ReloadSingle": true,
-            "FalloffStartRange": 16.0,
+            "FalloffStartRange": 19.99,
             "FalloffEndRange": 45.72,
             "FalloffStartScale": 1.0,
             "FalloffEndScale": 0.1,
@@ -5761,7 +5806,7 @@
             "CanCrit": true,
             "AmmoConsumedPerShot": 1,
             "DPS": 42.777,
-            "SustainedDPS": 30.0,
+            "SustainedDPS": 30.281,
             "NameKey": "citadel_weapon_hero_werewolf_set",
             "DescKey": "citadel_weapon_hero_werewolf_set_desc",
             "WeaponTypes": [
@@ -5823,7 +5868,7 @@
         },
         "LightMeleeDamage": 50,
         "Lore": "hero_werewolf_transformed_lore",
-        "MaxHealth": 725.0,
+        "MaxHealth": 800.0,
         "MaxMoveSpeed": 6.7,
         "MoveAcceleration": 4,
         "Name": "Silver (Transformed)",
@@ -5910,7 +5955,7 @@
         "InDevelopment": false,
         "InHeroLabs": false,
         "IsDisabled": false,
-        "IsRecommended": true,
+        "IsRecommended": false,
         "IsSelectable": true,
         "LevelScaling": {
             "BulletDamage": 0.14,
