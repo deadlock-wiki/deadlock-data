@@ -2738,13 +2738,6 @@
                     "Type": "distance"
                 }
             },
-            "Health": {
-                "TurretHealthPerBoon": {
-                    "Name": null,
-                    "Value": 10,
-                    "Type": "health"
-                }
-            },
             "Other": {
                 "AbilityUnitTargetLimit": {
                     "Name": null,
@@ -3104,17 +3097,6 @@
                         "Name": "Duration",
                         "Value": 13,
                         "Type": "duration"
-                    },
-                    {
-                        "Key": "GroundDashReductionPercent",
-                        "Name": "Dash Distance",
-                        "Value": -35,
-                        "Type": "slow"
-                    },
-                    {
-                        "Key": "MoveSlowDuration",
-                        "Value": 0,
-                        "Type": "duration"
                     }
                 ],
                 "DescKey": "citadel_ability_rocket_barrage_desc"
@@ -3145,6 +3127,13 @@
                     "Name": "Channel Move Speed",
                     "Value": -1,
                     "Type": "move_speed"
+                }
+            },
+            "Debuff": {
+                "GroundDashReductionPercent": {
+                    "Name": "Dash Distance",
+                    "Value": -35,
+                    "Type": "slow"
                 }
             },
             "Other": {
