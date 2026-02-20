@@ -24,20 +24,20 @@
 * Added two new setting options "Force English Hero Names" and "Force English Item Names", which will display those values in English regardless of your chosen language
 * Added Toggle Crouch as a new keybind
 * Added a new setting option: "Additional Build Search Language", which lets you select a language to search for when requesting builds in addition to the current display language of the client.
-* Fixed shop search not working in the shop when opened from Resources
-* Revisions to melee parry effect and removal of the parry fail effect to make parries more clear
+* Fixed [[Shop|shop]] search not working in the [[Shop|shop]] when opened from Resources
+* Revisions to melee [[Parry|parry]] effect and removal of the [[Parry|parry]] fail effect to make parries more clear
 * Tweaked falloff range and toned down bass frequencies of hotel music
 * Added {{HeroIcon|Pocket}} {{AbilityIcon|Barrage}} cast delay sound
 * Updated {{HeroIcon|Pocket}} Enchanted Satchel cast sound
 * Passive cooldown indicator now shows when the item is off cooldown instead of 1 second before
 * Fixed invulnerable-to-debuff sound effect playing at wrong times
 * Fixed melee damage audio playing despite no damage dealt
-* Fixed rejuv collect sound playing from wrong location in hero sandbox
-* Updated parry cast and parry success sounds
+* Fixed [[Rejuvenator|rejuv]] collect sound playing from wrong location in hero sandbox
+* Updated [[Parry|parry]] cast and [[Parry|parry]] success sounds
 * {{HeroIcon|Mirage}} now has custom animations for most of his core movement
 * Fixed being able to wall jump off of the same surface multiple times
-* Fixed the Damage Report UI clipping into the shop in Sandbox mode
-* Fixed shop showing with a broken build tab if you had previously navigated to the hero builds, then opened it from Resources
+* Fixed the Damage Report UI clipping into the [[Shop|shop]] in [[Sandbox]] mode
+* Fixed [[Shop|shop]] showing with a broken build tab if you had previously navigated to the hero builds, then opened it from Resources
 * Fixed clicking on minimap not taking you to that location as a spectator
 * Fade rooftop antenna ambient effects so that they are not visible at a distance
 * Visual revisions to Quantum entanglement effect
@@ -48,7 +48,7 @@
 * Visual updates to {{HeroIcon|Mirage}} muzzle flash and tracers
 * Updated Bullet Flurry tracers to be spirit-based
 * Fixed {{HeroIcon|Bebop}}'s bomb damage growth not being reflected in the tooltip
-* Fixed {{HeroIcon|Grey Talon}}'s spirit power growth from his ult not being reflected in the shop
+* Fixed {{HeroIcon|Grey Talon}}'s spirit power growth from his ult not being reflected in the [[Shop|shop]]
 * Fix to {{HeroIcon|Yamato}} {{AbilityIcon|Shadow Transformation}} visuals when duration is extended after killing an enemy
 * Fixed some item sounds playing on caster instead of target
 * Updated Krill VO - largely remastering pass, but some new content
@@ -86,25 +86,25 @@
 * {{ItemIcon|Sprint Boots}} reduced from +2 Sprint to +1.5
 * {{ItemIcon|Enduring Speed}} reduced from +2 Sprint to +1.5
 
-* Carrying Urn now sets and limits your movespeed to a fixed 13 (this includes things like {{HeroIcon|Ivy}} {{AbilityIcon|Air Drop}}). It no longer provides sprint. The speed cannot be reduced or increased.
-* Urn spawn point now alternates left and right starting with left, rather than being random
+* Carrying [[Urn]] now sets and limits your movespeed to a fixed 13 (this includes things like {{HeroIcon|Ivy}} {{AbilityIcon|Air Drop}}). It no longer provides sprint. The speed cannot be reduced or increased.
+* [[Urn]] spawn point now alternates left and right starting with left, rather than being random
 
-* Shooting a trooper on a zipline now causes other troopers near it on the zipline to dismount as well
+* Shooting a [[Trooper|trooper]] on a [[Zipline|zipline]] now causes other [[Trooper|troopers]] near it on the [[Zipline|zipline]] to dismount as well
 * Flying over buildings no longer causes you to get zapped, only standing on the building does
 
-* Patron HP reduced from 10k to 7.5k
-* Downed Patron HP reduced from 18k to 13.5k
-* Patron HP grows by 250/Min starting 20 min
-* Downed Patron HP grows by 450/Min starting 20 min (overall, these are -25% HP at 20 min, 0% at 30 min, and +25% at 40 min)
+* [[Patron]] HP reduced from 10k to 7.5k
+* Downed [[Patron]] HP reduced from 18k to 13.5k
+* [[Patron]] HP grows by 250/Min starting 20 min
+* Downed [[Patron]] HP grows by 450/Min starting 20 min (overall, these are -25% HP at 20 min, 0% at 30 min, and +25% at 40 min)
 
 * Added a tick based souls system that gives the bottom two net worth players on the team a small amount of souls per second. The amount of souls available to distribute to the bottom two players is based on the souls gathered by your team (2% and 1%). This occurs after the laning phase.
 
-* Added new limiting function for the soul orb duplication abuses during the laning phase. You shouldn't experience any real difference in normal gameplay:
-    Players can only participate in 4 Soul Orb share events per trooper wave, before being declared lower priority. A low priority player is not counted for when deciding how many souls to generate. Example: if a player is near 4 troopers from Wave 1 when they die, then moves to a different lane that has an allied hero still fighting Wave 1 troopers, that player will no longer cause the wave to double the souls generated as is the case now, as they are considered a low priority player for that wave. The generated Souls will then be split as normal.
+* Added new limiting function for the [[Souls|soul]] orb duplication abuses during the laning phase. You shouldn't experience any real difference in normal gameplay:
+    Players can only participate in 4 [[Soul Orb]] share events per [[Trooper|trooper]] wave, before being declared lower priority. A low priority player is not counted for when deciding how many souls to generate. Example: if a player is near 4 [[Trooper|troopers]] from Wave 1 when they die, then moves to a different lane that has an allied hero still fighting Wave 1 [[Trooper|troopers]], that player will no longer cause the wave to double the souls generated as is the case now, as they are considered a low priority player for that wave. The generated Souls will then be split as normal.
 
-* Reverted a few changes recently related to soul duplication issues
-    - Reverted: - Guardians now deal 25% more damage to troopers
-    - Reverted: - Guardians now take 25% more damage from troopers/players
+* Reverted a few changes recently related to [[Souls|soul]] duplication issues
+    - Reverted: - [[Guardian|Guardians]] now deal 25% more damage to [[Trooper|troopers]]
+    - Reverted: - [[Guardian|Guardians]] now take 25% more damage from [[Trooper|troopers]]/players
     - Reverted: - Range to be considered for souls reduced by 5m
     - Reverted: - Troopers now do 20% more damage to each other
 
@@ -235,7 +235,7 @@
 * {{HeroIcon|Haze}}: {{AbilityIcon|Smoke Bomb}} T3 charge time reduced from 10s to 7s
 * {{HeroIcon|Haze}}: Fixed {{AbilityIcon|Fixation}} not working correctly with debuff resist
 * {{HeroIcon|Haze}}: {{AbilityIcon|Fixation}} T3 reduced from 0.15 to 0.12
-* {{HeroIcon|Haze}}: Sleep state no longer disables the target. It instead allows them to move at 2 m/s and be unable to take any other action (including stamina, mantle, parry etc). The target still wakes up on damage.
+* {{HeroIcon|Haze}}: Sleep state no longer disables the target. It instead allows them to move at 2 m/s and be unable to take any other action (including stamina, mantle, [[Parry|parry]] etc). The target still wakes up on damage.
 * {{HeroIcon|Haze}}: Sleep dagger now takes effect immediately, rather than after a brief delay
 * {{HeroIcon|Haze}}: Fixed creeps sometimes attacking and waking on sleeping targets
 * {{HeroIcon|Haze}}: {{AbilityIcon|Bullet Dance}} cooldown increased from 138s to 150s
@@ -278,7 +278,7 @@
 * {{HeroIcon|Lash}}: {{AbilityIcon|Death Slam}} cast range increased from 18m to 20m
 * {{HeroIcon|Lash}}: {{AbilityIcon|Death Slam}} T2 changed from +100 damage to -30s Cooldown
 * {{HeroIcon|Lash}}: {{AbilityIcon|Death Slam}} T3 changed from -56s Cooldown to Impact Area Stuns for 1s
-* {{HeroIcon|Lash}}: {{AbilityIcon|Death Slam}} fixed a rendering issue that could lead to crashes, especially in tight spaces like Mid Boss arena
+* {{HeroIcon|Lash}}: {{AbilityIcon|Death Slam}} fixed a rendering issue that could lead to crashes, especially in tight spaces like [[Mid-Boss|Mid Boss]] arena
 
 * {{HeroIcon|McGinnis}}: Mini Turrets HP gain per boon increased from 20 to 30
 * {{HeroIcon|McGinnis}}: Mini Turrets no longer limit the damage they take to 33% of HP per second
@@ -328,7 +328,7 @@
 * {{HeroIcon|Vindicta}}: {{AbilityIcon|Assassinate}} base damage reduced from 130 to 120
 * {{HeroIcon|Vindicta}}: {{AbilityIcon|Assassinate}} T2 damage reduced from 140 to 130
 
-* {{HeroIcon|Viscous}}: Fixed visual parry cooldown bug with {{AbilityIcon|Puddle Punch}}
+* {{HeroIcon|Viscous}}: Fixed visual [[Parry|parry]] cooldown bug with {{AbilityIcon|Puddle Punch}}
 * {{HeroIcon|Viscous}}: {{AbilityIcon|The Cube}} cooldown reduced from 48s to 42s
 * {{HeroIcon|Viscous}}: {{AbilityIcon|The Cube}} cast range reduced from 30m to 26m
 * {{HeroIcon|Viscous}}: {{AbilityIcon|Puddle Punch}} radius increased from 4 to 4.5

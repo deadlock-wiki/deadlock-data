@@ -640,23 +640,14 @@
                 },
                 "m_vecItemDraftRounds": [
                     {
-                        "DraftParams": {
-                            "LootTable": "all_items"
-                        },
                         "m_eNormalModTier": "EModTier_1",
                         "m_eRareModTier": "EModTier_2"
                     },
                     {
-                        "DraftParams": {
-                            "LootTable": "all_items"
-                        },
                         "m_eNormalModTier": "EModTier_2",
                         "m_eRareModTier": "EModTier_3"
                     },
                     {
-                        "DraftParams": {
-                            "LootTable": "all_items"
-                        },
                         "m_eNormalModTier": "EModTier_3",
                         "m_eRareModTier": "EModTier_4"
                     }
@@ -687,23 +678,14 @@
                 },
                 "m_vecItemDraftRounds": [
                     {
-                        "DraftParams": {
-                            "LootTable": "all_items"
-                        },
                         "m_eNormalModTier": "EModTier_2",
                         "m_eRareModTier": "EModTier_3"
                     },
                     {
-                        "DraftParams": {
-                            "LootTable": "all_items"
-                        },
                         "m_eNormalModTier": "EModTier_3",
                         "m_eRareModTier": "EModTier_4"
                     },
                     {
-                        "DraftParams": {
-                            "LootTable": "all_items"
-                        },
                         "m_eNormalModTier": "EModTier_3",
                         "m_eRareModTier": "EModTier_4"
                     }
@@ -734,25 +716,16 @@
                 },
                 "m_vecItemDraftRounds": [
                     {
-                        "DraftParams": {
-                            "LootTable": "all_items"
-                        },
                         "m_eNormalModTier": "EModTier_2",
                         "m_eRareModTier": "EModTier_3",
                         "RareWeight": 50
                     },
                     {
-                        "DraftParams": {
-                            "LootTable": "all_items"
-                        },
                         "m_eNormalModTier": "EModTier_3",
                         "m_eRareModTier": "EModTier_4",
                         "RareWeight": 50
                     },
                     {
-                        "DraftParams": {
-                            "LootTable": "all_items"
-                        },
                         "m_eNormalModTier": "EModTier_4",
                         "m_eRareModTier": "EModTier_5",
                         "RareWeight": 0
@@ -784,25 +757,16 @@
                 },
                 "m_vecItemDraftRounds": [
                     {
-                        "DraftParams": {
-                            "LootTable": "all_items"
-                        },
                         "m_eNormalModTier": "EModTier_3",
                         "m_eRareModTier": "EModTier_4",
                         "RareWeight": 40
                     },
                     {
-                        "DraftParams": {
-                            "LootTable": "all_items"
-                        },
                         "m_eNormalModTier": "EModTier_3",
                         "m_eRareModTier": "EModTier_4",
                         "RareWeight": 40
                     },
                     {
-                        "DraftParams": {
-                            "LootTable": "all_items"
-                        },
                         "m_eNormalModTier": "EModTier_4",
                         "m_eRareModTier": "EModTier_5",
                         "RareWeight": 20
@@ -833,23 +797,14 @@
                 },
                 "m_vecItemDraftRounds": [
                     {
-                        "DraftParams": {
-                            "LootTable": "all_items"
-                        },
                         "m_eNormalModTier": "EModTier_4",
                         "m_eRareModTier": "EModTier_5"
                     },
                     {
-                        "DraftParams": {
-                            "LootTable": "all_items"
-                        },
                         "m_eNormalModTier": "EModTier_4",
                         "m_eRareModTier": "EModTier_5"
                     },
                     {
-                        "DraftParams": {
-                            "LootTable": "all_items"
-                        },
                         "m_eNormalModTier": "EModTier_4",
                         "m_eRareModTier": "EModTier_5"
                     }
@@ -857,7 +812,43 @@
             }
         ],
         "TrooperModifier": "modifier_streetbrawl_trooper",
-        "TrooperOvertimeModifier": "modifier_streetbrawl_trooper_overtime"
+        "ItemTierToItemDraftBuckets": {
+            "ModTier_1": {
+                "Buckets": {
+                    "Normal": 30.0,
+                    "Good": 70.0
+                },
+                "BucketName": "Tier 1"
+            },
+            "ModTier_2": {
+                "Buckets": {
+                    "Normal": 40.0,
+                    "Good": 60.0
+                },
+                "BucketName": "Tier 2"
+            },
+            "ModTier_3": {
+                "Buckets": {
+                    "Normal": 50.0,
+                    "Good": 50.0
+                },
+                "BucketName": "Tier 3"
+            },
+            "ModTier_4": {
+                "Buckets": {
+                    "Normal": 45.0,
+                    "Good": 55.0
+                },
+                "BucketName": "Tier 4"
+            },
+            "ModTier_5": {
+                "Buckets": {
+                    "Normal": 80.0,
+                    "Good": 20.0
+                },
+                "BucketName": "Tier 5"
+            }
+        }
     },
     "TargetingSpringStrength": [
         0.0,
