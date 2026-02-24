@@ -17159,12 +17159,6 @@
                 "Main": {
                     "Props": [
                         {
-                            "Key": "SlowPercent",
-                            "Name": "Move Speed",
-                            "Value": 45,
-                            "Type": "slow"
-                        },
-                        {
                             "Title": "On Hit:",
                             "Key": "Damage",
                             "Name": "Damage",
@@ -17192,6 +17186,12 @@
                     ]
                 },
                 "Alt": [
+                    {
+                        "Key": "SlowPercent",
+                        "Name": "Move Speed",
+                        "Value": 45,
+                        "Type": "slow"
+                    },
                     {
                         "Key": "SlowDuration",
                         "Name": "Slow Duration",
@@ -20398,27 +20398,9 @@
             "Name": "Borrowed Decree",
             "Info1": {
                 "Main": {
-                    "Props": [
-                        {
-                            "Key": "AbilityDuration",
-                            "Name": "Duration",
-                            "Value": 16,
-                            "Scale": {
-                                "Value": 0.04,
-                                "Type": "spirit"
-                            },
-                            "Type": "duration"
-                        }
-                    ]
+                    "Props": []
                 },
-                "Alt": [
-                    {
-                        "Key": "SummonFrequency",
-                        "Name": "Time to Summon",
-                        "Value": 4,
-                        "Type": "duration"
-                    }
-                ],
+                "Alt": [],
                 "DescKey": "ability_necro_gravestone_desc_1"
             },
             "Info2": {
@@ -20485,6 +20467,12 @@
                         "Key": "ExplosionRadius",
                         "Name": "Explosion Radius",
                         "Value": 6.5
+                    },
+                    {
+                        "Key": "SummonFrequency",
+                        "Name": "Time to Summon",
+                        "Value": 4,
+                        "Type": "duration"
                     }
                 ],
                 "DescKey": "ability_necro_gravestone_desc_2"
