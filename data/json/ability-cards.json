@@ -16110,19 +16110,6 @@
                             "Type": "bullet_damage"
                         },
                         {
-                            "Key": "SlowPercent",
-                            "Name": "Move Speed",
-                            "Value": 60,
-                            "Type": "slow"
-                        }
-                    ]
-                },
-                "Alt": []
-            },
-            "Info2": {
-                "Main": {
-                    "Props": [
-                        {
                             "Title": "On Wall Hit:",
                             "Key": "BonusDamage",
                             "Name": "Bonus Damage",
@@ -16142,7 +16129,20 @@
                         }
                     ]
                 },
-                "Alt": []
+                "Alt": [
+                    {
+                        "Key": "DebuffDuration",
+                        "Name": "Debuff Duration",
+                        "Value": 0
+                    },
+                    {
+                        "Key": "WallStunDistance",
+                        "Name": "Wall Stun Range",
+                        "Value": 7,
+                        "Type": "distance"
+                    }
+                ],
+                "DescKey": "ability_priest_knockback_desc"
             },
             "Upgrades": [
                 {
@@ -19681,170 +19681,7 @@
         }
     },
     "hero_druid": {
-        "Name": "Druid",
-        "1": {
-            "Key": "ability_druid_ability01",
-            "Name": "Unknown(ability_druid_ability01)",
-            "Info1": {
-                "Main": {
-                    "Props": []
-                },
-                "Alt": []
-            },
-            "Upgrades": [
-                {
-                    "AbilityCooldown": 0
-                },
-                {
-                    "AbilityCooldown": 0
-                },
-                {
-                    "AbilityCooldown": 0
-                }
-            ],
-            "Move": {
-                "ChannelMoveSpeed": {
-                    "Name": "Channel Move Speed",
-                    "Value": -1,
-                    "Type": "move_speed"
-                }
-            },
-            "Other": {
-                "AbilityUnitTargetLimit": {
-                    "Name": null,
-                    "Value": 1
-                }
-            },
-            "AbilityCooldown": {
-                "Name": "Cooldown",
-                "Value": 26.0,
-                "Type": "cooldown"
-            }
-        },
-        "2": {
-            "Key": "ability_druid_ability02",
-            "Name": "Unknown(ability_druid_ability02)",
-            "Info1": {
-                "Main": {
-                    "Props": []
-                },
-                "Alt": []
-            },
-            "Upgrades": [
-                {
-                    "AbilityCooldown": 0
-                },
-                {
-                    "AbilityCooldown": 0
-                },
-                {
-                    "AbilityCooldown": 0
-                }
-            ],
-            "Move": {
-                "ChannelMoveSpeed": {
-                    "Name": "Channel Move Speed",
-                    "Value": -1,
-                    "Type": "move_speed"
-                }
-            },
-            "Other": {
-                "AbilityUnitTargetLimit": {
-                    "Name": null,
-                    "Value": 1
-                }
-            },
-            "AbilityCooldown": {
-                "Name": "Cooldown",
-                "Value": 26.0,
-                "Type": "cooldown"
-            }
-        },
-        "3": {
-            "Key": "ability_druid_sprout",
-            "Name": "Unknown(ability_druid_sprout)",
-            "Info1": {
-                "Main": {
-                    "Props": []
-                },
-                "Alt": []
-            },
-            "Upgrades": [
-                {
-                    "AbilityCooldown": 0
-                },
-                {
-                    "AbilityCooldown": 0
-                },
-                {
-                    "AbilityCooldown": 0
-                }
-            ],
-            "Move": {
-                "ChannelMoveSpeed": {
-                    "Name": "Channel Move Speed",
-                    "Value": -1,
-                    "Type": "move_speed"
-                }
-            },
-            "Other": {
-                "AbilityUnitTargetLimit": {
-                    "Name": null,
-                    "Value": 1
-                }
-            },
-            "AbilityCooldown": {
-                "Name": "Cooldown",
-                "Value": 1,
-                "Type": "cooldown"
-            }
-        },
-        "4": {
-            "Key": "ability_druid_ult",
-            "Name": "Unknown(ability_druid_ult)",
-            "Info1": {
-                "Main": {
-                    "Props": [
-                        {
-                            "Key": "AbilityCooldown",
-                            "Name": "Cooldown",
-                            "Value": 127.0,
-                            "Type": "cooldown"
-                        }
-                    ]
-                },
-                "Alt": []
-            },
-            "Upgrades": [
-                {
-                    "AbilityCooldown": 0
-                },
-                {
-                    "AbilityCooldown": 0
-                },
-                {
-                    "AbilityCooldown": 0
-                }
-            ],
-            "Move": {
-                "ChannelMoveSpeed": {
-                    "Name": "Channel Move Speed",
-                    "Value": -1,
-                    "Type": "move_speed"
-                }
-            },
-            "Other": {
-                "AbilityUnitTargetLimit": {
-                    "Name": null,
-                    "Value": 1
-                }
-            },
-            "AbilityCooldown": {
-                "Name": "Cooldown",
-                "Value": 127.0,
-                "Type": "cooldown"
-            }
-        }
+        "Name": "Druid"
     },
     "hero_graf": {
         "Name": "Graf",
@@ -21117,7 +20954,7 @@
                         }
                     ]
                 },
-                "Alt": null,
+                "Alt": [],
                 "DescKey": "ability_fencer_riposte_desc"
             },
             "Info2": {
@@ -21337,7 +21174,7 @@
                         }
                     ]
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -21539,6 +21376,20 @@
                     }
                 ],
                 "DescKey": "ability_fencer_ultimate_desc"
+            },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "On hit",
+                            "Key": "CooldownReductionOnHit",
+                            "Name": "Cooldown Reduced on Hit",
+                            "Value": 0,
+                            "Type": "cooldown"
+                        }
+                    ]
+                },
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -22113,7 +21964,7 @@
                         }
                     ]
                 },
-                "Alt": null
+                "Alt": []
             },
             "Info3": {
                 "Main": {
@@ -22143,7 +21994,7 @@
                         }
                     ]
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
@@ -23067,7 +22918,7 @@
                         }
                     ]
                 },
-                "Alt": null
+                "Alt": []
             },
             "Upgrades": [
                 {
