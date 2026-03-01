@@ -1190,7 +1190,9 @@
                     "Scale": {
                         "Value": 0.7,
                         "Type": "power_increase"
-                    }
+                    },
+                    "Type": "bullet_damage",
+                    "UsageFlags": "ConditionallyApplied"
                 },
                 {
                     "Key": "BonusHealth",
@@ -1198,7 +1200,9 @@
                     "Scale": {
                         "Value": 4.0,
                         "Type": "power_increase"
-                    }
+                    },
+                    "Type": "health",
+                    "UsageFlags": "ConditionallyApplied"
                 },
                 {
                     "Key": "TechRangeMultiplier",
@@ -1436,7 +1440,7 @@
         "Info1": {
             "Type": "Passive",
             "DescKey": "#upgrade_chain_lightning_desc",
-            "Cooldown": null,
+            "Cooldown": 0.25,
             "ChargeUp": null,
             "Main": [
                 {
@@ -1445,7 +1449,8 @@
                     "Scale": {
                         "Value": 0.19,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 },
                 {
                     "Key": "ProcChance",
@@ -1453,11 +1458,6 @@
                 }
             ],
             "Alt": [
-                {
-                    "Key": "ProcCooldown",
-                    "Value": 0.25,
-                    "Type": "cooldown"
-                },
                 {
                     "Key": "ChainCount",
                     "Value": 4
@@ -1494,7 +1494,8 @@
                 "Scale": {
                     "Value": 0.19,
                     "Type": "spirit"
-                }
+                },
+                "Type": "tech_damage"
             },
             "ChainTickRate": {
                 "Key": "ChainTickRate",
@@ -1542,7 +1543,7 @@
         "Info2": {
             "Type": "Passive",
             "DescKey": "#upgrade_chain_lightning_desc",
-            "Cooldown": null,
+            "Cooldown": 0.25,
             "ChargeUp": null,
             "Main": [
                 {
@@ -1551,7 +1552,8 @@
                     "Scale": {
                         "Value": 0.19,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 },
                 {
                     "Key": "ProcChance",
@@ -1559,11 +1561,6 @@
                 }
             ],
             "Alt": [
-                {
-                    "Key": "ProcCooldown",
-                    "Value": 0.25,
-                    "Type": "cooldown"
-                },
                 {
                     "Key": "ChainCount",
                     "Value": 6
@@ -1633,7 +1630,8 @@
                 "Scale": {
                     "Value": 0.19,
                     "Type": "spirit"
-                }
+                },
+                "Type": "tech_damage"
             },
             "ChainTickRate": {
                 "Key": "ChainTickRate",
@@ -1668,7 +1666,8 @@
                     "Scale": {
                         "Value": 0.304668,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 }
             ],
             "Alt": [
@@ -1678,7 +1677,8 @@
                     "Scale": {
                         "Value": 0.457002,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 },
                 {
                     "Key": "ProcChance",
@@ -3391,12 +3391,17 @@
             "ChargeUp": null,
             "Main": [
                 {
+                    "Key": "StatusEffectEMP",
+                    "Value": null
+                },
+                {
                     "Key": "Damage",
                     "Value": 100.0,
                     "Scale": {
                         "Value": 0.6,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 }
             ],
             "Alt": [
@@ -3492,7 +3497,16 @@
             "DescKey": "#upgrade_haunting_scream_desc",
             "Cooldown": 25.0,
             "ChargeUp": null,
-            "Main": [],
+            "Main": [
+                {
+                    "Key": "StatusEffectEMP",
+                    "Value": null
+                },
+                {
+                    "Key": "StatusEffectDisarmed",
+                    "Value": null
+                }
+            ],
             "Alt": [
                 {
                     "Key": "AbilityCastRange",
@@ -3612,7 +3626,12 @@
             "DescKey": "#upgrade_proc_silence_desc",
             "Cooldown": null,
             "ChargeUp": null,
-            "Main": [],
+            "Main": [
+                {
+                    "Key": "StatusEffectEMP",
+                    "Value": null
+                }
+            ],
             "Alt": [
                 {
                     "Key": "SilenceDuration",
@@ -3691,7 +3710,12 @@
             "DescKey": "#upgrade_silencer_active",
             "Cooldown": 36.0,
             "ChargeUp": null,
-            "Main": [],
+            "Main": [
+                {
+                    "Key": "StatusEffectEMP",
+                    "Value": null
+                }
+            ],
             "Alt": [
                 {
                     "Key": "EMPDuration",
@@ -3741,7 +3765,12 @@
             "DescKey": "#upgrade_proc_disarm_desc",
             "Cooldown": null,
             "ChargeUp": null,
-            "Main": [],
+            "Main": [
+                {
+                    "Key": "StatusEffectDisarmed",
+                    "Value": null
+                }
+            ],
             "Alt": [
                 {
                     "Key": "AbilityDuration",
@@ -4002,7 +4031,7 @@
         "Info2": {
             "Type": "Passive",
             "DescKey": "#upgrade_siphon_bullets_desc_passive2",
-            "Cooldown": null,
+            "Cooldown": 1.2,
             "ChargeUp": null,
             "Main": [
                 {
@@ -4011,7 +4040,8 @@
                     "Scale": {
                         "Value": 0.8,
                         "Type": "power_increase"
-                    }
+                    },
+                    "Type": "health"
                 }
             ],
             "Alt": [
@@ -4019,11 +4049,6 @@
                     "Key": "StealDuration",
                     "Value": 17,
                     "Type": "duration"
-                },
-                {
-                    "Key": "ProcCooldown",
-                    "Value": 1.2,
-                    "Type": "cooldown"
                 }
             ]
         },
@@ -4351,7 +4376,8 @@
                     "Scale": {
                         "Value": 4.0,
                         "Type": "power_increase"
-                    }
+                    },
+                    "Type": "bullet_damage"
                 },
                 {
                     "Key": "HealPercentPerHeadshot",
@@ -4359,7 +4385,8 @@
                     "Scale": {
                         "Value": 0.06,
                         "Type": "power_increase"
-                    }
+                    },
+                    "Type": "healing"
                 }
             ],
             "Alt": [
@@ -4460,7 +4487,7 @@
         "Info3": {
             "Type": "Passive",
             "DescKey": "#upgrade_spellslinger_headshots_part2_desc",
-            "Cooldown": null,
+            "Cooldown": 2.25,
             "ChargeUp": null,
             "Main": [
                 {
@@ -4480,11 +4507,6 @@
                 {
                     "Key": "MaxStacks",
                     "Value": 4
-                },
-                {
-                    "Key": "ProcCooldown",
-                    "Value": 2.25,
-                    "Type": "cooldown"
                 }
             ]
         },
@@ -4625,7 +4647,7 @@
         "Info1": {
             "Type": null,
             "DescKey": "#upgrade_proc_tech_damage_desc",
-            "Cooldown": null,
+            "Cooldown": 1,
             "ChargeUp": null,
             "Main": [
                 {
@@ -4634,22 +4656,19 @@
                     "Scale": {
                         "Value": 3.04668,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 }
             ],
             "Alt": [
-                {
-                    "Key": "ProcCooldown",
-                    "Value": 1,
-                    "Type": "cooldown"
-                },
                 {
                     "Key": "BaseDamagePct",
                     "Value": 0.0001,
                     "Scale": {
                         "Value": 3.04668,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 }
             ]
         },
@@ -4722,7 +4741,8 @@
                     "Scale": {
                         "Value": 0.8,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 }
             ],
             "Alt": []
@@ -5040,7 +5060,8 @@
                     "Scale": {
                         "Value": 0.005,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 },
                 {
                     "Key": "HealAmpReceivePenaltyPercent",
@@ -5707,6 +5728,11 @@
         "IsDisabled": true,
         "StreetBrawl": false,
         "Other": {
+            "AbilityCooldown": {
+                "Key": "AbilityCooldown",
+                "Value": 8.5,
+                "Type": "cooldown"
+            },
             "AbilityUnitTargetLimit": {
                 "Key": "AbilityUnitTargetLimit",
                 "Value": 1
@@ -6043,6 +6069,11 @@
         "IsDisabled": true,
         "StreetBrawl": false,
         "Other": {
+            "AbilityCooldown": {
+                "Key": "AbilityCooldown",
+                "Value": 32.0,
+                "Type": "cooldown"
+            },
             "AbilityDuration": {
                 "Key": "AbilityDuration",
                 "Value": 6,
@@ -7439,6 +7470,11 @@
         "IsDisabled": true,
         "StreetBrawl": false,
         "Other": {
+            "AbilityCooldown": {
+                "Key": "AbilityCooldown",
+                "Value": 10.5,
+                "Type": "cooldown"
+            },
             "AbilityUnitTargetLimit": {
                 "Key": "AbilityUnitTargetLimit",
                 "Value": 1
@@ -7563,7 +7599,9 @@
                     "Scale": {
                         "Value": 5.0,
                         "Type": "power_increase"
-                    }
+                    },
+                    "Type": "combat_barrier",
+                    "UsageFlags": "ConditionallyApplied"
                 },
                 {
                     "Key": "BonusMoveSpeed",
@@ -7652,7 +7690,9 @@
                     "Scale": {
                         "Value": 5.0,
                         "Type": "power_increase"
-                    }
+                    },
+                    "Type": "combat_barrier",
+                    "UsageFlags": "ConditionallyApplied"
                 },
                 {
                     "Key": "BonusMoveSpeed",
@@ -8268,7 +8308,13 @@
             "DescKey": "#upgrade_tech_range_desc",
             "Cooldown": null,
             "ChargeUp": null,
-            "Main": [],
+            "Main": [
+                {
+                    "Key": "TechRangeMultiplier",
+                    "Value": 35,
+                    "Type": "distance"
+                }
+            ],
             "Alt": []
         },
         "Upgrades": {
@@ -8290,11 +8336,6 @@
                 "Key": "ChannelMoveSpeed",
                 "Value": -1,
                 "Type": "move_speed"
-            },
-            "TechRangeMultiplier": {
-                "Key": "TechRangeMultiplier",
-                "Value": 35,
-                "Type": "distance"
             },
             "TechRadiusMultiplier": {
                 "Key": "TechRadiusMultiplier",
@@ -8321,7 +8362,13 @@
             "DescKey": "#upgrade_magic_reach_desc",
             "Cooldown": null,
             "ChargeUp": null,
-            "Main": [],
+            "Main": [
+                {
+                    "Key": "TechRangeMultiplier",
+                    "Value": 20,
+                    "Type": "distance"
+                }
+            ],
             "Alt": []
         },
         "Upgrades": {
@@ -8342,11 +8389,6 @@
                 "Key": "ChannelMoveSpeed",
                 "Value": -1,
                 "Type": "move_speed"
-            },
-            "TechRangeMultiplier": {
-                "Key": "TechRangeMultiplier",
-                "Value": 20,
-                "Type": "distance"
             },
             "TechRadiusMultiplier": {
                 "Key": "TechRadiusMultiplier",
@@ -8375,7 +8417,13 @@
             "DescKey": "#upgrade_extra_charge_desc",
             "Cooldown": null,
             "ChargeUp": null,
-            "Main": [],
+            "Main": [
+                {
+                    "Key": "BonusAbilityCharges",
+                    "Value": 1,
+                    "Type": "cast"
+                }
+            ],
             "Alt": [
                 {
                     "Key": "BonusSpiritForChargedAbilities",
@@ -8401,11 +8449,6 @@
                 "Key": "ChannelMoveSpeed",
                 "Value": -1,
                 "Type": "move_speed"
-            },
-            "BonusAbilityCharges": {
-                "Key": "BonusAbilityCharges",
-                "Value": 1,
-                "Type": "cast"
             }
         }
     },
@@ -8783,6 +8826,11 @@
             "Damage": 60
         },
         "Other": {
+            "AbilityCooldown": {
+                "Key": "AbilityCooldown",
+                "Value": 14,
+                "Type": "cooldown"
+            },
             "AbilityUnitTargetLimit": {
                 "Key": "AbilityUnitTargetLimit",
                 "Value": 1
@@ -8800,10 +8848,6 @@
             "MinimumDamage": {
                 "Key": "MinimumDamage",
                 "Value": 80
-            },
-            "AbilityChargeUpTime": {
-                "Key": "AbilityChargeUpTime",
-                "Value": 14
             }
         }
     },
@@ -8866,6 +8910,11 @@
             "BonusHealth": 100
         },
         "Other": {
+            "AbilityCooldown": {
+                "Key": "AbilityCooldown",
+                "Value": 14,
+                "Type": "cooldown"
+            },
             "AbilityUnitTargetLimit": {
                 "Key": "AbilityUnitTargetLimit",
                 "Value": 1
@@ -8891,10 +8940,6 @@
             "WatcherMaxDuration": {
                 "Key": "WatcherMaxDuration",
                 "Value": 30
-            },
-            "AbilityChargeUpTime": {
-                "Key": "AbilityChargeUpTime",
-                "Value": 14
             }
         }
     },
@@ -9247,7 +9292,7 @@
         "Info2": {
             "Type": "Passive",
             "DescKey": "#upgrade_escalating_exposure_desc",
-            "Cooldown": null,
+            "Cooldown": 0.7,
             "ChargeUp": null,
             "Main": [
                 {
@@ -9265,11 +9310,6 @@
                     "Key": "AbilityDuration",
                     "Value": 12,
                     "Type": "duration"
-                },
-                {
-                    "Key": "ProcCooldown",
-                    "Value": 0.7,
-                    "LocTokenOverride": "EscalatingExposureProcCooldown"
                 }
             ]
         },
@@ -9465,7 +9505,14 @@
             "DescKey": "#upgrade_magic_tempo_desc",
             "Cooldown": null,
             "ChargeUp": null,
-            "Main": [],
+            "Main": [
+                {
+                    "Key": "CooldownReduction",
+                    "Value": 18,
+                    "Type": "cooldown",
+                    "LocTokenOverride": "SingleAbilityCooldownReduction"
+                }
+            ],
             "Alt": []
         },
         "Upgrades": {
@@ -9485,12 +9532,6 @@
                 "Key": "ChannelMoveSpeed",
                 "Value": -1,
                 "Type": "move_speed"
-            },
-            "CooldownReduction": {
-                "Key": "CooldownReduction",
-                "Value": 18,
-                "Type": "cooldown",
-                "LocTokenOverride": "SingleAbilityCooldownReduction"
             }
         }
     },
@@ -9530,7 +9571,13 @@
             "DescKey": "#upgrade_cooldown_reduction_desc",
             "Cooldown": null,
             "ChargeUp": null,
-            "Main": [],
+            "Main": [
+                {
+                    "Key": "CooldownReduction",
+                    "Value": 20,
+                    "Type": "cooldown"
+                }
+            ],
             "Alt": []
         },
         "Upgrades": {
@@ -9551,11 +9598,6 @@
                 "Key": "ChannelMoveSpeed",
                 "Value": -1,
                 "Type": "move_speed"
-            },
-            "CooldownReduction": {
-                "Key": "CooldownReduction",
-                "Value": 20,
-                "Type": "cooldown"
             }
         }
     },
@@ -9595,7 +9637,18 @@
             "DescKey": "#upgrade_transcendent_cooldown_desc",
             "Cooldown": null,
             "ChargeUp": null,
-            "Main": [],
+            "Main": [
+                {
+                    "Key": "CooldownReduction",
+                    "Value": 25,
+                    "Type": "cooldown"
+                },
+                {
+                    "Key": "ItemCooldownReduction",
+                    "Value": 25,
+                    "Type": "cooldown"
+                }
+            ],
             "Alt": []
         },
         "Upgrades": {
@@ -9617,16 +9670,6 @@
                 "Key": "ChannelMoveSpeed",
                 "Value": -1,
                 "Type": "move_speed"
-            },
-            "CooldownReduction": {
-                "Key": "CooldownReduction",
-                "Value": 25,
-                "Type": "cooldown"
-            },
-            "ItemCooldownReduction": {
-                "Key": "ItemCooldownReduction",
-                "Value": 25,
-                "Type": "cooldown"
             }
         }
     },
@@ -10311,6 +10354,10 @@
             "ChargeUp": null,
             "Main": [
                 {
+                    "Key": "StatusEffectDisarmed",
+                    "Value": null
+                },
+                {
                     "Key": "BulletArmorReduction",
                     "Value": -13,
                     "Type": "bullet_armor_down",
@@ -10480,7 +10527,7 @@
         "Info1": {
             "Type": "Passive",
             "DescKey": "#upgrade_personal_rejuvenator_desc",
-            "Cooldown": null,
+            "Cooldown": 509.0,
             "ChargeUp": null,
             "Main": [],
             "Alt": [
@@ -10938,7 +10985,8 @@
                     "Scale": {
                         "Value": 0.0055,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 },
                 {
                     "Key": "HealAmpReceivePenaltyPercent",
@@ -11131,6 +11179,11 @@
         "IsDisabled": true,
         "StreetBrawl": false,
         "Other": {
+            "AbilityCooldown": {
+                "Key": "AbilityCooldown",
+                "Value": 32.0,
+                "Type": "cooldown"
+            },
             "AbilityDuration": {
                 "Key": "AbilityDuration",
                 "Value": 16,
@@ -11207,9 +11260,13 @@
         "Info2": {
             "Type": "Active",
             "DescKey": "#upgrade_target_stun_desc",
-            "Cooldown": null,
+            "Cooldown": 35.0,
             "ChargeUp": null,
             "Main": [
+                {
+                    "Key": "StatusEffectStun",
+                    "Value": null
+                },
                 {
                     "Key": "StunDuration",
                     "Value": 0.5,
@@ -11320,6 +11377,10 @@
             "ChargeUp": null,
             "Main": [
                 {
+                    "Key": "StatusEffectDisarmed",
+                    "Value": null
+                },
+                {
                     "Key": "SlowPercent",
                     "Value": 50,
                     "Type": "slow",
@@ -11331,7 +11392,8 @@
                     "Scale": {
                         "Value": 0.93,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 }
             ],
             "Alt": [
@@ -11659,7 +11721,7 @@
         "Info2": {
             "Type": "Active",
             "DescKey": "#upgrade_ability_power_shard_active",
-            "Cooldown": null,
+            "Cooldown": 30.0,
             "ChargeUp": null,
             "Main": [],
             "Alt": []
@@ -11742,7 +11804,8 @@
                     "Scale": {
                         "Value": 0.279,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 }
             ],
             "Alt": [
@@ -11919,6 +11982,11 @@
         "IsDisabled": true,
         "StreetBrawl": false,
         "Other": {
+            "AbilityCooldown": {
+                "Key": "AbilityCooldown",
+                "Value": 10.5,
+                "Type": "cooldown"
+            },
             "AbilityUnitTargetLimit": {
                 "Key": "AbilityUnitTargetLimit",
                 "Value": 1
@@ -12010,15 +12078,38 @@
         "Info2": {
             "Type": "Active",
             "DescKey": "#upgrade_cloaking_device_active_desc",
-            "Cooldown": null,
+            "Cooldown": 32.0,
             "ChargeUp": null,
             "Main": [
+                {
+                    "Key": "StatusEffectInvisible",
+                    "Value": null
+                },
                 {
                     "Key": "AbilityDuration",
                     "Value": 18,
                     "Type": "duration",
                     "LocTokenOverride": "StealthDuration"
+                }
+            ],
+            "Alt": [
+                {
+                    "Key": "SpottedRadius",
+                    "Value": "18m"
                 },
+                {
+                    "Key": "InvisMoveSpeedMod",
+                    "Value": "5m",
+                    "Type": "move_speed"
+                }
+            ]
+        },
+        "Info3": {
+            "Type": "Active",
+            "DescKey": "#upgrade_cloaking_device_active_ambush_desc",
+            "Cooldown": null,
+            "ChargeUp": null,
+            "Main": [
                 {
                     "Key": "AmbushBonusFireRate",
                     "Value": 32,
@@ -12039,15 +12130,6 @@
                 }
             ],
             "Alt": [
-                {
-                    "Key": "SpottedRadius",
-                    "Value": "18m"
-                },
-                {
-                    "Key": "InvisMoveSpeedMod",
-                    "Value": "5m",
-                    "Type": "move_speed"
-                },
                 {
                     "Key": "AmbushDuration",
                     "Value": 8,
@@ -12176,7 +12258,7 @@
         "Info1": {
             "Type": "Active",
             "DescKey": "#upgrade_weapon_overdrive_clip_desc",
-            "Cooldown": null,
+            "Cooldown": 53.0,
             "ChargeUp": null,
             "Main": [
                 {
@@ -12323,7 +12405,9 @@
                     "Scale": {
                         "Value": 8.0,
                         "Type": "power_increase"
-                    }
+                    },
+                    "Type": "combat_barrier",
+                    "UsageFlags": "ConditionallyApplied"
                 },
                 {
                     "Key": "InterruptCooldown",
@@ -12548,7 +12632,8 @@
                     "Scale": {
                         "Value": 6.0,
                         "Type": "power_increase"
-                    }
+                    },
+                    "Type": "healing"
                 }
             ],
             "Alt": [
@@ -12641,7 +12726,8 @@
                     "Scale": {
                         "Value": 0.4,
                         "Type": "power_increase"
-                    }
+                    },
+                    "Type": "healing"
                 }
             ],
             "Alt": [
@@ -12721,7 +12807,8 @@
                     "Scale": {
                         "Value": 0.93,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "healing"
                 },
                 {
                     "Key": "BonusSprintSpeed",
@@ -13285,7 +13372,8 @@
                     "Scale": {
                         "Value": 0.152334,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 },
                 {
                     "Key": "BulletArmorReduction",
@@ -13293,7 +13381,9 @@
                     "Scale": {
                         "Value": -0.055,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "bullet_armor_down",
+                    "UsageFlags": "ConditionallyApplied"
                 }
             ],
             "Alt": [
@@ -13303,7 +13393,8 @@
                     "Scale": {
                         "Value": 0.304668,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 },
                 {
                     "Key": "Radius",
@@ -13349,7 +13440,8 @@
                 "Scale": {
                     "Value": 0.030467,
                     "Type": "spirit"
-                }
+                },
+                "Type": "tech_damage"
             },
             "NonHeroReductionPercent": {
                 "Key": "NonHeroReductionPercent",
@@ -13832,6 +13924,11 @@
         "IsDisabled": true,
         "StreetBrawl": false,
         "Other": {
+            "AbilityCooldown": {
+                "Key": "AbilityCooldown",
+                "Value": 21.0,
+                "Type": "cooldown"
+            },
             "AbilityUnitTargetLimit": {
                 "Key": "AbilityUnitTargetLimit",
                 "Value": 1
@@ -14150,7 +14247,8 @@
                     "Scale": {
                         "Value": 0.465,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 },
                 {
                     "Key": "MovementSpeedSlow",
@@ -14259,7 +14357,8 @@
                     "Scale": {
                         "Value": 0.6975,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 },
                 {
                     "Key": "FreezeDuration",
@@ -14378,6 +14477,10 @@
             "Cooldown": 32.0,
             "ChargeUp": null,
             "Main": [
+                {
+                    "Key": "StatusEffectEMP",
+                    "Value": null
+                },
                 {
                     "Key": "TechResist",
                     "Value": -20,
@@ -14541,13 +14644,32 @@
             "DescKey": "#upgrade_stasis_bomb_active1",
             "Cooldown": 37.0,
             "ChargeUp": null,
-            "Main": [],
+            "Main": [
+                {
+                    "Key": "StatusEffectEMP",
+                    "Value": null
+                }
+            ],
             "Alt": [
                 {
                     "Key": "StasisRadius",
                     "Value": "7m",
                     "Type": "distance"
-                },
+                }
+            ]
+        },
+        "Info2": {
+            "Type": "Active",
+            "DescKey": "#upgrade_stasis_bomb_active2",
+            "Cooldown": null,
+            "ChargeUp": null,
+            "Main": [
+                {
+                    "Key": "StatusEffectStun",
+                    "Value": null
+                }
+            ],
+            "Alt": [
                 {
                     "Key": "StunDuration",
                     "Value": 1.5,
@@ -14559,7 +14681,8 @@
                     "Scale": {
                         "Value": 1.52334,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 },
                 {
                     "Key": "StasisRadius",
@@ -14568,12 +14691,17 @@
                 }
             ]
         },
-        "Info2": {
+        "Info3": {
             "Type": "Passive",
             "DescKey": "#upgrade_stasis_bomb_desc_passive",
             "Cooldown": null,
             "ChargeUp": null,
-            "Main": [],
+            "Main": [
+                {
+                    "Key": "StatusEffectEMP",
+                    "Value": null
+                }
+            ],
             "Alt": [
                 {
                     "Key": "EMPDuration",
@@ -14736,7 +14864,16 @@
             "DescKey": "#upgrade_glitch_desc",
             "Cooldown": 55.0,
             "ChargeUp": null,
-            "Main": [],
+            "Main": [
+                {
+                    "Key": "StatusEffectEMP",
+                    "Value": null
+                },
+                {
+                    "Key": "StatusEffectDisarmed",
+                    "Value": null
+                }
+            ],
             "Alt": [
                 {
                     "Key": "AbilityDuration",
@@ -14881,7 +15018,13 @@
             "DescKey": "#upgrade_arcane_extension_desc",
             "Cooldown": null,
             "ChargeUp": null,
-            "Main": [],
+            "Main": [
+                {
+                    "Key": "BonusAbilityDurationPercent",
+                    "Value": 22,
+                    "Type": "duration"
+                }
+            ],
             "Alt": []
         },
         "Upgrades": {
@@ -14901,11 +15044,6 @@
                 "Key": "ChannelMoveSpeed",
                 "Value": -1,
                 "Type": "move_speed"
-            },
-            "BonusAbilityDurationPercent": {
-                "Key": "BonusAbilityDurationPercent",
-                "Value": 22,
-                "Type": "duration"
             }
         }
     },
@@ -14946,7 +15084,13 @@
             "DescKey": "#upgrade_imbued_duration_extender_desc",
             "Cooldown": null,
             "ChargeUp": null,
-            "Main": [],
+            "Main": [
+                {
+                    "Key": "BonusAbilityDurationPercent",
+                    "Value": 28,
+                    "Type": "duration"
+                }
+            ],
             "Alt": []
         },
         "Upgrades": {
@@ -14967,11 +15111,6 @@
                 "Key": "ChannelMoveSpeed",
                 "Value": -1,
                 "Type": "move_speed"
-            },
-            "BonusAbilityDurationPercent": {
-                "Key": "BonusAbilityDurationPercent",
-                "Value": 28,
-                "Type": "duration"
             }
         }
     },
@@ -15292,7 +15431,8 @@
                     "Scale": {
                         "Value": 0.152334,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 }
             ],
             "Alt": [
@@ -15307,7 +15447,8 @@
                     "Scale": {
                         "Value": 0.030467,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 },
                 {
                     "Key": "DPSMax",
@@ -15315,7 +15456,8 @@
                     "Scale": {
                         "Value": 0.304668,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 },
                 {
                     "Key": "Radius",
@@ -15645,7 +15787,8 @@
                     "Scale": {
                         "Value": 0.372,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 },
                 {
                     "Key": "TechArmorDamageReduction",
@@ -15738,7 +15881,8 @@
                     "Scale": {
                         "Value": 0.744,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 },
                 {
                     "Key": "TechArmorGain",
@@ -16237,7 +16381,7 @@
         "Info2": {
             "Type": "Active",
             "DescKey": "#upgrade_stabilizing_tripod_desc",
-            "Cooldown": null,
+            "Cooldown": 64.0,
             "ChargeUp": null,
             "Main": [
                 {
@@ -16359,7 +16503,8 @@
                     "Scale": {
                         "Value": 0.04,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "healing"
                 }
             ],
             "Alt": [
@@ -16382,7 +16527,8 @@
                     "Scale": {
                         "Value": 1.5,
                         "Type": "power_increase"
-                    }
+                    },
+                    "Type": "healing"
                 },
                 {
                     "Key": "BonusMoveSpeed",
@@ -16947,7 +17093,8 @@
                     "Scale": {
                         "Value": 0.16,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 },
                 {
                     "Key": "BonusFireRate",
@@ -16969,6 +17116,11 @@
             "AbilityCooldown": -4
         },
         "Other": {
+            "AbilityCooldown": {
+                "Key": "AbilityCooldown",
+                "Value": 18,
+                "Type": "cooldown"
+            },
             "AbilityUnitTargetLimit": {
                 "Key": "AbilityUnitTargetLimit",
                 "Value": 1
@@ -16986,11 +17138,6 @@
             "BuffDuration": {
                 "Key": "BuffDuration",
                 "Value": 12
-            },
-            "AbilityChargeUpTime": {
-                "Key": "AbilityChargeUpTime",
-                "Value": 18,
-                "Type": "cooldown"
             }
         }
     },
@@ -17043,7 +17190,8 @@
                     "Scale": {
                         "Value": 0.465,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 },
                 {
                     "Key": "Damage",
@@ -17051,7 +17199,8 @@
                     "Scale": {
                         "Value": 0.16,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 },
                 {
                     "Key": "BonusFireRate",
@@ -17074,6 +17223,11 @@
             "TechPower": 15
         },
         "Other": {
+            "AbilityCooldown": {
+                "Key": "AbilityCooldown",
+                "Value": 15,
+                "Type": "cooldown"
+            },
             "AbilityUnitTargetLimit": {
                 "Key": "AbilityUnitTargetLimit",
                 "Value": 1
@@ -17091,11 +17245,6 @@
             "BuffDuration": {
                 "Key": "BuffDuration",
                 "Value": 12
-            },
-            "AbilityChargeUpTime": {
-                "Key": "AbilityChargeUpTime",
-                "Value": 14,
-                "Type": "cooldown"
             }
         }
     },
@@ -17134,7 +17283,7 @@
         "Info2": {
             "Type": "Passive",
             "DescKey": "#upgrade_arcane_eater_desc",
-            "Cooldown": null,
+            "Cooldown": 0.5,
             "ChargeUp": null,
             "Main": [
                 {
@@ -17148,11 +17297,6 @@
                     "Key": "StealDuration",
                     "Value": 12,
                     "Type": "duration"
-                },
-                {
-                    "Key": "ProcCooldown",
-                    "Value": 0.5,
-                    "Type": "cooldown"
                 }
             ]
         },
@@ -17507,6 +17651,10 @@
             "ChargeUp": null,
             "Main": [
                 {
+                    "Key": "StatusEffectInvisible",
+                    "Value": null
+                },
+                {
                     "Key": "BonusMoveSpeed",
                     "Value": "3.5m",
                     "Type": "move_speed",
@@ -17519,7 +17667,9 @@
                     "Scale": {
                         "Value": 6.0,
                         "Type": "power_increase"
-                    }
+                    },
+                    "Type": "healing",
+                    "LocTokenOverride": "#VeilWalker_Heal"
                 }
             ],
             "Alt": [
@@ -17624,7 +17774,10 @@
                     "Scale": {
                         "Value": 2.0925,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "combat_barrier",
+                    "UsageFlags": "ConditionallyApplied",
+                    "LocTokenOverride": "CombatBarrier"
                 }
             ],
             "Alt": [
@@ -17996,7 +18149,7 @@
         "Info2": {
             "Type": "Active",
             "DescKey": "#upgrade_magic_carpet_desc",
-            "Cooldown": null,
+            "Cooldown": 32.0,
             "ChargeUp": null,
             "Main": [
                 {
@@ -18162,7 +18315,8 @@
                     "Scale": {
                         "Value": 0.93,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 }
             ],
             "Alt": []
@@ -18392,7 +18546,8 @@
                     "Scale": {
                         "Value": 0.05,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 }
             ],
             "Alt": [
@@ -18515,6 +18670,10 @@
             "ChargeUp": null,
             "Main": [
                 {
+                    "Key": "StatusEffectStun",
+                    "Value": null
+                },
+                {
                     "Key": "StunDuration",
                     "Value": 0.75,
                     "Type": "duration"
@@ -18532,6 +18691,14 @@
                     "Type": "duration"
                 }
             ]
+        },
+        "Info3": {
+            "Type": "Passive",
+            "DescKey": "#upgrade_ultimate_burst_hint",
+            "Cooldown": null,
+            "ChargeUp": null,
+            "Main": [],
+            "Alt": []
         },
         "Upgrades": {
             "BonusHealth": 100,
@@ -18823,6 +18990,11 @@
             "BonusHealthRegen": 6
         },
         "Other": {
+            "AbilityCooldown": {
+                "Key": "AbilityCooldown",
+                "Value": 1,
+                "Type": "cooldown"
+            },
             "AbilityUnitTargetLimit": {
                 "Key": "AbilityUnitTargetLimit",
                 "Value": 1
@@ -18888,9 +19060,13 @@
         "Info2": {
             "Type": "Active",
             "DescKey": "#upgrade_infinitemagazine_desc",
-            "Cooldown": null,
+            "Cooldown": 40,
             "ChargeUp": null,
             "Main": [
+                {
+                    "Key": "StatusEffectInfiniteClip",
+                    "Value": null
+                },
                 {
                     "Key": "BonusFireRate",
                     "Value": 20,
@@ -19172,7 +19348,7 @@
         "Info2": {
             "Type": "Passive",
             "DescKey": "#upgrade_deflecting_armor_desc",
-            "Cooldown": null,
+            "Cooldown": 1,
             "ChargeUp": null,
             "Main": [
                 {
@@ -19615,7 +19791,10 @@
                     "Scale": {
                         "Value": 2.0,
                         "Type": "power_increase"
-                    }
+                    },
+                    "Type": "bullet_damage",
+                    "UsageFlags": "ConditionallyApplied",
+                    "LocTokenOverride": "BaseAttackDamagePercent"
                 },
                 {
                     "Key": "ProcBaseAttackDamagePercentAltFire",
@@ -19623,7 +19802,10 @@
                     "Scale": {
                         "Value": 1.0,
                         "Type": "power_increase"
-                    }
+                    },
+                    "Type": "bullet_damage",
+                    "UsageFlags": "ConditionallyApplied",
+                    "LocTokenOverride": "BaseAttackDamagePercentAltFire"
                 }
             ],
             "Alt": [
@@ -19760,9 +19942,13 @@
         "Info1": {
             "Type": "Active",
             "DescKey": "#upgrade_mystical_piano_desc",
-            "Cooldown": null,
+            "Cooldown": 23.0,
             "ChargeUp": null,
             "Main": [
+                {
+                    "Key": "StatusEffectStun",
+                    "Value": null
+                },
                 {
                     "Key": "StunDuration",
                     "Value": 2.0,
@@ -19871,7 +20057,8 @@
                     "Scale": {
                         "Value": 0.465,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 }
             ],
             "Alt": [
@@ -19937,7 +20124,7 @@
         "Info1": {
             "Type": "Active",
             "DescKey": "#upgrade_celestial_guidance_desc",
-            "Cooldown": null,
+            "Cooldown": 50,
             "ChargeUp": null,
             "Main": [
                 {
@@ -20466,7 +20653,7 @@
         "Info2": {
             "Type": "Passive",
             "DescKey": "#upgrade_electric_slippers_desc",
-            "Cooldown": null,
+            "Cooldown": 0.3,
             "ChargeUp": null,
             "Main": [
                 {
@@ -20491,11 +20678,6 @@
                     "Key": "Radius",
                     "Value": "8m",
                     "Type": "distance"
-                },
-                {
-                    "Key": "ProcCooldown",
-                    "Value": 0.3,
-                    "Type": "cooldown"
                 }
             ]
         },
@@ -20556,7 +20738,8 @@
                     "Scale": {
                         "Value": 1.75,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 },
                 {
                     "Key": "AbilityDuration",
@@ -20629,7 +20812,7 @@
         "Info1": {
             "Type": "Active",
             "DescKey": "#upgrade_unstable_concoction_desc",
-            "Cooldown": null,
+            "Cooldown": 25.0,
             "ChargeUp": null,
             "Main": [
                 {
@@ -20720,7 +20903,7 @@
         "Info1": {
             "Type": "Active",
             "DescKey": "#upgrade_shivas_bracelet_desc",
-            "Cooldown": null,
+            "Cooldown": 10.0,
             "ChargeUp": null,
             "Main": [
                 {
@@ -20802,7 +20985,8 @@
                     "Scale": {
                         "Value": 0.2,
                         "Type": "spirit"
-                    }
+                    },
+                    "Type": "tech_damage"
                 },
                 {
                     "Key": "AbilityDuration",
@@ -21046,7 +21230,7 @@
         "Info1": {
             "Type": "Active",
             "DescKey": "#cosmetic_item_snowball_desc",
-            "Cooldown": null,
+            "Cooldown": 18,
             "ChargeUp": null,
             "Main": [
                 {
@@ -21183,6 +21367,11 @@
         "IsDisabled": false,
         "StreetBrawl": false,
         "Other": {
+            "AbilityCooldown": {
+                "Key": "AbilityCooldown",
+                "Value": 0.5,
+                "Type": "cooldown"
+            },
             "AbilityCastRange": {
                 "Key": "AbilityCastRange",
                 "Value": 550,
