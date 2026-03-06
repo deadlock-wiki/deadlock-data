@@ -1038,7 +1038,7 @@
             "Alt": [
                 {
                     "Key": "BaseAttackDamagePercent",
-                    "Value": 6,
+                    "Value": 8,
                     "Type": "bullet_damage"
                 }
             ]
@@ -1886,7 +1886,7 @@
             "Alt": [
                 {
                     "Key": "TechPower",
-                    "Value": 8
+                    "Value": 10
                 }
             ]
         },
@@ -1898,7 +1898,7 @@
             "Main": [
                 {
                     "Key": "BaseAttackDamagePercentBonus",
-                    "Value": 40,
+                    "Value": 45,
                     "Type": "bullet_damage",
                     "UsageFlags": "ConditionallyApplied"
                 }
@@ -2006,20 +2006,21 @@
             "Main": [
                 {
                     "Key": "BonusBulletSpeedPercent",
-                    "Value": 50,
+                    "Value": 60,
                     "Type": "bullet_damage"
                 }
             ],
             "Alt": [
                 {
-                    "Key": "BonusFireRate",
-                    "Value": 5
+                    "Key": "BaseAttackDamagePercent",
+                    "Value": 8,
+                    "Type": "bullet_damage"
                 }
             ]
         },
         "Upgrades": {
             "BonusBulletSpeedPercent": 45,
-            "BonusFireRate": 6
+            "BaseAttackDamagePercent": 15
         },
         "Other": {
             "AbilityUnitTargetLimit": {
@@ -2309,13 +2310,17 @@
     "upgrade_weighted_shots": {
         "Key": "upgrade_weighted_shots",
         "Name": "Weighted Shots",
-        "Description": null,
+        "Description": "Your bullets build up a <span class=\"highlight\">Movement Slow</span> on enemies.",
         "Cost": 3200,
         "Tier": 3,
         "Slot": "Weapon",
         "Activation": "Passive",
-        "Components": null,
-        "TargetTypes": null,
+        "Components": [
+            "upgrade_slowing_bullets"
+        ],
+        "TargetTypes": [
+            "HeroEnemy"
+        ],
         "ShopFilters": [
             "WeaponDamage"
         ],
@@ -2329,35 +2334,60 @@
             "Main": [
                 {
                     "Key": "BaseAttackDamagePercent",
-                    "Value": 35,
+                    "Value": 40,
                     "Type": "bullet_damage"
                 }
             ],
             "Alt": [
                 {
-                    "Key": "BonusBulletSpeedPercent",
-                    "Value": -30,
-                    "Type": "bullet_damage"
-                },
-                {
-                    "Key": "TechResist",
-                    "Value": 16,
-                    "Type": "tech_armor_up"
-                },
-                {
                     "Key": "StatusResistancePercent",
-                    "Value": 16,
+                    "Value": 18,
                     "Type": "duration"
                 },
                 {
                     "Key": "StaminaCooldownReduction",
-                    "Value": -20
+                    "Value": -14
+                },
+                {
+                    "Key": "BonusMoveSpeed",
+                    "Value": "-0.5m",
+                    "Type": "move_speed"
+                }
+            ]
+        },
+        "Info2": {
+            "Type": "Passive",
+            "DescKey": "#upgrade_weighted_shots_desc",
+            "Cooldown": null,
+            "ChargeUp": null,
+            "Main": [
+                {
+                    "Key": "SlowPercent",
+                    "Value": 30,
+                    "Type": "slow",
+                    "UsageFlags": "ConditionallyApplied"
+                }
+            ],
+            "Alt": [
+                {
+                    "Key": "GroundDashReductionPercent",
+                    "Value": -25,
+                    "Type": "slow",
+                    "UsageFlags": "ConditionallyApplied"
+                },
+                {
+                    "Key": "SlowDuration",
+                    "Value": 3.5,
+                    "Type": "duration"
+                },
+                {
+                    "Key": "BuildUpPerShot",
+                    "Value": 0.7
                 }
             ]
         },
         "Upgrades": {
             "StatusResistancePercent": 10,
-            "TechResist": 10,
             "BaseAttackDamagePercent": 35
         },
         "Other": {
@@ -2374,6 +2404,11 @@
                 "Key": "ChannelMoveSpeed",
                 "Value": -1,
                 "Type": "move_speed"
+            },
+            "BuildUpDuration": {
+                "Key": "BuildUpDuration",
+                "Value": 5,
+                "Type": "duration"
             }
         }
     },
@@ -2548,7 +2583,7 @@
             "Alt": [
                 {
                     "Key": "BonusAttackRangePercent",
-                    "Value": 4,
+                    "Value": 8,
                     "Type": "distance"
                 },
                 {
@@ -2718,7 +2753,7 @@
             "Alt": [
                 {
                     "Key": "BaseAttackDamagePercent",
-                    "Value": 22,
+                    "Value": 25,
                     "Type": "bullet_damage"
                 },
                 {
@@ -2736,7 +2771,7 @@
             "Main": [
                 {
                     "Key": "OutgoingDamagePenaltyPercent",
-                    "Value": -35,
+                    "Value": -30,
                     "Type": "damage",
                     "UsageFlags": "ConditionallyApplied"
                 },
@@ -2869,7 +2904,7 @@
                 },
                 {
                     "Key": "AbilityLifestealPercentHero",
-                    "Value": 8,
+                    "Value": 12,
                     "Type": "healing",
                     "UsageFlags": "ConditionallyApplied"
                 }
@@ -3387,7 +3422,7 @@
         "Info2": {
             "Type": "Active",
             "DescKey": "#upgrade_targeted_silence_desc",
-            "Cooldown": 35.0,
+            "Cooldown": 30.0,
             "ChargeUp": null,
             "Main": [
                 {
@@ -3398,7 +3433,7 @@
                     "Key": "Damage",
                     "Value": 100.0,
                     "Scale": {
-                        "Value": 0.6,
+                        "Value": 1.0,
                         "Type": "spirit"
                     },
                     "Type": "tech_damage"
@@ -3923,12 +3958,12 @@
                 },
                 {
                     "Key": "TechResist",
-                    "Value": 10,
+                    "Value": 15,
                     "Type": "tech_armor_up"
                 },
                 {
                     "Key": "BonusFireRate",
-                    "Value": 8
+                    "Value": 10
                 }
             ]
         },
@@ -3946,13 +3981,13 @@
                 },
                 {
                     "Key": "FervorFireRate",
-                    "Value": 28,
+                    "Value": 25,
                     "Type": "fire_rate",
                     "UsageFlags": "ConditionallyApplied"
                 },
                 {
                     "Key": "FervorTechResist",
-                    "Value": 30,
+                    "Value": 20,
                     "Type": "tech_armor_up",
                     "UsageFlags": "ConditionallyApplied"
                 }
@@ -4035,13 +4070,10 @@
             "ChargeUp": null,
             "Main": [
                 {
-                    "Key": "HealthSteal",
-                    "Value": 35.0,
-                    "Scale": {
-                        "Value": 0.8,
-                        "Type": "power_increase"
-                    },
-                    "Type": "health"
+                    "Key": "HealthStealPctHero",
+                    "Value": 2.5,
+                    "Type": "health",
+                    "LocTokenOverride": "SiphonBullets_HealthStealPctHero"
                 }
             ],
             "Alt": [
@@ -4053,7 +4085,7 @@
             ]
         },
         "Upgrades": {
-            "HealthSteal": 25,
+            "HealthStealPctHero": 1.5,
             "BulletResist": 10
         },
         "Other": {
@@ -4187,7 +4219,7 @@
             "Alt": [
                 {
                     "Key": "BonusHealth",
-                    "Value": 50,
+                    "Value": 60,
                     "Type": "health"
                 }
             ]
@@ -4477,7 +4509,7 @@
                 },
                 {
                     "Key": "AbilityLifestealPercentHero",
-                    "Value": 8,
+                    "Value": 12,
                     "Type": "healing",
                     "UsageFlags": "ConditionallyApplied"
                 }
@@ -4487,7 +4519,7 @@
         "Info3": {
             "Type": "Passive",
             "DescKey": "#upgrade_spellslinger_headshots_part2_desc",
-            "Cooldown": 2.25,
+            "Cooldown": 2,
             "ChargeUp": null,
             "Main": [
                 {
@@ -4739,7 +4771,7 @@
                     "Key": "ProcBonusMagicDamage",
                     "Value": 40.0,
                     "Scale": {
-                        "Value": 0.8,
+                        "Value": 1.0,
                         "Type": "spirit"
                     },
                     "Type": "tech_damage"
@@ -5397,7 +5429,7 @@
             "Main": [
                 {
                     "Key": "BonusHealth",
-                    "Value": 185,
+                    "Value": 210,
                     "Type": "health"
                 }
             ],
@@ -5972,7 +6004,7 @@
         "Info2": {
             "Type": "Active",
             "DescKey": "#upgrade_reduce_debuff_duration_active_desc",
-            "Cooldown": 50.0,
+            "Cooldown": 40.0,
             "ChargeUp": null,
             "Main": [
                 {
@@ -6357,7 +6389,7 @@
     "upgrade_tech_purge": {
         "Key": "upgrade_tech_purge",
         "Name": "Spirit Resilience",
-        "Description": "When below <span class=\"highlight\">40% health</span>, gain additional Spirit Resist.",
+        "Description": "When below <span class=\"highlight\">50% health</span>, gain additional Spirit Resist.",
         "Cost": 3200,
         "Tier": 3,
         "Slot": "Armor",
@@ -6392,11 +6424,11 @@
             "Main": [
                 {
                     "Key": "HealthThreshold",
-                    "Value": 40
+                    "Value": 50
                 },
                 {
                     "Key": "TechResistBelowThreshold",
-                    "Value": 22,
+                    "Value": 15,
                     "Type": "tech_armor_up",
                     "UsageFlags": "ConditionallyApplied",
                     "LocTokenOverride": "#TechResist"
@@ -6428,7 +6460,7 @@
     "upgrade_improved_bullet_armor": {
         "Key": "upgrade_improved_bullet_armor",
         "Name": "Bullet Resilience",
-        "Description": "When below <span class=\"highlight\">40% health</span>, gain additional <span class=\"highlight\">Bullet Resist</span>.",
+        "Description": "When below <span class=\"highlight\">50% health</span>, gain additional <span class=\"highlight\">Bullet Resist</span>.",
         "Cost": 3200,
         "Tier": 3,
         "Slot": "Armor",
@@ -6463,11 +6495,11 @@
             "Main": [
                 {
                     "Key": "HealthThreshold",
-                    "Value": 40
+                    "Value": 50
                 },
                 {
                     "Key": "BulletResistBelowThreshold",
-                    "Value": 22,
+                    "Value": 15,
                     "Type": "bullet_armor_up",
                     "UsageFlags": "ConditionallyApplied",
                     "LocTokenOverride": "#BulletResist"
@@ -6692,7 +6724,7 @@
             "Main": [
                 {
                     "Key": "RestoreDelay",
-                    "Value": 13
+                    "Value": 10
                 },
                 {
                     "Key": "HealLifePercentOutOfCombat",
@@ -6999,7 +7031,7 @@
                 },
                 {
                     "Key": "StackingGoldPerMinute",
-                    "Value": 22,
+                    "Value": 25,
                     "Type": "souls"
                 }
             ],
@@ -7365,7 +7397,7 @@
     "upgrade_bullet_armor_reduction_aura": {
         "Key": "upgrade_bullet_armor_reduction_aura",
         "Name": "Hunter's Aura",
-        "Description": "Reduces nearby enemies' <span class=\"highlight\">Bullet Resist and Fire Rate</span>. If there is only one enemy hero nearby, this <span class=\"highlight\">effect is tripled</span>.",
+        "Description": "Reduces nearby enemies' <span class=\"highlight\">Bullet Resist and Fire Rate</span>. If there is only one enemy hero nearby, this <span class=\"highlight\">effect is doubled</span>.",
         "Cost": 3200,
         "Tier": 3,
         "Slot": "Weapon",
@@ -7410,13 +7442,13 @@
             "Main": [
                 {
                     "Key": "BulletArmorReduction",
-                    "Value": -8,
+                    "Value": -10,
                     "Type": "bullet_armor_down",
                     "UsageFlags": "ConditionallyApplied"
                 },
                 {
                     "Key": "FireRateSlow",
-                    "Value": 11,
+                    "Value": 14,
                     "Type": "fire_rate",
                     "UsageFlags": "ConditionallyEnemyApplied"
                 }
@@ -7452,7 +7484,7 @@
             },
             "SingleTargetPlayerMultiplier": {
                 "Key": "SingleTargetPlayerMultiplier",
-                "Value": 3
+                "Value": 2
             }
         }
     },
@@ -7590,7 +7622,7 @@
         "Info2": {
             "Type": "Passive",
             "DescKey": "#upgrade_weapon_shielding_desc",
-            "Cooldown": 45,
+            "Cooldown": 35,
             "ChargeUp": null,
             "Main": [
                 {
@@ -7612,7 +7644,7 @@
             "Alt": [
                 {
                     "Key": "DamageThreshold",
-                    "Value": 150,
+                    "Value": 250,
                     "Type": "bullet_armor_up"
                 },
                 {
@@ -7981,7 +8013,7 @@
             "Alt": [
                 {
                     "Key": "BonusHealth",
-                    "Value": 40,
+                    "Value": 50,
                     "Type": "health"
                 }
             ]
@@ -8001,7 +8033,7 @@
             "Alt": [
                 {
                     "Key": "RegenerationDuration",
-                    "Value": 5,
+                    "Value": 6,
                     "Type": "duration"
                 }
             ]
@@ -8141,15 +8173,14 @@
                 },
                 {
                     "Key": "BonusSpirit",
-                    "Value": 30,
+                    "Value": 40,
                     "Type": "tech_damage",
                     "UsageFlags": "IntrinsicallyProvidedInAbility"
                 },
                 {
-                    "Key": "CooldownReduction",
-                    "Value": 12,
-                    "Type": "cooldown",
-                    "UsageFlags": "IntrinsicallyProvidedInAbility"
+                    "Key": "BonusAbilityDurationPercent",
+                    "Value": 20,
+                    "Type": "duration"
                 }
             ],
             "Alt": [
@@ -8165,7 +8196,7 @@
             ]
         },
         "Upgrades": {
-            "CooldownReduction": 10,
+            "BonusAbilityDurationPercent": 15,
             "BonusSpirit": 30,
             "BonusFireRate": 20,
             "AbilityLifestealPercentHero": 15
@@ -8231,7 +8262,7 @@
             "Main": [
                 {
                     "Key": "BulletDamageReflectedPct",
-                    "Value": 60,
+                    "Value": 50,
                     "Type": "bullet_damage"
                 },
                 {
@@ -8898,7 +8929,7 @@
                 },
                 {
                     "Key": "CurrentHealthDamage",
-                    "Value": 7.5,
+                    "Value": 8,
                     "Type": "tech_damage",
                     "LocTokenOverride": "MagicShockDamage"
                 }
@@ -9930,7 +9961,7 @@
     "upgrade_containment": {
         "Key": "upgrade_containment",
         "Name": "Slowing Hex",
-        "Description": "<span class=\"highlight\">Slows movement</span> of enemy target. Also <span class=\"highlight\">Silences</span> their <span class=\"highlight\">movement-based items and abilities</span>.<br><span class=\"diminish\">Does not affect target's stamina usage.</span>",
+        "Description": "<span class=\"highlight\">Slows movement</span> of enemy target. Also <span class=\"highlight\">Silences</span> their <span class=\"highlight\">movement-based items and abilities</span>.<br><span class=\"diminish\">Increases the target's gravity.<br>Does not affect target's stamina usage.</span>",
         "Cost": 1600,
         "Tier": 2,
         "Slot": "Tech",
@@ -9963,7 +9994,7 @@
         "Info2": {
             "Type": "Active",
             "DescKey": "#upgrade_containment_desc",
-            "Cooldown": 30,
+            "Cooldown": 27,
             "ChargeUp": null,
             "Main": [
                 {
@@ -10053,7 +10084,7 @@
         "Info2": {
             "Type": "Active",
             "DescKey": "#upgrade_spirit_sap_desc",
-            "Cooldown": 32,
+            "Cooldown": 18,
             "ChargeUp": null,
             "Main": [
                 {
@@ -10064,7 +10095,7 @@
                 },
                 {
                     "Key": "TechPowerReduction",
-                    "Value": -24,
+                    "Value": -30,
                     "Type": "spirit"
                 },
                 {
@@ -10251,7 +10282,7 @@
         "Info2": {
             "Type": "Active",
             "DescKey": "#upgrade_withering_whip_desc",
-            "Cooldown": 20.0,
+            "Cooldown": 16.0,
             "ChargeUp": null,
             "Main": [
                 {
@@ -10350,7 +10381,7 @@
         "Info2": {
             "Type": "Active",
             "DescKey": "#upgrade_greater_withering_whip_desc",
-            "Cooldown": 20.0,
+            "Cooldown": 16.0,
             "ChargeUp": null,
             "Main": [
                 {
@@ -10990,7 +11021,7 @@
                 },
                 {
                     "Key": "HealAmpReceivePenaltyPercent",
-                    "Value": -45,
+                    "Value": -50,
                     "Type": "damage",
                     "UsageFlags": "ConditionallyApplied"
                 },
@@ -11051,7 +11082,7 @@
             },
             "HealAmpRegenPenaltyPercent": {
                 "Key": "HealAmpRegenPenaltyPercent",
-                "Value": -45,
+                "Value": -50,
                 "Type": "damage",
                 "UsageFlags": "ConditionallyApplied"
             },
@@ -11064,7 +11095,7 @@
     "upgrade_discord": {
         "Key": "upgrade_discord",
         "Name": "Scourge",
-        "Description": "Apply <span class=\"highlight\">Spirit Resistance</span> and an aura on a friendly target that deals <span class=\"highlight\">{g:citadel_inline_attribute:'SpiritIcon'}damage</span> to enemies proportional to their max health. <br>Can be self cast.",
+        "Description": "Apply <span class=\"highlight\">Spirit Resist</span> and an aura on a friendly target that deals <span class=\"highlight\">{g:citadel_inline_attribute:'SpiritIcon'}damage</span> to enemies proportional to their max health. <br>Can be self cast.",
         "Cost": 6400,
         "Tier": 4,
         "Slot": "Tech",
@@ -11132,7 +11163,7 @@
         },
         "Upgrades": {
             "MaxHealthPercentAsDPS": 2,
-            "TechResist": 15,
+            "CombatBarrier": 300,
             "CooldownReduction": 12,
             "BonusHealth": 125,
             "AbilityDuration": 3
@@ -11223,7 +11254,7 @@
     "upgrade_target_stun": {
         "Key": "upgrade_target_stun",
         "Name": "Knockdown",
-        "Description": "Apply a <span class=\"highlight\">Stun</span> after <span class=\"highlight\">2s</span>. Stun duration is increased against <span class=\"highlight\">airborne</span> targets.",
+        "Description": "Apply a <span class=\"highlight\">Stun</span> after <span class=\"highlight\">2s</span>. Stun duration is increased against <span class=\"highlight\">airborne</span> targets.<br><br><span class=\"diminish\">Increases the target's gravity for the duration of the stun.</span>",
         "Cost": 3200,
         "Tier": 3,
         "Slot": "Tech",
@@ -11579,6 +11610,11 @@
             "SlowPercent": 15
         },
         "Other": {
+            "AbilityCastRange": {
+                "Key": "AbilityCastRange",
+                "Value": "30m",
+                "Type": "range"
+            },
             "AbilityUnitTargetLimit": {
                 "Key": "AbilityUnitTargetLimit",
                 "Value": 1
@@ -11802,7 +11838,7 @@
                     "Key": "DamagePulseAmount",
                     "Value": 27.0,
                     "Scale": {
-                        "Value": 0.279,
+                        "Value": 0.25,
                         "Type": "spirit"
                     },
                     "Type": "tech_damage"
@@ -11895,18 +11931,11 @@
                     "Key": "HealAmpReceivePenaltyPercent",
                     "Value": -60,
                     "UsageFlags": "ConditionallyApplied"
-                },
-                {
-                    "Key": "BonusMoveSpeed",
-                    "Value": "-2m",
-                    "Type": "move_speed",
-                    "UsageFlags": "ConditionallyApplied"
                 }
             ]
         },
         "Upgrades": {
             "DeathImmunityDamageReduction": 90,
-            "BonusMoveSpeed": "6m",
             "HealAmpReceivePenaltyPercent": 90,
             "HealAmpRegenPenaltyPercent": 90,
             "DeathImmunityDuration": 0.5,
@@ -11930,6 +11959,12 @@
             "HealAmpRegenPenaltyPercent": {
                 "Key": "HealAmpRegenPenaltyPercent",
                 "Value": -60,
+                "UsageFlags": "ConditionallyApplied"
+            },
+            "BonusMoveSpeed": {
+                "Key": "BonusMoveSpeed",
+                "Value": "0m",
+                "Type": "move_speed",
                 "UsageFlags": "ConditionallyApplied"
             }
         }
@@ -12401,7 +12436,7 @@
             "Main": [
                 {
                     "Key": "CombatBarrier",
-                    "Value": 140.0,
+                    "Value": 200.0,
                     "Scale": {
                         "Value": 8.0,
                         "Type": "power_increase"
@@ -12734,6 +12769,14 @@
                 {
                     "Key": "MaxStacks",
                     "Value": 20
+                },
+                {
+                    "Key": "MinStaminaRestore",
+                    "Value": 1
+                },
+                {
+                    "Key": "MaxStaminaRestore",
+                    "Value": 4
                 }
             ]
         },
@@ -12745,7 +12788,7 @@
         "Other": {
             "AbilityCastRange": {
                 "Key": "AbilityCastRange",
-                "Value": "30m",
+                "Value": "35m",
                 "Type": "range"
             },
             "AbilityUnitTargetLimit": {
@@ -12769,12 +12812,8 @@
             },
             "Radius": {
                 "Key": "Radius",
-                "Value": "30m",
+                "Value": "35m",
                 "Type": "distance"
-            },
-            "MaxStaminaRestore": {
-                "Key": "MaxStaminaRestore",
-                "Value": 3
             }
         }
     },
@@ -13498,7 +13537,7 @@
             "Main": [
                 {
                     "Key": "HealthDrainedPerSecond",
-                    "Value": 40,
+                    "Value": 50,
                     "Type": "damage"
                 }
             ],
@@ -13518,11 +13557,6 @@
                     "Key": "BonusMoveSpeed",
                     "Value": "2.0m",
                     "Type": "move_speed"
-                },
-                {
-                    "Key": "HealAmpReceivePenaltyPercent",
-                    "Value": -30,
-                    "UsageFlags": "ConditionallyApplied"
                 }
             ]
         },
@@ -13550,11 +13584,6 @@
             "TickRate": {
                 "Key": "TickRate",
                 "Value": 0.1
-            },
-            "HealAmpRegenPenaltyPercent": {
-                "Key": "HealAmpRegenPenaltyPercent",
-                "Value": -30,
-                "UsageFlags": "ConditionallyApplied"
             }
         }
     },
@@ -13805,7 +13834,7 @@
                 },
                 {
                     "Key": "SpiritPower",
-                    "Value": 15,
+                    "Value": 20,
                     "Type": "tech_damage",
                     "UsageFlags": "ConditionallyApplied"
                 }
@@ -14089,7 +14118,7 @@
     "upgrade_colossus": {
         "Key": "upgrade_colossus",
         "Name": "Colossus",
-        "Description": "Gain <span class=\"highlight\">Bullet and Spirit Resist</span>, and <span class=\"highlight\">slow the move and dash speed</span> of enemies nearby. Increases your model size.",
+        "Description": "Grow <span class=\"highlight\">larger in size</span>, gaining {g:citadel_inline_attribute:'BulletResist'}, {g:citadel_inline_attribute:'SpiritResist'}, and {g:citadel_inline_attribute:'MeleeDamage'}. <br><br>Nearby enemies suffer from {g:citadel_inline_attribute:'Slow'} and have reduced <span class=\"highlight\">dash speed</span>.",
         "Cost": 6400,
         "Tier": 4,
         "Slot": "Armor",
@@ -14144,6 +14173,11 @@
                     "Value": 35,
                     "Type": "tech_armor_up",
                     "UsageFlags": "ConditionallyApplied"
+                },
+                {
+                    "Key": "BonusMeleeDamagePercent",
+                    "Value": 30,
+                    "Type": "melee_damage"
                 },
                 {
                     "Key": "SlowPercent",
@@ -14551,7 +14585,7 @@
         "Info1": {
             "Type": "Active",
             "DescKey": "#upgrade_self_bubble_desc",
-            "Cooldown": 45.0,
+            "Cooldown": 35.0,
             "ChargeUp": null,
             "Main": [
                 {
@@ -14853,7 +14887,7 @@
             "Alt": [
                 {
                     "Key": "OutgoingDamagePenaltyPercent",
-                    "Value": -8,
+                    "Value": -10,
                     "Type": "damage",
                     "UsageFlags": "ConditionallyApplied"
                 }
@@ -15710,12 +15744,20 @@
                 },
                 {
                     "Key": "LifestealHeal",
-                    "Value": 160,
+                    "Value": 100.0,
+                    "Scale": {
+                        "Value": 1.5,
+                        "Type": "power_increase"
+                    },
                     "Type": "healing"
                 },
                 {
                     "Key": "LifestealHealPercent",
-                    "Value": 50,
+                    "Value": 30.0,
+                    "Scale": {
+                        "Value": 0.5,
+                        "Type": "power_increase"
+                    },
                     "Type": "healing"
                 }
             ],
@@ -16299,7 +16341,7 @@
         "Info2": {
             "Type": "Passive",
             "DescKey": "#upgrade_diviners_kevlar_desc",
-            "Cooldown": 64.0,
+            "Cooldown": 40.0,
             "ChargeUp": null,
             "Main": [
                 {
@@ -16486,7 +16528,7 @@
             "Alt": [
                 {
                     "Key": "BonusHealth",
-                    "Value": 65,
+                    "Value": 90,
                     "Type": "health"
                 }
             ]
@@ -16510,7 +16552,7 @@
             "Alt": [
                 {
                     "Key": "RegenerationDuration",
-                    "Value": 5,
+                    "Value": 6,
                     "Type": "duration"
                 }
             ]
@@ -16525,7 +16567,7 @@
                     "Key": "HealingPerCast",
                     "Value": 70.0,
                     "Scale": {
-                        "Value": 1.5,
+                        "Value": 2.0,
                         "Type": "power_increase"
                     },
                     "Type": "healing"
@@ -17035,7 +17077,7 @@
                 },
                 {
                     "Key": "AbilityDuration",
-                    "Value": 4,
+                    "Value": 5,
                     "Type": "duration"
                 }
             ],
@@ -17577,7 +17619,7 @@
             "Main": [
                 {
                     "Key": "BonusFireRate",
-                    "Value": 18
+                    "Value": 20
                 }
             ],
             "Alt": [
@@ -17967,7 +18009,7 @@
         "Info1": {
             "Type": "Active",
             "DescKey": "#upgrade_split_shot_desc",
-            "Cooldown": 32,
+            "Cooldown": 24,
             "ChargeUp": null,
             "Main": [
                 {
@@ -18141,7 +18183,7 @@
                 },
                 {
                     "Key": "BonusHealth",
-                    "Value": 75,
+                    "Value": 125,
                     "Type": "health"
                 }
             ]
@@ -18154,7 +18196,7 @@
             "Main": [
                 {
                     "Key": "AbilityDuration",
-                    "Value": 8,
+                    "Value": 12,
                     "Type": "duration"
                 }
             ],
@@ -19202,7 +19244,12 @@
             "Alt": [
                 {
                     "Key": "BonusBulletSpeedPercent",
-                    "Value": 50
+                    "Value": 60
+                },
+                {
+                    "Key": "BaseAttackDamagePercent",
+                    "Value": 8,
+                    "Type": "bullet_damage"
                 }
             ]
         },
@@ -19221,7 +19268,8 @@
         },
         "Upgrades": {
             "BonusBulletSpeedPercent": 55,
-            "ProcChance": 20
+            "ProcChance": 20,
+            "BaseAttackDamagePercent": 30
         },
         "Other": {
             "AbilityUnitTargetLimit": {
@@ -19433,7 +19481,7 @@
             "Main": [
                 {
                     "Key": "SpiritDamageReductionProc",
-                    "Value": 75,
+                    "Value": 65,
                     "Type": "tech_armor_up"
                 }
             ],
@@ -19643,8 +19691,8 @@
     },
     "upgrade_weapon_backstabber": {
         "Key": "upgrade_weapon_backstabber",
-        "Name": "Backstabber",
-        "Description": "Attacking enemies from behind with your weapon or melee opens a wound dealing {g:citadel_inline_attribute:'SpiritDPS'} and reducing their bullet resist. During this time, if you or any allies are near the target, will see them <span class=\"highlight\">through walls</span> and be given {g:citadel_inline_attribute:'BonusMoveSpeed'}.",
+        "Name": "Stalker",
+        "Description": "Dealing {g:citadel_inline_attribute:'WeaponDamage'} at close range opens a wound and grants you {g:citadel_inline_attribute:'BonusMoveSpeed'}. <br><br>Wounded enemies take {g:citadel_inline_attribute:'SpiritDPS'}, have reduced {g:citadel_inline_attribute:'BulletResist'}, and are revealed <span class=\"highlight\">through walls</span>.",
         "Cost": 1600,
         "Tier": 2,
         "Slot": "Weapon",
@@ -19704,10 +19752,10 @@
                     "Value": 5
                 },
                 {
-                    "Key": "DebuffRadius",
-                    "Value": "25m",
+                    "Key": "ProcRadius",
+                    "Value": "8m",
                     "Type": "distance",
-                    "LocTokenOverride": "BackstabberRadius"
+                    "LocTokenOverride": "ProcRadius"
                 }
             ]
         },
@@ -19740,6 +19788,12 @@
             "TickRate": {
                 "Key": "TickRate",
                 "Value": 0.5
+            },
+            "DebuffRadius": {
+                "Key": "DebuffRadius",
+                "Value": "25m",
+                "Type": "distance",
+                "LocTokenOverride": "BackstabberRadius"
             }
         }
     },
@@ -19768,14 +19822,15 @@
             "Main": [
                 {
                     "Key": "BonusBulletSpeedPercent",
-                    "Value": 50,
+                    "Value": 60,
                     "Type": "bullet_damage"
                 }
             ],
             "Alt": [
                 {
-                    "Key": "BonusFireRate",
-                    "Value": 5
+                    "Key": "BaseAttackDamagePercent",
+                    "Value": 8,
+                    "Type": "bullet_damage"
                 }
             ]
         },
@@ -19818,7 +19873,7 @@
                 },
                 {
                     "Key": "ProcAmmoConsumed",
-                    "Value": 30
+                    "Value": 2
                 }
             ]
         },
@@ -19826,7 +19881,7 @@
             "ProcBaseAttackDamagePercent": 75,
             "ProcBaseAttackDamagePercentAltFire": 25,
             "BonusBulletSpeedPercent": 45,
-            "BonusFireRate": 6
+            "BaseAttackDamagePercent": 15
         },
         "Other": {
             "AbilityUnitTargetLimit": {
@@ -21082,13 +21137,13 @@
             "Main": [
                 {
                     "Key": "WeaponPowerPerStack",
-                    "Value": 18,
+                    "Value": 20,
                     "Type": "bullet_damage",
                     "UsageFlags": "ConditionallyApplied"
                 },
                 {
                     "Key": "TechRangeMultiplier",
-                    "Value": 30,
+                    "Value": 25,
                     "Type": "distance"
                 }
             ],
@@ -21100,7 +21155,7 @@
                 },
                 {
                     "Key": "WeaponPowerPerStackNonHero",
-                    "Value": 4
+                    "Value": 5
                 },
                 {
                     "Key": "NonHeroStackLimit",
@@ -21130,7 +21185,7 @@
             },
             "TechRadiusMultiplier": {
                 "Key": "TechRadiusMultiplier",
-                "Value": 30,
+                "Value": 25,
                 "Type": "distance"
             }
         }
@@ -21206,6 +21261,92 @@
                 "Key": "ChannelMoveSpeed",
                 "Value": -1,
                 "Type": "move_speed"
+            }
+        }
+    },
+    "upgrade_goose_egg": {
+        "Key": "upgrade_goose_egg",
+        "Name": "Golden Goose Egg",
+        "Description": "Gain <span class=\"highlight\">souls over time</span>, as long as you are alive.",
+        "Cost": 800,
+        "Tier": 1,
+        "Slot": "Tech",
+        "Activation": "InstantCast",
+        "Components": null,
+        "TargetTypes": null,
+        "ShopFilters": [
+            "Movement"
+        ],
+        "IsDisabled": false,
+        "StreetBrawl": false,
+        "Info1": {
+            "Type": "Innate",
+            "DescKey": null,
+            "Cooldown": null,
+            "ChargeUp": null,
+            "Main": [
+                {
+                    "Key": "OutgoingDamagePenaltyPercent",
+                    "Value": -10
+                }
+            ],
+            "Alt": [
+                {
+                    "Key": "BonusSprintSpeed",
+                    "Value": "1m",
+                    "Type": "move_speed"
+                },
+                {
+                    "Key": "OutOfCombatHealthRegen",
+                    "Value": 1,
+                    "Type": "healing"
+                }
+            ]
+        },
+        "Info2": {
+            "Type": "Active",
+            "DescKey": "#upgrade_goose_egg_active_desc",
+            "Cooldown": null,
+            "ChargeUp": null,
+            "Main": [
+                {
+                    "Key": "BonusGoldPerMinute",
+                    "Value": 75,
+                    "Type": "souls"
+                }
+            ],
+            "Alt": []
+        },
+        "Upgrades": {
+            "BonusSprintSpeed": 5,
+            "OutOfCombatHealthRegen": 10
+        },
+        "Other": {
+            "AbilityUnitTargetLimit": {
+                "Key": "AbilityUnitTargetLimit",
+                "Value": 1
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Key": "AbilityCooldownBetweenCharge",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
+            "ChannelMoveSpeed": {
+                "Key": "ChannelMoveSpeed",
+                "Value": -1,
+                "Type": "move_speed"
+            },
+            "ThinkRate": {
+                "Key": "ThinkRate",
+                "Value": 3
+            },
+            "StartingGold": {
+                "Key": "StartingGold",
+                "Value": 400
+            },
+            "BonusBuffsPerGold": {
+                "Key": "BonusBuffsPerGold",
+                "Value": 200
             }
         }
     },

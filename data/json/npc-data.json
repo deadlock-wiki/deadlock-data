@@ -278,12 +278,14 @@
         "BurstCooldown": 0.2,
         "BurstDuration": 1.0,
         "EmpoweredModifierLevel1": {
-            "MaxHealth": 9350,
-            "TransitionDuration": 1.0
+            "MaxHealth": 9000,
+            "TransitionDuration": 1.0,
+            "EnabledStateMask": "MODIFIER_STATE_DO_NOT_ADJUST_HEALTH_ON_MAXHEALTH_CHANGE"
         },
         "EmpoweredModifierLevel2": {
-            "MaxHealth": 11900,
-            "TransitionDuration": 1.0
+            "MaxHealth": 12000,
+            "TransitionDuration": 1.0,
+            "EnabledStateMask": "MODIFIER_STATE_DO_NOT_ADJUST_HEALTH_ON_MAXHEALTH_CHANGE"
         },
         "FriendlyAuraModifier": {
             "IsHidden": true,
@@ -306,7 +308,7 @@
             "ShieldRadius": 7.62
         },
         "InvulModifierRange": 22.0,
-        "MaxHealth": 6800,
+        "MaxHealth": 6000,
         "MeleeAttackRadius": 5.08,
         "MeleeAttemptRange": 15.24,
         "MeleeDamage": 300,
@@ -601,12 +603,14 @@
         "BurstCooldown": 0.2,
         "BurstDuration": 1.0,
         "EmpoweredModifierLevel1": {
-            "MaxHealth": 9350,
-            "TransitionDuration": 1.0
+            "MaxHealth": 9000,
+            "TransitionDuration": 1.0,
+            "EnabledStateMask": "MODIFIER_STATE_DO_NOT_ADJUST_HEALTH_ON_MAXHEALTH_CHANGE"
         },
         "EmpoweredModifierLevel2": {
-            "MaxHealth": 11900,
-            "TransitionDuration": 1.0
+            "MaxHealth": 12000,
+            "TransitionDuration": 1.0,
+            "EnabledStateMask": "MODIFIER_STATE_DO_NOT_ADJUST_HEALTH_ON_MAXHEALTH_CHANGE"
         },
         "FriendlyAuraModifier": {
             "IsHidden": true,
@@ -629,7 +633,7 @@
             "ShieldRadius": 7.62
         },
         "InvulModifierRange": 22.0,
-        "MaxHealth": 6800,
+        "MaxHealth": 6000,
         "MeleeAttackRadius": 5.08,
         "MeleeAttemptRange": 15.24,
         "MeleeDamage": 300,
@@ -875,7 +879,7 @@
                 },
                 "AoEModifier": {
                     "AuraSearchType": "CITADEL_UNIT_TARGET_ALL_ENEMY",
-                    "WaveHeight": 7.62,
+                    "WaveHeight": 10.16,
                     "modifierProvidedByAura": {
                         "IsHidden": true,
                         "TossUpStrength": 400.0,
@@ -1113,6 +1117,9 @@
     "citadel_cat_animating": {
         "Name": "citadel_cat_animating"
     },
+    "citadel_fissure_wall": {
+        "Name": "citadel_fissure_wall"
+    },
     "citadel_hideout_ball": {
         "BallTouchRadius": 1.016,
         "ConsecutiveJugglesVsRandomness": {
@@ -1346,8 +1353,12 @@
         },
         "EnemyTrooperProtectionRange": 40.0,
         "MaxHealthFinal": 8775,
-        "MaxHealthGenerator": 8100,
+        "MaxHealthGenerator": 5000,
+        "MaxHealthGeneratorSecond": 10000,
         "Name": "destroyable_building",
+        "PowerGenerator": {
+            "EnabledStateMask": "MODIFIER_STATE_DO_NOT_ADJUST_HEALTH_ON_MAXHEALTH_CHANGE"
+        },
         "RangedArmorModifier": {
             "RangeMin": 33.02,
             "RangeMax": 33.02,
@@ -2126,12 +2137,14 @@
         "BurstCooldown": 0.2,
         "BurstDuration": 1.0,
         "EmpoweredModifierLevel1": {
-            "MaxHealth": 9350,
-            "TransitionDuration": 1.0
+            "MaxHealth": 9000,
+            "TransitionDuration": 1.0,
+            "EnabledStateMask": "MODIFIER_STATE_DO_NOT_ADJUST_HEALTH_ON_MAXHEALTH_CHANGE"
         },
         "EmpoweredModifierLevel2": {
-            "MaxHealth": 11900,
-            "TransitionDuration": 1.0
+            "MaxHealth": 12000,
+            "TransitionDuration": 1.0,
+            "EnabledStateMask": "MODIFIER_STATE_DO_NOT_ADJUST_HEALTH_ON_MAXHEALTH_CHANGE"
         },
         "FriendlyAuraModifier": {
             "IsHidden": true,
@@ -2154,7 +2167,7 @@
             "ShieldRadius": 7.62
         },
         "InvulModifierRange": 22.0,
-        "MaxHealth": 6800,
+        "MaxHealth": 6000,
         "MeleeAttackRadius": 5.08,
         "MeleeAttemptRange": 15.24,
         "MeleeDamage": 300,
@@ -2449,12 +2462,14 @@
         "BurstCooldown": 0.2,
         "BurstDuration": 1.0,
         "EmpoweredModifierLevel1": {
-            "MaxHealth": 9350,
-            "TransitionDuration": 1.0
+            "MaxHealth": 9000,
+            "TransitionDuration": 1.0,
+            "EnabledStateMask": "MODIFIER_STATE_DO_NOT_ADJUST_HEALTH_ON_MAXHEALTH_CHANGE"
         },
         "EmpoweredModifierLevel2": {
-            "MaxHealth": 11900,
-            "TransitionDuration": 1.0
+            "MaxHealth": 12000,
+            "TransitionDuration": 1.0,
+            "EnabledStateMask": "MODIFIER_STATE_DO_NOT_ADJUST_HEALTH_ON_MAXHEALTH_CHANGE"
         },
         "FriendlyAuraModifier": {
             "IsHidden": true,
@@ -2477,7 +2492,7 @@
             "ShieldRadius": 7.62
         },
         "InvulModifierRange": 22.0,
-        "MaxHealth": 6800,
+        "MaxHealth": 6000,
         "MeleeAttackRadius": 5.08,
         "MeleeAttemptRange": 15.24,
         "MeleeDamage": 300,
@@ -2723,7 +2738,7 @@
                 },
                 "AoEModifier": {
                     "AuraSearchType": "CITADEL_UNIT_TARGET_ALL_ENEMY",
-                    "WaveHeight": 7.62,
+                    "WaveHeight": 10.16,
                     "modifierProvidedByAura": {
                         "IsHidden": true,
                         "TossUpStrength": 400.0,
@@ -2968,9 +2983,6 @@
             "AutoRegisterModifierValueFromAbilityPropertyName": [
                 "DamageSlowPercent"
             ]
-        },
-        "ExplodeModifier": {
-            "EnabledStateMask": "MODIFIER_STATE_UNKILLABLE"
         },
         "IntrinsicModifiers": [
             {
@@ -3368,7 +3380,8 @@
             {
                 "HEALTH_REGEN_PER_SECOND": 15.0,
                 "ABILITY_DAMAGE_REDUCTION_PERCENT": 0.0,
-                "BULLET_ARMOR_DAMAGE_RESIST": 15
+                "BULLET_ARMOR_DAMAGE_RESIST": 15,
+                "STATUS_RESISTANCE": 35
             }
         ],
         "Name": "npc_super_neutral",
@@ -3380,7 +3393,7 @@
         "SightRangeNPCs": 38.1,
         "SightRangePlayers": 38.1,
         "SpawnInterval": 420,
-        "StartingHealth": 11900,
+        "StartingHealth": 13000,
         "WeaponInfo": {
             "BulletSpeed": 330.2,
             "BulletDamage": 20.0,
@@ -3540,6 +3553,7 @@
         "BarrackBossDPS": 80.0,
         "BarrackGuardianDamageResistPct": 67.5,
         "BreakableForceScale": 5.0,
+        "DPSPctGrowthPerMinute": 0.0,
         "EnemyBaseDamageReduction": 35.0,
         "GeneratorBossDPS": 50.0,
         "MaxHealth": 300,
@@ -3556,7 +3570,7 @@
         "RunSpeed": 13.0,
         "ShrinesDownBuffModifier": {
             "HealthScale": 1.4,
-            "DamageScale": 40.0
+            "DamageScale": 60.0
         },
         "SightRangeNPCs": 40.64,
         "SightRangePlayers": 17.78,
@@ -3646,6 +3660,7 @@
             }
         },
         "BreakableForceScale": 5.0,
+        "DPSPctGrowthPerMinute": 3.0,
         "EnemyBaseDamageReduction": 35.0,
         "GeneratorBossDPS": 50.0,
         "MaxHealth": 350,
@@ -3659,6 +3674,9 @@
         "MeleeHitRange": 2.54,
         "Name": "trooper_medic",
         "NearDeathDuration": 1.0,
+        "NpcOutOfCombatRegenModifier": {
+            "OOCRegen": 7
+        },
         "OutlineRange": 35.56,
         "OutlineThroughWalls": true,
         "OutlineWhenVisible": true,
@@ -3668,7 +3686,7 @@
         "RunSpeed": 13.0,
         "ShrinesDownBuffModifier": {
             "HealthScale": 1.4,
-            "DamageScale": 40.0
+            "DamageScale": 60.0
         },
         "SightRangeNPCs": 40.64,
         "SightRangePlayers": 22.86,
@@ -3727,6 +3745,7 @@
         "BarrackBossDPS": 80.0,
         "BarrackGuardianDamageResistPct": 67.5,
         "BreakableForceScale": 5.0,
+        "DPSPctGrowthPerMinute": 0.0,
         "EnemyBaseDamageReduction": 35.0,
         "GeneratorBossDPS": 50.0,
         "MaxHealth": 400,
@@ -3740,6 +3759,9 @@
         "MeleeHitRange": 3.048,
         "Name": "trooper_melee",
         "NearDeathDuration": 1.0,
+        "NpcOutOfCombatRegenModifier": {
+            "OOCRegen": 7
+        },
         "OutlineRange": 35.56,
         "OutlineThroughWalls": true,
         "OutlineWhenVisible": true,
@@ -3749,7 +3771,7 @@
         "RunSpeed": 13.0,
         "ShrinesDownBuffModifier": {
             "HealthScale": 1.4,
-            "DamageScale": 40.0
+            "DamageScale": 60.0
         },
         "SightRangeNPCs": 40.64,
         "SightRangePlayers": 17.78,
@@ -3808,6 +3830,7 @@
         "BarrackBossDPS": 80.0,
         "BarrackGuardianDamageResistPct": 67.5,
         "BreakableForceScale": 5.0,
+        "DPSPctGrowthPerMinute": 0.0,
         "EnemyBaseDamageReduction": 35.0,
         "GeneratorBossDPS": 50.0,
         "MaxHealth": 400,
@@ -3829,7 +3852,7 @@
         "RunSpeed": 13.0,
         "ShrinesDownBuffModifier": {
             "HealthScale": 1.4,
-            "DamageScale": 40.0
+            "DamageScale": 60.0
         },
         "SightRangeNPCs": 40.64,
         "SightRangePlayers": 17.78,
@@ -3887,6 +3910,7 @@
         "BarrackBossDPS": 80.0,
         "BarrackGuardianDamageResistPct": 67.5,
         "BreakableForceScale": 5.0,
+        "DPSPctGrowthPerMinute": 0.0,
         "EnemyBaseDamageReduction": 35.0,
         "GeneratorBossDPS": 50.0,
         "MaxHealth": 300,
@@ -3900,6 +3924,9 @@
         "MeleeHitRange": 2.54,
         "Name": "trooper_normal",
         "NearDeathDuration": 1.0,
+        "NpcOutOfCombatRegenModifier": {
+            "OOCRegen": 7
+        },
         "OutlineRange": 35.56,
         "OutlineThroughWalls": true,
         "OutlineWhenVisible": true,
@@ -3909,7 +3936,7 @@
         "RunSpeed": 13.0,
         "ShrinesDownBuffModifier": {
             "HealthScale": 1.4,
-            "DamageScale": 40.0
+            "DamageScale": 60.0
         },
         "SightRangeNPCs": 40.64,
         "SightRangePlayers": 17.78,
@@ -4153,6 +4180,7 @@
             }
         },
         "BreakableForceScale": 5.0,
+        "DPSPctGrowthPerMinute": 0.0,
         "GeneratorBossDPS": 50.0,
         "MaxHealth": 1,
         "MeleeAttemptRange": 2.54,
@@ -4168,7 +4196,7 @@
         "RunSpeed": 13.0,
         "ShrinesDownBuffModifier": {
             "HealthScale": 1.4,
-            "DamageScale": 40.0
+            "DamageScale": 60.0
         },
         "SightRangeNPCs": 40.64,
         "SightRangePlayers": 17.78,
