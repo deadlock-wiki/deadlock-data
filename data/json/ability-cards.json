@@ -20570,17 +20570,17 @@
             "Upgrades": [
                 {
                     "HealPerPickup": {
-                        "Value": {
-                            "Value": 5,
-                            "Scale": {
+                        "Value": 5,
+                        "Scale": [
+                            {
                                 "Value": 0.1,
                                 "Type": "spirit"
+                            },
+                            {
+                                "Value": 1.0,
+                                "Type": "healing"
                             }
-                        },
-                        "Scale": {
-                            "Value": 1.0,
-                            "Type": "healing"
-                        }
+                        ]
                     },
                     "DescKey": "ability_necro_hauntingskull_t1_desc"
                 },
