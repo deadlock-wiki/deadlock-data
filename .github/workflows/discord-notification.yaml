@@ -4,53 +4,21 @@ on:
     branches:
       - master
     paths:
-      - '**.json'
+      - 'data/**'
 
 jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
-
-      - name: Get changed JSON files
-        id: changed-files
-        run: |
-          COMMIT_SHA=${{ github.sha }}
-          echo "commit_sha=$COMMIT_SHA" >> $GITHUB_OUTPUT
-
-          CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD -- '*.json' 2>/dev/null || echo "")
-          echo "changed_files=$CHANGED_FILES" >> $GITHUB_OUTPUT
 
       - name: Send Discord notification
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          COMMIT_SHA: ${{ steps.changed-files.outputs.commit_sha }}
-          CHANGED_FILES: ${{ steps.changed-files.outputs.changed_files }}
           REPO_URL: "https://github.com/${{ github.repository }}/commit/${{ steps.changed-files.outputs.commit_sha }}"
-        run: |
-          if [ -z "$DISCORD_WEBHOOK_URL" ]; then
-            echo "DISCORD_WEBHOOK_URL not set, skipping notification"
-            exit 0
-          fi
-
-          TOTAL=$(echo "$CHANGED_FILES" | grep -c '\.json$')
-          FILE_LIST=$(echo "$CHANGED_FILES" | grep '\.json$' | xargs -n1 basename | head -20 | sed 's/^/• /')
-
-          if [ "$TOTAL" -gt 20 ]; then
-            REMAINDER=$((TOTAL - 20))
-            FILE_LIST="$FILE_LIST"$'\n'"• ...and $REMAINDER more (see commit)"
-          fi
-
-          # Handles newlines and escapes quotes
-          FILE_LIST=$(echo "$FILE_LIST" | tr '\n' '|' | sed 's/|$//' | sed 's/|/\\n/g')
-          FILE_LIST=$(echo "$FILE_LIST" | sed 's/"/\\"/g')
-
-          PAYLOAD="{\"embeds\":[{\"title\":\"📝 Deadlock Wiki Data Updated\",\"description\":\"New data pushed to the wiki repository\",\"color\":5815783,\"fields\":[{\"name\":\"Changed Files\",\"value\":\"$FILE_LIST\",\"inline\":false}],\"url\":\"$REPO_URL\",\"footer\":{\"text\":\"Commit: $COMMIT_SHA\"},\"timestamp\":\"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"}]}"
-
-          curl -s -f -X POST \
-            -H "Content-Type: application/json" \
-            -d "$PAYLOAD" \
-            "$DISCORD_WEBHOOK_URL"
+          COMMIT_SHA: ${{ github.sha }}
+          COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
+        run: ./scripts/format-diff.sh
