@@ -21,7 +21,7 @@ jobs:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           REPO_URL: "https://github.com/${{ github.repository }}/commit/${{ steps.changed-files.outputs.commit_sha }}"
           COMMIT_SHA: ${{ github.sha }}
-          COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
+          COMMIT_MSG: ${{ github.event.head_commit.message }}
         run: |
           chmod +x .github/workflows/scripts/send-discord-notification.sh
           .github/workflows/scripts/send-discord-notification.sh
