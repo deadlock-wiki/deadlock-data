@@ -22,4 +22,6 @@ jobs:
           REPO_URL: "https://github.com/${{ github.repository }}/commit/${{ steps.changed-files.outputs.commit_sha }}"
           COMMIT_SHA: ${{ github.sha }}
           COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
-        run: .github/workflows/scripts/format-diff.sh
+        run: |
+          chmod +x .github/workflows/scripts/format-diff.sh
+          .github/workflows/scripts/format-diff.sh
