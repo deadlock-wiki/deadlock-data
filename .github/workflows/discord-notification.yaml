@@ -19,7 +19,7 @@ jobs:
       - name: Send Discord notification
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          REPO_URL: "https://github.com/${{ github.repository }}/commit/${{ steps.changed-files.outputs.commit_sha }}"
+          REPO_URL: "https://github.com/${{ github.repository }}"
           COMMIT_SHA: ${{ github.sha }}
           COMMIT_MSG: ${{ github.event.head_commit.message }}
         run: |
