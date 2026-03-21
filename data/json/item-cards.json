@@ -1108,8 +1108,8 @@
             ]
         },
         "Upgrades": {
-            "NonPlayerBonusWeaponPower": 15,
-            "NonPlayerBulletResist": 15,
+            "NonPlayerBonusWeaponPower": 35,
+            "NonPlayerBulletResist": 35,
             "OutOfCombatHealthRegen": 1
         },
         "Other": {
@@ -1206,7 +1206,7 @@
                 },
                 {
                     "Key": "TechRangeMultiplier",
-                    "Value": 15,
+                    "Value": 12,
                     "Type": "distance",
                     "UsageFlags": "ConditionallyApplied"
                 }
@@ -1220,12 +1220,12 @@
             ]
         },
         "Upgrades": {
-            "TechRadiusMultiplier": 25,
-            "TechRangeMultiplier": 25,
-            "BaseAttackDamagePercent": 37,
-            "BonusHealth": 200,
-            "NonPlayerBonusWeaponPower": 10,
-            "NonPlayerBulletResist": 10
+            "TechRadiusMultiplier": 40,
+            "TechRangeMultiplier": 40,
+            "BaseAttackDamagePercent": 47,
+            "BonusHealth": 300,
+            "NonPlayerBonusWeaponPower": 30,
+            "NonPlayerBulletResist": 30
         },
         "Other": {
             "AbilityCastRange": {
@@ -1259,7 +1259,7 @@
             },
             "TechRadiusMultiplier": {
                 "Key": "TechRadiusMultiplier",
-                "Value": 15,
+                "Value": 12,
                 "Type": "distance",
                 "UsageFlags": "ConditionallyApplied"
             }
@@ -2180,9 +2180,9 @@
         },
         "Upgrades": {
             "ParryCooldownReduction": 0.5,
-            "MeleeResistPercent": 12,
+            "MeleeResistPercent": 22,
             "BonusDamagePercent": 20,
-            "BonusHealth": 50
+            "BonusHealth": 150
         },
         "Other": {
             "AbilityUnitTargetLimit": {
@@ -2234,7 +2234,7 @@
             "Alt": [
                 {
                     "Key": "BonusHealth",
-                    "Value": 100,
+                    "Value": 75,
                     "Type": "health"
                 },
                 {
@@ -2341,7 +2341,7 @@
             "Alt": [
                 {
                     "Key": "StatusResistancePercent",
-                    "Value": 18,
+                    "Value": 20,
                     "Type": "duration"
                 },
                 {
@@ -3157,9 +3157,9 @@
             ]
         },
         "Upgrades": {
-            "ActiveBonusMoveSpeed": "2m",
-            "BonusFireRate": 20,
-            "BulletResist": 5,
+            "ActiveBonusMoveSpeed": "3m",
+            "BonusFireRate": 34,
+            "BulletResist": 10,
             "ActiveRadius": "15m"
         },
         "Other": {
@@ -6553,7 +6553,7 @@
             "Alt": [
                 {
                     "Key": "BulletResist",
-                    "Value": 15,
+                    "Value": 12,
                     "Type": "bullet_armor_up"
                 }
             ]
@@ -6585,8 +6585,8 @@
             ]
         },
         "Upgrades": {
-            "ActiveMoveSpeedPenalty": "4.5m",
-            "GroundDashReductionPercent": 50,
+            "ActiveMoveSpeedPenalty": "6.5m",
+            "GroundDashReductionPercent": 60,
             "AbilityCooldown": -2,
             "BulletResist": 5
         },
@@ -7660,8 +7660,8 @@
         },
         "Upgrades": {
             "OutOfCombatHealthRegen": 3,
-            "CombatBarrier": 175,
-            "BonusMoveSpeed": "1m",
+            "CombatBarrier": 225,
+            "BonusMoveSpeed": "3m",
             "AbilityCooldown": -20
         },
         "Other": {
@@ -7880,7 +7880,7 @@
             "Main": [
                 {
                     "Key": "TechResist",
-                    "Value": 15
+                    "Value": 18
                 }
             ],
             "Alt": [
@@ -8280,9 +8280,10 @@
             ]
         },
         "Upgrades": {
-            "BulletResist": 8,
+            "BulletResist": 16,
             "SpiritDamageReflectedPct": 15,
-            "BulletDamageReflectedPct": 25
+            "BulletDamageReflectedPct": 25,
+            "AbilityCooldown": -10
         },
         "Other": {
             "AbilityUnitTargetLimit": {
@@ -8342,7 +8343,7 @@
             "Main": [
                 {
                     "Key": "TechRangeMultiplier",
-                    "Value": 35,
+                    "Value": 30,
                     "Type": "distance"
                 }
             ],
@@ -8370,7 +8371,7 @@
             },
             "TechRadiusMultiplier": {
                 "Key": "TechRadiusMultiplier",
-                "Value": 35,
+                "Value": 30,
                 "Type": "distance"
             }
         }
@@ -10113,10 +10114,10 @@
             ]
         },
         "Upgrades": {
-            "BonusHealth": 75,
-            "MagicResistReduction": -10,
-            "AbilityCooldown": -10,
-            "TechPowerReduction": -16
+            "BonusHealth": 150,
+            "MagicResistReduction": -12,
+            "AbilityCooldown": -12,
+            "TechPowerReduction": -26
         },
         "Other": {
             "AbilityUnitTargetLimit": {
@@ -10215,8 +10216,8 @@
         "Upgrades": {
             "PercentDamage": 20,
             "BonusFireRate": 20,
-            "TechPowerReduction": -14,
-            "MagicResistReduction": -10,
+            "TechPowerReduction": -26,
+            "MagicResistReduction": -12,
             "AbilityDuration": 0.25,
             "AbilityCooldown": -12
         },
@@ -10315,7 +10316,8 @@
         "Upgrades": {
             "BonusHealth": 130,
             "BulletArmorReduction": -4,
-            "FireRateSlow": 20
+            "FireRateSlow": 20,
+            "AbilityCooldown": -8
         },
         "Other": {
             "AbilityUnitTargetLimit": {
@@ -10409,9 +10411,9 @@
             ]
         },
         "Upgrades": {
-            "BonusHealth": 75,
+            "BonusHealth": 175,
             "BulletArmorReduction": -7,
-            "AbilityCooldown": -6
+            "AbilityCooldown": -8
         },
         "Other": {
             "AbilityUnitTargetLimit": {
@@ -10471,7 +10473,7 @@
                 },
                 {
                     "Key": "TechRangeMultiplier",
-                    "Value": 8,
+                    "Value": 6,
                     "Type": "distance"
                 }
             ]
@@ -10507,10 +10509,10 @@
             ]
         },
         "Upgrades": {
-            "TechRadiusMultiplier": 10,
-            "TechRangeMultiplier": 10,
-            "HealPercentAmount": 5,
-            "AbilityCooldown": -40
+            "TechRadiusMultiplier": 20,
+            "TechRangeMultiplier": 20,
+            "HealPercentAmount": 15,
+            "AbilityCooldown": -45
         },
         "Other": {
             "AbilityUnitTargetLimit": {
@@ -10537,7 +10539,7 @@
             },
             "TechRadiusMultiplier": {
                 "Key": "TechRadiusMultiplier",
-                "Value": 8,
+                "Value": 6,
                 "Type": "distance"
             }
         }
@@ -11283,7 +11285,7 @@
                 },
                 {
                     "Key": "TechRangeMultiplier",
-                    "Value": 6,
+                    "Value": 5,
                     "Type": "distance"
                 }
             ]
@@ -11357,7 +11359,7 @@
             },
             "TechRadiusMultiplier": {
                 "Key": "TechRadiusMultiplier",
-                "Value": 6,
+                "Value": 5,
                 "Type": "distance"
             }
         }
@@ -11560,7 +11562,7 @@
             "Alt": [
                 {
                     "Key": "TechRangeMultiplier",
-                    "Value": 10,
+                    "Value": 8,
                     "Type": "distance"
                 },
                 {
@@ -11645,7 +11647,7 @@
             },
             "TechRadiusMultiplier": {
                 "Key": "TechRadiusMultiplier",
-                "Value": 10,
+                "Value": 8,
                 "Type": "distance"
             }
         }
@@ -11746,11 +11748,6 @@
                     "Value": 5,
                     "Type": "bullet_armor_up",
                     "UsageFlags": "IntrinsicallyProvidedInAbility"
-                },
-                {
-                    "Key": "TechRangeMultiplier",
-                    "Value": 5,
-                    "Type": "distance"
                 }
             ]
         },
@@ -11784,11 +11781,6 @@
                 "Key": "ChannelMoveSpeed",
                 "Value": -1,
                 "Type": "move_speed"
-            },
-            "TechRadiusMultiplier": {
-                "Key": "TechRadiusMultiplier",
-                "Value": 5,
-                "Type": "distance"
             }
         }
     },
@@ -12174,10 +12166,10 @@
         },
         "Upgrades": {
             "OutOfCombatHealthRegen": 20,
-            "AmbushBonusFireRate": 25,
-            "AmbushBonusMeleeDamage": 20,
-            "AmbushBonusTechPower": 25,
-            "AbilityCooldown": -12
+            "AmbushBonusFireRate": 35,
+            "AmbushBonusMeleeDamage": 30,
+            "AmbushBonusTechPower": 35,
+            "AbilityCooldown": -17
         },
         "Other": {
             "AbilityUnitTargetLimit": {
@@ -12458,8 +12450,8 @@
             ]
         },
         "Upgrades": {
-            "AbilityCooldown": -21,
-            "CombatBarrier": 175,
+            "AbilityCooldown": -35,
+            "CombatBarrier": 275,
             "InterruptCooldown": -3
         },
         "Other": {
@@ -12645,7 +12637,7 @@
             "Alt": [
                 {
                     "Key": "TechRangeMultiplier",
-                    "Value": 6,
+                    "Value": 5,
                     "Type": "distance"
                 },
                 {
@@ -12688,7 +12680,7 @@
             "TechRadiusMultiplier": 12,
             "TechRangeMultiplier": 12,
             "TechPower": 12,
-            "TotalHealthRegen": 325
+            "TotalHealthRegen": 425
         },
         "Other": {
             "AbilityUnitTargetLimit": {
@@ -12712,7 +12704,7 @@
             },
             "TechRadiusMultiplier": {
                 "Key": "TechRadiusMultiplier",
-                "Value": 6,
+                "Value": 5,
                 "Type": "distance"
             }
         }
@@ -12744,7 +12736,7 @@
             "Alt": [
                 {
                     "Key": "TechResist",
-                    "Value": 8,
+                    "Value": 10,
                     "Type": "tech_armor_up"
                 }
             ]
@@ -12781,9 +12773,11 @@
             ]
         },
         "Upgrades": {
-            "TechResist": 4,
-            "HealPerStack": 20,
-            "AbilityCooldown": -8
+            "TechResist": 10,
+            "HealPerStack": 30,
+            "AbilityCooldown": -8,
+            "MaxStaminaRestore": 2,
+            "MinStaminaRestore": 2
         },
         "Other": {
             "AbilityCastRange": {
@@ -12870,9 +12864,9 @@
             ]
         },
         "Upgrades": {
-            "TotalHealthRegen": 500,
+            "TotalHealthRegen": 600,
             "BonusSprintSpeed": "6m",
-            "AbilityCooldown": -26
+            "AbilityCooldown": -60
         },
         "Other": {
             "AbilityUnitTargetLimit": {
@@ -12927,6 +12921,10 @@
                     "Key": "BonusMoveSpeed",
                     "Value": "5.0m",
                     "Type": "move_speed"
+                },
+                {
+                    "Key": "BonusFireRate",
+                    "Value": 20
                 }
             ],
             "Alt": [
@@ -12946,6 +12944,7 @@
             "ModelScaleGrowth": -0.15,
             "ModelScaleGrowthTooltip": -15,
             "BonusMoveSpeed": "2m",
+            "BonusFireRate": 20,
             "AbilityCooldown": -15
         },
         "Other": {
@@ -13096,7 +13095,7 @@
             "Main": [
                 {
                     "Key": "TechRangeMultiplier",
-                    "Value": 10,
+                    "Value": 8,
                     "Type": "distance"
                 }
             ],
@@ -13168,7 +13167,7 @@
             },
             "TechRadiusMultiplier": {
                 "Key": "TechRadiusMultiplier",
-                "Value": 10,
+                "Value": 8,
                 "Type": "distance"
             }
         }
@@ -13202,7 +13201,7 @@
             "Alt": [
                 {
                     "Key": "TechRangeMultiplier",
-                    "Value": 15,
+                    "Value": 10,
                     "Type": "distance"
                 }
             ]
@@ -13270,7 +13269,7 @@
             },
             "TechRadiusMultiplier": {
                 "Key": "TechRadiusMultiplier",
-                "Value": 15,
+                "Value": 10,
                 "Type": "distance"
             }
         }
@@ -13520,7 +13519,7 @@
             "Alt": [
                 {
                     "Key": "TechResist",
-                    "Value": 10
+                    "Value": 8
                 },
                 {
                     "Key": "OutOfCombatHealthRegen",
@@ -13562,8 +13561,8 @@
         },
         "Upgrades": {
             "HealthDrainedPerSecond": -20,
-            "BonusFireRate": 20,
-            "TechResist": 8,
+            "BonusFireRate": 30,
+            "TechResist": 14,
             "OutOfCombatHealthRegen": 8
         },
         "Other": {
@@ -13822,7 +13821,7 @@
             "Main": [
                 {
                     "Key": "TechRangeMultiplierBuff",
-                    "Value": 15,
+                    "Value": 12,
                     "Type": "distance",
                     "UsageFlags": "ConditionallyApplied"
                 },
@@ -13871,7 +13870,7 @@
             },
             "TechRadiusMultiplierBuff": {
                 "Key": "TechRadiusMultiplierBuff",
-                "Value": 15,
+                "Value": 12,
                 "Type": "distance",
                 "UsageFlags": "ConditionallyApplied"
             }
@@ -14922,7 +14921,8 @@
             ]
         },
         "Upgrades": {
-            "AbilityCooldown": -30
+            "AbilityCooldown": -40,
+            "AbilityDuration": 0.25
         },
         "Other": {
             "AbilityUnitTargetLimit": {
@@ -15318,9 +15318,9 @@
             ]
         },
         "Upgrades": {
-            "BulletLifestealPercent": 18,
-            "ActiveBonusFireRate": 15,
-            "TechResist": 15
+            "BulletLifestealPercent": 28,
+            "ActiveBonusFireRate": 25,
+            "TechResist": 20
         },
         "Other": {
             "AbilityUnitTargetLimit": {
@@ -16642,7 +16642,7 @@
             "Alt": [
                 {
                     "Key": "TechPower",
-                    "Value": 35
+                    "Value": 30
                 },
                 {
                     "Key": "BonusHealth",
@@ -16718,7 +16718,7 @@
         "Info2": {
             "Type": null,
             "DescKey": "#upgrade_burst_fire_desc",
-            "Cooldown": 7,
+            "Cooldown": 9,
             "ChargeUp": null,
             "Main": [
                 {
@@ -16737,7 +16737,7 @@
             "Alt": [
                 {
                     "Key": "AbilityDuration",
-                    "Value": 3.5,
+                    "Value": 4.5,
                     "Type": "duration"
                 }
             ]
@@ -17108,7 +17108,7 @@
     "upgrade_quick_silver": {
         "Key": "upgrade_quick_silver",
         "Name": "Quicksilver Reload",
-        "Description": "Your imbued ability charges up over time with {g:citadel_inline_attribute:'BonusSpiritDamage'}, {g:citadel_inline_attribute:'BonusFireRate'}, and <span class=\"highlight\">bonus bullets</span> on use.",
+        "Description": "Your imbued ability charges up over time with {g:citadel_inline_attribute:'BonusSpiritDamage'}, {g:citadel_inline_attribute:'BonusFireRate'}, and <span class=\"highlight\">reloads bullets</span> on use.",
         "Cost": 1600,
         "Tier": 2,
         "Slot": "Tech",
@@ -17723,12 +17723,12 @@
             ]
         },
         "Upgrades": {
-            "SpiritPower": 15,
-            "InvisMoveSpeedMod": "4m",
-            "HealOnVeil": 200,
-            "AbilityCooldown": -4,
+            "SpiritPower": 25,
+            "InvisMoveSpeedMod": "6m",
+            "HealOnVeil": 300,
+            "AbilityCooldown": -9,
             "InvisDuration": 4,
-            "BonusMoveSpeed": "2m"
+            "BonusMoveSpeed": "4m"
         },
         "Other": {
             "AbilityDuration": {
@@ -18043,8 +18043,8 @@
         },
         "Upgrades": {
             "BulletSplitShot": 4,
-            "WeaponDamagePerStack": 4,
-            "AbilityCooldown": -6
+            "WeaponDamagePerStack": 8,
+            "AbilityCooldown": -8
         },
         "Other": {
             "AbilityUnitTargetLimit": {
@@ -18215,11 +18215,11 @@
             ]
         },
         "Upgrades": {
-            "TechPower": 25,
-            "AbilityDuration": 6,
-            "BonusAbilityDurationPercent": 10,
-            "BonusHealth": 100,
-            "FlyMoveSpeed": "2m",
+            "TechPower": 46,
+            "AbilityDuration": 8,
+            "BonusAbilityDurationPercent": 15,
+            "BonusHealth": 200,
+            "FlyMoveSpeed": "6m",
             "SummonDuration": -0.3
         },
         "Other": {
@@ -18561,7 +18561,7 @@
             "Alt": [
                 {
                     "Key": "TechRangeMultiplier",
-                    "Value": 8,
+                    "Value": 6,
                     "Type": "distance"
                 }
             ]
@@ -18633,7 +18633,7 @@
             },
             "TechRadiusMultiplier": {
                 "Key": "TechRadiusMultiplier",
-                "Value": 8,
+                "Value": 6,
                 "Type": "distance"
             },
             "DamageThresholdDuration": {
@@ -19317,7 +19317,7 @@
                 },
                 {
                     "Key": "BonusFireRate",
-                    "Value": 30
+                    "Value": 35
                 }
             ]
         },
@@ -19903,7 +19903,7 @@
     "upgrade_icarus_wings": {
         "Key": "upgrade_icarus_wings",
         "Name": "Seraphim Wings",
-        "Description": "When Airborne, You deal more damage and take reduced damage. Allows an additional use of <span class=\"highlight\">Air Jump</span> or <span class=\"highlight\">Air Dash</span> before landing.",
+        "Description": "When Airborne, You deal more damage and take reduced damage. Allows <span class=\"highlight\">unlimited</span> Air Dash and Jumping.",
         "Cost": 9999,
         "Tier": 5,
         "Slot": "Armor",
@@ -19927,6 +19927,16 @@
                 {
                     "Key": "GravityScale",
                     "Value": -70
+                },
+                {
+                    "Key": "AirControlPercent",
+                    "Value": 100,
+                    "Type": "move_speed"
+                },
+                {
+                    "Key": "AirControlAccelPercent",
+                    "Value": 50,
+                    "Type": "move_speed"
                 }
             ]
         },
@@ -19942,12 +19952,7 @@
                 },
                 {
                     "Key": "AirBonusDamageTaken",
-                    "Value": -40
-                },
-                {
-                    "Key": "AirControlPercent",
-                    "Value": 100,
-                    "Type": "move_speed"
+                    "Value": -60
                 }
             ],
             "Alt": []
@@ -19970,11 +19975,6 @@
             "ChannelMoveSpeed": {
                 "Key": "ChannelMoveSpeed",
                 "Value": -1,
-                "Type": "move_speed"
-            },
-            "AirControlAccelPercent": {
-                "Key": "AirControlAccelPercent",
-                "Value": 50,
                 "Type": "move_speed"
             }
         }
@@ -20022,14 +20022,14 @@
                 },
                 {
                     "Key": "Radius",
-                    "Value": "11m",
+                    "Value": "12m",
                     "Type": "distance"
                 }
             ]
         },
         "Upgrades": {
             "AbilityCooldown": -15,
-            "Radius": "2m"
+            "Radius": "3m"
         },
         "Other": {
             "AbilityDuration": {
@@ -20089,6 +20089,11 @@
             "Main": [],
             "Alt": [
                 {
+                    "Key": "StatusResistancePercent",
+                    "Value": 40,
+                    "Type": "duration"
+                },
+                {
                     "Key": "BonusHealth",
                     "Value": 300,
                     "Type": "health"
@@ -20119,14 +20124,16 @@
             "Alt": [
                 {
                     "Key": "EndRadius",
-                    "Value": "12m",
+                    "Value": "20m",
                     "Type": "distance"
                 }
             ]
         },
         "Upgrades": {
             "EndRadius": "6m",
-            "BonusHealth": 300
+            "BonusHealth": 300,
+            "StatusResistancePercent": 20,
+            "Damage": 200
         },
         "Other": {
             "AbilityUnitTargetLimit": {
@@ -20155,7 +20162,7 @@
             },
             "DamageHeight": {
                 "Key": "DamageHeight",
-                "Value": "2.5m"
+                "Value": "4m"
             }
         }
     },
@@ -20179,12 +20186,12 @@
         "Info1": {
             "Type": "Active",
             "DescKey": "#upgrade_celestial_guidance_desc",
-            "Cooldown": 50,
+            "Cooldown": 30,
             "ChargeUp": null,
             "Main": [
                 {
                     "Key": "HealPercentAmount",
-                    "Value": 50,
+                    "Value": 60,
                     "Type": "healing"
                 },
                 {
@@ -20202,7 +20209,7 @@
             "Alt": [
                 {
                     "Key": "MinHeal",
-                    "Value": 300,
+                    "Value": 400,
                     "Type": "healing"
                 },
                 {
@@ -20213,10 +20220,9 @@
             ]
         },
         "Upgrades": {
-            "AbilityCooldown": -25,
+            "AbilityCooldown": -20,
             "BuffDuration": 2,
-            "MinHeal": 200,
-            "Radius": "6m"
+            "MinHeal": 200
         },
         "Other": {
             "AbilityUnitTargetLimit": {
@@ -20534,12 +20540,12 @@
         "Info1": {
             "Type": "Passive",
             "DescKey": "#upgrade_cloak_of_opportunity_desc",
-            "Cooldown": 14.0,
+            "Cooldown": 12.0,
             "ChargeUp": null,
             "Main": [
                 {
                     "Key": "CombatBarrier",
-                    "Value": 300,
+                    "Value": 500,
                     "Type": "combat_barrier",
                     "UsageFlags": "ConditionallyApplied"
                 },
@@ -20564,9 +20570,9 @@
             ]
         },
         "Upgrades": {
-            "BonusMoveSpeed": "2m",
+            "BonusMoveSpeed": "4m",
             "AbilityCooldown": -4,
-            "CombatBarrier": 200
+            "CombatBarrier": 300
         },
         "Other": {
             "AbilityUnitTargetLimit": {
@@ -20608,7 +20614,7 @@
             "Main": [
                 {
                     "Key": "MeleeDistanceScale",
-                    "Value": 130
+                    "Value": 150
                 }
             ],
             "Alt": [
@@ -20639,21 +20645,21 @@
             "Main": [
                 {
                     "Key": "CooldownReductionOnHitPct",
-                    "Value": 12,
+                    "Value": 16,
                     "Type": "cooldown"
                 },
                 {
                     "Key": "CooldownReductionOnHitMin",
-                    "Value": 3,
+                    "Value": 4,
                     "Type": "cooldown"
                 }
             ],
             "Alt": []
         },
         "Upgrades": {
-            "MeleeDistanceScale": 40,
+            "MeleeDistanceScale": 50,
             "MeleeResistPercent": 15,
-            "CooldownReductionOnHitPct": 4
+            "CooldownReductionOnHitPct": 6
         },
         "Other": {
             "AbilityUnitTargetLimit": {
@@ -20723,7 +20729,7 @@
                 },
                 {
                     "Key": "FireRateWhileSliding",
-                    "Value": 50,
+                    "Value": 60,
                     "Type": "fire_rate",
                     "UsageFlags": "ConditionallyApplied"
                 }
@@ -20731,7 +20737,7 @@
             "Alt": [
                 {
                     "Key": "Radius",
-                    "Value": "8m",
+                    "Value": "12m",
                     "Type": "distance"
                 }
             ]
@@ -20852,7 +20858,7 @@
     "upgrade_unstable_concoction": {
         "Key": "upgrade_unstable_concoction",
         "Name": "Unstable Concoction",
-        "Description": "Consume a concoction that grants you increased <span class=\"highlight\">speed, health, spirit and weapon damage</span>. After a short duration <span class=\"highlight\">you die and explode</span>, stunning nearby enemies and dealing damage based on your maximum health.",
+        "Description": "Consume a concoction that grants you <span class=\"highlight\">Unstoppable</span> and increased <span class=\"highlight\">speed, health, spirit and weapon damage</span>. After a short duration <span class=\"highlight\">you die and explode</span>, stunning nearby enemies and dealing damage based on your maximum health.",
         "Cost": 9999,
         "Tier": 5,
         "Slot": "Tech",
@@ -20907,7 +20913,7 @@
                 },
                 {
                     "Key": "Radius",
-                    "Value": "18m"
+                    "Value": "22m"
                 },
                 {
                     "Key": "TechPower",
@@ -21024,7 +21030,12 @@
             "Alt": [
                 {
                     "Key": "Stamina",
-                    "Value": 2
+                    "Value": 3
+                },
+                {
+                    "Key": "BonusHealth",
+                    "Value": 350,
+                    "Type": "health"
                 }
             ]
         },
@@ -21036,16 +21047,16 @@
             "Main": [
                 {
                     "Key": "DPS",
-                    "Value": 75.0,
+                    "Value": 125.0,
                     "Scale": {
-                        "Value": 0.2,
+                        "Value": 0.4,
                         "Type": "spirit"
                     },
                     "Type": "tech_damage"
                 },
                 {
                     "Key": "AbilityDuration",
-                    "Value": 2.5,
+                    "Value": 3,
                     "Type": "duration",
                     "LocTokenOverride": "InvisDuration"
                 },
@@ -21143,7 +21154,7 @@
                 },
                 {
                     "Key": "TechRangeMultiplier",
-                    "Value": 25,
+                    "Value": 20,
                     "Type": "distance"
                 }
             ],
@@ -21185,7 +21196,7 @@
             },
             "TechRadiusMultiplier": {
                 "Key": "TechRadiusMultiplier",
-                "Value": 25,
+                "Value": 20,
                 "Type": "distance"
             }
         }
@@ -21327,6 +21338,11 @@
             "AbilityUnitTargetLimit": {
                 "Key": "AbilityUnitTargetLimit",
                 "Value": 1
+            },
+            "AbilityChannelTime": {
+                "Key": "AbilityChannelTime",
+                "Value": 2,
+                "Type": "cast"
             },
             "AbilityCooldownBetweenCharge": {
                 "Key": "AbilityCooldownBetweenCharge",
