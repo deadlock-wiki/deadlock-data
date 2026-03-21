@@ -9,6 +9,9 @@ COMMIT_URL="$REPO_URL/commit/$COMMIT_SHA"
 CHANGED_FILES=$(git diff --name-only ${COMMIT_SHA}~1 ${COMMIT_SHA} -- '*.json' 2>/dev/null || echo "")
 TOTAL=$(echo "$CHANGED_FILES" | grep -c '.')
 
+# remove new lines from commit msg
+COMMIT_MSG="${COMMIT_MSG//$'\n'/}"
+
 if [[ $COMMIT_MSG =~ Deadbot\ v([0-9.]+)\ \|\ Client\ ([0-9]+)\ \-\ ([A-Za-z]+\ [0-9]+\ [0-9]+)\ \(\deadbot@([0-9a-f]+)\) ]]; then
     DEADBOT_VERSION="${BASH_REMATCH[1]}"
     DEADLOCK_CLIENT="${BASH_REMATCH[2]}"
@@ -117,4 +120,5 @@ echo $PAYLOAD
 curl -v -X POST \
 -H "Content-Type: application/json" \
 -d "$PAYLOAD" \
+--fail \
 "$DISCORD_WEBHOOK_URL"
