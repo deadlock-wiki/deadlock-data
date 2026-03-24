@@ -11,6 +11,7 @@ TOTAL=$(echo "$CHANGED_FILES" | grep -c '.')
 
 # remove new lines from commit msg
 COMMIT_MSG="${COMMIT_MSG//$'\n'/}"
+COMMIT_MSG="${COMMIT_MSG//\\n/}"
 
 if [[ $COMMIT_MSG =~ Deadbot\ v([0-9.]+)\ \|\ Client\ ([0-9]+)\ \-\ ([A-Za-z]+\ [0-9]+\ [0-9]+)\ \(\deadbot@([0-9a-f]+)\) ]]; then
     DEADBOT_VERSION="${BASH_REMATCH[1]}"
