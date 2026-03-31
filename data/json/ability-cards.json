@@ -20621,12 +20621,11 @@
                 {
                     "SlowPercent": 30,
                     "SlowDuration": 1,
-                    "SkullLifetime": 4,
                     "DescKey": "ability_necro_hauntingskull_t2_desc"
                 },
                 {
                     "SkullCount": 2,
-                    "SkullsApplyPassive": 1,
+                    "SkullLifetime": 4,
                     "DescKey": "ability_necro_hauntingskull_t3_desc"
                 }
             ],
@@ -20969,8 +20968,9 @@
                     "MaxStolenAttackDamage": 20
                 },
                 {
-                    "BonusWeaponAngle": 35,
-                    "BonusWeaponTethers": 1,
+                    "SkullBuildUp": 0.15,
+                    "ZombieMeleeBuildUp": 0.15,
+                    "ZombieExplosionBuildUp": 1.0,
                     "DescKey": "ability_necro_fear_t3_desc"
                 }
             ],
@@ -20997,10 +20997,6 @@
                 "ProgressLossPerSecond": {
                     "Name": null,
                     "Value": 1
-                },
-                "SkullBuildUp": {
-                    "Name": null,
-                    "Value": 0.15
                 },
                 "TickInterval": {
                     "Name": null,
