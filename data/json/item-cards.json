@@ -1132,7 +1132,7 @@
     "upgrade_non_player_bonus_sacrifice": {
         "Key": "upgrade_non_player_bonus_sacrifice",
         "Name": "Cultist Sacrifice",
-        "Description": "Target an enemy NPC and consume it for <span class=\"highlight\">150% Bonus Souls</span> and grants a powerful long lasting buff.",
+        "Description": "Target an enemy NPC and consume it for <span class=\"highlight\">170% Bonus Souls</span> and grants a powerful long lasting buff.",
         "Cost": 3200,
         "Tier": 3,
         "Slot": "Weapon",
@@ -1249,7 +1249,7 @@
             },
             "BonusSoulsPct": {
                 "Key": "BonusSoulsPct",
-                "Value": 150
+                "Value": 170
             },
             "BonusAbilityCharges": {
                 "Key": "BonusAbilityCharges",
@@ -3422,7 +3422,7 @@
         "Info2": {
             "Type": "Active",
             "DescKey": "#upgrade_targeted_silence_desc",
-            "Cooldown": 30.0,
+            "Cooldown": 42.0,
             "ChargeUp": null,
             "Main": [
                 {
@@ -3431,9 +3431,9 @@
                 },
                 {
                     "Key": "Damage",
-                    "Value": 100.0,
+                    "Value": 75.0,
                     "Scale": {
-                        "Value": 1.0,
+                        "Value": 0.7,
                         "Type": "spirit"
                     },
                     "Type": "tech_damage"
@@ -4313,7 +4313,7 @@
                 },
                 {
                     "Key": "BonusMoveSpeed",
-                    "Value": "-1m",
+                    "Value": "-0.7m",
                     "Type": "move_speed"
                 }
             ]
@@ -5088,7 +5088,7 @@
             "Main": [
                 {
                     "Key": "DotHealthPercent",
-                    "Value": 2.0,
+                    "Value": 1.7,
                     "Scale": {
                         "Value": 0.005,
                         "Type": "spirit"
@@ -5097,7 +5097,7 @@
                 },
                 {
                     "Key": "HealAmpReceivePenaltyPercent",
-                    "Value": -30,
+                    "Value": -35,
                     "Type": "damage",
                     "UsageFlags": "ConditionallyApplied"
                 }
@@ -5110,7 +5110,7 @@
                 },
                 {
                     "Key": "BuildUpPerShot",
-                    "Value": 1.1638
+                    "Value": 1.28
                 }
             ]
         },
@@ -5145,7 +5145,7 @@
             },
             "HealAmpRegenPenaltyPercent": {
                 "Key": "HealAmpRegenPenaltyPercent",
-                "Value": -30,
+                "Value": -35,
                 "Type": "damage",
                 "UsageFlags": "ConditionallyApplied"
             },
@@ -7637,7 +7637,7 @@
                 },
                 {
                     "Key": "BonusMoveSpeed",
-                    "Value": "1.5m",
+                    "Value": "1.75m",
                     "Type": "move_speed"
                 }
             ],
@@ -7649,12 +7649,12 @@
                 },
                 {
                     "Key": "DamageWindow",
-                    "Value": 3.5,
+                    "Value": 4.0,
                     "Type": "duration"
                 },
                 {
                     "Key": "BarrierDuration",
-                    "Value": 7
+                    "Value": 8
                 }
             ]
         },
@@ -7728,7 +7728,7 @@
                 },
                 {
                     "Key": "BonusMoveSpeed",
-                    "Value": "1.5m",
+                    "Value": "1.75m",
                     "Type": "move_speed"
                 }
             ],
@@ -7745,7 +7745,7 @@
                 },
                 {
                     "Key": "BarrierDuration",
-                    "Value": 7
+                    "Value": 8
                 }
             ]
         },
@@ -8257,12 +8257,12 @@
         "Info2": {
             "Type": "Active",
             "DescKey": "#upgrade_return_fire_desc",
-            "Cooldown": 25.0,
+            "Cooldown": 23.0,
             "ChargeUp": null,
             "Main": [
                 {
                     "Key": "BulletDamageReflectedPct",
-                    "Value": 50,
+                    "Value": 60,
                     "Type": "bullet_damage"
                 },
                 {
@@ -11016,7 +11016,7 @@
                     "Key": "DotHealthPercent",
                     "Value": 2.6,
                     "Scale": {
-                        "Value": 0.0055,
+                        "Value": 0.004,
                         "Type": "spirit"
                     },
                     "Type": "tech_damage"
@@ -11754,7 +11754,7 @@
         "Info2": {
             "Type": "Active",
             "DescKey": "#upgrade_ability_power_shard_active",
-            "Cooldown": 30.0,
+            "Cooldown": 35.0,
             "ChargeUp": null,
             "Main": [],
             "Alt": []
@@ -17959,13 +17959,13 @@
             "Main": [
                 {
                     "Key": "BonusClipSizePercent",
-                    "Value": 90
+                    "Value": 100
                 }
             ],
             "Alt": [
                 {
                     "Key": "BaseAttackDamagePercent",
-                    "Value": 12,
+                    "Value": 14,
                     "Type": "bullet_damage"
                 }
             ]
@@ -19269,7 +19269,7 @@
             "Main": [
                 {
                     "Key": "ProcChance",
-                    "Value": 50
+                    "Value": 55
                 }
             ],
             "Alt": []
@@ -19396,7 +19396,7 @@
             "Alt": [
                 {
                     "Key": "BonusHealth",
-                    "Value": 100,
+                    "Value": 130,
                     "Type": "health"
                 }
             ]
@@ -19861,9 +19861,9 @@
                 },
                 {
                     "Key": "ProcBaseAttackDamagePercentAltFire",
-                    "Value": 35.0,
+                    "Value": 40.0,
                     "Scale": {
-                        "Value": 1.0,
+                        "Value": 1.3,
                         "Type": "power_increase"
                     },
                     "Type": "bullet_damage",
@@ -21260,7 +21260,7 @@
         "Info2": {
             "Type": null,
             "DescKey": "#upgrade_rechargingbullets_desc",
-            "Cooldown": 20,
+            "Cooldown": 24,
             "ChargeUp": null,
             "Main": [
                 {
@@ -21353,7 +21353,7 @@
         "Upgrades": {
             "BonusSprintSpeed": 5,
             "OutOfCombatHealthRegen": 10,
-            "BonusBuffsPerGold": -100,
+            "BonusBuffsPerGold": -50,
             "OutgoingDamagePenaltyPercent": 20
         },
         "Other": {
@@ -21386,7 +21386,7 @@
             },
             "BonusBuffsPerGold": {
                 "Key": "BonusBuffsPerGold",
-                "Value": 150
+                "Value": 100
             }
         }
     },
