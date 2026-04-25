@@ -492,15 +492,13 @@
         ],
         "IsDisabled": false,
         "StreetBrawl": false,
-        "AbilityCooldown": 30.0,
+        "AbilityCooldown": 35.0,
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
         "BonusFireRate": 5,
         "TechResist": 5,
         "BulletResist": 5,
-        "TechRangeMultiplier": 5,
-        "TechRadiusMultiplier": 5,
         "PropertyUpgrades": {
             "BulletResist": 5,
             "TechResist": 5,
@@ -587,7 +585,7 @@
     },
     "upgrade_acolytes_glove": {
         "Name": "Spirit Strike",
-        "Description": "When you perform a <span class=\"highlight\">Light or Heavy Melee</span> attack against a hero, deal extra <span class=\"highlight\">Spirit Damage</span> with the attack and reduce the target's <span class=\"highlight\">Spirit Resist</span>.<span class=\"diminish\"><br><br>Cooldown is 2x longer for Light Melee hits.</span>",
+        "Description": "When you perform a <span class=\"highlight\">Light or Heavy Melee</span> attack against a hero, deal extra {g:citadel_inline_attribute:'SpiritDamage'} with the attack and reduce the target's <span class=\"highlight\">Spirit Resist</span>.<span class=\"diminish\"><br><br>Cooldown is 2x longer for Light Melee hits.</span>",
         "Cost": 800,
         "Tier": 1,
         "Activation": "Passive",
@@ -815,8 +813,8 @@
         "TetherRadius": "1m",
         "SlowPercent": 35,
         "GroundDashReductionPercent": -40,
-        "TechRangeMultiplier": 10,
-        "TechRadiusMultiplier": 10,
+        "TechRangeMultiplier": 8,
+        "TechRadiusMultiplier": 8,
         "BonusSprintSpeed": "0.75m",
         "PropertyUpgrades": {
             "BonusSprintSpeed": "9m",
@@ -967,7 +965,7 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
         "BonusBulletSpeedPercent": 60,
-        "ProcChance": 50,
+        "ProcChance": 55,
         "BaseAttackDamagePercent": 8,
         "PropertyUpgrades": {
             "BonusBulletSpeedPercent": 55,
@@ -1069,8 +1067,8 @@
         "ChannelMoveSpeed": -1,
         "BonusAbilityDurationPercent": 15,
         "SpiritPower": 20,
-        "TechRadiusMultiplierBuff": 15,
-        "TechRangeMultiplierBuff": 15,
+        "TechRadiusMultiplierBuff": 12,
+        "TechRangeMultiplierBuff": 12,
         "Stamina": 1,
         "StaminaCooldownReduction": 12,
         "PropertyUpgrades": {
@@ -1083,7 +1081,7 @@
     },
     "upgrade_arctic_blast": {
         "Name": "Arctic Blast",
-        "Description": "Release an expanding ice blast that deals <span class=\"highlight\">Spirit Damage</span>, <span class=\"highlight\">Freezing</span> and then <span class=\"highlight\">Slowing</span> targets it hits. Targets take increased damage while frozen.",
+        "Description": "Release an expanding ice blast that deals {g:citadel_inline_attribute:'SpiritDamage'}, <span class=\"highlight\">Freezing</span> and then <span class=\"highlight\">Slowing</span> targets it hits. Targets take increased damage while frozen.",
         "Cost": 6400,
         "Tier": 4,
         "Activation": "InstantCast",
@@ -1337,7 +1335,7 @@
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
-        "TechResist": 10,
+        "TechResist": 8,
         "HealthDrainedPerSecond": 50,
         "TickRate": 0.1,
         "BonusFireRate": 35,
@@ -1346,8 +1344,8 @@
         "OutOfCombatHealthRegen": 4,
         "PropertyUpgrades": {
             "HealthDrainedPerSecond": -20,
-            "BonusFireRate": 20,
-            "TechResist": 8,
+            "BonusFireRate": 30,
+            "TechResist": 14,
             "OutOfCombatHealthRegen": 8
         }
     },
@@ -1389,7 +1387,7 @@
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
-        "TechPower": 35,
+        "TechPower": 30,
         "BonusHealth": 75,
         "OutOfCombatHealthRegen": 4,
         "TechPowerPercent": 15,
@@ -1547,7 +1545,7 @@
     },
     "upgrade_bullet_resist_shredder": {
         "Name": "Bullet Resist Shredder",
-        "Description": "Reduces <span class=\"highlight\">Bullet Resist</span> on enemies when you deal <span class=\"highlight\">Spirit Damage</span>.",
+        "Description": "Reduces <span class=\"highlight\">Bullet Resist</span> on enemies when you deal {g:citadel_inline_attribute:'SpiritDamage'}.",
         "Cost": 1600,
         "Tier": 2,
         "Activation": "Passive",
@@ -1597,8 +1595,8 @@
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
-        "TechRangeMultiplier": 25,
-        "TechRadiusMultiplier": 25,
+        "TechRangeMultiplier": 20,
+        "TechRadiusMultiplier": 20,
         "WeaponPowerPerStack": 20,
         "WeaponPowerPerStackNonHero": 5,
         "NonHeroStackLimit": 8,
@@ -1624,8 +1622,8 @@
         ],
         "IsDisabled": false,
         "StreetBrawl": false,
-        "AbilityCooldown": 7,
-        "AbilityDuration": 3.5,
+        "AbilityCooldown": 9,
+        "AbilityDuration": 4.5,
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
@@ -1791,21 +1789,20 @@
         "ShopFilters": null,
         "IsDisabled": false,
         "StreetBrawl": true,
-        "AbilityCooldown": 50,
+        "AbilityCooldown": 30,
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
-        "MinHeal": 300,
-        "HealPercentAmount": 50,
+        "MinHeal": 400,
+        "HealPercentAmount": 60,
         "Radius": "999m",
         "BuffDuration": 6,
         "StaminaCooldownReduction": 100,
         "BuffMoveSpeedBonus": "5m",
         "PropertyUpgrades": {
-            "AbilityCooldown": -25,
+            "AbilityCooldown": -20,
             "BuffDuration": 2,
-            "MinHeal": 200,
-            "Radius": "6m"
+            "MinHeal": 200
         }
     },
     "upgrade_chain_lightning": {
@@ -2066,18 +2063,18 @@
         "ShopFilters": null,
         "IsDisabled": false,
         "StreetBrawl": true,
-        "AbilityCooldown": 14.0,
+        "AbilityCooldown": 12.0,
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
-        "CombatBarrier": 300,
+        "CombatBarrier": 500,
         "BonusMoveSpeed": "3m",
         "BuffDuration": 6,
         "StatusImmuneDuration": 4,
         "PropertyUpgrades": {
-            "BonusMoveSpeed": "2m",
+            "BonusMoveSpeed": "4m",
             "AbilityCooldown": -4,
-            "CombatBarrier": 200
+            "CombatBarrier": 300
         }
     },
     "upgrade_cloaking_device": {
@@ -2142,10 +2139,10 @@
         "BonusSprintSpeed": "1.5m",
         "PropertyUpgrades": {
             "OutOfCombatHealthRegen": 20,
-            "AmbushBonusFireRate": 25,
-            "AmbushBonusMeleeDamage": 20,
-            "AmbushBonusTechPower": 25,
-            "AbilityCooldown": -12
+            "AmbushBonusFireRate": 35,
+            "AmbushBonusMeleeDamage": 30,
+            "AmbushBonusTechPower": 35,
+            "AbilityCooldown": -17
         }
     },
     "upgrade_close_quarter_combat": {
@@ -2212,7 +2209,7 @@
     },
     "upgrade_cold_front": {
         "Name": "Cold Front",
-        "Description": "Release an expanding ice blast that deals <span class=\"highlight\">Spirit Damage</span> and <span class=\"highlight\">Slows</span> targets it hits.",
+        "Description": "Release an expanding ice blast that deals {g:citadel_inline_attribute:'SpiritDamage'} and <span class=\"highlight\">Slows</span> targets it hits.",
         "Cost": 1600,
         "Tier": 2,
         "Activation": "InstantCast",
@@ -2432,7 +2429,7 @@
         "BonusMoveSpeed": "1.75m",
         "BuffDuration": 6,
         "SpellParryDuration": 0.8,
-        "BonusHealth": 100,
+        "BonusHealth": 75,
         "SpiritPowerInnate": 8,
         "HealOnSuccess": 150,
         "PropertyUpgrades": {
@@ -2445,7 +2442,7 @@
     },
     "upgrade_crackshot": {
         "Name": "Mystic Shot",
-        "Description": "Your next bullet deals bonus <span class=\"highlight\">Spirit Damage</span>.",
+        "Description": "Your next bullet deals bonus {g:citadel_inline_attribute:'SpiritDamage'}.",
         "Cost": 1600,
         "Tier": 2,
         "Activation": "Passive",
@@ -2633,7 +2630,7 @@
         "DeflectionPercent": 30,
         "BulletProcDeflectionPercent": 50,
         "DeflectionRandomness": 1,
-        "BonusHealth": 100,
+        "BonusHealth": 130,
         "PropertyUpgrades": {
             "DeflectionPercent": 15,
             "BulletProcDeflectionPercent": 15
@@ -2731,8 +2728,8 @@
         "BuffDuration": 6,
         "CombatBarrier": 600,
         "BonusMoveSpeed": "2.75m",
-        "TechRangeMultiplier": 15,
-        "TechRadiusMultiplier": 15,
+        "TechRangeMultiplier": 10,
+        "TechRadiusMultiplier": 10,
         "PropertyUpgrades": {
             "AbilityCooldown": -27,
             "TechRadiusMultiplier": 10,
@@ -2821,9 +2818,9 @@
         "NonHeroMult": 2,
         "BonusSprintSpeed": "1.5m",
         "PropertyUpgrades": {
-            "ActiveBonusMoveSpeed": "2m",
-            "BonusFireRate": 20,
-            "BulletResist": 5,
+            "ActiveBonusMoveSpeed": "3m",
+            "BonusFireRate": 34,
+            "BulletResist": 10,
             "ActiveRadius": "15m"
         }
     },
@@ -2923,14 +2920,14 @@
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
-        "Radius": "8m",
+        "Radius": "12m",
         "ProcCooldown": 0.3,
         "Damage": 100,
         "SlideScale": 80,
         "SlideTurnScale": 100,
         "EvasionWhileSliding": 60,
         "Stamina": 2,
-        "FireRateWhileSliding": 50,
+        "FireRateWhileSliding": 60,
         "PropertyUpgrades": {
             "Stamina": 2,
             "EvasionWhileSliding": 15,
@@ -2993,7 +2990,7 @@
     },
     "upgrade_escalating_exposure": {
         "Name": "Escalating Exposure",
-        "Description": "Dealing <span class=\"highlight\">Spirit Damage</span> applies a stacking <span class=\"highlight\">Spirit Amp</span> that increases your <span class=\"highlight\">Spirit Damage</span> to the target.",
+        "Description": "Dealing {g:citadel_inline_attribute:'SpiritDamage'} applies a stacking <span class=\"highlight\">Spirit Amp</span> that increases your {g:citadel_inline_attribute:'SpiritDamage'} to the target.",
         "Cost": 6400,
         "Tier": 4,
         "Activation": "Passive",
@@ -3050,7 +3047,7 @@
     },
     "upgrade_ethereal_bullets": {
         "Name": "Mercurial Magnum",
-        "Description": "Your imbued ability charges up over time with {g:citadel_inline_attribute:'BonusSpiritDamage'}, {g:citadel_inline_attribute:'BonusFireRate'}, and <span class=\"highlight\">reloads bullets</span> on use. Until your next reload, your <span class=\"highlight\">bullets deal bonus Spirit Damage</span> based on your Spirit Power.",
+        "Description": "Your imbued ability charges up over time with {g:citadel_inline_attribute:'BonusSpiritDamage'}, {g:citadel_inline_attribute:'BonusFireRate'}, and <span class=\"highlight\">reloads bullets</span> on use. Until your next reload, your <span class=\"highlight\">bullets deal {g:citadel_inline_attribute:'BonusSpiritDamage'}</span> based on your Spirit Power.",
         "Cost": 6400,
         "Tier": 4,
         "Activation": "Passive",
@@ -3131,9 +3128,9 @@
             }
         },
         "ProcBaseAttackDamagePercentAltFire": {
-            "Value": 35,
+            "Value": 40,
             "Scale": {
-                "Value": 1,
+                "Value": 1.3,
                 "Type": "power_increase"
             }
         },
@@ -3289,8 +3286,8 @@
         "PropertyUpgrades": {
             "PercentDamage": 20,
             "BonusFireRate": 20,
-            "TechPowerReduction": -14,
-            "MagicResistReduction": -10,
+            "TechPowerReduction": -26,
+            "MagicResistReduction": -12,
             "AbilityDuration": 0.25,
             "AbilityCooldown": -12
         }
@@ -3372,9 +3369,9 @@
         "TechResist": 40,
         "BonusHealth": 100,
         "PropertyUpgrades": {
-            "BulletLifestealPercent": 18,
-            "ActiveBonusFireRate": 15,
-            "TechResist": 15
+            "BulletLifestealPercent": 28,
+            "ActiveBonusFireRate": 25,
+            "TechResist": 20
         }
     },
     "upgrade_galvanic_storm": {
@@ -3508,7 +3505,8 @@
         "SkipFrames": 6,
         "OutgoingDamagePenaltyPercent": -10,
         "PropertyUpgrades": {
-            "AbilityCooldown": -30
+            "AbilityCooldown": -40,
+            "AbilityDuration": 0.25
         }
     },
     "upgrade_goose_egg": {
@@ -3526,6 +3524,7 @@
         "IsDisabled": false,
         "StreetBrawl": false,
         "AbilityUnitTargetLimit": 1,
+        "AbilityChannelTime": 2,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
         "BonusGoldPerMinute": 90,
@@ -3534,11 +3533,11 @@
         "BonusSprintSpeed": "1m",
         "OutOfCombatHealthRegen": 1,
         "StartingGold": 400,
-        "BonusBuffsPerGold": 150,
+        "BonusBuffsPerGold": 100,
         "PropertyUpgrades": {
             "BonusSprintSpeed": 5,
             "OutOfCombatHealthRegen": 10,
-            "BonusBuffsPerGold": -100,
+            "BonusBuffsPerGold": -50,
             "OutgoingDamagePenaltyPercent": 20
         }
     },
@@ -3572,9 +3571,9 @@
         "BonusHealth": 75,
         "BulletArmorReduction": -13,
         "PropertyUpgrades": {
-            "BonusHealth": 75,
+            "BonusHealth": 175,
             "BulletArmorReduction": -7,
-            "AbilityCooldown": -6
+            "AbilityCooldown": -8
         }
     },
     "upgrade_guardian_ward": {
@@ -3604,8 +3603,8 @@
         "BuffDuration": 6,
         "GuardianWardCombatBarrier": 200,
         "BonusMoveSpeed": "2.75m",
-        "TechRangeMultiplier": 10,
-        "TechRadiusMultiplier": 10,
+        "TechRangeMultiplier": 8,
+        "TechRadiusMultiplier": 8,
         "PropertyUpgrades": {
             "TechRangeMultiplier": 12,
             "TechRadiusMultiplier": 12,
@@ -3771,7 +3770,7 @@
     },
     "upgrade_healbane": {
         "Name": "Healbane",
-        "Description": "Your <span class=\"highlight\">Spirit Damage</span> applies <span class=\"highlight\">Healing Reduction</span>. If an enemy hero dies under this effect, you receive a large heal.",
+        "Description": "Your {g:citadel_inline_attribute:'SpiritDamage'} applies <span class=\"highlight\">Healing Reduction</span>. If an enemy hero dies under this effect, you receive a large heal.",
         "Cost": 1600,
         "Tier": 2,
         "Activation": "Passive",
@@ -3948,13 +3947,13 @@
         "RegenDuration": 2,
         "AuraRadius": "18m",
         "SpiritPower": 8,
-        "TechRangeMultiplier": 6,
-        "TechRadiusMultiplier": 6,
+        "TechRangeMultiplier": 5,
+        "TechRadiusMultiplier": 5,
         "PropertyUpgrades": {
             "TechRadiusMultiplier": 12,
             "TechRangeMultiplier": 12,
             "TechPower": 12,
-            "TotalHealthRegen": 325
+            "TotalHealthRegen": 425
         }
     },
     "upgrade_health_regen_1": {
@@ -4056,9 +4055,9 @@
         "RegenDuration": 20,
         "BonusSprintSpeed": "2m",
         "PropertyUpgrades": {
-            "TotalHealthRegen": 500,
+            "TotalHealthRegen": 600,
             "BonusSprintSpeed": "6m",
-            "AbilityCooldown": -26
+            "AbilityCooldown": -60
         }
     },
     "upgrade_height_advantage": {
@@ -4154,7 +4153,7 @@
     },
     "upgrade_icarus_wings": {
         "Name": "Seraphim Wings",
-        "Description": "When Airborne, You deal more damage and take reduced damage. Allows an additional use of <span class=\"highlight\">Air Jump</span> or <span class=\"highlight\">Air Dash</span> before landing.",
+        "Description": "When Airborne, You deal more damage and take reduced damage. Allows <span class=\"highlight\">unlimited</span> Air Dash and Jumping.",
         "Cost": 9999,
         "Tier": 5,
         "Activation": "Passive",
@@ -4168,7 +4167,7 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
         "AirBonusDamageGiven": 40,
-        "AirBonusDamageTaken": -40,
+        "AirBonusDamageTaken": -60,
         "StaminaCooldownReduction": 120,
         "GravityScale": -70,
         "AirControlPercent": 100,
@@ -4321,7 +4320,7 @@
         "ChannelMoveSpeed": -1,
         "BonusBulletSpeedPercent": 200,
         "ProcChance": 65,
-        "BonusFireRate": 30,
+        "BonusFireRate": 35,
         "PropertyUpgrades": {
             "BonusBulletSpeedPercent": 100,
             "BonusFireRate": 20,
@@ -4654,11 +4653,11 @@
         "BonusHealth": 125,
         "BonusAbilityDurationPercent": 15,
         "PropertyUpgrades": {
-            "TechPower": 25,
-            "AbilityDuration": 6,
-            "BonusAbilityDurationPercent": 10,
-            "BonusHealth": 100,
-            "FlyMoveSpeed": "2m",
+            "TechPower": 46,
+            "AbilityDuration": 8,
+            "BonusAbilityDurationPercent": 15,
+            "BonusHealth": 200,
+            "FlyMoveSpeed": "6m",
             "SummonDuration": -0.3
         }
     },
@@ -4754,7 +4753,7 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
         "TechPower": 15,
-        "TechResist": 15,
+        "TechResist": 18,
         "OutOfCombatHealthRegen": 2,
         "LifeThreshold": 65,
         "CooldownReduction": 5,
@@ -4802,7 +4801,7 @@
     },
     "upgrade_magic_slow": {
         "Name": "Mystic Slow",
-        "Description": "When the target takes <span class=\"highlight\">Spirit Damage</span>, they have their <span class=\"highlight\">Move Speed</span> reduced.",
+        "Description": "When the target takes {g:citadel_inline_attribute:'SpiritDamage'}, they have their <span class=\"highlight\">Move Speed</span> reduced.",
         "Cost": 1600,
         "Tier": 2,
         "Activation": "Passive",
@@ -4888,7 +4887,7 @@
     },
     "upgrade_magic_vulnerability": {
         "Name": "Mystic Vulnerability",
-        "Description": "When an enemy takes <span class=\"highlight\">Spirit Damage</span>, they have their <span class=\"highlight\">Spirit Resist</span> reduced.",
+        "Description": "When an enemy takes {g:citadel_inline_attribute:'SpiritDamage'}, they have their {g:citadel_inline_attribute:'SpiritResist'} reduced.",
         "Cost": 1600,
         "Tier": 2,
         "Activation": "Passive",
@@ -5007,9 +5006,9 @@
         "MeleeResistPercent": 18,
         "PropertyUpgrades": {
             "ParryCooldownReduction": 0.5,
-            "MeleeResistPercent": 12,
+            "MeleeResistPercent": 22,
             "BonusDamagePercent": 20,
-            "BonusHealth": 50
+            "BonusHealth": 150
         }
     },
     "upgrade_metal_skin": {
@@ -5032,12 +5031,12 @@
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
-        "BulletResist": 15,
+        "BulletResist": 12,
         "ActiveMoveSpeedPenalty": "-1.5m",
         "GroundDashReductionPercent": -20,
         "PropertyUpgrades": {
-            "ActiveMoveSpeedPenalty": "4.5m",
-            "GroundDashReductionPercent": 50,
+            "ActiveMoveSpeedPenalty": "6.5m",
+            "GroundDashReductionPercent": 60,
             "AbilityCooldown": -2,
             "BulletResist": 5
         }
@@ -5089,7 +5088,7 @@
     },
     "upgrade_mystic_regeneration": {
         "Name": "Mystic Regeneration",
-        "Description": "Dealing Spirit Damage to enemy Heroes grants you Bonus Health Regen. Stacks when dealing damage to different heroes.",
+        "Description": "Dealing {g:citadel_inline_attribute:'SpiritDamage'} to enemy Heroes grants you Bonus {g:citadel_inline_attribute:'Regen'}. Stacks when dealing damage to different heroes.",
         "Cost": 800,
         "Tier": 1,
         "Activation": "Passive",
@@ -5171,10 +5170,10 @@
         "StunDuration": 2.0,
         "DazeMoveSpeed": "2m",
         "DazeDuration": 2.0,
-        "Radius": "11m",
+        "Radius": "12m",
         "PropertyUpgrades": {
             "AbilityCooldown": -15,
-            "Radius": "2m"
+            "Radius": "3m"
         }
     },
     "upgrade_nearby_enemy_boost": {
@@ -5229,14 +5228,14 @@
         "OutOfCombatHealthRegen": 1,
         "NonPlayerBulletResist": 25,
         "PropertyUpgrades": {
-            "NonPlayerBonusWeaponPower": 15,
-            "NonPlayerBulletResist": 15,
+            "NonPlayerBonusWeaponPower": 35,
+            "NonPlayerBulletResist": 35,
             "OutOfCombatHealthRegen": 1
         }
     },
     "upgrade_non_player_bonus_sacrifice": {
         "Name": "Cultist Sacrifice",
-        "Description": "Target an enemy NPC and consume it for <span class=\"highlight\">150% Bonus Souls</span> and grants a powerful long lasting buff.",
+        "Description": "Target an enemy NPC and consume it for <span class=\"highlight\">170% Bonus Souls</span> and grants a powerful long lasting buff.",
         "Cost": 3200,
         "Tier": 3,
         "Activation": "Press",
@@ -5265,7 +5264,7 @@
         "NonPlayerBonusWeaponPower": 30,
         "OutOfCombatHealthRegen": 2,
         "NonPlayerBulletResist": 30,
-        "BonusSoulsPct": 150,
+        "BonusSoulsPct": 170,
         "BonusHealth": {
             "Value": 50,
             "Scale": {
@@ -5281,15 +5280,15 @@
             }
         },
         "BonusAbilityCharges": 1,
-        "TechRangeMultiplier": 15,
-        "TechRadiusMultiplier": 15,
+        "TechRangeMultiplier": 12,
+        "TechRadiusMultiplier": 12,
         "PropertyUpgrades": {
-            "TechRadiusMultiplier": 25,
-            "TechRangeMultiplier": 25,
-            "BaseAttackDamagePercent": 37,
-            "BonusHealth": 200,
-            "NonPlayerBonusWeaponPower": 10,
-            "NonPlayerBulletResist": 10
+            "TechRadiusMultiplier": 40,
+            "TechRangeMultiplier": 40,
+            "BaseAttackDamagePercent": 47,
+            "BonusHealth": 300,
+            "NonPlayerBonusWeaponPower": 30,
+            "NonPlayerBulletResist": 30
         }
     },
     "upgrade_nullification_aura": {
@@ -5315,7 +5314,7 @@
         "ChannelMoveSpeed": -1,
         "SpreadDuration": 0.5,
         "StartRadius": "2m",
-        "EndRadius": "12m",
+        "EndRadius": "20m",
         "Damage": {
             "Value": 250,
             "Scale": {
@@ -5323,11 +5322,14 @@
                 "Type": "spirit"
             }
         },
-        "DamageHeight": "2.5m",
+        "DamageHeight": "4m",
         "BonusHealth": 300,
+        "StatusResistancePercent": 40,
         "PropertyUpgrades": {
             "EndRadius": "6m",
-            "BonusHealth": 300
+            "BonusHealth": 300,
+            "StatusResistancePercent": 20,
+            "Damage": 200
         }
     },
     "upgrade_omnicharge_pendant": {
@@ -5651,7 +5653,7 @@
     },
     "upgrade_quick_silver": {
         "Name": "Quicksilver Reload",
-        "Description": "Your imbued ability charges up over time with {g:citadel_inline_attribute:'BonusSpiritDamage'}, {g:citadel_inline_attribute:'BonusFireRate'}, and <span class=\"highlight\">bonus bullets</span> on use.",
+        "Description": "Your imbued ability charges up over time with {g:citadel_inline_attribute:'BonusSpiritDamage'}, {g:citadel_inline_attribute:'BonusFireRate'}, and <span class=\"highlight\">reloads bullets</span> on use.",
         "Cost": 1600,
         "Tier": 2,
         "Activation": "Passive",
@@ -5775,7 +5777,7 @@
         ],
         "IsDisabled": false,
         "StreetBrawl": false,
-        "AbilityCooldown": 20,
+        "AbilityCooldown": 24,
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
@@ -5949,13 +5951,13 @@
         "BonusMoveSpeed": "0m",
         "BonusSprintSpeed": "0.75m",
         "SelfModifier": 100,
-        "TechRangeMultiplier": 8,
-        "TechRadiusMultiplier": 8,
+        "TechRangeMultiplier": 6,
+        "TechRadiusMultiplier": 6,
         "PropertyUpgrades": {
-            "TechRadiusMultiplier": 10,
-            "TechRangeMultiplier": 10,
-            "HealPercentAmount": 5,
-            "AbilityCooldown": -40
+            "TechRadiusMultiplier": 20,
+            "TechRangeMultiplier": 20,
+            "HealPercentAmount": 15,
+            "AbilityCooldown": -45
         }
     },
     "upgrade_resilience": {
@@ -6049,7 +6051,7 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
         "Radius": "35m",
-        "TechResist": 8,
+        "TechResist": 10,
         "HealPerStack": {
             "Value": 20,
             "Scale": {
@@ -6061,9 +6063,11 @@
         "MinStaminaRestore": 1,
         "MaxStaminaRestore": 4,
         "PropertyUpgrades": {
-            "TechResist": 4,
-            "HealPerStack": 20,
-            "AbilityCooldown": -8
+            "TechResist": 10,
+            "HealPerStack": 30,
+            "AbilityCooldown": -8,
+            "MaxStaminaRestore": 2,
+            "MinStaminaRestore": 2
         }
     },
     "upgrade_return_fire": {
@@ -6082,18 +6086,19 @@
         ],
         "IsDisabled": false,
         "StreetBrawl": false,
-        "AbilityCooldown": 25.0,
+        "AbilityCooldown": 23.0,
         "AbilityDuration": 6,
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
-        "BulletDamageReflectedPct": 50,
+        "BulletDamageReflectedPct": 60,
         "SpiritDamageReflectedPct": 25,
         "BulletResist": 8,
         "PropertyUpgrades": {
-            "BulletResist": 8,
+            "BulletResist": 16,
             "SpiritDamageReflectedPct": 15,
-            "BulletDamageReflectedPct": 25
+            "BulletDamageReflectedPct": 25,
+            "AbilityCooldown": -10
         }
     },
     "upgrade_ricochet": {
@@ -6170,8 +6175,8 @@
         },
         "BarrierDuration": 8,
         "PropertyUpgrades": {
-            "AbilityCooldown": -21,
-            "CombatBarrier": 175,
+            "AbilityCooldown": -35,
+            "CombatBarrier": 275,
             "InterruptCooldown": -3
         }
     },
@@ -6218,15 +6223,15 @@
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
-        "MeleeDistanceScale": 130,
+        "MeleeDistanceScale": 150,
         "MeleeResistPercent": 50,
         "BonusMeleeDamagePercent": 30,
-        "CooldownReductionOnHitMin": 3,
-        "CooldownReductionOnHitPct": 12,
+        "CooldownReductionOnHitMin": 4,
+        "CooldownReductionOnHitPct": 16,
         "PropertyUpgrades": {
-            "MeleeDistanceScale": 40,
+            "MeleeDistanceScale": 50,
             "MeleeResistPercent": 15,
-            "CooldownReductionOnHitPct": 4
+            "CooldownReductionOnHitPct": 6
         }
     },
     "upgrade_rupture": {
@@ -6266,7 +6271,7 @@
         "DotHealthPercent": {
             "Value": 2.6,
             "Scale": {
-                "Value": 0.0055,
+                "Value": 0.004,
                 "Type": "spirit"
             }
         },
@@ -6353,7 +6358,7 @@
         "ShopFilters": null,
         "IsDisabled": false,
         "StreetBrawl": true,
-        "AbilityDuration": 2.5,
+        "AbilityDuration": 3,
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
@@ -6365,15 +6370,23 @@
         "ResistStealAmount": 40,
         "TickRate": 1,
         "DPS": {
-            "Value": 75,
+            "Value": 125,
             "Scale": {
-                "Value": 0.2,
+                "Value": 0.4,
                 "Type": "spirit"
             }
         },
         "MaxStacks": 1,
         "StealDuration": 6,
-        "Stamina": 2
+        "Stamina": 3,
+        "BonusHealth": 350,
+        "PropertyUpgrades": {
+            "Stamina": 1,
+            "BonusHealth": 250,
+            "ResistStealAmount": 20,
+            "DPS": 125,
+            "AbilityDuration": 3
+        }
     },
     "upgrade_sharpshooter": {
         "Name": "Sharpshooter",
@@ -6399,7 +6412,7 @@
         "LongRangeBonusWeaponPowerMinRange": "15m",
         "BonusAttackRangePercent": 20,
         "BonusZoomPercent": 25,
-        "BonusMoveSpeed": "-1m",
+        "BonusMoveSpeed": "-0.7m",
         "BonusSprintSpeed": "1.0m",
         "PropertyUpgrades": {
             "LongRangeBonusWeaponPower": 40,
@@ -6427,7 +6440,14 @@
         "ImbuedCooldownReduction": 50,
         "ImbuedTechPower": 70,
         "Damage": 200,
-        "FreezeDuration": 1
+        "FreezeDuration": 1,
+        "PropertyUpgrades": {
+            "AbilityCooldown": -2,
+            "ImbuedCooldownReduction": 15,
+            "ImbuedTechPower": 40,
+            "Damage": 100,
+            "FreezeDuration": 0.3
+        }
     },
     "upgrade_shrink_ray": {
         "Name": "Shrink Ray",
@@ -6455,10 +6475,12 @@
         "BonusMoveSpeed": "5.0m",
         "ModelScaleGrowth": 0.5,
         "ModelScaleGrowthTooltip": -50,
+        "BonusFireRate": 20,
         "PropertyUpgrades": {
             "ModelScaleGrowth": -0.15,
             "ModelScaleGrowthTooltip": -15,
             "BonusMoveSpeed": "2m",
+            "BonusFireRate": 20,
             "AbilityCooldown": -15
         }
     },
@@ -6640,7 +6662,7 @@
     },
     "upgrade_spellbreaker": {
         "Name": "Spellbreaker",
-        "Description": "The next instance of high spirit damage you take is significantly reduced.",
+        "Description": "The next instance of high {g:citadel_inline_attribute:'SpiritDamage'} you take is significantly reduced.",
         "Cost": 6400,
         "Tier": 4,
         "Activation": "Passive",
@@ -6670,7 +6692,7 @@
     },
     "upgrade_spellshield": {
         "Name": "Hexafoil Ward",
-        "Description": "Block the next <span class=\"highlight\">Spirit Damage</span> or <span class=\"highlight\">Debuff</span>, preventing its effects. Only regenerates outside of combat.",
+        "Description": "Block the next {g:citadel_inline_attribute:'SpiritDamage'} or <span class=\"highlight\">Debuff</span>, preventing its effects. Only regenerates outside of combat.",
         "Cost": 3200,
         "Tier": 3,
         "Activation": "Passive",
@@ -6752,8 +6774,8 @@
             }
         },
         "OutOfCombatHealthRegen": 2.5,
-        "BarrierDuration": 7,
-        "BonusMoveSpeed": "1.5m",
+        "BarrierDuration": 8,
+        "BonusMoveSpeed": "1.75m",
         "PropertyUpgrades": {
             "OutOfCombatHealthRegen": 3,
             "CombatBarrier": 175,
@@ -6763,7 +6785,7 @@
     },
     "upgrade_spirit_burn": {
         "Name": "Spirit Burn",
-        "Description": "Dealing significant <span class=\"highlight\">Spirit Damage</span> to an enemy within 5s causes an explosion dealing damage and a burn to nearby enemies. While burning, enemies take damage over time and receive reduced healing.<br><span class=\"diminish\">Deals half-damage and has half-cooldown on non-heroes.</span>",
+        "Description": "Dealing significant {g:citadel_inline_attribute:'SpiritDamage'} to an enemy within 5s causes an explosion dealing damage and a burn to nearby enemies. While burning, enemies take damage over time and receive reduced healing.<br><span class=\"diminish\">Deals half-damage and has half-cooldown on non-heroes.</span>",
         "Cost": 6400,
         "Tier": 4,
         "Activation": "Passive",
@@ -6782,8 +6804,8 @@
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
-        "TechRangeMultiplier": 8,
-        "TechRadiusMultiplier": 8,
+        "TechRangeMultiplier": 6,
+        "TechRadiusMultiplier": 6,
         "DamageThreshold": 500,
         "DamageThresholdDuration": 5,
         "ExplosionDamage": 110,
@@ -6836,15 +6858,15 @@
         "BonusHealth": 50,
         "TechPowerReduction": -30,
         "PropertyUpgrades": {
-            "BonusHealth": 75,
-            "MagicResistReduction": -10,
-            "AbilityCooldown": -10,
-            "TechPowerReduction": -16
+            "BonusHealth": 150,
+            "MagicResistReduction": -12,
+            "AbilityCooldown": -12,
+            "TechPowerReduction": -26
         }
     },
     "upgrade_spirit_snatch": {
         "Name": "Spirit Snatch",
-        "Description": "When you perform a <span class=\"highlight\">Light or Heavy Melee</span> attack against a hero, the attack deals extra <span class=\"highlight\">Spirit Damage</span> and steals <span class=\"highlight\">Spirit Resist</span> and <span class=\"highlight\">Spirit Power</span>.<span class=\"diminish\"><br><br>Effects are reduced to 70% for Light Melee hits.</span>",
+        "Description": "When you perform a <span class=\"highlight\">Light or Heavy Melee</span> attack against a hero, the attack deals extra {g:citadel_inline_attribute:'SpiritDamage'} and steals <span class=\"highlight\">Spirit Resist</span> and <span class=\"highlight\">Spirit Power</span>.<span class=\"diminish\"><br><br>Effects are reduced to 70% for Light Melee hits.</span>",
         "Cost": 3200,
         "Tier": 3,
         "Activation": "Passive",
@@ -6914,8 +6936,8 @@
         "MaxStacks": 6,
         "PropertyUpgrades": {
             "BulletSplitShot": 4,
-            "WeaponDamagePerStack": 4,
-            "AbilityCooldown": -6
+            "WeaponDamagePerStack": 8,
+            "AbilityCooldown": -8
         }
     },
     "upgrade_sprint_booster": {
@@ -7099,7 +7121,7 @@
     },
     "upgrade_suppressor": {
         "Name": "Suppressor",
-        "Description": "When you deal <span class=\"highlight\">Spirit Damage</span> to enemies, you also reduce their <span class=\"highlight\">Fire Rate</span>.",
+        "Description": "When you deal {g:citadel_inline_attribute:'SpiritDamage'} to enemies, you also reduce their <span class=\"highlight\">Fire Rate</span>.",
         "Cost": 1600,
         "Tier": 2,
         "Activation": "Passive",
@@ -7196,8 +7218,8 @@
         "BonusHealth": 75,
         "MaxBonusDuration": 1.5,
         "MaxHeightForBonus": "30m",
-        "TechRangeMultiplier": 6,
-        "TechRadiusMultiplier": 6,
+        "TechRangeMultiplier": 5,
+        "TechRadiusMultiplier": 5,
         "PropertyUpgrades": {
             "TechRadiusMultiplier": 6,
             "TechRangeMultiplier": 6,
@@ -7222,7 +7244,7 @@
         ],
         "IsDisabled": false,
         "StreetBrawl": false,
-        "AbilityCooldown": 30.0,
+        "AbilityCooldown": 42.0,
         "AbilityDuration": 3,
         "AbilityCastRange": "40m",
         "AbilityUnitTargetLimit": 1,
@@ -7235,9 +7257,9 @@
         "GrowthPerMeter": "0.15m",
         "InitialWidth": "5.0m",
         "Damage": {
-            "Value": 100,
+            "Value": 75,
             "Scale": {
-                "Value": 1.0,
+                "Value": 0.7,
                 "Type": "spirit"
             }
         },
@@ -7288,7 +7310,7 @@
     },
     "upgrade_tech_damage_pulse": {
         "Name": "Torment Pulse",
-        "Description": "Periodically deals <span class=\"highlight\">Spirit Damage</span> to the closest two enemies nearby.",
+        "Description": "Periodically deals {g:citadel_inline_attribute:'SpiritDamage'} to the closest two enemies nearby.",
         "Cost": 3200,
         "Tier": 3,
         "Activation": "Passive",
@@ -7449,8 +7471,8 @@
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
-        "TechRangeMultiplier": 35,
-        "TechRadiusMultiplier": 35,
+        "TechRangeMultiplier": 30,
+        "TechRadiusMultiplier": 30,
         "TechResist": 10,
         "PropertyUpgrades": {
             "TechResist": 10,
@@ -7460,7 +7482,7 @@
     },
     "upgrade_thermal_detonator": {
         "Name": "Alchemical Fire",
-        "Description": "Throw a flask that explodes on contact, creating an area that does increasing <span class=\"highlight\">Spirit Damage per second</span> and reduces enemy <span class=\"highlight\">Bullet Resist</span>.<br><br>50% less effective vs non-heroes.",
+        "Description": "Throw a flask that explodes on contact, creating an area that does increasing {g:citadel_inline_attribute:'SpiritDamage'} <span class=\"highlight\">per second</span> and reduces enemy <span class=\"highlight\">Bullet Resist</span>.<br><br>50% less effective vs non-heroes.",
         "Cost": 3200,
         "Tier": 3,
         "Activation": "Press",
@@ -7573,8 +7595,8 @@
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
-        "BonusClipSizePercent": 90,
-        "BaseAttackDamagePercent": 12,
+        "BonusClipSizePercent": 100,
+        "BaseAttackDamagePercent": 14,
         "PropertyUpgrades": {
             "BaseAttackDamagePercent": 18,
             "BonusClipSizePercent": 70
@@ -7621,18 +7643,18 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
         "DotHealthPercent": {
-            "Value": 2.0,
+            "Value": 1.7,
             "Scale": {
                 "Value": 0.005,
                 "Type": "spirit"
             }
         },
         "DotDuration": 4,
-        "BuildUpPerShot": 1.1638,
+        "BuildUpPerShot": 1.28,
         "BuildUpDuration": 5,
         "TickRate": 0.5,
-        "HealAmpReceivePenaltyPercent": -30,
-        "HealAmpRegenPenaltyPercent": -30,
+        "HealAmpReceivePenaltyPercent": -35,
+        "HealAmpRegenPenaltyPercent": -35,
         "DotMultiplerTroopers": 0.5,
         "PropertyUpgrades": {
             "HealAmpReceivePenaltyPercent": -30,
@@ -7747,7 +7769,7 @@
     },
     "upgrade_unstable_concoction": {
         "Name": "Unstable Concoction",
-        "Description": "Consume a concoction that grants you increased <span class=\"highlight\">speed, health, spirit and weapon damage</span>. After a short duration <span class=\"highlight\">you die and explode</span>, stunning nearby enemies and dealing damage based on your maximum health.",
+        "Description": "Consume a concoction that grants you <span class=\"highlight\">Unstoppable</span> and increased <span class=\"highlight\">speed, health, spirit and weapon damage</span>. After a short duration <span class=\"highlight\">you die and explode</span>, stunning nearby enemies and dealing damage based on your maximum health.",
         "Cost": 9999,
         "Tier": 5,
         "Activation": "InstantCast",
@@ -7770,7 +7792,7 @@
         "BaseAttackDamagePercent": 150,
         "MaxHPDamage": 30,
         "StunDuration": 3.0,
-        "Radius": "18m",
+        "Radius": "22m",
         "PropertyUpgrades": {
             "StunDuration": 0.5,
             "BaseAttackDamagePercent": 50,
@@ -7871,12 +7893,12 @@
             }
         },
         "PropertyUpgrades": {
-            "SpiritPower": 15,
-            "InvisMoveSpeedMod": "4m",
-            "HealOnVeil": 200,
-            "AbilityCooldown": -4,
+            "SpiritPower": 25,
+            "InvisMoveSpeedMod": "6m",
+            "HealOnVeil": 300,
+            "AbilityCooldown": -9,
             "InvisDuration": 4,
-            "BonusMoveSpeed": "2m"
+            "BonusMoveSpeed": "4m"
         }
     },
     "upgrade_vex_barrier": {
@@ -8101,7 +8123,7 @@
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
-        "DamageWindow": 3.5,
+        "DamageWindow": 4.0,
         "DamageThreshold": 250,
         "CombatBarrier": {
             "Value": 300,
@@ -8111,12 +8133,12 @@
             }
         },
         "OutOfCombatHealthRegen": 2.5,
-        "BarrierDuration": 7,
-        "BonusMoveSpeed": "1.5m",
+        "BarrierDuration": 8,
+        "BonusMoveSpeed": "1.75m",
         "PropertyUpgrades": {
             "OutOfCombatHealthRegen": 3,
-            "CombatBarrier": 175,
-            "BonusMoveSpeed": "1m",
+            "CombatBarrier": 225,
+            "BonusMoveSpeed": "3m",
             "AbilityCooldown": -20
         }
     },
@@ -8142,7 +8164,7 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
         "BaseAttackDamagePercent": 40,
-        "StatusResistancePercent": 18,
+        "StatusResistancePercent": 20,
         "StaminaCooldownReduction": -14,
         "SlowPercent": 30,
         "GroundDashReductionPercent": -25,
@@ -8186,7 +8208,8 @@
         "PropertyUpgrades": {
             "BonusHealth": 130,
             "BulletArmorReduction": -4,
-            "FireRateSlow": 20
+            "FireRateSlow": 20,
+            "AbilityCooldown": -8
         }
     },
     "weapon_upgrade_base": {
