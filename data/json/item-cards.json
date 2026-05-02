@@ -7013,14 +7013,19 @@
             "DescKey": null,
             "Cooldown": null,
             "ChargeUp": null,
-            "Main": [
+            "Main": [],
+            "Alt": [
+                {
+                    "Key": "NonPlayerBonusWeaponPower",
+                    "Value": -15,
+                    "Type": "bullet_damage",
+                    "UsageFlags": "ConditionallyApplied"
+                },
                 {
                     "Key": "BonusSprintSpeed",
                     "Value": "2.0m",
                     "Type": "move_speed"
-                }
-            ],
-            "Alt": [
+                },
                 {
                     "Key": "OutOfCombatHealthRegen",
                     "Value": 2,
@@ -17930,7 +17935,7 @@
         "Upgrades": {
             "BulletResist": 14,
             "TechResist": 14,
-            "AbilityCooldown": -42,
+            "AbilityCooldown": -35,
             "VexBarrierCombatBarrier": 450
         },
         "Other": {
