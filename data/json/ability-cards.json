@@ -9546,18 +9546,20 @@
                 },
                 {
                     "StompDamagePerMeterPrimary": {
-                        "Value": 0,
+                        "Value": 113,
                         "Scale": {
                             "Value": 0.03255,
                             "Type": "spirit"
-                        }
+                        },
+                        "Multiply": true
                     },
                     "StompDamagePerMeterSecondary": {
-                        "Value": 0,
+                        "Value": 113,
                         "Scale": {
                             "Value": 0.008137,
                             "Type": "spirit"
-                        }
+                        },
+                        "Multiply": true
                     },
                     "DescKey": "citadel_ability_lash_down_strike_t3_desc"
                 }
@@ -10351,7 +10353,8 @@
                         "Value": -50.0,
                         "Scale": {
                             "Value": 0.0,
-                            "Type": "melee"
+                            "Type": "melee",
+                            "Multiply": true
                         }
                     },
                     "DescKey": "viscous_telepunch_t3_desc"
@@ -19598,7 +19601,8 @@
                         "Value": 0.0,
                         "Scale": {
                             "Value": 0.0,
-                            "Type": "melee"
+                            "Type": "melee",
+                            "Multiply": true
                         }
                     },
                     "AbilityCooldownBetweenCharge": -3,
@@ -21721,21 +21725,24 @@
                         "Value": 30,
                         "Scale": {
                             "Value": 1.15,
-                            "Type": "spirit"
+                            "Type": "spirit",
+                            "Multiply": true
                         }
                     },
                     "MaxDamageBeforePerfect": {
                         "Value": 45,
                         "Scale": {
                             "Value": 1.15,
-                            "Type": "spirit"
+                            "Type": "spirit",
+                            "Multiply": true
                         }
                     },
                     "PerfectDamage": {
                         "Value": 65,
                         "Scale": {
                             "Value": 1.15,
-                            "Type": "spirit"
+                            "Type": "spirit",
+                            "Multiply": true
                         }
                     },
                     "AttackDashRange": 3.0,
