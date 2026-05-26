@@ -2835,6 +2835,7 @@
         "AbilityCastDelay": 0.1,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "AirMoveIncreasePercent": 10,
         "AutoIntrinsicModifiers": [
             {
                 "Class": "modifier_intrinsic_base",
@@ -2844,11 +2845,18 @@
                     "SlowResistancePercent",
                     "BonusMoveSpeed",
                     "BulletResist",
-                    "TechResist"
+                    "TechResist",
+                    "Stamina",
+                    "AirMoveIncreasePercent",
+                    "GroundMoveIncreasePercent",
+                    "BonusSprintAcceleration",
+                    "StaminaCooldownReduction"
                 ]
             }
         ],
         "BonusMoveSpeed": 3.5,
+        "BonusSprintAcceleration": 14,
+        "BonusSprintSpeed": 2,
         "ChannelMoveSpeed": -1,
         "DropOffTimer": 0.1,
         "DropoffTimerModifier": {
@@ -2856,6 +2864,7 @@
             "Subclass": "timer"
         },
         "FixedMoveSpeed": 15,
+        "GroundMoveIncreasePercent": 10,
         "HoldingIdolModifier": {
             "Class": "modifier_citadel_holding_golden_idol",
             "Subclass": "modifier_citadel_holding_golden_idol"
@@ -2870,6 +2879,9 @@
         },
         "Radius": 20,
         "SlowResistancePercent": 100,
+        "Stamina": 1,
+        "StaminaCooldownReduction": 15,
+        "TrailingTeamBonusSprintSpeed": 6,
         "Upgrades": []
     },
     "ability_graf_ability01": {
