@@ -1522,8 +1522,20 @@
         "SlowPercent": 60,
         "SlowDuration": 2.5,
         "BonusMeleeDamagePercent": 16,
-        "LifestealHeal": 100,
-        "LifestealHealPercent": 30,
+        "LifestealHeal": {
+            "Value": 100,
+            "Scale": {
+                "Value": 1.5,
+                "Type": "power_increase"
+            }
+        },
+        "LifestealHealPercent": {
+            "Value": 30,
+            "Scale": {
+                "Value": 0.5,
+                "Type": "power_increase"
+            }
+        },
         "BonusHealth": 125,
         "NonHeroHealPct": 40,
         "PropertyUpgrades": {
@@ -3879,7 +3891,13 @@
         },
         "BaseAttackDamagePercent": 5,
         "BonusHealth": 50,
-        "HealPercentPerHeadshot": 4,
+        "HealPercentPerHeadshot": {
+            "Value": 4,
+            "Scale": {
+                "Value": 0.06,
+                "Type": "power_increase"
+            }
+        },
         "BonusMoveSpeed": "1.75m",
         "MovementSpeedBonusDuration": 3,
         "ProcChance": 100,
@@ -4141,7 +4159,13 @@
         "AbilityCastDelay": 0.25,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
-        "TotalHealthRegen": 325,
+        "TotalHealthRegen": {
+            "Value": 325,
+            "Scale": {
+                "Value": 6,
+                "Type": "power_increase"
+            }
+        },
         "RegenDuration": 2,
         "AuraRadius": "18m",
         "SpiritPower": 8,
@@ -4247,7 +4271,13 @@
         "AbilityCastDelay": 0.2,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
-        "TotalHealthRegen": 300,
+        "TotalHealthRegen": {
+            "Value": 300,
+            "Scale": {
+                "Value": 1.1,
+                "Type": "spirit"
+            }
+        },
         "RegenDuration": 20,
         "BonusSprintSpeed": "2m",
         "PropertyUpgrades": {
@@ -5887,7 +5917,13 @@
                 "Type": "spirit"
             }
         },
-        "BaseDamagePerShot": 1,
+        "BaseDamagePerShot": {
+            "Value": 1,
+            "Scale": {
+                "Value": 1.0,
+                "Type": "spirit"
+            }
+        },
         "SpellAmplificationMultiplier": 5
     },
     "upgrade_quarantine": {
@@ -6278,9 +6314,21 @@
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
-        "HealingPerCast": 70,
+        "HealingPerCast": {
+            "Value": 70,
+            "Scale": {
+                "Value": 2.0,
+                "Type": "power_increase"
+            }
+        },
         "BonusMoveSpeed": "1.75m",
-        "Regeneration": 4,
+        "Regeneration": {
+            "Value": 4,
+            "Scale": {
+                "Value": 0.04,
+                "Type": "spirit"
+            }
+        },
         "RegenerationDuration": 7,
         "BonusHealth": 90,
         "PropertyUpgrades": {
@@ -6316,7 +6364,13 @@
         "ChannelMoveSpeed": -1,
         "Radius": "35m",
         "TechResist": 10,
-        "HealPerStack": 16,
+        "HealPerStack": {
+            "Value": 16,
+            "Scale": {
+                "Value": 0.32,
+                "Type": "power_increase"
+            }
+        },
         "MaxStacks": 25,
         "MaxStaminaRestore": 3,
         "PropertyUpgrades": {
@@ -8218,7 +8272,13 @@
         "SpiritPower": 10,
         "InvisDuration": 8,
         "BonusMoveSpeed": "3.5m",
-        "HealOnVeil": 85,
+        "HealOnVeil": {
+            "Value": 85,
+            "Scale": {
+                "Value": 8,
+                "Type": "power_increase"
+            }
+        },
         "PropertyUpgrades": {
             "SpiritPower": 25,
             "InvisMoveSpeedMod": "6m",
