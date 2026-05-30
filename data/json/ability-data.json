@@ -2844,8 +2844,6 @@
                     "FixedMoveSpeed",
                     "SlowResistancePercent",
                     "BonusMoveSpeed",
-                    "BulletResist",
-                    "TechResist",
                     "Stamina",
                     "AirMoveIncreasePercent",
                     "GroundMoveIncreasePercent",
@@ -2873,15 +2871,13 @@
         "Key": "ability_golden_idol",
         "Lifetime": 3,
         "Name": "Soul Urn",
-        "NoPickupModifier": {
-            "Class": "modifier_idol_team_timeout",
-            "Subclass": "no_pickup"
-        },
         "Radius": 20,
         "SlowResistancePercent": 100,
         "Stamina": 1,
         "StaminaCooldownReduction": 15,
+        "TrailingTeamBonusArmorDamageResist": 35,
         "TrailingTeamBonusSprintSpeed": 6,
+        "TrailingTeamBonusTechResist": 35,
         "Upgrades": []
     },
     "ability_graf_ability01": {
@@ -4918,7 +4914,7 @@
             "Value": 4,
             "Scale": {
                 "Value": 1.0,
-                "Type": "spirit"
+                "Type": "duration"
             }
         },
         "BuffModifier": {
@@ -5303,7 +5299,7 @@
             "Value": 15,
             "Scale": {
                 "Value": 1.0,
-                "Type": "spirit"
+                "Type": "range"
             }
         },
         "TargetSearchDelayMax": 1.25,
@@ -8951,7 +8947,7 @@
             "Value": 3,
             "Scale": {
                 "Value": 1.0,
-                "Type": "spirit"
+                "Type": "duration"
             }
         },
         "MarkModifier": {
@@ -9298,7 +9294,7 @@
             "Value": 0,
             "Scale": {
                 "Value": 1.0,
-                "Type": "spirit"
+                "Type": "power_increase"
             }
         },
         "IsDisabled": false,
@@ -10157,7 +10153,7 @@
                     "Value": 75,
                     "Scale": {
                         "Value": 0.5,
-                        "Type": null
+                        "Type": "spirit"
                     }
                 },
                 "ClubSlowPercent": -20
@@ -10679,7 +10675,7 @@
             "Value": 0,
             "Scale": {
                 "Value": 1.0,
-                "Type": "spirit"
+                "Type": "duration"
             }
         },
         "BuffModifier": {
@@ -11294,7 +11290,7 @@
             },
             {
                 "StompDamagePerMeterPrimary": {
-                    "Value": 113,
+                    "Value": 2.13,
                     "Scale": {
                         "Value": 0.03255,
                         "Type": "spirit"
@@ -11302,7 +11298,7 @@
                     "Multiply": true
                 },
                 "StompDamagePerMeterSecondary": {
-                    "Value": 113,
+                    "Value": 2.13,
                     "Scale": {
                         "Value": 0.008137,
                         "Type": "spirit"
