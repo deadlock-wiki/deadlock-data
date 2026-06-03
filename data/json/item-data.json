@@ -554,29 +554,6 @@
             "AbilityCooldown": -210
         }
     },
-    "upgrade_ablative_coat": {
-        "Name": null,
-        "Description": null,
-        "Cost": 6400,
-        "Tier": 4,
-        "Activation": "Passive",
-        "Slot": "Armor",
-        "Components": null,
-        "TargetTypes": [],
-        "ShopFilters": null,
-        "IsDisabled": true,
-        "StreetBrawl": false,
-        "IsImbue": false,
-        "AbilityCooldown": 21.0,
-        "AbilityUnitTargetLimit": 1,
-        "AbilityCooldownBetweenCharge": -1.0,
-        "ChannelMoveSpeed": -1,
-        "MaxBulletResist": 30,
-        "StackLossFrequency": 1,
-        "ArmorLossPerHit": 4,
-        "BulletArmor": 1,
-        "BonusSprintSpeed": "3m"
-    },
     "upgrade_absorbing_armor": {
         "Name": "Witchmail",
         "Description": "Taking heavy hits of {g:citadel_inline_attribute:'SpiritDamage'} from an enemy reduces a <span class=\"highlight\">random ability cooldown</span>.",
@@ -1170,33 +1147,6 @@
             "FreezeDuration": 0.25
         }
     },
-    "upgrade_armor_reduction_debuff": {
-        "Name": null,
-        "Description": null,
-        "Cost": 3200,
-        "Tier": 3,
-        "Activation": "Passive",
-        "Slot": "Weapon",
-        "Components": null,
-        "TargetTypes": [
-            "HeroEnemy",
-            "CreepEnemy",
-            "MinionEnemy"
-        ],
-        "ShopFilters": [
-            "WeaponDamage"
-        ],
-        "IsDisabled": true,
-        "StreetBrawl": false,
-        "IsImbue": false,
-        "AbilityDuration": 8,
-        "AbilityUnitTargetLimit": 1,
-        "AbilityCooldownBetweenCharge": -1.0,
-        "ChannelMoveSpeed": -1,
-        "ResistReduction": -60,
-        "BaseAttackDamagePercent": 12,
-        "BulletShieldDamagePercent": 60
-    },
     "upgrade_attack_speed_1": {
         "Name": null,
         "Description": null,
@@ -1564,24 +1514,6 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
         "BulletResist": 18
-    },
-    "upgrade_bullet_armor_2": {
-        "Name": null,
-        "Description": null,
-        "Cost": 3200,
-        "Tier": 3,
-        "Activation": "Passive",
-        "Slot": "Armor",
-        "Components": null,
-        "TargetTypes": null,
-        "ShopFilters": null,
-        "IsDisabled": true,
-        "StreetBrawl": false,
-        "IsImbue": false,
-        "AbilityUnitTargetLimit": 1,
-        "AbilityCooldownBetweenCharge": -1.0,
-        "ChannelMoveSpeed": -1,
-        "BulletArmor": 2
     },
     "upgrade_bullet_armor_reduction_aura": {
         "Name": "Hunter's Aura",
@@ -2416,30 +2348,6 @@
             "BuffTechResist": 10,
             "AbilityCooldown": -7
         }
-    },
-    "upgrade_combo_breaker": {
-        "Name": null,
-        "Description": null,
-        "Cost": 6400,
-        "Tier": 4,
-        "Activation": "InstantCast",
-        "Slot": "Armor",
-        "Components": null,
-        "TargetTypes": [
-            "AllFriendly"
-        ],
-        "ShopFilters": null,
-        "IsDisabled": true,
-        "StreetBrawl": false,
-        "IsImbue": false,
-        "AbilityCooldown": 23.0,
-        "AbilityUnitTargetLimit": 1,
-        "AbilityCooldownBetweenCharge": -1.0,
-        "ChannelMoveSpeed": -1,
-        "TechArmor": 2,
-        "BonusHealthRegen": 2.75,
-        "HealPercentAmount": 30,
-        "RegenDuration": 10
     },
     "upgrade_containment": {
         "Name": "Slowing Hex",
@@ -4286,24 +4194,6 @@
             "AbilityCooldown": -60
         }
     },
-    "upgrade_height_advantage": {
-        "Name": null,
-        "Description": null,
-        "Cost": 800,
-        "Tier": 1,
-        "Activation": "Passive",
-        "Slot": "Weapon",
-        "Components": null,
-        "TargetTypes": null,
-        "ShopFilters": null,
-        "IsDisabled": true,
-        "StreetBrawl": false,
-        "IsImbue": false,
-        "AbilityUnitTargetLimit": 1,
-        "AbilityCooldownBetweenCharge": -1.0,
-        "ChannelMoveSpeed": -1,
-        "HighGroundBonusWeaponPower": 50
-    },
     "upgrade_high_impact_armor": {
         "Name": null,
         "Description": null,
@@ -4481,7 +4371,6 @@
         "BulletResist": 30,
         "HealthThreshold": 50,
         "BulletResistBelowThreshold": 15,
-        "OutOfCombatHealthRegen": 3,
         "PropertyUpgrades": {
             "BulletResist": 10,
             "BulletResistBelowThreshold": 10
@@ -7703,27 +7592,6 @@
             "DamagePulseAmount": 30
         }
     },
-    "upgrade_tech_defender": {
-        "Name": null,
-        "Description": null,
-        "Cost": 6400,
-        "Tier": 4,
-        "Activation": "InstantCast",
-        "Slot": "Armor",
-        "Components": null,
-        "TargetTypes": null,
-        "ShopFilters": null,
-        "IsDisabled": true,
-        "StreetBrawl": false,
-        "IsImbue": false,
-        "AbilityCooldown": 95.0,
-        "AbilityDuration": 6,
-        "AbilityUnitTargetLimit": 1,
-        "AbilityCooldownBetweenCharge": -1.0,
-        "ChannelMoveSpeed": -1,
-        "BonusHealth": 85,
-        "TechArmor": 1
-    },
     "upgrade_tech_defense_shredders": {
         "Name": "Spirit Shredder Bullets",
         "Description": "Your bullets apply a debuff that reduces the <span class=\"highlight\">Spirit Resist</span> of the target and grants you and your allies <span class=\"highlight\">Spirit Lifesteal</span> against them.",
@@ -7884,7 +7752,7 @@
         "DPSIncrease": {
             "Value": 7,
             "Scale": {
-                "Value": 0.4,
+                "Value": 0.04,
                 "Type": "spirit"
             }
         },
