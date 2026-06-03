@@ -1192,48 +1192,6 @@
             }
         ]
     },
-    "ability_digger_mudshield": {
-        "AbilityCastDelay": 0.2,
-        "AbilityCooldown": 30,
-        "AbilityCooldownBetweenCharge": -1.0,
-        "AbilityDuration": 6,
-        "AbilityUnitTargetLimit": 1,
-        "BuffModifier": {
-            "Class": "modifier_digger_mudshield",
-            "Subclass": "mudshield_modifier"
-        },
-        "BulletShieldDamageConversionPercent": 80,
-        "BulletShieldMaxHealthPercentage": 30,
-        "ChannelMoveSpeed": -1,
-        "Damage": 60,
-        "FlatBulletDamageReduction": 5,
-        "IsDisabled": false,
-        "Key": "ability_digger_mudshield",
-        "Name": "Mud Shield",
-        "Radius": 7,
-        "ShieldDuration": 6,
-        "TickRate": 0.1,
-        "Upgrades": [
-            {
-                "AbilityCooldown": -5
-            },
-            {
-                "BulletShieldMissingHealthPercentage": 18
-            },
-            {
-                "FlatBulletDamageReduction": 15
-            }
-        ]
-    },
-    "ability_digger_mudshield_trigger": {
-        "AbilityCooldownBetweenCharge": -1.0,
-        "AbilityUnitTargetLimit": 1,
-        "ChannelMoveSpeed": -1,
-        "IsDisabled": false,
-        "Key": "ability_digger_mudshield_trigger",
-        "Name": null,
-        "Upgrades": []
-    },
     "ability_doorman_bomb": {
         "AbilityCharges": 1,
         "AbilityCooldown": 18.0,
@@ -1977,10 +1935,6 @@
         "HelperCount": 1,
         "HelperDowntimeDuration": 15.1,
         "HelpersPerPatrol": 4,
-        "InfestBuildingModifier": {
-            "Class": "citadel_modifier_familiar_infested_building",
-            "Subclass": "infestbuilding"
-        },
         "InfestBurstHealthPercent": 75,
         "InfestDamageTakenPercent": 30,
         "InfestHeal": {
@@ -2169,7 +2123,7 @@
         "IsDisabled": false,
         "Key": "ability_fencer_riposte",
         "LiftHeight": 240,
-        "MeleeResistReduction": 22,
+        "MeleeResistReduction": -22,
         "MeleeResistReductionDuration": 3.0,
         "MoveSpeedMax": 4,
         "Name": "Riposte",
@@ -2187,7 +2141,7 @@
                 "AbilityCooldown": -7
             },
             {
-                "MeleeResistReduction": 30
+                "MeleeResistReduction": -30
             },
             {
                 "StunDuration": 1.6
@@ -4508,7 +4462,7 @@
                 "AbilityCooldown": -3
             },
             {
-                "MeleeResistReduction": 5,
+                "MeleeResistReduction": -5,
                 "MeleeResistReductionDuration": 5
             },
             {
@@ -5108,7 +5062,6 @@
                 "Type": "power_increase"
             }
         },
-        "TechResist": 20,
         "TickRate": 0.4,
         "Upgrades": [
             {
@@ -5129,7 +5082,6 @@
                 "Class": "modifier_base",
                 "Subclass": "summon_buffs",
                 "AutoRegisterModifierValueFromAbilityPropertyName": [
-                    "TechResist",
                     "BonusHealthRegen",
                     "MoveSpeedPercent"
                 ]
@@ -5552,7 +5504,6 @@
         "Name": "Grasping Hands",
         "SlowPercent": 40,
         "SummonCount": 1,
-        "TechResist": 40,
         "TetherDuration": 1,
         "TetherModifier": {
             "Class": "modifier_necro_zombiewall_tether",
@@ -10895,28 +10846,6 @@
         ],
         "WeaponRecoilReduction": 40
     },
-    "citadel_ability_hornet_mark": {
-        "AbilityCastRange": 63.5,
-        "AbilityCooldown": 42.0,
-        "AbilityCooldownBetweenCharge": -1.0,
-        "AbilityDuration": 12,
-        "AbilityUnitTargetLimit": 1,
-        "ChannelMoveSpeed": -1,
-        "IsDisabled": false,
-        "Key": "citadel_ability_hornet_mark",
-        "Name": "Vindicta's Mark",
-        "Upgrades": [
-            {
-                "AbilityCastRange": 63.5
-            },
-            {
-                "ChargeForKill": 1
-            },
-            {
-                "AbilityCooldown": -33.0
-            }
-        ]
-    },
     "citadel_ability_hornet_snipe": {
         "AbilityCharges": 2,
         "AbilityCooldown": 50.0,
@@ -13219,39 +13148,6 @@
             {
                 "ReduceDebuffs": 50,
                 "ChargeReplenish": 1
-            }
-        ]
-    },
-    "citadel_ability_wing_blast": {
-        "AbilityCastDelay": 0.6,
-        "AbilityCooldown": 53.0,
-        "AbilityCooldownBetweenCharge": -1.0,
-        "AbilityDuration": 3,
-        "AbilityUnitTargetLimit": 1,
-        "ChannelMoveSpeed": 1.3,
-        "DPS": {
-            "Value": 50,
-            "Scale": {
-                "Value": 0.609336,
-                "Type": "spirit"
-            }
-        },
-        "Distance": 20,
-        "IsDisabled": false,
-        "Key": "citadel_ability_wing_blast",
-        "MaxPushVelocity": 800,
-        "Name": "Wing Blast",
-        "PushVelocity": 110,
-        "Radius": 5,
-        "Upgrades": [
-            {
-                "DPS": 30
-            },
-            {
-                "Radius": 2.5
-            },
-            {
-                "AbilityDuration": 3
             }
         ]
     },
