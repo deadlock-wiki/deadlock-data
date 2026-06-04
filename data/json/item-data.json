@@ -554,29 +554,6 @@
             "AbilityCooldown": -210
         }
     },
-    "upgrade_ablative_coat": {
-        "Name": null,
-        "Description": null,
-        "Cost": 6400,
-        "Tier": 4,
-        "Activation": "Passive",
-        "Slot": "Armor",
-        "Components": null,
-        "TargetTypes": [],
-        "ShopFilters": null,
-        "IsDisabled": true,
-        "StreetBrawl": false,
-        "IsImbue": false,
-        "AbilityCooldown": 21.0,
-        "AbilityUnitTargetLimit": 1,
-        "AbilityCooldownBetweenCharge": -1.0,
-        "ChannelMoveSpeed": -1,
-        "MaxBulletResist": 30,
-        "StackLossFrequency": 1,
-        "ArmorLossPerHit": 4,
-        "BulletArmor": 1,
-        "BonusSprintSpeed": "3m"
-    },
     "upgrade_absorbing_armor": {
         "Name": "Witchmail",
         "Description": "Taking heavy hits of {g:citadel_inline_attribute:'SpiritDamage'} from an enemy reduces a <span class=\"highlight\">random ability cooldown</span>.",
@@ -1170,33 +1147,6 @@
             "FreezeDuration": 0.25
         }
     },
-    "upgrade_armor_reduction_debuff": {
-        "Name": null,
-        "Description": null,
-        "Cost": 3200,
-        "Tier": 3,
-        "Activation": "Passive",
-        "Slot": "Weapon",
-        "Components": null,
-        "TargetTypes": [
-            "HeroEnemy",
-            "CreepEnemy",
-            "MinionEnemy"
-        ],
-        "ShopFilters": [
-            "WeaponDamage"
-        ],
-        "IsDisabled": true,
-        "StreetBrawl": false,
-        "IsImbue": false,
-        "AbilityDuration": 8,
-        "AbilityUnitTargetLimit": 1,
-        "AbilityCooldownBetweenCharge": -1.0,
-        "ChannelMoveSpeed": -1,
-        "ResistReduction": -60,
-        "BaseAttackDamagePercent": 12,
-        "BulletShieldDamagePercent": 60
-    },
     "upgrade_attack_speed_1": {
         "Name": null,
         "Description": null,
@@ -1522,8 +1472,20 @@
         "SlowPercent": 60,
         "SlowDuration": 2.5,
         "BonusMeleeDamagePercent": 16,
-        "LifestealHeal": 100,
-        "LifestealHealPercent": 30,
+        "LifestealHeal": {
+            "Value": 100,
+            "Scale": {
+                "Value": 1.5,
+                "Type": "power_increase"
+            }
+        },
+        "LifestealHealPercent": {
+            "Value": 30,
+            "Scale": {
+                "Value": 0.5,
+                "Type": "power_increase"
+            }
+        },
         "BonusHealth": 125,
         "NonHeroHealPct": 40,
         "PropertyUpgrades": {
@@ -1552,24 +1514,6 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
         "BulletResist": 18
-    },
-    "upgrade_bullet_armor_2": {
-        "Name": null,
-        "Description": null,
-        "Cost": 3200,
-        "Tier": 3,
-        "Activation": "Passive",
-        "Slot": "Armor",
-        "Components": null,
-        "TargetTypes": null,
-        "ShopFilters": null,
-        "IsDisabled": true,
-        "StreetBrawl": false,
-        "IsImbue": false,
-        "AbilityUnitTargetLimit": 1,
-        "AbilityCooldownBetweenCharge": -1.0,
-        "ChannelMoveSpeed": -1,
-        "BulletArmor": 2
     },
     "upgrade_bullet_armor_reduction_aura": {
         "Name": "Hunter's Aura",
@@ -2405,30 +2349,6 @@
             "AbilityCooldown": -7
         }
     },
-    "upgrade_combo_breaker": {
-        "Name": null,
-        "Description": null,
-        "Cost": 6400,
-        "Tier": 4,
-        "Activation": "InstantCast",
-        "Slot": "Armor",
-        "Components": null,
-        "TargetTypes": [
-            "AllFriendly"
-        ],
-        "ShopFilters": null,
-        "IsDisabled": true,
-        "StreetBrawl": false,
-        "IsImbue": false,
-        "AbilityCooldown": 23.0,
-        "AbilityUnitTargetLimit": 1,
-        "AbilityCooldownBetweenCharge": -1.0,
-        "ChannelMoveSpeed": -1,
-        "TechArmor": 2,
-        "BonusHealthRegen": 2.75,
-        "HealPercentAmount": 30,
-        "RegenDuration": 10
-    },
     "upgrade_containment": {
         "Name": "Slowing Hex",
         "Description": "<span class=\"highlight\">Slows movement</span> of enemy target. Also <span class=\"highlight\">Silences</span> their <span class=\"highlight\">movement-based items and abilities</span>.<br><span class=\"diminish\">Increases the target's gravity.<br>Does not affect target's stamina usage.</span>",
@@ -2517,7 +2437,13 @@
         "BonusHealth": 110,
         "BonusSprintSpeed": "1m",
         "ExplosionRadius": "4m",
-        "ExplosionDamage": 125,
+        "ExplosionDamage": {
+            "Value": 125,
+            "Scale": {
+                "Value": 0.93,
+                "Type": "spirit"
+            }
+        },
         "HeroMultiplier": 150,
         "ArmingTime": 0.1
     },
@@ -3873,7 +3799,13 @@
         },
         "BaseAttackDamagePercent": 5,
         "BonusHealth": 50,
-        "HealPercentPerHeadshot": 4,
+        "HealPercentPerHeadshot": {
+            "Value": 4,
+            "Scale": {
+                "Value": 0.06,
+                "Type": "power_increase"
+            }
+        },
         "BonusMoveSpeed": "1.75m",
         "MovementSpeedBonusDuration": 3,
         "ProcChance": 100,
@@ -4135,7 +4067,13 @@
         "AbilityCastDelay": 0.25,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
-        "TotalHealthRegen": 325,
+        "TotalHealthRegen": {
+            "Value": 325,
+            "Scale": {
+                "Value": 6,
+                "Type": "power_increase"
+            }
+        },
         "RegenDuration": 2,
         "AuraRadius": "18m",
         "SpiritPower": 8,
@@ -4241,7 +4179,13 @@
         "AbilityCastDelay": 0.2,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
-        "TotalHealthRegen": 300,
+        "TotalHealthRegen": {
+            "Value": 300,
+            "Scale": {
+                "Value": 1.1,
+                "Type": "spirit"
+            }
+        },
         "RegenDuration": 20,
         "BonusSprintSpeed": "2m",
         "PropertyUpgrades": {
@@ -4249,24 +4193,6 @@
             "BonusSprintSpeed": "6m",
             "AbilityCooldown": -60
         }
-    },
-    "upgrade_height_advantage": {
-        "Name": null,
-        "Description": null,
-        "Cost": 800,
-        "Tier": 1,
-        "Activation": "Passive",
-        "Slot": "Weapon",
-        "Components": null,
-        "TargetTypes": null,
-        "ShopFilters": null,
-        "IsDisabled": true,
-        "StreetBrawl": false,
-        "IsImbue": false,
-        "AbilityUnitTargetLimit": 1,
-        "AbilityCooldownBetweenCharge": -1.0,
-        "ChannelMoveSpeed": -1,
-        "HighGroundBonusWeaponPower": 50
     },
     "upgrade_high_impact_armor": {
         "Name": null,
@@ -4445,7 +4371,6 @@
         "BulletResist": 30,
         "HealthThreshold": 50,
         "BulletResistBelowThreshold": 15,
-        "OutOfCombatHealthRegen": 3,
         "PropertyUpgrades": {
             "BulletResist": 10,
             "BulletResistBelowThreshold": 10
@@ -5881,7 +5806,13 @@
                 "Type": "spirit"
             }
         },
-        "BaseDamagePerShot": 1,
+        "BaseDamagePerShot": {
+            "Value": 1,
+            "Scale": {
+                "Value": 1.0,
+                "Type": "spirit"
+            }
+        },
         "SpellAmplificationMultiplier": 5
     },
     "upgrade_quarantine": {
@@ -6272,9 +6203,21 @@
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
-        "HealingPerCast": 70,
+        "HealingPerCast": {
+            "Value": 70,
+            "Scale": {
+                "Value": 2.0,
+                "Type": "power_increase"
+            }
+        },
         "BonusMoveSpeed": "1.75m",
-        "Regeneration": 4,
+        "Regeneration": {
+            "Value": 4,
+            "Scale": {
+                "Value": 0.04,
+                "Type": "spirit"
+            }
+        },
         "RegenerationDuration": 7,
         "BonusHealth": 90,
         "PropertyUpgrades": {
@@ -6310,7 +6253,13 @@
         "ChannelMoveSpeed": -1,
         "Radius": "35m",
         "TechResist": 10,
-        "HealPerStack": 16,
+        "HealPerStack": {
+            "Value": 16,
+            "Scale": {
+                "Value": 0.32,
+                "Type": "power_increase"
+            }
+        },
         "MaxStacks": 25,
         "MaxStaminaRestore": 3,
         "PropertyUpgrades": {
@@ -7643,27 +7592,6 @@
             "DamagePulseAmount": 30
         }
     },
-    "upgrade_tech_defender": {
-        "Name": null,
-        "Description": null,
-        "Cost": 6400,
-        "Tier": 4,
-        "Activation": "InstantCast",
-        "Slot": "Armor",
-        "Components": null,
-        "TargetTypes": null,
-        "ShopFilters": null,
-        "IsDisabled": true,
-        "StreetBrawl": false,
-        "IsImbue": false,
-        "AbilityCooldown": 95.0,
-        "AbilityDuration": 6,
-        "AbilityUnitTargetLimit": 1,
-        "AbilityCooldownBetweenCharge": -1.0,
-        "ChannelMoveSpeed": -1,
-        "BonusHealth": 85,
-        "TechArmor": 1
-    },
     "upgrade_tech_defense_shredders": {
         "Name": "Spirit Shredder Bullets",
         "Description": "Your bullets apply a debuff that reduces the <span class=\"highlight\">Spirit Resist</span> of the target and grants you and your allies <span class=\"highlight\">Spirit Lifesteal</span> against them.",
@@ -7824,7 +7752,7 @@
         "DPSIncrease": {
             "Value": 7,
             "Scale": {
-                "Value": 0.4,
+                "Value": 0.04,
                 "Type": "spirit"
             }
         },
@@ -8212,7 +8140,13 @@
         "SpiritPower": 10,
         "InvisDuration": 8,
         "BonusMoveSpeed": "3.5m",
-        "HealOnVeil": 85,
+        "HealOnVeil": {
+            "Value": 85,
+            "Scale": {
+                "Value": 8,
+                "Type": "power_increase"
+            }
+        },
         "PropertyUpgrades": {
             "SpiritPower": 25,
             "InvisMoveSpeedMod": "6m",

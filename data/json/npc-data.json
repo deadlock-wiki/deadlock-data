@@ -293,7 +293,7 @@
             "AuraRadius": 28.0,
             "LOSCheck": "ELOSCheck_Bounds",
             "modifierProvidedByAura": {
-                "TECH_ARMOR_DAMAGE_RESIST": 15,
+                "TECH_RESIST": 15,
                 "BULLET_ARMOR_DAMAGE_RESIST": 15
             },
             "AuraSearchType": "CITADEL_UNIT_TARGET_HERO_FRIENDLY"
@@ -618,7 +618,7 @@
             "AuraRadius": 28.0,
             "LOSCheck": "ELOSCheck_Bounds",
             "modifierProvidedByAura": {
-                "TECH_ARMOR_DAMAGE_RESIST": 15,
+                "TECH_RESIST": 15,
                 "BULLET_ARMOR_DAMAGE_RESIST": 15
             },
             "AuraSearchType": "CITADEL_UNIT_TARGET_HERO_FRIENDLY"
@@ -1289,12 +1289,15 @@
                     "EnabledStateMask": "MODIFIER_STATE_NEAR_REJUVINATOR"
                 },
                 "AuraSearchType": "CITADEL_UNIT_TARGET_HERO"
+            },
+            "ParryCheckModifier": {
+                "ParryCheckRadius": 2.032
             }
         },
         "RebirthModifier": {
             "HEALTH_MAX_PERCENT": 0.0,
             "FIRE_RATE": 0.0,
-            "TECH_DAMAGE_PERCENT": 0.0,
+            "TECH_DAMAGE_MULTIPLIER": 0.0,
             "RespawnLifePct": 100.0,
             "RespawnDelay": 3.0
         }
@@ -1313,12 +1316,15 @@
                     "EnabledStateMask": "MODIFIER_STATE_NEAR_REJUVINATOR"
                 },
                 "AuraSearchType": "CITADEL_UNIT_TARGET_HERO"
+            },
+            "ParryCheckModifier": {
+                "ParryCheckRadius": 2.032
             }
         },
         "RebirthModifier": {
             "HEALTH_MAX_PERCENT": 0.0,
             "FIRE_RATE": 0.0,
-            "TECH_DAMAGE_PERCENT": 0.0,
+            "TECH_DAMAGE_MULTIPLIER": 0.0,
             "RespawnLifePct": 100.0,
             "RespawnDelay": 3.0
         }
@@ -1426,6 +1432,9 @@
         "IntrinsicModifiers": [
             {
                 "EnabledStateMask": "MODIFIER_STATE_TECH_UNTARGETABLE | MODIFIER_STATE_TECH_INVULNERABLE"
+            },
+            {
+                "ParryCheckRadius": 1.524
             }
         ],
         "MaxHealth": 500,
@@ -1535,7 +1544,7 @@
             {
                 "BULLET_DAMAGE_REDUCTION_PERCENT": 60.0,
                 "ABILITY_DAMAGE_REDUCTION_PERCENT": 55.0,
-                "MELEE_DAMAGE_INCREASE_PERCENT": 20.0
+                "MELEE_RESIST_REDUCTION": 20.0
             }
         ],
         "MaxHealth": 1133,
@@ -2151,7 +2160,7 @@
             "AuraRadius": 28.0,
             "LOSCheck": "ELOSCheck_Bounds",
             "modifierProvidedByAura": {
-                "TECH_ARMOR_DAMAGE_RESIST": 15,
+                "TECH_RESIST": 15,
                 "BULLET_ARMOR_DAMAGE_RESIST": 15
             },
             "AuraSearchType": "CITADEL_UNIT_TARGET_HERO_FRIENDLY"
@@ -2476,7 +2485,7 @@
             "AuraRadius": 28.0,
             "LOSCheck": "ELOSCheck_Bounds",
             "modifierProvidedByAura": {
-                "TECH_ARMOR_DAMAGE_RESIST": 15,
+                "TECH_RESIST": 15,
                 "BULLET_ARMOR_DAMAGE_RESIST": 15
             },
             "AuraSearchType": "CITADEL_UNIT_TARGET_HERO_FRIENDLY"
@@ -3192,6 +3201,9 @@
         "IntrinsicModifiers": [
             {
                 "EnabledStateMask": "MODIFIER_STATE_TECH_UNTARGETABLE | MODIFIER_STATE_TECH_INVULNERABLE"
+            },
+            {
+                "ParryCheckRadius": 1.524
             }
         ],
         "MaxHealth": 500,

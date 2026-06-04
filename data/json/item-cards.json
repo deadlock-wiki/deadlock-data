@@ -3252,82 +3252,6 @@
             }
         }
     },
-    "upgrade_armor_reduction_debuff": {
-        "Key": "upgrade_armor_reduction_debuff",
-        "Name": null,
-        "Description": null,
-        "Cost": 3200,
-        "Tier": 3,
-        "Slot": "Weapon",
-        "Activation": "Passive",
-        "Components": null,
-        "TargetTypes": [
-            "HeroEnemy",
-            "CreepEnemy",
-            "MinionEnemy"
-        ],
-        "ShopFilters": [
-            "WeaponDamage"
-        ],
-        "IsDisabled": true,
-        "StreetBrawl": false,
-        "IsImbue": false,
-        "Info1": {
-            "Type": "Innate",
-            "DescKey": null,
-            "Cooldown": null,
-            "ChargeUp": null,
-            "Main": [],
-            "Alt": [
-                {
-                    "Key": "BaseAttackDamagePercent",
-                    "Value": 12,
-                    "Type": "bullet_damage"
-                }
-            ]
-        },
-        "Info2": {
-            "Type": null,
-            "DescKey": "#upgrade_armor_reduction_debuff_desc",
-            "Cooldown": null,
-            "ChargeUp": null,
-            "Main": [
-                {
-                    "Key": "BulletShieldDamagePercent",
-                    "Value": 60,
-                    "Type": "bullet_damage"
-                }
-            ],
-            "Alt": []
-        },
-        "Other": {
-            "AbilityDuration": {
-                "Key": "AbilityDuration",
-                "Value": 8,
-                "Type": "duration"
-            },
-            "AbilityUnitTargetLimit": {
-                "Key": "AbilityUnitTargetLimit",
-                "Value": 1
-            },
-            "AbilityCooldownBetweenCharge": {
-                "Key": "AbilityCooldownBetweenCharge",
-                "Value": -1.0,
-                "Type": "charge_cooldown"
-            },
-            "ChannelMoveSpeed": {
-                "Key": "ChannelMoveSpeed",
-                "Value": -1,
-                "Type": "move_speed"
-            },
-            "ResistReduction": {
-                "Key": "ResistReduction",
-                "Value": -60,
-                "Type": "bullet_armor_down",
-                "UsageFlags": "ConditionallyApplied"
-            }
-        }
-    },
     "upgrade_weapon_detention_ammo": {
         "Key": "upgrade_weapon_detention_ammo",
         "Name": null,
@@ -3412,50 +3336,6 @@
                 "Key": "BuildUpDuration",
                 "Value": 10,
                 "Type": "duration"
-            }
-        }
-    },
-    "upgrade_height_advantage": {
-        "Key": "upgrade_height_advantage",
-        "Name": null,
-        "Description": null,
-        "Cost": 800,
-        "Tier": 1,
-        "Slot": "Weapon",
-        "Activation": "Passive",
-        "Components": null,
-        "TargetTypes": null,
-        "ShopFilters": null,
-        "IsDisabled": true,
-        "StreetBrawl": false,
-        "IsImbue": false,
-        "Info1": {
-            "Type": "Innate",
-            "DescKey": "#upgrade_height_advantage_desc",
-            "Cooldown": null,
-            "ChargeUp": null,
-            "Main": [],
-            "Alt": []
-        },
-        "Other": {
-            "AbilityUnitTargetLimit": {
-                "Key": "AbilityUnitTargetLimit",
-                "Value": 1
-            },
-            "AbilityCooldownBetweenCharge": {
-                "Key": "AbilityCooldownBetweenCharge",
-                "Value": -1.0,
-                "Type": "charge_cooldown"
-            },
-            "ChannelMoveSpeed": {
-                "Key": "ChannelMoveSpeed",
-                "Value": -1,
-                "Type": "move_speed"
-            },
-            "HighGroundBonusWeaponPower": {
-                "Key": "HighGroundBonusWeaponPower",
-                "Value": 50,
-                "Type": "bullet_damage"
             }
         }
     },
@@ -4506,6 +4386,10 @@
                 {
                     "Key": "HealPercentPerHeadshot",
                     "Value": 4,
+                    "Scale": {
+                        "Value": 0.06,
+                        "Type": "power_increase"
+                    },
                     "Type": "healing"
                 }
             ],
@@ -4812,7 +4696,11 @@
             },
             "BaseDamagePerShot": {
                 "Key": "BaseDamagePerShot",
-                "Value": 1
+                "Value": 1,
+                "Scale": {
+                    "Value": 1.0,
+                    "Type": "spirit"
+                }
             },
             "SpellAmplificationMultiplier": {
                 "Key": "SpellAmplificationMultiplier",
@@ -5967,77 +5855,6 @@
             }
         }
     },
-    "upgrade_combo_breaker": {
-        "Key": "upgrade_combo_breaker",
-        "Name": null,
-        "Description": null,
-        "Cost": 6400,
-        "Tier": 4,
-        "Slot": "Armor",
-        "Activation": "InstantCast",
-        "Components": null,
-        "TargetTypes": [
-            "AllFriendly"
-        ],
-        "ShopFilters": null,
-        "IsDisabled": true,
-        "StreetBrawl": false,
-        "IsImbue": false,
-        "Info1": {
-            "Type": "Active",
-            "DescKey": "#upgrade_combo_breaker_desc",
-            "Cooldown": 23.0,
-            "ChargeUp": null,
-            "Main": [
-                {
-                    "Key": "HealPercentAmount",
-                    "Value": 30,
-                    "Type": "healing"
-                }
-            ],
-            "Alt": [
-                {
-                    "Key": "RegenDuration",
-                    "Value": 10
-                }
-            ]
-        },
-        "Info2": {
-            "Type": "Innate",
-            "DescKey": null,
-            "Cooldown": null,
-            "ChargeUp": null,
-            "Main": [],
-            "Alt": [
-                {
-                    "Key": "TechArmor",
-                    "Value": 2,
-                    "Type": "tech_armor_up"
-                },
-                {
-                    "Key": "BonusHealthRegen",
-                    "Value": 2.75,
-                    "Type": "healing"
-                }
-            ]
-        },
-        "Other": {
-            "AbilityUnitTargetLimit": {
-                "Key": "AbilityUnitTargetLimit",
-                "Value": 1
-            },
-            "AbilityCooldownBetweenCharge": {
-                "Key": "AbilityCooldownBetweenCharge",
-                "Value": -1.0,
-                "Type": "charge_cooldown"
-            },
-            "ChannelMoveSpeed": {
-                "Key": "ChannelMoveSpeed",
-                "Value": -1,
-                "Type": "move_speed"
-            }
-        }
-    },
     "upgrade_debuff_reducer": {
         "Key": "upgrade_debuff_reducer",
         "Name": "Debuff Reducer",
@@ -6261,51 +6078,6 @@
             }
         }
     },
-    "upgrade_bullet_armor_2": {
-        "Key": "upgrade_bullet_armor_2",
-        "Name": null,
-        "Description": null,
-        "Cost": 3200,
-        "Tier": 3,
-        "Slot": "Armor",
-        "Activation": "Passive",
-        "Components": null,
-        "TargetTypes": null,
-        "ShopFilters": null,
-        "IsDisabled": true,
-        "StreetBrawl": false,
-        "IsImbue": false,
-        "Info1": {
-            "Type": "Innate",
-            "DescKey": null,
-            "Cooldown": null,
-            "ChargeUp": null,
-            "Main": [],
-            "Alt": [
-                {
-                    "Key": "BulletArmor",
-                    "Value": 2,
-                    "Type": "bullet_armor_up"
-                }
-            ]
-        },
-        "Other": {
-            "AbilityUnitTargetLimit": {
-                "Key": "AbilityUnitTargetLimit",
-                "Value": 1
-            },
-            "AbilityCooldownBetweenCharge": {
-                "Key": "AbilityCooldownBetweenCharge",
-                "Value": -1.0,
-                "Type": "charge_cooldown"
-            },
-            "ChannelMoveSpeed": {
-                "Key": "ChannelMoveSpeed",
-                "Value": -1,
-                "Type": "move_speed"
-            }
-        }
-    },
     "upgrade_weapon_power_and_health_drain": {
         "Key": "upgrade_weapon_power_and_health_drain",
         "Name": null,
@@ -6450,80 +6222,6 @@
             }
         }
     },
-    "upgrade_ablative_coat": {
-        "Key": "upgrade_ablative_coat",
-        "Name": null,
-        "Description": null,
-        "Cost": 6400,
-        "Tier": 4,
-        "Slot": "Armor",
-        "Activation": "Passive",
-        "Components": null,
-        "TargetTypes": [],
-        "ShopFilters": null,
-        "IsDisabled": true,
-        "StreetBrawl": false,
-        "IsImbue": false,
-        "Info1": {
-            "Type": "Passive",
-            "DescKey": "#upgrade_ablative_coat_desc",
-            "Cooldown": 21.0,
-            "ChargeUp": null,
-            "Main": [
-                {
-                    "Key": "MaxBulletResist",
-                    "Value": 30,
-                    "Type": "bullet_armor_up"
-                }
-            ],
-            "Alt": [
-                {
-                    "Key": "ArmorLossPerHit",
-                    "Value": 4,
-                    "Type": "bullet_armor_down"
-                }
-            ]
-        },
-        "Info2": {
-            "Type": "Innate",
-            "DescKey": "#upgrade_ablative_coat_innate",
-            "Cooldown": null,
-            "ChargeUp": null,
-            "Main": [],
-            "Alt": [
-                {
-                    "Key": "BonusSprintSpeed",
-                    "Value": "3m",
-                    "Type": "move_speed"
-                },
-                {
-                    "Key": "BulletArmor",
-                    "Value": 1,
-                    "Type": "bullet_armor_up"
-                }
-            ]
-        },
-        "Other": {
-            "AbilityUnitTargetLimit": {
-                "Key": "AbilityUnitTargetLimit",
-                "Value": 1
-            },
-            "AbilityCooldownBetweenCharge": {
-                "Key": "AbilityCooldownBetweenCharge",
-                "Value": -1.0,
-                "Type": "charge_cooldown"
-            },
-            "ChannelMoveSpeed": {
-                "Key": "ChannelMoveSpeed",
-                "Value": -1,
-                "Type": "move_speed"
-            },
-            "StackLossFrequency": {
-                "Key": "StackLossFrequency",
-                "Value": 1
-            }
-        }
-    },
     "upgrade_tech_purge": {
         "Key": "upgrade_tech_purge",
         "Name": "Spirit Resilience",
@@ -6631,13 +6329,7 @@
                     "UsageFlags": "IntrinsicallyProvidedInAbility"
                 }
             ],
-            "Alt": [
-                {
-                    "Key": "OutOfCombatHealthRegen",
-                    "Value": 3,
-                    "Type": "healing"
-                }
-            ]
+            "Alt": []
         },
         "Info2": {
             "Type": "Passive",
@@ -12990,6 +12682,10 @@
                 {
                     "Key": "TotalHealthRegen",
                     "Value": 325,
+                    "Scale": {
+                        "Value": 6,
+                        "Type": "power_increase"
+                    },
                     "Type": "healing"
                 }
             ],
@@ -13081,6 +12777,10 @@
                 {
                     "Key": "HealPerStack",
                     "Value": 16,
+                    "Scale": {
+                        "Value": 0.32,
+                        "Type": "power_increase"
+                    },
                     "Type": "healing"
                 }
             ],
@@ -13161,6 +12861,10 @@
                 {
                     "Key": "TotalHealthRegen",
                     "Value": 300,
+                    "Scale": {
+                        "Value": 1.1,
+                        "Type": "spirit"
+                    },
                     "Type": "healing"
                 },
                 {
@@ -13820,7 +13524,7 @@
                 "Key": "DPSIncrease",
                 "Value": 7.0,
                 "Scale": {
-                    "Value": 0.4,
+                    "Value": 0.04,
                     "Type": "spirit"
                 },
                 "Type": "tech_damage"
@@ -14337,70 +14041,6 @@
             "BonusClipSizePercent": {
                 "Key": "BonusClipSizePercent",
                 "Value": 60
-            }
-        }
-    },
-    "upgrade_tech_defender": {
-        "Key": "upgrade_tech_defender",
-        "Name": null,
-        "Description": null,
-        "Cost": 6400,
-        "Tier": 4,
-        "Slot": "Armor",
-        "Activation": "InstantCast",
-        "Components": null,
-        "TargetTypes": null,
-        "ShopFilters": null,
-        "IsDisabled": true,
-        "StreetBrawl": false,
-        "IsImbue": false,
-        "Info1": {
-            "Type": "Active",
-            "DescKey": "#upgrade_tech_defender_active",
-            "Cooldown": 95.0,
-            "ChargeUp": null,
-            "Main": [],
-            "Alt": [
-                {
-                    "Key": "AbilityDuration",
-                    "Value": 6,
-                    "Type": "duration"
-                }
-            ]
-        },
-        "Info2": {
-            "Type": "Innate",
-            "DescKey": null,
-            "Cooldown": null,
-            "ChargeUp": null,
-            "Main": [],
-            "Alt": [
-                {
-                    "Key": "TechArmor",
-                    "Value": 1,
-                    "Type": "tech_armor_up"
-                },
-                {
-                    "Key": "BonusHealth",
-                    "Value": 85,
-                    "Type": "health"
-                }
-            ]
-        },
-        "Other": {
-            "AbilityUnitTargetLimit": {
-                "Key": "AbilityUnitTargetLimit",
-                "Value": 1
-            },
-            "AbilityCooldownBetweenCharge": {
-                "Key": "AbilityCooldownBetweenCharge",
-                "Value": -1.0,
-                "Type": "charge_cooldown"
-            },
-            "ChannelMoveSpeed": {
-                "Key": "ChannelMoveSpeed",
-                "Value": -1,
-                "Type": "move_speed"
             }
         }
     },
@@ -16128,11 +15768,19 @@
                 {
                     "Key": "LifestealHeal",
                     "Value": 100,
+                    "Scale": {
+                        "Value": 1.5,
+                        "Type": "power_increase"
+                    },
                     "Type": "healing"
                 },
                 {
                     "Key": "LifestealHealPercent",
                     "Value": 30,
+                    "Scale": {
+                        "Value": 0.5,
+                        "Type": "power_increase"
+                    },
                     "Type": "healing"
                 }
             ],
@@ -16926,6 +16574,10 @@
                 {
                     "Key": "Regeneration",
                     "Value": 4,
+                    "Scale": {
+                        "Value": 0.04,
+                        "Type": "spirit"
+                    },
                     "Type": "healing"
                 }
             ],
@@ -16946,6 +16598,10 @@
                 {
                     "Key": "HealingPerCast",
                     "Value": 70,
+                    "Scale": {
+                        "Value": 2.0,
+                        "Type": "power_increase"
+                    },
                     "Type": "healing"
                 },
                 {
@@ -18110,6 +17766,10 @@
                 {
                     "Key": "HealOnVeil",
                     "Value": 85,
+                    "Scale": {
+                        "Value": 8,
+                        "Type": "power_increase"
+                    },
                     "Type": "healing",
                     "LocTokenOverride": "#VeilWalker_Heal"
                 }
@@ -19365,6 +19025,10 @@
                 {
                     "Key": "ExplosionDamage",
                     "Value": 125,
+                    "Scale": {
+                        "Value": 0.93,
+                        "Type": "spirit"
+                    },
                     "Type": "tech_damage"
                 },
                 {
