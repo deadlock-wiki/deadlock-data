@@ -293,7 +293,7 @@
             "AuraRadius": 28.0,
             "LOSCheck": "ELOSCheck_Bounds",
             "modifierProvidedByAura": {
-                "TECH_ARMOR_DAMAGE_RESIST": 15,
+                "TECH_RESIST": 15,
                 "BULLET_ARMOR_DAMAGE_RESIST": 15
             },
             "AuraSearchType": "CITADEL_UNIT_TARGET_HERO_FRIENDLY"
@@ -302,7 +302,7 @@
         "IntrinsicModifiers": [
             {
                 "ABILITY_DAMAGE_REDUCTION_PERCENT": 0.0,
-                "BULLET_ARMOR_DAMAGE_RESIST": 25
+                "BULLET_ARMOR_DAMAGE_RESIST": 35
             }
         ],
         "InvulModifier": {
@@ -618,7 +618,7 @@
             "AuraRadius": 28.0,
             "LOSCheck": "ELOSCheck_Bounds",
             "modifierProvidedByAura": {
-                "TECH_ARMOR_DAMAGE_RESIST": 15,
+                "TECH_RESIST": 15,
                 "BULLET_ARMOR_DAMAGE_RESIST": 15
             },
             "AuraSearchType": "CITADEL_UNIT_TARGET_HERO_FRIENDLY"
@@ -627,7 +627,7 @@
         "IntrinsicModifiers": [
             {
                 "ABILITY_DAMAGE_REDUCTION_PERCENT": 0.0,
-                "BULLET_ARMOR_DAMAGE_RESIST": 25
+                "BULLET_ARMOR_DAMAGE_RESIST": 35
             }
         ],
         "InvulModifier": {
@@ -1289,12 +1289,15 @@
                     "EnabledStateMask": "MODIFIER_STATE_NEAR_REJUVINATOR"
                 },
                 "AuraSearchType": "CITADEL_UNIT_TARGET_HERO"
+            },
+            "ParryCheckModifier": {
+                "ParryCheckRadius": 2.032
             }
         },
         "RebirthModifier": {
             "HEALTH_MAX_PERCENT": 0.0,
             "FIRE_RATE": 0.0,
-            "TECH_DAMAGE_PERCENT": 0.0,
+            "TECH_DAMAGE_MULTIPLIER": 0.0,
             "RespawnLifePct": 100.0,
             "RespawnDelay": 3.0
         }
@@ -1313,12 +1316,15 @@
                     "EnabledStateMask": "MODIFIER_STATE_NEAR_REJUVINATOR"
                 },
                 "AuraSearchType": "CITADEL_UNIT_TARGET_HERO"
+            },
+            "ParryCheckModifier": {
+                "ParryCheckRadius": 2.032
             }
         },
         "RebirthModifier": {
             "HEALTH_MAX_PERCENT": 0.0,
             "FIRE_RATE": 0.0,
-            "TECH_DAMAGE_PERCENT": 0.0,
+            "TECH_DAMAGE_MULTIPLIER": 0.0,
             "RespawnLifePct": 100.0,
             "RespawnDelay": 3.0
         }
@@ -1356,7 +1362,7 @@
         "IntrinsicModifiers": [
             {
                 "ABILITY_DAMAGE_REDUCTION_PERCENT": 0.0,
-                "BULLET_ARMOR_DAMAGE_RESIST": 10
+                "BULLET_ARMOR_DAMAGE_RESIST": 20
             }
         ],
         "MaxHealthFinal": 8775,
@@ -1426,6 +1432,9 @@
         "IntrinsicModifiers": [
             {
                 "EnabledStateMask": "MODIFIER_STATE_TECH_UNTARGETABLE | MODIFIER_STATE_TECH_INVULNERABLE"
+            },
+            {
+                "ParryCheckRadius": 1.524
             }
         ],
         "MaxHealth": 500,
@@ -1476,7 +1485,7 @@
         "GoldRewardBonusPercentPerMinute": 1.08,
         "HullCapsuleHeight": 4.318,
         "HullCapsuleRadius": 0.762,
-        "InitialSpawnDelay": 360,
+        "InitialSpawnDelay": 300,
         "IntrinsicModifiers": [
             {
                 "BULLET_DAMAGE_REDUCTION_PERCENT": 50.0,
@@ -1535,7 +1544,7 @@
             {
                 "BULLET_DAMAGE_REDUCTION_PERCENT": 60.0,
                 "ABILITY_DAMAGE_REDUCTION_PERCENT": 55.0,
-                "MELEE_DAMAGE_INCREASE_PERCENT": 20.0
+                "MELEE_RESIST_REDUCTION": 20.0
             }
         ],
         "MaxHealth": 1133,
@@ -1656,7 +1665,7 @@
         "IntrinsicModifiers": [
             {
                 "ABILITY_DAMAGE_REDUCTION_PERCENT": 0.0,
-                "BULLET_ARMOR_DAMAGE_RESIST": 10
+                "BULLET_ARMOR_DAMAGE_RESIST": 20
             }
         ],
         "InvulRange": 24.0,
@@ -1727,7 +1736,7 @@
         "IntrinsicModifiers": [
             {
                 "ABILITY_DAMAGE_REDUCTION_PERCENT": 0.0,
-                "BULLET_ARMOR_DAMAGE_RESIST": 10
+                "BULLET_ARMOR_DAMAGE_RESIST": 20
             }
         ],
         "InvulRange": 24.0,
@@ -1798,7 +1807,7 @@
         "IntrinsicModifiers": [
             {
                 "ABILITY_DAMAGE_REDUCTION_PERCENT": 0.0,
-                "BULLET_ARMOR_DAMAGE_RESIST": 10
+                "BULLET_ARMOR_DAMAGE_RESIST": 20
             }
         ],
         "InvulRange": 24.0,
@@ -2151,7 +2160,7 @@
             "AuraRadius": 28.0,
             "LOSCheck": "ELOSCheck_Bounds",
             "modifierProvidedByAura": {
-                "TECH_ARMOR_DAMAGE_RESIST": 15,
+                "TECH_RESIST": 15,
                 "BULLET_ARMOR_DAMAGE_RESIST": 15
             },
             "AuraSearchType": "CITADEL_UNIT_TARGET_HERO_FRIENDLY"
@@ -2160,7 +2169,7 @@
         "IntrinsicModifiers": [
             {
                 "ABILITY_DAMAGE_REDUCTION_PERCENT": 0.0,
-                "BULLET_ARMOR_DAMAGE_RESIST": 25
+                "BULLET_ARMOR_DAMAGE_RESIST": 35
             }
         ],
         "InvulModifier": {
@@ -2476,7 +2485,7 @@
             "AuraRadius": 28.0,
             "LOSCheck": "ELOSCheck_Bounds",
             "modifierProvidedByAura": {
-                "TECH_ARMOR_DAMAGE_RESIST": 15,
+                "TECH_RESIST": 15,
                 "BULLET_ARMOR_DAMAGE_RESIST": 15
             },
             "AuraSearchType": "CITADEL_UNIT_TARGET_HERO_FRIENDLY"
@@ -2485,7 +2494,7 @@
         "IntrinsicModifiers": [
             {
                 "ABILITY_DAMAGE_REDUCTION_PERCENT": 0.0,
-                "BULLET_ARMOR_DAMAGE_RESIST": 25
+                "BULLET_ARMOR_DAMAGE_RESIST": 35
             }
         ],
         "InvulModifier": {
@@ -3192,6 +3201,9 @@
         "IntrinsicModifiers": [
             {
                 "EnabledStateMask": "MODIFIER_STATE_TECH_UNTARGETABLE | MODIFIER_STATE_TECH_INVULNERABLE"
+            },
+            {
+                "ParryCheckRadius": 1.524
             }
         ],
         "MaxHealth": 500,
@@ -3375,7 +3387,7 @@
         },
         "DyingDuration": 1.4,
         "HealthGainPerMinute": 195,
-        "InitialSpawnDelay": 600,
+        "InitialSpawnDelay": 0,
         "IntrinsicModifiers": [
             {
                 "HEALTH_REGEN_PER_SECOND": 15.0,
