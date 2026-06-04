@@ -1,3 +1,6 @@
+#!/bin/bash
+set -euo pipefail
+
 : "${DISCORD_WEBHOOK_URL:?DISCORD_WEBHOOK_URL is required}"
 : "${REPO_URL:?REPO_URL is required}"
 : "${COMMIT_SHA:?COMMIT_SHA is required}"
@@ -34,7 +37,10 @@ TOTAL_DELETIONS=0
 # For each file, add file name to the appropriate category and count the number of lines added and deleted
 while IFS=$'\t' read -r additions deletions filename; do
     [ -z "$filename" ] && continue
-
+    
+    # Skip binary files where git outputs '-' instead of a number
+    [[ "$additions" == "-" || "$deletions" == "-" ]] && additions=0 && deletions=0
+    
     BASENAME=$(basename "$filename")
     LINE="${BASENAME}"$'\\n'
     case "$filename" in
