@@ -1017,21 +1017,33 @@
         "FirstSpawnTime": 180.0
     },
     "citadel_idol_cashin": {
-        "IdleParticleFriendly": "particles/generic/idol_pickup_aura.vpcf",
-        "IdleParticleEnemy": "particles/generic/idol_pickup_aura_enemy.vpcf",
-        "HitParticleFriendly": "particles/generic/idol_pickup_hit.vpcf",
-        "HitParticleEnemy": "particles/generic/idol_pickup_hit_enemy.vpcf",
+        "ZoneParticle": "particles/generic/idol_cashin_aura.vpcf",
         "EndParticleFriendly": "particles/generic/idol_pickup_end.vpcf",
         "EndParticleEnemy": "particles/generic/idol_pickup_end_enemy.vpcf",
-        "CashInTimeExtension": 3,
-        "CashInTimeFavored": 5.0,
-        "CashInTime": 10.0,
-        "CashInTimeUnfavored": 15.0,
-        "PhysicsRadius": 15.6,
-        "HoverHeight": 20.0,
-        "CashInLoopSound": "Soul.Urn.CashIn.Timer",
-        "CashInLoopEndSound": "",
-        "CashInLoopStartSound": "",
+        "PreEnableParticle": "particles/npc/escort/escort_arriving.vpcf",
+        "EnabledParticle": "",
+        "OnFullyCapturedParticle": "particles/npc/escort/escort_spawn.vpcf",
+        "OnBecomeEnableParticle": "particles/npc/escort/escort_spawn.vpcf",
+        "DecaySpeed": 0.0,
+        "TotalTimeToCapture": 12,
+        "TotalTimeToCaptureFavored": 6,
+        "TotalTimeToCaptureUnfavored": 18,
+        "DestroyNearbyNeutrals": false,
+        "HoldAtPercent": 99.0,
+        "ComebackBounty": 155,
+        "DropOffPlayerBonusPercent": 35,
+        "ZoneHeightMeters": 14.0,
+        "ZoneRadiusMeters": 20.0,
+        "TimeToWarnAboutGivingUp": 65.0,
+        "TimeToGiveUp": 75.0,
+        "GiveUpOrbs": 13,
+        "Bonus01": {
+            "HudMessageText": "#golden_idol_bonus_01",
+            "IsHidden": true
+        },
+        "modifierCapturer": {
+            "HudDisplayLocation": "DISPLAY_HUD_CENTER"
+        },
         "AuraModifier": {
             "AuraSearchType": "CITADEL_UNIT_TARGET_HERO",
             "modifierProvidedByAura": {
@@ -1055,16 +1067,24 @@
                     {
                         "ModifierValue": "MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST",
                         "value": 35
+                    },
+                    {
+                        "ModifierValue": "MODIFIER_VALUE_STATUS_RESISTANCE",
+                        "value": 35
                     }
                 ]
             },
             "IsHidden": true,
-            "AuraRadius": 2362.2,
+            "AuraRadius": 787.402,
             "AuraTargetingCylinderUpOffset": 400.0,
             "AuraTargetingCylinderHalfHeight": 1000.0
         },
-        "SwitchTeamSound": "Soul.Urn.Switch.Team",
-        "SwitchOpponentSound": "Soul.Urn.Switch.Opponent"
+        "UrnCashedInSoundFriendly": "Soul.Urn.CashIn.Complete.Team",
+        "UrnCashedInSoundEnemy": "Soul.Urn.CashIn.Complete.Opponent",
+        "UrnGiveUpSound": "Soul.Urn.CashIn.Complete.Opponent",
+        "UrnGiveUpWarnSound": "spirit_jar_idol_waiting_on_bridge_01_idol",
+        "UrnGiveUpTempVocalizeSound": "spirit_jar_idol_waiting_on_bridge_09_idol",
+        "UrnCashinLoopSound": "Soul.Urn.CashIn.Timer"
     },
     "citadel_item_powerup_spawner": {
         "InitialSpawnTime": 300,
@@ -2940,21 +2960,21 @@
         "EnemyOrbDeniedParticle": "particles/generic/spirit_xp_denied.vpcf",
         "FriendlyOrbEarnedParticle": "particles/generic/spirit_xp_earned.vpcf",
         "EnemyOrbEarnedParticle": "particles/generic/spirit_xp_earned_enemy.vpcf",
-        "OrbSpawnDelayMin": 0.3,
+        "OrbSpawnDelayMin": 0.1,
         "OrbSpawnDelayMax": 0.3,
         "OrbSpawnOffsetZ": 10.0,
-        "OrbSpawnOffsetRandomXYZ": 10.0,
-        "GravityScale": 0.0,
-        "LateralSpeedMin": 10.0,
-        "LateralSpeedMax": 60.0,
-        "UpSpeedMin": 10.0,
-        "UpSpeedMax": 60.0,
+        "OrbSpawnOffsetRandomXYZ": 20.0,
+        "GravityScale": 1.0,
+        "LateralSpeedMin": 5.0,
+        "LateralSpeedMax": 10.0,
+        "UpSpeedMin": 20.0,
+        "UpSpeedMax": 30.0,
         "DownSpeed": 20.0,
-        "OscillateFrequency": 1.0,
-        "LifeTime": 3.0,
-        "CollisionRadius": 12.0,
-        "BurstSpeedMultiplier": 1.5,
-        "BurstSpeedDuration": 0.1,
+        "OscillateFrequency": 0.5,
+        "LifeTime": 25.0,
+        "CollisionRadius": 15.0,
+        "BurstSpeedMultiplier": 10,
+        "BurstSpeedDuration": 2,
         "InvulDuration": 0.12,
         "OrbClaimed": "Player.ClaimOrb",
         "OrbClaimedTeammate": "Teammate.ClaimOrb",
@@ -2968,8 +2988,9 @@
         "FriendlyHitConfirmParticle": "particles/generic/spirit_orb_ambient_hit.vpcf",
         "EnemyHitConfirmParticle": "particles/generic/spirit_orb_ambient_hit_enemy.vpcf",
         "OrbHitPredicted": "Player.ClaimOrb.Hit",
-        "InvulDurationMin": 0.35,
-        "InvulDurationMax": 0.65
+        "InvulDurationMin": 0.4,
+        "InvulDurationMax": 0.5,
+        "Radius": 1.5
     },
     "xp_orb_neutral": {
         "OrbModel": "",
