@@ -327,6 +327,17 @@
                         "Name": "Buildup Per Headshot",
                         "Value": 15.4,
                         "Type": "cast"
+                    },
+                    {
+                        "Key": "RefillDuration",
+                        "Value": 0.5,
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "RefillDurationCrit",
+                        "Name": "Extend Per Headshot",
+                        "Value": 1.0,
+                        "Type": "duration"
                     }
                 ],
                 "DescKey": "ability_afterburn_desc"
@@ -348,16 +359,6 @@
                 "BuildUpDuration": {
                     "Name": null,
                     "Value": 17,
-                    "Type": "duration"
-                },
-                "RefillDuration": {
-                    "Name": null,
-                    "Value": 0.5,
-                    "Type": "duration"
-                },
-                "RefillDurationCrit": {
-                    "Name": null,
-                    "Value": 1.0,
                     "Type": "duration"
                 }
             },
@@ -742,8 +743,7 @@
                 },
                 {
                     "TechResistDebuff": -15,
-                    "DebuffDuration": 10,
-                    "AbilityDuration": 12,
+                    "AbilityDuration": 10,
                     "DescKey": "ability_power_surge_t3_desc"
                 }
             ],
@@ -1253,7 +1253,7 @@
                             "Name": "Max Bonus Damage",
                             "Value": 90,
                             "Scale": {
-                                "Value": 1.7,
+                                "Value": 2.0,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -2810,9 +2810,9 @@
                         {
                             "Key": "TurretDPS",
                             "Name": "Turret DPS",
-                            "Value": 30,
+                            "Value": 24,
                             "Scale": {
-                                "Value": 0.39,
+                                "Value": 0.42,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -2855,7 +2855,7 @@
                     "AbilityCharges": 2
                 },
                 {
-                    "AttackSpeedMult": 30,
+                    "AttackSpeedMult": 25,
                     "TurretLifetime": 12,
                     "DescKey": "citadel_ability_shieldedsentry_t3_desc"
                 }
@@ -3219,7 +3219,7 @@
                         {
                             "Key": "DamagePerRocket",
                             "Name": "Damage Per Rocket",
-                            "Value": 22.5,
+                            "Value": 21,
                             "Scale": {
                                 "Value": 0.2,
                                 "Type": "spirit"
@@ -5255,7 +5255,7 @@
                         {
                             "Key": "ArmTime",
                             "Name": "Arm Time",
-                            "Value": 0.5,
+                            "Value": 0.1,
                             "Type": "duration"
                         },
                         {
@@ -5263,7 +5263,7 @@
                             "Name": "Explosion Damage",
                             "Value": 80,
                             "Scale": {
-                                "Value": 1.6,
+                                "Value": 1.4,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -5284,12 +5284,17 @@
                     "AbilityCooldown": -10
                 },
                 {
-                    "BarrelDamage": 58.5
+                    "AbilityCharges": 1
                 },
                 {
-                    "AbilityCharges": 2,
-                    "TossDuration": 0.4,
-                    "TossSpeed": 3.556,
+                    "BarrelDamage": {
+                        "Value": 100,
+                        "Scale": {
+                            "Value": 0.5,
+                            "Type": "spirit"
+                        }
+                    },
+                    "AbilityCooldownBetweenCharge": -5,
                     "DescKey": "ability_explosive_barrel_t3_desc"
                 }
             ],
@@ -5314,23 +5319,23 @@
                 },
                 "BarrelHeavyMeleeForceForward": {
                     "Name": null,
-                    "Value": 1100
+                    "Value": 2000
                 },
                 "BarrelHeavyMeleeForceUp": {
                     "Name": null,
-                    "Value": 550
+                    "Value": 300
                 },
                 "BarrelLightMeleeForceForward": {
                     "Name": null,
-                    "Value": 760
+                    "Value": 1600
                 },
                 "BarrelLightMeleeForceUp": {
                     "Name": null,
-                    "Value": 550
+                    "Value": 300
                 },
                 "BarrelPitchMax": {
                     "Name": null,
-                    "Value": 45
+                    "Value": 90
                 },
                 "BarrelPitchMin": {
                     "Name": null,
@@ -5342,7 +5347,7 @@
                 },
                 "BarrelRollSpeedMoveMin": {
                     "Name": null,
-                    "Value": 15
+                    "Value": 20
                 },
                 "BarrelScale": {
                     "Name": null,
@@ -5350,7 +5355,7 @@
                 },
                 "MinTimeBeforeDestroy": {
                     "Name": null,
-                    "Value": 1.0
+                    "Value": 0.1
                 },
                 "TossSpeed": {
                     "Name": null,
@@ -5364,7 +5369,7 @@
             },
             "AbilityCharges": {
                 "Name": "Charges",
-                "Value": 1,
+                "Value": 2,
                 "Type": "cast"
             },
             "AbilityCooldown": {
@@ -5374,7 +5379,7 @@
             },
             "AbilityCooldownBetweenCharge": {
                 "Name": "Charge Delay",
-                "Value": 3.5,
+                "Value": 7,
                 "Type": "charge_cooldown"
             },
             "Radius": {
@@ -5403,7 +5408,7 @@
                         {
                             "Key": "Radius",
                             "Name": "Radius",
-                            "Value": 12,
+                            "Value": 9,
                             "Type": "distance"
                         }
                     ]
@@ -5434,13 +5439,7 @@
                     "DescKey": "ability_bounce_pad_t2_desc"
                 },
                 {
-                    "StompDamage": {
-                        "Value": 67.5,
-                        "Scale": {
-                            "Value": 0.32178,
-                            "Type": "spirit"
-                        }
-                    },
+                    "StompStunDuration": 0.7,
                     "DescKey": "ability_bounce_pad_t3_desc"
                 }
             ],
@@ -5528,7 +5527,7 @@
             },
             "Radius": {
                 "Name": "Radius",
-                "Value": 12,
+                "Value": 9,
                 "Type": "distance"
             }
         },
@@ -5843,7 +5842,7 @@
                 },
                 {
                     "RestoreHookCooldown": 1,
-                    "MissingHPHeal": 17,
+                    "MissingHPHeal": 18,
                     "DescKey": "citadel_ability_uppercut_t3_desc"
                 }
             ],
@@ -5995,8 +5994,8 @@
                 },
                 {
                     "MovementSpeedBonus": 5,
-                    "BonusFireRate": 20,
-                    "MovementSpeedBonusDuration": 5,
+                    "StatusResistancePercent": 25,
+                    "MovementSpeedBonusDuration": 6,
                     "DescKey": "citadel_ability_sticky_bomb_t3_desc"
                 }
             ],
@@ -6341,8 +6340,8 @@
                     "AbilityCooldown": -3
                 },
                 {
-                    "MeleeResistReduction": -5,
-                    "MeleeResistReductionDuration": 5,
+                    "MeleeResistReduction": -6,
+                    "MeleeResistReductionDuration": 6,
                     "DescKey": "ability_nano_clustergrenade_t2_desc"
                 },
                 {
@@ -6647,7 +6646,7 @@
                         {
                             "Key": "Damage",
                             "Name": "Damage",
-                            "Value": 140.0,
+                            "Value": 150.0,
                             "Scale": {
                                 "Value": 0.609336,
                                 "Type": "spirit"
@@ -6683,13 +6682,13 @@
                     "AbilityCooldown": -25
                 },
                 {
-                    "Damage": 65,
+                    "Damage": 75,
                     "BonusMoveSpeedPercent": 20,
                     "DescKey": "ability_nano_shadow_pulse_t2_desc"
                 },
                 {
                     "RefundCooldowns": 1,
-                    "HealAmount": 350,
+                    "HealAmount": 450,
                     "DescKey": "ability_nano_shadow_pulse_t3_desc"
                 }
             ],
@@ -6909,7 +6908,7 @@
                     "DescKey": "ability_power_jump_t1_desc"
                 },
                 {
-                    "AbilityCooldown": -13.0
+                    "AbilityCooldown": -12.0
                 },
                 {
                     "BulletLifestealPercent": 30,
@@ -6959,7 +6958,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 22.0,
+                "Value": 23.0,
                 "Type": "cooldown"
             },
             "AbilityCooldownBetweenCharge": {
@@ -8015,6 +8014,11 @@
                 "Alt": [],
                 "DescKey": "citadel_ability_shiv_killing_blow_passive_desc"
             },
+            "Info3": {
+                "Main": {},
+                "Alt": [],
+                "DescKey": "citadel_ability_shiv_killing_blow_passive_desc_footer"
+            },
             "Upgrades": [
                 {
                     "BonusMoveSpeed": 2,
@@ -8072,6 +8076,10 @@
                 "EnemyHealthPercentBuffer": {
                     "Name": null,
                     "Value": 3
+                },
+                "FailedExecuteCooldownPenalty": {
+                    "Name": null,
+                    "Value": 30
                 },
                 "MinTimeToTarget": {
                     "Name": null,
@@ -8663,7 +8671,7 @@
                             "Name": "Damage",
                             "Value": 60,
                             "Scale": {
-                                "Value": 0.731203,
+                                "Value": 0.63,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -8709,8 +8717,8 @@
                     "DescKey": "ability_warden_crowd_control_t1_desc"
                 },
                 {
-                    "Damage": 40,
-                    "WeaponPowerDebuff": -20,
+                    "Damage": 35,
+                    "WeaponPowerDebuff": -25,
                     "DescKey": "ability_warden_crowd_control_t2_desc"
                 },
                 {
@@ -8774,7 +8782,7 @@
                             "Name": "Barrier",
                             "Value": 125,
                             "Scale": {
-                                "Value": 0.5,
+                                "Value": 0.8,
                                 "Type": "spirit"
                             },
                             "Type": "combat_barrier"
@@ -8898,7 +8906,7 @@
                     "DescKey": "ability_warden_lock_down_t2_desc"
                 },
                 {
-                    "AbilityCooldown": -18,
+                    "AbilityCooldown": -14,
                     "SilenceDebuff": 1,
                     "DescKey": "ability_warden_lock_down_t3_desc"
                 }
@@ -8956,7 +8964,7 @@
                         {
                             "Key": "HealthStealPctHero",
                             "Name": "Hero Lifesteal",
-                            "Value": 65,
+                            "Value": 75,
                             "Type": "healing"
                         },
                         {
@@ -9001,11 +9009,11 @@
                 },
                 {
                     "PulseDPS": 40.5,
-                    "AbilityCooldown": -30.0,
+                    "AbilityCooldown": -35.0,
                     "DescKey": "ability_warden_riot_protocol_t2_desc"
                 },
                 {
-                    "AbilityDuration": 3,
+                    "AbilityDuration": 4,
                     "UnstoppableCastDelay": 1,
                     "BulletResist": 30,
                     "TechResist": 30,
@@ -10355,7 +10363,7 @@
                 },
                 {
                     "Radius": 1.5,
-                    "LifeStealPercentOnHit": 40,
+                    "LifeStealPercentOnHit": 60,
                     "DescKey": "viscous_telepunch_t2_desc"
                 },
                 {
@@ -10503,7 +10511,10 @@
                     "AbilityCooldown": -30
                 },
                 {
-                    "Damage": 70
+                    "Damage": 70,
+                    "BulletResist": 10,
+                    "TechResist": 10,
+                    "DescKey": "viscous_goo_bowling_ball_t2_desc"
                 },
                 {
                     "AbilityDuration": 6,
@@ -11588,7 +11599,7 @@
                 },
                 {
                     "MaxLifetime": 1.6,
-                    "AbilityCooldown": -13,
+                    "AbilityCooldown": -12,
                     "DescKey": "synth_plasma_flux_t3_desc"
                 }
             ],
@@ -17267,6 +17278,7 @@
                 },
                 {
                     "IncomingDamagePercent": 15,
+                    "Radius": 1,
                     "DescKey": "ability_frank_painaura_t3_desc"
                 }
             ],
@@ -17327,7 +17339,7 @@
             },
             "Radius": {
                 "Name": "Radius",
-                "Value": 9,
+                "Value": 8,
                 "Type": "distance"
             }
         },
@@ -17430,9 +17442,9 @@
                     "RespawnHealthPercent": 50
                 },
                 {
-                    "Damage": 150,
+                    "Damage": 175,
                     "StunDuration": 1.5,
-                    "AbilityCooldown": -120,
+                    "AbilityCooldown": -110,
                     "DescKey": "ability_frank_revive_t3_desc"
                 }
             ],
@@ -17483,7 +17495,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 230,
+                "Value": 240,
                 "Type": "cooldown"
             },
             "AbilityCooldownBetweenCharge": {
@@ -17662,7 +17674,7 @@
                             "Name": "Barrier",
                             "Value": 125,
                             "Scale": {
-                                "Value": 1.3,
+                                "Value": 1.5,
                                 "Type": "spirit"
                             },
                             "Type": "bullet_armor_up"
@@ -17718,7 +17730,7 @@
                     "CombatBarrier": {
                         "Value": 0,
                         "Scale": {
-                            "Value": 0.3,
+                            "Value": 0.5,
                             "Type": "spirit"
                         }
                     },
@@ -17961,7 +17973,7 @@
                     },
                     {
                         "Key": "MaxAmpDistance",
-                        "Value": 350,
+                        "Value": 250,
                         "Type": "distance"
                     }
                 ]
@@ -17973,7 +17985,7 @@
                 {
                     "KnightCount": 4,
                     "KnightCountInFirstWave": 4,
-                    "AbilityCooldown": -30,
+                    "AbilityCooldown": -50,
                     "DescKey": "ability_bookworm_knightcharge_t2_desc"
                 },
                 {
@@ -18468,7 +18480,7 @@
                             "Name": "Explosion Damage",
                             "Value": 55,
                             "Scale": {
-                                "Value": 1.3,
+                                "Value": 1.2,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -18519,14 +18531,14 @@
                     "ImpactDamage": {
                         "Value": 0,
                         "Scale": {
-                            "Value": 0.4,
+                            "Value": 0.35,
                             "Type": "spirit"
                         }
                     },
                     "ExplosionDamage": {
                         "Value": 0,
                         "Scale": {
-                            "Value": 0.4,
+                            "Value": 0.35,
                             "Type": "spirit"
                         }
                     },
@@ -20632,9 +20644,9 @@
                         {
                             "Key": "Damage",
                             "Name": "Damage",
-                            "Value": 17,
+                            "Value": 16,
                             "Scale": {
-                                "Value": 0.27,
+                                "Value": 0.25,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -20718,7 +20730,7 @@
             "Cast": {
                 "ResourceCost": {
                     "Name": null,
-                    "Value": 100,
+                    "Value": 120,
                     "Scale": {
                         "Value": 1.0,
                         "Type": "cooldown"
@@ -20799,9 +20811,9 @@
                 },
                 "SkullKillGold": {
                     "Name": null,
-                    "Value": 5,
+                    "Value": 7,
                     "Scale": {
-                        "Value": 0.25,
+                        "Value": 0.5,
                         "Type": "power_increase"
                     }
                 },
@@ -20903,7 +20915,7 @@
                     "DescKey": "ability_necro_zombiewall_t2_desc"
                 },
                 {
-                    "ImmobilizeDuration": 1.0,
+                    "ImmobilizeDuration": 0.75,
                     "SummonCount": 1,
                     "AbilityCooldown": -10,
                     "DescKey": "ability_necro_zombiewall_t3_desc"
@@ -21425,17 +21437,18 @@
             },
             "Upgrades": [
                 {
-                    "Damage": 30
+                    "BonusFireRate": 25,
+                    "BonusBulletSpeedPercent": 25,
+                    "BuffDuration": 8,
+                    "DescKey": "ability_fencer_throwblade_t1_desc"
                 },
                 {
-                    "BonusFireRate": 30,
-                    "BonusBulletSpeedPercent": 50,
-                    "BuffDuration": 10,
+                    "StaminaToRestore": 1,
+                    "ResetsAirLimit": 1,
                     "DescKey": "ability_fencer_throwblade_t2_desc"
                 },
                 {
-                    "StaminaToRestore": 2,
-                    "ResetsAirLimit": 1,
+                    "RecastTime": 4,
                     "DescKey": "ability_fencer_throwblade_t3_desc"
                 }
             ],
@@ -21465,11 +21478,7 @@
                 },
                 "JumpVelocityHidden": {
                     "Name": null,
-                    "Value": 10.5
-                },
-                "SigilHeight": {
-                    "Name": null,
-                    "Value": 15
+                    "Value": 16
                 },
                 "TraceToGroundDistance": {
                     "Name": null,
@@ -23428,7 +23437,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 40,
+                "Value": 70,
                 "Type": "cooldown"
             },
             "AbilityCooldownBetweenCharge": {
@@ -24480,7 +24489,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 40,
+                "Value": 70,
                 "Type": "cooldown"
             },
             "AbilityCooldownBetweenCharge": {
