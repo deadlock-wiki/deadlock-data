@@ -24,6 +24,10 @@
                 }
             }
         ],
+        "BehaviourBits": [
+            "BehaviorCleaveDisabled",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "BuildUpBulletPercentPerHit": 8.1,
         "BuildUpDuration": 17,
         "BurnDuration": 3,
@@ -60,6 +64,11 @@
         "AbilityCooldown": 10.5,
         "AbilityCooldownBetweenCharge": 2.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorAllowSelfCast"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 48,
@@ -110,6 +119,9 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "BackwardsShotDelayTime": 0.15,
+        "BehaviourBits": [
+            "BehaviorNoTarget"
+        ],
         "BuffModifier": {
             "Class": "AstroShotgunBuff",
             "Subclass": "AstroShotgunBuff"
@@ -139,6 +151,12 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.2,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCastableWhileDodging",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "BombFriction": 3,
         "BombRestitution": 1.3,
         "BonusDamage": {
@@ -198,6 +216,11 @@
         "BeepSoundBuildupCount": 4,
         "BeepSoundIntervalBias": 0.55,
         "BeepSoundMaxFrequency": 0.1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCanSetQuickCast"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 90,
@@ -237,6 +260,12 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.3,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "DebuffDuration": 9,
         "DebuffModifier": {
@@ -278,6 +307,10 @@
         "AbilityCooldown": 26.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_boho_ability01",
@@ -298,6 +331,10 @@
         "AbilityCooldown": 26.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_boho_ability02",
@@ -321,6 +358,13 @@
         "AbilityCooldown": 15,
         "AbilityCooldownBetweenCharge": 7,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectilePassThroughWorld",
+            "BehaviorProjectileFiredAsBullet"
+        ],
         "BounceCount": 3,
         "BounceRadius": 18,
         "ChannelMoveSpeed": -1,
@@ -354,6 +398,11 @@
         "AbilityCooldown": 100,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 16,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCannotCancelDuringChannel"
+        ],
         "BonusDamage": {
             "Value": 100,
             "Scale": {
@@ -414,6 +463,10 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 5,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "DamageShareModifier": {
             "Class": "BohoDamageshare",
@@ -453,6 +506,10 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.7,
         "AbilityUnitTargetLimit": 16,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "BonusMoveSpeed": 2,
         "BuffDuration": 4,
         "BuffModifier": {
@@ -503,6 +560,10 @@
         "AbilityCooldown": 26.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_bomber_ability02",
@@ -523,6 +584,10 @@
         "AbilityCooldown": 26.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_bomber_ability03",
@@ -543,6 +608,10 @@
         "AbilityCooldown": 127.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_bomber_ult",
@@ -581,6 +650,13 @@
                 "Subclass": "Debuff"
             }
         },
+        "BehaviourBits": [
+            "BehaviorAlwaysPreviewRadius",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectilePassThroughWorld",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 90,
@@ -620,6 +696,14 @@
         "AbilityDuration": 5,
         "AbilityUnitTargetLimit": 1,
         "AuraLingerDuration": 0.1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorProjectilePassThroughWorld",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectileFiredAsBullet",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "DPS": {
             "Value": 30,
@@ -703,6 +787,17 @@
                 "Type": "spirit"
             }
         },
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectilePassThroughWorld",
+            "BehaviorAllowSelfCast",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorAllowAltCast",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorTriggerCancelMashProtectionOnCast",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "BonusFireRate": {
             "Value": 0,
             "Scale": {
@@ -762,6 +857,14 @@
         "AirDrag": 0.8,
         "AllyHeight": 20,
         "AllyRadius": 4,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectilePassThroughWorld",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorRefundHalfCooldownOnChannelInterrupt"
+        ],
         "BonusMoveSpeed": 5,
         "BuffDuration": 9,
         "BuffModifier": {
@@ -844,6 +947,11 @@
         },
         "BarrelBounceVelocity": 800,
         "BarrelUpFactor": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorMovement",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "BounceModifier": {
             "Class": "CitadelBouncePadStomp",
             "Subclass": "CitadelBouncePadStomp"
@@ -900,6 +1008,13 @@
             "Class": "CitadelBulletFlurryWindup",
             "Subclass": "Cast"
         },
+        "BehaviourBits": [
+            "BehaviorExclusiveUse",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCleaveDisabled",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "BonusFireRate": 25,
         "BulletFlurryModifier": {
             "Class": "CitadelBulletFlurry",
@@ -940,6 +1055,11 @@
         "AbilityCooldown": 40.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorCooldownOnChannelEnd",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "BonusMoveSpeed": 5,
         "BulletResist": 60,
         "BurrowModifier": {
@@ -1007,6 +1127,10 @@
         "AbilityCooldown": 10.5,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "BlastJumpVelocity": 25,
         "BlastJumpVelocityCrouch": 30,
         "BlastJumpVelocityGround": 20,
@@ -1042,6 +1166,9 @@
     "ability_charged_bomb_throw": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorCanCastOnZipline"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_charged_bomb_throw",
@@ -1060,6 +1187,13 @@
             "Class": "IntrinsicBase",
             "Subclass": "IntrinsicBase"
         },
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorChannelled",
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "CameraHeightOffset": 20,
         "CameraHorizontalOffset": 15,
         "ChannelMoveSpeed": 1.5,
@@ -1099,6 +1233,11 @@
         "AbilityCooldown": 20,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "CrackshotNPCCDReduction": 50,
         "Damage": {
             "Value": 55,
@@ -1134,6 +1273,7 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 4,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
         "ChannelMoveSpeed": -1,
         "DeathTaxHeal": {
             "Value": 30,
@@ -1175,6 +1315,11 @@
                 "Subclass": "SlowAuraModifier"
             }
         },
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "DebuffAccuracy": -40,
         "EnableAura": 1,
@@ -1237,6 +1382,12 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 20,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorAllowAltCast",
+            "BehaviorCanSetQuickCast"
+        ],
         "ChannelMoveSpeed": -1,
         "CombatBarrier": {
             "Value": 0,
@@ -1294,6 +1445,14 @@
         "AbilityCooldown": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDontInterruptSprint",
+            "BehaviorNoTarget",
+            "BehaviorCastableWhileHidden",
+            "BehaviorIgnoreSelectionMashProtection",
+            "BehaviorTrigger",
+            "BehaviorCastableWhileBusy"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_doorman_doorway_close",
@@ -1308,6 +1467,12 @@
         "AbilityDuration": 6.5,
         "AbilityPostCastDuration": 0.7,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorCanSetQuickCast"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 75,
@@ -1419,6 +1584,13 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 6,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorAllowSelfCast",
+            "BehaviorProjectilePassThroughWorld",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "CartDamage": {
             "Value": 80,
             "Scale": {
@@ -1469,6 +1641,7 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "AmpDamagePercent": 15,
+        "BehaviourBits": null,
         "BuffModifier": {
             "Class": "Base",
             "Subclass": "DrifterHungerBuff"
@@ -1531,6 +1704,11 @@
         "AbilityCooldown": 6,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "BonusClip": 1,
         "BuffDuration": 3,
         "Damage": {
@@ -1600,6 +1778,15 @@
         "BarrelRollSpeedMoveAir": 10,
         "BarrelRollSpeedMoveMin": 20,
         "BarrelScale": 1.3,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorIgnoreSelectionMashProtection",
+            "BehaviorDontInterruptSlideOnCast",
+            "BehaviorAllowAltCast",
+            "BehaviorCastImmediateOnOtherAbility"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_explosive_barrel",
@@ -1651,6 +1838,13 @@
                 "Type": "spirit"
             }
         },
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCooldownOnChannelEnd",
+            "BehaviorRefundHalfCooldownOnChannelInterrupt"
+        ],
         "ChannelMoveSpeed": -1,
         "DamageResistPctWhileChanneling": 30,
         "EffectModifier": {
@@ -1726,6 +1920,11 @@
             "Class": "Base",
             "Subclass": "Channeling"
         },
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectile",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "CDReduceOnPillowHit": 5,
         "ChannelMoveSpeed": -1,
         "Damage": {
@@ -1798,6 +1997,16 @@
             "Class": "Base",
             "Subclass": "Castdelay"
         },
+        "BehaviourBits": [
+            "BehaviorDontBreakInvisibility",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorCooldownOnChannelEnd",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorMovement",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDoNotAllowSpamProc"
+        ],
         "BonusMoveSpeed": 4,
         "CameraDummyModifier": {
             "Class": "FamiliarCamdummy",
@@ -1885,6 +2094,13 @@
         "AbilityCastRange": 30,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDontInterruptSprint",
+            "BehaviorCastableWhileHidden",
+            "BehaviorIgnoreSelectionMashProtection",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorMovement"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_familiar_attach_trigger",
@@ -1914,6 +2130,15 @@
         "AuraAttackHeight": 10,
         "AuraRadius": 10,
         "AuraSoftRadius": 10,
+        "BehaviourBits": [
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSprint",
+            "BehaviorAllowSelfCast",
+            "BehaviorDamageDoesntWakeFromSleep",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDoNotAllowSpamProc",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "BonusMoveSpeed": 3.0,
         "ChannelMoveSpeed": -1,
         "DPSPerSprite": 1,
@@ -1985,6 +2210,13 @@
                 "Type": "spirit"
             }
         },
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontTriggerPostCastOnCastComplete",
+            "BehaviorMovement",
+            "BehaviorTriggerCancelMashProtectionOnCast",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "DashAngleThreshold": 89,
         "DashBuffModifier": {
@@ -2086,6 +2318,11 @@
             "Class": "Base",
             "Subclass": "RiposteCastModifier"
         },
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "CounterattackAntiMashDelay": 0.2,
         "DamageThreshold": {
@@ -2136,6 +2373,18 @@
         "AbilityCastRange": 25,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDontInterruptSprint",
+            "BehaviorCastableWhileBusy",
+            "BehaviorNotSilencable",
+            "BehaviorCastableWhileCmdRestricted",
+            "BehaviorNonCombat",
+            "BehaviorCastableWhileHidden",
+            "BehaviorIgnoreSelectionMashProtection",
+            "BehaviorCastableWhileDodging",
+            "BehaviorTrigger",
+            "BehaviorUseInstantCastUnitTargetUi"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_fencer_riposte_target_select",
@@ -2149,6 +2398,12 @@
         "AbilityUnitTargetLimit": 1,
         "AirDrag": 2.0,
         "AirSpeedMax": 70,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorShowCastRangeAsSatSphereWhileCasting",
+            "BehaviorMovement"
+        ],
         "BuffModifier": {
             "Class": "Base",
             "Subclass": "FencerSigilBuff"
@@ -2208,6 +2463,18 @@
             "Class": "Base",
             "Subclass": "FencerUltCastDelay"
         },
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorDontTriggerPostCastOnCastComplete",
+            "BehaviorMovement",
+            "BehaviorNoTarget",
+            "BehaviorTriggerCancelMashProtectionOnCast",
+            "BehaviorDeactivateCrouchToggleOnCast",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorCooldownOnChannelEnd",
+            "BehaviorShowCastRangeAsSatSphereWhileCasting",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "BonusDamagePercent": 60,
         "CameraDistance": 250,
         "CasterArrivalModifier": {
@@ -2315,6 +2582,11 @@
         "AbilityCooldown": 165.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorCastableWhileBusy",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "BuffModifier": {
             "Class": "FirebombBuff",
             "Subclass": "Buff"
@@ -2366,6 +2638,13 @@
         "AbilityDuration": 3.0,
         "AbilityUnitTargetLimit": 1,
         "AuraLingerDuration": 1.0,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorPreventBotUsage",
+            "BehaviorMovement",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "ChannelMoveSpeed": 18,
         "DPS": {
             "Value": 30,
@@ -2433,6 +2712,10 @@
         "AbilityCooldown": 26.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_fortuna_ability01",
@@ -2453,6 +2736,10 @@
         "AbilityCooldown": 26.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_fortuna_ability02",
@@ -2473,6 +2760,10 @@
         "AbilityCooldown": 26.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_fortuna_ability03",
@@ -2493,6 +2784,10 @@
         "AbilityCooldown": 127.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_fortuna_ult",
@@ -2526,6 +2821,13 @@
             "Class": "Base",
             "Subclass": "Auraoff"
         },
+        "BehaviourBits": [
+            "BehaviorStartCooldownOnToggleOff",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDoNotAllowSpamProc",
+            "BehaviorCanCastOnZipline"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 0,
@@ -2579,6 +2881,16 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.66,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorCastEvenIfBusyAndExclusive",
+            "BehaviorChannelled",
+            "BehaviorCastableWhileBusy",
+            "BehaviorNotSilencable",
+            "BehaviorNoTarget",
+            "BehaviorCastableWhileCmdRestricted",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCanCastWhileDead"
+        ],
         "BonusDamagePerBullet": {
             "Value": 0,
             "Scale": {
@@ -2661,6 +2973,13 @@
         "AbilityCooldownBetweenCharge": 8,
         "AbilityDuration": 4.5,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "BonusMoveSpeed": 3,
         "BuffModifier": {
             "Class": "FrankSelfzap",
@@ -2714,6 +3033,12 @@
                 "Type": "cooldown"
             }
         },
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorShowCastRangeAsSatSphereWhileCasting",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "BoltCount": 7,
         "BonusShocksDelay": 0.2,
         "ChannelMoveSpeed": -1,
@@ -2787,6 +3112,11 @@
                 "Subclass": "IntrinsicBase"
             }
         ],
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorNotSilencable",
+            "BehaviorNoTarget"
+        ],
         "BonusMoveSpeed": 3.5,
         "BonusSprintAcceleration": 14,
         "BonusSprintSpeed": 2,
@@ -2831,6 +3161,10 @@
         "AbilityCooldown": 26.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_graf_ability01",
@@ -2851,6 +3185,10 @@
         "AbilityCooldown": 26.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_graf_ability02",
@@ -2871,6 +3209,10 @@
         "AbilityCooldown": 26.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_graf_ability03",
@@ -2891,6 +3233,10 @@
         "AbilityCooldown": 127.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_graf_ult",
@@ -2914,6 +3260,13 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 2.25,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorCleaveDisabled",
+            "BehaviorShowCastRangeAsSatSphereWhileCasting",
+            "BehaviorDontInterruptSlideOnCast",
+            "BehaviorInterruptMeleeOnCast"
+        ],
         "BouncePadExtendDuration": 1.0,
         "CameraPreviewDistance": 200,
         "CameraPreviewOffset": 25,
@@ -2958,6 +3311,13 @@
         "AbilityCooldown": 110.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "BonusTechPowerPerKill": 10,
         "Damage": {
             "Value": 230.0,
@@ -3011,6 +3371,14 @@
                 "Type": "damage"
             }
         },
+        "BehaviourBits": [
+            "BehaviorDontBreakInvisibility",
+            "BehaviorDontInterruptSprint",
+            "BehaviorCastableWhileBusy",
+            "BehaviorDontInterruptMeleeOnCast",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "BonusBulletSpeed": 100,
         "BulletRadiusOverride": 13.7,
         "BulletTimeScale": 0.01,
@@ -3053,6 +3421,17 @@
         "AbilityCooldown": 90,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorAlwaysPreviewRadius",
+            "BehaviorDisarmable",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCastableWhileDodging",
+            "BehaviorCooldownOnChannelEnd",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": 3.8,
         "Damage": null,
         "IsDisabled": false,
@@ -3089,6 +3468,13 @@
         "AbilityCooldown": 10,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDontSwitchAwayOnCast",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectileFiredAsBullet",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "BurnDuration": 4,
         "ChannelMoveSpeed": -1,
         "DPS": {
@@ -3134,6 +3520,11 @@
         "AbilityCooldown": 21.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "Damage": {
             "Value": 100,
             "Scale": {
@@ -3185,6 +3576,10 @@
                 }
             }
         ],
+        "BehaviourBits": [
+            "BehaviorCleaveDisabled",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "BuildUpBulletPercentPerHit": 8.33,
         "BuildUpDuration": 0.1,
         "BurnDuration": 0.3,
@@ -3220,6 +3615,12 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 0.25,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCleaveDisabled",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorCanSetQuickCast"
+        ],
         "BuffModifier": {
             "Class": "Base",
             "Subclass": "Base"
@@ -3269,6 +3670,16 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 5,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorCastableWhileBusy",
+            "BehaviorInterruptMeleeOnCast",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorRequireAbilityButtonToCancel",
+            "BehaviorCanSetQuickCast",
+            "BehaviorAllowSelfCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "BlockerScaleFactor": 115,
         "BonusHealthRegen": {
             "Value": 90,
@@ -3333,6 +3744,7 @@
         ]
     },
     "ability_ice_dome_trigger": {
+        "BehaviourBits": null,
         "IsDisabled": false,
         "Key": "ability_ice_dome_trigger",
         "Name": "Frozen Shelter",
@@ -3344,6 +3756,14 @@
         "AbilityCooldown": 30.0,
         "AbilityCooldownBetweenCharge": 7,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCanHealPlayers",
+            "BehaviorProjectileFiredAsBullet",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 60,
@@ -3409,6 +3829,11 @@
                 "Type": "range"
             }
         },
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDontAimFacingEnemy",
+            "BehaviorRequireAbilityButtonToCancel"
+        ],
         "BuildupModifier": {
             "Class": "IcebeamStackingSlow",
             "Subclass": "IcebeamStackingSlow",
@@ -3478,6 +3903,16 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 8,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDontInterruptSprint",
+            "BehaviorCastableWhileBusy",
+            "BehaviorInterruptMeleeOnCast",
+            "BehaviorNoTarget",
+            "BehaviorPreventBotUsage",
+            "BehaviorMovement",
+            "BehaviorDeactivateCrouchToggleOnCast",
+            "BehaviorRequireAbilityButtonToCancel"
+        ],
         "CameraDistance": 250,
         "ChannelMoveSpeed": -1,
         "IcePathAuraDuration": 18,
@@ -3535,6 +3970,12 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "ArmTime": 2.0,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorPreventTrainingBotUsage",
+            "BehaviorCanSetQuickCast"
+        ],
         "ChannelMoveSpeed": -1,
         "ChargedShotHitRadiusScale": 30,
         "Damage": 25,
@@ -3586,6 +4027,12 @@
         "AbilityCooldown": 25.0,
         "AbilityCooldownBetweenCharge": 6,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorShowCastRangeAsSatSphereWhileCasting",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": 18,
         "Damage": {
             "Value": 40.0,
@@ -3634,6 +4081,11 @@
         "AbilityCooldown": 13,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorCastableWhileBusy",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": 1.3,
         "Damage": {
             "Value": 50,
@@ -3677,6 +4129,13 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 5,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDontInterruptSprint",
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDontTriggerSpellBlock",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "ClimbHeight": 1,
         "CloseRangeSpeed": 80,
@@ -3725,6 +4184,9 @@
         "AbilityCooldown": 127.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact"
+        ],
         "BoloBounceCount": 6,
         "BoloBounceSpeed": 800,
         "BoloContractRadius": 5,
@@ -3786,6 +4248,11 @@
         "AbilityCooldown": 26.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 30,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorNoTarget",
+            "BehaviorShowCastRangeAsSatSphereWhileCasting"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 65,
@@ -3827,6 +4294,16 @@
         "AbilityCooldown": 34.0,
         "AbilityDuration": 2.5,
         "AbilityUnitTargetLimit": 10,
+        "BehaviourBits": [
+            "BehaviorAlwaysPreviewRadius",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorAllowAltCast",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorTriggerCancelMashProtectionOnCast",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_life_drain",
@@ -3890,6 +4367,14 @@
             "Class": "Airdamp",
             "Subclass": "AirdampAnimalcurse"
         },
+        "BehaviourBits": [
+            "BehaviorAlwaysPreviewRadius",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectilePassThroughWorld",
+            "BehaviorAllowSelfCast",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorCanSetQuickCast"
+        ],
         "ChannelMoveSpeed": -1,
         "CurseModifier": {
             "Class": "CitadelAnimalcurse",
@@ -3928,6 +4413,13 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "AirDampingDuration": 1,
+        "BehaviourBits": [
+            "BehaviorAlwaysPreviewRadius",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectilePassThroughWorld",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "DamageAmpPercentage": {
             "Value": 15,
@@ -3976,6 +4468,14 @@
         "AbilityPostCastDuration": 0.3,
         "AbilityUnitTargetLimit": 1,
         "AirSpeedMax": 70,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectileFiredAsBullet",
+            "BehaviorCooldownOnChannelEnd"
+        ],
         "BoltHitModifier": {
             "Class": "DiminishingSlow",
             "Subclass": "MagicianBigboltModifier"
@@ -4033,6 +4533,12 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 6,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorAlwaysPreviewRadius",
+            "BehaviorPreventBotUsage",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "BuffModifier": {
             "Class": "Base",
             "Subclass": "CloneturretBuffModifier",
@@ -4071,6 +4577,16 @@
     },
     "ability_magician_cloneturret_trigger": {
         "AbilityCooldown": 2,
+        "BehaviourBits": [
+            "BehaviorDontBreakInvisibility",
+            "BehaviorDontInterruptSprint",
+            "BehaviorCastableWhileBusy",
+            "BehaviorNoTarget",
+            "BehaviorCastableWhileHidden",
+            "BehaviorIgnoreSelectionMashProtection",
+            "BehaviorTrigger",
+            "BehaviorMovement"
+        ],
         "IsDisabled": false,
         "Key": "ability_magician_cloneturret_trigger",
         "Name": "Spectral Assistant",
@@ -4082,6 +4598,14 @@
         "AbilityCooldown": 85,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorAlwaysPreviewRadius",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectilePassThroughWorld",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "CopiedUltSpawnedEntityModifier": {
             "Class": "CitadelCopiedultSpawnedentity",
@@ -4121,6 +4645,12 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.5,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorPreventBotUsage",
+            "BehaviorAllowAltCast",
+            "BehaviorMovement",
+            "BehaviorCanSetQuickCast"
+        ],
         "BuffDuration": 2,
         "ChannelMoveSpeed": -1,
         "EscapedModifier": {
@@ -4160,6 +4690,16 @@
         "AbilityCooldownBetweenCharge": 3,
         "AbilityPostCastDuration": 0.3,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorTargetThroughWalls",
+            "BehaviorCleaveDisabled",
+            "BehaviorCooldownOnChannelEnd",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "CloneBoltDelay": 0.1,
         "CloneDamagePercentage": 50.0,
@@ -4205,6 +4745,12 @@
         ]
     },
     "ability_magician_magicbolt_trigger": {
+        "BehaviourBits": [
+            "BehaviorDontBreakInvisibility",
+            "BehaviorCastEvenIfBusyAndExclusive",
+            "BehaviorNoTarget",
+            "BehaviorTrigger"
+        ],
         "IsDisabled": false,
         "Key": "ability_magician_magicbolt_trigger",
         "Name": null,
@@ -4216,6 +4762,12 @@
         "AbilityCooldown": 127.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorCanSetQuickCast"
+        ],
         "ChannelMoveSpeed": 1.3,
         "CloneDamagePercentage": 30,
         "CloneGoldToGive": 10000,
@@ -4255,6 +4807,12 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 5.5,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorAllowSelfCast",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorCanSetQuickCast"
+        ],
         "BlockerScaleFactor": 115,
         "BonusHealthRegen": {
             "Value": 120,
@@ -4320,6 +4878,7 @@
         "AbilityCooldown": 6,
         "AbilityCooldownBetweenCharge": 6,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
         "ChannelMoveSpeed": -1,
         "Heal_Players": 40,
         "Heal_Players_Post_Lane": 80,
@@ -4335,6 +4894,15 @@
         "AbilityCooldown": 30,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorNoTarget",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorInhibitSoftCameraCollision",
+            "BehaviorMovement",
+            "BehaviorPreventBotUsage",
+            "BehaviorRequireAbilityButtonToCancel"
+        ],
         "BuffDuration": 15,
         "BuffModifier": {
             "Class": "NanoCatform",
@@ -4377,6 +4945,7 @@
         "AbilityCooldown": 0.85,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_nano_catform_pounce",
@@ -4386,6 +4955,12 @@
     "ability_nano_catform_trigger": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorNonCombat",
+            "BehaviorTrigger",
+            "BehaviorInhibitSoftCameraCollision"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_nano_catform_trigger",
@@ -4397,6 +4972,12 @@
         "AbilityCooldown": 14,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 45,
@@ -4442,6 +5023,14 @@
         "AbilityCooldown": 13,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontTriggerPostCastOnCastComplete",
+            "BehaviorMovement",
+            "BehaviorTriggerCancelMashProtectionOnCast",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "BountyModifier": {
             "Class": "NanoBounty",
             "Subclass": "Bounty"
@@ -4506,6 +5095,12 @@
         "AbilityCooldownBetweenCharge": 8,
         "AbilityPostCastDuration": 0.4,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontTriggerPostCastOnCastComplete",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorMovement"
+        ],
         "CameraDistance": 250,
         "ChannelMoveSpeed": -1,
         "Damage": {
@@ -4565,6 +5160,11 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.4,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontTriggerPostCastOnCastComplete",
+            "BehaviorMovement"
+        ],
         "CameraDistance": 250,
         "ChannelMoveSpeed": -1,
         "Damage": {
@@ -4625,6 +5225,14 @@
             }
         },
         "AttackRadius": 30,
+        "BehaviourBits": [
+            "BehaviorProjectileFiredAsBullet",
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorAllowSelfCast",
+            "BehaviorCanSetQuickCast",
+            "BehaviorCanCancelDuringCastDelay"
+        ],
         "CatActivateDuration": 2.0,
         "ChannelMoveSpeed": -1,
         "DPS": {
@@ -4713,6 +5321,16 @@
                 "DoNotDrawModel"
             ]
         },
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorCastableWhileDodging",
+            "BehaviorMovement",
+            "BehaviorDeactivateCrouchToggleOnCast",
+            "BehaviorInhibitSoftCameraCollision"
+        ],
         "BonusMoveSpeedPercent": 20,
         "ChannelMoveSpeed": -1,
         "Damage": {
@@ -4758,6 +5376,9 @@
             }
         },
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget"
+        ],
         "BulletArmorReductionDuration": 6,
         "BulletArmorReductionHeavy": 15,
         "BulletArmorReductionLight": 5,
@@ -4817,6 +5438,12 @@
         "AbilityCooldown": 28,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "BonusMoveSpeedPercent": 15,
         "BuffDuration": {
             "Value": 4,
@@ -4874,6 +5501,7 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 4,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
         "ChannelMoveSpeed": -1,
         "DebuffModifier": {
             "Class": "NecroRampup",
@@ -4925,6 +5553,16 @@
         },
         "AbilityUnitTargetLimit": 1,
         "AuraRadius": 8,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorCooldownOnChannelEnd",
+            "BehaviorCanSetQuickCast",
+            "BehaviorRefundFullCooldownOnChannelInterrupt",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "BlockerScaleFactor": 1,
         "BonusHealthRegen": {
             "Value": 0,
@@ -5064,6 +5702,16 @@
         "AbilityDuration": 5,
         "AbilityPostCastDuration": 0.2,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectilePassThroughWorld",
+            "BehaviorAllowSelfCast",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorAllowAltCast",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorTriggerCancelMashProtectionOnCast",
+            "BehaviorCanSetQuickCast"
+        ],
         "BonusMoveSpeed": 3,
         "BuffModifier": {
             "Class": "NecroHauntingspirits",
@@ -5125,6 +5773,13 @@
             "InitialRandomVariance": 30.0,
             "SpawnPositionNavMeshSearchRange": 60.0
         },
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectileFiredAsBullet",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 16,
@@ -5238,6 +5893,9 @@
         "AbilityCooldown": 26.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_necro_killsummon",
@@ -5269,6 +5927,14 @@
                 "Subclass": "UrnDebuff"
             }
         },
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCanHealPlayers",
+            "BehaviorProjectileFiredAsBullet",
+            "BehaviorAllowAltCast",
+            "BehaviorCanSetQuickCast"
+        ],
         "ChannelMoveSpeed": -1,
         "DPS": {
             "Value": 55,
@@ -5305,6 +5971,11 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "AirDrag": 0.8,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "Damage": {
             "Value": 120,
             "Scale": {
@@ -5343,6 +6014,7 @@
             "InitialRandomVariance": 30.0,
             "SpawnPositionNavMeshSearchRange": 60.0
         },
+        "BehaviourBits": null,
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 20,
@@ -5408,6 +6080,13 @@
         "AbilityDuration": 5,
         "AbilityUnitTargetLimit": 1,
         "AuraRadius": 0.75,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorAllowAltCast",
+            "BehaviorCanSetQuickCast",
+            "BehaviorSuppressAltCastOnceSelected"
+        ],
         "BuffModifier": {
             "Class": "Base",
             "Subclass": "Buff"
@@ -5485,6 +6164,9 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": -1,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_npc_shield",
@@ -5498,6 +6180,12 @@
         "AbilityCooldown": 26.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectilePassThroughWorld",
+            "BehaviorInhibitSoftCameraCollision"
+        ],
         "CatAboveGround": 0.1,
         "CatAccel": 15,
         "CatClimbHeight": 3,
@@ -5539,6 +6227,9 @@
     "ability_perched_predator_trigger": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorCanCastOnZipline"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_perched_predator_trigger",
@@ -5554,6 +6245,13 @@
         "AirMoveIncreasePercent": 25,
         "AirSpeedMax": 6.64,
         "AltJumpSpeed": 12,
+        "BehaviourBits": [
+            "BehaviorInputDirectional2d",
+            "BehaviorNoTarget",
+            "BehaviorAllowAltCast",
+            "BehaviorMovement",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "BulletSplitShot": 5,
         "FallSpeedMax": 0.635,
         "FxRadius": 4,
@@ -5609,6 +6307,9 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 10,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "BonusPerChain": {
             "Value": 10,
             "Scale": {
@@ -5674,6 +6375,7 @@
         "AbilityCooldown": 12,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
         "BlockBufferDuration": 0.5,
         "BuffModifier": {
             "Class": "Base",
@@ -5719,6 +6421,12 @@
         "AbilityCooldown": 60,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": 1.3,
         "Damage": {
             "Value": 80,
@@ -5763,6 +6471,12 @@
         "AbilityCooldownBetweenCharge": 8,
         "AbilityUnitTargetLimit": 1,
         "ArmTime": 0.5,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorPreventTrainingBotUsage",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 80,
@@ -5817,6 +6531,11 @@
         "AbilityCooldown": 25,
         "AbilityPostCastDuration": 0.15,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "BounceGrenadeSpeed": 1100,
         "BounceLifetime": 0.5,
         "BurnDuration": 3.5,
@@ -5879,6 +6598,11 @@
         "AbilityCooldown": 23,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 99,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "BonusDamage": {
             "Value": 30,
             "Scale": {
@@ -5947,6 +6671,14 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.125,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorNoTarget",
+            "BehaviorCastableWhileCmdRestricted",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorNonCombat",
+            "BehaviorCannotCancelDuringChannel"
+        ],
         "ChannelMoveSpeed": -1,
         "FlatHealthHealing": {
             "Value": 120,
@@ -5993,6 +6725,12 @@
                 "Subclass": "Debuff"
             }
         },
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectileFiredAsBullet",
+            "BehaviorCanSetQuickCast"
+        ],
         "ChannelMoveSpeed": -1,
         "DPS": 5,
         "DebuffDuration": 3,
@@ -6041,6 +6779,11 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 8,
         "AbilityUnitTargetLimit": 99,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "BlockerScaleFactor": 115,
         "BombFriction": 12,
         "BombRestitution": 2.0,
@@ -6084,6 +6827,7 @@
         "AbilityCooldown": 26.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
         "ChannelMoveSpeed": -1,
         "CooldownPerStack": 0.5,
         "IsDisabled": false,
@@ -6114,6 +6858,13 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 15,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorDontInterruptSlideOnCast",
+            "BehaviorRefundHalfCooldownOnChannelInterrupt"
+        ],
         "BonusAmpToVampire": 5,
         "BonusDamage": {
             "Value": 100,
@@ -6174,6 +6925,12 @@
                 "Class": "PunkgoatBlastedhealthwatcher",
                 "Subclass": "Blastedhealthwatcher"
             }
+        ],
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorCooldownOnChannelEnd",
+            "BehaviorAllowGunFireAfterCast",
+            "BehaviorDontInterruptSlideOnCast"
         ],
         "BlastedModifier": {
             "Class": "PunkgoatBlastedactive",
@@ -6247,6 +7004,13 @@
         "AirControlDebuffDuration": 1.5,
         "AirControlPercent": 50.0,
         "AllowRamMultiple": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontTriggerPostCastOnCastComplete",
+            "BehaviorMovement",
+            "BehaviorTriggerCancelMashProtectionOnCast",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "CameraTurnRateMax": 188,
         "ChargeMultiHitRadius": 1.5,
         "ChargeRadius": 2.54,
@@ -6311,6 +7075,16 @@
                 "Subclass": "SlideDebuff"
             }
         ],
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorHidden",
+            "BehaviorDontBreakInvisibility",
+            "BehaviorInputDirectional2d",
+            "BehaviorSilentCastFailureFeedback",
+            "BehaviorDontInterruptSprint",
+            "BehaviorNonCombat",
+            "BehaviorCastableWhileHidden"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_punkgoat_slide",
@@ -6324,6 +7098,15 @@
         "AbilityDuration": 2.8,
         "AbilityPostCastDuration": 0.2,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorSilentCastFailureFeedback",
+            "BehaviorAlwaysPreviewRadius",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectilePassThroughWorld",
+            "BehaviorShowCastRangeAsSatSphereWhileCasting",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "DPS": {
             "Value": 45,
@@ -6419,6 +7202,16 @@
         "AbilityCooldownBetweenCharge": 8,
         "AbilityPostCastDuration": 0.3,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorSilentCastFailureFeedback",
+            "BehaviorChannelled",
+            "BehaviorExclusiveUse",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorCooldownOnChannelEnd",
+            "BehaviorTriggerCancelMashProtectionOnCast",
+            "BehaviorHoldsAtMaxChannel"
+        ],
         "CameraTurnRateMax": 2000,
         "ChannelMoveSpeed": 4.826,
         "CountsAsLightMelee": 1,
@@ -6514,6 +7307,11 @@
         "AbilityCooldown": 26.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCanSetQuickCast"
+        ],
         "ChannelMoveSpeed": -1,
         "DPS": {
             "Value": 30,
@@ -6551,6 +7349,10 @@
         "AbilityCooldown": 64.0,
         "AbilityCooldownBetweenCharge": 3,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "BlastRadius": 10,
         "ChannelMoveSpeed": -1,
         "DebuffModifier": {
@@ -6585,6 +7387,10 @@
         "AbilityCooldown": 26.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_shieldguy_ability01",
@@ -6605,6 +7411,10 @@
         "AbilityCooldown": 26.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_shieldguy_ability02",
@@ -6625,6 +7435,10 @@
         "AbilityCooldown": 26.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_shieldguy_ability03",
@@ -6645,6 +7459,10 @@
         "AbilityCooldown": 127.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_shieldguy_ult",
@@ -6670,6 +7488,9 @@
                 "Class": "Base",
                 "Subclass": "Flakshotbase"
             }
+        ],
+        "BehaviourBits": [
+            "BehaviorProjectileFiredAsBullet"
         ],
         "BonusDamage": {
             "Value": 3,
@@ -6709,6 +7530,11 @@
         "AbilityCooldownBetweenCharge": 2,
         "AbilityDuration": 6,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorAlwaysPreviewRadius",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCanSetQuickCast"
+        ],
         "BlockerScaleFactor": 4,
         "ChannelMoveSpeed": -1,
         "Damage": 120,
@@ -6738,6 +7564,10 @@
         "AbilityCooldown": 12,
         "AbilityCooldownBetweenCharge": 0.1,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_skyrunner_swingline",
@@ -6764,6 +7594,10 @@
         "AbilityCooldown": 127.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_skyrunner_ult",
@@ -6785,6 +7619,13 @@
         "AbilityCooldown": 30.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDamageDoesntWakeFromSleep",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": 1.3,
         "Damage": {
             "Value": 65,
@@ -6849,6 +7690,13 @@
             }
         },
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDamageDoesntWakeFromSleep",
+            "BehaviorNoTarget",
+            "BehaviorDontInterruptSprint",
+            "BehaviorCleaveDisabled",
+            "BehaviorCanCastOnZipline"
+        ],
         "BuffModifier": {
             "Class": "Base",
             "Subclass": "BuffModifier"
@@ -6893,6 +7741,7 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 6,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
         "ChannelMoveSpeed": -1,
         "DamageBonusFixedPerStack": 0.2,
         "IsDisabled": false,
@@ -6941,6 +7790,7 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 7,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
         "BurstBonusPerStack": 1,
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
@@ -6968,6 +7818,10 @@
         "AbilityCooldown": 8,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "BonusDamage": 170,
         "ChannelMoveSpeed": -1,
         "Damage": 30,
@@ -6996,6 +7850,12 @@
         "AbilityCooldown": 14,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCannotCancelDuringChannel"
+        ],
         "BuffDuration": 7,
         "BuffModifier": {
             "Class": "Base",
@@ -7023,6 +7883,10 @@
         "AbilityCooldown": 127.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_swan_ult",
@@ -7044,6 +7908,11 @@
         "AbilityCooldown": 48.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontInterruptSprint"
+        ],
         "BonusPerHeadshot": 25,
         "ChannelMoveSpeed": -1,
         "DamageOnBuildup": {
@@ -7100,6 +7969,12 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 2.5,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorShowCastRangeAsSatSphereWhileCasting",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": 1.3,
         "Damage": 40,
         "DebuffModifier": {
@@ -7154,6 +8029,11 @@
                     ]
                 }
             }
+        ],
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectileFiredAsBullet"
         ],
         "BuildUpDuration": 15,
         "BuildupProcDamage": {
@@ -7210,6 +8090,10 @@
                 }
             }
         ],
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "BuildUpDuration": 15,
         "BuildupProcDamage": {
             "Value": 120,
@@ -7251,6 +8135,12 @@
                 "Subclass": "PoisonjarDebuff"
             }
         },
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectileFiredAsBullet",
+            "BehaviorCanSetQuickCast"
+        ],
         "ChannelMoveSpeed": -1,
         "Height": 2,
         "InitialRadius": 6,
@@ -7284,6 +8174,14 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 5,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorEqualUnitTargetPriority",
+            "BehaviorAllowSelfCast",
+            "BehaviorCanHealPlayers",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorCanSetQuickCast"
+        ],
         "BuffModifier": {
             "Class": "TrapperSpidershield",
             "Subclass": "TrapperSpidershield",
@@ -7332,6 +8230,11 @@
         "AbilityCooldown": 160,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCanSetQuickCast"
+        ],
         "ChannelMoveSpeed": 1.3,
         "IsDisabled": false,
         "Key": "ability_trapper_spiderwave",
@@ -7386,6 +8289,11 @@
         "AbilityCooldown": 40,
         "AbilityCooldownBetweenCharge": 1,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorAlwaysPreviewRadius",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCanSetQuickCast"
+        ],
         "ChannelMoveSpeed": -1,
         "DPS": {
             "Value": 40,
@@ -7430,6 +8338,11 @@
     "ability_trigger_base": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorNonCombat",
+            "BehaviorTrigger"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_trigger_base",
@@ -7442,6 +8355,13 @@
         "AbilityCooldown": 130.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "BonusHealthOnKill": {
             "Value": 30,
             "Scale": {
@@ -7503,6 +8423,14 @@
         "AbilityCooldown": 140,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorCooldownOnChannelEnd"
+        ],
         "BounceGrace": 3,
         "BounceRadius": 15.5,
         "ChannelMoveSpeed": -1,
@@ -7567,6 +8495,12 @@
         "AbilityCooldown": 33,
         "AbilityCooldownBetweenCharge": 2,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorAlwaysPreviewRadius",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectilePassThroughWorld",
+            "BehaviorCanSetQuickCast"
+        ],
         "BuffDelay": 0.75,
         "BuffDuration": 25,
         "BuffMaxStacks": 6,
@@ -7611,6 +8545,11 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "BarrierDamagePercentage": 50,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectilePassThroughWorld"
+        ],
         "BuffDuration": 4,
         "BuffModifier": {
             "Class": "UnicornPrismaticGuard",
@@ -7671,6 +8610,14 @@
         },
         "AbilityLifestealPercentHero": 20,
         "AbilityUnitTargetLimit": 100,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorShowCastRangeAsSatSphereWhileCasting",
+            "BehaviorUseLagCompensationForUnitTargeting",
+            "BehaviorDontInterruptSlideOnCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 15,
@@ -7727,6 +8674,16 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 0.65,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorPreventBotUsage",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorAllowAltCast",
+            "BehaviorMovement",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "BuffModifier": {
             "Class": "Base",
             "Subclass": "Buff"
@@ -7763,6 +8720,17 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 0.8,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorPreventBotUsage",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorAllowAltCast",
+            "BehaviorMovement",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDeactivateCrouchToggleOnCast",
+            "BehaviorTrigger"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_vampirebat_batblink_trigger",
@@ -7776,6 +8744,13 @@
         "AbilityDuration": 10,
         "AbilityUnitTargetLimit": 1,
         "AirDrag": 3,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCannotCancelDuringChannel"
+        ],
         "ChannelMoveSpeed": 1.3,
         "CurrentHealthPercent": 4,
         "Damage": {
@@ -7814,6 +8789,11 @@
         "BatSpawnRadius": 1.5,
         "BatSpawnRandomAngle": 0.15,
         "BatSpawnRandomVelocity": 300,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "BonusBatsMax": 50,
         "BonusBatsPerProc": 2,
         "ChannelMoveSpeed": -1,
@@ -7863,6 +8843,7 @@
     "ability_vampirebat_lovebites": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
         "BonusDamage": {
             "Value": 45,
             "Scale": {
@@ -7930,6 +8911,12 @@
         "AbilityPostCastDuration": 0.4,
         "AbilityUnitTargetLimit": 6,
         "AirDrag": 0.2,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontInterruptSlideOnCast",
+            "BehaviorUseLagCompensationForUnitTargeting"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 60,
@@ -7991,6 +8978,10 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.15,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCanSetQuickCast"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 200,
@@ -8029,6 +9020,13 @@
         "AbilityCooldown": 10,
         "AbilityCooldownBetweenCharge": 4.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDontSwitchAwayOnCast",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectileFiredAsBullet",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 50,
@@ -8079,6 +9077,13 @@
         "AbilityCooldown": 9,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCleaveDisabled"
+        ],
         "CatchRadius": 3,
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
@@ -8130,6 +9135,13 @@
         "AbilityCooldown": 90,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectileFiredAsBullet",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 50.0,
@@ -8179,6 +9191,16 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 0.6,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorHidden",
+            "BehaviorDontBreakInvisibility",
+            "BehaviorInputDirectional2d",
+            "BehaviorSilentCastFailureFeedback",
+            "BehaviorDontInterruptSprint",
+            "BehaviorNonCombat",
+            "BehaviorCastableWhileHidden"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_viper_slide",
@@ -8201,6 +9223,12 @@
                     "Subclass": "Slidebarrier"
                 }
             }
+        ],
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorPreventBotUsage",
+            "BehaviorMovement"
         ],
         "ChannelMoveSpeed": -1,
         "CombatBarrier": {
@@ -8241,6 +9269,10 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.15,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCanSetQuickCast"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 200,
@@ -8296,6 +9328,11 @@
                 "Subclass": "VenomProcWatcher"
             }
         ],
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorCanSetQuickCast"
+        ],
         "BuildUpDuration": 5,
         "BuildUpModifier": {
             "Class": "CitadelBaseBuildup",
@@ -8347,6 +9384,10 @@
         "AbilityCooldown": 12.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 60,
@@ -8396,6 +9437,7 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 5,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
         "BuffModifier": {
             "Class": "WardenHighAlert",
             "Subclass": "WardenHighAlert",
@@ -8439,6 +9481,12 @@
         "AbilityCooldown": 34,
         "AbilityUnitTargetLimit": 1,
         "AdditionalTargetRadius": 20,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 110,
@@ -8514,6 +9562,11 @@
                 ]
             }
         },
+        "BehaviourBits": [
+            "BehaviorExclusiveUse",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "BulletResist": 50,
         "ConeAngle": 115,
         "HealthStealPct": 10,
@@ -8565,6 +9618,12 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.2,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontTriggerPostCastOnCastComplete",
+            "BehaviorTriggerCancelMashProtectionOnCast",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 45,
@@ -8618,6 +9677,12 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.5,
         "AbilityUnitTargetLimit": 16,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorShowCastRangeAsSatSphereWhileCasting",
+            "BehaviorUseLagCompensationForUnitTargeting"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 0.0,
@@ -8672,6 +9737,12 @@
                 "Subclass": "Fear"
             }
         },
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCannotCancelDuringChannel"
+        ],
         "BonusMoveSpeed": 2,
         "BuffDuration": 8,
         "ChannelMoveSpeed": -1,
@@ -8710,6 +9781,15 @@
         "AbilityPostCastDuration": 0.25,
         "AbilityUnitTargetLimit": 1,
         "AirDrag": 0.8,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorDontTriggerPostCastOnCastComplete",
+            "BehaviorMovement",
+            "BehaviorTriggerCancelMashProtectionOnCast",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "BonusDamage": {
             "Value": 25,
             "Scale": {
@@ -8799,6 +9879,16 @@
         "AbilityDuration": 0.25,
         "AbilityUnitTargetLimit": 1,
         "AirDrag": 0.1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorProjectileFiredAsBullet",
+            "BehaviorDontTriggerPostCastOnCastComplete",
+            "BehaviorMovement",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "ChannelMoveSpeed": 5.08,
         "Damage": {
             "Value": 0,
@@ -8857,6 +9947,16 @@
         "AbilityPostCastDuration": 0.1,
         "AbilityUnitTargetLimit": 1,
         "AllowRamMultiple": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCanCancelDuringCastDelay",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorDontTriggerPostCastOnCastComplete",
+            "BehaviorMovement",
+            "BehaviorTriggerCancelMashProtectionOnCast",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "BulletArmorReduction": -8,
         "CameraTurnRateMax": 188,
         "DPS": {
@@ -8907,6 +10007,12 @@
         "AbilityCooldown": 23,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectileFiredAsBullet",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "BonusDebuffModifier": {
             "Class": "Base",
             "Subclass": "Bonusdebuff"
@@ -8965,6 +10071,7 @@
         },
         "AbilityUnitTargetLimit": 1,
         "AlliedFireRatePercentage": 50,
+        "BehaviourBits": null,
         "BonusFireRate": 30,
         "BonusMoveSpeed": 2,
         "ChannelMoveSpeed": -1,
@@ -8991,6 +10098,7 @@
     "ability_werewolf_passive": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_werewolf_passive",
@@ -9002,6 +10110,9 @@
         "AbilityCooldown": 12,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact"
+        ],
         "BountyThreshold": 500,
         "ChannelMoveSpeed": -1,
         "Damage": 55,
@@ -9060,6 +10171,10 @@
         "AbilityPostCastDuration": 0.5,
         "AbilityUnitTargetLimit": 1,
         "AutoActivateHealthThreshold": 20,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "BonusDurationOnBullet": 0.15,
         "BonusDurationOnHeavyMelee": 1.5,
         "BonusDurationOnLightMelee": 0.5,
@@ -9154,6 +10269,7 @@
     "ability_werewolf_transformation_trigger": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_werewolf_transformation_trigger",
@@ -9178,6 +10294,12 @@
             "Class": "Base",
             "Subclass": "Channeling"
         },
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectileFiredAsBullet",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "BonusFireRate": 300,
         "BuffModifier": {
             "Class": "WerewolfUnloadgun2",
@@ -9225,6 +10347,9 @@
         "AbilityCooldown": 12.5,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled"
+        ],
         "BuffModifier": {
             "Class": "WreckerSalvageBuff",
             "Subclass": "WreckerSalvageBuff"
@@ -9270,6 +10395,12 @@
         "AbilityCooldown": 138.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "DamagePerSecondFlown": {
             "Value": 16,
             "Scale": {
@@ -9339,6 +10470,11 @@
         },
         "BeamLength": 20,
         "BeamWidth": 40,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorChannelled",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": 5,
         "GrabDamage": {
             "Value": 0,
@@ -9388,6 +10524,12 @@
             "Class": "WreckingBallAutoThrow",
             "Subclass": "WreckingBallAutoThrow"
         },
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDontTriggerSpellBlock",
+            "BehaviorProjectileFiredAsBullet"
+        ],
         "ChannelMoveSpeed": 1.3,
         "IsDisabled": false,
         "Key": "ability_wrecking_ball",
@@ -9419,6 +10561,11 @@
     "ability_wrecking_ball_throw": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorNonCombat",
+            "BehaviorTrigger"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ability_wrecking_ball_throw",
@@ -9439,6 +10586,9 @@
                 "Subclass": "CadenceAnthemBuff"
             }
         },
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": 1.3,
         "ExtraLargeClip": 25,
         "IsDisabled": false,
@@ -9465,6 +10615,12 @@
         "AbilityCooldown": 95.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorExclusiveUse",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "BulletResist": -20,
         "CrescendoAOEModifier": {
             "Class": "CadenceCrescendoAoe",
@@ -9514,6 +10670,9 @@
         "AbilityCooldown": 95.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact"
+        ],
         "BuildUpDuration": 10,
         "BuildUpMaxDamage": 150,
         "BuildUpMaxDamageNonHero": 300,
@@ -9556,6 +10715,9 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 6,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "ExternalBonusHealthRegen": 15,
         "IsDisabled": false,
@@ -9591,6 +10753,9 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 6,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "DashDistance": 8,
         "DebuffDuration": 2,
@@ -9630,6 +10795,12 @@
         "BeamEndRadius": 4.0,
         "BeamLength": 70,
         "BeamWidth": 2.9,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "ChannelMoveSpeed": 1.8,
         "DPS": {
             "Value": 160,
@@ -9671,6 +10842,12 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 1.4,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDontTriggerPostCastOnCastComplete",
+            "BehaviorMovement",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "CameraTurnRateMax": 200,
         "ChannelMoveSpeed": -1,
         "ChargeDragVerticalOffset": 30,
@@ -9759,6 +10936,10 @@
             },
             "AuraRadius": 0.0
         },
+        "BehaviourBits": [
+            "BehaviorCastableWhileBusy",
+            "BehaviorNoTarget"
+        ],
         "ChannelMoveSpeed": -1,
         "DPS": {
             "Value": 22,
@@ -9801,6 +10982,12 @@
             "Class": "Base",
             "Subclass": "LeapActive"
         },
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorMovement",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "BoostModifier": {
             "Class": "CitadelBullLeapBoosting",
             "Subclass": "CitadelBullLeapBoosting"
@@ -9888,6 +11075,15 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.1,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorAllowAltCast",
+            "BehaviorAllowAltCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "BonusAbilityResource": 100,
         "CardResourceGenPctScale": {
             "Value": 85,
@@ -9976,6 +11172,7 @@
                 "Subclass": "CitadelLightningBullet"
             }
         ],
+        "BehaviourBits": null,
         "ChannelMoveSpeed": -1,
         "ConeAngle": 45,
         "ConeRadius": 6,
@@ -10005,6 +11202,11 @@
         "AbilityCooldown": 21.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorMovement"
+        ],
         "CameraDistance": 120,
         "ChannelMoveSpeed": -1,
         "ChargeActiveModifier": {
@@ -10057,6 +11259,13 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "AirMoveIncreasePercent": 20,
+        "BehaviourBits": [
+            "BehaviorDontBreakInvisibility",
+            "BehaviorDontInterruptSprint",
+            "BehaviorCastableWhileBusy",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "BonusBulletSpeed": 100,
         "BulletRadiusOverride": 16.0,
         "BulletTimeScale": 0.01,
@@ -10129,6 +11338,13 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 3.2,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectileFiredAsBullet",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "DamageAmplificationPerStack": 4,
         "DebuffDuration": 8.0,
@@ -10184,6 +11400,12 @@
         "AbilityCooldown": 95.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorCleaveDisabled",
+            "BehaviorShowCastRangeAsSatSphereWhileCasting",
+            "BehaviorAllowAltCast"
+        ],
         "BubbleMoveModifier": {
             "Class": "ChronoSwapBubbleMove",
             "Subclass": "ChronoSwapBubbleMove",
@@ -10264,6 +11486,11 @@
             },
             "AuraRadius": 0.001
         },
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCanCancelDuringCastDelay",
+            "BehaviorCanSetQuickCast"
+        ],
         "ChannelMoveSpeed": 1.3,
         "FriendlyBulletDamageBonus": 30,
         "IsDisabled": false,
@@ -10298,6 +11525,16 @@
         "AbilityCooldown": 0.1,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorHidden",
+            "BehaviorDontBreakInvisibility",
+            "BehaviorSilentCastFailureFeedback",
+            "BehaviorDontInterruptSprint",
+            "BehaviorNotSilencable",
+            "BehaviorNoTarget",
+            "BehaviorNonCombat",
+            "BehaviorCastableWhileHidden"
+        ],
         "ChannelMoveSpeed": -1,
         "ClimbRopeSlowFromRecentDamageModifier": {
             "Class": "ClimbRopeSlow",
@@ -10328,6 +11565,17 @@
                 "Subclass": "StaminaRegenJumpReduction"
             }
         ],
+        "BehaviourBits": [
+            "BehaviorHidden",
+            "BehaviorDontBreakInvisibility",
+            "BehaviorDontInterruptSprint",
+            "BehaviorInputDirectional2d",
+            "BehaviorNotSilencable",
+            "BehaviorNoTarget",
+            "BehaviorNonCombat",
+            "BehaviorCastableWhileHidden",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "citadel_ability_dash",
@@ -10340,6 +11588,10 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 6.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorPreventBotUsage"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 60,
@@ -10404,6 +11656,15 @@
         "AbilityCooldown": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDontInterruptSprint",
+            "BehaviorNoTarget",
+            "BehaviorCastableWhileHidden",
+            "BehaviorIgnoreSelectionMashProtection",
+            "BehaviorTrigger",
+            "BehaviorCastableWhileBusy",
+            "BehaviorNotSilencable"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "citadel_ability_fissure_wall_cancel",
@@ -10413,6 +11674,13 @@
     "citadel_ability_fissure_wall_trigger": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDontInterruptSprint",
+            "BehaviorNoTarget",
+            "BehaviorCastableWhileHidden",
+            "BehaviorIgnoreSelectionMashProtection",
+            "BehaviorTrigger"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "citadel_ability_fissure_wall_trigger",
@@ -10424,6 +11692,14 @@
         "AbilityCooldown": 36.0,
         "AbilityPostCastDuration": 0.2,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorAlwaysPreviewRadius",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorMovement",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "BuffModifier": {
             "Class": "Base",
             "Subclass": "SpiritBuff"
@@ -10471,6 +11747,11 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.4,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "BuffDuration": {
             "Value": 0,
             "Scale": {
@@ -10533,6 +11814,11 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.2,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorPreventBotUsage",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "BulletAmpModifier": {
             "Class": "BebopHookBulletAmp",
             "Subclass": "BebopHookBulletAmp"
@@ -10601,6 +11887,13 @@
         "AbilityCooldown": 40.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectileFiredAsBullet",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "CaptureRadius": 9,
         "ChainDuration": 1.75,
         "ChainLength": 9,
@@ -10645,6 +11938,13 @@
         "AbilityDuration": 13,
         "AbilityUnitTargetLimit": 1,
         "AirSideMoveSpeedPercentage": -35,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorNoTarget",
+            "BehaviorMovement",
+            "BehaviorRequireAbilityButtonToCancel",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "FlyingItemCastRange": 50,
         "IsDisabled": false,
         "JumpVelocity": 1000,
@@ -10700,6 +12000,10 @@
         "AbilityCooldown": 50.0,
         "AbilityCooldownBetweenCharge": 2.5,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "BonusGoldOnKill": 250,
         "ChannelMoveSpeed": -1,
         "Damage": {
@@ -10761,6 +12065,13 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.2,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorCleaveDisabled",
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "BulletResistReduction": -6,
         "ChannelMoveSpeed": -1,
         "DebuffDuration": 5,
@@ -10820,6 +12131,15 @@
                 "Unstoppable"
             ]
         },
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCleaveDisabled",
+            "BehaviorCanCancelDuringCastDelay",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "BuffModifier": {
             "Class": "Base",
             "Subclass": "Buff",
@@ -10873,6 +12193,17 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "AirJumpVerticalSpeedPercent": 75,
+        "BehaviourBits": [
+            "BehaviorHidden",
+            "BehaviorDontBreakInvisibility",
+            "BehaviorSilentCastFailureFeedback",
+            "BehaviorDontInterruptSprint",
+            "BehaviorInputDirectional2d",
+            "BehaviorNotSilencable",
+            "BehaviorNoTarget",
+            "BehaviorNonCombat",
+            "BehaviorCastableWhileHidden"
+        ],
         "ChannelMoveSpeed": -1,
         "DebuffModifier": {
             "Class": "Base",
@@ -10894,6 +12225,10 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 4,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDontInterruptSprint",
+            "BehaviorNoTarget"
+        ],
         "BuffModifier": {
             "Class": "CitadelDisruptiveCharge",
             "Subclass": "CitadelDisruptiveCharge"
@@ -10923,6 +12258,13 @@
         "AbilityCooldown": 30.0,
         "AbilityCooldownBetweenCharge": 6,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDontTriggerSpellBlock",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontInterruptSprint"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 120,
@@ -10977,6 +12319,10 @@
             "Class": "GrappleAirControl",
             "Subclass": "AirControl"
         },
+        "BehaviourBits": [
+            "BehaviorMovement",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "BuffModifier": {
             "Class": "Base",
             "Subclass": "GrappleBuff"
@@ -11010,6 +12356,10 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.4,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCanCastOnZipline"
+        ],
         "ChannelMoveSpeed": -1,
         "DownStrikeModifier": {
             "Class": "Base",
@@ -11092,6 +12442,13 @@
         "AbilityCooldown": 150.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 6,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDeactivateCrouchToggleOnCast",
+            "BehaviorCastRangeIs2d"
+        ],
         "BoostTime": 1.0,
         "ChannelMoveSpeed": -1,
         "GrappleEnemyModifier": {
@@ -11163,6 +12520,11 @@
         "AbilityCooldown": 26.0,
         "AbilityCooldownBetweenCharge": 7,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": 1.3,
         "DPS": {
             "Value": 75,
@@ -11205,6 +12567,13 @@
         "AbilityCooldown": 15,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorPreventBotUsage",
+            "BehaviorAllowAltCast",
+            "BehaviorMovement",
+            "BehaviorCanSetQuickCast"
+        ],
         "BubbleModifier": {
             "Class": "Magewalk",
             "Subclass": "Magewalk",
@@ -11254,6 +12623,18 @@
     "citadel_ability_mantle": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorHidden",
+            "BehaviorDontBreakInvisibility",
+            "BehaviorSilentCastFailureFeedback",
+            "BehaviorDontInterruptSprint",
+            "BehaviorInputDirectional2d",
+            "BehaviorCastableWhileBusy",
+            "BehaviorNotSilencable",
+            "BehaviorNoTarget",
+            "BehaviorNonCombat",
+            "BehaviorCastableWhileHidden"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "citadel_ability_mantle",
@@ -11277,6 +12658,10 @@
         },
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNotSilencable",
+            "BehaviorNoTarget"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "citadel_ability_melee_parry",
@@ -11334,6 +12719,12 @@
                 "Subclass": "MobileResupply"
             }
         },
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCanHealPlayers",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "ExternalBonusHealthRegen": {
             "Value": 25,
@@ -11369,6 +12760,14 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "AuraLingerDuration": 1.0,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorNoTarget",
+            "BehaviorCanHealPlayers",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorRequireAbilityButtonToCancel",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "HealingPerSecond": {
             "Value": 25,
@@ -11417,6 +12816,7 @@
                 "Subclass": "IntrinsicBase"
             }
         ],
+        "BehaviourBits": null,
         "BonusHealthRegen": 1,
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
@@ -11445,6 +12845,11 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.2,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorShowCastRangeAsSatSphereWhileCasting"
+        ],
         "BulletResist": 60,
         "ChannelMoveSpeed": 1.3,
         "FallSpeedMax": 5,
@@ -11515,6 +12920,11 @@
         "AbilityCooldown": 46.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorPreventBotUsage",
+            "BehaviorMovement",
+            "BehaviorCanSetQuickCast"
+        ],
         "CameraDistance": 250,
         "ChannelMoveSpeed": 5.1,
         "CombatBarrier": {
@@ -11563,6 +12973,13 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 2.25,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorProjectilePassThroughWorld",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 100,
@@ -11651,6 +13068,17 @@
                 "Disarmed"
             ]
         },
+        "BehaviourBits": [
+            "BehaviorExclusiveUse",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCleaveDisabled",
+            "BehaviorDeactivateCrouchToggleOnCast",
+            "BehaviorCanSetQuickCast",
+            "BehaviorRequireAbilityButtonToCancel",
+            "BehaviorDontSwitchAwayOnCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "DamagePerRocket": {
             "Value": 21,
@@ -11707,6 +13135,15 @@
         "AbilityCooldown": 230.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorExclusiveUse",
+            "BehaviorCastableWhileBusy",
+            "BehaviorInterruptMeleeOnCast",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "CameraDistance": 400,
         "DPS": {
             "Value": 75,
@@ -11758,6 +13195,12 @@
         "AbilityUnitTargetLimit": 1,
         "AttackConeAngle": 10,
         "AttackSpeedMult": 100,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorPreventTrainingBotUsage",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "BossDamagePercentIncoming": 50,
         "BossDamagePercentOutgoing": 30,
         "DebuffModifier": {
@@ -11821,6 +13264,14 @@
         "AbilityCooldownBetweenCharge": 2,
         "AbilityPostCastDuration": 0.3,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCleaveDisabled",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "BleedDPSPerStack": {
             "Value": 10.0,
             "Scale": {
@@ -11875,6 +13326,13 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.2,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontTriggerPostCastOnCastComplete",
+            "BehaviorMovement",
+            "BehaviorTriggerCancelMashProtectionOnCast",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "CameraDistance": 250,
         "ChannelMoveSpeed": -1,
         "DashAngleThreshold": 89,
@@ -11929,6 +13387,11 @@
             "Class": "Base",
             "Subclass": "Cast"
         },
+        "BehaviourBits": [
+            "BehaviorDamageDoesntWakeFromSleep",
+            "BehaviorDontConsumeAbilityResourceOnCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "DamagePctDeferred": 25,
         "DamagePctDeferredMaxRage": 15,
@@ -11956,6 +13419,14 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.15,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontTriggerPostCastOnCastComplete",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorMovement",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "BonusAbilityResource": 10,
         "BuffDamage": 12,
         "CameraDistance": 400,
@@ -12009,6 +13480,16 @@
                 "Subclass": "SlideDebuff"
             }
         ],
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorHidden",
+            "BehaviorDontBreakInvisibility",
+            "BehaviorInputDirectional2d",
+            "BehaviorSilentCastFailureFeedback",
+            "BehaviorDontInterruptSprint",
+            "BehaviorNonCombat",
+            "BehaviorCastableWhileHidden"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "citadel_ability_slide",
@@ -12018,6 +13499,14 @@
     "citadel_ability_sprint": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorHidden",
+            "BehaviorDontInterruptSprint",
+            "BehaviorNotSilencable",
+            "BehaviorNoTarget",
+            "BehaviorNonCombat",
+            "BehaviorCastableWhileHidden"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "citadel_ability_sprint",
@@ -12030,6 +13519,13 @@
         "AbilityCooldown": 42.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorAlwaysPreviewRadius",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": 1.3,
         "Damage": {
             "Value": 35,
@@ -12074,6 +13570,11 @@
         "AbilityCooldown": 42.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorAlwaysPreviewRadius",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorUseInstantCastUnitTargetUi"
+        ],
         "ChannelMoveSpeed": 1.3,
         "Damage": {
             "Value": 35,
@@ -12114,6 +13615,12 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 3.5,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorAllowSelfCast",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorCanSetQuickCast"
+        ],
         "BombAttachedModifier": {
             "Class": "CitadelStickyBombAttached",
             "Subclass": "CitadelStickyBombAttached",
@@ -12185,6 +13692,12 @@
         "AbilityCooldown": 26.0,
         "AbilityCooldownBetweenCharge": 5,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectilePassThroughWorld",
+            "BehaviorShowCastRangeAsSatSphereWhileCasting",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "BulletResistModifier": {
             "Class": "StompDebuff",
             "Subclass": "StompDebuff"
@@ -12233,6 +13746,13 @@
         "AbilityCooldown": 180.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorExclusiveUse",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "CameraDistance": 600,
         "CloudHeight": 120,
         "DPS": {
@@ -12290,6 +13810,9 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 12,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact"
+        ],
         "BonusFireRate": {
             "Value": 10,
             "Scale": {
@@ -12369,6 +13892,14 @@
         "AbilityCastRange": 10,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDontInterruptSprint",
+            "BehaviorNoTarget",
+            "BehaviorCastableWhileHidden",
+            "BehaviorIgnoreSelectionMashProtection",
+            "BehaviorTrigger",
+            "BehaviorUseInstantCastUnitTargetUi"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "citadel_ability_tangotether_trigger",
@@ -12392,6 +13923,15 @@
         "AirDropOutgoingDamagePercent": 20,
         "AllyCastDelay": 0.1,
         "AllyOutgoingDamagePercent": -20,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorAllowSelfCast",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorMovement",
+            "BehaviorRequireAbilityButtonToCancel",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "BuffDuration": 8,
         "BulletResistModifier": {
             "Class": "Base",
@@ -12501,6 +14041,11 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 3,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorCastableWhileBusy",
+            "BehaviorInterruptMeleeOnCast",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 75,
@@ -12564,6 +14109,13 @@
                 }
             }
         },
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectileFiredAsBullet",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "DPS": {
             "Value": 40,
@@ -12629,6 +14181,9 @@
                 }
             }
         },
+        "BehaviourBits": [
+            "BehaviorNoTarget"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": 300,
         "DamageHealthPercent": 20,
@@ -12647,6 +14202,9 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 6.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget"
+        ],
         "ChannelMoveSpeed": -1,
         "CreepDPS": 190,
         "DPS": 125,
@@ -12674,6 +14232,10 @@
                 "Subclass": "Tier2bossRocketDamageAuraDebuff"
             }
         },
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorTargetThroughWalls"
+        ],
         "BulletArmorReduction": -10,
         "ChannelMoveSpeed": -1,
         "Damage": 200,
@@ -12703,6 +14265,9 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 100,
         "ActivationDistance": 472.441,
+        "BehaviourBits": [
+            "BehaviorNoTarget"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "citadel_ability_tier2boss_stomp",
@@ -12736,6 +14301,9 @@
                 }
             }
         },
+        "BehaviourBits": [
+            "BehaviorNoTarget"
+        ],
         "BulletArmorReduction": -10,
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
@@ -12750,6 +14318,14 @@
         "AbilityCooldown": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDontBreakInvisibility",
+            "BehaviorDontInterruptSprint",
+            "BehaviorNotSilencable",
+            "BehaviorNoTarget",
+            "BehaviorNonCombat",
+            "BehaviorCastableWhileHidden"
+        ],
         "ChannelMoveSpeed": -1,
         "DamageCooldown": 3,
         "DismountHorizontalMaxSpeedPercent": 85,
@@ -12807,6 +14383,10 @@
         "AbilityCooldown": 22.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "BonusFireRate": {
             "Value": -14,
             "Scale": {
@@ -12888,6 +14468,11 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 1.25,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectilePassThroughWorld",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorCanSetQuickCast"
+        ],
         "ChannelMoveSpeed": 1.3,
         "Damage": {
             "Value": 100,
@@ -12927,6 +14512,11 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 1.25,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectilePassThroughWorld",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorCanSetQuickCast"
+        ],
         "ChannelMoveSpeed": 1.3,
         "Damage": {
             "Value": 100,
@@ -12966,6 +14556,14 @@
         "AbilityDuration": 1.4,
         "AbilityUnitTargetLimit": 1,
         "AllyDistance": 13,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorPreventBotUsage",
+            "BehaviorAllowAltCast",
+            "BehaviorMovement",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "BubbleModifier": {
             "Class": "VoidSphere",
             "Subclass": "VoidSphere",
@@ -12999,6 +14597,7 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 5,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
         "BonusFireRate": 20,
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
@@ -13042,6 +14641,14 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 6,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorProjectileFiredAsBullet",
+            "BehaviorCanSetQuickCast"
+        ],
         "ChannelMoveSpeed": 2.5,
         "Damage": {
             "Value": 150,
@@ -13088,6 +14695,13 @@
                 "Type": "spirit"
             }
         },
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorExclusiveUse",
+            "BehaviorCastableWhileBusy",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "CameraDistance": 800,
         "DPS": {
             "Value": 0,
@@ -13139,6 +14753,14 @@
     "citadel_ability_zip_line": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDontBreakInvisibility",
+            "BehaviorDontInterruptSprint",
+            "BehaviorNotSilencable",
+            "BehaviorNoTarget",
+            "BehaviorNonCombat",
+            "BehaviorCastableWhileHidden"
+        ],
         "ChannelMoveSpeed": -1,
         "DamageCooldown": 3,
         "DismountHorizontalMaxSpeedPercent": 85,
@@ -13197,6 +14819,13 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 32,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorSilentCastFailureFeedback",
+            "BehaviorNoTarget",
+            "BehaviorCanCastOnZipline",
+            "BehaviorMovement",
+            "BehaviorStartsOnCooldown"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "citadel_ability_zipline_boost",
@@ -13213,6 +14842,9 @@
         }
     },
     "citadel_base_lockon_ability": {
+        "BehaviourBits": [
+            "BehaviorTargetThroughWalls"
+        ],
         "IsDisabled": false,
         "Key": "citadel_base_lockon_ability",
         "LockonConeAngle": 40,
@@ -13231,6 +14863,12 @@
         "AbilityPostCastDuration": 0.5,
         "AbilityUnitTargetLimit": 30,
         "AirSpeedMax": 70,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorNoTarget",
+            "BehaviorShowCastRangeAsSatSphereWhileCasting",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "BonusDamage": {
             "Value": 40.0,
             "Scale": {
@@ -13306,6 +14944,10 @@
         "AbilityDuration": 6.5,
         "AbilityUnitTargetLimit": 1,
         "AuraLingerDuration": 0.001,
+        "BehaviourBits": [
+            "BehaviorProjectilePassThroughWorld",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "BonusFireRate": {
             "Value": 0,
             "Scale": {
@@ -13372,6 +15014,13 @@
         "AbilityDuration": 5,
         "AbilityUnitTargetLimit": 1,
         "AirDrag": 3,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCleaveDisabled",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "BuffModifier": {
             "Class": "Base",
             "Subclass": "DrifterStalkersMarkBuff"
@@ -13429,6 +15078,14 @@
         "AbilityCastDelay": 0.3,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDontInterruptSprint",
+            "BehaviorNoTarget",
+            "BehaviorCastableWhileHidden",
+            "BehaviorIgnoreSelectionMashProtection",
+            "BehaviorTrigger",
+            "BehaviorMovement"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "drifter_shadow_mark_teleport",
@@ -13440,6 +15097,11 @@
         "AbilityCooldown": 22.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorMovement"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 80,
@@ -13483,6 +15145,10 @@
             "Class": "Base",
             "Subclass": "Cast"
         },
+        "BehaviourBits": [
+            "BehaviorDamageDoesntWakeFromSleep",
+            "BehaviorDontConsumeAbilityResourceOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "DamagePctDeferred": 22,
         "DamagePctDeferredMaxRage": 15,
@@ -13509,6 +15175,10 @@
         "AbilityCooldown": 50.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorCannotCancelDuringChannel"
+        ],
         "ChannelMoveSpeed": 5,
         "ChannelTimeForMaxDebuff": 1.5,
         "DPS": {
@@ -13568,6 +15238,10 @@
         "AbilityCooldown": 30,
         "AbilityCooldownBetweenCharge": 2,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDontBreakInvisibility",
+            "BehaviorMovement"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "fathom_reefdweller_harpoon",
@@ -13609,6 +15283,10 @@
                 "Subclass": "FathomScaldingSprayWeaponDamage"
             }
         },
+        "BehaviourBits": [
+            "BehaviorCastableWhileBusy",
+            "BehaviorNoTarget"
+        ],
         "ChannelMoveSpeed": -1,
         "DPS": {
             "Value": 40,
@@ -13647,6 +15325,9 @@
         "AbilityCooldown": 10.5,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": 1.3,
         "IsDisabled": false,
         "Key": "genericperson_ability_1",
@@ -13668,6 +15349,9 @@
         "AbilityCooldown": 10.5,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": 1.3,
         "IsDisabled": false,
         "Key": "genericperson_ability_2",
@@ -13689,6 +15373,9 @@
         "AbilityCooldown": 10.5,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": 1.3,
         "IsDisabled": false,
         "Key": "genericperson_ability_3",
@@ -13710,6 +15397,9 @@
         "AbilityCooldown": 10.5,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": 1.3,
         "IsDisabled": false,
         "Key": "genericperson_ability_4",
@@ -13732,6 +15422,7 @@
         "AbilityCooldown": 14,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
         "BonusFireRate": 25,
         "BonusMoveSpeed": 2,
         "BuffDuration": 3,
@@ -13778,6 +15469,7 @@
         "AbilityCastRange": 8,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
         "ChannelMoveSpeed": -1,
         "ConeAngle": 45,
         "Damage": 120,
@@ -13807,6 +15499,9 @@
             "Subclass": "CitadelRapidFire",
             "AirDrag": 2.0
         },
+        "BehaviourBits": [
+            "BehaviorChannelled"
+        ],
         "BulletAccuracy": 200,
         "BulletSpeedPercent": 100,
         "CastRangeWhenVertical": 30,
@@ -13826,6 +15521,9 @@
         "AbilityCooldown": 10.5,
         "AbilityCooldownBetweenCharge": 0.8,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 100,
@@ -13857,6 +15555,7 @@
                 "Subclass": "SleepBombAsleep"
             }
         },
+        "BehaviourBits": null,
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 50,
@@ -13877,6 +15576,7 @@
     "gunslinger_tenacity": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
         "BulletLifestealPercent": 15,
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
@@ -13888,6 +15588,9 @@
     "held_base": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNotSilencable"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "held_base",
@@ -13897,6 +15600,7 @@
     "inherent_base": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "inherent_base",
@@ -13909,6 +15613,12 @@
         "AbilityCooldown": 35,
         "AbilityCooldownBetweenCharge": 1,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "DPS": {
             "Value": 8,
@@ -13972,6 +15682,13 @@
                 }
             }
         ],
+        "BehaviourBits": [
+            "BehaviorDontInterruptSprint",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCanCastOnZipline",
+            "BehaviorDoNotAllowSpamProc"
+        ],
         "ChannelMoveSpeed": -1,
         "DMarkMultiplierPerStack": 2,
         "IsDisabled": false,
@@ -14011,6 +15728,12 @@
         "AbilityCooldown": 120.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorCanCastOnZipline",
+            "BehaviorCastableWhileBusy",
+            "BehaviorRequireAbilityButtonToCancel",
+            "BehaviorCanCancelDuringCastDelay"
+        ],
         "BuffModifier": {
             "Class": "MirageTravelerMovementSpeed",
             "Subclass": "MirageTeleportMovementSpeed"
@@ -14081,6 +15804,14 @@
         "AbilityCooldown": 36.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDontInterruptSprint",
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorMovement",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "ClimbHeight": 1,
         "Damage": {
@@ -14137,6 +15868,7 @@
     "npc_base": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "npc_base",
@@ -14146,6 +15878,7 @@
     "npc_ultimate_base": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "npc_ultimate_base",
@@ -14158,6 +15891,13 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "BackstabBonusDamagePct": 40,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCanHealPlayers",
+            "BehaviorProjectileFiredAsBullet",
+            "BehaviorCanSetQuickCast"
+        ],
         "CameraTurnRateMax": 100,
         "ChannelMoveSpeed": -1,
         "Damage": {
@@ -14195,6 +15935,10 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 6,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "CasterModifier": {
             "Class": "OperativeRevelationCaster",
             "Subclass": "OperativeRevelationCaster",
@@ -14263,6 +16007,11 @@
         },
         "AirSpeedMax": 3.81,
         "BackwardsVelocity": 13.0,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 100,
@@ -14295,6 +16044,7 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 4,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
         "BonusHealthRegen": 2,
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
@@ -14331,6 +16081,10 @@
                 "Subclass": "RutgerForceField"
             }
         },
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "ChargeUpTime": 0.5,
         "Damage": {
@@ -14390,6 +16144,9 @@
                 "Subclass": "RutgerPulseTargetSubclass"
             }
         },
+        "BehaviourBits": [
+            "BehaviorNoTarget"
+        ],
         "ChannelMoveSpeed": -1,
         "DamageMax": {
             "Value": 350,
@@ -14435,6 +16192,11 @@
             "Class": "IntrinsicBase",
             "Subclass": "IntrinsicBase"
         },
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDontTriggerSpellBlock",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "CameraHeightOffset": 20,
         "CameraHorizontalOffset": 15,
         "ChannelMoveSpeed": -1,
@@ -14472,6 +16234,7 @@
     "signature_base": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "signature_base",
@@ -14482,6 +16245,10 @@
         "AbilityCooldown": 10,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "CameraDistance": 120,
         "ChannelMoveSpeed": -1,
         "Damage": {
@@ -14507,6 +16274,9 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": -1,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "super_neutral_shield",
@@ -14520,6 +16290,10 @@
         "AbilityCooldown": 150.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "CanBePurged": 1,
         "ChannelMoveSpeed": 1.3,
         "CurrentHealthDamage": {
@@ -14588,6 +16362,12 @@
             "Class": "SynthBarrageCaster",
             "Subclass": "SynthBarrageCaster"
         },
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorChannelled",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": 1.3,
         "DamagePerProjectile": {
             "Value": 32,
@@ -14626,6 +16406,13 @@
         "AbilityCooldown": 25.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorTriggerCancelMashProtectionOnCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 60,
@@ -14661,6 +16448,14 @@
     "synth_plasma_flux_trigger": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDontInterruptSprint",
+            "BehaviorNoTarget",
+            "BehaviorCastableWhileHidden",
+            "BehaviorIgnoreSelectionMashProtection",
+            "BehaviorTrigger",
+            "BehaviorMovement"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "synth_plasma_flux_trigger",
@@ -14673,6 +16468,12 @@
         "AbilityCooldown": 17.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDeactivateCrouchToggleOnCast"
+        ],
         "ChannelMoveSpeed": 1.3,
         "Damage": {
             "Value": 65,
@@ -14721,6 +16522,9 @@
         "AbilityCooldown": 10.5,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": 1.3,
         "IsDisabled": false,
         "Key": "targetdummy_ability_1",
@@ -14742,6 +16546,9 @@
         "AbilityCooldown": 10.5,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": 1.3,
         "IsDisabled": false,
         "Key": "targetdummy_ability_2",
@@ -14763,6 +16570,9 @@
         "AbilityCooldown": 10.5,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": 1.3,
         "IsDisabled": false,
         "Key": "targetdummy_ability_3",
@@ -14784,6 +16594,9 @@
         "AbilityCooldown": 10.5,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": 1.3,
         "IsDisabled": false,
         "Key": "targetdummy_ability_4",
@@ -14803,6 +16616,9 @@
     "targetdummy_inherent": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget"
+        ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "targetdummy_inherent",
@@ -14816,6 +16632,12 @@
         "AbilityCooldown": 17.0,
         "AbilityCooldownBetweenCharge": 4,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDontTriggerSpellBlock",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorAlwaysPreviewRadius"
+        ],
         "BounceRadians": 0.5,
         "BounceRange": 20,
         "ChannelMoveSpeed": -1,
@@ -14884,6 +16706,10 @@
         "BarbedWireRadius": 4,
         "BarbedWireSlow": 50,
         "BarbedWireTickRate": 0.5,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorShowCastRangeAsSatSphereWhileCasting"
+        ],
         "ChannelMoveSpeed": 1.3,
         "Damage": {
             "Value": 125,
@@ -14918,6 +16744,10 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 8,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorAlwaysPreviewRadius"
+        ],
         "ChannelMoveSpeed": -1,
         "DPS": {
             "Value": 8,
@@ -14951,6 +16781,9 @@
         "AbilityCooldown": 10.5,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "ClimbHeight": 1,
         "DistanceAboveGround": 2,
@@ -14997,6 +16830,7 @@
                 "Subclass": "TokamakAllyInSmoke"
             }
         },
+        "BehaviourBits": null,
         "ChannelMoveSpeed": -1,
         "EnemySmokeAOEModifier": {
             "Class": "TokamakEnemySmokeAoe",
@@ -15044,6 +16878,12 @@
             "Class": "Base",
             "Subclass": "CastDelay"
         },
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorShowCastRangeAsSatSphereWhileCasting"
+        ],
         "ChannelMoveSpeed": 1.3,
         "Damage": {
             "Value": 190,
@@ -15081,6 +16921,10 @@
         "AbilityCooldown": 25.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 80,
@@ -15124,6 +16968,9 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "BaseHeatPower": 20.0,
+        "BehaviourBits": [
+            "BehaviorNoTarget"
+        ],
         "ChannelMoveSpeed": -1,
         "HeatDotModifier": {
             "Class": "TokamakHeatSinksDot",
@@ -15160,6 +17007,9 @@
     "tokamak_heat_sinks_inherent": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget"
+        ],
         "ChannelMoveSpeed": -1,
         "HeatDissipationInterval": 0.12,
         "HeatGrowthInterval": 0.06,
@@ -15180,6 +17030,13 @@
         "AbilityUnitTargetLimit": 1,
         "BeamLength": 30,
         "BeamWidth": 4.0,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCanCancelDuringCastDelay",
+            "BehaviorShowCastRangeAsSatSphereWhileCasting"
+        ],
         "ChannelMoveSpeed": 1.8,
         "HotDPS": {
             "Value": 90,
@@ -15231,6 +17088,9 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 6,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact"
+        ],
         "BlindScale": 0.5,
         "ChannelMoveSpeed": -1,
         "EvasionChance": 20,
@@ -15276,6 +17136,9 @@
         "AbilityCooldown": "40 30 20",
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile"
+        ],
         "BlastRadius": 300,
         "ChannelMoveSpeed": -1,
         "Damage": 100,
@@ -15296,6 +17159,10 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "ArmingDuration": 5,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorNoTarget"
+        ],
         "BlastRadius": 4,
         "ChannelMoveSpeed": -1,
         "Damage": 200,
@@ -15313,6 +17180,9 @@
         "AbilityCooldown": 40,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile"
+        ],
         "BlastRadius": 300,
         "ChannelMoveSpeed": -1,
         "Damage": 50,
@@ -15329,6 +17199,7 @@
     "ultimate_base": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "ultimate_base",
@@ -15341,6 +17212,12 @@
         "AbilityDuration": 10,
         "AbilityUnitTargetLimit": 1,
         "AuraRadius": 50,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorCanCastOnZipline",
+            "BehaviorCanHealPlayers",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "BonusFireRate": 15,
         "BonusSpirit": 20,
         "BuffModifier": {
@@ -15372,6 +17249,14 @@
         "BallHitRadius": 1.8,
         "BallOffset": 50,
         "BallRadius": 1.4,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorTriggerCancelMashProtectionOnCast",
+            "BehaviorDeactivateCrouchToggleOnCast",
+            "BehaviorRequireAbilityButtonToCancel",
+            "BehaviorInhibitSoftCameraCollision"
+        ],
         "BreakablePropDamageRadius": 75,
         "BulletResist": 35,
         "CastWhileRolling": 1,
@@ -15424,6 +17309,11 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityPostCastDuration": 0.2,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 70,
@@ -15499,6 +17389,15 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 3,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorEqualUnitTargetPriority",
+            "BehaviorAllowSelfCast",
+            "BehaviorCanHealPlayers",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "BonusHealthRegen": {
             "Value": 40,
             "Scale": {
@@ -15564,6 +17463,11 @@
         "AbilityCooldown": 24.0,
         "AbilityCooldownBetweenCharge": 1.7,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
         "ChannelMoveSpeed": -1,
         "Damage": {
             "Value": 20.0,
@@ -15642,6 +17546,9 @@
         "AbilityChannelTime": 3,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled"
+        ],
         "ChannelMoveSpeed": 1.3,
         "DPS": 50,
         "IsDisabled": false,
@@ -15660,6 +17567,7 @@
     "yakuza_gang_activity": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "yakuza_gang_activity",
@@ -15669,6 +17577,7 @@
     "yakuza_gang_activity_cancel": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
         "Key": "yakuza_gang_activity_cancel",
@@ -15679,6 +17588,9 @@
         "AbilityCastRange": 30,
         "AbilityCooldown": 32.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorAllowSelfCast"
+        ],
         "ChannelMoveSpeed": 1.3,
         "CloneModifier": {
             "Class": "HeroClone",
@@ -15711,6 +17623,12 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": 12,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectilePassThroughWorld",
+            "BehaviorEqualUnitTargetPriority",
+            "BehaviorAllowSelfCast"
+        ],
         "BonusCritDamagePercent": 20,
         "BulletShieldHealth": 180,
         "ChannelMoveSpeed": -1,
@@ -15734,6 +17652,7 @@
         "AbilityCooldown": 74.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
         "CenterDamage": {
             "Value": 250,
             "Scale": {
@@ -15777,6 +17696,10 @@
         "AbilityChannelTime": 5,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": 1.3,
         "IsDisabled": false,
         "Key": "yakuza_shakedown",
@@ -15788,6 +17711,10 @@
         "AbilityCooldown": 26.0,
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact"
+        ],
         "ChannelMoveSpeed": -1,
         "DPS": {
             "Value": 45,
@@ -15828,6 +17755,7 @@
     },
     "yakuza_summon_gangster": {
         "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": null,
         "ChannelMoveSpeed": 1.3,
         "GangsterHealth": 200,
         "IsDisabled": false,
@@ -15843,6 +17771,7 @@
             "Class": "Base",
             "Subclass": "TeleportToGangster"
         },
+        "BehaviourBits": null,
         "ChannelMoveSpeed": 1.3,
         "IsDisabled": false,
         "Key": "yakuza_teleport_to_gangster",
