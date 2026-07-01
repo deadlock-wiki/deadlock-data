@@ -1935,7 +1935,7 @@
                 },
                 {
                     "Key": "TechPower",
-                    "Value": 4
+                    "Value": 7
                 }
             ]
         },
@@ -1947,7 +1947,7 @@
             "Main": [
                 {
                     "Key": "BaseAttackDamagePercentBonus",
-                    "Value": 30,
+                    "Value": 25,
                     "Type": "bullet_damage",
                     "UsageFlags": "ConditionallyApplied"
                 }
@@ -4312,7 +4312,9 @@
         },
         "Upgrades": {
             "LongRangeBonusWeaponPower": 40,
-            "BonusAttackRangePercent": 10
+            "BonusAttackRangePercent": 10,
+            "BonusBulletSpeedPercent": 45,
+            "BaseAttackDamagePercent": 15
         },
         "Other": {
             "AbilityUnitTargetLimit": {
@@ -4744,7 +4746,7 @@
         "Info2": {
             "Type": null,
             "DescKey": "#upgrade_crackshot_desc",
-            "Cooldown": 8,
+            "Cooldown": 9,
             "ChargeUp": null,
             "Main": [
                 {
@@ -5073,7 +5075,7 @@
             "Main": [
                 {
                     "Key": "DotHealthPercent",
-                    "Value": 1.7,
+                    "Value": 1.9,
                     "Scale": {
                         "Value": 0.005,
                         "Type": "spirit"
@@ -6329,7 +6331,13 @@
                     "UsageFlags": "IntrinsicallyProvidedInAbility"
                 }
             ],
-            "Alt": []
+            "Alt": [
+                {
+                    "Key": "OutOfCombatHealthRegen",
+                    "Value": 3,
+                    "Type": "healing"
+                }
+            ]
         },
         "Info2": {
             "Type": "Passive",
@@ -8157,7 +8165,9 @@
             "BonusAbilityDurationPercent": 15,
             "BonusSpirit": 30,
             "BonusFireRate": 20,
-            "AbilityLifestealPercentHero": 15
+            "AbilityLifestealPercentHero": 15,
+            "BonusHealth": 80,
+            "TechPower": 9
         },
         "Other": {
             "AbilityUnitTargetLimit": {
@@ -11138,7 +11148,11 @@
             "Main": [
                 {
                     "Key": "MaxHealthPercentAsDPS",
-                    "Value": 3.5,
+                    "Value": 2.6,
+                    "Scale": {
+                        "Value": 0.0055,
+                        "Type": "spirit"
+                    },
                     "Type": "tech_damage"
                 },
                 {
@@ -14888,7 +14902,7 @@
             "Alt": [
                 {
                     "Key": "OutgoingDamagePenaltyPercent",
-                    "Value": -10,
+                    "Value": -14,
                     "Type": "damage",
                     "UsageFlags": "ConditionallyApplied"
                 }
