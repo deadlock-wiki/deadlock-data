@@ -13361,14 +13361,14 @@
         "DashSpeed": 60.96,
         "DebuffDuration": 14,
         "DebuffModifier": {
-            "Class": "ShivDashDebuff",
+            "Class": "Base",
             "Subclass": "ShivDashDebuff"
         },
         "ImpactDamage": {
-            "Value": 25.0,
+            "Value": 75,
             "Scale": {
-                "Value": 1.0,
-                "Type": "melee"
+                "Value": 1.4415,
+                "Type": "spirit"
             }
         },
         "IsDisabled": false,
@@ -13383,7 +13383,7 @@
                 "AbilityCooldown": -6
             },
             {
-                "VulnerabilityPerStack": 4,
+                "TechArmorDamageReduction": -6,
                 "DashRange": 2
             },
             {
@@ -13392,8 +13392,7 @@
                 "CooldownReductionOnHitNonHero": 1,
                 "MaxCooldownReductionsFromHits": 8
             }
-        ],
-        "VulnerabilityPerStack": 4
+        ]
     },
     "citadel_ability_shiv_defer_damage": {
         "AbilityCastDelay": 0.25,
@@ -13483,7 +13482,7 @@
                 "AbilityCooldown": -25
             },
             {
-                "EnemyHealthPercent": 10
+                "EnemyHealthPercent": 8
             }
         ]
     },

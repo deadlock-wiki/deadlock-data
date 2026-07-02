@@ -7753,12 +7753,12 @@
                         {
                             "Key": "ImpactDamage",
                             "Name": "Impact Damage",
-                            "Value": 25.0,
+                            "Value": 75,
                             "Scale": {
-                                "Value": 1.0,
-                                "Type": "melee"
+                                "Value": 1.4415,
+                                "Type": "spirit"
                             },
-                            "Type": "melee_damage"
+                            "Type": "tech_damage"
                         },
                         {
                             "Key": "DashRange",
@@ -7767,10 +7767,10 @@
                             "Type": "distance"
                         },
                         {
-                            "Key": "VulnerabilityPerStack",
-                            "Name": "Damage Amplification",
-                            "Value": 4,
-                            "Type": "damage"
+                            "Key": "TechArmorDamageReduction",
+                            "Name": "Spirit Resist",
+                            "Value": -6,
+                            "Type": "tech_armor_down"
                         }
                     ]
                 },
@@ -7822,7 +7822,7 @@
                     "AbilityCooldown": -6
                 },
                 {
-                    "VulnerabilityPerStack": 4,
+                    "TechArmorDamageReduction": -6,
                     "DashRange": 2,
                     "DescKey": "citadel_ability_shiv_dash_t2_desc"
                 },
@@ -7839,13 +7839,6 @@
                     "Name": "Channel Move Speed",
                     "Value": -1,
                     "Type": "move_speed"
-                }
-            },
-            "Debuff": {
-                "TechArmorDamageReduction": {
-                    "Name": null,
-                    "Value": -6,
-                    "Type": "tech_armor_down"
                 }
             },
             "Other": {
@@ -8054,7 +8047,7 @@
                     "DescKey": "citadel_ability_shiv_killing_blow_t2_desc"
                 },
                 {
-                    "EnemyHealthPercent": 10,
+                    "EnemyHealthPercent": 8,
                     "DescKey": "citadel_ability_shiv_killing_blow_t3_desc"
                 }
             ],
