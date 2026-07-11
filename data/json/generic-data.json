@@ -203,6 +203,16 @@
         9999
     ],
     "KillStreakFireParticle": "particles/ui/ui_topbar_killstreak.vpcf",
+    "KothParams": {
+        "KothRadius": 20.0,
+        "KothEarlyWarningParticle": "particles/generic/koth_indicator.vpcf",
+        "KothSpawnLocationParticle": "particles/generic/koth_rift_timer.vpcf",
+        "KothOnSpawnParticle": "particles/generic/koth_comet_drop_endcap.vpcf",
+        "KothSpawnCompleteSound": "Koth.Spawn.Complete",
+        "KothSpawnLoopSound": "Koth.Spawn.Lp",
+        "KothSpawnLoopStartSound": "Koth.Spawn.Start",
+        "KothPreSpawnLoopSound": "Koth.Pre.Spawn.Lp"
+    },
     "LaneInfo": [
         {
             "LaneName": "White",
@@ -316,8 +326,8 @@
             ]
         }
     ],
-    "MidbossIndicatorRespawningParticle": "particles/environment/rejuv_indicator_timer.vpcf",
-    "MidbossIndicatorSpawnedParticle": "particles/environment/rejuv_indicator.vpcf",
+    "MidbossIndicatorRespawningParticle": "",
+    "MidbossIndicatorSpawnedParticle": "",
     "MiniMapOffsets": [
         {
             "eEntityClass": "CLASS_BOSS_TIER_3",
@@ -423,10 +433,10 @@
     },
     "ObjectiveParams": {
         "GoldPerOrb": 0,
-        "NearPlayerSplitPct": 40.0,
-        "Tier1GoldKill": 1500,
+        "NearPlayerSplitPct": 30.0,
+        "Tier1GoldKill": 1250,
         "Tier1GoldOrbs": 0,
-        "Tier2GoldKill": 4000,
+        "Tier2GoldKill": 3500,
         "Tier2GoldOrbs": 0,
         "BaseGuardiansGoldKill": 1000,
         "BaseGuardiansGoldOrbs": 0,
@@ -473,7 +483,7 @@
     ],
     "RejuvParams": {
         "RejuvinatorExpirationWarningTiming": 30,
-        "RejuvinatorBuffDuration": 240,
+        "RejuvinatorBuffDuration": 180,
         "RejuvinatorDropHeight": 500,
         "RejuvinatorDropDuration": 6,
         "RejuvPickupSound": "Rejuv.Pickup",
@@ -488,9 +498,9 @@
             0.3
         ],
         "RejuvinatorRebirthDuration": [
-            240,
-            240,
-            240
+            180,
+            180,
+            180
         ]
     },
     "ResourceTypes": {
@@ -824,22 +834,22 @@
             },
             "ModTier_2": {
                 "Buckets": {
-                    "Normal": 50.0,
-                    "Good": 50.0
+                    "Normal": 60.0,
+                    "Good": 40.0
                 },
                 "BucketName": "Tier 2"
             },
             "ModTier_3": {
                 "Buckets": {
-                    "Normal": 50.0,
-                    "Good": 50.0
+                    "Normal": 60.0,
+                    "Good": 40.0
                 },
                 "BucketName": "Tier 3"
             },
             "ModTier_4": {
                 "Buckets": {
-                    "Normal": 55.0,
-                    "Good": 45.0
+                    "Normal": 65.0,
+                    "Good": 35.0
                 },
                 "BucketName": "Tier 4"
             },

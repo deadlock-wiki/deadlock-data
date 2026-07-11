@@ -2503,7 +2503,7 @@
         "IsDisabled": false,
         "StreetBrawl": false,
         "IsImbue": false,
-        "AbilityCooldown": 8,
+        "AbilityCooldown": 9,
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
@@ -2740,7 +2740,13 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
         "TickRate": 0.25,
-        "MaxHealthPercentAsDPS": 3.5,
+        "MaxHealthPercentAsDPS": {
+            "Value": 2.5,
+            "Scale": {
+                "Value": 0.0055,
+                "Type": "spirit"
+            }
+        },
         "AuraRadius": "10m",
         "TechResist": 40,
         "BonusHealth": 100,
@@ -3588,7 +3594,7 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
         "SkipFrames": 6,
-        "OutgoingDamagePenaltyPercent": -10,
+        "OutgoingDamagePenaltyPercent": -14,
         "PropertyUpgrades": {
             "AbilityCooldown": -40,
             "AbilityDuration": 0.25
@@ -6631,7 +6637,9 @@
         "BonusBulletSpeedPercent": 60,
         "PropertyUpgrades": {
             "LongRangeBonusWeaponPower": 40,
-            "BonusAttackRangePercent": 10
+            "BonusAttackRangePercent": 10,
+            "BonusBulletSpeedPercent": 45,
+            "BaseAttackDamagePercent": 15
         }
     },
     "upgrade_shivas_bracelet": {
@@ -7659,7 +7667,9 @@
             "BonusAbilityDurationPercent": 15,
             "BonusSpirit": 30,
             "BonusFireRate": 20,
-            "AbilityLifestealPercentHero": 15
+            "AbilityLifestealPercentHero": 15,
+            "BonusHealth": 80,
+            "TechPower": 9
         }
     },
     "upgrade_tech_purge": {
@@ -7887,7 +7897,7 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
         "DotHealthPercent": {
-            "Value": 1.7,
+            "Value": 1.9,
             "Scale": {
                 "Value": 0.005,
                 "Type": "spirit"

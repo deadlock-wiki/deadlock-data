@@ -52,6 +52,7 @@
             "FalloffEndScale": 0.3,
             "FalloffBias": 0.5,
             "BulletGravityScale": 0,
+            "BulletRadius": 0.3048,
             "BulletsPerShot": 1,
             "BulletsPerBurst": 1,
             "BurstInterShotInterval": 0,
@@ -754,6 +755,7 @@
                     "FalloffEndScale": 0.1,
                     "FalloffBias": 0.5,
                     "BulletGravityScale": 0.8,
+                    "BulletRadius": 0.0762,
                     "BulletsPerShot": 1,
                     "BulletsPerBurst": 1,
                     "BurstInterShotInterval": 0,
@@ -1275,77 +1277,6 @@
         "PigeonMaxCount": 15,
         "ThinkRate": 0.1
     },
-    "citadel_item_pickup_rejuv": {
-        "AbilityProjectile": "ability_item_pickup_effects",
-        "Name": "citadel_item_pickup_rejuv",
-        "PunchPickupModifier": {
-            "EnabledStateMask": "MODIFIER_STATE_IS_MELEE_TARGET",
-            "IsHidden": true,
-            "NearRejuvAuraModifier": {
-                "IsHidden": true,
-                "AuraRadius": 7.62,
-                "modifierProvidedByAura": {
-                    "IsHidden": true,
-                    "EnabledStateMask": "MODIFIER_STATE_NEAR_REJUVINATOR"
-                },
-                "AuraSearchType": "CITADEL_UNIT_TARGET_HERO"
-            },
-            "ParryCheckModifier": {
-                "ParryCheckRadius": 2.032
-            }
-        },
-        "RebirthModifier": {
-            "HEALTH_MAX_PERCENT": 0.0,
-            "FIRE_RATE": 0.0,
-            "TECH_DAMAGE_MULTIPLIER": 0.0,
-            "RespawnLifePct": 100.0,
-            "RespawnDelay": 3.0
-        }
-    },
-    "citadel_item_pickup_rejuv_herotest": {
-        "AbilityProjectile": "ability_item_pickup_effects",
-        "Name": "citadel_item_pickup_rejuv_herotest",
-        "PunchPickupModifier": {
-            "EnabledStateMask": "MODIFIER_STATE_IS_MELEE_TARGET",
-            "IsHidden": true,
-            "NearRejuvAuraModifier": {
-                "IsHidden": true,
-                "AuraRadius": 7.62,
-                "modifierProvidedByAura": {
-                    "IsHidden": true,
-                    "EnabledStateMask": "MODIFIER_STATE_NEAR_REJUVINATOR"
-                },
-                "AuraSearchType": "CITADEL_UNIT_TARGET_HERO"
-            },
-            "ParryCheckModifier": {
-                "ParryCheckRadius": 2.032
-            }
-        },
-        "RebirthModifier": {
-            "HEALTH_MAX_PERCENT": 0.0,
-            "FIRE_RATE": 0.0,
-            "TECH_DAMAGE_MULTIPLIER": 0.0,
-            "RespawnLifePct": 100.0,
-            "RespawnDelay": 3.0
-        }
-    },
-    "citadel_item_punchable_gold": {
-        "BobFrequency": 1.5,
-        "BobHeight": 0.0508,
-        "GroundOffset": 60,
-        "Name": "citadel_item_punchable_gold",
-        "PunchPickupModifier": {
-            "EnabledStateMask": "MODIFIER_STATE_IS_MELEE_TARGET",
-            "IsHidden": true,
-            "AuraRadius": 5.08,
-            "PhysicsRadius": 0.508,
-            "modifierProvidedByAura": {
-                "IsHidden": true,
-                "EnabledStateMask": "MODIFIER_STATE_NEAR_PUNCHABLE_PICKUP"
-            },
-            "AuraSearchType": "CITADEL_UNIT_TARGET_HERO"
-        }
-    },
     "citadel_spider_animating": {
         "Name": "citadel_spider_animating"
     },
@@ -1409,6 +1340,7 @@
             "FalloffEndScale": 0.3,
             "FalloffBias": 0.5,
             "BulletGravityScale": 0.8,
+            "BulletRadius": 0.0762,
             "BulletsPerShot": 1,
             "BulletsPerBurst": 1,
             "BurstInterShotInterval": 0,
@@ -1468,6 +1400,7 @@
             "FalloffEndScale": 0.3,
             "FalloffBias": 0.5,
             "BulletGravityScale": 0.8,
+            "BulletRadius": 0.0762,
             "BulletsPerShot": 1,
             "BulletsPerBurst": 1,
             "BurstInterShotInterval": 0,
@@ -1522,6 +1455,7 @@
             "FalloffEndScale": 0.3,
             "FalloffBias": 0.5,
             "BulletGravityScale": 0.0,
+            "BulletRadius": 0.0762,
             "BulletsPerShot": 1,
             "BulletsPerBurst": 1,
             "BurstInterShotInterval": 0,
@@ -1578,6 +1512,7 @@
             "FalloffEndScale": 0.3,
             "FalloffBias": 0.5,
             "BulletGravityScale": 0.0,
+            "BulletRadius": 0.0762,
             "BulletsPerShot": 1,
             "BulletsPerBurst": 1,
             "BurstInterShotInterval": 0,
@@ -1634,6 +1569,7 @@
             "FalloffEndScale": 0.3,
             "FalloffBias": 0.5,
             "BulletGravityScale": 0.0,
+            "BulletRadius": 0.0762,
             "BulletsPerShot": 1,
             "BulletsPerBurst": 1,
             "BurstInterShotInterval": 0,
@@ -1705,6 +1641,7 @@
             "FalloffEndScale": 0.3,
             "FalloffBias": 0.5,
             "BulletGravityScale": 0,
+            "BulletRadius": 0.3048,
             "BulletsPerShot": 1,
             "BulletsPerBurst": 1,
             "BurstInterShotInterval": 0,
@@ -1776,6 +1713,7 @@
             "FalloffEndScale": 0.3,
             "FalloffBias": 0.5,
             "BulletGravityScale": 0,
+            "BulletRadius": 0.3048,
             "BulletsPerShot": 1,
             "BulletsPerBurst": 1,
             "BurstInterShotInterval": 0,
@@ -1847,6 +1785,7 @@
             "FalloffEndScale": 0.3,
             "FalloffBias": 0.5,
             "BulletGravityScale": 0,
+            "BulletRadius": 0.3048,
             "BulletsPerShot": 1,
             "BulletsPerBurst": 1,
             "BurstInterShotInterval": 0,
@@ -1919,6 +1858,7 @@
             "FalloffEndScale": 0.3,
             "FalloffBias": 0.5,
             "BulletGravityScale": 0,
+            "BulletRadius": 0.3048,
             "BulletsPerShot": 1,
             "BulletsPerBurst": 1,
             "BurstInterShotInterval": 0,
@@ -2621,6 +2561,7 @@
                     "FalloffEndScale": 0.1,
                     "FalloffBias": 0.5,
                     "BulletGravityScale": 0.8,
+                    "BulletRadius": 0.0762,
                     "BulletsPerShot": 1,
                     "BulletsPerBurst": 1,
                     "BurstInterShotInterval": 0,
@@ -3237,6 +3178,7 @@
             "FalloffEndScale": 0.3,
             "FalloffBias": 0.5,
             "BulletGravityScale": 0.8,
+            "BulletRadius": 0.0762,
             "BulletsPerShot": 1,
             "BulletsPerBurst": 1,
             "BurstInterShotInterval": 0,
@@ -3421,6 +3363,7 @@
             "FalloffEndScale": 0.3,
             "FalloffBias": 0.5,
             "BulletGravityScale": 0.0,
+            "BulletRadius": 0.0762,
             "BulletsPerShot": 1,
             "BulletsPerBurst": 1,
             "BurstInterShotInterval": 0,
@@ -3545,6 +3488,7 @@
             "FalloffEndScale": 1.0,
             "FalloffBias": 0.5,
             "BulletGravityScale": 0,
+            "BulletRadius": 0,
             "BulletsPerShot": 1,
             "BulletsPerBurst": 1,
             "BurstInterShotInterval": 0,
@@ -3633,6 +3577,7 @@
             "FalloffEndScale": 0.3,
             "FalloffBias": 0.5,
             "BulletGravityScale": 0.0,
+            "BulletRadius": 0.0762,
             "BulletsPerShot": 1,
             "BulletsPerBurst": 1,
             "BurstInterShotInterval": 0,
@@ -3788,6 +3733,7 @@
             "FalloffEndScale": 0.3,
             "FalloffBias": 0.5,
             "BulletGravityScale": 0.0,
+            "BulletRadius": 0.0762,
             "BulletsPerShot": 1,
             "BulletsPerBurst": 1,
             "BurstInterShotInterval": 0,
@@ -3889,6 +3835,7 @@
             "FalloffEndScale": 0.3,
             "FalloffBias": 0.5,
             "BulletGravityScale": 0.0,
+            "BulletRadius": 0.0762,
             "BulletsPerShot": 1,
             "BulletsPerBurst": 1,
             "BurstInterShotInterval": 0,
@@ -3985,6 +3932,7 @@
             "FalloffEndScale": 0.3,
             "FalloffBias": 0.5,
             "BulletGravityScale": 0.0,
+            "BulletRadius": 0.0762,
             "BulletsPerShot": 1,
             "BulletsPerBurst": 1,
             "BurstInterShotInterval": 0,
@@ -4085,6 +4033,7 @@
             "FalloffEndScale": 0.3,
             "FalloffBias": 0.5,
             "BulletGravityScale": 0.0,
+            "BulletRadius": 0.0762,
             "BulletsPerShot": 1,
             "BulletsPerBurst": 1,
             "BurstInterShotInterval": 0,
@@ -4360,6 +4309,7 @@
             "FalloffEndScale": 0.3,
             "FalloffBias": 0.5,
             "BulletGravityScale": 0.0,
+            "BulletRadius": 0.0762,
             "BulletsPerShot": 1,
             "BulletsPerBurst": 1,
             "BurstInterShotInterval": 0,
@@ -4388,6 +4338,7 @@
             "FalloffEndScale": 0.3,
             "FalloffBias": 0.5,
             "BulletGravityScale": 0.8,
+            "BulletRadius": 0.0762,
             "BulletsPerShot": 1,
             "BulletsPerBurst": 1,
             "BurstInterShotInterval": 0,

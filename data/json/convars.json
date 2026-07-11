@@ -1266,11 +1266,11 @@
     "citadel_crate_delivery_base_payoff": 0,
     "citadel_crate_delivery_overtime_bonus": 50,
     "citadel_crate_drop_duration_override": -1,
-    "citadel_crate_respawn_interval": 360,
-    "citadel_crate_reward_base": 935,
-    "citadel_crate_reward_time_multiplier": 165,
+    "citadel_crate_respawn_interval": 300,
+    "citadel_crate_reward_base": 250,
+    "citadel_crate_reward_time_multiplier": 70,
     "citadel_crate_spawn_enabled": true,
-    "citadel_crate_spawn_initial_delay": 720,
+    "citadel_crate_spawn_initial_delay": 600,
     "citadel_crosshair_clip_angle": 90,
     "citadel_crosshair_clip_bullet_gap": 0.5,
     "citadel_crosshair_clip_offset_angle": 180,
@@ -1792,6 +1792,10 @@
         "value": 8,
         "description": "How long a player needs to be idle we start putting that time towards their stored idle time."
     },
+    "citadel_idol_cashin_buff_count": 4,
+    "citadel_idol_decay_duration": 45,
+    "citadel_idol_duration_until_decay": 45,
+    "citadel_idol_orbs_to_spawn": 10,
     "citadel_idol_think_bias_interval": 10,
     "citadel_in_world_item_panel_dpi": {
         "value": 2,
@@ -1836,6 +1840,16 @@
     },
     "citadel_keybind_default_hold_duration": 1,
     "citadel_keybindings_cloud_disable": false,
+    "citadel_koth_early_warning_time": 60,
+    "citadel_koth_enabled": true,
+    "citadel_koth_respawn_interval": 420,
+    "citadel_koth_reward_base": 1260,
+    "citadel_koth_reward_buff_count": 0,
+    "citadel_koth_reward_time_multiplier": 222,
+    "citadel_koth_spawn_initial_delay": 720,
+    "citadel_koth_spawn_location_deck_count": 4,
+    "citadel_koth_spawn_window": 60,
+    "citadel_koth_warning_time": 20,
     "citadel_lane_matchups_mmr_variance": {
         "value": 0,
         "description": "specifies how much of a gap between MMR's we allow to randomize lane assignment"
@@ -1963,6 +1977,7 @@
     "citadel_minimap_arrow_show_distance_down": 100,
     "citadel_minimap_arrow_show_distance_up": 200,
     "citadel_minimap_draw_fow": false,
+    "citadel_minimap_koth_trooper_size": 4.5,
     "citadel_minimap_local_player_width": 12,
     "citadel_minimap_max_icon_shrink": 0.8,
     "citadel_minimap_npc_reveal_duration": 0.25,
@@ -1977,6 +1992,7 @@
     "citadel_minimap_teleporter_active_dist": 400,
     "citadel_minimap_teleporter_height_dist": 160,
     "citadel_minimap_teleporter_nearby_dist": 1600,
+    "citadel_minimap_trooper_size": 3,
     "citadel_minimap_unit_click_radius": 200,
     "citadel_minimap_use_effects": false,
     "citadel_minimap_zip_line_thickness": 2,
@@ -2262,16 +2278,16 @@
     "citadel_player_gold_comeback_killer_fraction": 0.3,
     "citadel_player_gold_comeback_multiplier": 2.268,
     "citadel_player_gold_comeback_npc_max_mutliplier_delta": 1.2,
-    "citadel_player_gold_comeback_npc_max_mutliplier_value": 1.237,
+    "citadel_player_gold_comeback_npc_max_mutliplier_value": 1.26,
     "citadel_player_gold_difficulty_multiplier": 2.484,
     "citadel_player_gold_killer_to_assist_ratio": 2.2,
     "citadel_player_gold_per_level_postmax": {
         "value": 2000,
         "description": "Gold per 'level' after maxing out rewards"
     },
-    "citadel_player_gold_reward_first_kill_bonus": 150,
+    "citadel_player_gold_reward_first_kill_bonus": 125,
     "citadel_player_gold_reward_max": 2200,
-    "citadel_player_gold_reward_min": 250,
+    "citadel_player_gold_reward_min": 200,
     "citadel_player_gold_reward_time": 2400,
     "citadel_player_ground_dash_max_percent": {
         "value": 2,
@@ -2290,7 +2306,8 @@
         "value": 1,
         "description": "Scales how fast players can move"
     },
-    "citadel_player_neutral_gold_drop_min": 150,
+    "citadel_player_neutral_gold_drop_min": 50,
+    "citadel_player_neutral_gold_drop_min_increase_per_minute": 5,
     "citadel_player_neutral_gold_duration": 180,
     "citadel_player_neutral_gold_fallrate": 300,
     "citadel_player_outline_allies": false,
@@ -2321,8 +2338,8 @@
     "citadel_player_slide_min_percent": 0.8,
     "citadel_player_spawn_distance_from_other": 32,
     "citadel_player_spawn_time_in_base_penalty": 10,
-    "citadel_player_spawn_time_max_ramp_1": 30,
-    "citadel_player_spawn_time_max_ramp_1_time": 1140,
+    "citadel_player_spawn_time_max_ramp_1": 35,
+    "citadel_player_spawn_time_max_ramp_1_time": 1200,
     "citadel_player_spawn_time_max_ramp_2": 70,
     "citadel_player_spawn_time_max_ramp_2_time": 1800,
     "citadel_player_spawn_time_max_ramp_3": 85,
@@ -2330,8 +2347,8 @@
     "citadel_player_spawn_time_max_respawn_time": 90,
     "citadel_player_spawn_time_min_ramp_1": 8,
     "citadel_player_spawn_time_min_ramp_1_time": 300,
-    "citadel_player_spawn_time_min_ramp_2": 30,
-    "citadel_player_spawn_time_min_ramp_2_time": 1140,
+    "citadel_player_spawn_time_min_ramp_2": 35,
+    "citadel_player_spawn_time_min_ramp_2_time": 1200,
     "citadel_player_spawn_time_min_ramp_3": 70,
     "citadel_player_spawn_time_min_ramp_3_time": 1800,
     "citadel_player_spawn_time_rich_nw_penalty_max_ramp_behind_nw_pct": 20,
@@ -2807,6 +2824,14 @@
         "description": "Set to something >= 0 to test setting every unit's timescale to that value"
     },
     "citadel_track_player_vs_player_accuracy": true,
+    "citadel_trailingteam_bias_threshold_max": {
+        "value": 0.15,
+        "description": "Max Difference between teams to get full trailing bonuses for Koth/Urn"
+    },
+    "citadel_trailingteam_bias_threshold_min": {
+        "value": 0,
+        "description": "Min Difference between teams to start getting trailing bonuses for Koth/Urn"
+    },
     "citadel_trigger_rope_size": 192,
     "citadel_trooper_aggro_radius": 0,
     "citadel_trooper_boss_melee_knockback": 400,
@@ -2824,8 +2849,8 @@
         "description": "Disable glow on friendly troopers except for through walls during laning"
     },
     "citadel_trooper_glow_disabled": false,
-    "citadel_trooper_gold_reward": 116,
-    "citadel_trooper_gold_reward_bonus_per_minute": 1.16,
+    "citadel_trooper_gold_reward": 100,
+    "citadel_trooper_gold_reward_bonus_per_minute": 2,
     "citadel_trooper_health_model_scale": 1.2,
     "citadel_trooper_health_mult": 1.5,
     "citadel_trooper_health_mult_gametime": 35,
@@ -2833,8 +2858,8 @@
         "value": 2,
         "description": "0=instant gold 1=orbs in experimental only 2=orbs always"
     },
-    "citadel_trooper_instant_gold_ratio_laning": 0.6,
-    "citadel_trooper_instant_gold_ratio_postlaning": 0.6,
+    "citadel_trooper_instant_gold_ratio_laning": 0.5,
+    "citadel_trooper_instant_gold_ratio_postlaning": 0.5,
     "citadel_trooper_lane_node_max_spacing": {
         "value": 150,
         "description": "Set to -1 to disable"

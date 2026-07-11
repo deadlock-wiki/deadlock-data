@@ -1,9 +1,9 @@
 {
     "_include": [
         "scripts/misc/breakable_props.vdata_inc",
-        "scripts/misc/breakable_prop_pickups.vdata_inc",
         "scripts/misc/xp_orbs.vdata_inc",
         "scripts/misc/neutral_camps.vdata_inc",
+        "scripts/misc/pickups.vdata_inc",
         "scripts/misc/capture_points.vdata_inc"
     ],
     "ammo_permanent_pickup": {
@@ -169,6 +169,7 @@
         "NameLocString": "casting_powerup_pickup",
         "PickupSound": "Powerup.Pickup.Generic",
         "NameOffset": 150,
+        "CollectionMethod": "Punch",
         "AuraModifier": {
             "IsHidden": true,
             "AuraRadius": 300.0,
@@ -208,9 +209,15 @@
             ],
             "HudIcon": "file://{images}/hud/modifiers/icon_powerup.svg",
             "SmallIconCssClass": "casting_pickup",
-            "ModifierDisplayLocaiton": "MODIFIER_DISPLAY_BOTTOM_LEFT",
+            "ModifierDisplayLocaiton": "MODIFIER_DISPLAY_HEALTHBAR",
             "HudDisplayLocation": "DISPLAY_HUD_NONE",
-            "DrawOverheadStatus": "OVERHEAD_DRAW_FOR_EVERYONE"
+            "DrawOverheadStatus": "OVERHEAD_DRAW_FOR_EVERYONE",
+            "Color": [
+                185,
+                103,
+                253
+            ],
+            "BuffParticle": "particles/environment/powerup_spawner_buff.vpcf"
         },
         "Color": [
             203,
@@ -218,8 +225,11 @@
             252
         ],
         "TempParticleSheetIndex": 7,
-        "MiniMapCssClass": "powerup_casting",
-        "AmbientSound": "Powerup.Casting_Lp"
+        "AmbientSound": "Powerup.Casting_Lp",
+        "MinimapCssClasses": [
+            "powerup_casting",
+            "powerup_spawn"
+        ]
     },
     "cd_permanent_pickup": {
         "PickupRadius": {
@@ -348,6 +358,7 @@
         "NameLocString": "change_team_powerup_pickup",
         "PickupSound": "Powerup.Pickup.Generic",
         "NameOffset": 120,
+        "CollectionMethod": "Punch",
         "AuraModifier": {
             "IsHidden": true,
             "AuraRadius": 150.0,
@@ -373,7 +384,6 @@
             82,
             26
         ],
-        "MiniMapCssClass": "powerup_survival",
         "AmbientSound": "Powerup.Survival_Lp"
     },
     "citadel_base_glass_horiz_01": {
@@ -1016,74 +1026,164 @@
         "SpawnRate": 2.0,
         "FirstSpawnTime": 180.0
     },
-    "citadel_idol_cashin": {
-        "ZoneParticle": "particles/generic/idol_cashin_aura.vpcf",
-        "EndParticleFriendly": "particles/generic/idol_pickup_end.vpcf",
-        "EndParticleEnemy": "particles/generic/idol_pickup_end_enemy.vpcf",
-        "PreEnableParticle": "particles/npc/escort/escort_arriving.vpcf",
-        "EnabledParticle": "",
-        "OnFullyCapturedParticle": "particles/npc/escort/escort_spawn.vpcf",
-        "OnBecomeEnableParticle": "particles/npc/escort/escort_spawn.vpcf",
-        "DecaySpeed": 0.0,
-        "TotalTimeToCapture": 12,
-        "TotalTimeToCaptureFavored": 6,
-        "TotalTimeToCaptureUnfavored": 18,
-        "DestroyNearbyNeutrals": false,
-        "HoldAtPercent": 99.0,
-        "ComebackBounty": 170,
-        "DropOffPlayerBonusPercent": 35,
-        "ZoneHeightMeters": 14.0,
-        "ZoneRadiusMeters": 20.0,
-        "TimeToWarnAboutGivingUp": 50.0,
-        "TimeToGiveUp": 60.0,
-        "GiveUpOrbs": 13,
-        "Bonus01": {
-            "HudMessageText": "#golden_idol_bonus_01",
-            "IsHidden": true
+    "citadel_item_koth_spawner": {
+        "_editor": {
+            "folder_name": "Pickup Items"
+        }
+    },
+    "citadel_item_pickup": {
+        "AmbientParticle": "particles/generic/holding_gold_dropped.vpcf",
+        "_editor": {
+            "folder_name": "Pickup Items"
+        }
+    },
+    "citadel_item_pickup_idol": {
+        "AmbientParticle": "particles/generic/holding_gold_dropped.vpcf",
+        "_editor": {
+            "folder_name": "Pickup Items"
         },
-        "modifierCapturer": {
-            "HudDisplayLocation": "DISPLAY_HUD_CENTER"
-        },
-        "AuraModifier": {
+        "PickUpAura": {
             "AuraSearchType": "CITADEL_UNIT_TARGET_HERO",
             "modifierProvidedByAura": {
                 "IsHidden": true,
-                "Attributes": "MODIFIER_ATTRIBUTE_CANNOT_BE_PURGED",
-                "EnabledStateMask": "MODIFIER_STATE_NEAR_IDOL_CASHIN"
+                "EnabledStateMask": "MODIFIER_STATE_TELEPORTER_DISABLED | MODIFIER_STATE_PICKING_UP_IDOL"
             },
             "IsHidden": true,
-            "AuraRadius": 2362.2
+            "AuraRadius": 70.0,
+            "EnabledStateMask": "MODIFIER_STATE_IS_MELEE_TARGET"
         },
-        "ComebackAuraModifier": {
-            "AuraSearchType": "CITADEL_UNIT_TARGET_HERO_FRIENDLY",
-            "ModifierProvidedByAuraDuration": 1.0,
-            "modifierProvidedByAura": {
-                "Attributes": "MODIFIER_ATTRIBUTE_CANNOT_BE_PURGED",
+        "WalkBackModifier": {
+            "StopDistance": -1.0,
+            "WaitTimeLimit": 180.0,
+            "MoveSpeed": 2.0,
+            "VerticalOffset": 0.0,
+            "Tolerance": 200.0,
+            "IdleParticle": "particles/generic/idol_pickup_aura.vpcf",
+            "RunningParticle": "particles/generic/idol_pickup_aura_running.vpcf",
+            "BiasEffectPositive": "particles/generic/idol_pickup_indicator.vpcf",
+            "BiasEffectNegative": "particles/generic/idol_pickup_indicator_enemy.vpcf",
+            "AmbientLoopingSound": "",
+            "WalkingLoopSound": "Soul.Urn.Walking.Lp",
+            "IdlingLoopSound": "Soul.Urn.Idling.Lp"
+        }
+    },
+    "citadel_item_pickup_rejuv": {
+        "AbilityProjectile": "ability_item_pickup_effects",
+        "RebirthModifier": {
+            "HudMessageText": "#modifier_citadel_respawn_credit",
+            "LocalizationName": "modifier_citadel_respawn_credit",
+            "ParticleEffect": "particles/modifiers/respawn_credit_buff.vpcf",
+            "ParticleStatusEffect": "particles/status_fx/status_fx_respawn_credit.vpcf",
+            "ParticleStatusEffectConfig": "60",
+            "SmallIconCssClass": "rejuv_credit",
+            "ModifierDisplayLocaiton": "MODIFIER_DISPLAY_HEALTHBAR",
+            "HudDisplayLocation": "DISPLAY_HUD_NONE",
+            "HudIcon": "file://{images}/upgrades/mods_armor/portable_rejuvenator.png",
+            "DeployParticle": "particles/modifiers/rejuv_pending.vpcf",
+            "RespawnParticle": "particles/upgrades/portable_rejuvinator_respawn.vpcf",
+            "DeploySound": "Rejuv.Rebirth.Start",
+            "RespawnSound": "Rejuv.Rebirth.Revive",
+            "RespawnLifePct": 100.0,
+            "RespawnDelay": 3.0,
+            "ScriptValues": [
+                {
+                    "ModifierValue": "MODIFIER_VALUE_HEALTH_MAX_PERCENT",
+                    "value": 0.0
+                },
+                {
+                    "ModifierValue": "MODIFIER_VALUE_FIRE_RATE",
+                    "value": 0.0
+                },
+                {
+                    "ModifierValue": "MODIFIER_VALUE_TECH_DAMAGE_MULTIPLIER",
+                    "value": 0.0
+                }
+            ]
+        },
+        "PunchPickupModifier": {
+            "EnabledStateMask": "MODIFIER_STATE_IS_MELEE_TARGET",
+            "IsDroppingParticle": "particles/environment/rejuv_ambient.vpcf",
+            "IsPunchableParticle": "particles/environment/rejuv_attackable.vpcf",
+            "IsFrozenParticle": "particles/environment/rejuv_frozen_model.vpcf",
+            "AoEHealParticle": "particles/upgrades/health_nova_cast.vpcf",
+            "IsHidden": true,
+            "HitSound": "Powerup.Pickup.Punch",
+            "DamagedParticle": "particles/environment/rejuv_damaged.vpcf",
+            "NearRejuvAuraModifier": {
                 "IsHidden": true,
-                "ScriptValues": [
-                    {
-                        "ModifierValue": "MODIFIER_VALUE_TECH_RESIST",
-                        "value": 35
-                    },
-                    {
-                        "ModifierValue": "MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST",
-                        "value": 35
-                    },
-                    {
-                        "ModifierValue": "MODIFIER_VALUE_STATUS_RESISTANCE",
-                        "value": 35
-                    }
-                ]
+                "AuraRadius": 300.0,
+                "modifierProvidedByAura": {
+                    "IsHidden": true,
+                    "EnabledStateMask": "MODIFIER_STATE_NEAR_REJUVINATOR"
+                },
+                "AuraSearchType": "CITADEL_UNIT_TARGET_HERO"
             },
-            "IsHidden": true,
-            "AuraRadius": 787.402,
-            "AuraTargetingCylinderUpOffset": 400.0,
-            "AuraTargetingCylinderHalfHeight": 1000.0
+            "ParryCheckModifier": {
+                "ParryCheckRadius": 80.0
+            }
         },
-        "UrnCashedInSoundFriendly": "Soul.Urn.CashIn.Complete.Team",
-        "UrnCashedInSoundEnemy": "Soul.Urn.CashIn.Complete.Opponent",
-        "UrnGiveUpSound": "Soul.Urn.CashIn.Complete.Opponent",
-        "UrnCashinLoopSound": "Soul.Urn.CashIn.Timer"
+        "_editor": {
+            "folder_name": "Pickup Items"
+        }
+    },
+    "citadel_item_pickup_rejuv_herotest": {
+        "AbilityProjectile": "ability_item_pickup_effects",
+        "RebirthModifier": {
+            "HudMessageText": "#modifier_citadel_respawn_credit",
+            "LocalizationName": "modifier_citadel_respawn_credit",
+            "ParticleEffect": "particles/modifiers/respawn_credit_buff.vpcf",
+            "ParticleStatusEffect": "particles/status_fx/status_fx_respawn_credit.vpcf",
+            "ParticleStatusEffectConfig": "60",
+            "SmallIconCssClass": "rejuv_credit",
+            "ModifierDisplayLocaiton": "MODIFIER_DISPLAY_HEALTHBAR",
+            "HudDisplayLocation": "DISPLAY_HUD_NONE",
+            "HudIcon": "file://{images}/upgrades/mods_armor/portable_rejuvenator.png",
+            "DeployParticle": "particles/modifiers/rejuv_pending.vpcf",
+            "RespawnParticle": "particles/upgrades/portable_rejuvinator_respawn.vpcf",
+            "DeploySound": "Rejuv.Rebirth.Start",
+            "RespawnSound": "Rejuv.Rebirth.Revive",
+            "RespawnLifePct": 100.0,
+            "RespawnDelay": 3.0,
+            "ScriptValues": [
+                {
+                    "ModifierValue": "MODIFIER_VALUE_HEALTH_MAX_PERCENT",
+                    "value": 0.0
+                },
+                {
+                    "ModifierValue": "MODIFIER_VALUE_FIRE_RATE",
+                    "value": 0.0
+                },
+                {
+                    "ModifierValue": "MODIFIER_VALUE_TECH_DAMAGE_MULTIPLIER",
+                    "value": 0.0
+                }
+            ]
+        },
+        "PunchPickupModifier": {
+            "EnabledStateMask": "MODIFIER_STATE_IS_MELEE_TARGET",
+            "IsDroppingParticle": "particles/environment/rejuv_ambient.vpcf",
+            "IsPunchableParticle": "particles/environment/rejuv_attackable.vpcf",
+            "IsFrozenParticle": "particles/environment/rejuv_frozen_model.vpcf",
+            "AoEHealParticle": "particles/upgrades/health_nova_cast.vpcf",
+            "IsHidden": true,
+            "HitSound": "Powerup.Pickup.Punch",
+            "DamagedParticle": "particles/environment/rejuv_damaged.vpcf",
+            "NearRejuvAuraModifier": {
+                "IsHidden": true,
+                "AuraRadius": 300.0,
+                "modifierProvidedByAura": {
+                    "IsHidden": true,
+                    "EnabledStateMask": "MODIFIER_STATE_NEAR_REJUVINATOR"
+                },
+                "AuraSearchType": "CITADEL_UNIT_TARGET_HERO"
+            },
+            "ParryCheckModifier": {
+                "ParryCheckRadius": 80.0
+            }
+        },
+        "_editor": {
+            "folder_name": "Pickup Items"
+        }
     },
     "citadel_item_powerup_spawner": {
         "InitialSpawnTime": 300,
@@ -1112,6 +1212,125 @@
                 "PickupWeight": 1.0
             }
         ]
+    },
+    "citadel_item_punchable_gold": {
+        "AmbientParticle": "particles/generic/holding_gold_dropped.vpcf",
+        "GroundOffset": 60,
+        "PunchPickupModifier": {
+            "EnabledStateMask": "MODIFIER_STATE_IS_MELEE_TARGET",
+            "IsHidden": true,
+            "HitSound": "Powerup.Punchable.Souls",
+            "AuraRadius": 200.0,
+            "PhysicsRadius": 20.0,
+            "modifierProvidedByAura": {
+                "IsHidden": true,
+                "EnabledStateMask": "MODIFIER_STATE_NEAR_PUNCHABLE_PICKUP"
+            },
+            "AuraSearchType": "CITADEL_UNIT_TARGET_HERO"
+        },
+        "BobHeight": 2.0,
+        "BobFrequency": 1.5,
+        "_editor": {
+            "folder_name": "Pickup Items"
+        }
+    },
+    "citadel_koth_cashin": {
+        "ZoneParticle": "particles/generic/koth_aura.vpcf",
+        "EndParticleFriendly": "particles/generic/idol_pickup_end.vpcf",
+        "EndParticleEnemy": "particles/generic/idol_pickup_end_enemy.vpcf",
+        "PreEnableParticle": "particles/npc/escort/escort_arriving.vpcf",
+        "EnabledParticle": "",
+        "OnFullyCapturedParticle": "particles/npc/escort/escort_spawn.vpcf",
+        "OnBecomeEnableParticle": "particles/npc/escort/escort_spawn.vpcf",
+        "DecaySpeed": 0.0,
+        "TotalTimeToCapture": 12,
+        "TotalTimeToCaptureFavored": 6,
+        "TotalTimeToCaptureUnfavored": 18,
+        "PingMinimapOnActive": false,
+        "DestroyNearbyNeutrals": false,
+        "HoldAtPercent": 99.0,
+        "ComebackBounty": 170,
+        "DropOffPlayerBonusPercent": 35,
+        "ZoneHeightMeters": 14.0,
+        "TimeToWarnAboutGivingUp": 50.0,
+        "TimeToGiveUp": 60.0,
+        "GiveUpOrbs": 13,
+        "modifierCapturer": {
+            "HudDisplayLocation": "DISPLAY_HUD_CENTER",
+            "IsHidden": true
+        },
+        "AuraModifier": {
+            "ModifierProvidedByAuraDuration": 1.0,
+            "AuraSearchType": "CITADEL_UNIT_TARGET_HERO",
+            "modifierProvidedByAura": {
+                "IsHidden": true,
+                "Attributes": "MODIFIER_ATTRIBUTE_CANNOT_BE_PURGED",
+                "EnabledStateMask": "MODIFIER_STATE_NEAR_IDOL_CASHIN | MODIFIER_STATE_VISIBLE_TO_ENEMY"
+            },
+            "IsHidden": true,
+            "AuraRadius": 787.402,
+            "AuraTargetingCylinderUpOffset": 400.0,
+            "AuraTargetingCylinderHalfHeight": 1000.0
+        },
+        "ComebackAuraModifier": {
+            "AuraSearchType": "CITADEL_UNIT_TARGET_HERO_FRIENDLY",
+            "ModifierProvidedByAuraDuration": 1.0,
+            "modifierProvidedByAura": {
+                "Attributes": "MODIFIER_ATTRIBUTE_CANNOT_BE_PURGED",
+                "IsHidden": true,
+                "TechResist": 35,
+                "BulletResist": 35,
+                "StatusResist": 35
+            },
+            "IsHidden": true,
+            "AuraRadius": 1377.95,
+            "AuraTargetingCylinderUpOffset": 600.0,
+            "AuraTargetingCylinderHalfHeight": 1300.0
+        },
+        "TrooperModifier": {
+            "ParticleStatusEffect": "particles/npc/unstable_rift/unstable_rift_trooper.vpcf",
+            "DebuffType": "MODIFIER_DEBUFF_NO",
+            "StatusEffectPriority": 100,
+            "HealthPercents": [
+                100,
+                120,
+                140,
+                160
+            ],
+            "DamagePercents": [
+                100,
+                120,
+                140,
+                160
+            ],
+            "SpiritResistPercents": [
+                30,
+                35,
+                40,
+                45
+            ],
+            "MeleeResistPercents": [
+                25,
+                25,
+                25,
+                25
+            ],
+            "ModelScaleFractions": [
+                1.57,
+                1.6,
+                1.63,
+                1.66
+            ]
+        },
+        "KothCashedInSoundFriendly": "Koth.Cashin.Complete.Team",
+        "KothCashedInSoundEnemy": "Koth.Cashin.Complete.Opponent",
+        "KothGiveUpSound": "Koth.Cashin.Complete.Opponent",
+        "KothCashinLoopSound": "Koth.Zone.Capturing.Lp",
+        "KothBlockedSound": "Koth.Zone.Blocked",
+        "KothGivingUpWarningLoopSound": "Koth.Timeout.Warning.Lp",
+        "KothContestedLoopSound": "Koth.Zone.Contested.Lp",
+        "KothCaptureStartAnnounce": "Koth.Zone.Capture.Start.Announcement",
+        "KothContestedSound": "Koth.Zone.Contested"
     },
     "citadel_refresh_spawner": {
         "InitialSpawnTime": 5.0,
@@ -1149,7 +1368,7 @@
             0
         ],
         "SameTeamOnly": true,
-        "PicupIsVacuum": true,
+        "CollectionMethod": "VacuumTrigger",
         "VacuumToPlayerSpeedCurve": {
             "spline": [
                 {
@@ -1311,7 +1530,7 @@
             0
         ],
         "SameTeamOnly": true,
-        "PicupIsVacuum": true,
+        "CollectionMethod": "VacuumTrigger",
         "VacuumToPlayerSpeedCurve": {
             "spline": [
                 {
@@ -1575,6 +1794,7 @@
         "NameLocString": "gun_powerup_pickup",
         "PickupSound": "Powerup.Pickup.Generic",
         "NameOffset": 150,
+        "CollectionMethod": "Punch",
         "AuraModifier": {
             "IsHidden": true,
             "AuraRadius": 300.0,
@@ -1614,9 +1834,15 @@
             ],
             "HudIcon": "file://{images}/hud/modifiers/icon_powerup.svg",
             "SmallIconCssClass": "gunpower_pickup",
-            "ModifierDisplayLocaiton": "MODIFIER_DISPLAY_BOTTOM_LEFT",
+            "ModifierDisplayLocaiton": "MODIFIER_DISPLAY_HEALTHBAR",
             "HudDisplayLocation": "DISPLAY_HUD_NONE",
-            "DrawOverheadStatus": "OVERHEAD_DRAW_FOR_EVERYONE"
+            "DrawOverheadStatus": "OVERHEAD_DRAW_FOR_EVERYONE",
+            "Color": [
+                218,
+                148,
+                65
+            ],
+            "BuffParticle": "particles/environment/powerup_spawner_buff.vpcf"
         },
         "Color": [
             218,
@@ -1624,8 +1850,11 @@
             65
         ],
         "TempParticleSheetIndex": 9,
-        "MiniMapCssClass": "powerup_gun",
-        "AmbientSound": "Powerup.Gun_Lp"
+        "AmbientSound": "Powerup.Gun_Lp",
+        "MinimapCssClasses": [
+            "powerup_gun",
+            "powerup_spawn"
+        ]
     },
     "hp_permanent_pickup": {
         "PickupRadius": {
@@ -1686,7 +1915,7 @@
             "ScriptValues": [
                 {
                     "ModifierValue": "MODIFIER_VALUE_HEALTH_MAX",
-                    "value": 25
+                    "value": 20
                 }
             ]
         },
@@ -1721,7 +1950,7 @@
             "ScriptValues": [
                 {
                     "ModifierValue": "MODIFIER_VALUE_HEALTH_MAX",
-                    "value": 35
+                    "value": 30
                 }
             ]
         },
@@ -1737,6 +1966,37 @@
         "SpawnIntervalMin": 0,
         "IdleAmbient": "",
         "AlertAmbient": ""
+    },
+    "item_pickup": {
+        "PickupRadius": {
+            "Base": 5.0
+        },
+        "PickupExpirationDuration": {
+            "Base": 500.0
+        },
+        "HeavyMeleeOnly": false,
+        "friendlyParticle": "particles/environment/breakable_item_drop_beam.vpcf",
+        "hModel": "models/props_gameplay/powerup_idol/powerup_idol.vmdl",
+        "PickupSound": "UI.Shop.Mod.Activate",
+        "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
+        "Color": [
+            241,
+            215,
+            130
+        ],
+        "bPhysicallyDropToTheGroundOnSpawn": true,
+        "fInitialSpawnXYSpeed": [
+            -50.0,
+            50.0
+        ],
+        "HoverOffset": 10.0,
+        "fInitialSpawnZSpeed": [
+            300.0,
+            300.0
+        ],
+        "BecomeInteractiveSound": "Powerup.Pickup.Health",
+        "SpawnSound": "Powerup.Spawn.Generic",
+        "CollectionMethod": "Punch"
     },
     "medic_trooper_aoe_health_pickup_amber": {
         "PickupRadius": {
@@ -1783,7 +2043,7 @@
                 "EndSound": ""
             }
         },
-        "PicupIsVacuum": true,
+        "CollectionMethod": "VacuumTrigger",
         "VacuumToPlayerSpeedCurve": {
             "spline": [
                 {
@@ -1997,7 +2257,7 @@
                 "EndSound": ""
             }
         },
-        "PicupIsVacuum": true,
+        "CollectionMethod": "VacuumTrigger",
         "VacuumToPlayerSpeedCurve": {
             "spline": [
                 {
@@ -2185,6 +2445,7 @@
         "NameLocString": "movement_powerup_pickup",
         "PickupSound": "Powerup.Pickup.Generic",
         "NameOffset": 150,
+        "CollectionMethod": "Punch",
         "AuraModifier": {
             "IsHidden": true,
             "AuraRadius": 300.0,
@@ -2235,9 +2496,15 @@
             "LocalizationName": "movement_powerup_pickup",
             "HudIcon": "file://{images}/hud/modifiers/icon_powerup.svg",
             "SmallIconCssClass": "movement_pickup",
-            "ModifierDisplayLocaiton": "MODIFIER_DISPLAY_BOTTOM_LEFT",
+            "ModifierDisplayLocaiton": "MODIFIER_DISPLAY_HEALTHBAR",
             "HudDisplayLocation": "DISPLAY_HUD_NONE",
-            "DrawOverheadStatus": "OVERHEAD_DRAW_FOR_EVERYONE"
+            "DrawOverheadStatus": "OVERHEAD_DRAW_FOR_EVERYONE",
+            "Color": [
+                50,
+                50,
+                255
+            ],
+            "BuffParticle": "particles/environment/powerup_spawner_buff.vpcf"
         },
         "TempParticleSheetIndex": 8,
         "Color": [
@@ -2245,8 +2512,11 @@
             50,
             255
         ],
-        "MiniMapCssClass": "powerup_movement",
-        "AmbientSound": "Powerup.Movement_Lp"
+        "AmbientSound": "Powerup.Movement_Lp",
+        "MinimapCssClasses": [
+            "powerup_movement",
+            "powerup_spawn"
+        ]
     },
     "neutral_camp_bug": {
         "SpawnIntervalChange": 0,
@@ -2364,6 +2634,7 @@
         "NameLocString": "refresh_powerup_pickup",
         "PickupSound": "Powerup.Pickup.Generic",
         "NameOffset": 150,
+        "CollectionMethod": "Punch",
         "AuraModifier": {
             "IsHidden": true,
             "AuraRadius": 300.0,
@@ -2389,8 +2660,11 @@
             143,
             252
         ],
-        "MiniMapCssClass": "powerup_refresh",
-        "AmbientSound": "Powerup.Survival_Lp"
+        "AmbientSound": "Powerup.Survival_Lp",
+        "MinimapCssClasses": [
+            "powerup_refresh",
+            "powerup_spawn"
+        ]
     },
     "small_gold_pickup": {
         "PickupRadius": {
@@ -2408,7 +2682,7 @@
         },
         "ParticleRadius": 1.5,
         "ShowOnMinimap": false,
-        "NameLocString": "small_gold_pickup_label:p",
+        "NameLocString": "#small_gold_pickup_label:p",
         "PickupSound": "Powerup.Pickup.Souls",
         "NameOffset": 60,
         "GoldAmount": 23,
@@ -2545,6 +2819,7 @@
         "NameLocString": "survival_powerup_pickup",
         "PickupSound": "Powerup.Pickup.Generic",
         "NameOffset": 150,
+        "CollectionMethod": "Punch",
         "AuraModifier": {
             "IsHidden": true,
             "AuraRadius": 300.0,
@@ -2584,9 +2859,15 @@
             ],
             "HudIcon": "file://{images}/hud/modifiers/icon_powerup.svg",
             "SmallIconCssClass": "survival_pickup",
-            "ModifierDisplayLocaiton": "MODIFIER_DISPLAY_BOTTOM_LEFT",
+            "ModifierDisplayLocaiton": "MODIFIER_DISPLAY_HEALTHBAR",
             "HudDisplayLocation": "DISPLAY_HUD_NONE",
-            "DrawOverheadStatus": "OVERHEAD_DRAW_FOR_EVERYONE"
+            "DrawOverheadStatus": "OVERHEAD_DRAW_FOR_EVERYONE",
+            "Color": [
+                122,
+                184,
+                29
+            ],
+            "BuffParticle": "particles/environment/powerup_spawner_buff.vpcf"
         },
         "TempParticleSheetIndex": 6,
         "Color": [
@@ -2594,8 +2875,11 @@
             184,
             29
         ],
-        "MiniMapCssClass": "powerup_survival",
-        "AmbientSound": "Powerup.Survival_Lp"
+        "AmbientSound": "Powerup.Survival_Lp",
+        "MinimapCssClasses": [
+            "powerup_survival",
+            "powerup_spawn"
+        ]
     },
     "vehicle_bike_flying": {
         "RespawnTime": 180.0,
@@ -2951,6 +3235,46 @@
         "InvulDurationMax": 0.65
     },
     "xp_orb_idol_dropoff": {
+        "OrbModel": "",
+        "FriendlyGlowParticle": "particles/generic/spirit_orb_ambient.vpcf",
+        "EnemyGlowParticle": "particles/generic/spirit_orb_ambient_enemy.vpcf",
+        "GoldReceivedParticle": "",
+        "FriendlyOrbDeniedParticle": "particles/generic/spirit_xp_denied_enemy.vpcf",
+        "EnemyOrbDeniedParticle": "particles/generic/spirit_xp_denied.vpcf",
+        "FriendlyOrbEarnedParticle": "particles/generic/spirit_xp_earned.vpcf",
+        "EnemyOrbEarnedParticle": "particles/generic/spirit_xp_earned_enemy.vpcf",
+        "OrbSpawnDelayMin": 0.3,
+        "OrbSpawnDelayMax": 0.3,
+        "OrbSpawnOffsetZ": 10.0,
+        "OrbSpawnOffsetRandomXYZ": 10.0,
+        "GravityScale": 0.0,
+        "LateralSpeedMin": 10.0,
+        "LateralSpeedMax": 60.0,
+        "UpSpeedMin": 10.0,
+        "UpSpeedMax": 60.0,
+        "DownSpeed": 20.0,
+        "OscillateFrequency": 1.0,
+        "LifeTime": 3.0,
+        "CollisionRadius": 12.0,
+        "BurstSpeedMultiplier": 1.5,
+        "BurstSpeedDuration": 0.1,
+        "InvulDuration": 0.12,
+        "OrbClaimed": "Player.ClaimOrb",
+        "OrbClaimedTeammate": "Teammate.ClaimOrb",
+        "OrbDenied": "Player.Deny",
+        "OrbDeniedPlayer": "Player.Denied",
+        "UseKillerPlaneOffsets": false,
+        "KillerPlaneOffset": 0,
+        "OrbClaimWindow": 0,
+        "PredictedHitLimboGlowParticle": "particles/generic/spirit_orb_processing.vpcf",
+        "OrbHitConfirm": "Player.ClaimOrb.Hit",
+        "FriendlyHitConfirmParticle": "particles/generic/spirit_orb_ambient_hit.vpcf",
+        "EnemyHitConfirmParticle": "particles/generic/spirit_orb_ambient_hit_enemy.vpcf",
+        "OrbHitPredicted": "Player.ClaimOrb.Hit",
+        "InvulDurationMin": 0.35,
+        "InvulDurationMax": 0.65
+    },
+    "xp_orb_koth_giveup": {
         "OrbModel": "",
         "FriendlyGlowParticle": "particles/generic/spirit_orb_ambient.vpcf",
         "EnemyGlowParticle": "particles/generic/spirit_orb_ambient_enemy.vpcf",
