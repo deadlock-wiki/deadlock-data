@@ -9,8 +9,6 @@ set -euo pipefail
 FILE_LIMIT=5
 
 COMMIT_URL="$REPO_URL/commit/$COMMIT_SHA"
-CHANGED_FILES=$(git diff --name-only ${COMMIT_SHA}~1 ${COMMIT_SHA} -- '*.json' 2>/dev/null || echo "")
-TOTAL=$(echo "$CHANGED_FILES" | grep -c '.')
 
 # remove new lines from commit msg
 COMMIT_MSG="${COMMIT_MSG//$'\n'/}"
