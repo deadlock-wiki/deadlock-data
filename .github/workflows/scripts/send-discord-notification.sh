@@ -24,10 +24,12 @@ fi
 DATA_LIST=""
 LOCALIZATION_LIST=""
 CHANGELOG_LIST=""
+ASSET_LIST=""
 
 DATA_COUNT=0
 LOCALIZATION_COUNT=0
 CHANGELOG_COUNT=0
+ASSET_COUNT=0
 
 TOTAL_ADDITIONS=0
 TOTAL_DELETIONS=0
@@ -35,10 +37,10 @@ TOTAL_DELETIONS=0
 # For each file, add file name to the appropriate category and count the number of lines added and deleted
 while IFS=$'\t' read -r additions deletions filename; do
     [ -z "$filename" ] && continue
-    
+
     # Skip binary files where git outputs '-' instead of a number
     [[ "$additions" == "-" || "$deletions" == "-" ]] && additions=0 && deletions=0
-    
+
     BASENAME=$(basename "$filename")
     LINE="${BASENAME}"$'\\n'
     case "$filename" in
@@ -53,6 +55,10 @@ while IFS=$'\t' read -r additions deletions filename; do
         data/changelogs/wiki/*)
             CHANGELOG_COUNT=$((CHANGELOG_COUNT + 1))
             [ "$CHANGELOG_COUNT" -le $FILE_LIMIT ] && CHANGELOG_LIST+="$LINE"
+            ;;
+        data/assets/*)
+            ASSET_COUNT=$((ASSET_COUNT + 1))
+            [ "$ASSET_COUNT" -le $FILE_LIMIT ] && ASSET_LIST+="$LINE"
             ;;
     esac
 
@@ -70,11 +76,30 @@ LOCALIZATION_LIST+="+ [...and $((LOCALIZATION_COUNT - $FILE_LIMIT)) more]($COMMI
 [ "$CHANGELOG_COUNT" -gt $FILE_LIMIT ] && \
 CHANGELOG_LIST+="+ [...and $((CHANGELOG_COUNT - $FILE_LIMIT)) more]($COMMIT_URL)\\n"
 
-TOTAL_FILES=$(($DATA_COUNT + $LOCALIZATION_COUNT + $CHANGELOG_COUNT))
+[ "$ASSET_COUNT" -gt $FILE_LIMIT ] && \
+ASSET_LIST+="+ [...and $((ASSET_COUNT - $FILE_LIMIT)) more]($COMMIT_URL)\\n"
+
+TOTAL_FILES=$(($DATA_COUNT + $LOCALIZATION_COUNT + $CHANGELOG_COUNT + $ASSET_COUNT))
 if [ "$TOTAL_FILES" -eq 0 ]; then
     echo "No files changed, skipping notification"
     exit 0
 fi
+
+# Build the "fields" array dynamically, only including a category field
+# if that category actually had changes.
+FIELDS="{\"name\": \"Summary\", \"value\": \"Files changed: $TOTAL_FILES\\n+$TOTAL_ADDITIONS / -$TOTAL_DELETIONS lines\", \"inline\": false}"
+
+[ "$DATA_COUNT" -gt 0 ] && \
+FIELDS+=",{\"name\": \"Data\", \"value\": \"${DATA_LIST}\", \"inline\": true}"
+
+[ "$LOCALIZATION_COUNT" -gt 0 ] && \
+FIELDS+=",{\"name\": \"Localizations\", \"value\": \"${LOCALIZATION_LIST}\", \"inline\": true}"
+
+[ "$CHANGELOG_COUNT" -gt 0 ] && \
+FIELDS+=",{\"name\": \"Changelogs\", \"value\": \"${CHANGELOG_LIST}\", \"inline\": true}"
+
+[ "$ASSET_COUNT" -gt 0 ] && \
+FIELDS+=",{\"name\": \"Assets\", \"value\": \"${ASSET_LIST}\", \"inline\": true}"
 
 PAYLOAD=$(cat <<EOF
 {
@@ -89,26 +114,7 @@ PAYLOAD=$(cat <<EOF
         "description": "New data available on [deadlock.wiki](https://deadlock.wiki) (uploaded by [deadbot](https://github.com/deadlock-wiki/deadbot/tree/$DEADBOT_COMMIT_SHA))",
         "color": 5815783,
         "fields": [
-            {
-                "name": "Summary",
-                "value": "Files changed: $TOTAL_FILES\\n+$TOTAL_ADDITIONS / -$TOTAL_DELETIONS lines",
-                "inline": false
-            },
-            {
-                "name": "Data",
-                "value": "${DATA_LIST:-No changes}",
-                "inline": true
-            },
-            {
-                "name": "Localizations",
-                "value": "${LOCALIZATION_LIST:-No changes}",
-                "inline": true
-            },
-            {
-                "name": "Changelogs",
-                "value": "${CHANGELOG_LIST:-No changes}",
-                "inline": true
-            }
+            $FIELDS
         ],
         "url": "$COMMIT_URL",
         "footer": {
