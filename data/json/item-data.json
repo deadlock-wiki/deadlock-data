@@ -514,20 +514,18 @@
         "IsDisabled": false,
         "StreetBrawl": false,
         "IsImbue": true,
-        "AbilityCooldown": 35.0,
+        "AbilityCooldown": 30.0,
         "AbilityUnitTargetLimit": 1,
+        "AbilityPostCastDuration": 0.5,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
-        "BonusFireRate": 5,
         "TechResist": 5,
         "BulletResist": 5,
+        "ImbuedCooldownMultiplier": 1,
         "PropertyUpgrades": {
             "BulletResist": 5,
             "TechResist": 5,
-            "BonusFireRate": 5,
-            "AbilityCooldown": -10,
-            "TechRadiusMultiplier": 5,
-            "TechRangeMultiplier": 5
+            "AbilityCooldown": -10
         }
     },
     "upgrade_ability_refresher": {
@@ -2503,7 +2501,7 @@
         "IsDisabled": false,
         "StreetBrawl": false,
         "IsImbue": false,
-        "AbilityCooldown": 9,
+        "AbilityCooldown": 8,
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
@@ -2513,7 +2511,7 @@
         "ProcBonusMagicDamage": {
             "Value": 40,
             "Scale": {
-                "Value": 1.2,
+                "Value": 0.9,
                 "Type": "spirit"
             }
         },
@@ -2586,11 +2584,11 @@
         "BonusHeavyMeleeDamage": 25,
         "MaxStacks": 6,
         "DebuffDuration": 8,
-        "StunDuration": 0.5,
+        "StunDuration": 0.75,
         "LightMeleeStacks": 1,
         "LightMeleeAmmo": 15,
         "HeavyMeleeMultiplier": 2,
-        "BulletResistReduction": -4,
+        "BulletResistReduction": -5,
         "PropertyUpgrades": {
             "MeleeDistanceScale": 40,
             "BulletResist": 12,
@@ -2719,7 +2717,7 @@
     },
     "upgrade_discord": {
         "Name": "Scourge",
-        "Description": "Apply <span class=\"highlight\">Spirit Resist</span> and an aura on a friendly target that deals <span class=\"highlight\">{g:citadel_inline_attribute:'SpiritIcon'}damage</span> to enemies proportional to their max health. <br>Can be self cast.",
+        "Description": "Apply <span class=\"highlight\">Spirit Resist</span>, <span class=\"highlight\">Debuff Resist</span> and an aura on a friendly target that deals <span class=\"highlight\">{g:citadel_inline_attribute:'SpiritIcon'}damage</span> to enemies proportional to their max health. Existing debuffs on the target are reduced.<br>Can be self cast.",
         "Cost": 6400,
         "Tier": 4,
         "Activation": "Press",
@@ -2741,7 +2739,7 @@
         "ChannelMoveSpeed": -1,
         "TickRate": 0.25,
         "MaxHealthPercentAsDPS": {
-            "Value": 2.5,
+            "Value": 2.3,
             "Scale": {
                 "Value": 0.0055,
                 "Type": "spirit"
@@ -2750,7 +2748,7 @@
         "AuraRadius": "10m",
         "TechResist": 40,
         "BonusHealth": 100,
-        "StatusResistancePercent": 17,
+        "StatusResistancePercent": 20,
         "PropertyUpgrades": {
             "MaxHealthPercentAsDPS": 2,
             "CombatBarrier": 300,
@@ -2819,7 +2817,7 @@
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
-        "TechPower": 35,
+        "TechPower": 40,
         "CombatBarrier": 1000,
         "BuffDuration": 20,
         "BonusAbilityDurationPercent": 15,
@@ -3267,6 +3265,7 @@
         "LowHealthThreshold": 50,
         "BonusHealth": 160,
         "BonusFireRate": 15,
+        "BulletLifestealPercent": 10,
         "FervorMovespeed": "4m",
         "FervorFireRate": 40,
         "FervorStatusResistancePercent": 40,
@@ -3454,6 +3453,8 @@
         "TechResist": 40,
         "BonusHealth": 100,
         "BaseAttackDamagePercent": 6,
+        "ActiveBonusMoveSpeed": "1m",
+        "MoveWhileShootingSpeedPenaltyReductionPercent": 100,
         "PropertyUpgrades": {
             "BulletLifestealPercent": 28,
             "ActiveBonusFireRate": 25,
@@ -3570,7 +3571,7 @@
     },
     "upgrade_glitch": {
         "Name": "Cursed Relic",
-        "Description": "Curses an enemy - <span class=\"highlight\">interrupting, Silencing, Disarming</span>, and <span class=\"highlight\">preventing item usage</span>. <span class=\"highlight\">Removes all non-ultimate buffs</span>.",
+        "Description": "Curses an enemy - <span class=\"highlight\">interrupting, Silencing, Disarming</span>, and <span class=\"highlight\">preventing item usage</span>. <span class=\"highlight\">Removes all non-ultimate buffs</span>.<br><br>Your own <span class=\"highlight\">Damage Output</span> is reduced for the duration.",
         "Cost": 6400,
         "Tier": 4,
         "Activation": "Press",
@@ -3594,7 +3595,7 @@
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
         "SkipFrames": 6,
-        "OutgoingDamagePenaltyPercent": -14,
+        "OutgoingDamagePenaltyPercent": -25,
         "PropertyUpgrades": {
             "AbilityCooldown": -40,
             "AbilityDuration": 0.25
@@ -6263,7 +6264,7 @@
         "HealPerStack": {
             "Value": 16,
             "Scale": {
-                "Value": 0.32,
+                "Value": 0.5,
                 "Type": "power_increase"
             }
         },
@@ -6514,7 +6515,7 @@
         "IsDisabled": false,
         "StreetBrawl": false,
         "IsImbue": false,
-        "AbilityCooldown": 35.0,
+        "AbilityCooldown": 37.0,
         "AbilityDuration": 4.0,
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
@@ -6813,11 +6814,9 @@
         "SlowPercent": 30,
         "GroundDashReductionPercent": -22,
         "SlowDuration": 3.5,
-        "BaseAttackDamagePercent": 15,
         "BuildUpDuration": 5,
         "BuildUpPerShot": 0.7,
         "PropertyUpgrades": {
-            "BaseAttackDamagePercent": 30,
             "SlowPercent": 20,
             "GroundDashReductionPercent": -10
         }
@@ -7024,7 +7023,7 @@
     },
     "upgrade_spirit_burn": {
         "Name": "Spirit Burn",
-        "Description": "Dealing significant {g:citadel_inline_attribute:'SpiritDamage'} to an enemy within 5s causes an explosion dealing damage and a burn to nearby enemies. While burning, enemies take damage over time and receive reduced healing.<br><span class=\"diminish\">Deals half-damage and has half-cooldown on non-heroes.</span>",
+        "Description": "Dealing significant {g:citadel_inline_attribute:'SpiritDamage'} to an enemy within 5s causes an explosion dealing damage and a burn to that enemy. While burning, enemies take damage over time and receive reduced healing.<br><span class=\"diminish\">The cooldown is per enemy, so each target can only be burned once per cooldown. Deals half-damage on non-heroes.</span>",
         "Cost": 6400,
         "Tier": 4,
         "Activation": "Passive",
@@ -7040,7 +7039,6 @@
         "IsDisabled": false,
         "StreetBrawl": false,
         "IsImbue": false,
-        "AbilityCooldown": 20,
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
@@ -7048,8 +7046,8 @@
         "TechRadiusMultiplier": 6,
         "DamageThreshold": 500,
         "DamageThresholdDuration": 5,
-        "ExplosionDamage": 110,
-        "ExplosionRadius": "12m",
+        "ExplosionDamage": 50,
+        "ExplosionRadius": "3m",
         "DPS": {
             "Value": 24,
             "Scale": {
@@ -7061,14 +7059,14 @@
         "HealAmpReceivePenaltyPercent": -70,
         "HealAmpRegenPenaltyPercent": -70,
         "TickRate": 0.5,
-        "CooldownReductionPctOnNonHeroes": 50,
+        "ImmunityDuration": 20,
         "DamagePctVsNonHeroes": 50,
         "PropertyUpgrades": {
             "ExplosionDamage": 160,
             "TechRadiusMultiplier": 12,
             "TechRangeMultiplier": 12,
             "DPS": 20,
-            "AbilityCooldown": -6
+            "ImmunityDuration": -6
         }
     },
     "upgrade_spirit_sap": {
@@ -7386,7 +7384,7 @@
         "IsDisabled": false,
         "StreetBrawl": false,
         "IsImbue": false,
-        "AbilityDuration": 5,
+        "AbilityDuration": 4.5,
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
@@ -7660,6 +7658,7 @@
         "BonusHealth": 90,
         "BonusFireRate": 32,
         "BonusSpirit": 40,
+        "BonusSpiritLifesteal": 10,
         "BonusAbilityDurationPercent": 15,
         "BuildUpPerShot": 0.75,
         "BuildUpDuration": 5,
@@ -8444,7 +8443,7 @@
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
-        "BaseAttackDamagePercent": 40,
+        "BaseAttackDamagePercent": 30,
         "StatusResistancePercent": 22,
         "StaminaCooldownReduction": -14,
         "SlowPercent": 30,
