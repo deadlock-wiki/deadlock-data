@@ -1477,9 +1477,9 @@
                         {
                             "Key": "LifeDrainPerSecond",
                             "Name": "Damage Per Second",
-                            "Value": 32,
+                            "Value": 24,
                             "Scale": {
-                                "Value": 0.43,
+                                "Value": 0.3225,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -1490,7 +1490,7 @@
                     {
                         "Key": "LifeDrainHealthMult",
                         "Name": "Damage to Heal",
-                        "Value": 75,
+                        "Value": 100,
                         "Type": "healing"
                     },
                     {
@@ -1504,7 +1504,7 @@
             },
             "Upgrades": [
                 {
-                    "LifeDrainPerSecond": 18
+                    "LifeDrainPerSecond": 13
                 },
                 {
                     "AbilityDuration": 2.5
@@ -1515,7 +1515,7 @@
                     "LifeDrainPerSecond": {
                         "Value": 0,
                         "Scale": {
-                            "Value": 0.4,
+                            "Value": 0.3,
                             "Type": "spirit"
                         }
                     },
@@ -1613,7 +1613,7 @@
                             "Title": "Effect Per Stack:",
                             "Key": "VulnerabilityPerStack",
                             "Name": "Damage Amplification",
-                            "Value": 8,
+                            "Value": 7,
                             "Type": "damage"
                         },
                         {
@@ -1651,7 +1651,7 @@
                     "DescKey": "ability_blood_shards_t2_desc"
                 },
                 {
-                    "VulnerabilityPerStack": 7,
+                    "VulnerabilityPerStack": 8,
                     "DescKey": "ability_blood_shards_t3_desc"
                 }
             ],
@@ -4320,7 +4320,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 265.0,
+                "Value": 250.0,
                 "Type": "cooldown"
             },
             "AbilityCooldownBetweenCharge": {
@@ -4835,7 +4835,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 195,
+                "Value": 185,
                 "Type": "cooldown"
             },
             "AbilityCooldownBetweenCharge": {
@@ -4869,7 +4869,7 @@
                             "Name": "Damage",
                             "Value": 65,
                             "Scale": {
-                                "Value": 2.8,
+                                "Value": 2.2,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -4894,7 +4894,7 @@
                         "Name": "Wake Up Delay",
                         "Value": 0.1,
                         "Scale": {
-                            "Value": 0.003,
+                            "Value": 0.002,
                             "Type": "spirit"
                         },
                         "Type": "duration"
@@ -4920,12 +4920,12 @@
                     "DescKey": "ability_sleep_dagger_t1_desc"
                 },
                 {
-                    "AbilityCooldown": -17.0,
+                    "SleepDuration": 1,
                     "FixationStacks": 15,
                     "DescKey": "ability_sleep_dagger_t2_desc"
                 },
                 {
-                    "SleepDuration": 1,
+                    "AbilityCooldown": -17.0,
                     "SlowPercent": 50,
                     "GroundDashReductionPercent": -50,
                     "DebuffDuration": 3,
@@ -5082,6 +5082,10 @@
                             "Key": "DamageBonusFixedPerStack",
                             "Name": "Weapon Damage",
                             "Value": 0.2,
+                            "Scale": {
+                                "Value": 0.0,
+                                "Type": "weapon_damage_increase"
+                            },
                             "Type": "bullet_damage"
                         },
                         {
@@ -5124,7 +5128,14 @@
                     "DescKey": "ability_stacking_damage_t2_desc"
                 },
                 {
-                    "DamageBonusFixedPerStack": 0.14
+                    "DamageBonusFixedPerStack": {
+                        "Value": 0.11,
+                        "Scale": {
+                            "Value": 0.0003,
+                            "Type": "weapon_damage_increase"
+                        }
+                    },
+                    "DescKey": "ability_stacking_damage_t3_desc"
                 }
             ],
             "Move": {
@@ -6610,12 +6621,12 @@
                     "BuffDuration": 15
                 },
                 {
-                    "MaxBonusMoveSpeedPercent": 45,
+                    "MaxBonusMoveSpeedPercent": 40,
                     "HealthRegen": 15,
                     "DescKey": "ability_nano_catform_t2_desc"
                 },
                 {
-                    "OutgoingDamagePercent": 20,
+                    "OutgoingDamagePercent": 18,
                     "DamageAmpDuration": 6,
                     "DamageAmpBuildDuration": 10,
                     "DescKey": "ability_nano_catform_t3_desc"
@@ -8060,7 +8071,7 @@
                 },
                 "RecastWindow": {
                     "Name": "Recast Window",
-                    "Value": 20,
+                    "Value": 16,
                     "Type": "cooldown"
                 }
             },
@@ -8425,7 +8436,7 @@
                     "Damage": {
                         "Value": 0,
                         "Scale": {
-                            "Value": 1.7,
+                            "Value": 1.5,
                             "Type": "spirit"
                         }
                     },
@@ -9274,15 +9285,15 @@
                     "AbilityCooldown": -18
                 },
                 {
-                    "SpiritBonus": 40,
+                    "SpiritBonus": 35,
                     "BuffDuration": 6,
                     "DescKey": "citadel_ability_flying_strike_t2_desc"
                 },
                 {
                     "AbilityCastRange": 15,
                     "CanGrappleAllyHeroes": 1,
-                    "AbilityCharges": 3,
-                    "AbilityCooldownBetweenCharge": 4,
+                    "AbilityCharges": 2,
+                    "AbilityCooldownBetweenCharge": 5,
                     "DescKey": "citadel_ability_flying_strike_t3_desc"
                 }
             ],
@@ -10051,9 +10062,9 @@
                         {
                             "Key": "Damage",
                             "Name": "Damage",
-                            "Value": 70,
+                            "Value": 55,
                             "Scale": {
-                                "Value": 0.8,
+                                "Value": 0.7,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -10061,7 +10072,7 @@
                         {
                             "Key": "MaxBounces",
                             "Name": "Bounces",
-                            "Value": 1
+                            "Value": 2
                         }
                     ]
                 },
@@ -10108,7 +10119,7 @@
                     "AbilityCooldown": -14
                 },
                 {
-                    "MaxBounces": 2,
+                    "MaxBounces": 1,
                     "Damage": {
                         "Value": 0,
                         "Scale": {
@@ -10242,7 +10253,7 @@
                     "DescKey": "viscous_restorative_goo_t2_desc"
                 },
                 {
-                    "AbilityCooldown": -25.0,
+                    "AbilityCooldown": -20.0,
                     "PurgeDebuffs": 1,
                     "DescKey": "viscous_restorative_goo_t3_desc"
                 }
@@ -10352,7 +10363,7 @@
                         {
                             "Key": "SlowPercent",
                             "Name": "Move Speed",
-                            "Value": 20,
+                            "Value": 30,
                             "Type": "slow"
                         },
                         {
@@ -10367,7 +10378,7 @@
                     {
                         "Key": "ImpactDuration",
                         "Name": "Slow Duration",
-                        "Value": 4
+                        "Value": 3
                     },
                     {
                         "Key": "LifeStealPercentOnHit",
@@ -10470,7 +10481,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 24.0,
+                "Value": 21.0,
                 "Type": "cooldown"
             },
             "AbilityCooldownBetweenCharge": {
@@ -10534,8 +10545,8 @@
                 },
                 {
                     "Damage": 70,
-                    "BulletResist": 10,
-                    "TechResist": 10,
+                    "BulletResist": 20,
+                    "TechResist": 20,
                     "DescKey": "viscous_goo_bowling_ball_t2_desc"
                 },
                 {
@@ -11621,7 +11632,7 @@
                 },
                 {
                     "MaxLifetime": 1.6,
-                    "AbilityCooldown": -11,
+                    "AbilityCooldown": -10,
                     "DescKey": "synth_plasma_flux_t3_desc"
                 }
             ],
@@ -11789,9 +11800,9 @@
                         {
                             "Key": "DPS",
                             "Name": "Damage Per Second",
-                            "Value": 34,
+                            "Value": 32,
                             "Scale": {
-                                "Value": 0.22,
+                                "Value": 0.21,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -11824,9 +11835,9 @@
                 },
                 {
                     "DPS": {
-                        "Value": 14,
+                        "Value": 13,
                         "Scale": {
-                            "Value": 0.11,
+                            "Value": 0.1,
                             "Type": "spirit"
                         }
                     },
@@ -11911,7 +11922,7 @@
                     {
                         "Key": "StealDuration",
                         "Name": "Steal Duration",
-                        "Value": 7,
+                        "Value": 5,
                         "Type": "duration"
                     }
                 ],
@@ -11922,7 +11933,8 @@
                     "DPS": 7
                 },
                 {
-                    "AbilityCharges": 2,
+                    "AbilityCharges": 1,
+                    "StealDuration": 2,
                     "DescKey": "mirage_fire_beetles_t2_desc"
                 },
                 {
@@ -12051,7 +12063,6 @@
                             "Type": "spirit"
                         }
                     },
-                    "HoldInPlaceDuration": 0.3,
                     "DescKey": "mirage_tornado_t3_desc"
                 }
             ],
@@ -12229,7 +12240,7 @@
                 },
                 {
                     "AbilityCooldown": -0.75,
-                    "ProcCooldown": -1,
+                    "ProcCooldown": -0.75,
                     "StunDuration": 0.5,
                     "MaxStacks": 1,
                     "DescKey": "mirage_sand_phantom_t3_desc"
@@ -15393,7 +15404,7 @@
                         {
                             "Key": "RecastWindow",
                             "Name": "Recast Window",
-                            "Value": 3.5,
+                            "Value": 4,
                             "Type": "cooldown"
                         }
                     ]
@@ -15433,7 +15444,7 @@
                 },
                 {
                     "MaxRecasts": 1,
-                    "AbilityCastRange": 3,
+                    "AbilityCastRange": 4,
                     "DescKey": "ability_vampirebat_batblink_t3_desc"
                 }
             ],
@@ -15837,7 +15848,7 @@
                             "Name": "Bonus Damage",
                             "Value": 40.0,
                             "Scale": {
-                                "Value": 1.8,
+                                "Value": 1.7,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -15906,7 +15917,7 @@
                     "DescKey": "drifter_blood_blast_t2_desc"
                 },
                 {
-                    "DebuffDuration": 2.3,
+                    "DebuffDuration": 2,
                     "UseHeavyMelee": 1,
                     "DamageHeavyMelee": {
                         "Value": 0,
@@ -16867,7 +16878,7 @@
                             "Title": "While Blessed:",
                             "Key": "BonusDamage",
                             "Name": "Bonus Damage",
-                            "Value": 100,
+                            "Value": 115,
                             "Scale": {
                                 "Value": 3.0,
                                 "Type": "power_increase"
@@ -18159,7 +18170,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 220,
+                "Value": 210,
                 "Type": "cooldown"
             },
             "AbilityCooldownBetweenCharge": {
@@ -18610,7 +18621,7 @@
             },
             "AbilityCooldownBetweenCharge": {
                 "Name": "Charge Delay",
-                "Value": 6,
+                "Value": 7,
                 "Type": "charge_cooldown"
             },
             "AbilityDuration": {
@@ -18666,7 +18677,7 @@
             },
             "Upgrades": [
                 {
-                    "AbilityDuration": 15
+                    "AbilityDuration": 20
                 },
                 {
                     "CombatBarrier": {
@@ -18681,7 +18692,7 @@
                 },
                 {
                     "DoorwayDistance": {
-                        "Value": 45,
+                        "Value": 40,
                         "Scale": {
                             "Value": 0.15,
                             "Type": "spirit"
@@ -18725,7 +18736,7 @@
             },
             "AbilityDuration": {
                 "Name": "Duration",
-                "Value": 20,
+                "Value": 15,
                 "Type": "duration"
             }
         },
@@ -18739,7 +18750,7 @@
                         {
                             "Key": "CartDamage",
                             "Name": "Cart Damage",
-                            "Value": 80,
+                            "Value": 60,
                             "Scale": {
                                 "Value": 0.75,
                                 "Type": "spirit"
@@ -18781,10 +18792,10 @@
             },
             "Upgrades": [
                 {
-                    "CartDamage": 60
+                    "CartDamage": 80
                 },
                 {
-                    "AbilityCastRange": 20,
+                    "AbilityCastRange": 25,
                     "WallImpactDamage": {
                         "Value": 75,
                         "Scale": {
@@ -18820,7 +18831,7 @@
             },
             "AbilityCastRange": {
                 "Name": "Cast Range",
-                "Value": 25,
+                "Value": 20,
                 "Type": "range"
             },
             "AbilityCooldown": {
@@ -19822,7 +19833,7 @@
                 },
                 {
                     "DealMaxHealthDamagePct": {
-                        "Value": 8,
+                        "Value": 7,
                         "Scale": {
                             "Value": 0.03,
                             "Type": "spirit"
@@ -21553,7 +21564,7 @@
                             "Title": "On Pommel Hit:",
                             "Key": "StunDuration",
                             "Name": "Stun Duration",
-                            "Value": 0.6,
+                            "Value": 0.8,
                             "Type": "duration"
                         },
                         {
@@ -21582,7 +21593,9 @@
                     "MeleeResistReduction": -30
                 },
                 {
-                    "StunDuration": 1.6
+                    "TargetLifesteal": 60,
+                    "TargetLifestealDuration": 7,
+                    "DescKey": "ability_fencer_riposte_t3_desc"
                 }
             ],
             "Range": {
@@ -22768,6 +22781,12 @@
                         "Name": "Bonus Current Health as Damage",
                         "Value": 0,
                         "Type": "bullet_damage"
+                    },
+                    {
+                        "Key": "NonPlayerBonusWeaponPower",
+                        "Name": "Weapon Damage vs. NPCs",
+                        "Value": 100,
+                        "Type": "bullet_damage"
                     }
                 ],
                 "DescKey": "ability_werewolf_unloadgun_desc"
@@ -23209,8 +23228,8 @@
             },
             "Upgrades": [
                 {
-                    "BulletResist": 20,
-                    "TechResist": 20,
+                    "BulletResist": 15,
+                    "TechResist": 15,
                     "DescKey": "ability_werewolf_transformation_t1_desc"
                 },
                 {
@@ -23227,7 +23246,7 @@
             "Move": {
                 "ChannelMoveSpeed": {
                     "Name": "Channel Move Speed",
-                    "Value": 7.62,
+                    "Value": 2.54,
                     "Type": "move_speed"
                 }
             },
@@ -23323,7 +23342,7 @@
             },
             "AbilityCastDelay": {
                 "Name": "Cast Delay",
-                "Value": 0.2,
+                "Value": 0.3,
                 "Type": "cast"
             },
             "AbilityCooldown": {
@@ -23728,9 +23747,9 @@
                         {
                             "Key": "Damage",
                             "Name": "Damage",
-                            "Value": 150,
+                            "Value": 165,
                             "Scale": {
-                                "Value": 0.8,
+                                "Value": 0.88,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -23764,12 +23783,12 @@
                     {
                         "Key": "BounceRadius",
                         "Name": "Bounce Range",
-                        "Value": 16.5,
+                        "Value": 17.5,
                         "Type": "distance"
                     },
                     {
                         "Key": "BounceGrace",
-                        "Value": 3
+                        "Value": 3.25
                     }
                 ],
                 "DescKey": "ability_unicorn_dazzlingorb_desc"
@@ -23781,7 +23800,7 @@
                     "DescKey": "ability_unicorn_dazzlingorb_t1_desc"
                 },
                 {
-                    "Damage": 80
+                    "Damage": 90
                 },
                 {
                     "MaxBounces": 8,
@@ -23807,7 +23826,7 @@
                 },
                 "PriorityBounceRadius": {
                     "Name": null,
-                    "Value": 12.5
+                    "Value": 13.5
                 }
             },
             "AbilityCastDelay": {
@@ -24255,8 +24274,8 @@
             },
             "Upgrades": [
                 {
-                    "BulletResist": 20,
-                    "TechResist": 20,
+                    "BulletResist": 15,
+                    "TechResist": 15,
                     "DescKey": "ability_werewolf_transformation_t1_desc"
                 },
                 {
@@ -24273,7 +24292,7 @@
             "Move": {
                 "ChannelMoveSpeed": {
                     "Name": "Channel Move Speed",
-                    "Value": 7.62,
+                    "Value": 2.54,
                     "Type": "move_speed"
                 }
             },
@@ -24369,7 +24388,7 @@
             },
             "AbilityCastDelay": {
                 "Name": "Cast Delay",
-                "Value": 0.2,
+                "Value": 0.3,
                 "Type": "cast"
             },
             "AbilityCooldown": {
