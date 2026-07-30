@@ -541,7 +541,7 @@
         "description": "After N seconds, if we don't have all the players connect to the match with the streaming map, the match will be abandoned. This only applies to the initial match start when going from players connecting to pregame, for dev"
     },
     "citadel_abandon_time_for_match_not_scored": {
-        "value": 300,
+        "value": 180,
         "description": "If someone abandons before this match time (in seconds), we will call the match forfeit and not update mmr for anyone in the match."
     },
     "citadel_ability_busy_queue_time": {
@@ -896,6 +896,7 @@
         "value": 20,
         "description": "Distance(m) from Objective to consider it pushed to"
     },
+    "citadel_bot_test_disconnect": true,
     "citadel_bot_test_mode": {
         "value": false,
         "description": "Set citadel bots to be and in test mode (default idle)"
@@ -1241,12 +1242,16 @@
     },
     "citadel_client_status_cycle_delay": 4,
     "citadel_commend_toast_enemy_seconds": {
-        "value": 4,
+        "value": 3,
         "description": "Number of seconds to show enemy commend toasts"
     },
     "citadel_commend_toast_seconds": {
-        "value": 30,
+        "value": 5,
         "description": "Number of seconds to show commend toasts"
+    },
+    "citadel_commend_use_toasts": {
+        "value": true,
+        "description": "Whether to use commend toasts (older) or the custom commend notification (newer)"
     },
     "citadel_cone_view_alpha": 80,
     "citadel_context_profile_page": true,
@@ -1558,8 +1563,11 @@
     "citadel_event_timer_min_view_angle": 12,
     "citadel_event_timer_scale_on_direct_look": 1.33,
     "citadel_fake_bots_as_pinging_player": false,
+    "citadel_fake_brawl_losses": -1,
+    "citadel_fake_brawl_wins": -1,
     "citadel_fake_comms_ban_timestamp": 0,
     "citadel_fake_death_gold": false,
+    "citadel_fake_losses": -1,
     "citadel_fake_low_pri_games_remaining": -1,
     "citadel_fake_no_match_metadata": false,
     "citadel_fake_number_of_games_played": -1,
@@ -1573,6 +1581,7 @@
         "value": -1,
         "description": "Set what subrank you want to fake for the match. -1 is disabled"
     },
+    "citadel_fake_wins": -1,
     "citadel_familiar_infiniteattach": false,
     "citadel_familiar_sprites_stuck_detection_duration": 0.2,
     "citadel_fencer_max_charge_unlag_players": 0.12,
@@ -1739,6 +1748,9 @@
     "citadel_hideout_enable_testing_tools": false,
     "citadel_hideout_exclusive_mode": true,
     "citadel_hideout_hero_id": 63,
+    "citadel_hideout_in_world_ranked_doodle": -1,
+    "citadel_hideout_in_world_ranked_fake_eligible_heroes": -1,
+    "citadel_hideout_in_world_ranked_fake_last_match": false,
     "citadel_hideout_intro_dismiss_escape_only": false,
     "citadel_hideout_intro_version_seen": 0,
     "citadel_hideout_map_enabled": {
@@ -1855,8 +1867,12 @@
         "description": "specifies how much of a gap between MMR's we allow to randomize lane assignment"
     },
     "citadel_lane_swap_available_duration": {
-        "value": 40,
-        "description": "How long lane swap is available, including pre-match time. Set to 0 to disable."
+        "value": 0,
+        "description": "How long lane swap is available in-game. Set to 0 to disable, -1 for infinity."
+    },
+    "citadel_lane_swap_available_duration_prematch": {
+        "value": -1,
+        "description": "How long lane swap is available in pre-game wait. Set to 0 to disable, -1 for infinity."
     },
     "citadel_leaderboard_cache_duration": {
         "value": 43200,
@@ -1913,7 +1929,7 @@
     "citadel_match_details_failure_delay_s": 3,
     "citadel_match_details_flip_teams": false,
     "citadel_match_details_lane_stats_time": 540,
-    "citadel_match_history_failure_delay_s": 3,
+    "citadel_match_history_cache_duration_s": 300,
     "citadel_match_intro_duration_full": {
         "value": 23,
         "description": "How long pre-match is until we start the match in the full version"
@@ -2058,6 +2074,18 @@
         "description": "Prevent spawning of neutrals if a player is in this range"
     },
     "citadel_neutral_weakpoints_enabled": false,
+    "citadel_new_abandon_rules_early_end_countdown": {
+        "value": 10,
+        "description": "[New Abandon Rules] Auto-match end countdown."
+    },
+    "citadel_new_abandon_rules_early_t1": {
+        "value": false,
+        "description": "[New Abandon Rules] Abandon is considered 'early' if this is before the first T1 kill, no matter the match time."
+    },
+    "citadel_new_abandon_rules_early_time": {
+        "value": 300,
+        "description": "[New Abandon Rules] Time for the 'early' trigger to take effect. Match will not be scored, etc."
+    },
     "citadel_new_player_flow_visible": {
         "value": true,
         "description": "Are we still showing the new player instructions"
@@ -2164,6 +2192,10 @@
         "value": false,
         "description": "When there is only a single player on the server, set whether or not we allow for instant pausing/unpausing"
     },
+    "citadel_pause_allow_in_pregame": {
+        "value": false,
+        "description": "Allow pausing in the pregame state"
+    },
     "citadel_pause_cooldown_time": {
         "value": 900,
         "description": "Number of seconds before a player is allowed to pause again"
@@ -2185,7 +2217,7 @@
         "description": "When set, we don't show the pause dialog when paused"
     },
     "citadel_pause_matchtime_before_allow": {
-        "value": 0,
+        "value": 120,
         "description": "How much match time before pausing is allowed by clients"
     },
     "citadel_pause_minimum_time": {
@@ -2235,10 +2267,7 @@
         "value": 0.37,
         "description": "LEGACY. See: citadel_show_chat_wheel_angle_threshold. Increase this to change how much you have to move your mouse to make the mousewheel visible."
     },
-    "citadel_play_page_fake_brawl_wins": 0,
     "citadel_play_page_fake_data": false,
-    "citadel_play_page_fake_normal_losses": 0,
-    "citadel_play_page_fake_normal_wins": 0,
     "citadel_play_page_finished_tutorial": false,
     "citadel_play_stats_laning_end_time": "UNKNOWN VALUE TYPE",
     "citadel_player_aim_at_hero_query_angle": 6,
@@ -2396,10 +2425,18 @@
         "description": "Enable AG2 use in portrait units"
     },
     "citadel_portrait_world_renderer_off": false,
+    "citadel_post_game_fake_local_account_id": 0,
     "citadel_post_game_local_player_screen_enabled": false,
+    "citadel_post_game_mvp_screen_enabled": true,
     "citadel_post_game_progress": {
         "value": 0,
         "description": "-1 = force disabled, 0 = default, 1 = force enabled"
+    },
+    "citadel_post_game_progress_use_test_data": false,
+    "citadel_post_game_ranked_screen_enabled": true,
+    "citadel_post_game_reset_commend_state": {
+        "value": false,
+        "description": "Temporarily resets the commend state for testing (will get set to false after a commend is triggered)"
     },
     "citadel_postgame_duration": {
         "value": 10,
@@ -2415,13 +2452,37 @@
         "description": "If positive, override initial spawn interval (in seconds) for all powerup camps"
     },
     "citadel_powerup_spawner_show_event_timer": false,
-    "citadel_pregame_fake_game_state": -1,
+    "citadel_pregame_fake_game_state": "EGameState_Invalid",
     "citadel_pregame_fake_match_intro_duration": 23,
     "citadel_pregame_fake_match_intro_state": -1,
+    "citadel_pregame_hero_draft_force_enabled": {
+        "value": false,
+        "description": "Turn on pre-game hero draft for testing"
+    },
+    "citadel_pregame_hero_draft_notification_time": 8,
+    "citadel_pregame_hero_draft_num_changes": {
+        "value": 1,
+        "description": "Number of per-player hero changes allowed during pregame hero draft"
+    },
+    "citadel_pregame_hero_draft_ranked": {
+        "value": true,
+        "description": "Turn on pre-game hero draft in ranked mode"
+    },
+    "citadel_pregame_hero_draft_unranked": {
+        "value": false,
+        "description": "Turn on pre-game hero draft in unranked mode"
+    },
     "citadel_pregame_hero_reveal_duration": 7,
     "citadel_pregame_hero_reveal_full_sequence": false,
+    "citadel_pregame_ranked_summary_force_enabled": false,
+    "citadel_pregame_ranked_summary_test_state": -1,
+    "citadel_pregame_ranked_summary_time": 10,
+    "citadel_pregame_use_intro_spawn": {
+        "value": false,
+        "description": "Whether to use the special intro team spawn locations during pregame"
+    },
     "citadel_pregame_wait_duration": {
-        "value": 5,
+        "value": 30,
         "description": "How long pre-match is until we start the match"
     },
     "citadel_previous_umuted_audio_level": 1,
@@ -2494,6 +2555,27 @@
         "value": 0,
         "description": "0: Normal. 1: Inhibit showing the hud abilities' upgrade panel when the scoreboard is open."
     },
+    "citadel_ranked_allow_overrides": true,
+    "citadel_ranked_hero_roster_random": {
+        "value": false,
+        "description": "Is the brawl hero roster set to random"
+    },
+    "citadel_ranked_progress_fake_calibration_games": -1,
+    "citadel_ranked_progress_fake_demotion_protection_games": -1,
+    "citadel_ranked_progress_fake_match_count": -1,
+    "citadel_ranked_progress_fake_max_rank": -1,
+    "citadel_ranked_progress_fake_missing": false,
+    "citadel_ranked_progress_fake_rank": -1,
+    "citadel_ranked_progress_fake_win_mask": -1,
+    "citadel_ranked_progress_fake_win_streak": -1,
+    "citadel_ranked_season_match_history_fake_rank_changes": {
+        "value": false,
+        "description": "Turn to show fake versions of the rank history"
+    },
+    "citadel_ranked_season_match_history_unfiltered": {
+        "value": false,
+        "description": "Turn on to show all matches in the ranked season view, not just matches from that ranked season."
+    },
     "citadel_rapid_stamina_regen": false,
     "citadel_recent_boss_damage_for_assist_time": 20,
     "citadel_recent_comms_recording_window": 10,
@@ -2531,6 +2613,7 @@
     },
     "citadel_restore_components_only_during_sellback": true,
     "citadel_roster_select_force_enable_priority_token": false,
+    "citadel_roster_select_force_select_any": false,
     "citadel_roster_select_hover_delay": 0.2,
     "citadel_rp_show_dev_messages": false,
     "citadel_rr_killstreak_for_death_line": {
@@ -2725,7 +2808,6 @@
     },
     "citadel_spoof_match_in_progress": false,
     "citadel_spoof_matchmaking_status": -1,
-    "citadel_spoof_num_matches_on_profile": -1,
     "citadel_spoof_profile_account": 0,
     "citadel_spray_max_range": {
         "value": 512,
@@ -2988,6 +3070,10 @@
         "value": 0,
         "description": "Set to > 0 to add dummy parties that have invites"
     },
+    "citadel_ui_show_hero_progression": {
+        "value": false,
+        "description": "Show hero progression UI (i.e. hero levels)"
+    },
     "citadel_ui_spoof_active_match_bot_account": {
         "value": 0,
         "description": "When set to non-zero, it will use this account as the account for bots to test UI on the active match"
@@ -3098,6 +3184,9 @@
         "value": false,
         "description": "Use hold sprint ability?"
     },
+    "citadel_use_new_abandon_rules_force_enabled": false,
+    "citadel_use_new_abandon_rules_ranked": true,
+    "citadel_use_new_abandon_rules_unranked": true,
     "citadel_use_new_minimap": {
         "value": true,
         "description": "Turns on/off the new minimap"
