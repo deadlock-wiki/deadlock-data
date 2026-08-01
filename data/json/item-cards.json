@@ -2391,7 +2391,7 @@
             "Main": [
                 {
                     "Key": "BaseAttackDamagePercent",
-                    "Value": 40,
+                    "Value": 30,
                     "Type": "bullet_damage"
                 }
             ],
@@ -2717,20 +2717,6 @@
         "StreetBrawl": false,
         "IsImbue": false,
         "Info1": {
-            "Type": "Innate",
-            "DescKey": null,
-            "Cooldown": null,
-            "ChargeUp": null,
-            "Main": [],
-            "Alt": [
-                {
-                    "Key": "BaseAttackDamagePercent",
-                    "Value": 15,
-                    "Type": "bullet_damage"
-                }
-            ]
-        },
-        "Info2": {
             "Type": "Passive",
             "DescKey": "#upgrade_slowing_bullets_desc",
             "Cooldown": null,
@@ -2762,7 +2748,6 @@
             ]
         },
         "Upgrades": {
-            "BaseAttackDamagePercent": 30,
             "SlowPercent": 20,
             "GroundDashReductionPercent": -10
         },
@@ -3918,6 +3903,11 @@
                 {
                     "Key": "BonusFireRate",
                     "Value": 15
+                },
+                {
+                    "Key": "BulletLifestealPercent",
+                    "Value": 10,
+                    "Type": "healing"
                 }
             ]
         },
@@ -4746,14 +4736,14 @@
         "Info2": {
             "Type": null,
             "DescKey": "#upgrade_crackshot_desc",
-            "Cooldown": 9,
+            "Cooldown": 8,
             "ChargeUp": null,
             "Main": [
                 {
                     "Key": "ProcBonusMagicDamage",
                     "Value": 40.0,
                     "Scale": {
-                        "Value": 1.2,
+                        "Value": 0.9,
                         "Type": "spirit"
                     },
                     "Type": "tech_damage"
@@ -8110,7 +8100,7 @@
             "Alt": [
                 {
                     "Key": "BonusAbilityDurationPercent",
-                    "Value": 15,
+                    "Value": 13,
                     "Type": "duration"
                 },
                 {
@@ -8138,7 +8128,7 @@
             "Main": [
                 {
                     "Key": "BonusFireRate",
-                    "Value": 32,
+                    "Value": 30,
                     "Type": "fire_rate",
                     "UsageFlags": "IntrinsicallyProvidedInAbility"
                 },
@@ -8146,6 +8136,12 @@
                     "Key": "BonusSpirit",
                     "Value": 40,
                     "Type": "tech_damage",
+                    "UsageFlags": "IntrinsicallyProvidedInAbility"
+                },
+                {
+                    "Key": "BonusSpiritLifesteal",
+                    "Value": 10,
+                    "Type": "healing",
                     "UsageFlags": "IntrinsicallyProvidedInAbility"
                 }
             ],
@@ -11108,7 +11104,7 @@
     "upgrade_discord": {
         "Key": "upgrade_discord",
         "Name": "Scourge",
-        "Description": "Apply <span class=\"highlight\">Spirit Resist</span> and an aura on a friendly target that deals <span class=\"highlight\">{g:citadel_inline_attribute:'SpiritIcon'}damage</span> to enemies proportional to their max health. <br>Can be self cast.",
+        "Description": "Apply <span class=\"highlight\">Spirit Resist</span>, <span class=\"highlight\">Debuff Resist</span> and an aura on a friendly target that deals <span class=\"highlight\">{g:citadel_inline_attribute:'SpiritIcon'}damage</span> to enemies proportional to their max health. Existing debuffs on the target are reduced.<br>Can be self cast.",
         "Cost": 6400,
         "Tier": 4,
         "Slot": "Tech",
@@ -11132,11 +11128,6 @@
                     "Key": "BonusHealth",
                     "Value": 100,
                     "Type": "health"
-                },
-                {
-                    "Key": "StatusResistancePercent",
-                    "Value": 17,
-                    "Type": "duration"
                 }
             ]
         },
@@ -11148,7 +11139,7 @@
             "Main": [
                 {
                     "Key": "MaxHealthPercentAsDPS",
-                    "Value": 2.5,
+                    "Value": 2.3,
                     "Scale": {
                         "Value": 0.0055,
                         "Type": "spirit"
@@ -11158,6 +11149,12 @@
                 {
                     "Key": "TechResist",
                     "Value": 40,
+                    "UsageFlags": "ConditionallyApplied"
+                },
+                {
+                    "Key": "StatusResistancePercent",
+                    "Value": 20,
+                    "Type": "duration",
                     "UsageFlags": "ConditionallyApplied"
                 }
             ],
@@ -11755,12 +11752,6 @@
             "Main": [],
             "Alt": [
                 {
-                    "Key": "BonusFireRate",
-                    "Value": 5,
-                    "Type": "fire_rate",
-                    "UsageFlags": "ConditionallyApplied"
-                },
-                {
                     "Key": "TechResist",
                     "Value": 5,
                     "Type": "tech_armor_up",
@@ -11777,7 +11768,7 @@
         "Info2": {
             "Type": "Active",
             "DescKey": "#upgrade_ability_power_shard_active",
-            "Cooldown": 35.0,
+            "Cooldown": 30.0,
             "ChargeUp": null,
             "Main": [],
             "Alt": []
@@ -11785,15 +11776,16 @@
         "Upgrades": {
             "BulletResist": 5,
             "TechResist": 5,
-            "BonusFireRate": 5,
-            "AbilityCooldown": -10,
-            "TechRadiusMultiplier": 5,
-            "TechRangeMultiplier": 5
+            "AbilityCooldown": -10
         },
         "Other": {
             "AbilityUnitTargetLimit": {
                 "Key": "AbilityUnitTargetLimit",
                 "Value": 1
+            },
+            "AbilityPostCastDuration": {
+                "Key": "AbilityPostCastDuration",
+                "Value": 0.5
             },
             "AbilityCooldownBetweenCharge": {
                 "Key": "AbilityCooldownBetweenCharge",
@@ -11804,6 +11796,10 @@
                 "Key": "ChannelMoveSpeed",
                 "Value": -1,
                 "Type": "move_speed"
+            },
+            "ImbuedCooldownMultiplier": {
+                "Key": "ImbuedCooldownMultiplier",
+                "Value": 1
             }
         }
     },
@@ -12792,7 +12788,7 @@
                     "Key": "HealPerStack",
                     "Value": 16,
                     "Scale": {
-                        "Value": 0.32,
+                        "Value": 0.5,
                         "Type": "power_increase"
                     },
                     "Type": "healing"
@@ -14597,7 +14593,7 @@
         "Info1": {
             "Type": "Active",
             "DescKey": "#upgrade_self_bubble_desc",
-            "Cooldown": 35.0,
+            "Cooldown": 37.0,
             "ChargeUp": null,
             "Main": [
                 {
@@ -14877,7 +14873,7 @@
     "upgrade_glitch": {
         "Key": "upgrade_glitch",
         "Name": "Cursed Relic",
-        "Description": "Curses an enemy - <span class=\"highlight\">interrupting, Silencing, Disarming</span>, and <span class=\"highlight\">preventing item usage</span>. <span class=\"highlight\">Removes all non-ultimate buffs</span>.",
+        "Description": "Curses an enemy - <span class=\"highlight\">interrupting, Silencing, Disarming</span>, and <span class=\"highlight\">preventing item usage</span>. <span class=\"highlight\">Removes all non-ultimate buffs</span>.<br><br>Your own <span class=\"highlight\">Damage Output</span> is reduced for the duration.",
         "Cost": 6400,
         "Tier": 4,
         "Slot": "Tech",
@@ -14894,21 +14890,6 @@
         "StreetBrawl": false,
         "IsImbue": false,
         "Info1": {
-            "Type": "Innate",
-            "DescKey": null,
-            "Cooldown": null,
-            "ChargeUp": null,
-            "Main": [],
-            "Alt": [
-                {
-                    "Key": "OutgoingDamagePenaltyPercent",
-                    "Value": -14,
-                    "Type": "damage",
-                    "UsageFlags": "ConditionallyApplied"
-                }
-            ]
-        },
-        "Info2": {
             "Type": "Active",
             "DescKey": "#upgrade_glitch_desc",
             "Cooldown": 55.0,
@@ -14933,6 +14914,12 @@
                     "Key": "AbilityCastRange",
                     "Value": "20m",
                     "Type": "range"
+                },
+                {
+                    "Key": "OutgoingDamagePenaltyPercent",
+                    "Value": -25,
+                    "Type": "damage",
+                    "UsageFlags": "ConditionallyApplied"
                 }
             ]
         },
@@ -15330,6 +15317,12 @@
                     "Type": "fire_rate"
                 },
                 {
+                    "Key": "ActiveBonusMoveSpeed",
+                    "Value": "1m",
+                    "Type": "move_speed",
+                    "UsageFlags": "ConditionallyApplied"
+                },
+                {
                     "Key": "TechResist",
                     "Value": 40,
                     "Type": "tech_armor_up"
@@ -15363,6 +15356,12 @@
                 "Key": "ChannelMoveSpeed",
                 "Value": -1,
                 "Type": "move_speed"
+            },
+            "MoveWhileShootingSpeedPenaltyReductionPercent": {
+                "Key": "MoveWhileShootingSpeedPenaltyReductionPercent",
+                "Value": 100,
+                "Type": "move_speed",
+                "UsageFlags": "ConditionallyApplied"
             }
         }
     },
@@ -16183,7 +16182,7 @@
                 },
                 {
                     "Key": "BulletResistReduction",
-                    "Value": -4,
+                    "Value": -5,
                     "Type": "bullet_armor_down",
                     "UsageFlags": "ConditionallyApplied"
                 },
@@ -16195,7 +16194,7 @@
             "Alt": [
                 {
                     "Key": "StunDuration",
-                    "Value": 0.5
+                    "Value": 0.75
                 },
                 {
                     "Key": "DebuffDuration",
@@ -16396,7 +16395,7 @@
                 },
                 {
                     "Key": "TechPower",
-                    "Value": 35,
+                    "Value": 40,
                     "Type": "tech_damage",
                     "UsageFlags": "ConditionallyApplied"
                 }
@@ -17131,7 +17130,7 @@
                 },
                 {
                     "Key": "AbilityDuration",
-                    "Value": 5,
+                    "Value": 4.5,
                     "Type": "duration"
                 }
             ],
@@ -18729,7 +18728,7 @@
     "upgrade_spirit_burn": {
         "Key": "upgrade_spirit_burn",
         "Name": "Spirit Burn",
-        "Description": "Dealing significant {g:citadel_inline_attribute:'SpiritDamage'} to an enemy within 5s causes an explosion dealing damage and a burn to nearby enemies. While burning, enemies take damage over time and receive reduced healing.<br><span class=\"diminish\">Deals half-damage and has half-cooldown on non-heroes.</span>",
+        "Description": "Dealing significant {g:citadel_inline_attribute:'SpiritDamage'} to an enemy within 5s causes an explosion dealing damage and a burn to that enemy. While burning, enemies take damage over time and receive reduced healing.<br><span class=\"diminish\">The cooldown is per enemy, so each target can only be burned once per cooldown. Deals half-damage on non-heroes.</span>",
         "Cost": 6400,
         "Tier": 4,
         "Slot": "Tech",
@@ -18762,7 +18761,7 @@
         "Info2": {
             "Type": "Passive",
             "DescKey": "#upgrade_spirit_burn_desc",
-            "Cooldown": 20,
+            "Cooldown": null,
             "ChargeUp": null,
             "Main": [
                 {
@@ -18772,7 +18771,7 @@
                 },
                 {
                     "Key": "ExplosionDamage",
-                    "Value": 110,
+                    "Value": 50,
                     "Type": "tech_damage"
                 },
                 {
@@ -18787,8 +18786,9 @@
             ],
             "Alt": [
                 {
-                    "Key": "ExplosionRadius",
-                    "Value": "12m"
+                    "Key": "ImmunityDuration",
+                    "Value": 20,
+                    "Type": "cooldown"
                 },
                 {
                     "Key": "DebuffDuration",
@@ -18807,7 +18807,7 @@
             "TechRadiusMultiplier": 12,
             "TechRangeMultiplier": 12,
             "DPS": 20,
-            "AbilityCooldown": -6
+            "ImmunityDuration": -6
         },
         "Other": {
             "AbilityUnitTargetLimit": {
@@ -18833,6 +18833,10 @@
                 "Key": "DamageThresholdDuration",
                 "Value": 5
             },
+            "ExplosionRadius": {
+                "Key": "ExplosionRadius",
+                "Value": "3m"
+            },
             "HealAmpRegenPenaltyPercent": {
                 "Key": "HealAmpRegenPenaltyPercent",
                 "Value": -70,
@@ -18841,10 +18845,6 @@
             "TickRate": {
                 "Key": "TickRate",
                 "Value": 0.5
-            },
-            "CooldownReductionPctOnNonHeroes": {
-                "Key": "CooldownReductionPctOnNonHeroes",
-                "Value": 50
             },
             "DamagePctVsNonHeroes": {
                 "Key": "DamagePctVsNonHeroes",
