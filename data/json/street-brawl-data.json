@@ -2,7 +2,9 @@
     "ability-changes": {
         "ability_blood_bomb": {
             "Name": "Essence Bomb",
-            "Radius": 6,
+            "Radius": {
+                "Value": 6
+            },
             "Upgrades": {
                 "2": {
                     "Radius": 1.7
@@ -21,7 +23,9 @@
         },
         "ability_bounce_pad": {
             "Name": "Bounce Pad",
-            "AbilityCooldown": 21
+            "AbilityCooldown": {
+                "Value": 21
+            }
         },
         "ability_crackshot": {
             "Name": "Crackshot",
@@ -37,15 +41,21 @@
         },
         "ability_flame_dash": {
             "Name": "Flame Dash",
-            "FlameAuraRadius": 3.82
+            "FlameAuraRadius": {
+                "Value": 3.82
+            }
         },
         "ability_frank_painaura": {
             "Name": "Aura of Suffering",
-            "Radius": 6.5
+            "Radius": {
+                "Value": 6.5
+            }
         },
         "ability_ice_grenade": {
             "Name": "Frost Grenade",
-            "Radius": 5.52,
+            "Radius": {
+                "Value": 5.52
+            },
             "Upgrades": {
                 "3": {
                     "Radius": 1.7
@@ -54,14 +64,18 @@
         },
         "ability_nano_shadow_pulse": {
             "Name": "Return to Shadows",
-            "AbilityCooldown": 60
+            "AbilityCooldown": {
+                "Value": 60
+            }
         },
         "ability_necro_gravestone": {
             "Name": "Borrowed Decree",
             "AbilityDuration": {
                 "Value": 12,
                 "Scale": {
-                    "Value": 0.028
+                    "1": {
+                        "Value": 0.028
+                    }
                 }
             },
             "Damage": {
@@ -87,7 +101,9 @@
         },
         "ability_necro_hauntingskull": {
             "Name": "Jar of Dead",
-            "AbilityCooldownBetweenCharge": 16
+            "AbilityCooldownBetweenCharge": {
+                "Value": 16
+            }
         },
         "ability_unicorn_dazzlingorb": {
             "Name": "Shining Wonder",
@@ -95,17 +111,27 @@
         },
         "ability_warden_riot_protocol": {
             "Name": "Last Stand",
-            "HealthStealPct": 7.5,
-            "HealthStealPctHero": 48.75
+            "HealthStealPct": {
+                "Value": 7.5
+            },
+            "HealthStealPctHero": {
+                "Value": 48.75
+            }
         },
         "citadel_ability_bebop_laser_beam": {
             "Name": "Hyper Beam",
-            "AbilityChannelTime": 6
+            "AbilityChannelTime": {
+                "Value": 6
+            }
         },
         "citadel_ability_chrono_pulse_grenade": {
             "Name": "Pulse Grenade",
-            "Radius": 4.67,
-            "RadiusIncreasePerPulse": 0.85
+            "Radius": {
+                "Value": 4.67
+            },
+            "RadiusIncreasePerPulse": {
+                "Value": 0.85
+            }
         },
         "citadel_ability_lash_down_strike": {
             "Name": "Ground Strike",
@@ -144,7 +170,9 @@
         },
         "citadel_ability_lightning_ball": {
             "Name": "Lightning Ball",
-            "ShockRadius": 3.6,
+            "ShockRadius": {
+                "Value": 3.6
+            },
             "Upgrades": {
                 "3": {
                     "ShockRadius": 1.27
@@ -167,7 +195,9 @@
         },
         "citadel_ability_rocket_barrage": {
             "Name": "Heavy Barrage",
-            "AbilityDuration": 5,
+            "AbilityDuration": {
+                "Value": 5
+            },
             "Upgrades": {
                 "2": {
                     "AbilityDuration": 3.5
@@ -176,7 +206,9 @@
         },
         "citadel_ability_shieldedsentry": {
             "Name": "Mini Turret",
-            "AbilityCooldown": 26
+            "AbilityCooldown": {
+                "Value": 26
+            }
         },
         "citadel_ability_storm_cloud": {
             "Name": "Storm Cloud",
@@ -194,7 +226,9 @@
         },
         "citadel_ability_tengu_urn": {
             "Name": "Entangling Thorns",
-            "Radius": 5.1,
+            "Radius": {
+                "Value": 5.1
+            },
             "Upgrades": {
                 "2": {
                     "Radius": 1.7
@@ -203,7 +237,9 @@
         },
         "mirage_teleport": {
             "Name": "Traveler",
-            "AbilityCooldown": 110.0
+            "AbilityCooldown": {
+                "Value": 110.0
+            }
         }
     },
     "item-buckets": {
