@@ -1083,7 +1083,7 @@
         "BaseAttackDamagePercent": {
             "Value": 25,
             "Scale": {
-                "Value": 0.2,
+                "Value": 0.3,
                 "Type": "spirit"
             }
         },
@@ -1907,7 +1907,7 @@
         },
         "DoorwayCloseCooldown": 8,
         "DoorwayDistance": {
-            "Value": 70,
+            "Value": 65,
             "Scale": [
                 {
                     "Value": 0.0,
@@ -2161,6 +2161,14 @@
         "ModifierDrag": {
             "Class": "LuggageDrag",
             "Subclass": "Drag",
+            "StompIgnoreLingerModifier": {
+                "Class": "Base",
+                "Subclass": "LuggageDragStompIgnoreLinger",
+                "EnabledStateMask": [
+                    "DoormanLuggageDragged"
+                ]
+            },
+            "StompIgnoreLingerDuration": 0.5,
             "EnabledStateMask": [
                 "IgnorePortals"
             ]
@@ -2354,13 +2362,6 @@
         },
         "AbilityUnitTargetLimit": 1,
         "ArmTime": 0.1,
-        "BarrelDamage": {
-            "Value": 80,
-            "Scale": {
-                "Value": 1.05,
-                "Type": "spirit"
-            }
-        },
         "BarrelHeavyMeleeForceForward": 1800,
         "BarrelHeavyMeleeForceUp": 300,
         "BarrelLifetime": 8,
@@ -2380,7 +2381,32 @@
             "BehaviorAllowAltCast",
             "BehaviorCastImmediateOnOtherAbility"
         ],
+        "BurnDuration": {
+            "Value": 3,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "BurnModifier": {
+            "Class": "BaseDot",
+            "Subclass": "BarrelBurn"
+        },
         "ChannelMoveSpeed": -1,
+        "DPS": {
+            "Value": 13.3333,
+            "Scale": {
+                "Value": 0.175,
+                "Type": "spirit"
+            }
+        },
+        "ImpactDamage": {
+            "Value": 40,
+            "Scale": {
+                "Value": 0.525,
+                "Type": "spirit"
+            }
+        },
         "IsDisabled": false,
         "Key": "ability_explosive_barrel",
         "MinTimeBeforeDestroy": 0.1,
@@ -2392,6 +2418,7 @@
                 "Type": "radius"
             }
         },
+        "TickRate": 0.5,
         "TossDuration": 0.4,
         "TossSpeed": 3.556,
         "Upgrades": [
@@ -2402,10 +2429,17 @@
                 "AbilityCharges": 1
             },
             {
-                "BarrelDamage": {
-                    "Value": 80,
+                "ImpactDamage": {
+                    "Value": 40,
                     "Scale": {
-                        "Value": 0.5,
+                        "Value": 0.25,
+                        "Type": "spirit"
+                    }
+                },
+                "DPS": {
+                    "Value": 13.3333,
+                    "Scale": {
+                        "Value": 0.083333,
                         "Type": "spirit"
                     }
                 },
@@ -3118,7 +3152,7 @@
         "IsDisabled": false,
         "Key": "ability_fencer_riposte",
         "LiftHeight": 240,
-        "MeleeResistReduction": -22,
+        "MeleeResistReduction": -25,
         "MeleeResistReductionDuration": {
             "Value": 3.0,
             "Scale": {
@@ -3158,11 +3192,12 @@
                 "AbilityCooldown": -8
             },
             {
-                "MeleeResistReduction": -30
+                "MeleeResistReduction": -25,
+                "StunDuration": 0.4
             },
             {
-                "TargetLifesteal": 60,
-                "TargetLifestealDuration": 7
+                "TargetLifesteal": 75,
+                "TargetLifestealDuration": 13
             }
         ]
     },
@@ -9398,13 +9433,8 @@
                 "AbilityDuration": 0.4
             },
             {
-                "DealMaxHealthDamagePct": {
-                    "Value": 7,
-                    "Scale": {
-                        "Value": 0.03,
-                        "Type": "spirit"
-                    }
-                },
+                "MaxHealthBuffPct": 10,
+                "MaxHealthBuffDuration": 16,
                 "AbilityCooldown": -13
             }
         ],
@@ -9488,7 +9518,7 @@
         "Damage": {
             "Value": 120,
             "Scale": {
-                "Value": 1.0,
+                "Value": 0.7,
                 "Type": "spirit"
             }
         },
@@ -12201,7 +12231,7 @@
         },
         "PetrifyDamageBreakThreshold": 200,
         "PetrifyDuration": {
-            "Value": 2.0,
+            "Value": 2.2,
             "Scale": {
                 "Value": 1,
                 "Type": "duration"
@@ -12213,7 +12243,7 @@
             "StatusEffectPriority": 0
         },
         "Radius": {
-            "Value": 8,
+            "Value": 12,
             "Scale": {
                 "Value": 1,
                 "Type": "range"
@@ -14862,7 +14892,7 @@
                 "Type": "duration"
             }
         },
-        "ClubSlowPercent": -30,
+        "ClubSlowPercent": 30,
         "CooldownBetweenCards": 0.5,
         "Damage": {
             "Value": 45,
@@ -14886,7 +14916,7 @@
         "HeartHeal": {
             "Value": 75,
             "Scale": {
-                "Value": 1.0,
+                "Value": 0.75,
                 "Type": "spirit"
             }
         },
@@ -14936,7 +14966,7 @@
                         "Type": "spirit"
                     }
                 },
-                "ClubSlowPercent": -20
+                "ClubSlowPercent": 20
             }
         ]
     },
@@ -15953,7 +15983,7 @@
         "SlowPercent": 40,
         "Upgrades": [
             {
-                "Damage": 65
+                "Damage": 45
             },
             {
                 "AbilityCooldown": -22.0
@@ -16803,7 +16833,7 @@
             },
             {
                 "DPS": 58.5,
-                "ShockRadius": 1.5
+                "ShockRadius": 1.75
             }
         ],
         "ZapModifier": {
@@ -17026,7 +17056,7 @@
         "TurretHealMult": 1.0,
         "Upgrades": [
             {
-                "SpiritResist": 40
+                "AbilityDuration": 1.5
             },
             {
                 "AbilityCooldown": -20.0,
@@ -17035,7 +17065,7 @@
             {
                 "MaxHealthRegenPct": 2.0,
                 "HealRadius": 3,
-                "AbilityDuration": 1.5
+                "SpiritResist": 40
             }
         ]
     },
@@ -17636,8 +17666,6 @@
             "Class": "SlowBase",
             "Subclass": "ForgeMiniTurretDebuff"
         },
-        "DecayingResist": 80,
-        "DecayingResistDuration": 6,
         "InnateModifier": {
             "Class": "ForgeMiniTurretInnateModifier",
             "Subclass": "ForgeMiniTurretInnateModifier"
@@ -17674,9 +17702,9 @@
             }
         },
         "TurretBaseHealth": {
-            "Value": 90,
+            "Value": 100,
             "Scale": {
-                "Value": 7.8,
+                "Value": 9,
                 "Type": "power_increase"
             }
         },
@@ -18846,7 +18874,7 @@
                 "AbilityCooldown": -25
             },
             {
-                "StunDuration": 1,
+                "StunDuration": 0.75,
                 "Damage": {
                     "Value": 0,
                     "Scale": {
@@ -19549,7 +19577,7 @@
                 "MagicDamagePerBullet": {
                     "Value": 0,
                     "Scale": {
-                        "Value": 0.06,
+                        "Value": 0.045,
                         "Type": "spirit"
                     }
                 },
@@ -19867,7 +19895,7 @@
         "BonusDamage": {
             "Value": 40.0,
             "Scale": {
-                "Value": 1.7,
+                "Value": 1.4,
                 "Type": "spirit"
             }
         },
@@ -20035,7 +20063,7 @@
     "drifter_shadow_mark": {
         "AbilityCastDelay": 0.15,
         "AbilityCooldown": {
-            "Value": 24,
+            "Value": 26,
             "Scale": {
                 "Value": 1,
                 "Type": "cooldown"
@@ -20101,7 +20129,7 @@
             },
             {
                 "AbilityDuration": 3,
-                "AbilityCooldown": -12
+                "AbilityCooldown": -10
             },
             {
                 "DotHealthPercent": 1.5,
