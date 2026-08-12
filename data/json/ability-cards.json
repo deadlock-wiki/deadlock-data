@@ -620,7 +620,7 @@
                 },
                 {
                     "DPS": 58.5,
-                    "ShockRadius": 1.5,
+                    "ShockRadius": 1.75,
                     "DescKey": "citadel_ability_lightning_ball_t3_desc"
                 }
             ],
@@ -1128,7 +1128,7 @@
             },
             "Upgrades": [
                 {
-                    "Damage": 65
+                    "Damage": 45
                 },
                 {
                     "AbilityCooldown": -22.0
@@ -2580,8 +2580,8 @@
                         {
                             "Title": "Club",
                             "Key": "ClubSlowPercent",
-                            "Name": "Movement Slow",
-                            "Value": -30,
+                            "Name": "Move Speed",
+                            "Value": 30,
                             "Type": "slow"
                         },
                         {
@@ -2590,7 +2590,7 @@
                             "Name": "Heal",
                             "Value": 75,
                             "Scale": {
-                                "Value": 1.0,
+                                "Value": 0.75,
                                 "Type": "spirit"
                             },
                             "Type": "healing"
@@ -2624,7 +2624,7 @@
                             "Type": "spirit"
                         }
                     },
-                    "ClubSlowPercent": -20,
+                    "ClubSlowPercent": 20,
                     "DescKey": "citadel_ability_card_toss_t3_desc"
                 }
             ],
@@ -2937,7 +2937,7 @@
                     "MagicDamagePerBullet": {
                         "Value": 0,
                         "Scale": {
-                            "Value": 0.06,
+                            "Value": 0.045,
                             "Type": "spirit"
                         }
                     },
@@ -3165,9 +3165,9 @@
                         {
                             "Key": "TurretBaseHealth",
                             "Name": "Turret Health",
-                            "Value": 90,
+                            "Value": 100,
                             "Scale": {
-                                "Value": 7.8,
+                                "Value": 9,
                                 "Type": "power_increase"
                             },
                             "Type": "health"
@@ -3260,14 +3260,6 @@
                 "BossDamagePercentOutgoing": {
                     "Name": null,
                     "Value": 30
-                },
-                "DecayingResist": {
-                    "Name": null,
-                    "Value": 80
-                },
-                "DecayingResistDuration": {
-                    "Name": null,
-                    "Value": 6
                 },
                 "MeleeResist": {
                     "Name": null,
@@ -3393,7 +3385,7 @@
             },
             "Upgrades": [
                 {
-                    "SpiritResist": 40,
+                    "AbilityDuration": 1.5,
                     "DescKey": "citadel_ability_mobile_resupply_t1_desc"
                 },
                 {
@@ -3404,7 +3396,7 @@
                 {
                     "MaxHealthRegenPct": 2.0,
                     "HealRadius": 3,
-                    "AbilityDuration": 1.5,
+                    "SpiritResist": 40,
                     "DescKey": "citadel_ability_mobile_resupply_t3_desc"
                 }
             ],
@@ -5955,17 +5947,21 @@
                 "Main": {
                     "Props": [
                         {
-                            "Key": "ArmTime",
-                            "Name": "Arm Time",
-                            "Value": 0.1,
-                            "Type": "duration"
+                            "Key": "ImpactDamage",
+                            "Name": "Impact Damage",
+                            "Value": 40,
+                            "Scale": {
+                                "Value": 0.525,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
                         },
                         {
-                            "Key": "BarrelDamage",
-                            "Name": "Explosion Damage",
-                            "Value": 80,
+                            "Key": "DPS",
+                            "Name": "Damage Per Second",
+                            "Value": 13.3333,
                             "Scale": {
-                                "Value": 1.05,
+                                "Value": 0.175,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -5978,7 +5974,24 @@
                         }
                     ]
                 },
-                "Alt": [],
+                "Alt": [
+                    {
+                        "Key": "BurnDuration",
+                        "Name": "Burn Duration",
+                        "Value": 3,
+                        "Scale": {
+                            "Value": 1,
+                            "Type": "duration"
+                        },
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "ArmTime",
+                        "Name": "Arm Time",
+                        "Value": 0.1,
+                        "Type": "duration"
+                    }
+                ],
                 "DescKey": "ability_explosive_barrel_desc"
             },
             "Upgrades": [
@@ -5989,10 +6002,17 @@
                     "AbilityCharges": 1
                 },
                 {
-                    "BarrelDamage": {
-                        "Value": 80,
+                    "ImpactDamage": {
+                        "Value": 40,
                         "Scale": {
-                            "Value": 0.5,
+                            "Value": 0.25,
+                            "Type": "spirit"
+                        }
+                    },
+                    "DPS": {
+                        "Value": 13.3333,
+                        "Scale": {
+                            "Value": 0.083333,
                             "Type": "spirit"
                         }
                     },
@@ -6058,6 +6078,10 @@
                 "MinTimeBeforeDestroy": {
                     "Name": null,
                     "Value": 0.1
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 0.5
                 },
                 "TossSpeed": {
                     "Name": null,
@@ -9494,7 +9518,7 @@
                     "AbilityCooldown": -25
                 },
                 {
-                    "StunDuration": 1,
+                    "StunDuration": 0.75,
                     "Damage": {
                         "Value": 0,
                         "Scale": {
@@ -15247,7 +15271,7 @@
                             "Key": "PetrifyDuration",
                             "Name": "Petrify Duration",
                             "StatusEffect": "Petrify",
-                            "Value": 2.0,
+                            "Value": 2.2,
                             "Scale": {
                                 "Value": 1,
                                 "Type": "duration"
@@ -15347,7 +15371,7 @@
             },
             "Radius": {
                 "Name": "Radius",
-                "Value": 8,
+                "Value": 12,
                 "Scale": {
                     "Value": 1,
                     "Type": "range"
@@ -17067,7 +17091,7 @@
                     "MagicDamagePerBullet": {
                         "Value": 0,
                         "Scale": {
-                            "Value": 0.06,
+                            "Value": 0.045,
                             "Type": "spirit"
                         }
                     },
@@ -17898,7 +17922,7 @@
                             "Name": "Bonus Damage",
                             "Value": 40.0,
                             "Scale": {
-                                "Value": 1.7,
+                                "Value": 1.4,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -18141,7 +18165,7 @@
                 },
                 {
                     "AbilityDuration": 3,
-                    "AbilityCooldown": -12,
+                    "AbilityCooldown": -10,
                     "DescKey": "drifter_shadow_mark_t2_desc"
                 },
                 {
@@ -18202,7 +18226,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 24,
+                "Value": 26,
                 "Scale": {
                     "Value": 1,
                     "Type": "cooldown"
@@ -19985,7 +20009,7 @@
                             "Name": "Weapon Damage",
                             "Value": 25,
                             "Scale": {
-                                "Value": 0.2,
+                                "Value": 0.3,
                                 "Type": "spirit"
                             },
                             "Type": "bullet_damage"
@@ -21035,7 +21059,7 @@
                         {
                             "Key": "DoorwayDistance",
                             "Name": "Doorway Distance",
-                            "Value": 70,
+                            "Value": 65,
                             "Scale": [
                                 {
                                     "Value": 0.0,
@@ -22328,14 +22352,10 @@
                         },
                         {
                             "Title": "On Impact:",
-                            "Key": "DealMaxHealthDamagePct",
-                            "Name": "Max Health Damage",
+                            "Key": "MaxHealthBuffPct",
+                            "Name": "Max Health",
                             "Value": 0,
-                            "Scale": {
-                                "Value": 0.0,
-                                "Type": "spirit"
-                            },
-                            "Type": "tech_damage"
+                            "Type": "health"
                         }
                     ]
                 },
@@ -22364,13 +22384,8 @@
                     "DescKey": "ability_punkgoat_goatflip_t2_desc"
                 },
                 {
-                    "DealMaxHealthDamagePct": {
-                        "Value": 7,
-                        "Scale": {
-                            "Value": 0.03,
-                            "Type": "spirit"
-                        }
-                    },
+                    "MaxHealthBuffPct": 10,
+                    "MaxHealthBuffDuration": 16,
                     "AbilityCooldown": -13
                 }
             ],
@@ -22384,6 +22399,17 @@
                     "Name": null,
                     "Value": 2.54,
                     "Type": "distance"
+                }
+            },
+            "Damage": {
+                "DealMaxHealthDamagePct": {
+                    "Name": null,
+                    "Value": 0,
+                    "Scale": {
+                        "Value": 0.0,
+                        "Type": "spirit"
+                    },
+                    "Type": "tech_damage"
                 }
             },
             "Other": {
@@ -22680,7 +22706,7 @@
                             "Name": "Damage",
                             "Value": 120,
                             "Scale": {
-                                "Value": 1.0,
+                                "Value": 0.7,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -24275,7 +24301,7 @@
                             "Title": "On Pommel Hit:",
                             "Key": "MeleeResistReduction",
                             "Name": "Melee Resist",
-                            "Value": -22,
+                            "Value": -25,
                             "Type": "bullet_armor_down"
                         }
                     ]
@@ -24298,11 +24324,13 @@
                     "AbilityCooldown": -8
                 },
                 {
-                    "MeleeResistReduction": -30
+                    "MeleeResistReduction": -25,
+                    "StunDuration": 0.4,
+                    "DescKey": "ability_fencer_riposte_t2_desc"
                 },
                 {
-                    "TargetLifesteal": 60,
-                    "TargetLifestealDuration": 7,
+                    "TargetLifesteal": 75,
+                    "TargetLifestealDuration": 13,
                     "DescKey": "ability_fencer_riposte_t3_desc"
                 }
             ],
