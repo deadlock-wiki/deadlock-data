@@ -26517,17 +26517,17 @@
                 },
                 {
                     "CombatBarrier": {
-                        "Value": 80,
+                        "Value": 70,
                         "Scale": {
-                            "Value": 0.7,
+                            "Value": 0.76,
                             "Type": "spirit"
                         }
                     },
                     "DescKey": "ability_unicorn_prismaticguard_t2_desc"
                 },
                 {
-                    "DebuffDuration": 1.5,
-                    "AbilityCooldown": -18,
+                    "DebuffDuration": 1.25,
+                    "AbilityCooldown": -20,
                     "DescKey": "ability_unicorn_prismaticguard_t3_desc"
                 }
             ],
@@ -26550,7 +26550,7 @@
             },
             "AbilityCooldown": {
                 "Name": "Cooldown",
-                "Value": 32,
+                "Value": 34,
                 "Scale": {
                     "Value": 1,
                     "Type": "cooldown"
@@ -26583,7 +26583,7 @@
                         {
                             "Key": "MagicIncreasePerStack",
                             "Name": "Spirit Amp per Stack",
-                            "Value": 8,
+                            "Value": 7,
                             "Type": "tech_armor_down"
                         },
                         {
@@ -26638,7 +26638,7 @@
                     "DescKey": "ability_unicorn_luminousstrike_t2_desc"
                 },
                 {
-                    "MagicIncreasePerStack": 3,
+                    "MagicIncreasePerStack": 4,
                     "FireRatePerStack": 9
                 }
             ],
@@ -26727,9 +26727,9 @@
                         {
                             "Key": "Damage",
                             "Name": "Damage",
-                            "Value": 165,
+                            "Value": 140,
                             "Scale": {
-                                "Value": 0.88,
+                                "Value": 0.6,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -26767,7 +26767,7 @@
                     {
                         "Key": "BounceRadius",
                         "Name": "Bounce Range",
-                        "Value": 17.5,
+                        "Value": 16.5,
                         "Scale": {
                             "Value": 1,
                             "Type": "range"
@@ -26788,7 +26788,14 @@
                     "DescKey": "ability_unicorn_dazzlingorb_t1_desc"
                 },
                 {
-                    "Damage": 90
+                    "Damage": {
+                        "Value": 90,
+                        "Scale": {
+                            "Value": 0.45,
+                            "Type": "spirit"
+                        }
+                    },
+                    "DescKey": "ability_unicorn_dazzlingorb_t2_desc"
                 },
                 {
                     "MaxBounces": 8,

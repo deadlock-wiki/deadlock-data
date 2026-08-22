@@ -11254,7 +11254,7 @@
         ],
         "BounceGrace": 3.25,
         "BounceRadius": {
-            "Value": 17.5,
+            "Value": 16.5,
             "Scale": {
                 "Value": 1,
                 "Type": "range"
@@ -11262,9 +11262,9 @@
         },
         "ChannelMoveSpeed": -1,
         "Damage": {
-            "Value": 165,
+            "Value": 140,
             "Scale": {
-                "Value": 0.88,
+                "Value": 0.6,
                 "Type": "spirit"
             }
         },
@@ -11313,7 +11313,13 @@
                 "SlowPercent": 20
             },
             {
-                "Damage": 90
+                "Damage": {
+                    "Value": 90,
+                    "Scale": {
+                        "Value": 0.45,
+                        "Type": "spirit"
+                    }
+                }
             },
             {
                 "MaxBounces": 8,
@@ -11390,7 +11396,7 @@
         },
         "IsDisabled": false,
         "Key": "ability_unicorn_luminousstrike",
-        "MagicIncreasePerStack": 8,
+        "MagicIncreasePerStack": 7,
         "Name": "Radiant Daggers",
         "PostExplosionDuration": 0.8,
         "PreExplosionDuration": 1.4,
@@ -11404,14 +11410,14 @@
                 "AbilityCooldown": -22
             },
             {
-                "MagicIncreasePerStack": 3,
+                "MagicIncreasePerStack": 4,
                 "FireRatePerStack": 9
             }
         ]
     },
     "ability_unicorn_prismaticguard": {
         "AbilityCooldown": {
-            "Value": 32,
+            "Value": 34,
             "Scale": {
                 "Value": 1,
                 "Type": "cooldown"
@@ -11476,16 +11482,16 @@
             },
             {
                 "CombatBarrier": {
-                    "Value": 80,
+                    "Value": 70,
                     "Scale": {
-                        "Value": 0.7,
+                        "Value": 0.76,
                         "Type": "spirit"
                     }
                 }
             },
             {
-                "DebuffDuration": 1.5,
-                "AbilityCooldown": -18
+                "DebuffDuration": 1.25,
+                "AbilityCooldown": -20
             }
         ]
     },
