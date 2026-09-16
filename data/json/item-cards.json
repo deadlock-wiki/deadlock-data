@@ -1160,7 +1160,7 @@
     "upgrade_non_player_bonus_sacrifice": {
         "Key": "upgrade_non_player_bonus_sacrifice",
         "Name": "Cultist Sacrifice",
-        "Description": "Target an enemy NPC and consume it for <span class=\"highlight\">180% Bonus Souls</span> and grants a powerful long lasting buff.",
+        "Description": "Target an enemy NPC and consume it for <span class=\"highlight\">170% Bonus Souls</span> and grants a powerful long lasting buff.",
         "Cost": 3200,
         "Tier": 3,
         "Slot": "Weapon",
@@ -1278,7 +1278,7 @@
             },
             "BonusSoulsPct": {
                 "Key": "BonusSoulsPct",
-                "Value": 180
+                "Value": 170
             },
             "BonusAbilityCharges": {
                 "Key": "BonusAbilityCharges",
@@ -1619,7 +1619,7 @@
                 },
                 {
                     "Key": "MaxSlowPercent",
-                    "Value": 75,
+                    "Value": 60,
                     "Type": "slow"
                 }
             ],
@@ -1856,7 +1856,7 @@
                 },
                 {
                     "Key": "BulletArmorReduction",
-                    "Value": -9,
+                    "Value": -10,
                     "Type": "bullet_armor_down",
                     "UsageFlags": "ConditionallyApplied"
                 }
@@ -2420,7 +2420,7 @@
             "Main": [
                 {
                     "Key": "SlowPercent",
-                    "Value": 30,
+                    "Value": 24,
                     "Type": "slow",
                     "UsageFlags": "ConditionallyApplied"
                 }
@@ -2428,7 +2428,7 @@
             "Alt": [
                 {
                     "Key": "GroundDashReductionPercent",
-                    "Value": -22,
+                    "Value": -20,
                     "Type": "slow",
                     "UsageFlags": "ConditionallyApplied"
                 },
@@ -2446,8 +2446,8 @@
         "Upgrades": {
             "StatusResistancePercent": 10,
             "BaseAttackDamagePercent": 35,
-            "SlowPercent": 20,
-            "GroundDashReductionPercent": -10
+            "SlowPercent": 16,
+            "GroundDashReductionPercent": -8
         },
         "Other": {
             "AbilityUnitTargetLimit": {
@@ -2724,7 +2724,7 @@
             "Main": [
                 {
                     "Key": "SlowPercent",
-                    "Value": 30,
+                    "Value": 24,
                     "Type": "slow",
                     "UsageFlags": "ConditionallyApplied"
                 }
@@ -2732,7 +2732,7 @@
             "Alt": [
                 {
                     "Key": "GroundDashReductionPercent",
-                    "Value": -22,
+                    "Value": -20,
                     "Type": "slow",
                     "UsageFlags": "ConditionallyApplied"
                 },
@@ -2748,8 +2748,8 @@
             ]
         },
         "Upgrades": {
-            "SlowPercent": 20,
-            "GroundDashReductionPercent": -10
+            "SlowPercent": 16,
+            "GroundDashReductionPercent": -8
         },
         "Other": {
             "AbilityUnitTargetLimit": {
@@ -4181,7 +4181,7 @@
             "Main": [
                 {
                     "Key": "BulletResistReduction",
-                    "Value": -13,
+                    "Value": -12,
                     "Type": "bullet_armor_down",
                     "UsageFlags": "ConditionallyApplied"
                 }
@@ -4916,7 +4916,7 @@
                 },
                 {
                     "Key": "SlowPercent",
-                    "Value": 25,
+                    "Value": 20,
                     "Type": "slow",
                     "UsageFlags": "ConditionallyApplied"
                 }
@@ -4938,7 +4938,7 @@
             "CloseRangeBonusWeaponPower": 30,
             "MeleeResistPercent": 30,
             "BonusHealth": 150,
-            "SlowPercent": 5
+            "SlowPercent": 4
         },
         "Other": {
             "AbilityUnitTargetLimit": {
@@ -5067,7 +5067,7 @@
                     "Key": "DotHealthPercent",
                     "Value": 1.9,
                     "Scale": {
-                        "Value": 0.005,
+                        "Value": 0.006,
                         "Type": "spirit"
                     },
                     "Type": "tech_damage"
@@ -6573,7 +6573,7 @@
                 },
                 {
                     "Key": "HealLifePercentOutOfCombat",
-                    "Value": 2
+                    "Value": 2.25
                 }
             ],
             "Alt": []
@@ -6650,12 +6650,12 @@
             "Main": [
                 {
                     "Key": "AbilityLifestealPercentHero",
-                    "Value": 25,
+                    "Value": 28,
                     "Type": "healing"
                 },
                 {
                     "Key": "BulletLifestealPercent",
-                    "Value": 25,
+                    "Value": 28,
                     "Type": "healing"
                 }
             ],
@@ -6879,7 +6879,7 @@
                 },
                 {
                     "Key": "StackingGoldPerMinute",
-                    "Value": 18,
+                    "Value": 16,
                     "Type": "souls"
                 }
             ],
@@ -8128,13 +8128,13 @@
             "Main": [
                 {
                     "Key": "BonusFireRate",
-                    "Value": 30,
+                    "Value": 25,
                     "Type": "fire_rate",
                     "UsageFlags": "IntrinsicallyProvidedInAbility"
                 },
                 {
                     "Key": "BonusSpirit",
-                    "Value": 40,
+                    "Value": 30,
                     "Type": "tech_damage",
                     "UsageFlags": "IntrinsicallyProvidedInAbility"
                 },
@@ -8148,7 +8148,7 @@
             "Alt": [
                 {
                     "Key": "BuildUpPerShot",
-                    "Value": 0.75
+                    "Value": 1.08
                 },
                 {
                     "Key": "AbilityDuration",
@@ -8747,7 +8747,7 @@
                 },
                 {
                     "Key": "MovementSpeedSlow",
-                    "Value": 40,
+                    "Value": 32,
                     "Type": "slow",
                     "UsageFlags": "ConditionallyApplied"
                 }
@@ -8908,7 +8908,7 @@
                 },
                 {
                     "Key": "CurrentHealthDamage",
-                    "Value": 8,
+                    "Value": 7.5,
                     "Type": "tech_damage",
                     "LocTokenOverride": "MagicShockDamage"
                 }
@@ -9222,13 +9222,13 @@
             "Main": [
                 {
                     "Key": "MovementSpeedSlow",
-                    "Value": 30,
+                    "Value": 24,
                     "Type": "slow",
                     "UsageFlags": "ConditionallyApplied"
                 },
                 {
                     "Key": "GroundDashReductionPercent",
-                    "Value": -12,
+                    "Value": -10,
                     "Type": "slow",
                     "UsageFlags": "ConditionallyApplied"
                 }
@@ -9242,7 +9242,7 @@
             ]
         },
         "Upgrades": {
-            "MovementSpeedSlow": 15,
+            "MovementSpeedSlow": 12,
             "GroundDashReductionPercent": -10,
             "BonusHealth": 100,
             "BonusSprintSpeed": 1
@@ -9922,7 +9922,7 @@
             "Main": [
                 {
                     "Key": "SlowPercent",
-                    "Value": 15,
+                    "Value": 12,
                     "Type": "slow",
                     "UsageFlags": "ConditionallyApplied"
                 }
@@ -9989,18 +9989,18 @@
         "Info2": {
             "Type": "Active",
             "DescKey": "#upgrade_containment_desc",
-            "Cooldown": 27,
+            "Cooldown": 29,
             "ChargeUp": null,
             "Main": [
                 {
                     "Key": "SlowPercent",
-                    "Value": 20,
+                    "Value": 16,
                     "Type": "slow",
                     "UsageFlags": "ConditionallyApplied"
                 },
                 {
                     "Key": "GroundDashReductionPercent",
-                    "Value": -30,
+                    "Value": -26,
                     "Type": "slow",
                     "UsageFlags": "ConditionallyApplied"
                 }
@@ -10019,7 +10019,7 @@
             ]
         },
         "Upgrades": {
-            "SlowPercent": 10,
+            "SlowPercent": 8,
             "AbilityCooldown": -18,
             "GroundDashReductionPercent": -6
         },
@@ -10183,7 +10183,7 @@
                 },
                 {
                     "Key": "PercentDamage",
-                    "Value": 30,
+                    "Value": 35,
                     "Type": "damage"
                 },
                 {
@@ -10200,7 +10200,7 @@
             "Alt": [
                 {
                     "Key": "AbilityCastRange",
-                    "Value": "20m",
+                    "Value": "25m",
                     "Type": "range"
                 },
                 {
@@ -10698,7 +10698,7 @@
             "Alt": [
                 {
                     "Key": "SlowPercent",
-                    "Value": 20,
+                    "Value": 16,
                     "Type": "slow",
                     "UsageFlags": "ConditionallyApplied"
                 },
@@ -10761,7 +10761,7 @@
                 },
                 {
                     "Key": "SlowPercent",
-                    "Value": 30,
+                    "Value": 24,
                     "Type": "slow",
                     "UsageFlags": "ConditionallyApplied"
                 },
@@ -11021,9 +11021,9 @@
             "Main": [
                 {
                     "Key": "DotHealthPercent",
-                    "Value": 2.6,
+                    "Value": 1.95,
                     "Scale": {
-                        "Value": 0.004,
+                        "Value": 0.003,
                         "Type": "spirit"
                     },
                     "Type": "tech_damage"
@@ -11056,7 +11056,7 @@
                 },
                 {
                     "Key": "AbilityDuration",
-                    "Value": 10,
+                    "Value": 12,
                     "Type": "duration"
                 }
             ]
@@ -11066,7 +11066,7 @@
             "BonusHealth": 90,
             "HealAmpReceivePenaltyPercent": -20,
             "HealAmpRegenPenaltyPercent": -20,
-            "DotHealthPercent": 0.5,
+            "DotHealthPercent": 0.375,
             "AbilityCooldown": -10
         },
         "Other": {
@@ -11431,7 +11431,7 @@
                 },
                 {
                     "Key": "SlowPercent",
-                    "Value": 50,
+                    "Value": 40,
                     "Type": "slow",
                     "UsageFlags": "ConditionallyApplied"
                 },
@@ -11603,7 +11603,7 @@
                 },
                 {
                     "Key": "SlowPercent",
-                    "Value": 35,
+                    "Value": 28,
                     "Type": "slow",
                     "UsageFlags": "ConditionallyApplied"
                 }
@@ -11616,7 +11616,7 @@
                 },
                 {
                     "Key": "GroundDashReductionPercent",
-                    "Value": -40,
+                    "Value": -36,
                     "Type": "slow",
                     "UsageFlags": "ConditionallyApplied"
                 }
@@ -11627,7 +11627,7 @@
             "AbilityCooldown": -22,
             "TechRadiusMultiplier": 10,
             "TechRangeMultiplier": 10,
-            "SlowPercent": 15
+            "SlowPercent": 12
         },
         "Other": {
             "AbilityCastRange": {
@@ -12097,7 +12097,9 @@
         "Tier": 3,
         "Slot": "Weapon",
         "Activation": "InstantCast",
-        "Components": null,
+        "Components": [
+            "upgrade_sprint_booster"
+        ],
         "TargetTypes": null,
         "ShopFilters": [
             "MagicDamage",
@@ -12121,7 +12123,7 @@
                 },
                 {
                     "Key": "BonusSprintSpeed",
-                    "Value": "1.5m",
+                    "Value": "2m",
                     "Type": "move_speed"
                 }
             ]
@@ -12129,7 +12131,7 @@
         "Info2": {
             "Type": "Active",
             "DescKey": "#upgrade_cloaking_device_active_desc",
-            "Cooldown": 45.0,
+            "Cooldown": 37.0,
             "ChargeUp": null,
             "Main": [
                 {
@@ -12527,7 +12529,7 @@
             },
             "SlowPercent": {
                 "Key": "SlowPercent",
-                "Value": 40,
+                "Value": 32,
                 "Type": "slow",
                 "UsageFlags": "ConditionallyApplied"
             },
@@ -12788,7 +12790,7 @@
                     "Key": "HealPerStack",
                     "Value": 16,
                     "Scale": {
-                        "Value": 0.5,
+                        "Value": 0.45,
                         "Type": "power_increase"
                     },
                     "Type": "healing"
@@ -12815,7 +12817,7 @@
         "Other": {
             "AbilityCastRange": {
                 "Key": "AbilityCastRange",
-                "Value": "35m",
+                "Value": "32m",
                 "Type": "range"
             },
             "AbilityUnitTargetLimit": {
@@ -12839,7 +12841,7 @@
             },
             "Radius": {
                 "Key": "Radius",
-                "Value": "35m",
+                "Value": "32m",
                 "Type": "distance"
             }
         }
@@ -14191,7 +14193,7 @@
                 },
                 {
                     "Key": "SlowPercent",
-                    "Value": 30,
+                    "Value": 24,
                     "Type": "slow",
                     "UsageFlags": "ConditionallyApplied"
                 }
@@ -14238,7 +14240,7 @@
             },
             "GroundDashReductionPercent": {
                 "Key": "GroundDashReductionPercent",
-                "Value": -25,
+                "Value": -22,
                 "UsageFlags": "ConditionallyApplied"
             },
             "ModelScaleGrowth": {
@@ -14297,7 +14299,7 @@
                 },
                 {
                     "Key": "MovementSpeedSlow",
-                    "Value": 60,
+                    "Value": 48,
                     "Type": "slow",
                     "UsageFlags": "ConditionallyApplied"
                 },
@@ -14453,7 +14455,7 @@
             },
             "SlowPercent": {
                 "Key": "SlowPercent",
-                "Value": 60,
+                "Value": 48,
                 "Type": "slow",
                 "UsageFlags": "ConditionallyApplied"
             },
@@ -14987,7 +14989,7 @@
             "Alt": [
                 {
                     "Key": "SlowPercent",
-                    "Value": 15,
+                    "Value": 12,
                     "UsageFlags": "ConditionallyApplied"
                 },
                 {
@@ -15774,22 +15776,22 @@
             "Main": [
                 {
                     "Key": "SlowPercent",
-                    "Value": 60,
+                    "Value": 48,
                     "Type": "slow",
                     "UsageFlags": "ConditionallyApplied"
                 },
                 {
                     "Key": "LifestealHeal",
-                    "Value": 100,
+                    "Value": 120,
                     "Scale": {
-                        "Value": 1.5,
+                        "Value": 1.75,
                         "Type": "power_increase"
                     },
                     "Type": "healing"
                 },
                 {
                     "Key": "LifestealHealPercent",
-                    "Value": 30,
+                    "Value": 35,
                     "Scale": {
                         "Value": 0.5,
                         "Type": "power_increase"
@@ -16378,6 +16380,11 @@
                     "Key": "BonusAbilityDurationPercent",
                     "Value": 15,
                     "Type": "duration"
+                },
+                {
+                    "Key": "UltimateCooldownReduction",
+                    "Value": 10,
+                    "Type": "cooldown"
                 }
             ]
         },
@@ -16612,7 +16619,7 @@
                     "Key": "HealingPerCast",
                     "Value": 65,
                     "Scale": {
-                        "Value": 2.0,
+                        "Value": 1.7,
                         "Type": "power_increase"
                     },
                     "Type": "healing"
@@ -17283,9 +17290,9 @@
             "Main": [
                 {
                     "Key": "BulletsBonusMagicDamage",
-                    "Value": 25.0,
+                    "Value": 20.0,
                     "Scale": {
-                        "Value": 0.49,
+                        "Value": 0.38,
                         "Type": "spirit"
                     },
                     "Type": "tech_damage"
@@ -17719,9 +17726,7 @@
         "Tier": 3,
         "Slot": "Armor",
         "Activation": "Passive",
-        "Components": [
-            "upgrade_sprint_booster"
-        ],
+        "Components": null,
         "TargetTypes": null,
         "ShopFilters": [
             "Durability",
@@ -17738,23 +17743,13 @@
             "Main": [],
             "Alt": [
                 {
-                    "Key": "BonusSprintSpeed",
-                    "Value": "2.0m",
-                    "Type": "move_speed"
-                },
-                {
-                    "Key": "OutOfCombatHealthRegen",
-                    "Value": 2,
-                    "Type": "healing"
-                },
-                {
                     "Key": "BonusHealth",
                     "Value": 125,
                     "Type": "health"
                 },
                 {
                     "Key": "SpiritPower",
-                    "Value": 10,
+                    "Value": 6,
                     "Type": "tech_damage"
                 }
             ]
@@ -17847,6 +17842,11 @@
                 "Key": "RevealOnSpottedDuration",
                 "Value": 1.25,
                 "Type": "duration"
+            },
+            "BonusSprintSpeed": {
+                "Key": "BonusSprintSpeed",
+                "Value": "0m",
+                "Type": "move_speed"
             }
         }
     },
@@ -18882,7 +18882,7 @@
             "Alt": [
                 {
                     "Key": "MovementSpeedSlow",
-                    "Value": 30,
+                    "Value": 24,
                     "Type": "slow",
                     "UsageFlags": "ConditionallyApplied",
                     "LocTokenOverride": "LightningScrollMysticSlow"
@@ -18972,12 +18972,12 @@
             },
             "SlowPercent": {
                 "Key": "SlowPercent",
-                "Value": 80,
+                "Value": 64,
                 "Type": "slow"
             },
             "GroundDashReductionPercent": {
                 "Key": "GroundDashReductionPercent",
-                "Value": -12,
+                "Value": -10,
                 "Type": "slow",
                 "UsageFlags": "ConditionallyApplied"
             }
@@ -20702,22 +20702,22 @@
                 },
                 {
                     "Key": "MovementSpeedSlow",
-                    "Value": 40,
+                    "Value": 32,
                     "Type": "slow",
                     "UsageFlags": "ConditionallyApplied"
                 },
                 {
                     "Key": "GroundDashReductionPercent",
-                    "Value": -40,
+                    "Value": -36,
                     "Type": "slow",
                     "UsageFlags": "ConditionallyApplied"
                 }
             ]
         },
         "Upgrades": {
-            "GroundDashReductionPercent": -10,
+            "GroundDashReductionPercent": -9,
             "HealthPctDamage": 5,
-            "MovementSpeedSlow": 10,
+            "MovementSpeedSlow": 8,
             "HealAmpReceivePenaltyPercent": -15,
             "HealAmpRegenPenaltyPercent": -15,
             "OutgoingDamagePenaltyPercent": -15,
@@ -21426,7 +21426,7 @@
             "Alt": [
                 {
                     "Key": "AbilityDuration",
-                    "Value": 14,
+                    "Value": 20,
                     "Type": "duration"
                 },
                 {
@@ -21565,7 +21565,7 @@
             "Main": [
                 {
                     "Key": "OutgoingDamagePenaltyPercent",
-                    "Value": -10
+                    "Value": -15
                 }
             ],
             "Alt": [
@@ -21589,7 +21589,7 @@
             "Main": [
                 {
                     "Key": "BonusGoldPerMinute",
-                    "Value": 90,
+                    "Value": 80,
                     "Type": "souls"
                 }
             ],

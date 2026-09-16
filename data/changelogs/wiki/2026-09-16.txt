@@ -1,0 +1,216 @@
+{{Update layout
+| prev_update = {{Update link|August|22|2026}}
+| month = September
+| day = 16
+| year = 2026
+| next_update =
+| source = https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844115010490072
+| source_title = Minor Update - 09-16-2026
+| hide_general = 
+| notes =
+* [[Unstable Rift]] comeback resist max values now scale over the course of the game. Previously the max values were 35%. Now it is 10% + 1% per minute (around ~20% for the first one), with an upper limit of 40% at 30 minutes.
+* Removed a fixed amount of extra bonus souls you would get for being behind even a very slightly amount in net worth for both hero kill bounties as well as [[Unstable Rift]] bounties (this had a larger impact on the early to mid game)
+* Slightly reduced comeback bounties in general (this is in addition to the above change)
+* A portion of the comeback souls earned by players above enemy teams average net worth is instead distributed via the tick gold system that is given to the lowest 2 players (70% of the extra comeback value goes to them)
+* [[Guardian]] bounty increased by 10%
+* [[Walker]] bounty increased by 5%
+* Share for objectives bounty to nearby heroes reduced from 30% to 25% (the remaining gets split between all 6 players)
+* Respawn Time at 20 minutes increased from 35s to 38s (does not affect the max values later on, just a little higher earlier)
+* Using [[Parry|parry]] now pauses reloading
+* Parrying while doing a regular dash will now cancel the dash (and momentum) and [[Parry|parry]] on the spot
+* Getting stunned now pauses your reload rather than restarting it
+* Breakables in the underground tunnels initial spawn time increased from 3m to 5m
+* Breakables in the underground tunnels respawn rate increased from 3m to 5m
+* All move slow values reduced by ~20% globally
+* All ground dash slows reduced by ~10% globally
+* Slows now also affect air drag by 35% of the slow value (convar citadel_enable_slows_affect_air_drag
+to toggle the slow drag behavior on and off)
+* Dashes and light melee's no longer pause your gun's cycle time (this is a general change that affects high-cycle time weapons the most like {{HeroIcon|Silver}} or {{HeroIcon|Abrams}})
+
+== Items ==
+=== {{ItemIcon|Weakening Headshot}} ===
+* {{Change|}} Bullet Resist Reduction reduced from -13% to -12%
+=== {{ItemIcon|Hollow Point}} ===
+* {{Change|}} Bullet Resist Reduction increased from 9% to 10%
+=== {{ItemIcon|Toxic Bullets}} ===
+* {{Change|}} Spirit scaling increased from 0.005% to 0.006%
+=== {{ItemIcon|Shadow Weave}} ===
+* {{Change|}} Now builds from {{ItemIcon|Sprint Boots}}
+* {{Change|}} Sprint speed increased from 1.5 to 2
+* {{Change|}} Cooldown reduced from 45s to 37s
+=== {{ItemIcon|Cultist Sacrifice}} ===
+* {{Change|}} Bounty reduced from 180% to 170%
+=== {{ItemIcon|Ballistic Enchantment}} ===
+* {{Change|}} Duration increased from 14s to 20s
+=== {{ItemIcon|Spiritual Overflow}} ===
+* {{Change|}} Buildup is 35% slower
+* {{Change|}} Spirit Power on proc reduced from 40 to 30
+* {{Change|}} Fire Rate reduced from 30% to 25%
+=== {{ItemIcon|Restorative Locket}} ===
+* {{Change|}} Heal per boon reduced from 0.5 to 0.45
+* {{Change|}} Stack range reduced from 35m to 32m
+=== {{ItemIcon|Trophy Collector}} ===
+* {{Change|}} Souls per minute reduced from 18 to 16
+=== {{ItemIcon|Veil Walker}} ===
+* {{Change|}} No longer builds from {{ItemIcon|Sprint Boots}}
+* {{Change|}} No longer grants +2 Sprint and +2 Out of Combat Regen (due to loss of component)
+* {{Change|}} Movement speed bonus is now removed when the invisibility is removed
+* {{Change|}} Spirit Power reduced from 10 to 6
+=== {{ItemIcon|Fortitude}} ===
+* {{Change|}} Max Health regen increased from 2% to 2.25%
+=== {{ItemIcon|Lifestrike}} ===
+* {{Change|}} Heal on Melee hit increased from 100+1.5 to 120+1.75
+* {{Change|}} Melee hit heal increased from 30% to 35%
+=== {{ItemIcon|Leech}} ===
+* {{Change|}} Bullet and {{ItemIcon|Spirit Lifesteal}} increased from 25% to 28%
+=== {{ItemIcon|Plated Armor}} ===
+* {{Change|}} Fixed on-hit damage prevention not blocking the following on-hit spirit damage effects: {{ItemIcon|Mercurial Magnum}}, {{HeroIcon|Vindicta}}'s {{AbilityIcon|Flight}}, {{HeroIcon|Wraith}}'s {{AbilityIcon|Full Auto}}, and {{ItemIcon|Tesla Bullets}}/{{ItemIcon|Capacitor}}
+=== {{ItemIcon|Diviner's Kevlar}} ===
+* {{Change|}} Now grants +10% Ultimate Ability Cooldown Reduction
+=== {{ItemIcon|Golden Goose Egg}} ===
+* {{Change|}} Damage Penalty increased from -10% to -15%
+* {{Change|}} Stored souls now count towards net worth (affects comeback reward calculations)
+* {{Change|}} Souls per minute reduced from 90 to 80
+=== {{ItemIcon|Slowing Hex}} ===
+* {{Change|}} Cooldown increased from 27s to 29s
+=== {{ItemIcon|Radiant Regeneration}} ===
+* {{Change|}} Healing on Ability Cast per boon scaling reduced from 2 to 1.7
+=== {{ItemIcon|Tankbuster}} ===
+* {{Change|}} Current Health Bonus damage reduced from 8% to 7.5%
+=== {{ItemIcon|Decay}} ===
+* {{Change|}} DPS reduced by 25%
+* {{Change|}} Duration increased by 20%
+=== {{ItemIcon|Mercurial Magnum}} ===
+* {{Change|}} Base bullet damage scaling reduced from 0.49 to 0.38
+* {{Change|}} Base bullet damage reduced from 25% to 20%
+=== {{ItemIcon|Focus Lens}} ===
+* {{Change|}} Damage increased from 30% to 35%
+* {{Change|}} Cast range increased from 20m to 25m
+
+== Heroes ==
+=== {{HeroIcon|Abrams}} ===
+==== {{AbilityIcon|Infernal Resilience}} ====
+* {{Change|}} T3 increased from +8% to +9%
+==== {{AbilityIcon|Seismic Impact}} ====
+* {{Change|}} T3 reduced from 6s {{ItemIcon|Unstoppable}} to 5s
+=== {{HeroIcon|Celeste}} ===
+* {{Change|}} Stamina cooldown increased from 5 to 5.3
+==== {{AbilityIcon|Light Eater}} ====
+* {{Change|}} Spirit lifesteal reduced from 20% to 18%
+* {{Change|}} T3 decreased from +25 to +22
+==== {{AbilityIcon|Dazzling Trick}} ====
+* {{Change|}} Cooldown increased from 34s to 38s
+==== {{AbilityIcon|Radiant Daggers}} ====
+* {{Change|}} T2 reduced from +80 to +70
+==== {{AbilityIcon|Shining Wonder}} ====
+* {{Change|}} Radius reduced from 16.5m to 15.5m
+* {{Change|}} T3 Max Bounces reduced from +8 to +6
+=== {{HeroIcon|Graves}} ===
+* {{Change|}} Health per boon increased from 33 to 35
+=== {{HeroIcon|Haze}} ===
+==== {{AbilityIcon|Fixation}} ====
+* {{Change|}} Headshot stack count increased from +2 to +3
+* {{Change|}} T3 weapon scaling increased from 0.0003 to 0.00035
+=== {{HeroIcon|Holliday}} ===
+* {{Change|}} Health per boon increased from 41 to 43
+==== {{AbilityIcon|Crackshot}} ====
+* {{Change|}} T2 now also applies -6% Bullet Resistance for 5s
+==== {{AbilityIcon|Bounce Pad}} ====
+* {{Change|}} Lasso duration extention by increased from +1s to +1.25s
+=== {{HeroIcon|Ivy}} ===
+==== {{AbilityIcon|Stone Form}} ====
+* {{Change|}} Radius reduced from 6m to 5.75m
+* {{Change|}} T1 max health heal reduced from 7% to 6%
+=== {{HeroIcon|Kelvin}} ===
+==== {{AbilityIcon|Frozen Shelter}} ====
+* {{Change|}} Base ability health regen now scales with spirit power (0.2)
+=== {{HeroIcon|Lady Geist}} ===
+==== {{AbilityIcon|Life Drain}} ====
+* {{Change|}} T3 spirit scaling increased from +0.3 to +0.45
+==== {{AbilityIcon|Essence Bomb}} ====
+* {{Change|}} T3 damage increased from 26% to 30%
+=== {{HeroIcon|Lash}} ===
+* {{Change|}} Gun falloff range reduced from 18m->54m to 16m->48m
+==== {{AbilityIcon|Ground Strike}} ====
+* {{Change|}} T3 spirit scaling increased from +0.03 to +0.04
+* {{Change|}} T3 damage per meter scaling increased from 110% to 120%
+==== {{AbilityIcon|Grapple}} ====
+* {{Change|}} T2 Weapon Damage buff duration reduced from 10s to 6s
+==== {{AbilityIcon|Flog}} ====
+* {{Change|}} Heal reduced from 50% to 40%
+* {{Change|}} Angle increased from 38 to 40
+* {{Change|}} T3 reduced from +40 degrees angle to +25
+* {{Change|}} T3 reduced from +20% heal to +15%
+=== {{HeroIcon|Paige}} ===
+* {{Change|}} Heavy Melee spirit scaling increased from 0.3 to 0.45
+==== {{AbilityIcon|Captivating Read}} ====
+* {{Change|}} T1 increased from -11s Cooldown to -14s
+* {{Change|}} T3 increased from +1m to +2m
+==== {{AbilityIcon|Rallying Charge}} ====
+* {{Change|}} Fixed some collision issues with
+=== {{HeroIcon|Paradox}} ===
+==== {{AbilityIcon|Kinetic Carbine}} ====
+* {{Change|}} Min damage multiplier reduced from 25% to 10% (max damage multiplier unaffected)
+* {{Change|}} Min damage multiplier no longer gets increased by the T3
+=== {{HeroIcon|Rem}} ===
+* {{Change|}} Fixed a bug where multiple helpers could be sent to follow a single player for no effect
+==== {{AbilityIcon|Lil Helpers}} ====
+* {{Change|}} Now have a target UI when instant cast mode is selected
+=== {{HeroIcon|Shiv}} ===
+* {{Change|}} Alt fire base damage increased by 4%
+* {{Change|}} Alt fire damage per boon increased from +0.2 to +0.24
+==== {{AbilityIcon|Serrated Knives}} ====
+* {{Change|}} While rage is full now deals 3.5% current HP damage on impact instead of ricocheting (0.01 spirit scaling)
+=== {{HeroIcon|Silver}} ===
+* {{Change|}} Health per boon increased from 28 to 31
+* {{Change|}} Sprint speed increased from 1.5 to 2.5
+* {{Change|}} Dashes and light melee's no longer pause your gun's cycle time
+* {{Change|}} Weighted Bola now increases gravity during the debuff duration, and interrupts flying abilities (same rules as {{ItemIcon|Phantom Strike}})
+==== {{AbilityIcon|Boot Kick}} ====
+* {{Change|}} Can only target heroes and objectives now
+==== {{AbilityIcon|Entangling Bola}} ====
+* {{Change|}} Can only target heroes now
+=== {{HeroIcon|Venator}} ===
+==== {{AbilityIcon|Ira Domini}} ====
+* {{Change|}} Now works with {{ItemIcon|Ricochet}}, all the shots will bounce
+* {{Change|}} Can now split shot (releases 1 extra bolt on each side, 3 total)
+=== {{HeroIcon|Viscous}} ===
+* {{Change|}} Alt fire damage growth reduced by 10%
+==== {{AbilityIcon|Splatter}} ====
+* {{Change|}} Detonation cooldown reduced from 0.15 to 0.12
+* {{Change|}} T1 reduced from +2m to +1.5m
+==== {{AbilityIcon|The Cube}} ====
+* {{Change|}} Cast range reduced from 26m to 20m
+==== {{AbilityIcon|Puddle Punch}} ====
+* {{Change|}} Cooldown increased from 21s to 24s
+==== {{AbilityIcon|Goo Ball}} ====
+* {{Change|}} T3 now also increases spirit scaling by 0.2
+=== {{HeroIcon|Vyper}} ===
+* {{Change|}} Petryifying Bola cooldown increased from 105s to 115s
+==== {{AbilityIcon|Slither}} ====
+* {{Change|}} T3 barrier duration reduced from 5s to 4s
+=== {{HeroIcon|Warden}} ===
+* {{Change|}} Bullet damage per boon reduced from 0.28 to 0.25
+* {{Change|}} Fire Rate spirit scaling reduced from 0.25 to 0.21
+==== {{AbilityIcon|Alchemical Flask}} ====
+* {{Change|}} Projectical range and speed reduced by 30%
+==== {{AbilityIcon|Willpower}} ====
+* {{Change|}} T3 spirit scaling reduced from +2.7 to +2.1
+* {{Change|}} T3 debuff resistance reduced from 40% to 30%
+=== {{HeroIcon|Wraith}} ===
+==== {{AbilityIcon|Card Trick}} ====
+* {{Change|}} Heart heal reduced from 75 to 60
+* {{Change|}} Heart heal spirit scaling reduced from 0.75 to 0.5
+* {{Change|}} Diamond Bullet and Spirit Resist reduction reduced from -8% to -7%
+* {{Change|}} T3 Diamond Bullet and Spirit Resist reduction reduced from -5% to -4%
+* {{Change|}} T3 Clubs slow from +20% to +15%
+==== {{AbilityIcon|Project Mind}} ====
+* {{Change|}} Fixed getting caught on edges/corners when aiming past it
+==== {{AbilityIcon|Full Auto}} ====
+* {{Change|}} Spirit damage per bullet scaling increased from 0.03 to 0.045
+=== {{HeroIcon|Yamato}} ===
+==== {{AbilityIcon|Crimson Slash}} ====
+* {{Change|}} T3 now also increases the heal spirit scaling by +0.4
+==== {{AbilityIcon|Flying Slash}} ====
+* {{Change|}} Light melee scaling increased from 1.0 to 1.2
+}}
