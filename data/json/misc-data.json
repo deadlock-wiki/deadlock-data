@@ -1249,7 +1249,6 @@
         "PingMinimapOnActive": false,
         "DestroyNearbyNeutrals": false,
         "HoldAtPercent": 99.0,
-        "ComebackBounty": 170,
         "DropOffPlayerBonusPercent": 35,
         "ZoneHeightMeters": 14.0,
         "TimeToWarnAboutGivingUp": 50.0,
@@ -1278,9 +1277,9 @@
             "modifierProvidedByAura": {
                 "Attributes": "MODIFIER_ATTRIBUTE_CANNOT_BE_PURGED",
                 "IsHidden": true,
-                "TechResist": 35,
-                "BulletResist": 35,
-                "StatusResist": 35
+                "ResistMaxAtStart": 10,
+                "ResistMaxPerMinute": 1,
+                "ResistMaxCap": 40
             },
             "IsHidden": true,
             "AuraRadius": 1377.95,

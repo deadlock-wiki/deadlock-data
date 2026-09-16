@@ -233,7 +233,7 @@
         "ForwardVelocity": 800,
         "IsDisabled": false,
         "Key": "ability_bebop_stickybomb2",
-        "MoveSpeedSlowPct": 20,
+        "MoveSpeedSlowPct": 16,
         "Name": "Sticky Bomb",
         "ProjectileLifetime": 2,
         "Radius": {
@@ -321,7 +321,7 @@
                 "Radius": 2
             },
             {
-                "BloodSpillDPSPercent": 26,
+                "BloodSpillDPSPercent": 30,
                 "BloodSpillDuration": 6
             }
         ]
@@ -366,7 +366,7 @@
         "IsDisabled": false,
         "Key": "ability_blood_shards",
         "MaxStacks": 5,
-        "MoveSpeedPenaltyPerStack": 15,
+        "MoveSpeedPenaltyPerStack": 12,
         "Name": "Malice",
         "NumBloodShards": 3,
         "SelfDamagePct": 9,
@@ -913,10 +913,10 @@
                 "Type": "duration"
             }
         },
-        "SlowPercent": 45,
+        "SlowPercent": 36,
         "Upgrades": [
             {
-                "AbilityCooldown": -11
+                "AbilityCooldown": -14
             },
             {
                 "ImmobilizeDuration": 1
@@ -924,7 +924,7 @@
             {
                 "TechArmorDamageReduction": -18,
                 "DebuffDuration": 6,
-                "Radius": 1
+                "Radius": 2
             }
         ]
     },
@@ -1510,7 +1510,7 @@
             }
         },
         "SpinSlowDuration": 0.3,
-        "SpinSlowPercent": 10,
+        "SpinSlowPercent": 8,
         "TechResist": 30,
         "TickRate": 0.1,
         "TossDuration": 1,
@@ -1681,6 +1681,10 @@
             "BehaviorNoTarget",
             "BehaviorDisplaysDamageImpact"
         ],
+        "BulletResistModifier": {
+            "Class": "Base",
+            "Subclass": "BulletResistReduction"
+        },
         "CrackshotNPCCDReduction": 50,
         "Damage": {
             "Value": 55,
@@ -1707,16 +1711,18 @@
                 "Type": "range"
             }
         },
-        "FadingSlowPercent": 50,
+        "FadingSlowPercent": 40,
         "IsDisabled": false,
         "Key": "ability_crackshot",
         "Name": "Crackshot",
         "Upgrades": [
             {
-                "FadingSlowPercent": 25
+                "FadingSlowPercent": 20
             },
             {
-                "Damage": 49.5
+                "Damage": 49.5,
+                "BulletResistReduction": -6,
+                "BulletResistReductionDuration": 5
             },
             {
                 "AbilityCooldownPerHeadshot": -6,
@@ -1844,7 +1850,7 @@
                 "Type": "radius"
             }
         },
-        "SlowPercent": 35,
+        "SlowPercent": 28,
         "Upgrades": [
             {
                 "AbilityCharges": 1
@@ -2506,7 +2512,7 @@
         "IsDisabled": false,
         "Key": "ability_familiar_ability01",
         "MinSleepTime": 0.5,
-        "MoveSpeedAndDashSlowPct": 25,
+        "MoveSpeedAndDashSlowPct": 20,
         "Name": "Naptime",
         "Radius": {
             "Value": 19.0,
@@ -2632,7 +2638,7 @@
             "Class": "DiminishingSlow",
             "Subclass": "Slow"
         },
-        "FadingSlowPercent": 45,
+        "FadingSlowPercent": 36,
         "IsDisabled": false,
         "Key": "ability_familiar_ability02",
         "Name": "Pillow Toss",
@@ -2878,7 +2884,8 @@
             "BehaviorDamageDoesntWakeFromSleep",
             "BehaviorDisplaysDamageImpact",
             "BehaviorDoNotAllowSpamProc",
-            "BehaviorDontInterruptSlideOnCast"
+            "BehaviorDontInterruptSlideOnCast",
+            "BehaviorUseInstantCastUnitTargetUi"
         ],
         "BonusMoveSpeed": 3.0,
         "ChannelMoveSpeed": -1,
@@ -3296,7 +3303,7 @@
                 "Type": "duration"
             }
         },
-        "SlowPercent": 30,
+        "SlowPercent": 24,
         "TraceToGroundDistance": 1000,
         "Upgrades": [
             {
@@ -3394,7 +3401,7 @@
         },
         "FallSpeedMax": 1,
         "GapDistanceToWall": 180,
-        "GroundDashReductionPercent": -30,
+        "GroundDashReductionPercent": -26,
         "ImpactDamage": {
             "Value": 70,
             "Scale": {
@@ -3821,8 +3828,8 @@
         "ToggleOffDelay": 0.5,
         "Upgrades": [
             {
-                "SlowPercent": 25,
-                "EnemyDashSlowPercent": -25,
+                "SlowPercent": 20,
+                "EnemyDashSlowPercent": -22,
                 "DebuffDuration": 0.5
             },
             {
@@ -3886,7 +3893,7 @@
             "Class": "Base",
             "Subclass": "Dashslow"
         },
-        "EnemyDashSlowPercent": -30,
+        "EnemyDashSlowPercent": -26,
         "HalfHeight": {
             "Value": 15,
             "Scale": {
@@ -4121,7 +4128,7 @@
         "StoredDamageHealthPercentRequired": 40,
         "Upgrades": [
             {
-                "SlowPercent": 40,
+                "SlowPercent": 32,
                 "SlowDuration": "2s"
             },
             {
@@ -4351,7 +4358,7 @@
             "BehaviorDontInterruptSlideOnCast",
             "BehaviorInterruptMeleeOnCast"
         ],
-        "BouncePadExtendDuration": 1.0,
+        "BouncePadExtendDuration": 1.25,
         "CameraPreviewDistance": 200,
         "CameraPreviewOffset": 25,
         "CameraPreviewSpeed": 0.6,
@@ -4825,7 +4832,7 @@
         },
         "ChannelMoveSpeed": 2,
         "EnemyMinHealthPct": 30,
-        "EnemySlowPct": 70,
+        "EnemySlowPct": 56,
         "InitialUpSpeed": 150,
         "IsDisabled": false,
         "Key": "ability_health_swap",
@@ -4900,7 +4907,7 @@
         "BonusHealthRegen": {
             "Value": 90,
             "Scale": {
-                "Value": 0.0,
+                "Value": 0.2,
                 "Type": "spirit"
             }
         },
@@ -4945,7 +4952,7 @@
                 "Type": "radius"
             }
         },
-        "SlowPercent": 35,
+        "SlowPercent": 28,
         "Upgrades": [
             {
                 "AbilityCooldown": -20
@@ -5040,7 +5047,7 @@
                 "Type": "duration"
             }
         },
-        "SlowPercent": 40,
+        "SlowPercent": 32,
         "Upgrades": [
             {
                 "Damage": 30,
@@ -5131,10 +5138,10 @@
         "IsDisabled": false,
         "Key": "ability_icebeam",
         "MaxFireRateSlowPercent": 20,
-        "MaxGroundDashReductionPercent": -20,
-        "MaxSlowPercent": 20,
+        "MaxGroundDashReductionPercent": -18,
+        "MaxSlowPercent": 16,
         "MaxSlowTime": 2.0,
-        "MinSlowPercent": 30,
+        "MinSlowPercent": 24,
         "Name": "Arctic Beam",
         "PathLength": {
             "Value": 25,
@@ -5154,7 +5161,7 @@
         "TickRate": 0.1,
         "Upgrades": [
             {
-                "MaxSlowPercent": 25,
+                "MaxSlowPercent": 20,
                 "MaxFireRateSlowPercent": 25
             },
             {
@@ -5311,7 +5318,7 @@
             }
         },
         "SkipFrames": 6,
-        "SlowPercent": 30,
+        "SlowPercent": 24,
         "TetherDuration": {
             "Value": 2.25,
             "Scale": {
@@ -5414,7 +5421,7 @@
             "Class": "SlowBase",
             "Subclass": "Slow"
         },
-        "SlowPercent": 35,
+        "SlowPercent": 28,
         "TickRate": 0.5,
         "Upgrades": [
             {
@@ -5698,7 +5705,7 @@
             "Subclass": "LashFlogDebuff"
         },
         "HealPctVsHeroes": {
-            "Value": 50,
+            "Value": 40,
             "Scale": {
                 "Value": 1,
                 "Type": "healing"
@@ -5714,11 +5721,11 @@
         "IsDisabled": false,
         "Key": "ability_lash_flog",
         "Name": "Flog",
-        "TargetingConeAngle": 38,
+        "TargetingConeAngle": 40,
         "Upgrades": [
             {
                 "EnemySlowDuration": 3,
-                "EnemySlowPct": 35
+                "EnemySlowPct": 28
             },
             {
                 "AbilityCooldown": -16.0,
@@ -5726,8 +5733,8 @@
             },
             {
                 "Damage": 80,
-                "TargetingConeAngle": 40,
-                "HealPctVsHeroes": 20,
+                "TargetingConeAngle": 25,
+                "HealPctVsHeroes": 15,
                 "HealPctVsNonHeroes": 6
             }
         ]
@@ -5805,7 +5812,7 @@
                 "Type": "range"
             }
         },
-        "MoveSpeedReduction": 40,
+        "MoveSpeedReduction": 32,
         "Name": "Life Drain",
         "TickRate": 0.1,
         "Upgrades": [
@@ -5821,7 +5828,7 @@
                 "LifeDrainPerSecond": {
                     "Value": 0,
                     "Scale": {
-                        "Value": 0.3,
+                        "Value": 0.45,
                         "Type": "spirit"
                     }
                 }
@@ -6051,11 +6058,11 @@
         "Radius": 3,
         "RedirectVelocity": 1500,
         "ShootDelay": 0.7,
-        "SlowPercent": 25,
+        "SlowPercent": 20,
         "TotalBolts": 3,
         "Upgrades": [
             {
-                "SlowPercent": 25
+                "SlowPercent": 20
             },
             {
                 "AbilityCooldown": -40
@@ -6525,7 +6532,7 @@
                 "Type": "radius"
             }
         },
-        "SlowPercent": 35,
+        "SlowPercent": 28,
         "Upgrades": [
             {
                 "FireRateSlow": 40
@@ -6906,7 +6913,7 @@
             "Class": "SlowBase",
             "Subclass": "SlowBase"
         },
-        "SlowPercent": 30,
+        "SlowPercent": 24,
         "Upgrades": [
             {
                 "SlowDuration": 1
@@ -6988,7 +6995,7 @@
             "Class": "SlowBase",
             "Subclass": "SlowBase"
         },
-        "SlowPercent": 30,
+        "SlowPercent": 24,
         "Upgrades": [
             {
                 "SlowDuration": 1
@@ -7372,7 +7379,7 @@
                 "Type": "range"
             }
         },
-        "SlowPercent": 40,
+        "SlowPercent": 32,
         "Upgrades": [
             {
                 "CombatBarrier": 50
@@ -7558,7 +7565,7 @@
                 "Type": "duration"
             }
         },
-        "SlowPercent": 80,
+        "SlowPercent": 64,
         "SlowPercentPerStack": 0.5,
         "SpawnDuration": 1.5,
         "StackDuration": 5,
@@ -7884,7 +7891,7 @@
                 }
             },
             {
-                "SlowPercent": 30,
+                "SlowPercent": 24,
                 "SlowDuration": 1
             },
             {
@@ -8418,7 +8425,7 @@
         "Upgrades": [
             {
                 "WeaponDamageBonus": 3,
-                "SlowPercent": 30,
+                "SlowPercent": 24,
                 "SlowDuration": 1.5
             },
             {
@@ -8616,7 +8623,7 @@
             "Class": "DiminishingSlow",
             "Subclass": "BarrageSlowModifier"
         },
-        "SlowPercent": 60,
+        "SlowPercent": 48,
         "TimeBetweenShots": 0.3,
         "TotalShotCount": 4,
         "Upgrades": [
@@ -9039,7 +9046,7 @@
         "Name": "Choking Incense",
         "RadiusPerSecond": 0.2,
         "SlowDuration": 2,
-        "SlowPercent": 30,
+        "SlowPercent": 24,
         "SmokeGrenadeModifier": {
             "Class": "Smokegrenade",
             "Subclass": "PriestSmokegrenade",
@@ -9058,7 +9065,7 @@
                 "AbilityDuration": 3
             },
             {
-                "SlowPercent": 20
+                "SlowPercent": 16
             },
             {
                 "SilenceStamina": 1
@@ -9827,7 +9834,7 @@
             "Class": "ScrapBlastDebuff",
             "Subclass": "ScrapBlastDebuff"
         },
-        "EnemyMoveSlow": 10,
+        "EnemyMoveSlow": 7,
         "EnemyMoveSlowDuration": {
             "Value": 5,
             "Scale": {
@@ -9853,7 +9860,7 @@
                 "ScrapDamage": 55
             },
             {
-                "EnemyMoveSlow": 20
+                "EnemyMoveSlow": 13
             }
         ]
     },
@@ -10251,8 +10258,8 @@
             },
             {
                 "AbilityCooldown": -17.0,
-                "SlowPercent": 50,
-                "GroundDashReductionPercent": -50,
+                "SlowPercent": 40,
+                "GroundDashReductionPercent": -45,
                 "DebuffDuration": 3
             }
         ]
@@ -10346,6 +10353,7 @@
                 "Type": "weapon_damage_increase"
             }
         },
+        "HeadshotStacks": 3,
         "IsDisabled": false,
         "Key": "ability_stacking_damage",
         "MaxStacks": 40,
@@ -10375,7 +10383,7 @@
                     }
                 },
                 "ProcDamageStackCount": 20,
-                "SlowPercent": 15,
+                "SlowPercent": 12,
                 "SlowDuration": 2
             },
             {
@@ -10386,7 +10394,7 @@
                 "DamageBonusFixedPerStack": {
                     "Value": 0.11,
                     "Scale": {
-                        "Value": 0.0003,
+                        "Value": 0.00035,
                         "Type": "weapon_damage_increase"
                     }
                 }
@@ -10667,8 +10675,8 @@
                 "AbilityCastRange": 5
             },
             {
-                "SlowPercent": 30,
-                "GroundDashReductionPercent": -30
+                "SlowPercent": 24,
+                "GroundDashReductionPercent": -26
             },
             {
                 "AbilityCooldown": -25.0,
@@ -10859,16 +10867,16 @@
             }
         },
         "SlowPercent": {
-            "Value": 25,
+            "Value": 16,
             "Scale": {
-                "Value": 0.279,
+                "Value": 0.187,
                 "Type": "spirit"
             }
         },
         "TickRate": 0.25,
         "Upgrades": [
             {
-                "SlowPercent": 20
+                "SlowPercent": 14
             },
             {
                 "AbilityDuration": 4
@@ -10945,7 +10953,7 @@
         "Key": "ability_trapper_spidershield",
         "Name": "Pest Barrier",
         "Radius": 5,
-        "SlowPercent": 30,
+        "SlowPercent": 20,
         "TickRate": 1,
         "Upgrades": [
             {
@@ -11105,7 +11113,7 @@
             "Class": "CitadelSilenced",
             "Subclass": "WebwallSilence"
         },
-        "SlowPercent": 99,
+        "SlowPercent": 66,
         "TickRate": 0.5,
         "Upgrades": [
             {
@@ -11257,7 +11265,7 @@
         ],
         "BounceGrace": 3.25,
         "BounceRadius": {
-            "Value": 16.5,
+            "Value": 15.5,
             "Scale": {
                 "Value": 1,
                 "Type": "range"
@@ -11271,7 +11279,7 @@
                 "Type": "spirit"
             }
         },
-        "GroundDashReductionPercent": -25,
+        "GroundDashReductionPercent": -22,
         "IsDisabled": false,
         "Key": "ability_unicorn_dazzlingorb",
         "MaxBounces": 8,
@@ -11309,11 +11317,11 @@
                 "Type": "duration"
             }
         },
-        "SlowPercent": 40,
+        "SlowPercent": 32,
         "Upgrades": [
             {
-                "GroundDashReductionPercent": -15,
-                "SlowPercent": 20
+                "GroundDashReductionPercent": -14,
+                "SlowPercent": 16
             },
             {
                 "Damage": {
@@ -11325,7 +11333,7 @@
                 }
             },
             {
-                "MaxBounces": 8,
+                "MaxBounces": 6,
                 "AbilityCooldown": -30
             }
         ]
@@ -11409,7 +11417,7 @@
                 "AbilityCharges": 2
             },
             {
-                "ImpactDamage": 80,
+                "ImpactDamage": 70,
                 "AbilityCooldown": -22
             },
             {
@@ -11420,7 +11428,7 @@
     },
     "ability_unicorn_prismaticguard": {
         "AbilityCooldown": {
-            "Value": 34,
+            "Value": 38,
             "Scale": {
                 "Value": 1,
                 "Type": "cooldown"
@@ -11529,7 +11537,7 @@
             ]
         },
         "AbilityLifestealPercentHero": {
-            "Value": 20,
+            "Value": 18,
             "Scale": {
                 "Value": 1,
                 "Type": "healing"
@@ -11579,7 +11587,7 @@
             },
             {
                 "Damage": {
-                    "Value": 25,
+                    "Value": 22,
                     "Scale": {
                         "Value": 0.2,
                         "Type": "spirit"
@@ -11884,7 +11892,7 @@
         "Upgrades": [
             {
                 "SlowDuration": 3,
-                "SlowPercent": 30
+                "SlowPercent": 24
             },
             {
                 "MagicDamagePerBullet": 3.0,
@@ -12115,8 +12123,8 @@
             "Class": "DiminishingSlow",
             "Subclass": "DebuffdaggerDebuff"
         },
-        "SlowPercent": 35,
-        "SlowPercentPerStack": 15,
+        "SlowPercent": 28,
+        "SlowPercentPerStack": 12,
         "StackDuration": {
             "Value": 10,
             "Scale": {
@@ -12196,7 +12204,7 @@
                 "Type": "duration"
             }
         },
-        "SlowPercent": 35,
+        "SlowPercent": 28,
         "SpreadAngle": 90,
         "TickRate": 0.01,
         "Upgrades": [
@@ -12204,7 +12212,7 @@
                 "AbilityCooldown": -4
             },
             {
-                "SlowPercent": 35
+                "SlowPercent": 28
             },
             {}
         ]
@@ -12212,7 +12220,7 @@
     "ability_viper_petrifybola": {
         "AbilityCastDelay": 0.1,
         "AbilityCooldown": {
-            "Value": 105,
+            "Value": 115,
             "Scale": {
                 "Value": 1,
                 "Type": "cooldown"
@@ -12276,7 +12284,7 @@
             "Class": "Base",
             "Subclass": "PetrifybolaSlow"
         },
-        "SlowPercent": 50,
+        "SlowPercent": 40,
         "Upgrades": [
             {
                 "PetrifyDamage": 49.5
@@ -12365,7 +12373,7 @@
                 "Stamina": 2
             },
             {
-                "BuffDuration": 5,
+                "BuffDuration": 4,
                 "CombatBarrier": {
                     "Value": 180,
                     "Scale": {
@@ -12576,7 +12584,7 @@
         "ForwardVelocity": 800,
         "IsDisabled": false,
         "Key": "ability_warden_crowd_control",
-        "MoveSpeedSlowPct": 20,
+        "MoveSpeedSlowPct": 16,
         "Name": "Alchemical Flask",
         "ProjectileLifetime": 60,
         "Radius": {
@@ -12657,11 +12665,11 @@
                 "AbilityDuration": 2
             },
             {
-                "StatusResistancePercent": 40,
+                "StatusResistancePercent": 30,
                 "CombatBarrier": {
                     "Value": 0,
                     "Scale": {
-                        "Value": 2.7,
+                        "Value": 2.1,
                         "Type": "spirit"
                     }
                 }
@@ -12928,13 +12936,13 @@
             "Class": "DiminishingSlow",
             "Subclass": "Slow"
         },
-        "SlowPercent": 30,
+        "SlowPercent": 24,
         "Upgrades": [
             {
                 "Damage": 25
             },
             {
-                "SlowPercent": 40
+                "SlowPercent": 32
             },
             {
                 "DisarmDuration": 1.5,
@@ -13119,7 +13127,7 @@
         "BonusDamage": {
             "Value": 25,
             "Scale": {
-                "Value": 2.0,
+                "Value": 2,
                 "Type": "spirit"
             }
         },
@@ -13267,7 +13275,7 @@
         },
         "Name": "Crushing Leap",
         "Radius": 7.5,
-        "SlowPercent": 30,
+        "SlowPercent": 24,
         "Upgrades": [
             {
                 "LandingBonusesDuration": 5,
@@ -13407,16 +13415,18 @@
             }
         },
         "DebuffModifier": {
-            "Class": "SlowBase",
+            "Class": "WerewolfBola",
             "Subclass": "Debuff",
             "EnabledStateMask": [
                 "SilenceMovementAbilites",
                 "SprintDisabled",
                 "DashDisabledDebuff",
                 "Slowed",
-                "StaminaRegenPaused"
+                "StaminaRegenPaused",
+                "PulldownToGround"
             ]
         },
+        "GravityScale": 100,
         "IsDisabled": false,
         "Key": "ability_werewolf_netshot",
         "Name": "Entangling Bola",
@@ -13424,10 +13434,10 @@
             "Class": "CitadelRoot",
             "Subclass": "Root"
         },
-        "SlowPercent": 20,
+        "SlowPercent": 16,
         "Upgrades": [
             {
-                "SlowPercent": 25
+                "SlowPercent": 20
             },
             {
                 "AbilityCooldown": -8
@@ -13544,7 +13554,7 @@
         "IsDisabled": false,
         "Key": "ability_werewolf_trackingbomb",
         "MinHealthFractionToTrack": 30,
-        "MoveSpeedSlowPct": 20,
+        "MoveSpeedSlowPct": 16,
         "Name": null,
         "ProjectileLifetime": 60,
         "Radius": {
@@ -13932,7 +13942,7 @@
                 "Type": "duration"
             }
         },
-        "EnemySlowPct": 60,
+        "EnemySlowPct": 40,
         "ExplosionRadius": {
             "Value": 8,
             "Scale": {
@@ -14466,7 +14476,7 @@
         },
         "Upgrades": [
             {
-                "SlowPercent": 40
+                "SlowPercent": 26
             },
             {
                 "DashDistance": 4
@@ -14534,7 +14544,7 @@
             }
         },
         "FallSpeedMax": 1,
-        "GroundDashReductionPercent": -40,
+        "GroundDashReductionPercent": -36,
         "Interval": 0.1,
         "IsDisabled": false,
         "Key": "citadel_ability_bebop_laser_beam",
@@ -14543,7 +14553,7 @@
             "Class": "SlowBase",
             "Subclass": "BebopLaserSlow"
         },
-        "SlowPercent": 25,
+        "SlowPercent": 20,
         "SlowTargetDuration": 0.5,
         "TrackingSpeed": 55,
         "Upgrades": [
@@ -14651,7 +14661,7 @@
         "TurnRateMax": 140,
         "Upgrades": [
             {
-                "SlowPercent": 40,
+                "SlowPercent": 32,
                 "SlowDuration": 3
             },
             {
@@ -14846,7 +14856,7 @@
                 "StunDuration": 0.8
             },
             {
-                "ImmunityDuration": 6,
+                "ImmunityDuration": 5,
                 "ImpactRadius": 6
             }
         ]
@@ -14910,7 +14920,7 @@
                 "Type": "duration"
             }
         },
-        "ClubSlowPercent": 30,
+        "ClubSlowPercent": 24,
         "CooldownBetweenCards": 0.5,
         "Damage": {
             "Value": 45,
@@ -14923,7 +14933,7 @@
             "Class": "CardtossStackingResistShred",
             "Subclass": "DiamondCardDebuff"
         },
-        "DiamondResistShred": -8.0,
+        "DiamondResistShred": -7.0,
         "DiamondResistShredDuration": {
             "Value": 5,
             "Scale": {
@@ -14932,9 +14942,9 @@
             }
         },
         "HeartHeal": {
-            "Value": 75,
+            "Value": 60,
             "Scale": {
-                "Value": 0.75,
+                "Value": 0.5,
                 "Type": "spirit"
             }
         },
@@ -14976,7 +14986,7 @@
             {
                 "ImprovedJokerChance": 1,
                 "SpadeDamageBonus": 40,
-                "DiamondResistShred": -5,
+                "DiamondResistShred": -4,
                 "HeartHeal": {
                     "Value": 75,
                     "Scale": {
@@ -14984,7 +14994,7 @@
                         "Type": "spirit"
                     }
                 },
-                "ClubSlowPercent": 20
+                "ClubSlowPercent": 12
             }
         ]
     },
@@ -15156,7 +15166,7 @@
         "MinBonusBulletDamage": {
             "Value": 5,
             "Scale": {
-                "Value": 25,
+                "Value": 10,
                 "Type": "weapon_power"
             }
         },
@@ -15203,13 +15213,6 @@
             },
             {
                 "SpeedBoostDuration": 2,
-                "MinBonusBulletDamage": {
-                    "Value": 0,
-                    "Scale": {
-                        "Value": 55,
-                        "Type": "weapon_power"
-                    }
-                },
                 "MaxBonusBulletDamage": {
                     "Value": 0,
                     "Scale": {
@@ -15456,7 +15459,7 @@
         "FriendlyBulletDamageBonus": 30,
         "IsDisabled": false,
         "Key": "citadel_ability_chrono_time_wall",
-        "MovementSlowPct": 80,
+        "MovementSlowPct": 64,
         "Name": "Time Wall",
         "TimeScaleDuration": 0.5,
         "TimeWallDepth": 0.5,
@@ -15526,8 +15529,8 @@
             "Class": "RampSlow",
             "Subclass": "ClimbRopeSlowOnHit",
             "RampUpTime": 2.0,
-            "PercentageMultiplierStart": 80,
-            "PercentageMultiplierEnd": 20
+            "PercentageMultiplierStart": 64,
+            "PercentageMultiplierEnd": 16
         },
         "IsDisabled": false,
         "Key": "citadel_ability_climb_rope",
@@ -15621,7 +15624,7 @@
             "Class": "SlowBase",
             "Subclass": "Slow"
         },
-        "SlowPercent": 20,
+        "SlowPercent": 16,
         "TimeBetweenSegments": 0.035,
         "TimeToMaxDistance": 1.8,
         "Upgrades": [
@@ -15636,7 +15639,7 @@
             {
                 "CreateTurrets": 2,
                 "TurretLifeTime": 8,
-                "SlowPercent": 30
+                "SlowPercent": 24
             }
         ],
         "WallImpactRange": 5,
@@ -15736,7 +15739,7 @@
         "Damage": {
             "Value": 0,
             "Scale": {
-                "Value": 1.0,
+                "Value": 1.2,
                 "Type": "melee"
             }
         },
@@ -15758,7 +15761,7 @@
             "Class": "SlowBase",
             "Subclass": "Slow"
         },
-        "SlowPercent": 50,
+        "SlowPercent": 40,
         "Upgrades": [
             {
                 "AbilityCooldown": -18
@@ -15855,6 +15858,13 @@
                         "Value": 0.6,
                         "Type": "spirit"
                     }
+                },
+                "HealFixedHealth": {
+                    "Value": 0,
+                    "Scale": {
+                        "Value": 0.4,
+                        "Type": "spirit"
+                    }
                 }
             }
         ]
@@ -15910,7 +15920,7 @@
                 "CastingHook"
             ]
         },
-        "SlowPercent": 90,
+        "SlowPercent": 72,
         "TargetModifier": {
             "Class": "CitadelHooktarget",
             "Subclass": "CitadelHooktarget",
@@ -16561,7 +16571,7 @@
             {
                 "AbilityCastRange": 20,
                 "WeaponDamageBonus": 7.0,
-                "WeaponDamageBonusDuration": 10
+                "WeaponDamageBonusDuration": 6
             },
             {
                 "AbilityCharges": 1,
@@ -16642,22 +16652,22 @@
                 "AbilityCooldown": -10.0
             },
             {
-                "EnemySlowPct": 50,
+                "EnemySlowPct": 40,
                 "SlowDuration": 3,
                 "StompBounceHeight": 400,
                 "TossDuration": 1
             },
             {
                 "StompDamagePerMeterPrimary": {
-                    "Value": 2.13,
+                    "Value": 2.2,
                     "Scale": {
-                        "Value": 0.03255,
+                        "Value": 0.04,
                         "Type": "spirit"
                     },
                     "Multiply": true
                 },
                 "StompDamagePerMeterSecondary": {
-                    "Value": 2.13,
+                    "Value": 2.2,
                     "Scale": {
                         "Value": 0.008137,
                         "Type": "spirit"
@@ -16747,7 +16757,7 @@
                 "Type": "duration"
             }
         },
-        "SlowPercent": 50,
+        "SlowPercent": 40,
         "TargetModifier": {
             "Class": "LashGrappleTarget",
             "Subclass": "Lockon"
@@ -16847,7 +16857,7 @@
                 "AbilityCharges": 1
             },
             {
-                "SlowPercent": 35,
+                "SlowPercent": 28,
                 "MaxLifetime": 1
             },
             {
@@ -16952,8 +16962,8 @@
             "Class": "RampSlow",
             "Subclass": "MantleHitSlow",
             "RampUpTime": 2.0,
-            "PercentageMultiplierStart": 80,
-            "PercentageMultiplierEnd": 20
+            "PercentageMultiplierStart": 64,
+            "PercentageMultiplierEnd": 16
         },
         "Name": null,
         "Upgrades": []
@@ -17192,7 +17202,7 @@
                 "MeleeLifesteal": 18
             },
             {
-                "RegenIncomingDamagePercent": 8,
+                "RegenIncomingDamagePercent": 9,
                 "StatusResistancePercent": 20
             }
         ]
@@ -17267,7 +17277,7 @@
         "Upgrades": [
             {
                 "SlowDuration": 3,
-                "SlowPercent": 40
+                "SlowPercent": 32
             },
             {
                 "AbilityCooldown": -4
@@ -17441,7 +17451,7 @@
             "SlamTime": 0.5
         },
         "Name": "Telekinesis",
-        "SlowPercent": 40,
+        "SlowPercent": 32,
         "TossDistance": {
             "Value": 13,
             "Scale": {
@@ -17546,8 +17556,8 @@
         "TrackingTime": 0.4,
         "Upgrades": [
             {
-                "MoveSlowPercent": 30,
-                "EnemyDashSlowPercent": -18,
+                "MoveSlowPercent": 24,
+                "EnemyDashSlowPercent": -16,
                 "MoveSlowDuration": 1
             },
             {
@@ -17758,13 +17768,6 @@
         ]
     },
     "citadel_ability_shiv_dagger": {
-        "AOERadius": {
-            "Value": 10,
-            "Scale": {
-                "Value": 1,
-                "Type": "range"
-            }
-        },
         "AbilityChannelTime": {
             "Value": 0.2,
             "Scale": {
@@ -17823,6 +17826,13 @@
             "Class": "ShivThrownShivDamageDebuff",
             "Subclass": "ShivThrownShivDamageDebuff"
         },
+        "FullRageCurrentHealthDamagePct": {
+            "Value": 3.5,
+            "Scale": {
+                "Value": 0.01,
+                "Type": "spirit"
+            }
+        },
         "ImpactDamage": {
             "Value": 0,
             "Scale": {
@@ -17832,9 +17842,8 @@
         },
         "IsDisabled": false,
         "Key": "citadel_ability_shiv_dagger",
-        "MovementSlow": 35,
+        "MovementSlow": 28,
         "Name": "Serrated Knives",
-        "RicochetCount": 1,
         "SlowDebuffModifier": {
             "Class": "ShivThrownShivSlowDebuff",
             "Subclass": "ShivThrownShivSlowDebuff"
@@ -18432,7 +18441,7 @@
             },
             {
                 "BulletResistReduction": -15,
-                "SlowPercent": 30,
+                "SlowPercent": 24,
                 "SlowDuration": 4
             },
             {
@@ -18799,7 +18808,7 @@
                 }
             },
             {
-                "SlowPercent": 40,
+                "SlowPercent": 32,
                 "DebuffDuration": 3
             },
             {
@@ -18874,7 +18883,7 @@
         "MoveSpeedMax": 8,
         "Name": "Stone Form",
         "Radius": {
-            "Value": 6,
+            "Value": 5.75,
             "Scale": {
                 "Value": 1,
                 "Type": "range"
@@ -18889,7 +18898,7 @@
         },
         "Upgrades": [
             {
-                "MaxHealthRegen": 7.0
+                "MaxHealthRegen": 6.0
             },
             {
                 "AbilityCooldown": -25
@@ -18975,7 +18984,7 @@
                 "Type": "radius"
             }
         },
-        "SlowPercent": 35,
+        "SlowPercent": 28,
         "TickRate": 0.25,
         "Upgrades": [
             {
@@ -19577,7 +19586,7 @@
         "MagicDamagePerBullet": {
             "Value": 2,
             "Scale": {
-                "Value": 0.03,
+                "Value": 0.045,
                 "Type": "spirit"
             }
         },
@@ -19746,7 +19755,7 @@
         "IsDisabled": false,
         "Key": "citadel_ability_wrecker_garbage_suck",
         "Name": "Overload",
-        "SlowPercent": 50,
+        "SlowPercent": 34,
         "Speed": 5.08,
         "TickRate": 1,
         "TossAngle": 45,
@@ -20319,7 +20328,7 @@
                 "Slowed"
             ]
         },
-        "EnemySlowPct": 60,
+        "EnemySlowPct": 40,
         "InitialHeight": 350,
         "InvisFadeToDuration": 1.5,
         "InvisModifier": {
@@ -20713,7 +20722,7 @@
         "Name": null,
         "SelfShoveForce": 200,
         "SlowDuration": 3,
-        "SlowPercent": 30,
+        "SlowPercent": 20,
         "StunDuration": 1,
         "Upgrades": []
     },
@@ -21059,7 +21068,7 @@
         },
         "Upgrades": [
             {
-                "MovementSpeedSlow": 60,
+                "MovementSpeedSlow": 48,
                 "SlowDuration": 0.8
             },
             {
@@ -21228,7 +21237,7 @@
                 "Type": "duration"
             }
         },
-        "SlowPercent": 30,
+        "SlowPercent": 24,
         "TickRate": 0.25,
         "TornadoSpeed": 24,
         "Upgrades": [
@@ -21418,7 +21427,7 @@
                 "Type": "radius"
             }
         },
-        "SlowPercent": 25,
+        "SlowPercent": 16,
         "TickRate": 0.25,
         "TimeBeforeCursed": {
             "Value": 2,
@@ -21980,7 +21989,7 @@
         "FallSpeedMax": 10,
         "IsDisabled": false,
         "Key": "synth_barrage",
-        "MoveSlowPercent": 30,
+        "MoveSlowPercent": 24,
         "Name": "Barrage",
         "ProjectileAmount": 4,
         "Radius": {
@@ -22155,7 +22164,7 @@
             },
             {
                 "FireRateSlow": 40,
-                "MoveSlowPercent": 40,
+                "MoveSlowPercent": 32,
                 "DebuffDuration": 4.0,
                 "AbilityChannelTime": 1.5,
                 "Radius": 4
@@ -23226,7 +23235,14 @@
             },
             {
                 "AbilityDuration": 7,
-                "StunDuration": 0.3
+                "StunDuration": 0.3,
+                "Damage": {
+                    "Value": 0,
+                    "Scale": {
+                        "Value": 0.2,
+                        "Type": "spirit"
+                    }
+                }
             }
         ]
     },
@@ -23255,7 +23271,7 @@
                 "Type": "spirit"
             }
         },
-        "DetonateCooldown": 0.15,
+        "DetonateCooldown": 0.12,
         "FourthHitDamagePercentage": 0.26,
         "GooGrenadeImpactModifier": {
             "Class": "ViscousGooGrenadeDebuff",
@@ -23299,12 +23315,12 @@
             }
         },
         "SecondHitDamagePercentage": 0.5,
-        "SlowPercent": 35,
+        "SlowPercent": 28,
         "ThirdHitDamagePercentage": 0.38,
         "Upgrades": [
             {
                 "Damage": 36,
-                "Radius": 2
+                "Radius": 1.5
             },
             {
                 "AbilityCooldown": -14
@@ -23324,7 +23340,7 @@
     "viscous_restorative_goo": {
         "AbilityCastDelay": 0.1,
         "AbilityCastRange": {
-            "Value": 26,
+            "Value": 20,
             "Scale": {
                 "Value": 1,
                 "Type": "range"
@@ -23436,7 +23452,7 @@
             }
         },
         "AbilityCooldown": {
-            "Value": 21.0,
+            "Value": 24.0,
             "Scale": {
                 "Value": 1,
                 "Type": "cooldown"
@@ -23491,7 +23507,7 @@
         "Name": "Puddle Punch",
         "PunchFriendlyAirControl": 30,
         "PunchHalfHeight": 5.5,
-        "PunchRollSlow": -40,
+        "PunchRollSlow": -36,
         "PunchRollSlowDuration": 1,
         "PunchRollSlowModifier": {
             "Class": "Base",
@@ -23504,7 +23520,7 @@
                 "Type": "range"
             }
         },
-        "SlowPercent": 30,
+        "SlowPercent": 24,
         "TossDuration": 0.6,
         "TossGroundSideRatio": 0.7,
         "TossSpeed": 625,
