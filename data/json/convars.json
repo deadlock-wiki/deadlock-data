@@ -299,6 +299,10 @@
         "value": true,
         "description": "Toggles announcer in the hideout."
     },
+    "assetthumbnail_old_fingerprint_style": {
+        "value": true,
+        "description": "Set to true to revert to old behavior"
+    },
     "astro_bouncepad_early_inactive_time": {
         "value": 0.15,
         "description": "How long to deactivate the bounce pad prior to its deletion to compensate for the server."
@@ -2040,7 +2044,7 @@
     },
     "citadel_movement_plane_overlap_mult": 0,
     "citadel_movement_resolve_origin": true,
-    "citadel_movement_skyclip_push_distance": 196.85,
+    "citadel_movement_skyclip_push_distance": 196.8504,
     "citadel_movement_skyclip_push_min_force": 400,
     "citadel_movement_slip_accel": 200,
     "citadel_movement_solver_iterations": 16,
@@ -2278,7 +2282,7 @@
     },
     "citadel_play_page_fake_data": false,
     "citadel_play_page_finished_tutorial": false,
-    "citadel_play_stats_laning_end_time": "UNKNOWN VALUE TYPE",
+    "citadel_play_stats_laning_end_time": 540,
     "citadel_player_aim_at_hero_query_angle": 6,
     "citadel_player_aim_at_hero_query_distance": 2000,
     "citadel_player_aim_at_hero_query_half_width": 50,
@@ -3398,6 +3402,10 @@
         "value": false,
         "description": "Prints when a participant sound message was sent."
     },
+    "cl_auto_cursor_scale": {
+        "value": true,
+        "description": "Automatic cursor size scaling."
+    },
     "cl_batch_entity_list_ops_during_latch": {
         "value": false,
         "description": "Batch entity list adds / removes while latching interpolated variables to avoid mutex contention."
@@ -3489,6 +3497,10 @@
     "cl_cq_min_queue": {
         "value": 0,
         "description": "Used by the client to inform the server of their desired queue length.  Derived from cl_tickpacket_recvmargin_desired and cl_tickpacket_desired_queuelength"
+    },
+    "cl_cursor_scale": {
+        "value": 1,
+        "description": "Cursor size scaling factor."
     },
     "cl_demo_steadycam_blendframes": {
         "value": 5,
@@ -3652,6 +3664,10 @@
         "description": "Force client to ignore packets (for debugging)."
     },
     "cl_impacteffects": true,
+    "cl_input_enable_raw_keyboard": {
+        "value": false,
+        "description": "Enable raw keyboard input"
+    },
     "cl_interp_ag2_for_non_ag2_entities": true,
     "cl_interp_all": {
         "value": false,
@@ -3697,6 +3713,10 @@
         "value": 20,
         "description": "When upstream packet jitter in a frame exceeds this threshold (ms), the frame is considered to have 'irregular delivery'.  This is a derived value and should not be modified manually"
     },
+    "cl_joystick_enabled": {
+        "value": true,
+        "description": "Enable joystick input"
+    },
     "cl_lagcompensation": {
         "value": true,
         "description": "Perform server side lag compensation of weapon firing events."
@@ -3720,6 +3740,7 @@
         "description": "Log when the tick delta >= this"
     },
     "cl_massreport": false,
+    "cl_max_particle_pvs_aabb_edge_length": 0,
     "cl_meep_mop_volume_trigger_max_count": {
         "value": 10,
         "description": "Number of triggers before meemop reaches full volume"
@@ -3746,14 +3767,41 @@
         "value": 2,
         "description": "Use parallel processing of snapshot reading if above this many entries."
     },
-    "cl_particle_batch_mode": 0,
-    "cl_particle_fallback_base": 0,
-    "cl_particle_fallback_multiplier": 0,
+    "cl_particle_batch_mode": 1,
+    "cl_particle_create_duplicate_work_for_profiling": {
+        "value": 0,
+        "description": "Create and destroy N particle systems for every one created normally"
+    },
+    "cl_particle_fallback_base": {
+        "value": 0,
+        "description": "Base for falling back to cheaper effects under load."
+    },
+    "cl_particle_fallback_multiplier": {
+        "value": 0,
+        "description": "Multiplier for falling back to cheaper effects under load."
+    },
+    "cl_particle_log_creates": {
+        "value": false,
+        "description": "Print debug message every time a particle collection is created"
+    },
     "cl_particle_max_count": 0,
+    "cl_particle_newinit": {
+        "value": true,
+        "description": "turn on optimized particle init"
+    },
     "cl_particle_retire_cost": 0,
-    "cl_particle_sim_fallback_base_multiplier": 0,
-    "cl_particle_sim_fallback_threshold_ms": 0,
-    "cl_particle_simulate": false,
+    "cl_particle_sim_fallback_base_multiplier": {
+        "value": 5,
+        "description": "How aggressive the switch to fallbacks will be depending on how far over the cl_particle_sim_fallback_threshold_ms the sim time is.  Higher numbers are more aggressive."
+    },
+    "cl_particle_sim_fallback_threshold_ms": {
+        "value": 6,
+        "description": "Amount of simulation time that can elapse before new systems start falling back to cheaper versions"
+    },
+    "cl_particle_simulate": {
+        "value": true,
+        "description": "Enables/Disables Particle Simulation"
+    },
     "cl_pdump": {
         "value": -1,
         "description": "Dump info about this entity to screen."
@@ -4518,6 +4566,10 @@
         "value": 0,
         "description": "Set to 1 for standard debugging or 2 (in combo with gameinstructor_verbose_lesson) to show update actions."
     },
+    "gfx_generate_skin_shadow_warp_shadow_width": {
+        "value": 0.5,
+        "description": "Remapped width of the shadow penumbra"
+    },
     "gl_clear": true,
     "glow_use_tolerance": 0.85,
     "gpu_level": {
@@ -4530,6 +4582,40 @@
     },
     "hairsim_force_fixed_timestep": true,
     "hairsim_reset": false,
+    "hammer_bevel_leave_edges": false,
+    "hammer_dota_path_falloff": 1,
+    "hammer_dota_path_fixup": true,
+    "hammer_dota_path_opacity": 0,
+    "hammer_dota_path_sharpness": 0.5,
+    "hammer_dota_path_use_material_settings": true,
+    "hammer_dota_path_width": 150,
+    "hammer_draw_bounds": false,
+    "hammer_draw_dirty_bounds": false,
+    "hammer_draw_model_raytrace_data": false,
+    "hammer_draw_model_skeleton": false,
+    "hammer_draw_overlay_triangles_in_box": false,
+    "hammer_gridnav_always_update": false,
+    "hammer_gridnav_preview_radius": 15,
+    "hammer_gridnav_show_creature_blocking": true,
+    "hammer_gridnav_show_hero_blocking": true,
+    "hammer_gridnav_show_impassable": true,
+    "hammer_gridnav_show_obstructions": true,
+    "hammer_gridnav_show_ward_blocking": true,
+    "hammer_isosurface_merge_tolerance": 0,
+    "hammer_isosurface_remove_interior": true,
+    "hammer_isosurface_sample_offset": 0.0001,
+    "hammer_isosurface_subtract": false,
+    "hammer_overlay_draw_projection_triangles": false,
+    "hammer_parallel_terrain_update": false,
+    "hammer_render_model_bounding_spheres": false,
+    "hammer_show_light_truncation_error": false,
+    "hammer_spawn_area_base_alpha": 0,
+    "hammer_spawn_area_outline_alpha": 255,
+    "hammer_tile_border_size": 16,
+    "hammer_use_minimum_element_count_for_loop": false,
+    "hammer_vis_opacity": 32,
+    "hammer_world_trace_multisample": true,
+    "hammer_world_trace_pack_rays": false,
     "hero_data_inspect": {
         "value": false,
         "description": "Citadel/Hero Stats"
@@ -4559,6 +4645,10 @@
     "hostfile": {
         "value": "host.txt",
         "description": "The HOST file to load."
+    },
+    "hostip": {
+        "value": 0,
+        "description": "Host game server ip"
     },
     "hostname_in_client_status": {
         "value": false,
@@ -4635,6 +4725,7 @@
         "value": false,
         "description": "if imgui should display temporarily"
     },
+    "import_wizard_spew": false,
     "in_button_double_press_window": {
         "value": 0.22,
         "description": "How short the time between presses needs to be for us to consider it a double-press"
@@ -4694,6 +4785,10 @@
     "joy_autosprint": {
         "value": 0,
         "description": "Automatically sprint when moving with an analog joystick"
+    },
+    "joy_axisbutton_threshold": {
+        "value": 0.3,
+        "description": "Analog axis range before a button press is registered."
     },
     "joy_axisr_deadzone": 0.15,
     "joy_axisr_relative": false,
@@ -4821,7 +4916,7 @@
         "description": "If lb_csm_override_staticgeo_cascades, override value used to determine which cascades render static objects"
     },
     "lb_csm_receiver_plane_depth_bias": {
-        "value": 1.526e-05,
+        "value": 1.5e-05,
         "description": "Shader depth bias applied to shadow receiver (Note this conflicts with renderstate depth bias, both now default to 0)"
     },
     "lb_csm_receiver_plane_depth_bias_transmissive_backface": {
@@ -4949,6 +5044,10 @@
         "description": "SceneSystem/LightBinner/Use Illumination Bounds"
     },
     "leaderboards_cache_duration": 600,
+    "legacy_models_supported": {
+        "value": true,
+        "description": "Whether to support legacy (pre-modeldoc) models"
+    },
     "lifesteal_ability_non_hero_multiplier": 0.4,
     "lifesteal_bullet_non_hero_multiplier": 0.6,
     "locator_topdown_style": {
@@ -4956,6 +5055,9 @@
         "description": "Topdown games set this to handle distance and offscreen location differently."
     },
     "lservercfgfile": "listenserver.cfg",
+    "lua_assert_on_error": false,
+    "lua_is_currently_executing": false,
+    "lua_shipping_assert_on_error": false,
     "m_pitch": {
         "value": 0.022,
         "description": "Mouse pitch factor."
@@ -5189,6 +5291,10 @@
     "nano_use_los_ultimate": true,
     "nav_attribute_obstacle_draw": false,
     "nav_attribute_obstacle_draw_elements": false,
+    "nav_corner_adjust_adjacent": {
+        "value": 18,
+        "description": "radius used to raise/lower corners in nearby areas when raising/lowering corners."
+    },
     "nav_create_indirect_connection_set_from": {
         "value": "[0, 0, 0]",
         "description": "Set the 'from' location of an indirect connection."
@@ -5313,7 +5419,7 @@
     "nav_gen_opt_to_quads_se_limit_end": 0.1,
     "nav_gen_opt_to_quads_se_limit_start": 1e-05,
     "nav_gen_opt_to_quads_weld_limit_end": 0.01,
-    "nav_gen_opt_to_quads_weld_limit_start": 1e-07,
+    "nav_gen_opt_to_quads_weld_limit_start": 0,
     "nav_gen_oriented_angle_tol": {
         "value": 15,
         "description": "Max abrupt orientation difference an NPC can tolerate when moving through the mesh (degrees)."
@@ -5336,6 +5442,7 @@
         "value": false,
         "description": "For testing using legacy nav data"
     },
+    "nav_max_vis_delta_list_length": 64,
     "nav_msr_test_add_agent": false,
     "nav_msr_test_add_goal": false,
     "nav_msr_test_freeze": false,
@@ -5415,6 +5522,10 @@
     "nav_show_elem_info_font": "Consolas",
     "nav_show_elem_info_font_size": -1,
     "nav_show_elem_info_font_voffset": -11,
+    "nav_show_potentially_visible": {
+        "value": 0,
+        "description": "Show areas that are potentially visible from the current nav area"
+    },
     "nav_smooth_constrain_spline": true,
     "nav_smooth_constrain_spline_relax": 0.006,
     "nav_smooth_constrain_spring": 2,
@@ -5553,6 +5664,10 @@
     "nav_test_split_obstacle_leave": false,
     "nav_test_split_obstacle_size": 30,
     "nav_test_split_obstacle_update_pos": true,
+    "nav_validate": {
+        "value": 0,
+        "description": "Level of validation for nav system.  Higher will be slower."
+    },
     "navlocal_constrain": true,
     "navlocal_lead_in_dist": 64,
     "navlocal_lead_out_dist": 18,
@@ -5578,6 +5693,68 @@
         "value": 0,
         "description": "Sleep randomly 0..net_async_job_random_sleep ms in the parallel server jobs; sleep is per job"
     },
+    "net_compresspackets_minsize": {
+        "value": 1024,
+        "description": "Don't bother compressing packets below this size."
+    },
+    "net_culloptimization": {
+        "value": true,
+        "description": "Enable optimization of slow path that makes HLTV CPU consumption high in AnimGraph-using mods. Will switch to this on by default soon."
+    },
+    "net_detailed_canpacket_log": false,
+    "net_filelogging": {
+        "value": false,
+        "description": "Log packets to files"
+    },
+    "net_fs_showindirections": false,
+    "net_limit_sv_recv_max_message_size_kb": {
+        "value": 32,
+        "description": "Server will reject message larger than N kb"
+    },
+    "net_limit_sv_recv_segments_per_packet": {
+        "value": 50,
+        "description": "Server will reject packets with more than N segments"
+    },
+    "net_limit_sv_recvbuffer_kb": {
+        "value": 128,
+        "description": "Server will not buffer more than N kb from connected clients"
+    },
+    "net_limit_sv_recvbuffer_msg": {
+        "value": 100,
+        "description": "Server will not buffer more than N messages from connected clients"
+    },
+    "net_log_processing": {
+        "value": false,
+        "description": "Log network processing"
+    },
+    "net_max_message_process_count": {
+        "value": 0,
+        "description": "Maximum number of messages to process from a client in a single frame (0 == no limit)."
+    },
+    "net_max_message_queue_size": {
+        "value": 0,
+        "description": "Maximum number of messages to allow waiting in queue after processing; exceeding this disconnects the client. 0 == no limit"
+    },
+    "net_max_polymorphic_spew": {
+        "value": 5,
+        "description": "Max polymorphic variants to spew when spewing a flattened serializer."
+    },
+    "net_p2p_listen_dedicated": {
+        "value": false,
+        "description": "Should dedicated server listen for new-style P2P?"
+    },
+    "net_qosinterval_spew": {
+        "value": false,
+        "description": "Spew QoS interval data as we gather it"
+    },
+    "net_qospacketloss_percentage_threshold": {
+        "value": 5,
+        "description": "Spew a warning if packet loss percentage is above this threshold"
+    },
+    "net_showdrop": {
+        "value": false,
+        "description": "Show dropped packets in console"
+    },
     "net_showeventlisteners": {
         "value": false,
         "description": "Show listening addition/removals"
@@ -5585,6 +5762,36 @@
     "net_showevents": {
         "value": 0,
         "description": "Dump game events to console (1=client only, 2=all)."
+    },
+    "net_showmsg": {
+        "value": "0",
+        "description": "Show incoming message: <0|1|2|name> where 1 == all and 2 == all except net_NOP"
+    },
+    "net_showoob": {
+        "value": false,
+        "description": "Show connectionless UDP traffic."
+    },
+    "net_showpeaks": {
+        "value": 0,
+        "description": "Show messages for large packets only: <size>"
+    },
+    "net_showreliable": {
+        "value": "0",
+        "description": "Like net_showmsg, but only spew reliable messages"
+    },
+    "net_showudp": {
+        "value": false,
+        "description": "Dump UDP packets summary to console"
+    },
+    "net_showudp_remoteonly": {
+        "value": true,
+        "description": "Dump non-loopback udp only"
+    },
+    "net_skip_redundant_change_callbacks": false,
+    "net_use_delta_property_fastpath": 1,
+    "net_use_packet_compression": {
+        "value": true,
+        "description": "Compress network traffic"
     },
     "noclip_fixup": true,
     "npc_create_or_teleport_warn_on_nonav": {
@@ -5601,7 +5808,7 @@
     },
     "npc_go_loop_max_waypoints": 2,
     "npc_go_max_distance": {
-        "value": 56755.8,
+        "value": 56755.84,
         "description": "How far is the trace we shoot when using NPC Go"
     },
     "npc_go_no_arrow": {
@@ -5809,6 +6016,8 @@
     "particle_cluster_manager_search_dist": 256,
     "particle_cluster_nodraw": false,
     "particle_cluster_use_collision_hulls": true,
+    "particle_powsimd_random_range_exp": true,
+    "particle_snapshot_allow_combined_models": false,
     "particle_test_attach_attachment": {
         "value": 0,
         "description": "Attachment index for attachment mode"
@@ -5839,6 +6048,8 @@
     "pestilence_drone_torque_accel": 2,
     "pestilence_drone_vision": 1024,
     "pestilence_drone_waypoint_threshold": 128,
+    "pet_preview_gravity": "[0, 0, -800]",
+    "pet_preview_underwater": false,
     "phonemedelay": {
         "value": 0,
         "description": "Phoneme delay to account for sound system latency."
@@ -5953,6 +6164,9 @@
     "prop_nav_obstacle_block_mass_a": -1,
     "prop_nav_obstacle_block_mass_b": -1,
     "prop_nav_obstacle_block_mass_c": -1,
+    "proped_attr_logging": false,
+    "proped_sync_timings": false,
+    "property_editor_use_overlay": true,
     "props_break_apply_radial_forces": true,
     "props_break_max_pieces_perframe": {
         "value": 16,
@@ -5990,6 +6204,10 @@
         "description": "Density of Particle Rain 0-1"
     },
     "r_add_views_in_pre_output": false,
+    "r_allow_low_gpu_memory_mode": {
+        "value": true,
+        "description": "Allow Low GPU Memory mode (i.e. when building maps)."
+    },
     "r_allow_onesweep_gpusort": true,
     "r_always_render_all_windows": {
         "value": false,
@@ -6009,6 +6227,7 @@
         "value": 0,
         "description": "bloom mip up-sample filtering radius (using 3x3 tent filter, radius in mip level texels), 0.0 radius => box (2x2) filter with (fixed) 1.0 radius"
     },
+    "r_cache_pool_allocations": true,
     "r_character_decal_monitor_draw_frustum": false,
     "r_character_decal_monitor_emissive": false,
     "r_character_decal_monitor_render_res": 512,
@@ -6274,6 +6493,10 @@
     "r_draw_first_tri_only": false,
     "r_draw_instances": true,
     "r_draw_overlays": true,
+    "r_draw_particle_children_with_parents": {
+        "value": -1,
+        "description": "Draw particle children with parents (-1=use gameinfo, 0=no, 1=yes)"
+    },
     "r_drawblankworld": {
         "value": false,
         "description": "Render blank instead of the game world"
@@ -6289,6 +6512,10 @@
     "r_drawpanorama": {
         "value": true,
         "description": "Enable the rendering of panorama UI"
+    },
+    "r_drawparticles": {
+        "value": true,
+        "description": "SceneSystem/Particles/Draw Particles"
     },
     "r_drawpixelvisibility": {
         "value": false,
@@ -6380,7 +6607,10 @@
     },
     "r_frame_sync_enable": true,
     "r_freeze_sceneobjects": false,
-    "r_freezeparticles": false,
+    "r_freezeparticles": {
+        "value": false,
+        "description": "Pause particle simulation"
+    },
     "r_fullscreen_gamma": {
         "value": 2.2,
         "description": "Screen Gamma (only in fullscreen modes)"
@@ -6460,6 +6690,14 @@
         "value": 0,
         "description": "Upper limit on texture pool size."
     },
+    "r_memory_aliasing": {
+        "value": true,
+        "description": "Allow disabling memory aliasing in the device memory pool.  This is just intended for testing/ruling out aliasing issues."
+    },
+    "r_mipgen_compute_shader": {
+        "value": true,
+        "description": "Use compute shader for mipgen."
+    },
     "r_mixed_shadows_fade_in_time": 0.5,
     "r_mixed_shadows_fade_out_time": 0.5,
     "r_monitor_3dskybox": true,
@@ -6473,8 +6711,74 @@
         "description": "Override the near clipping plane. -1 means use the default."
     },
     "r_opaque": true,
-    "r_particle_max_detail_level": 0,
-    "r_particle_timescale": 0,
+    "r_particle_allowprerender": true,
+    "r_particle_batch_collections": false,
+    "r_particle_cables_cast_shadows": true,
+    "r_particle_cables_culling": 1,
+    "r_particle_cables_culling_bounds_scale": 1.2,
+    "r_particle_cables_dynamic_roundness": false,
+    "r_particle_cables_dynamic_roundness_threshold": 20,
+    "r_particle_cables_render": true,
+    "r_particle_cables_render_meshlets": true,
+    "r_particle_cables_visualize_roundness": false,
+    "r_particle_enable_fastpath": true,
+    "r_particle_explicit_fetch": false,
+    "r_particle_fixedrandomseeds": {
+        "value": false,
+        "description": "Use fixed seeds for easier debugging"
+    },
+    "r_particle_gpu_implicit": true,
+    "r_particle_gpu_implicit_cull_columns": true,
+    "r_particle_gpu_implicit_lds_cache": false,
+    "r_particle_max_detail_level": {
+        "value": 3,
+        "description": "The maximum detail level of particle to create"
+    },
+    "r_particle_max_draw_distance": {
+        "value": 1000000,
+        "description": "The maximum distance that particles will render"
+    },
+    "r_particle_max_size_cull": {
+        "value": 1200,
+        "description": "Particle systems larger than this in every dimension skip culling to save CPU.  They will be drawn anyway."
+    },
+    "r_particle_max_texture_layers": -1,
+    "r_particle_min_timestep": {
+        "value": 0,
+        "description": "A minimum on particle simulation time, particle simulation happening more frequently than this will lerp."
+    },
+    "r_particle_mixed_resolution_viewstart": 500,
+    "r_particle_model_new": false,
+    "r_particle_model_new8": true,
+    "r_particle_model_per_thread_count": 32,
+    "r_particle_multiplier": {
+        "value": 1,
+        "description": "Render each particle system N times for perf testing"
+    },
+    "r_particle_newinput": {
+        "value": false,
+        "description": "Enable input path in particle ops"
+    },
+    "r_particle_render_refreshes_sleep_timer": {
+        "value": true,
+        "description": "Disable to get a better look at what's happening offscreen"
+    },
+    "r_particle_render_test": {
+        "value": false,
+        "description": "render particles 100 times and show perf"
+    },
+    "r_particle_skip_postsim": false,
+    "r_particle_testbuffers": false,
+    "r_particle_timescale": 1,
+    "r_particle_warn_threshold_ms": {
+        "value": 0,
+        "description": "Threshold to warn about when rendering particles."
+    },
+    "r_particles_memset_at_init": {
+        "value": 1,
+        "description": "0=don't clear particle attrs at init 1=clear to zero 2=clear to 0xdb -1=clear to zero at first sim"
+    },
+    "r_physics_particle_op_spawn_scale": 1,
     "r_pipeline_stats_command_flush": {
         "value": false,
         "description": "Experimental: Set to 1 to enable full GPU pipeline flushing after each command list."
@@ -6496,6 +6800,10 @@
     "r_post_bloom": false,
     "r_post_bloom_strength": -1,
     "r_postprocess_enable": true,
+    "r_prefer_loop_unrolling": {
+        "value": true,
+        "description": "Prefer shader loop unrolling."
+    },
     "r_propsmaxdist": {
         "value": 1200,
         "description": "Maximum visible distance"
@@ -6512,6 +6820,7 @@
         "value": true,
         "description": "Automatically generate shader debug info on capture"
     },
+    "r_renderdoc_capture_thumbnail_rendering": false,
     "r_renderdoc_open_captures": true,
     "r_renderdoc_validation_error_capture_limit": 5,
     "r_rendersun": {
@@ -6524,6 +6833,10 @@
     "r_screen_size_expansion": 0,
     "r_shadows": true,
     "r_shadowtile_waveops": false,
+    "r_show_gpu_memory_visualizer": {
+        "value": false,
+        "description": "SceneSystem/Vulkan GPU Memory Visualizer"
+    },
     "r_showsceneobjectbounds": {
         "value": false,
         "description": "Show scenesystem object bounding boxes"
@@ -6615,8 +6928,8 @@
         "value": 1,
         "description": "0: Bilinear, 1: Trilinear, 2: Aniso 2x, 3: Aniso 4x, 4: Aniso 8x, 5: Aniso 16x"
     },
-    "r_threaded_particle_creation": false,
-    "r_threaded_particles": false,
+    "r_threaded_particle_creation": true,
+    "r_threaded_particles": true,
     "r_threaded_scene_object_update": true,
     "r_timestamp_query_multiplier": {
         "value": 1,
@@ -6638,6 +6951,33 @@
     "r_vconsole_foregroundforcerender": {
         "value": true,
         "description": "When VConsole is in the foreground, force all engine & tools to render"
+    },
+    "r_vma_defrag_algorithm": {
+        "value": 1,
+        "description": "Defrag algorithm 0=Fast 1=Balanced 2=full 3=Extensive"
+    },
+    "r_vma_defrag_enabled": true,
+    "r_vma_defrag_max_allocation_count_per_pass": {
+        "value": 256,
+        "description": "During a VMA defrag, number of moves per pass."
+    },
+    "r_vma_defrag_max_allocation_size_per_pass": {
+        "value": 32,
+        "description": "During a VMA defrag, number of MB in moves per pass."
+    },
+    "r_vma_defrag_moves_per_frame": {
+        "value": 20,
+        "description": "During a VMA defrag, number of moves to process for a pass in a single frame update."
+    },
+    "r_vma_defrag_threshold_mb": 256,
+    "r_vulkan_accurate_renderarea": {
+        "value": true,
+        "description": "Sets the renderArea of a render pass to its viewport bounds (false will use RT size). More accurate renderArea, but results in more render passes."
+    },
+    "r_vulkan_force_sync1": false,
+    "r_vulkan_sw_cmd_lists": {
+        "value": true,
+        "description": "Enable Software Command lists for Vulkan"
     },
     "r_wait_on_present": false,
     "r_world_frame_load_threshold_ms": 10,
@@ -6706,6 +7046,11 @@
         "value": 80000,
         "description": "Min bytes/sec the host can receive data"
     },
+    "rc_default_texture_encode_quality": {
+        "value": 0,
+        "description": "Texture compression quality used in tools mode"
+    },
+    "rc_relaxedcones_cpu": false,
     "rcon_connected_clients_allow": {
         "value": true,
         "description": "Allow clients to use rcon commands on server."
@@ -6731,6 +7076,7 @@
         "value": false,
         "description": "If true, resets the input device when there was a long enough hitch between callbacks."
     },
+    "resourcecompiler_log_compile_stats": false,
     "resourcesystem_multiframe_finalize_time_msec": {
         "value": 10,
         "description": "Max time to spend finalizing resources per frame in miliseconds."
@@ -6778,6 +7124,8 @@
         "value": 0,
         "description": "When computing respondents for a 'THEN ANY' rule, all rule-matching scores within this much of the best score will be considered."
     },
+    "rtx_allow_blas_compact": true,
+    "rtx_allow_blas_create": true,
     "rtx_dynamic_blas": {
         "value": true,
         "description": "Allow dynamic BLAS creation for geometry going through the compute shader skinning path."
@@ -7143,6 +7491,7 @@
         "value": 1,
         "description": "Game skill level."
     },
+    "smartprop_print_timings": false,
     "smoothstairs": {
         "value": true,
         "description": "Smooth player eye z coordinate when traversing stairs."
@@ -7304,13 +7653,165 @@
     "snd_soundmixer_update_maximum_frame_rate": 10,
     "snd_soundmixer_version": 2,
     "snd_spatialize_lerp": 0,
+    "snd_steamaudio_active_hrtf": {
+        "value": 0,
+        "description": "Index of active HRTF."
+    },
+    "snd_steamaudio_baked_occlusion_mode": {
+        "value": 0,
+        "description": "0: distance ratio only. 1: deviation only (1/r). 2: deviation only (linear). 3: Mode 0 and Mode 1, 4: Mode 0 and Mode 2"
+    },
+    "snd_steamaudio_default_hrtf_volume_gain": {
+        "value": 0,
+        "description": "Adjust overall volume of the default HRTF by the specified gain (dB)."
+    },
     "snd_steamaudio_dynamicpathing_max_samples": 16,
+    "snd_steamaudio_enable_compressed_reverb_lookup": {
+        "value": true,
+        "description": "Use compressed reverb data if available."
+    },
+    "snd_steamaudio_enable_custom_hrtf": {
+        "value": false,
+        "description": "Enable custom HRTF loading."
+    },
+    "snd_steamaudio_enable_editor_profiling": {
+        "value": false,
+        "description": "Enables tracy profiling when baking steam audio data in Hammer."
+    },
+    "snd_steamaudio_enable_pathing": {
+        "value": false,
+        "description": "This variable is checked by soundstack to globally enabling pathing for audio processing."
+    },
+    "snd_steamaudio_enable_perspective_correction": {
+        "value": false,
+        "description": "Enable perspective correction for 3D audio."
+    },
+    "snd_steamaudio_enable_probeneighborhood_caching": {
+        "value": true,
+        "description": "Enable caching listener probe neighborhood for pathing."
+    },
     "snd_steamaudio_enable_reverb": {
         "value": 0,
         "description": "Enable Steam Audio Reverb processor."
     },
+    "snd_steamaudio_enable_reverb_probe_caching_for_missing_probes": {
+        "value": true,
+        "description": "Continue using previous prrobes if probe lookup for reverb fails."
+    },
+    "snd_steamaudio_hammer_probes_always_render": {
+        "value": true,
+        "description": "Render Steam Audio Probes even when probes are unselected."
+    },
+    "snd_steamaudio_hybrid_reverb_overlap": {
+        "value": 0.25,
+        "description": "Set the overlap fraction (0 to 1) for hybrid reverb."
+    },
+    "snd_steamaudio_hybrid_reverb_transition_time": {
+        "value": 1,
+        "description": "Set the transition time (in seconds) between convolution and parametric reverb."
+    },
+    "snd_steamaudio_invalid_path_length": {
+        "value": 0,
+        "description": "Path length of invalid path in inches. Set this to .0 to use direct distance as path length."
+    },
+    "snd_steamaudio_ir_duration": {
+        "value": 2,
+        "description": "The time delay between a sound being emitted and the last audible reflection in Steam Audio."
+    },
+    "snd_steamaudio_irradiancemindistance_reverb": {
+        "value": 1,
+        "description": "Minimum distance (in meters) of a source from a surface for the purposes of energy calculations."
+    },
+    "snd_steamaudio_load_dimensions_data": {
+        "value": true,
+        "description": "If set, baked dimensions data is loaded."
+    },
+    "snd_steamaudio_load_materials_data": {
+        "value": true,
+        "description": "If set, baked materials data is loaded."
+    },
+    "snd_steamaudio_load_occlusion_data": {
+        "value": true,
+        "description": "If set, baked occlusion data is loaded."
+    },
+    "snd_steamaudio_load_pathing_data": {
+        "value": true,
+        "description": "If set, baked pathing data is loaded. Steam Audio Hammer entities can successfully use pathing in this case."
+    },
+    "snd_steamaudio_load_reverb_data": {
+        "value": true,
+        "description": "If set, baked reverb data is loaded. Reset it to zero during an format changes of baked data until all data is updated."
+    },
+    "snd_steamaudio_max_convolution_sources": {
+        "value": 4,
+        "description": "The maximum number of simultaneous sources that can be modeled by Steam Audio."
+    },
+    "snd_steamaudio_max_hrtf_normalization_gain_db": {
+        "value": 6,
+        "description": "Maximum gain any HRTF could have during volume normalization."
+    },
+    "snd_steamaudio_max_occlusion_samples": {
+        "value": 64,
+        "description": "The maximum number of rays that can be traced for volumetric occlusion by Steam Audio."
+    },
+    "snd_steamaudio_max_probes_customdata": {
+        "value": 4294967295,
+        "description": "Maximum number of probes to create when baking custom data (occlusion)."
+    },
+    "snd_steamaudio_max_probes_customdata_dimensions": {
+        "value": 4294967295,
+        "description": "Maximum number of probes to create when baking custom data (dimensions)."
+    },
+    "snd_steamaudio_max_probes_customdata_materials": {
+        "value": 4294967295,
+        "description": "Maximum number of probes to create when baking custom data (occlusion)."
+    },
+    "snd_steamaudio_max_probes_pathing": {
+        "value": 4294967295,
+        "description": "Maximum number of probes to create when baking paths."
+    },
+    "snd_steamaudio_max_probes_reverb": {
+        "value": 4294967295,
+        "description": "Maximum number of probes to create when baking reverb."
+    },
+    "snd_steamaudio_normalize_default_hrtf_volume": {
+        "value": false,
+        "description": "Normalize volume of default HRTF dataset across all directions."
+    },
+    "snd_steamaudio_num_bounces": {
+        "value": 128,
+        "description": "The maximum number of times any ray can bounce when using Steam Audio."
+    },
+    "snd_steamaudio_num_diffuse_samples": {
+        "value": 2048,
+        "description": "The number of directions considered for ray bounce by Steam Audio."
+    },
+    "snd_steamaudio_num_rays": {
+        "value": 65536,
+        "description": "The number of rays to trace for reflection modeling by Steam Audio."
+    },
+    "snd_steamaudio_num_threads": {
+        "value": 2,
+        "description": "Sets the number of threads used for realtime reflection by Steam Audio."
+    },
     "snd_steamaudio_pathing_caching_threshold": 5,
     "snd_steamaudio_pathing_enable_caching": true,
+    "snd_steamaudio_pathing_enable_source_probe_interp": {
+        "value": false,
+        "description": "If set, all the probes near a source withing probe range are used to find paths instead of nearest probe."
+    },
+    "snd_steamaudio_pathing_order": {
+        "value": 1,
+        "description": "The amount of directional detail in the simulated by Steam Audio."
+    },
+    "snd_steamaudio_pathing_order_rendering": {
+        "value": 1,
+        "description": "The amount of directional detail in the rendered audio by Steam Audio."
+    },
+    "snd_steamaudio_perspective_correction_factor": {
+        "value": 1,
+        "description": "Perspective correction factor, ratio of screen size and view depth from screen, for 3D audio."
+    },
     "snd_steamaudio_perspective_correction_front_only": {
         "value": true,
         "description": "Use perspective correction for 3D audio only in the frontal directions."
@@ -7318,6 +7819,18 @@
     "snd_steamaudio_reverb_level_db": {
         "value": -3,
         "description": "Adjust overall volume (dB) of the output from Steam Audio Reverb processor."
+    },
+    "snd_steamaudio_reverb_order": {
+        "value": 1,
+        "description": "Ambisonics order to use for simulating reverb."
+    },
+    "snd_steamaudio_reverb_order_rendering": {
+        "value": 1,
+        "description": "Ambisonics order to use for convolution reverb. 0th order = 1 channel, 1st order = 4 channels."
+    },
+    "snd_steamaudio_reverb_update_rate": {
+        "value": 30,
+        "description": "Set the maximum update rate (in Hz) for reverb."
     },
     "snd_steamaudio_source_pathing_enable_validation": {
         "value": false,
@@ -7580,6 +8093,10 @@
     "steam_inputhandler_glyph_lock_mode": {
         "value": 0,
         "description": "0: Automatic (Default) - switch glyphs when a keyboard bind or controller bind activates. 1: Keyboard and Mouse only. 2: Controller Only"
+    },
+    "steamaudio_customdata_dimensions_numrays": {
+        "value": 32768,
+        "description": "Number of rays to trace for estimating inside outside status of a probe."
     },
     "steaminput_glyph_neutral": {
         "value": 0,
@@ -7871,6 +8388,10 @@
     "sv_late_commands_allowed": {
         "value": 5,
         "description": "Allow N late commands to run at 0 timescale prior to running an on-time command. Negative values for network round trip based calculation with a hard cap of the of absolute value"
+    },
+    "sv_listen_directudp": {
+        "value": true,
+        "description": "Server will listen for direct UDP connections on the configured port.  This can be turned off to only listen for P2P/SDR connections."
     },
     "sv_log_change_offsets": {
         "value": false,
@@ -8412,6 +8933,8 @@
     },
     "toast_manager_override_duration": -1,
     "tool_spawned_model_scales": "[1, 1, 1]",
+    "toolhud_enable": true,
+    "tools_renderscenes": true,
     "tools_stall_monitor_break_on_unknown_cause": {
         "value": false,
         "description": "Break on unknown stall cause"
@@ -8719,6 +9242,18 @@
     },
     "update_all_keyframed_in_spatial_partition_update": true,
     "update_voices_low_priority": false,
+    "v8_jitless": {
+        "value": true,
+        "description": "Disable runtime allocation of executable memory for V8."
+    },
+    "v8_maximum_heap_size_mb": {
+        "value": 512,
+        "description": "Hard limit for the v8 heap size (in mBytes)"
+    },
+    "v8_stack_size": {
+        "value": 384,
+        "description": "Default size of stack region v8 is allowed to use (in kBytes)"
+    },
     "viewmodel_fov": 54,
     "violence_ablood": {
         "value": true,
@@ -8846,6 +9381,19 @@
     },
     "vprof_scope_entity_thinks": false,
     "vprof_think_limit": false,
+    "vulkan_batch_size": 500,
+    "vulkan_batch_submits": true,
+    "vulkan_dedicated_allocation_threshold": {
+        "value": 512,
+        "description": "Size (in KBs) above which textures should be allocated in dedicated memory (NV-only)."
+    },
+    "vulkan_link_time_optimize_libraries": true,
+    "vulkan_pipeline_compile_spew": false,
+    "vulkan_pipeline_compile_throttle_ms": 0,
+    "vulkan_unpause_workers_after_each_texture_deallocation": {
+        "value": false,
+        "description": "If true, the main thread pauses and unpauses the Vulkan worker threads around each texture deallocation, which allows the workers to make a little bit of progress but results in main thread stalls. If false, we keep the workers paused until all deallocations are done, allowing the deallocations to complete significantly faster."
+    },
     "wind_system_default_resolution_xy": 256,
     "wind_system_default_resolution_z": 32,
     "wind_system_default_sample_min_spacing": 12,
