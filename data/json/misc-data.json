@@ -1,10 +1,11 @@
 {
     "_include": [
         "scripts/misc/breakable_props.vdata_inc",
+        "scripts/misc/pickups.vdata_inc",
         "scripts/misc/xp_orbs.vdata_inc",
         "scripts/misc/neutral_camps.vdata_inc",
-        "scripts/misc/pickups.vdata_inc",
-        "scripts/misc/capture_points.vdata_inc"
+        "scripts/misc/capture_points.vdata_inc",
+        "scripts/misc/triggers.vdata_inc"
     ],
     "ammo_permanent_pickup": {
         "PickupRadius": {
@@ -14,7 +15,7 @@
         "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
         "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
         "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
-        "hModel": "models/props_gameplay/powerup_idol/powerup_idol.vmdl",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_weapon_tome.vmdl",
         "SpawnSound": "Powerup.Spawn.Generic",
         "PickupExpirationDuration": {
             "Base": 30,
@@ -35,12 +36,20 @@
             ],
             "SmallIconCssClass": "ammoIncrease"
         },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_MaxAmmo",
+        "BuffTypeGraphColor": [
+            255,
+            220,
+            70
+        ],
+        "BuffTypeValueUnit": "Percent",
         "DefaultMaterialGroupName": "orange",
         "Color": [
             255,
             165,
             0
-        ]
+        ],
+        "GainedSound": "Powerup.Pickup.Ammo.Gained"
     },
     "ammo_permanent_pickup_lv2": {
         "PickupRadius": {
@@ -50,7 +59,7 @@
         "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
         "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
         "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
-        "hModel": "models/props_gameplay/powerup_idol/powerup_idol.vmdl",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_weapon_tome.vmdl",
         "SpawnSound": "Powerup.Spawn.Generic",
         "PickupExpirationDuration": {
             "Base": 30,
@@ -71,12 +80,20 @@
             ],
             "SmallIconCssClass": "ammoIncrease"
         },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_MaxAmmo",
+        "BuffTypeGraphColor": [
+            255,
+            220,
+            70
+        ],
+        "BuffTypeValueUnit": "Percent",
         "DefaultMaterialGroupName": "orange",
         "Color": [
             255,
             165,
             0
-        ]
+        ],
+        "GainedSound": "Powerup.Pickup.Ammo.Gained"
     },
     "ammo_permanent_pickup_lv3": {
         "PickupRadius": {
@@ -86,7 +103,7 @@
         "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
         "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
         "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
-        "hModel": "models/props_gameplay/powerup_idol/powerup_idol.vmdl",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_weapon_tome.vmdl",
         "SpawnSound": "Powerup.Spawn.Generic",
         "PickupExpirationDuration": {
             "Base": 30,
@@ -107,12 +124,179 @@
             ],
             "SmallIconCssClass": "ammoIncrease"
         },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_MaxAmmo",
+        "BuffTypeGraphColor": [
+            255,
+            220,
+            70
+        ],
+        "BuffTypeValueUnit": "Percent",
         "DefaultMaterialGroupName": "orange",
         "Color": [
             255,
             165,
             0
-        ]
+        ],
+        "GainedSound": "Powerup.Pickup.Ammo.Gained"
+    },
+    "big_gold_pickup": {
+        "PickupRadius": {
+            "Base": 85.0,
+            "PerMinuteAfterStart": 0
+        },
+        "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
+        "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
+        "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
+        "hModel": "models/props_gameplay/powerup_idol/powerup_idol.vmdl",
+        "SpawnSound": "Powerup.Spawn.Generic",
+        "PickupExpirationDuration": {
+            "Base": 300,
+            "PerMinuteAfterStart": 0
+        },
+        "ParticleRadius": 1.5,
+        "ShowOnMinimap": false,
+        "NameLocString": "#big_gold_pickup_label:f",
+        "PickupSound": "Powerup.Pickup.Souls",
+        "NameOffset": 60,
+        "GoldAmount": 46.0,
+        "GoldPerMinuteAmount": 4.0,
+        "Color": [
+            0,
+            255,
+            204
+        ],
+        "DefaultMaterialGroupName": "gold",
+        "IsPermanentPickup": true,
+        "ShowModelOverhead": false
+    },
+    "bulletresist_permanent_pickup": {
+        "PickupRadius": {
+            "Base": 85.0,
+            "PerMinuteAfterStart": 0
+        },
+        "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
+        "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
+        "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_armor_tome.vmdl",
+        "SpawnSound": "Powerup.Spawn.Generic",
+        "PickupExpirationDuration": {
+            "Base": 30,
+            "PerMinuteAfterStart": 0
+        },
+        "ParticleRadius": 1.5,
+        "ShowOnMinimap": false,
+        "NameLocString": "bulletresist_permanent_pickup_label",
+        "PickupSound": "Powerup.Pickup.Bullet.Resist",
+        "NameOffset": 60,
+        "IsPermanentPickup": true,
+        "Modifer": {
+            "ScriptValues": [
+                {
+                    "ModifierValue": "MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST",
+                    "value": 0.5
+                }
+            ]
+        },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_BulletResist",
+        "BuffTypeGraphColor": [
+            60,
+            200,
+            90
+        ],
+        "BuffTypeValueUnit": "Percent",
+        "DefaultMaterialGroupName": "green",
+        "Color": [
+            60,
+            160,
+            90
+        ],
+        "GainedSound": "Powerup.Pickup.Bullet.Resist.Gained"
+    },
+    "bulletresist_permanent_pickup_lv2": {
+        "PickupRadius": {
+            "Base": 85.0,
+            "PerMinuteAfterStart": 0
+        },
+        "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
+        "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
+        "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_armor_tome.vmdl",
+        "SpawnSound": "Powerup.Spawn.Generic",
+        "PickupExpirationDuration": {
+            "Base": 30,
+            "PerMinuteAfterStart": 0
+        },
+        "ParticleRadius": 1.5,
+        "ShowOnMinimap": false,
+        "NameLocString": "bulletresist_permanent_pickup_label_lv2",
+        "PickupSound": "Powerup.Pickup.Bullet.Resist",
+        "NameOffset": 60,
+        "IsPermanentPickup": true,
+        "Modifer": {
+            "ScriptValues": [
+                {
+                    "ModifierValue": "MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST",
+                    "value": 0.75
+                }
+            ]
+        },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_BulletResist",
+        "BuffTypeGraphColor": [
+            60,
+            200,
+            90
+        ],
+        "BuffTypeValueUnit": "Percent",
+        "DefaultMaterialGroupName": "green",
+        "Color": [
+            60,
+            160,
+            90
+        ],
+        "GainedSound": "Powerup.Pickup.Bullet.Resist.Gained"
+    },
+    "bulletresist_permanent_pickup_lv3": {
+        "PickupRadius": {
+            "Base": 85.0,
+            "PerMinuteAfterStart": 0
+        },
+        "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
+        "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
+        "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_armor_tome.vmdl",
+        "SpawnSound": "Powerup.Spawn.Generic",
+        "PickupExpirationDuration": {
+            "Base": 30,
+            "PerMinuteAfterStart": 0
+        },
+        "ParticleRadius": 1.5,
+        "ShowOnMinimap": false,
+        "NameLocString": "bulletresist_permanent_pickup_label_lv3",
+        "PickupSound": "Powerup.Pickup.Bullet.Resist",
+        "NameOffset": 60,
+        "IsPermanentPickup": true,
+        "Modifer": {
+            "ScriptValues": [
+                {
+                    "ModifierValue": "MODIFIER_VALUE_BULLET_ARMOR_DAMAGE_RESIST",
+                    "value": 1.0
+                }
+            ]
+        },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_BulletResist",
+        "BuffTypeGraphColor": [
+            60,
+            200,
+            90
+        ],
+        "BuffTypeValueUnit": "Percent",
+        "DefaultMaterialGroupName": "green",
+        "Color": [
+            60,
+            160,
+            90
+        ],
+        "GainedSound": "Powerup.Pickup.Bullet.Resist.Gained"
     },
     "capture_point_escort": {
         "modifierCapturer": {
@@ -175,7 +359,8 @@
             "AuraRadius": 300.0,
             "modifierProvidedByAura": {
                 "IsHidden": true,
-                "EnabledStateMask": "MODIFIER_STATE_NEAR_HEAVY_PUNCHABLE_ITEM"
+                "EnabledStateMask": "MODIFIER_STATE_NEAR_HEAVY_PUNCHABLE_ITEM",
+                "Attributes": "MODIFIER_ATTRIBUTE_CANNOT_BE_PURGED"
             },
             "AuraSearchType": "CITADEL_UNIT_TARGET_HERO"
         },
@@ -226,10 +411,8 @@
         ],
         "TempParticleSheetIndex": 7,
         "AmbientSound": "Powerup.Casting_Lp",
-        "MinimapCssClasses": [
-            "powerup_casting",
-            "powerup_spawn"
-        ]
+        "MinimapClass": "powerup_casting",
+        "PingIcon": "file://{images}/hud/icons/powerup_spirit.svg"
     },
     "cd_permanent_pickup": {
         "PickupRadius": {
@@ -239,7 +422,7 @@
         "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
         "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
         "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
-        "hModel": "models/props_gameplay/powerup_idol/powerup_idol.vmdl",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_cooldown_tome.vmdl",
         "SpawnSound": "Powerup.Spawn.Generic",
         "PickupExpirationDuration": {
             "Base": 30,
@@ -260,12 +443,20 @@
             ],
             "SmallIconCssClass": "cooldownReduction"
         },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_CooldownReduction",
+        "BuffTypeGraphColor": [
+            70,
+            110,
+            255
+        ],
+        "BuffTypeValueUnit": "Percent",
         "DefaultMaterialGroupName": "blue",
         "Color": [
             0,
             0,
             200
-        ]
+        ],
+        "GainedSound": "Powerup.Pickup.Spirit.Gained"
     },
     "cd_permanent_pickup_lv2": {
         "PickupRadius": {
@@ -275,7 +466,7 @@
         "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
         "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
         "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
-        "hModel": "models/props_gameplay/powerup_idol/powerup_idol.vmdl",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_cooldown_tome.vmdl",
         "SpawnSound": "Powerup.Spawn.Generic",
         "PickupExpirationDuration": {
             "Base": 30,
@@ -296,12 +487,20 @@
             ],
             "SmallIconCssClass": "cooldownReduction"
         },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_CooldownReduction",
+        "BuffTypeGraphColor": [
+            70,
+            110,
+            255
+        ],
+        "BuffTypeValueUnit": "Percent",
         "DefaultMaterialGroupName": "blue",
         "Color": [
             0,
             0,
             200
-        ]
+        ],
+        "GainedSound": "Powerup.Pickup.Spirit.Gained"
     },
     "cd_permanent_pickup_lv3": {
         "PickupRadius": {
@@ -311,7 +510,7 @@
         "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
         "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
         "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
-        "hModel": "models/props_gameplay/powerup_idol/powerup_idol.vmdl",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_cooldown_tome.vmdl",
         "SpawnSound": "Powerup.Spawn.Generic",
         "PickupExpirationDuration": {
             "Base": 30,
@@ -332,12 +531,20 @@
             ],
             "SmallIconCssClass": "cooldownReduction"
         },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_CooldownReduction",
+        "BuffTypeGraphColor": [
+            70,
+            110,
+            255
+        ],
+        "BuffTypeValueUnit": "Percent",
         "DefaultMaterialGroupName": "blue",
         "Color": [
             0,
             0,
             200
-        ]
+        ],
+        "GainedSound": "Powerup.Pickup.Spirit.Gained"
     },
     "change_team_powerup_pickup": {
         "PickupRadius": {
@@ -364,7 +571,8 @@
             "AuraRadius": 150.0,
             "modifierProvidedByAura": {
                 "IsHidden": true,
-                "EnabledStateMask": "MODIFIER_STATE_NEAR_PUNCHABLE_CHANGE_TEAM"
+                "EnabledStateMask": "MODIFIER_STATE_NEAR_PUNCHABLE_CHANGE_TEAM",
+                "Attributes": "MODIFIER_ATTRIBUTE_CANNOT_BE_PURGED"
             },
             "AuraSearchType": "CITADEL_UNIT_TARGET_HERO"
         },
@@ -386,57 +594,23 @@
         ],
         "AmbientSound": "Powerup.Survival_Lp"
     },
-    "citadel_base_glass_horiz_01": {
-        "RespawnTime": 60.0,
-        "Health": 100000000,
+    "citadel_breakable_bell_chinatown": {
+        "RespawnTime": 5.0,
+        "Health": 1,
         "BreakOnDodgeTouch": false,
-        "SolidAfterDeath": true,
-        "RenderAfterDeath": true,
-        "DamagedByAbilities": true,
-        "DamagedByMelee": true,
-        "DamagedByBullets": true,
-        "InitialSpawnTime": 0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
-        "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
-        "hModel": "models/props_structures/caldera_base_glass_horiz_01_breakable.vmdl",
-        "AnimgraphParamOnHit": "b_Hit_Trigger",
-        "DropChance": 0.0,
-        "AnimgraphParamDamageReceived": "",
-        "DamageSound": "",
-        "IsPermanent": true,
-        "IsMantleable": false
-    },
-    "citadel_base_glass_vert_01": {
-        "RespawnTime": 60.0,
-        "Health": 100000000,
-        "BreakOnDodgeTouch": false,
-        "SolidAfterDeath": true,
-        "RenderAfterDeath": true,
-        "DamagedByAbilities": true,
-        "DamagedByMelee": true,
-        "DamagedByBullets": true,
-        "InitialSpawnTime": 0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
-        "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
-        "hModel": "models/props_structures/caldera_base_glass_vert_01_breakable.vmdl",
-        "AnimgraphParamOnHit": "b_Hit_Trigger",
-        "DropChance": 0.0,
-        "AnimgraphParamDamageReceived": "",
-        "DamageSound": "",
-        "IsPermanent": true,
-        "IsMantleable": false
+        "SolidAfterDeath": false,
+        "RenderAfterDeath": false,
+        "DamagedByAbilities": false,
+        "DamagedByMelee": false,
+        "DamagedByBullets": false,
+        "InitialSpawnTime": 0.0,
+        "PowerupDropChance": 0.0,
+        "DamagedBySlide": false,
+        "hModel": "models/architecture/arch_chinatown_01/chinatown_bell_tower_sign_02.vmdl",
+        "HitSequenceName": "chinatown_bell_tower_sign_02_ring",
+        "HitSequenceWaitsForRest": true,
+        "MeleeRejectSound": "Amb.ChinatownShopBellRing",
+        "OtherRejectSound": "Amb.ChinatownShopBellRing"
     },
     "citadel_breakable_item_container": {
         "RespawnTime": 180.0,
@@ -448,93 +622,17 @@
         "DamagedByMelee": true,
         "DamagedByBullets": true,
         "InitialSpawnTime": 180.0,
-        "PrimaryDropChance": 50.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "spirit_permanent_pickup",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "firerate_permanent_pickup",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "ammo_permanent_pickup",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "hp_permanent_pickup",
-                "PickupWeight": 2.0
-            },
-            {
-                "Pickup": "cd_permanent_pickup",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "wp_permanent_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
-        "Pickups_lv2": [
-            {
-                "Pickup": "spirit_permanent_pickup_lv2",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "firerate_permanent_pickup_lv2",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "ammo_permanent_pickup_lv2",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "hp_permanent_pickup_lv2",
-                "PickupWeight": 2.0
-            },
-            {
-                "Pickup": "cd_permanent_pickup_lv2",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "wp_permanent_pickup_lv2",
-                "PickupWeight": 1.0
-            }
-        ],
-        "Pickups_lv3": [
-            {
-                "Pickup": "spirit_permanent_pickup_lv3",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "firerate_permanent_pickup_lv3",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "ammo_permanent_pickup_lv3",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "hp_permanent_pickup_lv3",
-                "PickupWeight": 2.0
-            },
-            {
-                "Pickup": "cd_permanent_pickup_lv3",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "wp_permanent_pickup_lv3",
-                "PickupWeight": 1.0
-            }
-        ],
-        "MatchTimeMinsForLevel2Pickups": 10,
-        "MatchTimeMinsForLevel3Pickups": 30,
+        "PowerupDropChance": 50.0,
+        "DamagedBySlide": true,
         "InitialSpawnTimeTest": 1.0,
         "RespawnTimeTest": 5.0,
         "RollType": "ECitadelRandomRoll_BreakablePowerupPickup",
-        "LootListDeckSize": 5,
         "hModel": "models/props_gameplay/item_container_breakable/item_container.vmdl",
-        "BreakSound": "glass.break"
+        "BreakSound": "Ceramic.Statue.Break",
+        "MeleeDamageSound": "Ceramic.Prop.Impact",
+        "SpawnSound": "Pottery.Spawn",
+        "breakRollFailParticle": "particles/environment/breakable_item_container.vpcf",
+        "BreakRollFailSound": "Powerup.Statue.Paper.Burst"
     },
     "citadel_breakable_jar_01": {
         "RespawnTime": 180.0,
@@ -546,18 +644,17 @@
         "DamagedByMelee": true,
         "DamagedByBullets": true,
         "InitialSpawnTime": 180.0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
+        "PowerupDropChance": 60.0,
+        "DamagedBySlide": true,
+        "PickupChances": {
+            "small_gold_pickup": 1.0
+        },
         "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
         "hModel": "models/props_gameplay/jar_01/jar_01.vmdl",
         "IsMantleable": true,
         "BreakSound": "Pottery.Break",
-        "DamageSound": "Pottery.BulletImpact"
+        "MeleeDamageSound": "Ceramic.Prop.Impact",
+        "SpawnSound": "Pottery.Spawn"
     },
     "citadel_breakable_lion_statue": {
         "RespawnTime": 180.0,
@@ -569,16 +666,15 @@
         "DamagedByMelee": true,
         "DamagedByBullets": true,
         "InitialSpawnTime": 180.0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
+        "PowerupDropChance": 60.0,
+        "DamagedBySlide": true,
+        "PickupChances": {
+            "small_gold_pickup": 1.0
+        },
         "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
         "hModel": "models/props_gameplay/lion_statue_02/lion_statue_02.vmdl",
-        "BreakSound": "Pottery.Break"
+        "BreakSound": "Pottery.Break",
+        "SpawnSound": "Pottery.Spawn"
     },
     "citadel_breakable_prop_box_multi": {
         "RespawnTime": 180.0,
@@ -590,41 +686,13 @@
         "DamagedByMelee": true,
         "DamagedByBullets": true,
         "InitialSpawnTime": 180.0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
+        "PowerupDropChance": 60.0,
+        "DamagedBySlide": true,
+        "PickupChances": {
+            "small_gold_pickup": 1.0
+        },
         "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
         "hModel": "models/test/physics/break_box_multi.vmdl"
-    },
-    "citadel_breakable_prop_car": {
-        "RespawnTime": 180.0,
-        "Health": 100000000,
-        "BreakOnDodgeTouch": false,
-        "SolidAfterDeath": false,
-        "RenderAfterDeath": false,
-        "DamagedByAbilities": true,
-        "DamagedByMelee": true,
-        "DamagedByBullets": true,
-        "InitialSpawnTime": 0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
-        "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
-        "hModel": "models/props_vehicles/car_04_breakable.vmdl",
-        "AnimgraphParamOnHit": "b_Hit_Trigger",
-        "DropChance": 0.0,
-        "AnimgraphParamDamageReceived": "",
-        "DamageSound": "",
-        "IsPermanent": true,
-        "IsMantleable": true
     },
     "citadel_breakable_prop_drop_gold": {
         "RespawnTime": 180.0,
@@ -636,13 +704,11 @@
         "DamagedByMelee": true,
         "DamagedByBullets": true,
         "InitialSpawnTime": 180.0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
+        "PowerupDropChance": 60.0,
+        "DamagedBySlide": true,
+        "PickupChances": {
+            "small_gold_pickup": 1.0
+        },
         "RollType": "ECitadelRandomRoll_BreakableGoldPickup"
     },
     "citadel_breakable_prop_drop_powerups": {
@@ -655,91 +721,11 @@
         "DamagedByMelee": true,
         "DamagedByBullets": true,
         "InitialSpawnTime": 180.0,
-        "PrimaryDropChance": 50.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "spirit_permanent_pickup",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "firerate_permanent_pickup",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "ammo_permanent_pickup",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "hp_permanent_pickup",
-                "PickupWeight": 2.0
-            },
-            {
-                "Pickup": "cd_permanent_pickup",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "wp_permanent_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
-        "Pickups_lv2": [
-            {
-                "Pickup": "spirit_permanent_pickup_lv2",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "firerate_permanent_pickup_lv2",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "ammo_permanent_pickup_lv2",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "hp_permanent_pickup_lv2",
-                "PickupWeight": 2.0
-            },
-            {
-                "Pickup": "cd_permanent_pickup_lv2",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "wp_permanent_pickup_lv2",
-                "PickupWeight": 1.0
-            }
-        ],
-        "Pickups_lv3": [
-            {
-                "Pickup": "spirit_permanent_pickup_lv3",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "firerate_permanent_pickup_lv3",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "ammo_permanent_pickup_lv3",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "hp_permanent_pickup_lv3",
-                "PickupWeight": 2.0
-            },
-            {
-                "Pickup": "cd_permanent_pickup_lv3",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "wp_permanent_pickup_lv3",
-                "PickupWeight": 1.0
-            }
-        ],
-        "MatchTimeMinsForLevel2Pickups": 10,
-        "MatchTimeMinsForLevel3Pickups": 30,
+        "PowerupDropChance": 50.0,
+        "DamagedBySlide": true,
         "InitialSpawnTimeTest": 1.0,
         "RespawnTimeTest": 5.0,
-        "RollType": "ECitadelRandomRoll_BreakablePowerupPickup",
-        "LootListDeckSize": 5
+        "RollType": "ECitadelRandomRoll_BreakablePowerupPickup"
     },
     "citadel_breakable_prop_pumpkin01": {
         "RespawnTime": 180.0,
@@ -751,17 +737,18 @@
         "DamagedByMelee": true,
         "DamagedByBullets": true,
         "InitialSpawnTime": 180.0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
+        "PowerupDropChance": 60.0,
+        "DamagedBySlide": true,
+        "PickupChances": {
+            "small_gold_pickup": 1.0
+        },
         "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
         "hModel": "models/props/pumpkin_a.vmdl",
         "IsMantleable": true,
-        "BreakSound": "Pumpkin.Smash_Large"
+        "BreakSound": "Pumpkin.Smash_Large",
+        "_editor": {
+            "folder_name": "Halloween"
+        }
     },
     "citadel_breakable_prop_pumpkin02": {
         "RespawnTime": 180.0,
@@ -773,17 +760,18 @@
         "DamagedByMelee": true,
         "DamagedByBullets": true,
         "InitialSpawnTime": 180.0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
+        "PowerupDropChance": 60.0,
+        "DamagedBySlide": true,
+        "PickupChances": {
+            "small_gold_pickup": 1.0
+        },
         "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
         "hModel": "models/props/pumpkin_b.vmdl",
         "IsMantleable": true,
-        "BreakSound": "Pumpkin.Smash_Large"
+        "BreakSound": "Pumpkin.Smash_Large",
+        "_editor": {
+            "folder_name": "Halloween"
+        }
     },
     "citadel_breakable_prop_pumpkin03": {
         "RespawnTime": 180.0,
@@ -795,17 +783,18 @@
         "DamagedByMelee": true,
         "DamagedByBullets": true,
         "InitialSpawnTime": 180.0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
+        "PowerupDropChance": 60.0,
+        "DamagedBySlide": true,
+        "PickupChances": {
+            "small_gold_pickup": 1.0
+        },
         "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
         "hModel": "models/props/pumpkin_c.vmdl",
         "IsMantleable": true,
-        "BreakSound": "Pumpkin.Smash_Small"
+        "BreakSound": "Pumpkin.Smash_Small",
+        "_editor": {
+            "folder_name": "Halloween"
+        }
     },
     "citadel_breakable_prop_pumpkin04": {
         "RespawnTime": 180.0,
@@ -817,17 +806,53 @@
         "DamagedByMelee": true,
         "DamagedByBullets": true,
         "InitialSpawnTime": 180.0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
+        "PowerupDropChance": 60.0,
+        "DamagedBySlide": true,
+        "PickupChances": {
+            "small_gold_pickup": 1.0
+        },
         "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
         "hModel": "models/props/pumpkin_d.vmdl",
         "IsMantleable": true,
-        "BreakSound": "Pumpkin.Smash_Small"
+        "BreakSound": "Pumpkin.Smash_Small",
+        "_editor": {
+            "folder_name": "Halloween"
+        }
+    },
+    "citadel_breakable_prop_tough_crate": {
+        "RespawnTime": 180.0,
+        "Health": 1,
+        "BreakOnDodgeTouch": false,
+        "SolidAfterDeath": false,
+        "RenderAfterDeath": false,
+        "DamagedByAbilities": false,
+        "DamagedByMelee": true,
+        "DamagedByBullets": false,
+        "InitialSpawnTime": 180.0,
+        "PowerupDropChance": 100.0,
+        "DamagedBySlide": false,
+        "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
+        "hModel": "models/items/item_crate_tough_2.vmdl",
+        "HitSequenceName": "hit_tough_2",
+        "IsMantleable": true,
+        "BreakSound": "Tough.Crate.Break",
+        "SpawnSound": "Wood.Crate.Spawn",
+        "MeleeRejectSound": "Tough.Crate.Reject.Melee",
+        "HeavyMeleeOnly": true,
+        "MeleeHitsToBreak": 1,
+        "HeavyMeleeHitCount": 1,
+        "NoMeleeCleave": true,
+        "PickupChances": {
+            "big_gold_pickup": 1.0
+        },
+        "OutlineRadius": 10.0,
+        "colorOutline": [
+            50,
+            205,
+            50
+        ],
+        "OtherRejectSound": "Tough.Crate.Reject.Other",
+        "MeleeDamageSound": "Tough.Crate.Prop.Impact"
     },
     "citadel_breakable_prop_vase": {
         "RespawnTime": 180.0,
@@ -839,16 +864,16 @@
         "DamagedByMelee": true,
         "DamagedByBullets": true,
         "InitialSpawnTime": 180.0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
+        "PowerupDropChance": 60.0,
+        "DamagedBySlide": true,
+        "PickupChances": {
+            "small_gold_pickup": 1.0
+        },
         "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
         "hModel": "models/props_gameplay/vase_large/vase_large.vmdl",
-        "BreakSound": "Pottery.Large.Break"
+        "BreakSound": "Pottery.Large.Break",
+        "MeleeDamageSound": "Ceramic.Prop.Impact",
+        "SpawnSound": "Pottery.Spawn"
     },
     "citadel_breakable_prop_wooden_crate": {
         "RespawnTime": 180.0,
@@ -860,18 +885,18 @@
         "DamagedByMelee": true,
         "DamagedByBullets": true,
         "InitialSpawnTime": 180.0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
+        "PowerupDropChance": 60.0,
+        "DamagedBySlide": true,
+        "PickupChances": {
+            "small_gold_pickup": 1.0
+        },
         "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
         "hModel": "models/items/item_crate.vmdl",
         "IsMantleable": true,
         "BreakSound": "Wood.Crate.Break",
-        "SpawnSound": "Wood.Crate.Spawn"
+        "SpawnSound": "Wood.Crate.Spawn",
+        "MeleeDamageSound": "Wood.Prop.Impact",
+        "ModelScale": 0.8
     },
     "citadel_breakable_prop_xmaspresent01": {
         "RespawnTime": 180.0,
@@ -883,17 +908,18 @@
         "DamagedByMelee": true,
         "DamagedByBullets": true,
         "InitialSpawnTime": 180.0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
+        "PowerupDropChance": 60.0,
+        "DamagedBySlide": true,
+        "PickupChances": {
+            "small_gold_pickup": 1.0
+        },
         "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
         "hModel": "models/props_gameplay/item_container_breakable/xmas_giftbox.vmdl",
         "IsMantleable": true,
-        "BreakSound": "Present.Smash_Large"
+        "BreakSound": "Present.Smash_Large",
+        "_editor": {
+            "folder_name": "Christmas"
+        }
     },
     "citadel_breakable_prop_xmaspresent02": {
         "RespawnTime": 180.0,
@@ -905,17 +931,18 @@
         "DamagedByMelee": true,
         "DamagedByBullets": true,
         "InitialSpawnTime": 180.0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
+        "PowerupDropChance": 60.0,
+        "DamagedBySlide": true,
+        "PickupChances": {
+            "small_gold_pickup": 1.0
+        },
         "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
         "hModel": "models/props_gameplay/item_container_breakable/xmas_giftbox02.vmdl",
         "IsMantleable": true,
-        "BreakSound": "Present.Smash_Large"
+        "BreakSound": "Present.Smash_Large",
+        "_editor": {
+            "folder_name": "Christmas"
+        }
     },
     "citadel_breakable_prop_xmaspresent03": {
         "RespawnTime": 180.0,
@@ -927,17 +954,18 @@
         "DamagedByMelee": true,
         "DamagedByBullets": true,
         "InitialSpawnTime": 180.0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
+        "PowerupDropChance": 60.0,
+        "DamagedBySlide": true,
+        "PickupChances": {
+            "small_gold_pickup": 1.0
+        },
         "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
         "hModel": "models/props_gameplay/item_container_breakable/xmas_giftbox03.vmdl",
         "IsMantleable": true,
-        "BreakSound": "Present.Smash_Large"
+        "BreakSound": "Present.Smash_Large",
+        "_editor": {
+            "folder_name": "Christmas"
+        }
     },
     "citadel_breakable_sake_barrel": {
         "RespawnTime": 180.0,
@@ -949,13 +977,11 @@
         "DamagedByMelee": true,
         "DamagedByBullets": true,
         "InitialSpawnTime": 180.0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
+        "PowerupDropChance": 60.0,
+        "DamagedBySlide": true,
+        "PickupChances": {
+            "small_gold_pickup": 1.0
+        },
         "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
         "hModel": "models/props_gameplay/sake_barrel_01/sake_barrel_01.vmdl",
         "BreakSound": "Wood.Crate.Break",
@@ -971,13 +997,11 @@
         "DamagedByMelee": true,
         "DamagedByBullets": true,
         "InitialSpawnTime": 180.0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
+        "PowerupDropChance": 60.0,
+        "DamagedBySlide": true,
+        "PickupChances": {
+            "small_gold_pickup": 1.0
+        },
         "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
         "hModel": "models/props_gameplay/wooden_crate_02/wooden_crate_02.vmdl",
         "IsMantleable": true,
@@ -993,13 +1017,11 @@
         "DamagedByMelee": true,
         "DamagedByBullets": true,
         "InitialSpawnTime": 180.0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
+        "PowerupDropChance": 60.0,
+        "DamagedBySlide": true,
+        "PickupChances": {
+            "small_gold_pickup": 1.0
+        },
         "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
         "hModel": "models/props_gameplay/wooden_crate_03/wooden_crate_03.vmdl",
         "BreakSound": "Wood.Crate.Break",
@@ -1027,26 +1049,31 @@
         "FirstSpawnTime": 180.0
     },
     "citadel_item_koth_spawner": {
+        "PhysicsRadius": 60.0,
         "_editor": {
             "folder_name": "Pickup Items"
-        }
+        },
+        "SpawnMusicState": "k_EMusicQueue_KothAnnounce"
     },
     "citadel_item_pickup": {
         "AmbientParticle": "particles/generic/holding_gold_dropped.vpcf",
         "_editor": {
             "folder_name": "Pickup Items"
-        }
+        },
+        "PhysicsRadius": 60.0
     },
     "citadel_item_pickup_idol": {
         "AmbientParticle": "particles/generic/holding_gold_dropped.vpcf",
         "_editor": {
             "folder_name": "Pickup Items"
         },
+        "PhysicsRadius": 32.0,
         "PickUpAura": {
             "AuraSearchType": "CITADEL_UNIT_TARGET_HERO",
             "modifierProvidedByAura": {
                 "IsHidden": true,
-                "EnabledStateMask": "MODIFIER_STATE_TELEPORTER_DISABLED | MODIFIER_STATE_PICKING_UP_IDOL"
+                "EnabledStateMask": "MODIFIER_STATE_TELEPORTER_DISABLED | MODIFIER_STATE_PICKING_UP_IDOL",
+                "Attributes": "MODIFIER_ATTRIBUTE_CANNOT_BE_PURGED"
             },
             "IsHidden": true,
             "AuraRadius": 70.0,
@@ -1065,7 +1092,8 @@
             "AmbientLoopingSound": "",
             "WalkingLoopSound": "Soul.Urn.Walking.Lp",
             "IdlingLoopSound": "Soul.Urn.Idling.Lp"
-        }
+        },
+        "SpawnMusicState": "k_EMusicQueue_IdolAnnounce"
     },
     "citadel_item_pickup_rejuv": {
         "AbilityProjectile": "ability_item_pickup_effects",
@@ -1084,21 +1112,7 @@
             "DeploySound": "Rejuv.Rebirth.Start",
             "RespawnSound": "Rejuv.Rebirth.Revive",
             "RespawnLifePct": 100.0,
-            "RespawnDelay": 3.0,
-            "ScriptValues": [
-                {
-                    "ModifierValue": "MODIFIER_VALUE_HEALTH_MAX_PERCENT",
-                    "value": 0.0
-                },
-                {
-                    "ModifierValue": "MODIFIER_VALUE_FIRE_RATE",
-                    "value": 0.0
-                },
-                {
-                    "ModifierValue": "MODIFIER_VALUE_TECH_DAMAGE_MULTIPLIER",
-                    "value": 0.0
-                }
-            ]
+            "RespawnDelay": 3.0
         },
         "PunchPickupModifier": {
             "EnabledStateMask": "MODIFIER_STATE_IS_MELEE_TARGET",
@@ -1114,7 +1128,8 @@
                 "AuraRadius": 300.0,
                 "modifierProvidedByAura": {
                     "IsHidden": true,
-                    "EnabledStateMask": "MODIFIER_STATE_NEAR_REJUVINATOR"
+                    "EnabledStateMask": "MODIFIER_STATE_NEAR_REJUVINATOR",
+                    "Attributes": "MODIFIER_ATTRIBUTE_CANNOT_BE_PURGED"
                 },
                 "AuraSearchType": "CITADEL_UNIT_TARGET_HERO"
             },
@@ -1124,7 +1139,8 @@
         },
         "_editor": {
             "folder_name": "Pickup Items"
-        }
+        },
+        "SpawnMusicState": "k_EMusicQueue_RejuvDrop"
     },
     "citadel_item_pickup_rejuv_herotest": {
         "AbilityProjectile": "ability_item_pickup_effects",
@@ -1143,21 +1159,7 @@
             "DeploySound": "Rejuv.Rebirth.Start",
             "RespawnSound": "Rejuv.Rebirth.Revive",
             "RespawnLifePct": 100.0,
-            "RespawnDelay": 3.0,
-            "ScriptValues": [
-                {
-                    "ModifierValue": "MODIFIER_VALUE_HEALTH_MAX_PERCENT",
-                    "value": 0.0
-                },
-                {
-                    "ModifierValue": "MODIFIER_VALUE_FIRE_RATE",
-                    "value": 0.0
-                },
-                {
-                    "ModifierValue": "MODIFIER_VALUE_TECH_DAMAGE_MULTIPLIER",
-                    "value": 0.0
-                }
-            ]
+            "RespawnDelay": 3.0
         },
         "PunchPickupModifier": {
             "EnabledStateMask": "MODIFIER_STATE_IS_MELEE_TARGET",
@@ -1173,7 +1175,8 @@
                 "AuraRadius": 300.0,
                 "modifierProvidedByAura": {
                     "IsHidden": true,
-                    "EnabledStateMask": "MODIFIER_STATE_NEAR_REJUVINATOR"
+                    "EnabledStateMask": "MODIFIER_STATE_NEAR_REJUVINATOR",
+                    "Attributes": "MODIFIER_ATTRIBUTE_CANNOT_BE_PURGED"
                 },
                 "AuraSearchType": "CITADEL_UNIT_TARGET_HERO"
             },
@@ -1183,7 +1186,8 @@
         },
         "_editor": {
             "folder_name": "Pickup Items"
-        }
+        },
+        "SpawnMusicState": "k_EMusicQueue_RejuvDrop"
     },
     "citadel_item_powerup_spawner": {
         "InitialSpawnTime": 300,
@@ -1194,24 +1198,25 @@
         "ModelScale": 1.5,
         "InactiveParticle": "particles/environment/powerup_spawner_inactive_ambient.vpcf",
         "ActiveParticle": "particles/environment/powerup_spawner_ambient.vpcf",
-        "PrimaryPickups": [
-            {
-                "Pickup": "gun_powerup_pickup",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "survival_powerup_pickup",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "casting_powerup_pickup",
-                "PickupWeight": 1.0
-            },
-            {
-                "Pickup": "movement_powerup_pickup",
-                "PickupWeight": 1.0
-            }
-        ]
+        "PickupChances": {
+            "gun_powerup_pickup": 1.0,
+            "survival_powerup_pickup": 1.0,
+            "casting_powerup_pickup": 1.0,
+            "movement_powerup_pickup": 1.0
+        }
+    },
+    "citadel_item_powerup_spawner_bounty_runes": {
+        "InitialSpawnTime": -1,
+        "RespawnTime": 9999999,
+        "InitialSpawnTimeTest": 1.0,
+        "RespawnTimeTest": 10.0,
+        "hModel": "models/npc/sewer_beast/sewer.vmdl",
+        "ModelScale": 1.5,
+        "InactiveParticle": "particles/environment/powerup_spawner_inactive_ambient.vpcf",
+        "ActiveParticle": "particles/environment/powerup_spawner_ambient.vpcf",
+        "SinglePickupOverride": "souls_powerup_pickup",
+        "PingFirstPowerupSpawn": false,
+        "InitialPingDelay": -15.0
     },
     "citadel_item_punchable_gold": {
         "AmbientParticle": "particles/generic/holding_gold_dropped.vpcf",
@@ -1224,7 +1229,8 @@
             "PhysicsRadius": 20.0,
             "modifierProvidedByAura": {
                 "IsHidden": true,
-                "EnabledStateMask": "MODIFIER_STATE_NEAR_PUNCHABLE_PICKUP"
+                "EnabledStateMask": "MODIFIER_STATE_NEAR_PUNCHABLE_PICKUP",
+                "Attributes": "MODIFIER_ATTRIBUTE_CANNOT_BE_PURGED"
             },
             "AuraSearchType": "CITADEL_UNIT_TARGET_HERO"
         },
@@ -1254,6 +1260,8 @@
         "TimeToWarnAboutGivingUp": 50.0,
         "TimeToGiveUp": 60.0,
         "GiveUpOrbs": 13,
+        "PingTargetRadius": 70.0,
+        "PingTargetHeightOffset": 200.0,
         "modifierCapturer": {
             "HudDisplayLocation": "DISPLAY_HUD_CENTER",
             "IsHidden": true
@@ -1331,6 +1339,246 @@
         "KothCaptureStartAnnounce": "Koth.Zone.Capture.Start.Announcement",
         "KothContestedSound": "Koth.Zone.Contested"
     },
+    "citadel_pickup_floating_apple": {
+        "Pickup": "floating_apple_pickup"
+    },
+    "citadel_pickup_floating_health": {
+        "Pickup": "citadel_pickup_health_float_in_world",
+        "SpawnDelay": 180.0,
+        "RespawnTime": 180.0,
+        "RespawnTimeTest": 3.0
+    },
+    "citadel_pickup_health_float_in_world": {
+        "PickupRadius": {
+            "Base": 120.0,
+            "PerMinuteAfterStart": 0.0,
+            "MaxValue": 0.0,
+            "StartMinute": 0.0
+        },
+        "PickupSound": "Powerup.HealthPack.Pickup",
+        "PickupExpirationDuration": {
+            "Base": 0.0,
+            "PerMinuteAfterStart": 0.0,
+            "MaxValue": 0.0,
+            "StartMinute": 0.0
+        },
+        "hModel": "",
+        "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
+        "friendlyParticle": "particles/environment/health_pack_floating_world.vpcf",
+        "enemyParticle": "",
+        "Color": [
+            0,
+            255,
+            204
+        ],
+        "SameTeamOnly": false,
+        "HealFixed": {
+            "Base": 0.0,
+            "PerMinuteAfterStart": 0.0
+        },
+        "UseFixedDuration": true,
+        "RegenDuration": 4.0,
+        "RegenDurationTroopers": 8.0,
+        "RegenTrooperMulti": 1.3,
+        "MissingPctRegen": {
+            "Base": 0.0,
+            "PerMinuteAfterStart": 0.0,
+            "StartMinute": 0.0,
+            "MaxValue": 0.0
+        },
+        "RegenHPS": 0.0,
+        "RegenModifier": {
+            "IsHidden": true,
+            "HealingLoopSoundOverride": {
+                "LoopSound": "",
+                "StartSound": "Player.Heal.OverTime.LowPriority.Start",
+                "EndSound": ""
+            }
+        },
+        "CollectionMethod": "VacuumTrigger",
+        "VacuumToPlayerSpeedCurve": {
+            "spline": [
+                {
+                    "x": 0.0,
+                    "y": -16.041656,
+                    "SlopeIncoming": 0.0,
+                    "SlopeOutgoing": -15303.386719
+                },
+                {
+                    "x": 0.031624,
+                    "y": -500.0,
+                    "SlopeIncoming": -483.901276,
+                    "SlopeOutgoing": -483.901276
+                },
+                {
+                    "x": 0.086967,
+                    "y": -58.124969,
+                    "SlopeIncoming": 7392.94043,
+                    "SlopeOutgoing": 7392.94043
+                },
+                {
+                    "x": 0.173933,
+                    "y": 552.083374,
+                    "SlopeIncoming": 3395.157715,
+                    "SlopeOutgoing": 4762.609375
+                },
+                {
+                    "x": 0.452622,
+                    "y": 1183.333374,
+                    "SlopeIncoming": 0.0,
+                    "SlopeOutgoing": 2265.070801
+                }
+            ],
+            "tangents": [
+                {
+                    "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                    "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                    "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                    "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                    "OutgoingTangent": "CURVE_TANGENT_FREE"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_FREE",
+                    "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                }
+            ],
+            "vDomainMins": [
+                0.0,
+                -500.0
+            ],
+            "vDomainMaxs": [
+                1.0,
+                2000.0
+            ]
+        },
+        "InitialVacuumUpSpeed": [
+            400.0,
+            400.0
+        ],
+        "VacuumInitialVelSpeedCurve": {
+            "spline": [
+                {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "SlopeIncoming": 0.0,
+                    "SlopeOutgoing": 3.105128
+                },
+                {
+                    "x": 0.037948,
+                    "y": 0.117833,
+                    "SlopeIncoming": 7.669573,
+                    "SlopeOutgoing": 7.669573
+                },
+                {
+                    "x": 0.130385,
+                    "y": 1.0,
+                    "SlopeIncoming": 0.423242,
+                    "SlopeOutgoing": 0.423242
+                },
+                {
+                    "x": 0.356127,
+                    "y": 0.2525,
+                    "SlopeIncoming": -2.70552,
+                    "SlopeOutgoing": -2.70552
+                },
+                {
+                    "x": 0.5,
+                    "y": 0.0,
+                    "SlopeIncoming": -1.755022,
+                    "SlopeOutgoing": 0.0
+                }
+            ],
+            "tangents": [
+                {
+                    "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                    "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                    "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                    "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                    "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                    "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+                }
+            ],
+            "vDomainMins": [
+                0.0,
+                0.0
+            ],
+            "vDomainMaxs": [
+                0.5,
+                1.0
+            ]
+        },
+        "InitialVacuumSideSpeed": [
+            200.0,
+            200.0
+        ],
+        "EffectDistanceToRadiusRemap": [
+            250.0,
+            20.0,
+            1.0,
+            0.0
+        ],
+        "AOERadius": 0.0,
+        "AOETargetTypes": "CITADEL_UNIT_TARGET_HERO_FRIENDLY | CITADEL_UNIT_TARGET_TROOPER_FRIENDLY",
+        "AOETargetFlags": "",
+        "ParticleAOEHeal": "particles/environment/health_pack_aoe_heal.vpcf",
+        "bPhysicallyDropToTheGroundOnSpawn": false,
+        "fInitialSpawnXYSpeed": [
+            0.0,
+            0.0
+        ],
+        "friendlyModelParticle": "particles/environment/health_pack_floating_world.vpcf",
+        "enemyModelParticle": "",
+        "friendlyInteractiveParticle": "particles/environment/health_pack_floating_world.vpcf",
+        "enemyInteractiveParticle": "",
+        "fInitialSpawnZSpeed": [
+            50.0,
+            200.0
+        ],
+        "HoverOffset": 0.0,
+        "vacuumStartParticle": "particles/environment/spirit_orb_dropped_claim.vpcf",
+        "VacuumStartSound": "Powerup.HealthPack.Vacuum",
+        "SolidRadius": 10.0,
+        "RegenFixed": {
+            "Base": 0.0,
+            "PerMinuteAfterStart": 0.0,
+            "StartMinute": 0.0,
+            "MaxValue": 0.0
+        },
+        "FallGravity": 0.0,
+        "PickupExpires": false,
+        "LosCheckOnTouchRadius": true,
+        "RegenMaxHealthPercent": {
+            "Base": 10.0
+        },
+        "PicupIsVacuum": true
+    },
+    "citadel_pickup_spawner": {
+        "Pickup": "",
+        "SpawnDelay": 0.0,
+        "hModel": "",
+        "ModelScale": 1.0
+    },
     "citadel_refresh_spawner": {
         "InitialSpawnTime": 5.0,
         "RespawnTime": 1,
@@ -1342,6 +1590,17 @@
         "InactiveParticle": "particles/environment/powerup_spawner_inactive_ambient.vpcf",
         "ActiveParticle": "particles/environment/powerup_spawner_ambient.vpcf",
         "SinglePickupOverride": "refresh_powerup_pickup"
+    },
+    "citadel_trigger_bonk": {
+        "BonkSound": "Player.Bonk"
+    },
+    "citadel_trigger_corrupted_item_shop": {
+        "InShopModifier": {
+            "IsHidden": true,
+            "Attributes": "MODIFIER_ATTRIBUTE_CANNOT_BE_PURGED",
+            "EnabledStateMask": "MODIFIER_STATE_IN_CORRUPTED_ITEM_SHOP"
+        },
+        "SpawnMusicState": "k_EMusicQueue_CorruptedItemShopAnnounce"
     },
     "dropped_necro_pickup": {
         "PickupRadius": {
@@ -1674,7 +1933,7 @@
         "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
         "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
         "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
-        "hModel": "models/props_gameplay/powerup_idol/powerup_idol.vmdl",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_damage_tome.vmdl",
         "SpawnSound": "Powerup.Spawn.Generic",
         "PickupExpirationDuration": {
             "Base": 30,
@@ -1683,7 +1942,7 @@
         "ParticleRadius": 1.5,
         "ShowOnMinimap": false,
         "NameLocString": "firerate_permanent_pickup_label",
-        "PickupSound": "Powerup.Pickup.Weapon",
+        "PickupSound": "Powerup.Pickup.Wpn.Firerate",
         "NameOffset": 60,
         "IsPermanentPickup": true,
         "Modifer": {
@@ -1695,12 +1954,20 @@
             ],
             "SmallIconCssClass": "fire_rate"
         },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_FireRate",
+        "BuffTypeGraphColor": [
+            255,
+            60,
+            60
+        ],
+        "BuffTypeValueUnit": "Percent",
         "DefaultMaterialGroupName": "red",
         "Color": [
             200,
             0,
             0
-        ]
+        ],
+        "GainedSound": "Powerup.Pickup.Wpn.Firerate.Gained"
     },
     "firerate_permanent_pickup_lv2": {
         "PickupRadius": {
@@ -1710,7 +1977,7 @@
         "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
         "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
         "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
-        "hModel": "models/props_gameplay/powerup_idol/powerup_idol.vmdl",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_damage_tome.vmdl",
         "SpawnSound": "Powerup.Spawn.Generic",
         "PickupExpirationDuration": {
             "Base": 30,
@@ -1719,7 +1986,7 @@
         "ParticleRadius": 1.5,
         "ShowOnMinimap": false,
         "NameLocString": "firerate_permanent_pickup_label_lv2",
-        "PickupSound": "Powerup.Pickup.Weapon",
+        "PickupSound": "Powerup.Pickup.Wpn.Firerate",
         "NameOffset": 60,
         "IsPermanentPickup": true,
         "Modifer": {
@@ -1731,12 +1998,20 @@
             ],
             "SmallIconCssClass": "fire_rate"
         },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_FireRate",
+        "BuffTypeGraphColor": [
+            255,
+            60,
+            60
+        ],
+        "BuffTypeValueUnit": "Percent",
         "DefaultMaterialGroupName": "red",
         "Color": [
             200,
             0,
             0
-        ]
+        ],
+        "GainedSound": "Powerup.Pickup.Wpn.Firerate.Gained"
     },
     "firerate_permanent_pickup_lv3": {
         "PickupRadius": {
@@ -1746,7 +2021,7 @@
         "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
         "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
         "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
-        "hModel": "models/props_gameplay/powerup_idol/powerup_idol.vmdl",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_damage_tome.vmdl",
         "SpawnSound": "Powerup.Spawn.Generic",
         "PickupExpirationDuration": {
             "Base": 30,
@@ -1755,7 +2030,7 @@
         "ParticleRadius": 1.5,
         "ShowOnMinimap": false,
         "NameLocString": "firerate_permanent_pickup_label_lv3",
-        "PickupSound": "Powerup.Pickup.Weapon",
+        "PickupSound": "Powerup.Pickup.Wpn.Firerate",
         "NameOffset": 60,
         "IsPermanentPickup": true,
         "Modifer": {
@@ -1767,12 +2042,49 @@
             ],
             "SmallIconCssClass": "fire_rate"
         },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_FireRate",
+        "BuffTypeGraphColor": [
+            255,
+            60,
+            60
+        ],
+        "BuffTypeValueUnit": "Percent",
         "DefaultMaterialGroupName": "red",
         "Color": [
             200,
             0,
             0
-        ]
+        ],
+        "GainedSound": "Powerup.Pickup.Wpn.Firerate.Gained"
+    },
+    "floating_apple_pickup": {
+        "PickupRadius": {
+            "Base": 85.0,
+            "PerMinuteAfterStart": 0
+        },
+        "friendlyParticle": "particles/environment/floating_apple_pickup.vpcf",
+        "enemyParticle": "particles/environment/floating_apple_pickup.vpcf",
+        "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
+        "hModel": "",
+        "SpawnSound": "",
+        "PickupExpirationDuration": {
+            "Base": 300,
+            "PerMinuteAfterStart": 0
+        },
+        "ParticleRadius": 1.5,
+        "ShowOnMinimap": false,
+        "NameLocString": "",
+        "PickupSound": "Powerup.Pickup.Souls",
+        "NameOffset": 0,
+        "GoldAmount": 1.0,
+        "GoldPerMinuteAmount": 1.0,
+        "Color": [
+            0,
+            255,
+            204
+        ],
+        "DefaultMaterialGroupName": "gold",
+        "UseLabelPanel": false
     },
     "gun_powerup_pickup": {
         "PickupRadius": {
@@ -1799,7 +2111,8 @@
             "AuraRadius": 300.0,
             "modifierProvidedByAura": {
                 "IsHidden": true,
-                "EnabledStateMask": "MODIFIER_STATE_NEAR_HEAVY_PUNCHABLE_ITEM"
+                "EnabledStateMask": "MODIFIER_STATE_NEAR_HEAVY_PUNCHABLE_ITEM",
+                "Attributes": "MODIFIER_ATTRIBUTE_CANNOT_BE_PURGED"
             },
             "AuraSearchType": "CITADEL_UNIT_TARGET_HERO"
         },
@@ -1850,10 +2163,8 @@
         ],
         "TempParticleSheetIndex": 9,
         "AmbientSound": "Powerup.Gun_Lp",
-        "MinimapCssClasses": [
-            "powerup_gun",
-            "powerup_spawn"
-        ]
+        "MinimapClass": "powerup_gun",
+        "PingIcon": "file://{images}/hud/icons/powerup_gun.svg"
     },
     "hp_permanent_pickup": {
         "PickupRadius": {
@@ -1863,7 +2174,7 @@
         "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
         "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
         "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
-        "hModel": "models/props_gameplay/powerup_idol/powerup_idol.vmdl",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_health_tome.vmdl",
         "SpawnSound": "Powerup.Spawn.Generic",
         "PickupExpirationDuration": {
             "Base": 30,
@@ -1872,7 +2183,7 @@
         "ParticleRadius": 1.5,
         "ShowOnMinimap": false,
         "NameLocString": "hp_permanent_pickup_label",
-        "PickupSound": "Powerup.Pickup.Health",
+        "PickupSound": "Powerup.Pickup.Hp",
         "NameOffset": 60,
         "IsPermanentPickup": true,
         "Modifer": {
@@ -1883,12 +2194,19 @@
                 }
             ]
         },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_BonusHealth",
+        "BuffTypeGraphColor": [
+            150,
+            240,
+            60
+        ],
         "DefaultMaterialGroupName": "green",
         "Color": [
             50,
             205,
             50
-        ]
+        ],
+        "GainedSound": "Powerup.Pickup.Hp.Gained"
     },
     "hp_permanent_pickup_lv2": {
         "PickupRadius": {
@@ -1898,7 +2216,7 @@
         "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
         "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
         "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
-        "hModel": "models/props_gameplay/powerup_idol/powerup_idol.vmdl",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_health_tome.vmdl",
         "SpawnSound": "Powerup.Spawn.Generic",
         "PickupExpirationDuration": {
             "Base": 30,
@@ -1907,7 +2225,7 @@
         "ParticleRadius": 1.5,
         "ShowOnMinimap": false,
         "NameLocString": "hp_permanent_pickup_label_lv2",
-        "PickupSound": "Powerup.Pickup.Health",
+        "PickupSound": "Powerup.Pickup.Hp",
         "NameOffset": 60,
         "IsPermanentPickup": true,
         "Modifer": {
@@ -1918,12 +2236,19 @@
                 }
             ]
         },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_BonusHealth",
+        "BuffTypeGraphColor": [
+            150,
+            240,
+            60
+        ],
         "DefaultMaterialGroupName": "green",
         "Color": [
             50,
             205,
             50
-        ]
+        ],
+        "GainedSound": "Powerup.Pickup.Hp.Gained"
     },
     "hp_permanent_pickup_lv3": {
         "PickupRadius": {
@@ -1933,7 +2258,7 @@
         "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
         "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
         "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
-        "hModel": "models/props_gameplay/powerup_idol/powerup_idol.vmdl",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_health_tome.vmdl",
         "SpawnSound": "Powerup.Spawn.Generic",
         "PickupExpirationDuration": {
             "Base": 30,
@@ -1942,7 +2267,7 @@
         "ParticleRadius": 1.5,
         "ShowOnMinimap": false,
         "NameLocString": "hp_permanent_pickup_label_lv3",
-        "PickupSound": "Powerup.Pickup.Health",
+        "PickupSound": "Powerup.Pickup.Hp",
         "NameOffset": 60,
         "IsPermanentPickup": true,
         "Modifer": {
@@ -1953,49 +2278,25 @@
                 }
             ]
         },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_BonusHealth",
+        "BuffTypeGraphColor": [
+            150,
+            240,
+            60
+        ],
         "DefaultMaterialGroupName": "green",
         "Color": [
             50,
             205,
             50
-        ]
+        ],
+        "GainedSound": "Powerup.Pickup.Hp.Gained"
     },
     "info_neutral_trooper_camp": {
         "SpawnIntervalChange": 0,
         "SpawnIntervalMin": 0,
         "IdleAmbient": "",
         "AlertAmbient": ""
-    },
-    "item_pickup": {
-        "PickupRadius": {
-            "Base": 5.0
-        },
-        "PickupExpirationDuration": {
-            "Base": 500.0
-        },
-        "HeavyMeleeOnly": false,
-        "friendlyParticle": "particles/environment/breakable_item_drop_beam.vpcf",
-        "hModel": "models/props_gameplay/powerup_idol/powerup_idol.vmdl",
-        "PickupSound": "UI.Shop.Mod.Activate",
-        "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
-        "Color": [
-            241,
-            215,
-            130
-        ],
-        "bPhysicallyDropToTheGroundOnSpawn": true,
-        "fInitialSpawnXYSpeed": [
-            -50.0,
-            50.0
-        ],
-        "HoverOffset": 10.0,
-        "fInitialSpawnZSpeed": [
-            300.0,
-            300.0
-        ],
-        "BecomeInteractiveSound": "Powerup.Pickup.Health",
-        "SpawnSound": "Powerup.Spawn.Generic",
-        "CollectionMethod": "Punch"
     },
     "medic_trooper_aoe_health_pickup_amber": {
         "PickupRadius": {
@@ -2450,7 +2751,8 @@
             "AuraRadius": 300.0,
             "modifierProvidedByAura": {
                 "IsHidden": true,
-                "EnabledStateMask": "MODIFIER_STATE_NEAR_HEAVY_PUNCHABLE_ITEM"
+                "EnabledStateMask": "MODIFIER_STATE_NEAR_HEAVY_PUNCHABLE_ITEM",
+                "Attributes": "MODIFIER_ATTRIBUTE_CANNOT_BE_PURGED"
             },
             "AuraSearchType": "CITADEL_UNIT_TARGET_HERO"
         },
@@ -2512,10 +2814,137 @@
             255
         ],
         "AmbientSound": "Powerup.Movement_Lp",
-        "MinimapCssClasses": [
-            "powerup_movement",
-            "powerup_spawn"
-        ]
+        "MinimapClass": "powerup_movement",
+        "PingIcon": "file://{images}/hud/icons/powerup_movement.svg"
+    },
+    "movespeed_permanent_pickup": {
+        "PickupRadius": {
+            "Base": 85.0,
+            "PerMinuteAfterStart": 0
+        },
+        "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
+        "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
+        "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_movespeed_tome.vmdl",
+        "SpawnSound": "Powerup.Spawn.Generic",
+        "PickupExpirationDuration": {
+            "Base": 30,
+            "PerMinuteAfterStart": 0
+        },
+        "ParticleRadius": 1.5,
+        "ShowOnMinimap": false,
+        "NameLocString": "movespeed_permanent_pickup_label",
+        "PickupSound": "Powerup.Pickup.Speed",
+        "NameOffset": 60,
+        "IsPermanentPickup": true,
+        "Modifer": {
+            "ScriptValues": [
+                {
+                    "ModifierValue": "MODIFIER_VALUE_MOVEMENT_SPEED_MAX",
+                    "value": 3.937
+                }
+            ]
+        },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_MoveSpeed",
+        "BuffTypeGraphColor": [
+            40,
+            230,
+            200
+        ],
+        "BuffTypeValueUnit": "Meters",
+        "DefaultMaterialGroupName": "blue",
+        "Color": [
+            0,
+            180,
+            200
+        ],
+        "GainedSound": "Powerup.Pickup.Speed.Gained"
+    },
+    "movespeed_permanent_pickup_lv2": {
+        "PickupRadius": {
+            "Base": 85.0,
+            "PerMinuteAfterStart": 0
+        },
+        "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
+        "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
+        "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_movespeed_tome.vmdl",
+        "SpawnSound": "Powerup.Spawn.Generic",
+        "PickupExpirationDuration": {
+            "Base": 30,
+            "PerMinuteAfterStart": 0
+        },
+        "ParticleRadius": 1.5,
+        "ShowOnMinimap": false,
+        "NameLocString": "movespeed_permanent_pickup_label_lv2",
+        "PickupSound": "Powerup.Pickup.Speed",
+        "NameOffset": 60,
+        "IsPermanentPickup": true,
+        "Modifer": {
+            "ScriptValues": [
+                {
+                    "ModifierValue": "MODIFIER_VALUE_MOVEMENT_SPEED_MAX",
+                    "value": 7.874
+                }
+            ]
+        },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_MoveSpeed",
+        "BuffTypeGraphColor": [
+            40,
+            230,
+            200
+        ],
+        "BuffTypeValueUnit": "Meters",
+        "DefaultMaterialGroupName": "blue",
+        "Color": [
+            0,
+            180,
+            200
+        ],
+        "GainedSound": "Powerup.Pickup.Speed.Gained"
+    },
+    "movespeed_permanent_pickup_lv3": {
+        "PickupRadius": {
+            "Base": 85.0,
+            "PerMinuteAfterStart": 0
+        },
+        "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
+        "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
+        "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_movespeed_tome.vmdl",
+        "SpawnSound": "Powerup.Spawn.Generic",
+        "PickupExpirationDuration": {
+            "Base": 30,
+            "PerMinuteAfterStart": 0
+        },
+        "ParticleRadius": 1.5,
+        "ShowOnMinimap": false,
+        "NameLocString": "movespeed_permanent_pickup_label_lv3",
+        "PickupSound": "Powerup.Pickup.Speed",
+        "NameOffset": 60,
+        "IsPermanentPickup": true,
+        "Modifer": {
+            "ScriptValues": [
+                {
+                    "ModifierValue": "MODIFIER_VALUE_MOVEMENT_SPEED_MAX",
+                    "value": 11.811
+                }
+            ]
+        },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_MoveSpeed",
+        "BuffTypeGraphColor": [
+            40,
+            230,
+            200
+        ],
+        "BuffTypeValueUnit": "Meters",
+        "DefaultMaterialGroupName": "blue",
+        "Color": [
+            0,
+            180,
+            200
+        ],
+        "GainedSound": "Powerup.Pickup.Speed.Gained"
     },
     "neutral_camp_bug": {
         "SpawnIntervalChange": 0,
@@ -2540,7 +2969,7 @@
         "AlertAmbient": "",
         "InitialSpawnDelayInSeconds": 300,
         "SpawnIntervalInSeconds": 290,
-        "NeutralType": "NEUTRAL_TROOPER_NORMAL"
+        "NeutralType": "NEUTRAL_NPC_NORMAL"
     },
     "neutral_camp_medium_herotest": {
         "SpawnIntervalChange": 0,
@@ -2549,7 +2978,7 @@
         "AlertAmbient": "",
         "InitialSpawnDelayInSeconds": 0,
         "SpawnIntervalInSeconds": 30,
-        "NeutralType": "NEUTRAL_TROOPER_NORMAL"
+        "NeutralType": "NEUTRAL_NPC_NORMAL"
     },
     "neutral_camp_midboss": {
         "SpawnIntervalChange": -60,
@@ -2567,7 +2996,7 @@
         "AlertAmbient": "",
         "InitialSpawnDelayInSeconds": 480,
         "SpawnIntervalInSeconds": 335,
-        "NeutralType": "NEUTRAL_TROOPER_STRONG"
+        "NeutralType": "NEUTRAL_NPC_STRONG"
     },
     "neutral_camp_strong_herotest": {
         "SpawnIntervalChange": 0,
@@ -2576,7 +3005,7 @@
         "AlertAmbient": "",
         "InitialSpawnDelayInSeconds": 0,
         "SpawnIntervalInSeconds": 30,
-        "NeutralType": "NEUTRAL_TROOPER_STRONG"
+        "NeutralType": "NEUTRAL_NPC_STRONG"
     },
     "neutral_camp_vaults": {
         "SpawnIntervalChange": 0,
@@ -2603,7 +3032,7 @@
         "AlertAmbient": "",
         "InitialSpawnDelayInSeconds": 120,
         "SpawnIntervalInSeconds": 85,
-        "NeutralType": "NEUTRAL_TROOPER_WEAK"
+        "NeutralType": "NEUTRAL_NPC_WEAK"
     },
     "neutral_camp_weak_herotest": {
         "SpawnIntervalChange": 0,
@@ -2612,7 +3041,140 @@
         "AlertAmbient": "",
         "InitialSpawnDelayInSeconds": 0,
         "SpawnIntervalInSeconds": 30,
-        "NeutralType": "NEUTRAL_TROOPER_WEAK"
+        "NeutralType": "NEUTRAL_NPC_WEAK"
+    },
+    "range_permanent_pickup": {
+        "PickupRadius": {
+            "Base": 85.0,
+            "PerMinuteAfterStart": 0
+        },
+        "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
+        "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
+        "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_spiritrange_tome.vmdl",
+        "SpawnSound": "Powerup.Spawn.Generic",
+        "PickupExpirationDuration": {
+            "Base": 30,
+            "PerMinuteAfterStart": 0
+        },
+        "ParticleRadius": 1.5,
+        "ShowOnMinimap": false,
+        "NameLocString": "range_permanent_pickup_label",
+        "PickupSound": "Powerup.Pickup.Ability.Range",
+        "NameOffset": 60,
+        "IsPermanentPickup": true,
+        "Modifer": {
+            "ScriptValues": [
+                {
+                    "ModifierValue": "MODIFIER_VALUE_TECH_RANGE_PERCENT",
+                    "value": 0.25
+                },
+                {
+                    "ModifierValue": "MODIFIER_VALUE_TECH_RADIUS_PERCENT",
+                    "value": 0.25
+                }
+            ]
+        },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_AbilityRange",
+        "BuffTypeGraphColor": [
+            230,
+            90,
+            230
+        ],
+        "BuffTypeValueUnit": "Percent",
+        "DefaultMaterialGroupName": "purple",
+        "Color": [
+            140,
+            60,
+            200
+        ],
+        "GainedSound": "Powerup.Pickup.Ability.Range.Gained"
+    },
+    "range_permanent_pickup_lv2": {
+        "PickupRadius": {
+            "Base": 85.0,
+            "PerMinuteAfterStart": 0
+        },
+        "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
+        "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
+        "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_spiritrange_tome.vmdl",
+        "SpawnSound": "Powerup.Spawn.Generic",
+        "PickupExpirationDuration": {
+            "Base": 30,
+            "PerMinuteAfterStart": 0
+        },
+        "ParticleRadius": 1.5,
+        "ShowOnMinimap": false,
+        "NameLocString": "range_permanent_pickup_label_lv2",
+        "PickupSound": "Powerup.Pickup.Ability.Range",
+        "NameOffset": 60,
+        "IsPermanentPickup": true,
+        "Modifer": {
+            "ScriptValues": [
+                {
+                    "ModifierValue": "MODIFIER_VALUE_TECH_RANGE_PERCENT",
+                    "value": 0.5
+                }
+            ]
+        },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_AbilityRange",
+        "BuffTypeGraphColor": [
+            230,
+            90,
+            230
+        ],
+        "BuffTypeValueUnit": "Percent",
+        "DefaultMaterialGroupName": "purple",
+        "Color": [
+            140,
+            60,
+            200
+        ],
+        "GainedSound": "Powerup.Pickup.Ability.Range.Gained"
+    },
+    "range_permanent_pickup_lv3": {
+        "PickupRadius": {
+            "Base": 85.0,
+            "PerMinuteAfterStart": 0
+        },
+        "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
+        "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
+        "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_spiritrange_tome.vmdl",
+        "SpawnSound": "Powerup.Spawn.Generic",
+        "PickupExpirationDuration": {
+            "Base": 30,
+            "PerMinuteAfterStart": 0
+        },
+        "ParticleRadius": 1.5,
+        "ShowOnMinimap": false,
+        "NameLocString": "range_permanent_pickup_label_lv3",
+        "PickupSound": "Powerup.Pickup.Ability.Range",
+        "NameOffset": 60,
+        "IsPermanentPickup": true,
+        "Modifer": {
+            "ScriptValues": [
+                {
+                    "ModifierValue": "MODIFIER_VALUE_TECH_RANGE_PERCENT",
+                    "value": 0.75
+                }
+            ]
+        },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_AbilityRange",
+        "BuffTypeGraphColor": [
+            230,
+            90,
+            230
+        ],
+        "BuffTypeValueUnit": "Percent",
+        "DefaultMaterialGroupName": "purple",
+        "Color": [
+            140,
+            60,
+            200
+        ],
+        "GainedSound": "Powerup.Pickup.Ability.Range.Gained"
     },
     "refresh_powerup_pickup": {
         "PickupRadius": {
@@ -2639,7 +3201,8 @@
             "AuraRadius": 300.0,
             "modifierProvidedByAura": {
                 "IsHidden": true,
-                "EnabledStateMask": "MODIFIER_STATE_NEAR_HEAVY_PUNCHABLE_ITEM"
+                "EnabledStateMask": "MODIFIER_STATE_NEAR_HEAVY_PUNCHABLE_ITEM",
+                "Attributes": "MODIFIER_ATTRIBUTE_CANNOT_BE_PURGED"
             },
             "AuraSearchType": "CITADEL_UNIT_TARGET_HERO"
         },
@@ -2660,10 +3223,7 @@
             252
         ],
         "AmbientSound": "Powerup.Survival_Lp",
-        "MinimapCssClasses": [
-            "powerup_refresh",
-            "powerup_spawn"
-        ]
+        "MinimapClass": "powerup_refresh"
     },
     "small_gold_pickup": {
         "PickupRadius": {
@@ -2681,7 +3241,7 @@
         },
         "ParticleRadius": 1.5,
         "ShowOnMinimap": false,
-        "NameLocString": "#small_gold_pickup_label:p",
+        "NameLocString": "#small_gold_pickup_label:f",
         "PickupSound": "Powerup.Pickup.Souls",
         "NameOffset": 60,
         "GoldAmount": 23,
@@ -2692,7 +3252,57 @@
             204
         ],
         "DefaultMaterialGroupName": "gold",
-        "IsPermanentPickup": true
+        "IsPermanentPickup": true,
+        "ShowModelOverhead": false
+    },
+    "souls_powerup_pickup": {
+        "PickupRadius": {
+            "Base": 85.0,
+            "PerMinuteAfterStart": 0
+        },
+        "friendlyParticle": "particles/environment/powerup_spawner_ambient.vpcf",
+        "enemyParticle": "particles/environment/powerup_spawner_ambient.vpcf",
+        "gainedParticle": "particles/generic/bridge_buff.vpcf",
+        "hModel": "models/null.vmdl",
+        "SpawnSound": "Powerup.BridgeBuff.Spawn",
+        "PickupExpirationDuration": {
+            "Base": 300,
+            "PerMinuteAfterStart": 0
+        },
+        "ParticleRadius": 1.5,
+        "ShowOnMinimap": true,
+        "NameLocString": "souls_powerup_pickup",
+        "PickupSound": "Powerup.Pickup.Generic",
+        "NameOffset": 150,
+        "CollectionMethod": "Punch",
+        "AuraModifier": {
+            "IsHidden": true,
+            "AuraRadius": 300.0,
+            "modifierProvidedByAura": {
+                "IsHidden": true,
+                "EnabledStateMask": "MODIFIER_STATE_NEAR_HEAVY_PUNCHABLE_ITEM",
+                "Attributes": "MODIFIER_ATTRIBUTE_CANNOT_BE_PURGED"
+            },
+            "AuraSearchType": "CITADEL_UNIT_TARGET_HERO"
+        },
+        "ParryCheckModifier": {
+            "ParryCheckRadius": 60.0
+        },
+        "HitsRequired": 1,
+        "HitSound": "Powerup.Pickup.Punch",
+        "DamagedParticle": "particles/environment/powerup_spawner_ambient_damaged.vpcf",
+        "CollisionRadius": 40.0,
+        "Modifer": {
+            "HudDisplayLocation": "DISPLAY_HUD_NONE"
+        },
+        "Color": [
+            66,
+            204,
+            151
+        ],
+        "TempParticleSheetIndex": 12,
+        "AmbientSound": "Powerup.Gun_Lp",
+        "MinimapClass": "powerup_souls"
     },
     "spirit_permanent_pickup": {
         "PickupRadius": {
@@ -2702,7 +3312,7 @@
         "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
         "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
         "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
-        "hModel": "models/props_gameplay/powerup_idol/powerup_idol.vmdl",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_spirit_tome.vmdl",
         "SpawnSound": "Powerup.Spawn.Generic",
         "PickupExpirationDuration": {
             "Base": 30,
@@ -2723,11 +3333,18 @@
             ]
         },
         "DefaultMaterialGroupName": "purple",
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_SpiritPower",
+        "BuffTypeGraphColor": [
+            170,
+            70,
+            255
+        ],
         "Color": [
             88,
             20,
             180
-        ]
+        ],
+        "GainedSound": "Powerup.Pickup.Spirit.Gained"
     },
     "spirit_permanent_pickup_lv2": {
         "PickupRadius": {
@@ -2737,7 +3354,7 @@
         "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
         "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
         "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
-        "hModel": "models/props_gameplay/powerup_idol/powerup_idol.vmdl",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_spirit_tome.vmdl",
         "SpawnSound": "Powerup.Spawn.Generic",
         "PickupExpirationDuration": {
             "Base": 30,
@@ -2758,11 +3375,18 @@
             ]
         },
         "DefaultMaterialGroupName": "purple",
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_SpiritPower",
+        "BuffTypeGraphColor": [
+            170,
+            70,
+            255
+        ],
         "Color": [
             88,
             20,
             180
-        ]
+        ],
+        "GainedSound": "Powerup.Pickup.Spirit.Gained"
     },
     "spirit_permanent_pickup_lv3": {
         "PickupRadius": {
@@ -2772,7 +3396,7 @@
         "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
         "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
         "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
-        "hModel": "models/props_gameplay/powerup_idol/powerup_idol.vmdl",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_spirit_tome.vmdl",
         "SpawnSound": "Powerup.Spawn.Generic",
         "PickupExpirationDuration": {
             "Base": 30,
@@ -2793,11 +3417,147 @@
             ]
         },
         "DefaultMaterialGroupName": "purple",
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_SpiritPower",
+        "BuffTypeGraphColor": [
+            170,
+            70,
+            255
+        ],
         "Color": [
             88,
             20,
             180
-        ]
+        ],
+        "GainedSound": "Powerup.Pickup.Spirit.Gained"
+    },
+    "spiritresist_permanent_pickup": {
+        "PickupRadius": {
+            "Base": 85.0,
+            "PerMinuteAfterStart": 0
+        },
+        "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
+        "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
+        "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_spiritresist_tome.vmdl",
+        "SpawnSound": "Powerup.Spawn.Generic",
+        "PickupExpirationDuration": {
+            "Base": 30,
+            "PerMinuteAfterStart": 0
+        },
+        "ParticleRadius": 1.5,
+        "ShowOnMinimap": false,
+        "NameLocString": "spiritresist_permanent_pickup_label",
+        "PickupSound": "Powerup.Pickup.Spirit",
+        "NameOffset": 60,
+        "IsPermanentPickup": true,
+        "Modifer": {
+            "ScriptValues": [
+                {
+                    "ModifierValue": "MODIFIER_VALUE_TECH_RESIST",
+                    "value": 0.5
+                }
+            ]
+        },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_SpiritResist",
+        "BuffTypeGraphColor": [
+            60,
+            170,
+            255
+        ],
+        "BuffTypeValueUnit": "Percent",
+        "DefaultMaterialGroupName": "blue",
+        "Color": [
+            40,
+            80,
+            200
+        ],
+        "GainedSound": "Powerup.Pickup.Spirit.Gained"
+    },
+    "spiritresist_permanent_pickup_lv2": {
+        "PickupRadius": {
+            "Base": 85.0,
+            "PerMinuteAfterStart": 0
+        },
+        "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
+        "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
+        "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_spiritresist_tome.vmdl",
+        "SpawnSound": "Powerup.Spawn.Generic",
+        "PickupExpirationDuration": {
+            "Base": 30,
+            "PerMinuteAfterStart": 0
+        },
+        "ParticleRadius": 1.5,
+        "ShowOnMinimap": false,
+        "NameLocString": "spiritresist_permanent_pickup_label_lv2",
+        "PickupSound": "Powerup.Pickup.Spirit",
+        "NameOffset": 60,
+        "IsPermanentPickup": true,
+        "Modifer": {
+            "ScriptValues": [
+                {
+                    "ModifierValue": "MODIFIER_VALUE_TECH_RESIST",
+                    "value": 0.75
+                }
+            ]
+        },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_SpiritResist",
+        "BuffTypeGraphColor": [
+            60,
+            170,
+            255
+        ],
+        "BuffTypeValueUnit": "Percent",
+        "DefaultMaterialGroupName": "blue",
+        "Color": [
+            40,
+            80,
+            200
+        ],
+        "GainedSound": "Powerup.Pickup.Spirit.Gained"
+    },
+    "spiritresist_permanent_pickup_lv3": {
+        "PickupRadius": {
+            "Base": 85.0,
+            "PerMinuteAfterStart": 0
+        },
+        "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
+        "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
+        "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_spiritresist_tome.vmdl",
+        "SpawnSound": "Powerup.Spawn.Generic",
+        "PickupExpirationDuration": {
+            "Base": 30,
+            "PerMinuteAfterStart": 0
+        },
+        "ParticleRadius": 1.5,
+        "ShowOnMinimap": false,
+        "NameLocString": "spiritresist_permanent_pickup_label_lv3",
+        "PickupSound": "Powerup.Pickup.Spirit",
+        "NameOffset": 60,
+        "IsPermanentPickup": true,
+        "Modifer": {
+            "ScriptValues": [
+                {
+                    "ModifierValue": "MODIFIER_VALUE_TECH_RESIST",
+                    "value": 1.0
+                }
+            ]
+        },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_SpiritResist",
+        "BuffTypeGraphColor": [
+            60,
+            170,
+            255
+        ],
+        "BuffTypeValueUnit": "Percent",
+        "DefaultMaterialGroupName": "blue",
+        "Color": [
+            40,
+            80,
+            200
+        ],
+        "GainedSound": "Powerup.Pickup.Spirit.Gained"
     },
     "survival_powerup_pickup": {
         "PickupRadius": {
@@ -2824,7 +3584,8 @@
             "AuraRadius": 300.0,
             "modifierProvidedByAura": {
                 "IsHidden": true,
-                "EnabledStateMask": "MODIFIER_STATE_NEAR_HEAVY_PUNCHABLE_ITEM"
+                "EnabledStateMask": "MODIFIER_STATE_NEAR_HEAVY_PUNCHABLE_ITEM",
+                "Attributes": "MODIFIER_ATTRIBUTE_CANNOT_BE_PURGED"
             },
             "AuraSearchType": "CITADEL_UNIT_TARGET_HERO"
         },
@@ -2875,218 +3636,8 @@
             29
         ],
         "AmbientSound": "Powerup.Survival_Lp",
-        "MinimapCssClasses": [
-            "powerup_survival",
-            "powerup_spawn"
-        ]
-    },
-    "vehicle_bike_flying": {
-        "RespawnTime": 180.0,
-        "Health": 100000000,
-        "BreakOnDodgeTouch": false,
-        "SolidAfterDeath": false,
-        "RenderAfterDeath": false,
-        "DamagedByAbilities": true,
-        "DamagedByMelee": true,
-        "DamagedByBullets": true,
-        "InitialSpawnTime": 0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
-        "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
-        "hModel": "models/props_vehicles/bike_breakable.vmdl",
-        "AnimgraphParamOnHit": "b_Hit_Trigger",
-        "DropChance": 0.0,
-        "AnimgraphParamDamageReceived": "",
-        "DamageSound": "",
-        "IsPermanent": true,
-        "IsMantleable": true
-    },
-    "vehicle_car_01": {
-        "RespawnTime": 180.0,
-        "Health": 100000000,
-        "BreakOnDodgeTouch": false,
-        "SolidAfterDeath": false,
-        "RenderAfterDeath": false,
-        "DamagedByAbilities": true,
-        "DamagedByMelee": true,
-        "DamagedByBullets": true,
-        "InitialSpawnTime": 0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
-        "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
-        "hModel": "models/props_vehicles/car_01_breakable.vmdl",
-        "AnimgraphParamOnHit": "b_Hit_Trigger",
-        "DropChance": 0.0,
-        "AnimgraphParamDamageReceived": "",
-        "DamageSound": "",
-        "IsPermanent": true,
-        "IsMantleable": true
-    },
-    "vehicle_car_04": {
-        "RespawnTime": 180.0,
-        "Health": 100000000,
-        "BreakOnDodgeTouch": false,
-        "SolidAfterDeath": false,
-        "RenderAfterDeath": false,
-        "DamagedByAbilities": true,
-        "DamagedByMelee": true,
-        "DamagedByBullets": true,
-        "InitialSpawnTime": 0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
-        "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
-        "hModel": "models/props_vehicles/car_04_breakable.vmdl",
-        "AnimgraphParamOnHit": "b_Hit_Trigger",
-        "DropChance": 0.0,
-        "AnimgraphParamDamageReceived": "",
-        "DamageSound": "",
-        "IsPermanent": true,
-        "IsMantleable": true
-    },
-    "vehicle_car_05": {
-        "RespawnTime": 180.0,
-        "Health": 100000000,
-        "BreakOnDodgeTouch": false,
-        "SolidAfterDeath": false,
-        "RenderAfterDeath": false,
-        "DamagedByAbilities": true,
-        "DamagedByMelee": true,
-        "DamagedByBullets": true,
-        "InitialSpawnTime": 0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
-        "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
-        "hModel": "models/props_vehicles/car_05_breakable.vmdl",
-        "AnimgraphParamOnHit": "b_Hit_Trigger",
-        "DropChance": 0.0,
-        "AnimgraphParamDamageReceived": "",
-        "DamageSound": "",
-        "IsPermanent": true,
-        "IsMantleable": true
-    },
-    "vehicle_ground_ship_03": {
-        "RespawnTime": 180.0,
-        "Health": 100000000,
-        "BreakOnDodgeTouch": false,
-        "SolidAfterDeath": false,
-        "RenderAfterDeath": false,
-        "DamagedByAbilities": true,
-        "DamagedByMelee": true,
-        "DamagedByBullets": true,
-        "InitialSpawnTime": 0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
-        "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
-        "hModel": "models/props_vehicles/ground_ship_03_breakable.vmdl",
-        "AnimgraphParamOnHit": "b_Hit_Trigger",
-        "DropChance": 0.0,
-        "AnimgraphParamDamageReceived": "",
-        "DamageSound": "",
-        "IsPermanent": true,
-        "IsMantleable": true
-    },
-    "vehicle_large_truck_01": {
-        "RespawnTime": 180.0,
-        "Health": 100000000,
-        "BreakOnDodgeTouch": false,
-        "SolidAfterDeath": false,
-        "RenderAfterDeath": false,
-        "DamagedByAbilities": true,
-        "DamagedByMelee": true,
-        "DamagedByBullets": true,
-        "InitialSpawnTime": 0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
-        "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
-        "hModel": "models/props_vehicles/large_truck_01_breakable.vmdl",
-        "AnimgraphParamOnHit": "b_Hit_Trigger",
-        "DropChance": 0.0,
-        "AnimgraphParamDamageReceived": "",
-        "DamageSound": "",
-        "IsPermanent": true,
-        "IsMantleable": true
-    },
-    "vehicle_large_truck_02": {
-        "RespawnTime": 180.0,
-        "Health": 100000000,
-        "BreakOnDodgeTouch": false,
-        "SolidAfterDeath": false,
-        "RenderAfterDeath": false,
-        "DamagedByAbilities": true,
-        "DamagedByMelee": true,
-        "DamagedByBullets": true,
-        "InitialSpawnTime": 0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
-        "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
-        "hModel": "models/props_vehicles/large_truck_02_breakable.vmdl",
-        "AnimgraphParamOnHit": "b_Hit_Trigger",
-        "DropChance": 0.0,
-        "AnimgraphParamDamageReceived": "",
-        "DamageSound": "",
-        "IsPermanent": true,
-        "IsMantleable": true
-    },
-    "vehicle_mini_truck_03": {
-        "RespawnTime": 180.0,
-        "Health": 100000000,
-        "BreakOnDodgeTouch": false,
-        "SolidAfterDeath": false,
-        "RenderAfterDeath": false,
-        "DamagedByAbilities": true,
-        "DamagedByMelee": true,
-        "DamagedByBullets": true,
-        "InitialSpawnTime": 0,
-        "PrimaryDropChance": 60.0,
-        "PrimaryPickups": [
-            {
-                "Pickup": "small_gold_pickup",
-                "PickupWeight": 1.0
-            }
-        ],
-        "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
-        "hModel": "models/props_vehicles/mini_truck_03_breakable.vmdl",
-        "AnimgraphParamOnHit": "b_Hit_Trigger",
-        "DropChance": 0.0,
-        "AnimgraphParamDamageReceived": "",
-        "DamageSound": "",
-        "IsPermanent": true,
-        "IsMantleable": true
+        "MinimapClass": "powerup_survival",
+        "PingIcon": "file://{images}/hud/icons/powerup_survival.svg"
     },
     "wp_permanent_pickup": {
         "PickupRadius": {
@@ -3096,7 +3647,7 @@
         "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
         "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
         "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
-        "hModel": "models/props_gameplay/powerup_idol/powerup_idol.vmdl",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_battle_tome.vmdl",
         "SpawnSound": "Powerup.Spawn.Generic",
         "PickupExpirationDuration": {
             "Base": 30,
@@ -3105,7 +3656,7 @@
         "ParticleRadius": 1.5,
         "ShowOnMinimap": false,
         "NameLocString": "wp_permanent_pickup_label",
-        "PickupSound": "Powerup.Pickup.Weapon",
+        "PickupSound": "Powerup.Pickup.Wpn.Damage",
         "NameOffset": 60,
         "IsPermanentPickup": true,
         "Modifer": {
@@ -3116,12 +3667,20 @@
                 }
             ]
         },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_WeaponDamage",
+        "BuffTypeGraphColor": [
+            255,
+            140,
+            30
+        ],
+        "BuffTypeValueUnit": "Percent",
         "DefaultMaterialGroupName": "orange",
         "Color": [
             200,
             85,
             0
-        ]
+        ],
+        "GainedSound": "Powerup.Pickup.Wpn.Damage.Gained"
     },
     "wp_permanent_pickup_lv2": {
         "PickupRadius": {
@@ -3131,7 +3690,7 @@
         "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
         "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
         "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
-        "hModel": "models/props_gameplay/powerup_idol/powerup_idol.vmdl",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_battle_tome.vmdl",
         "SpawnSound": "Powerup.Spawn.Generic",
         "PickupExpirationDuration": {
             "Base": 30,
@@ -3140,7 +3699,7 @@
         "ParticleRadius": 1.5,
         "ShowOnMinimap": false,
         "NameLocString": "wp_permanent_pickup_label_lv2",
-        "PickupSound": "Powerup.Pickup.Weapon",
+        "PickupSound": "Powerup.Pickup.Wpn.Damage",
         "NameOffset": 60,
         "IsPermanentPickup": true,
         "Modifer": {
@@ -3151,12 +3710,20 @@
                 }
             ]
         },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_WeaponDamage",
+        "BuffTypeGraphColor": [
+            255,
+            140,
+            30
+        ],
+        "BuffTypeValueUnit": "Percent",
         "DefaultMaterialGroupName": "orange",
         "Color": [
             200,
             85,
             0
-        ]
+        ],
+        "GainedSound": "Powerup.Pickup.Wpn.Damage.Gained"
     },
     "wp_permanent_pickup_lv3": {
         "PickupRadius": {
@@ -3166,7 +3733,7 @@
         "friendlyParticle": "particles/environment/breakable_item_drop.vpcf",
         "enemyParticle": "particles/environment/breakable_item_drop.vpcf",
         "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
-        "hModel": "models/props_gameplay/powerup_idol/powerup_idol.vmdl",
+        "hModel": "models/props_gameplay/powerup_tomes/powerup_battle_tome.vmdl",
         "SpawnSound": "Powerup.Spawn.Generic",
         "PickupExpirationDuration": {
             "Base": 30,
@@ -3175,7 +3742,7 @@
         "ParticleRadius": 1.5,
         "ShowOnMinimap": false,
         "NameLocString": "wp_permanent_pickup_label_lv3",
-        "PickupSound": "Powerup.Pickup.Weapon",
+        "PickupSound": "Powerup.Pickup.Wpn.Damage",
         "NameOffset": 60,
         "IsPermanentPickup": true,
         "Modifer": {
@@ -3186,12 +3753,20 @@
                 }
             ]
         },
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_WeaponDamage",
+        "BuffTypeGraphColor": [
+            255,
+            140,
+            30
+        ],
+        "BuffTypeValueUnit": "Percent",
         "DefaultMaterialGroupName": "orange",
         "Color": [
             200,
             85,
             0
-        ]
+        ],
+        "GainedSound": "Powerup.Pickup.Wpn.Damage.Gained"
     },
     "xp_orb": {
         "OrbModel": "",

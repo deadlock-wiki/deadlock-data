@@ -5,19 +5,84 @@
         10.0,
         300.0
     ],
+    "BreakablePowerupLootParams": {
+        "m_iLootListDeckSize": 3,
+        "PickupsByMatchTimeMins": {
+            "0": {
+                "spirit_permanent_pickup": 1.0,
+                "firerate_permanent_pickup": 1.0,
+                "ammo_permanent_pickup": 1.0,
+                "hp_permanent_pickup": 2.0,
+                "cd_permanent_pickup": 1.0,
+                "wp_permanent_pickup": 1.0,
+                "bulletresist_permanent_pickup": 1.0,
+                "spiritresist_permanent_pickup": 1.0,
+                "range_permanent_pickup": 0.5,
+                "movespeed_permanent_pickup": 0.5
+            },
+            "10": {
+                "spirit_permanent_pickup_lv2": 1.0,
+                "firerate_permanent_pickup_lv2": 1.0,
+                "ammo_permanent_pickup_lv2": 1.0,
+                "hp_permanent_pickup_lv2": 2.0,
+                "cd_permanent_pickup_lv2": 1.0,
+                "wp_permanent_pickup_lv2": 1.0,
+                "bulletresist_permanent_pickup_lv2": 1.0,
+                "spiritresist_permanent_pickup_lv2": 1.0,
+                "range_permanent_pickup_lv2": 0.5,
+                "movespeed_permanent_pickup_lv2": 0.5
+            },
+            "30": {
+                "spirit_permanent_pickup_lv3": 1.0,
+                "firerate_permanent_pickup_lv3": 1.0,
+                "ammo_permanent_pickup_lv3": 1.0,
+                "hp_permanent_pickup_lv3": 2.0,
+                "cd_permanent_pickup_lv3": 1.0,
+                "wp_permanent_pickup_lv3": 1.0,
+                "bulletresist_permanent_pickup_lv3": 1.0,
+                "spiritresist_permanent_pickup_lv3": 1.0,
+                "range_permanent_pickup_lv3": 0.5,
+                "movespeed_permanent_pickup_lv3": 0.5
+            }
+        }
+    },
     "BreakableSpawnTimeDesc": [
         {
             "InitialSpawnTime": 180,
             "RespawnInterval": 180
         },
         {
-            "InitialSpawnTime": 300,
-            "RespawnInterval": 300
+            "InitialSpawnTime": 180,
+            "RespawnInterval": 180
         },
         {
             "InitialSpawnTime": 600,
             "RespawnInterval": 180
+        },
+        {
+            "InitialSpawnTime": 300,
+            "RespawnInterval": 180
         }
+    ],
+    "ColorEnemy": [
+        220,
+        76,
+        47
+    ],
+    "ColorFriend": [
+        255,
+        239,
+        215
+    ],
+    "ColorTeam1": [
+        231,
+        182,
+        89
+    ],
+    "ColorTeam2": [
+        91,
+        121,
+        230
     ],
     "CurrencyTypeSounds": {
         "AbilityPoints": {
@@ -38,7 +103,6 @@
                 "OrbTier1TrooperBoss": "Player.ClaimOrb",
                 "OrbTier2TrooperBoss": "Player.ClaimOrb",
                 "OrbTier3TrooperBoss": "Player.ClaimOrb",
-                "OrbBaseSentry": "Player.ClaimOrb",
                 "OrbDeployable": "Player.ClaimOrb",
                 "OrbTrophyKill": "Player.ClaimOrb",
                 "OrbTreasureChest": "Player.ClaimOrb",
@@ -51,85 +115,1082 @@
     "DamageFlash": {
         "FlashType_BulletDamage": {
             "Duration": 0.1,
-            "Coverage": 1.0,
-            "Hardness": 1.0,
-            "Brightness": 0.2,
-            "Color": [
-                255,
-                128,
-                0
+            "BrightnessInLightSensitivityMode": 0.0,
+            "ColorGradient": {
+                "Stops": [
+                    {
+                        "Position": 0.0,
+                        "Color": [
+                            255,
+                            52,
+                            52,
+                            120
+                        ]
+                    },
+                    {
+                        "Position": 0.250646,
+                        "Color": [
+                            255,
+                            153,
+                            153,
+                            120
+                        ]
+                    },
+                    {
+                        "Position": 0.268734,
+                        "Color": [
+                            112,
+                            0,
+                            0,
+                            120
+                        ]
+                    },
+                    {
+                        "Position": 0.364341,
+                        "Color": [
+                            145,
+                            0,
+                            0,
+                            120
+                        ]
+                    },
+                    {
+                        "Position": 0.77261,
+                        "Color": [
+                            203,
+                            0,
+                            0,
+                            50
+                        ]
+                    },
+                    {
+                        "Position": 0.78553,
+                        "Color": [
+                            255,
+                            0,
+                            0,
+                            6
+                        ]
+                    },
+                    {
+                        "Position": 0.989664,
+                        "Color": [
+                            255,
+                            0,
+                            0,
+                            7
+                        ]
+                    }
+                ]
+            },
+            "RadiusScaleAnimationCurve": {
+                "m_spline": [
+                    {
+                        "x": 0.0,
+                        "y": 0.500756,
+                        "SlopeIncoming": 0.0,
+                        "SlopeOutgoing": 2.066176
+                    },
+                    {
+                        "x": 0.172527,
+                        "y": 0.857227,
+                        "SlopeIncoming": 2.066176,
+                        "SlopeOutgoing": 0.499244
+                    },
+                    {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "SlopeIncoming": 0.172541,
+                        "SlopeOutgoing": 0.0
+                    }
+                ],
+                "m_tangents": [
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                        "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+                    },
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    },
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                        "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+                    }
+                ],
+                "m_vDomainMins": [
+                    0.0,
+                    0.0
+                ],
+                "m_vDomainMaxs": [
+                    1.0,
+                    1.0
+                ]
+            },
+            "AlphaAnimationCurve": {
+                "m_spline": [
+                    {
+                        "x": 0.0,
+                        "y": 1.0,
+                        "SlopeIncoming": -1.817743,
+                        "SlopeOutgoing": -1.817743
+                    },
+                    {
+                        "x": 0.438072,
+                        "y": 0.203697,
+                        "SlopeIncoming": -1.0,
+                        "SlopeOutgoing": -1.0
+                    },
+                    {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "SlopeIncoming": -0.362498,
+                        "SlopeOutgoing": -0.362498
+                    }
+                ],
+                "m_tangents": [
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    },
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    },
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    }
+                ],
+                "m_vDomainMins": [
+                    0.0,
+                    0.0
+                ],
+                "m_vDomainMaxs": [
+                    1.0,
+                    1.0
+                ]
+            },
+            "m_bFlashHit": true,
+            "FlashHitScale": [
+                0.1,
+                0.15
             ],
-            "BrightnessInLightSensitivityMode": 0.0
+            "m_bFlashHitSpikes": true,
+            "SpikeCount": [
+                5,
+                7
+            ],
+            "SpikeSharpness": [
+                0.4,
+                0.6
+            ],
+            "m_bAnimateAlpha": true,
+            "m_bFlashHitAnimateRadius": true,
+            "Brightness": 2.0
         },
         "FlashType_TechDamage": {
-            "Duration": 0.1,
-            "Coverage": 1.0,
-            "Hardness": 1.0,
-            "Brightness": 0.2,
-            "Color": [
-                165,
-                51,
-                255
-            ]
+            "Duration": 0.2,
+            "ColorGradient": {
+                "Stops": [
+                    {
+                        "Position": 0.0,
+                        "Color": [
+                            165,
+                            51,
+                            255
+                        ]
+                    },
+                    {
+                        "Position": 1.0,
+                        "Color": [
+                            165,
+                            51,
+                            255,
+                            0
+                        ]
+                    }
+                ]
+            },
+            "AlphaAnimationCurve": {
+                "m_spline": [
+                    {
+                        "x": 0.0,
+                        "y": 1.0,
+                        "SlopeIncoming": -1.0,
+                        "SlopeOutgoing": -1.0
+                    },
+                    {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "SlopeIncoming": -1.0,
+                        "SlopeOutgoing": -1.0
+                    }
+                ],
+                "m_tangents": [
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    },
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    }
+                ],
+                "m_vDomainMins": [
+                    0.0,
+                    0.0
+                ],
+                "m_vDomainMaxs": [
+                    1.0,
+                    1.0
+                ]
+            },
+            "RadiusScaleAnimationCurve": {
+                "m_spline": [
+                    {
+                        "x": 0.0,
+                        "y": 0.5,
+                        "SlopeIncoming": -0.5,
+                        "SlopeOutgoing": -0.5
+                    },
+                    {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "SlopeIncoming": -0.5,
+                        "SlopeOutgoing": -0.5
+                    }
+                ],
+                "m_tangents": [
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    },
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    }
+                ],
+                "m_vDomainMins": [
+                    0.0,
+                    0.0
+                ],
+                "m_vDomainMaxs": [
+                    1.0,
+                    0.5
+                ]
+            },
+            "m_bAnimateAlpha": true,
+            "BrightnessInLightSensitivityMode": 0.0
         },
         "FlashType_Healing": {
             "Duration": 1.0,
-            "Coverage": 0.5,
-            "Hardness": 0.0,
-            "Brightness": 1.2,
-            "Color": [
-                0,
-                195,
-                45
-            ],
-            "BrightnessInLightSensitivityMode": 0.6
+            "BrightnessInLightSensitivityMode": 0.0,
+            "RadiusScaleAnimationCurve": {
+                "m_spline": [
+                    {
+                        "x": 0.0,
+                        "y": 1.0,
+                        "SlopeIncoming": 0.0,
+                        "SlopeOutgoing": 0.0
+                    },
+                    {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "SlopeIncoming": 0.0,
+                        "SlopeOutgoing": 0.0
+                    }
+                ],
+                "m_tangents": [
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    },
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    }
+                ],
+                "m_vDomainMins": [
+                    0.0,
+                    0.0
+                ],
+                "m_vDomainMaxs": [
+                    1.0,
+                    1.0
+                ]
+            },
+            "AlphaAnimationCurve": {
+                "m_spline": [
+                    {
+                        "x": 0.0,
+                        "y": 1.0,
+                        "SlopeIncoming": -1.0,
+                        "SlopeOutgoing": -1.0
+                    },
+                    {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "SlopeIncoming": -1.0,
+                        "SlopeOutgoing": -1.0
+                    }
+                ],
+                "m_tangents": [
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    },
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    }
+                ],
+                "m_vDomainMins": [
+                    0.0,
+                    0.0
+                ],
+                "m_vDomainMaxs": [
+                    1.0,
+                    1.0
+                ]
+            },
+            "ColorGradient": {
+                "Stops": [
+                    {
+                        "Position": 0.0,
+                        "Color": [
+                            0,
+                            195,
+                            45
+                        ]
+                    },
+                    {
+                        "Position": 0.457364,
+                        "Color": [
+                            0,
+                            195,
+                            45,
+                            10
+                        ]
+                    },
+                    {
+                        "Position": 1.0,
+                        "Color": [
+                            0,
+                            195,
+                            45,
+                            5
+                        ]
+                    }
+                ]
+            },
+            "m_bFlashHit": false
         },
         "FlashType_CritDamage": {
-            "Duration": 0.33,
-            "Coverage": 0.8,
-            "Hardness": 0.9,
-            "Brightness": 0.5,
-            "Color": [
-                255,
-                255,
-                0
+            "Duration": 0.1,
+            "ColorGradient": {
+                "Stops": [
+                    {
+                        "Position": 0.010336,
+                        "Color": [
+                            255,
+                            128,
+                            0,
+                            200
+                        ]
+                    },
+                    {
+                        "Position": 0.02584,
+                        "Color": [
+                            255,
+                            255,
+                            255,
+                            200
+                        ]
+                    },
+                    {
+                        "Position": 0.183463,
+                        "Color": [
+                            255,
+                            255,
+                            255,
+                            200
+                        ]
+                    },
+                    {
+                        "Position": 0.209302,
+                        "Color": [
+                            255,
+                            128,
+                            0,
+                            100
+                        ]
+                    },
+                    {
+                        "Position": 0.547804,
+                        "Color": [
+                            255,
+                            128,
+                            0,
+                            10
+                        ]
+                    },
+                    {
+                        "Position": 0.894057,
+                        "Color": [
+                            255,
+                            128,
+                            0,
+                            6
+                        ]
+                    },
+                    {
+                        "Position": 1.0,
+                        "Color": [
+                            255,
+                            128,
+                            0,
+                            7
+                        ]
+                    }
+                ]
+            },
+            "RadiusScaleAnimationCurve": {
+                "m_spline": [
+                    {
+                        "x": 0.0,
+                        "y": 0.500756,
+                        "SlopeIncoming": 0.224001,
+                        "SlopeOutgoing": 0.224001
+                    },
+                    {
+                        "x": 0.644128,
+                        "y": 0.645042,
+                        "SlopeIncoming": 0.499244,
+                        "SlopeOutgoing": 0.499244
+                    },
+                    {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "SlopeIncoming": 0.997433,
+                        "SlopeOutgoing": 0.997433
+                    }
+                ],
+                "m_tangents": [
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    },
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    },
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    }
+                ],
+                "m_vDomainMins": [
+                    0.0,
+                    0.0
+                ],
+                "m_vDomainMaxs": [
+                    1.0,
+                    1.0
+                ]
+            },
+            "AlphaAnimationCurve": {
+                "m_spline": [
+                    {
+                        "x": 0.0,
+                        "y": 1.0,
+                        "SlopeIncoming": -0.291458,
+                        "SlopeOutgoing": -0.291458
+                    },
+                    {
+                        "x": 0.693701,
+                        "y": 0.797815,
+                        "SlopeIncoming": -1.0,
+                        "SlopeOutgoing": -1.0
+                    },
+                    {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "SlopeIncoming": -2.604694,
+                        "SlopeOutgoing": -2.604694
+                    }
+                ],
+                "m_tangents": [
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    },
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    },
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    }
+                ],
+                "m_vDomainMins": [
+                    0.0,
+                    0.0
+                ],
+                "m_vDomainMaxs": [
+                    1.0,
+                    1.0
+                ]
+            },
+            "Brightness": 4.0,
+            "BrightnessInLightSensitivityMode": 0.0,
+            "m_bFlashHit": true,
+            "FlashHitScale": [
+                0.2,
+                0.5
             ],
-            "m_bHeadOnly": true
+            "m_bFlashHitSpikes": true,
+            "SpikeCount": 12,
+            "FlashHitRotation": [
+                0.0,
+                0.0
+            ],
+            "SpikeSharpness": [
+                0.5,
+                0.5
+            ],
+            "m_bFlashHitAnimateRadius": true
         },
         "FlashType_MeleeActivate": {
-            "Duration": 0.1,
-            "Coverage": 1.0,
-            "Color": [
-                49,
-                169,
-                250
-            ],
-            "Brightness": 0.8,
-            "Hardness": 0.0
+            "Duration": 0.15,
+            "ColorGradient": {
+                "Stops": [
+                    {
+                        "Position": 0.0,
+                        "Color": [
+                            49,
+                            169,
+                            250,
+                            90
+                        ]
+                    },
+                    {
+                        "Position": 1.0,
+                        "Color": [
+                            49,
+                            169,
+                            250,
+                            0
+                        ]
+                    }
+                ]
+            },
+            "AlphaAnimationCurve": {
+                "m_spline": [
+                    {
+                        "x": 0.0,
+                        "y": 1.0,
+                        "SlopeIncoming": 0.0,
+                        "SlopeOutgoing": 0.0
+                    },
+                    {
+                        "x": 0.550835,
+                        "y": 1.0,
+                        "SlopeIncoming": -1.0,
+                        "SlopeOutgoing": -1.0
+                    },
+                    {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "SlopeIncoming": -2.226355,
+                        "SlopeOutgoing": -2.226355
+                    }
+                ],
+                "m_tangents": [
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    },
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    },
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    }
+                ],
+                "m_vDomainMins": [
+                    0.0,
+                    0.0
+                ],
+                "m_vDomainMaxs": [
+                    1.0,
+                    1.0
+                ]
+            },
+            "m_bAnimateAlpha": true,
+            "BrightnessInLightSensitivityMode": 0.0,
+            "Brightness": 4.0
         },
         "FlashType_PatronHit": {
-            "Duration": 0.05,
-            "Coverage": 0.99,
-            "Color": [
-                255,
-                134,
-                5
-            ],
-            "Brightness": 0.3,
-            "Hardness": 1.0
+            "Duration": 0.075,
+            "ColorGradient": {
+                "Stops": [
+                    {
+                        "Position": 0.010336,
+                        "Color": [
+                            255,
+                            128,
+                            0
+                        ]
+                    },
+                    {
+                        "Position": 0.046512,
+                        "Color": [
+                            255,
+                            215,
+                            175
+                        ]
+                    },
+                    {
+                        "Position": 0.209302,
+                        "Color": [
+                            255,
+                            128,
+                            0
+                        ]
+                    },
+                    {
+                        "Position": 0.547804,
+                        "Color": [
+                            255,
+                            128,
+                            0,
+                            60
+                        ]
+                    },
+                    {
+                        "Position": 0.894057,
+                        "Color": [
+                            255,
+                            128,
+                            0,
+                            50
+                        ]
+                    },
+                    {
+                        "Position": 1.0,
+                        "Color": [
+                            255,
+                            128,
+                            0,
+                            40
+                        ]
+                    }
+                ]
+            },
+            "RadiusScaleAnimationCurve": {
+                "m_spline": [
+                    {
+                        "x": 0.0,
+                        "y": 0.500756,
+                        "SlopeIncoming": 0.0,
+                        "SlopeOutgoing": 2.066176
+                    },
+                    {
+                        "x": 0.172527,
+                        "y": 0.857227,
+                        "SlopeIncoming": 2.066176,
+                        "SlopeOutgoing": 0.499244
+                    },
+                    {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "SlopeIncoming": 0.172541,
+                        "SlopeOutgoing": 0.0
+                    }
+                ],
+                "m_tangents": [
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                        "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+                    },
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    },
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                        "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+                    }
+                ],
+                "m_vDomainMins": [
+                    0.0,
+                    0.0
+                ],
+                "m_vDomainMaxs": [
+                    1.0,
+                    1.0
+                ]
+            },
+            "AlphaAnimationCurve": {
+                "m_spline": [
+                    {
+                        "x": 0.0,
+                        "y": 1.0,
+                        "SlopeIncoming": -1.0,
+                        "SlopeOutgoing": -1.0
+                    },
+                    {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "SlopeIncoming": -1.0,
+                        "SlopeOutgoing": -1.0
+                    }
+                ],
+                "m_tangents": [
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    },
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    }
+                ],
+                "m_vDomainMins": [
+                    0.0,
+                    0.0
+                ],
+                "m_vDomainMaxs": [
+                    1.0,
+                    1.0
+                ]
+            },
+            "m_bFlashHit": false,
+            "m_bAnimateAlpha": true,
+            "BrightnessInLightSensitivityMode": 0.0
+        },
+        "FlashType_GenericDamage": {
+            "Duration": 0.1,
+            "ColorGradient": {
+                "Stops": [
+                    {
+                        "Position": 0.0,
+                        "Color": [
+                            255,
+                            0,
+                            0,
+                            20
+                        ]
+                    },
+                    {
+                        "Position": 1.0,
+                        "Color": [
+                            255,
+                            0,
+                            0,
+                            10
+                        ]
+                    }
+                ]
+            },
+            "BrightnessInLightSensitivityMode": 0.0,
+            "m_bAnimateAlpha": true,
+            "AlphaAnimationCurve": {
+                "m_spline": [
+                    {
+                        "x": 0.0,
+                        "y": 1.0,
+                        "SlopeIncoming": -1.817743,
+                        "SlopeOutgoing": -1.817743
+                    },
+                    {
+                        "x": 0.438072,
+                        "y": 0.203697,
+                        "SlopeIncoming": -1.0,
+                        "SlopeOutgoing": -1.0
+                    },
+                    {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "SlopeIncoming": -0.362498,
+                        "SlopeOutgoing": -0.362498
+                    }
+                ],
+                "m_tangents": [
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    },
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    },
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    }
+                ],
+                "m_vDomainMins": [
+                    0.0,
+                    0.0
+                ],
+                "m_vDomainMaxs": [
+                    1.0,
+                    1.0
+                ]
+            }
         }
     },
     "DamageFlashLowViolence": {
         "FlashType_BulletDamage": {
-            "Duration": 0.25,
-            "Coverage": 0.5,
-            "Hardness": 0.7,
-            "Brightness": 3.5,
-            "Color": [
-                12,
-                0,
-                15
-            ]
+            "Duration": 0.1,
+            "ColorGradient": {
+                "Stops": [
+                    {
+                        "Position": 0.0,
+                        "Color": [
+                            0,
+                            0,
+                            0,
+                            120
+                        ]
+                    },
+                    {
+                        "Position": 0.250646,
+                        "Color": [
+                            220,
+                            220,
+                            220,
+                            120
+                        ]
+                    },
+                    {
+                        "Position": 0.268734,
+                        "Color": [
+                            0,
+                            0,
+                            0,
+                            120
+                        ]
+                    },
+                    {
+                        "Position": 0.364341,
+                        "Color": [
+                            0,
+                            0,
+                            0,
+                            120
+                        ]
+                    },
+                    {
+                        "Position": 0.77261,
+                        "Color": [
+                            0,
+                            0,
+                            0,
+                            120
+                        ]
+                    },
+                    {
+                        "Position": 0.78553,
+                        "Color": [
+                            0,
+                            0,
+                            0,
+                            6
+                        ]
+                    },
+                    {
+                        "Position": 0.989664,
+                        "Color": [
+                            0,
+                            0,
+                            0,
+                            7
+                        ]
+                    }
+                ]
+            },
+            "RadiusScaleAnimationCurve": {
+                "m_spline": [
+                    {
+                        "x": 0.0,
+                        "y": 0.500756,
+                        "SlopeIncoming": 0.0,
+                        "SlopeOutgoing": 2.066176
+                    },
+                    {
+                        "x": 0.172527,
+                        "y": 0.857227,
+                        "SlopeIncoming": 2.066176,
+                        "SlopeOutgoing": 0.499244
+                    },
+                    {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "SlopeIncoming": 0.172541,
+                        "SlopeOutgoing": 0.0
+                    }
+                ],
+                "m_tangents": [
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                        "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+                    },
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    },
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                        "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+                    }
+                ],
+                "m_vDomainMins": [
+                    0.0,
+                    0.0
+                ],
+                "m_vDomainMaxs": [
+                    1.0,
+                    1.0
+                ]
+            },
+            "AlphaAnimationCurve": {
+                "m_spline": [
+                    {
+                        "x": 0.0,
+                        "y": 1.0,
+                        "SlopeIncoming": -1.817743,
+                        "SlopeOutgoing": -1.817743
+                    },
+                    {
+                        "x": 0.438072,
+                        "y": 0.203697,
+                        "SlopeIncoming": -1.0,
+                        "SlopeOutgoing": -1.0
+                    },
+                    {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "SlopeIncoming": -0.362498,
+                        "SlopeOutgoing": -0.362498
+                    }
+                ],
+                "m_tangents": [
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    },
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    },
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    }
+                ],
+                "m_vDomainMins": [
+                    0.0,
+                    0.0
+                ],
+                "m_vDomainMaxs": [
+                    1.0,
+                    1.0
+                ]
+            },
+            "m_bFlashHit": true,
+            "FlashHitScale": [
+                0.1,
+                0.15
+            ],
+            "m_bFlashHitAnimateRadius": true,
+            "m_bFlashHitSpikes": true,
+            "SpikeCount": [
+                5,
+                6
+            ],
+            "SpikeSharpness": [
+                0.4,
+                0.6
+            ],
+            "m_bAnimateAlpha": true,
+            "BrightnessInLightSensitivityMode": 0.0
+        },
+        "FlashType_GenericDamage": {
+            "Duration": 0.1,
+            "ColorGradient": {
+                "Stops": [
+                    {
+                        "Position": 0.0,
+                        "Color": [
+                            255,
+                            255,
+                            255,
+                            20
+                        ]
+                    },
+                    {
+                        "Position": 1.0,
+                        "Color": [
+                            255,
+                            255,
+                            255,
+                            10
+                        ]
+                    }
+                ]
+            },
+            "BrightnessInLightSensitivityMode": 0.0,
+            "m_bAnimateAlpha": true,
+            "AlphaAnimationCurve": {
+                "m_spline": [
+                    {
+                        "x": 0.0,
+                        "y": 1.0,
+                        "SlopeIncoming": -1.817743,
+                        "SlopeOutgoing": -1.817743
+                    },
+                    {
+                        "x": 0.438072,
+                        "y": 0.203697,
+                        "SlopeIncoming": -1.0,
+                        "SlopeOutgoing": -1.0
+                    },
+                    {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "SlopeIncoming": -0.362498,
+                        "SlopeOutgoing": -0.362498
+                    }
+                ],
+                "m_tangents": [
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    },
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    },
+                    {
+                        "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                        "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                    }
+                ],
+                "m_vDomainMins": [
+                    0.0,
+                    0.0
+                ],
+                "m_vDomainMaxs": [
+                    1.0,
+                    1.0
+                ]
+            }
         }
     },
     "DamageIndicatorSounds": {
@@ -176,7 +1237,8 @@
         "Priority": 1,
         "HOTToppedOff": "Player.Heal.OverTime.TopOff",
         "DirectHealingSmall": "Player.Heal.Burst.Small",
-        "DirectHealingMedium": "Player.Heal.Burst.Medium"
+        "DirectHealingMedium": "Player.Heal.Burst.Medium",
+        "HighThresholdOneshot": "Player.Heal.HighHealth.Start"
     },
     "HeroKillGoldShareFrac": [
         1.25,
@@ -185,14 +1247,6 @@
         0.175,
         0.11,
         0.083
-    ],
-    "HeroTestingTargetDummyUpgrades": [
-        "upgrade_toughness_2",
-        "upgrade_health_regen_1",
-        "upgrade_toughness_3",
-        "upgrade_health_percent_large",
-        "upgrade_out_of_combat_health_regen",
-        "upgrade_zipine_mastery"
     ],
     "IdolParams": {
         "IdolModel": "models/props_gameplay/idol_urn/idol_urn.vmdl",
@@ -208,6 +1262,14 @@
         "IdolSpawnSound": "Soul.Urn.Spawn",
         "IdolSpawnCompleteSound": "Soul.Urn.Spawn.Complete"
     },
+    "ItemCorruptionPricePerTier": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
     "ItemPricePerTier": [
         0,
         800,
@@ -229,115 +1291,147 @@
     },
     "LaneInfo": [
         {
-            "LaneName": "White",
-            "CSSClass": "whiteLane",
-            "Color": [
-                200,
-                200,
-                200
-            ],
-            "MinimapZiplineColorOverride": [
-                200,
-                200,
-                200
-            ],
-            "ObjectiveColor": [
-                200,
-                200,
-                200
-            ]
+            "LaneName": "Unused"
         },
         {
-            "LaneName": "Yellow",
+            "LaneName": "#Citadel_LaneNameYellow",
             "CSSClass": "yellowLane",
             "Color": [
                 241,
                 204,
                 48
             ],
-            "MinimapZiplineColorOverride": [
+            "MinimapColor": [
                 190,
                 169,
                 78
-            ],
-            "ObjectiveColor": [
-                249,
-                212,
-                5
             ]
         },
         {
-            "LaneName": "Yellow + Orange",
-            "Color": [
-                0,
-                0,
-                0
-            ]
+            "LaneName": "Unused"
         },
         {
-            "LaneName": "Green",
-            "CSSClass": "greenLane",
-            "Color": [
-                255,
-                20,
-                147
-            ],
-            "MinimapZiplineColorOverride": [
-                255,
-                20,
-                147
-            ],
-            "ObjectiveColor": [
-                255,
-                20,
-                147
-            ]
+            "LaneName": "Unused"
         },
         {
-            "LaneName": "Blue",
+            "LaneName": "#Citadel_LaneNameBlue",
             "CSSClass": "blueLane",
             "Color": [
                 41,
                 177,
                 204
             ],
-            "MinimapZiplineColorOverride": [
+            "MinimapColor": [
                 85,
                 155,
                 190
-            ],
-            "ObjectiveColor": [
-                67,
-                125,
-                220
             ]
         },
         {
-            "LaneName": " + Purple",
-            "Color": [
-                0,
-                0,
-                0
-            ]
+            "LaneName": "Unused"
         },
         {
-            "LaneName": "Purple",
+            "LaneName": "#Citadel_LaneNameGreen",
             "CSSClass": "purpleLane",
             "Color": [
                 89,
                 178,
                 71
             ],
-            "MinimapZiplineColorOverride": [
+            "MinimapColor": [
                 102,
                 153,
                 92
-            ],
-            "ObjectiveColor": [
-                89,
-                178,
-                71
             ]
+        },
+        {
+            "LaneName": "Enemy",
+            "CSSClass": "enemyLane",
+            "m_bIsEnemyLane": true,
+            "Color": [
+                140,
+                55,
+                38
+            ],
+            "MinimapColor": [
+                140,
+                55,
+                38
+            ]
+        }
+    ],
+    "MapDistrictLocalization": [
+        {
+            "District": "map_district_amber",
+            "Building": "map_district_building_base"
+        },
+        {
+            "District": "map_district_sapphire",
+            "Building": "map_district_building_base"
+        },
+        {
+            "District": "map_district_york",
+            "Building": "map_district_building_docks"
+        },
+        {
+            "District": "map_district_broadway",
+            "Building": "map_district_building_times_square"
+        },
+        {
+            "District": "map_district_park",
+            "Building": "map_district_building_central_park"
+        },
+        {
+            "District": "map_district_haunted_slums",
+            "Building": ""
+        },
+        {
+            "District": "map_district_chinatown",
+            "Building": ""
+        },
+        {
+            "District": "map_district_fairfax",
+            "Building": ""
+        },
+        {
+            "District": "map_district_theater",
+            "Building": ""
+        },
+        {
+            "District": "map_district_mid",
+            "Building": "map_district_building_pit"
+        },
+        {
+            "District": "map_district_canal",
+            "Building": "map_district_building_parkside"
+        },
+        {
+            "District": "map_district_canal",
+            "Building": "map_district_building_yorkside"
+        },
+        {
+            "District": "map_district_york",
+            "Building": "map_district_building_factory"
+        },
+        {
+            "District": "map_district_york",
+            "Building": "map_district_building_stock_exchange"
+        },
+        {
+            "District": "map_district_broadway",
+            "Building": "map_district_building_uptown"
+        },
+        {
+            "District": "map_district_broadway",
+            "Building": "map_district_building_downtown"
+        },
+        {
+            "District": "map_district_park",
+            "Building": "map_district_building_brownstones"
+        },
+        {
+            "District": "map_district_park",
+            "Building": "map_district_building_campus"
         }
     ],
     "MidbossIndicatorRespawningParticle": "",
@@ -349,7 +1443,7 @@
                 0.0,
                 1000.0
             ],
-            "iLane": 0
+            "bAllLanes": true
         },
         {
             "eEntityClass": "CLASS_BOSS_BARRACKS",
@@ -372,20 +1466,52 @@
             "vOffset2D": [
                 0.0,
                 400.0
+            ],
+            "bAllLanes": true
+        },
+        {
+            "eEntityClass": "CLASS_ABILITY_SHOP",
+            "iLane": -1,
+            "vOffset2D": [
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "eEntityClass": "CLASS_ABILITY_SHOP",
+            "iLane": 0,
+            "vOffset2D": [
+                -3000.0,
+                -1800.0
+            ]
+        },
+        {
+            "eEntityClass": "CLASS_ABILITY_SHOP",
+            "iLane": 1,
+            "vOffset2D": [
+                600.0,
+                -100.0
+            ]
+        },
+        {
+            "eEntityClass": "CLASS_ABILITY_SHOP",
+            "iLane": 4,
+            "vOffset2D": [
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "eEntityClass": "CLASS_ABILITY_SHOP",
+            "iLane": 6,
+            "vOffset2D": [
+                -800.0,
+                200.0
             ]
         }
     ],
-    "MinimapTeamCombineColor": [
-        83,
-        51,
-        51
-    ],
-    "MinimapTeamRebelsColor": [
-        58,
-        91,
-        66
-    ],
-    "MinimapZiplinesParticle": "particles/ui/ui_minimap.vpcf",
+    "NeutralCampRespawnTimerHeight": 2.5,
+    "NeutralCampRespawnTimerShowDistance": 15.0,
     "NewPlayerMetrics": [
         {
             "SkillTierName": "Bronze",
@@ -436,15 +1562,6 @@
             "ModsPurchased": 1
         }
     ],
-    "NoLaneZip": {
-        "LaneName": "NoLane",
-        "CSSClass": "noLane",
-        "Color": [
-            0,
-            0,
-            0
-        ]
-    },
     "ObjectiveParams": {
         "GoldPerOrb": 0,
         "NearPlayerSplitPct": 25.0,
@@ -495,6 +1612,8 @@
         230,
         255
     ],
+    "PermanentPickupTextDuration": 3.0,
+    "PickupGainedEffectStaggerInterval": 1.5,
     "RejuvParams": {
         "RejuvinatorExpirationWarningTiming": 30,
         "RejuvinatorBuffDuration": 180,
@@ -521,6 +1640,13 @@
         "ResourceType_Rage": {
             "HUDSnippetName": "rage",
             "CantCastOutOfResourceToken": "#CITADEL_ABILITY_INVALID_NOT_RAGE"
+        },
+        "ResourceType_Heat": {
+            "HUDSnippetName": "heat"
+        },
+        "ResourceType_Ink": {
+            "CantCastOutOfResourceToken": "",
+            "HUDSnippetName": "ink"
         }
     },
     "ShoppingEffect": "particles/generic/hero_shopping_status.vpcf",
@@ -640,29 +1766,26 @@
         "Tier1MaxResistTime": 2.2,
         "Tier2MaxResistTime": 2.2,
         "m_iUltimateUnlockRound": 1,
+        "m_iCorruptItemRound": 5,
         "m_vecItemDraftRoundsPerGameRound": [
             {
                 "m_chanceRare": {
-                    "OutcomesToWeights": {
-                        "0": 0.0,
-                        "1": 0.0,
-                        "2": 10.0,
-                        "3": 60.0,
-                        "4": 40.0,
-                        "5": 20.0,
-                        "6": 0.0
-                    }
+                    "0": 0.0,
+                    "1": 0.0,
+                    "2": 10.0,
+                    "3": 60.0,
+                    "4": 40.0,
+                    "5": 20.0,
+                    "6": 0.0
                 },
                 "m_chanceEnhanced": {
-                    "OutcomesToWeights": {
-                        "0": 10.0,
-                        "1": 20.0,
-                        "2": 20.0,
-                        "3": 35.0,
-                        "4": 15.0,
-                        "5": 0.0,
-                        "6": 0.0
-                    }
+                    "0": 10.0,
+                    "1": 20.0,
+                    "2": 20.0,
+                    "3": 35.0,
+                    "4": 15.0,
+                    "5": 0.0,
+                    "6": 0.0
                 },
                 "m_vecItemDraftRounds": [
                     {
@@ -681,26 +1804,22 @@
             },
             {
                 "m_chanceRare": {
-                    "OutcomesToWeights": {
-                        "0": 0.0,
-                        "1": 0.0,
-                        "2": 10.0,
-                        "3": 60.0,
-                        "4": 40.0,
-                        "5": 20.0,
-                        "6": 0.0
-                    }
+                    "0": 0.0,
+                    "1": 0.0,
+                    "2": 10.0,
+                    "3": 60.0,
+                    "4": 40.0,
+                    "5": 20.0,
+                    "6": 0.0
                 },
                 "m_chanceEnhanced": {
-                    "OutcomesToWeights": {
-                        "0": 10.0,
-                        "1": 20.0,
-                        "2": 20.0,
-                        "3": 35.0,
-                        "4": 15.0,
-                        "5": 0.0,
-                        "6": 0.0
-                    }
+                    "0": 10.0,
+                    "1": 20.0,
+                    "2": 20.0,
+                    "3": 35.0,
+                    "4": 15.0,
+                    "5": 0.0,
+                    "6": 0.0
                 },
                 "m_vecItemDraftRounds": [
                     {
@@ -719,26 +1838,22 @@
             },
             {
                 "m_chanceRare": {
-                    "OutcomesToWeights": {
-                        "0": 0.0,
-                        "1": 0.0,
-                        "2": 10.0,
-                        "3": 60.0,
-                        "4": 40.0,
-                        "5": 20.0,
-                        "6": 0.0
-                    }
+                    "0": 0.0,
+                    "1": 0.0,
+                    "2": 10.0,
+                    "3": 60.0,
+                    "4": 40.0,
+                    "5": 20.0,
+                    "6": 0.0
                 },
                 "m_chanceEnhanced": {
-                    "OutcomesToWeights": {
-                        "0": 10.0,
-                        "1": 20.0,
-                        "2": 20.0,
-                        "3": 35.0,
-                        "4": 15.0,
-                        "5": 0.0,
-                        "6": 0.0
-                    }
+                    "0": 10.0,
+                    "1": 20.0,
+                    "2": 20.0,
+                    "3": 35.0,
+                    "4": 15.0,
+                    "5": 0.0,
+                    "6": 0.0
                 },
                 "m_vecItemDraftRounds": [
                     {
@@ -760,26 +1875,22 @@
             },
             {
                 "m_chanceRare": {
-                    "OutcomesToWeights": {
-                        "0": 0.0,
-                        "1": 0.0,
-                        "2": 10.0,
-                        "3": 60.0,
-                        "4": 40.0,
-                        "5": 20.0,
-                        "6": 0.0
-                    }
+                    "0": 0.0,
+                    "1": 0.0,
+                    "2": 10.0,
+                    "3": 60.0,
+                    "4": 40.0,
+                    "5": 20.0,
+                    "6": 0.0
                 },
                 "m_chanceEnhanced": {
-                    "OutcomesToWeights": {
-                        "0": 10.0,
-                        "1": 20.0,
-                        "2": 20.0,
-                        "3": 35.0,
-                        "4": 15.0,
-                        "5": 0.0,
-                        "6": 0.0
-                    }
+                    "0": 10.0,
+                    "1": 20.0,
+                    "2": 20.0,
+                    "3": 35.0,
+                    "4": 15.0,
+                    "5": 0.0,
+                    "6": 0.0
                 },
                 "m_vecItemDraftRounds": [
                     {
@@ -801,25 +1912,21 @@
             },
             {
                 "m_chanceRare": {
-                    "OutcomesToWeights": {
-                        "0": 5.0,
-                        "1": 10.0,
-                        "2": 40.0,
-                        "3": 10.0,
-                        "4": 0.0,
-                        "5": 0.0
-                    }
+                    "0": 5.0,
+                    "1": 10.0,
+                    "2": 40.0,
+                    "3": 10.0,
+                    "4": 0.0,
+                    "5": 0.0
                 },
                 "m_chanceEnhanced": {
-                    "OutcomesToWeights": {
-                        "0": 0.0,
-                        "1": 0.0,
-                        "2": 5.0,
-                        "3": 35.0,
-                        "4": 15.0,
-                        "5": 0.0,
-                        "6": 0.0
-                    }
+                    "0": 0.0,
+                    "1": 0.0,
+                    "2": 5.0,
+                    "3": 35.0,
+                    "4": 15.0,
+                    "5": 0.0,
+                    "6": 0.0
                 },
                 "m_vecItemDraftRounds": [
                     {
@@ -898,16 +2005,6 @@
         0.16
     ],
     "generic_data_type": "CitadelGenericData_t",
-    "m_enemyObjectivesColor": [
-        220,
-        76,
-        47
-    ],
-    "m_enemyZiplineColor": [
-        140,
-        55,
-        38
-    ],
     "m_vecArmorGroups": [
         {
             "m_eShopGroup": "EMoreHealth",
@@ -1013,6 +2110,254 @@
                 "upgrade_veil_walker",
                 "upgrade_siphon_bullets",
                 "upgrade_diviners_kevlar"
+            ]
+        }
+    ],
+    "m_vecCorruptedPenaltyDefs": [
+        {
+            "Name": "TechCooldown",
+            "RollWeight": 1.0,
+            "m_vecEffects": [
+                {
+                    "m_eModifierValue": "MODIFIER_VALUE_COOLDOWN_REDUCTION_PERCENTAGE",
+                    "BonusPerTier": [
+                        "0",
+                        "0",
+                        "0",
+                        "-13",
+                        "-17",
+                        "0"
+                    ],
+                    "m_eDisplayType": "ETechCooldown",
+                    "LocTokenOverride": "CooldownReduction",
+                    "CSSClass": "cooldown"
+                }
+            ]
+        },
+        {
+            "Name": "TechRange",
+            "RollWeight": 1.0,
+            "m_vecEffects": [
+                {
+                    "m_eModifierValue": "MODIFIER_VALUE_TECH_RANGE_PERCENT",
+                    "BonusPerTier": [
+                        "0",
+                        "0",
+                        "0",
+                        "-20",
+                        "-25",
+                        "0"
+                    ],
+                    "m_eDisplayType": "ETechRange",
+                    "LocTokenOverride": "TechRangeMultiplier",
+                    "CSSClass": "distance"
+                },
+                {
+                    "m_eModifierValue": "MODIFIER_VALUE_TECH_RADIUS_PERCENT",
+                    "BonusPerTier": [
+                        "0",
+                        "0",
+                        "0",
+                        "-20",
+                        "-25",
+                        "0"
+                    ],
+                    "m_eDisplayType": "ETechRadius",
+                    "LocTokenOverride": "TechRadiusMultiplier",
+                    "m_bDisplay": false
+                }
+            ]
+        },
+        {
+            "Name": "Stamina",
+            "RollWeight": 1.0,
+            "m_vecEffects": [
+                {
+                    "m_eModifierValue": "MODIFIER_VALUE_STAMINA",
+                    "BonusPerTier": [
+                        "0",
+                        "0",
+                        "0",
+                        "-1",
+                        "-1",
+                        "0"
+                    ],
+                    "m_eDisplayType": "EStamina",
+                    "LocTokenOverride": "Stamina"
+                },
+                {
+                    "m_eModifierValue": "MODIFIER_VALUE_STAMINA_REGEN_PER_SECOND_PERCENTAGE",
+                    "BonusPerTier": [
+                        "0",
+                        "0",
+                        "0",
+                        "-18",
+                        "-24",
+                        "0"
+                    ],
+                    "m_eDisplayType": "EStaminaRegenPercent",
+                    "LocTokenOverride": "StaminaRegenPercent"
+                }
+            ]
+        },
+        {
+            "Name": "MoveSpeed",
+            "RollWeight": 1.0,
+            "m_vecEffects": [
+                {
+                    "m_eModifierValue": "MODIFIER_VALUE_MOVEMENT_SPEED_MAX",
+                    "BonusPerTier": [
+                        "0",
+                        "0",
+                        "0",
+                        "-2m",
+                        "-2.75m",
+                        "0"
+                    ],
+                    "m_eDisplayType": "EMaxMoveSpeed",
+                    "LocTokenOverride": "BonusMoveSpeed",
+                    "CSSClass": "move_speed"
+                }
+            ]
+        },
+        {
+            "Name": "FireRate",
+            "RollWeight": 1.0,
+            "m_vecEffects": [
+                {
+                    "m_eModifierValue": "MODIFIER_VALUE_FIRE_RATE",
+                    "BonusPerTier": [
+                        "0",
+                        "0",
+                        "0",
+                        "-20",
+                        "-25",
+                        "0"
+                    ],
+                    "m_eDisplayType": "EFireRate",
+                    "LocTokenOverride": "BonusFireRate",
+                    "CSSClass": "fire_rate"
+                }
+            ]
+        },
+        {
+            "Name": "TechDuration",
+            "RollWeight": 1.0,
+            "m_vecEffects": [
+                {
+                    "m_eModifierValue": "MODIFIER_VALUE_BONUS_ABILITY_DURATION_PERCENTAGE",
+                    "BonusPerTier": [
+                        "0",
+                        "0",
+                        "0",
+                        "-15",
+                        "-20",
+                        "0"
+                    ],
+                    "m_eDisplayType": "ETechDuration",
+                    "LocTokenOverride": "BonusAbilityDurationPercent",
+                    "CSSClass": "duration"
+                }
+            ]
+        },
+        {
+            "Name": "TechPower",
+            "RollWeight": 1.0,
+            "m_vecEffects": [
+                {
+                    "m_eModifierValue": "MODIFIER_VALUE_TECH_POWER",
+                    "BonusPerTier": [
+                        "0",
+                        "0",
+                        "0",
+                        "-30",
+                        "-45",
+                        "0"
+                    ],
+                    "m_eDisplayType": "ETechPower",
+                    "LocTokenOverride": "TechPower",
+                    "CSSClass": "tech_damage"
+                }
+            ]
+        },
+        {
+            "Name": "WeaponDamage",
+            "RollWeight": 1.0,
+            "m_vecEffects": [
+                {
+                    "m_eModifierValue": "MODIFIER_VALUE_WEAPON_DAMAGE_INCREASE",
+                    "BonusPerTier": [
+                        "0",
+                        "0",
+                        "0",
+                        "-40",
+                        "-55",
+                        "0"
+                    ],
+                    "m_eDisplayType": "EBaseWeaponDamageIncrease",
+                    "LocTokenOverride": "WeaponPower",
+                    "CSSClass": "bullet_damage"
+                }
+            ]
+        },
+        {
+            "Name": "Health",
+            "RollWeight": 1.0,
+            "m_vecEffects": [
+                {
+                    "m_eModifierValue": "MODIFIER_VALUE_HEALTH_MAX",
+                    "BonusPerTier": [
+                        "0",
+                        "0",
+                        "0",
+                        "-350",
+                        "-550",
+                        "0"
+                    ],
+                    "m_eDisplayType": "EMaxHealth",
+                    "LocTokenOverride": "BonusMaxHealth",
+                    "CSSClass": "health"
+                }
+            ]
+        },
+        {
+            "Name": "BulletResist",
+            "RollWeight": 1.0,
+            "m_vecEffects": [
+                {
+                    "m_eModifierValue": "MODIFIER_VALUE_BULLET_AND_MELEE_RESIST_REDUCTION",
+                    "BonusPerTier": [
+                        "0",
+                        "0",
+                        "0",
+                        "-14",
+                        "-18",
+                        "0"
+                    ],
+                    "m_eDisplayType": "EBulletArmorDamageReduction",
+                    "LocTokenOverride": "BulletResist",
+                    "CSSClass": "bullet_armor_up"
+                }
+            ]
+        },
+        {
+            "Name": "TechResist",
+            "RollWeight": 1.0,
+            "m_vecEffects": [
+                {
+                    "m_eModifierValue": "MODIFIER_VALUE_TECH_RESIST_REDUCTION",
+                    "BonusPerTier": [
+                        "0",
+                        "0",
+                        "0",
+                        "-14",
+                        "-18",
+                        "0"
+                    ],
+                    "m_eDisplayType": "ETechArmorDamageReduction",
+                    "LocTokenOverride": "TechArmorDamageReduction",
+                    "CSSClass": "tech_armor_up"
+                }
             ]
         }
     ],
