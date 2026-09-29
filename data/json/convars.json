@@ -17,6 +17,10 @@
     "adsp_street_min": 118,
     "adsp_tunnel_min": 114,
     "adsp_wall_height": 128,
+    "ag2_network_recipeshape_cache_size": {
+        "value": 32,
+        "description": "Cache size for recently-used pose recipe shapes."
+    },
     "ag2_preserve_params_on_reload": {
         "value": false,
         "description": "When an animgraph is reloaded, should the underlying system restore all params?"
@@ -42,18 +46,12 @@
         "description": "Should queue stop processing new jobs when the frame stop request happens?"
     },
     "ai_auto_contact_solver": true,
-    "ai_auto_select_enemy_finder": {
-        "value": true,
-        "description": "1 = also npc select enemy finders in my squad"
-    },
     "ai_autoselect_class_settings": {
         "value": "combat",
-        "description": "Flag value to set on NPCs targeted by ai_autoselect_class. Valid values: 'combat', 'selected', 'tasks', 'all'."
+        "description": "Flag value to set on NPCs targeted by ai_autoselect_class. Valid values: 'combat', 'selected', 'tasks', 'route', 'all'."
     },
     "ai_block_damage": false,
     "ai_disabled": false,
-    "ai_doors_force_animation": -1,
-    "ai_elude_time": 8,
     "ai_facingservices_draw_entity_facing": false,
     "ai_facingservices_generated_target_min_duration": 1.2,
     "ai_foot_sweep_enable": true,
@@ -63,32 +61,28 @@
     "ai_foot_sweep_perp_apply": 0.5,
     "ai_foot_sweep_perp_base": 30,
     "ai_foot_sweep_perp_scale": 0.5,
-    "ai_footstep_delay": 0.5,
     "ai_force_serverside_ragdoll": false,
     "ai_gather_conditions_async": {
         "value": false,
         "description": "Allow gathering of conditions to be done asynchronously."
     },
+    "ai_ground_motor_strafe_lookahead": 12,
     "ai_hull_trace_epsilon": 0.01,
     "ai_ignore_collision_player_noclip": false,
     "ai_inhibit_spawners": false,
     "ai_keep_interrupt_path_across_schedules": true,
-    "ai_local_navigator_direct_test_versus_static_collision": true,
+    "ai_local_navigator_flying_enable": false,
     "ai_local_navigator_navmesh_enable": true,
     "ai_lod_auto_enabled": false,
-    "ai_motor_enable_move_heading_bad_zones": true,
     "ai_motor_max_state_time_active": 6,
-    "ai_motor_move_direction_lookahead": 6,
     "ai_motor_nav_links_force_facing_time": 12,
-    "ai_motor_path_alignment_max_angular_velocity": 300,
+    "ai_motor_path_direction_smoothing_factor": 0.1,
     "ai_motor_planted_turn_lookahead_distance": 100,
     "ai_motor_planted_turn_lookahead_distance_speed": 150,
     "ai_motor_procedural_idle_turn_speed": 20,
     "ai_motor_procedural_idle_turn_threshold": 2,
     "ai_motor_procedural_turn_while_stopping_threshold": 5,
-    "ai_motor_use_fast_move_heading_bad_zone_pass": true,
-    "ai_navigator_clipped_path_save": true,
-    "ai_navigator_clipped_path_use_interrupt": true,
+    "ai_motor_too_short_path_treshold": 4,
     "ai_navigator_disable_collision_on_stuck": true,
     "ai_navigator_draw_type_change": 0,
     "ai_navigator_draw_wait_for_facing": {
@@ -121,9 +115,12 @@
         "description": "When calculating repathing tolerance, clamp entity speed to be at least this value (i.e. consider slow entities to be this fast)."
     },
     "ai_navigator_snap_to_ground_goal": false,
-    "ai_navigator_use_arrival_direction": true,
-    "ai_no_steer": false,
     "ai_off_nav_show_nearest": false,
+    "ai_path_clip_against_goal_constraints": {
+        "value": true,
+        "description": "After pathfinding clip the path such that it ends at a location that satisfies the goal constraints if they're available."
+    },
+    "ai_path_discard_ignore_stops": false,
     "ai_path_draw_active": {
         "value": false,
         "description": "0 = no debug, 1 = draw waypoint path"
@@ -135,6 +132,14 @@
     "ai_path_draw_fail": {
         "value": 0,
         "description": "Draw failed pathfinding attempts"
+    },
+    "ai_path_draw_nav_elem_info": {
+        "value": 0,
+        "description": "Draw info about the nav associated with this waypoint. 0 = off, 1 = show IDs, 2 = show nav elem."
+    },
+    "ai_path_draw_nav_search_id": {
+        "value": false,
+        "description": "Display the ID of the nav search that created this path."
     },
     "ai_path_draw_on_calc": {
         "value": 0,
@@ -165,8 +170,10 @@
     "ai_path_return_parallel_speed": 100,
     "ai_path_return_t": 2,
     "ai_path_show_discard_immediately": false,
-    "ai_plane_solver_use_navmesh": false,
-    "ai_ragdoll_phys_death_multiplier": 1,
+    "ai_pathfinder_max_path_detour": {
+        "value": 500,
+        "description": "How far a path may detour from the direct route. Negative means no limit."
+    },
     "ai_report_task_timings_on_limit": false,
     "ai_select_box_alpha": {
         "value": 20,
@@ -184,10 +191,6 @@
     "ai_show_task_fail": 0,
     "ai_show_think_tolerance": 0,
     "ai_strong_optimizations_no_checkstand": false,
-    "ai_temp_difference_for_instant_ignite": {
-        "value": 100,
-        "description": "how much hotter than the npc's flashpoint a heat source should be to instantly ignite them."
-    },
     "ai_test_moveprobe_ignoresmall": false,
     "ai_think_interval": {
         "value": 0.1,
@@ -207,10 +210,6 @@
     },
     "ai_think_limit_label": false,
     "ai_threaded_pathfind": true,
-    "ai_time_to_ignite": {
-        "value": 0.3,
-        "description": "How long an npc has to be exposed to heat above their flashpoint to catch on fire."
-    },
     "ai_use_async_ragdoll_fixup": false,
     "ai_use_visibility_cache": {
         "value": 1,
@@ -220,7 +219,6 @@
         "value": true,
         "description": "Sets whether or not the visibility check cache should be reciprocal."
     },
-    "ai_vehicle_avoidance": true,
     "ai_waypoint_arrival_tolerance": 2,
     "always_perform_full_spatial_partition_update": false,
     "anim_decode_forcewritealltransforms": {
@@ -234,15 +232,13 @@
     },
     "animated_material_attributes": true,
     "animgraph2_enable_parallel_update": true,
+    "animgraph2_serialize_pose_recipe_in_pre_pack_entities": true,
     "animgraph_draw_traces": false,
     "animgraph_enable": {
         "value": true,
         "description": "Enable animation graph"
     },
     "animgraph_enable_dirty_netvar_optimization": true,
-    "animgraph_enable_parallel_op_evaluation": false,
-    "animgraph_enable_parallel_preupdate": false,
-    "animgraph_enable_parallel_update": true,
     "animgraph_footlock_auto_ledge_detection": {
         "value": true,
         "description": "Attempt to detect when the foot is partially hanging off a ledge and stop it tilting to reach the bottom"
@@ -277,10 +273,6 @@
         "description": "Enable animation graph networking. The setting is only read at graph creation time; to use please set on the command line."
     },
     "animgraph_parallel_postdataupdate": true,
-    "animgraph_record_all": {
-        "value": false,
-        "description": "Automatically start recording AnimGraphs when they get created, and save them to disk when they are destroyed"
-    },
     "animgraph_slope_draw_raycasts": false,
     "animgraph_slope_enable": false,
     "animgraph_slowdownonslopes_enabled": true,
@@ -299,6 +291,16 @@
         "value": true,
         "description": "Toggles announcer in the hideout."
     },
+    "asset_thumbnails_batch_assets_per_frame": 4,
+    "asset_thumbnails_batch_held_assets": 8,
+    "asset_thumbnails_batch_report_interval": 30,
+    "asset_thumbnails_batch_scan_budget_ms": 20,
+    "asset_thumbnails_batch_slow_asset_ms": 250,
+    "asset_thumbnails_server_download": false,
+    "asset_thumbnails_server_url": "https://s2-tools-data-cache.build.valve.org",
+    "asset_thumbnails_stats_flush_interval": 180,
+    "asset_thumbnails_timeout_sec": 2,
+    "assetselection_end_modal_refocus": true,
     "assetthumbnail_old_fingerprint_style": {
         "value": true,
         "description": "Set to true to revert to old behavior"
@@ -337,7 +339,7 @@
         "description": "Rate of interpolation once hold time has elapsed."
     },
     "audio_health_loss_effect_enabled": {
-        "value": false,
+        "value": true,
         "description": "Enable/disable health loss audio effect."
     },
     "audio_health_loss_effect_hold_time": {
@@ -365,7 +367,6 @@
         "value": 2,
         "description": "Sets linear scale volume limit for SOS."
     },
-    "automatically_open_saved_animgraph_recording": false,
     "autosave_fully_async": {
         "value": true,
         "description": "Set to 1 to have autosaves execute completely on the save thread, forces 'render only' mode while the save completes"
@@ -374,10 +375,7 @@
         "value": 1,
         "description": "After this many players have abandoned a match, no longer penalize additional abandons for the match. Set to 0 to not penalize abandoners"
     },
-    "battery_saver": {
-        "value": false,
-        "description": "OBSOLETE replaced by mobile_fps_* - Battery saver mode. 0=off, 1=on"
-    },
+    "bind_command_metrics_flush_interval": 300,
     "boss_use_los_ultimate": true,
     "bot_mimic": {
         "value": 0,
@@ -464,14 +462,6 @@
         "value": 0,
         "description": "Log caption names and contents (0 = off, 1 = found captions, 2 = unfound captions, 3 = all captions)"
     },
-    "cc_norepeat": {
-        "value": 5,
-        "description": "In multiplayer games, don't repeat captions more often than this many seconds."
-    },
-    "cc_showmissing": {
-        "value": false,
-        "description": "Show missing closecaption entries."
-    },
     "cc_spectator_only": false,
     "cc_subtitles": {
         "value": false,
@@ -509,8 +499,24 @@
         "value": 1,
         "description": "0 = narrow, 1 = med (default), 2 = wide"
     },
+    "chat_dismiss_after_send": true,
     "chat_max_messages": 50,
-    "chat_ping_repeat_seconds": 5,
+    "chat_ping_repeat_location_tolerance": {
+        "value": 256,
+        "description": "How far apart, in 2D world units, two pings with no pinged entity can be and still count as the same ping."
+    },
+    "chat_ping_repeat_max": {
+        "value": 16,
+        "description": "How many times a ping can fold into one chat bubble before the next repeat starts a new bubble instead."
+    },
+    "chat_ping_repeat_requires_same_message": {
+        "value": false,
+        "description": "If set, a contextual ping only folds into the previous bubble when it resolved to the same line, not just the same target."
+    },
+    "chat_ping_repeat_seconds": {
+        "value": 2.5,
+        "description": "Seconds after a ping during which repeating it folds into the same chat bubble instead of making a new one. Restarts on each repeat."
+    },
     "chat_sequence_max_messages": 10,
     "chat_sequence_within_seconds": 10,
     "chat_top_bar_max_messages": {
@@ -528,12 +534,13 @@
     "citadel_1v1_bonus_weapon_power": 0,
     "citadel_1v1_bullet_damage_multiplier": 1,
     "citadel_1v1_tech_damage_multiplier": 1,
+    "citadel_21x9_clamp_hud": true,
     "citadel_abandon_pregame_if_not_connected_in_s": {
         "value": 180,
         "description": "After N seconds, if we don't have all the players connect to the match, the match will be abandoned. This only applies to the initial match start when going from players connecting to pregame"
     },
     "citadel_abandon_pregame_if_not_connected_in_s_dev": {
-        "value": 360,
+        "value": 600,
         "description": "After N seconds, if we don't have all the players connect to the match, the match will be abandoned. This only applies to the initial match start when going from players connecting to pregame, for dev"
     },
     "citadel_abandon_pregame_if_not_connected_in_s_streaming": {
@@ -541,12 +548,24 @@
         "description": "After N seconds, if we don't have all the players connect to the match with the streaming map, the match will be abandoned. This only applies to the initial match start when going from players connecting to pregame"
     },
     "citadel_abandon_pregame_if_not_connected_in_s_streaming_dev": {
-        "value": 120,
+        "value": 600,
         "description": "After N seconds, if we don't have all the players connect to the match with the streaming map, the match will be abandoned. This only applies to the initial match start when going from players connecting to pregame, for dev"
     },
     "citadel_abandon_time_for_match_not_scored": {
         "value": 180,
         "description": "If someone abandons before this match time (in seconds), we will call the match forfeit and not update mmr for anyone in the match."
+    },
+    "citadel_ability_activeness_modifier_values_audit": {
+        "value": 0,
+        "description": "Record ability MODIFIER_VALUE contributions that will stop counting once active-ness is enforced. 0=off, 1=silent counters, 2=also warn once per ability and value, 3=also assert."
+    },
+    "citadel_ability_activeness_modifier_values_enforce": {
+        "value": false,
+        "description": "Suppress MODIFIER_VALUE contributions from abilities that are not active."
+    },
+    "citadel_ability_activeness_validate": {
+        "value": false,
+        "description": "Recompute each ability's active reason mask from the raw predicates every think and assert on mismatch."
     },
     "citadel_ability_busy_queue_time": {
         "value": 0.25,
@@ -560,7 +579,10 @@
         "value": 0.2,
         "description": "Pressing a recently cast or channeled ability key will extend its mash protection by this much"
     },
-    "citadel_ability_cooldown_max": 0,
+    "citadel_ability_cooldown_max": {
+        "value": 0,
+        "description": "Cheat cap applied to ability cooldowns/recharges. 0=off."
+    },
     "citadel_ability_force_gold_collection": {
         "value": false,
         "description": "Adds the flag for ability targeting to find gold orbs. Sorta hacky."
@@ -599,16 +621,6 @@
         "description": "Is AFK detection turned on?"
     },
     "citadel_ag2_controller_parallel_update_enabled": true,
-    "citadel_ag2_crouch_spring_strength": 20,
-    "citadel_ag2_direction_commit_blend_time": 0.15,
-    "citadel_ag2_direction_commit_min_time": 0.3,
-    "citadel_ag2_fidget_max_interval": 10,
-    "citadel_ag2_fidget_min_interval": 5,
-    "citadel_ag2_loco_lean_trigger_speed": 50,
-    "citadel_ag2_min_running_with_no_input_speed": 90,
-    "citadel_ag2_run_to_stop_prime_speed": 85,
-    "citadel_ag2_run_to_stop_trigger_speed": 70,
-    "citadel_ag2_turn_spring_strength": 75,
     "citadel_ai_path_pathing_time_ms_per_tick": 0.5,
     "citadel_air_drag_min": 0.2,
     "citadel_air_jumps_enabled": {
@@ -617,7 +629,6 @@
     },
     "citadel_aircontrol_speed_fast": 50,
     "citadel_aircontrol_speed_slow": 80,
-    "citadel_airheart_freefly": false,
     "citadel_allow_ally_pings": true,
     "citadel_allow_ally_text": true,
     "citadel_allow_ally_voice": true,
@@ -654,6 +665,7 @@
         "value": false,
         "description": "If enabled, you can purchase upgrades anywhere"
     },
+    "citadel_allow_purchasing_corrupted_items_anywhere": false,
     "citadel_allow_spectated_pings": true,
     "citadel_allow_spectated_text": true,
     "citadel_allow_team_change_when_assigned": false,
@@ -664,11 +676,6 @@
     },
     "citadel_announcement_banned_heroes_display_time": 10,
     "citadel_announcement_display_time": 8,
-    "citadel_announcement_game_over_msg_display_time": 11,
-    "citadel_arrow_brightness": {
-        "value": 0.6,
-        "description": "Changes the zipline arrow brightness"
-    },
     "citadel_auto_highlight_seconds_after": {
         "value": 8,
         "description": "How many seconds after the highlight event to show when viewing highlights."
@@ -679,7 +686,7 @@
     },
     "citadel_auto_ping_window": {
         "value": 0.35,
-        "description": "If the chat wheel is opened and closed within this time, trigger a ping when it's closed."
+        "description": "If the ping button is opened and closed within this time, and no option is selected, chose this."
     },
     "citadel_auto_queue_build": {
         "value": false,
@@ -689,6 +696,7 @@
         "value": 12,
         "description": "Time Allowed for a full refund when buy anywhere (Auto/Quick Buy) is enabled"
     },
+    "citadel_autoqueue_build_window": 60,
     "citadel_barrack_boss_aggro_radius": 600,
     "citadel_barrack_boss_aggro_time": 3,
     "citadel_barrack_boss_attackable_height_diff": 20,
@@ -715,12 +723,12 @@
         "description": "When a page has an audio queue, this delay will be used before auto play advancing unless it specifies an override value"
     },
     "citadel_boss_glow_disabled": false,
+    "citadel_boss_tier2_bull_wip": false,
     "citadel_boss_tier2_ping_interval": 10,
-    "citadel_boss_tier2_use_wip_model": false,
-    "citadel_boss_tier3_use_wip_model": false,
     "citadel_boss_tier_2_schedule_force": 0,
     "citadel_boss_tier_3_check_pit_modifier": true,
     "citadel_boss_tier_3_damage_reduction_no_troopers": 0.2,
+    "citadel_boss_tier_3_laser_disable_body_rotation": false,
     "citadel_boss_tier_3_sight_range": 3000,
     "citadel_boss_tier_3_test_arm_smash": false,
     "citadel_boss_tier_3_test_bomb": false,
@@ -822,6 +830,10 @@
         "description": "How much to push out a lane before deprioritizing it"
     },
     "citadel_bot_disconnect_takeover_enabled": false,
+    "citadel_bot_forward_back": {
+        "value": false,
+        "description": "Forces citadel bots to move back and forth"
+    },
     "citadel_bot_hero_testing_pitch": {
         "value": 5,
         "description": "Aim Pitch in Hero Testing"
@@ -830,11 +842,19 @@
         "value": false,
         "description": "Forces citadel bots to jump"
     },
-    "citadel_bot_match_on_dedicated_server": true,
-    "citadel_bot_max_path_length": {
-        "value": 2000,
-        "description": "Max path length for pathing calculations."
+    "citadel_bot_match_host_locally": {
+        "value": false,
+        "description": "Host solo bot matches locally instead of using a valve hosted dedicated server"
     },
+    "citadel_bot_match_host_locally_hide_console": {
+        "value": true,
+        "description": "Hide the console window of the local bot match server process - set this to false to see/interact with the console"
+    },
+    "citadel_bot_match_host_locally_listen_server": {
+        "value": false,
+        "description": "When hosting a solo bot match locally, run it on our own listen server rather than in a dedicated server child process"
+    },
+    "citadel_bot_match_on_dedicated_server": true,
     "citadel_bot_melee": {
         "value": 0,
         "description": "Forces citadel bots to melee continuously, 1: light, 2:Heavy"
@@ -842,10 +862,6 @@
     "citadel_bot_mimic_player_pitch": {
         "value": true,
         "description": "User player's pitch in hero testing"
-    },
-    "citadel_bot_move_random": {
-        "value": false,
-        "description": "Forces citadel bots to move all around"
     },
     "citadel_bot_net_worth_max_spawn_time": 10000,
     "citadel_bot_override_spawn_time": -1,
@@ -859,6 +875,10 @@
     "citadel_bot_record": {
         "value": 0,
         "description": "Causes bots to mimic your commands as well as record them to be replayed"
+    },
+    "citadel_bot_record_loop": {
+        "value": false,
+        "description": "Bot recording playback restarts from the recorded start each time it finishes"
     },
     "citadel_bot_report_verbose": {
         "value": false,
@@ -909,21 +929,21 @@
         "value": 0,
         "description": "Causes Bot to Constantly use Ability when its available"
     },
-    "citadel_bot_use_ability_once": {
-        "value": false,
-        "description": "Set if you only want enemy to use ability once and stop"
-    },
     "citadel_bot_use_ability_rate": {
-        "value": -1,
+        "value": 5,
         "description": "Interval in seconds that the bot attempts to use an ability"
+    },
+    "citadel_bot_use_ability_repeated": {
+        "value": true,
+        "description": "Set if you want bot to repeat ability over and over"
     },
     "citadel_bot_use_item_ability": {
         "value": 0,
         "description": "Causes Bot to Constantly use Ability when its available"
     },
     "citadel_bot_zig_zag": {
-        "value": 0,
-        "description": "Forces citadel bots to zig-zag side to side if > 0 or back and forth if < 0"
+        "value": false,
+        "description": "Forces citadel bots to zig-zag side to side"
     },
     "citadel_botmatch_tick_rate_override": 32,
     "citadel_bots_go_mid": {
@@ -973,6 +993,7 @@
         "value": -1,
         "description": "If positive, override initial spawn time (in seconds) for all breakable_prop camps"
     },
+    "citadel_breakable_prop_reject_cooldown": 0.75,
     "citadel_breakable_prop_respawn_spread": {
         "value": 0.5,
         "description": "Spread the respawn of breakables out by this many seconds (perf)"
@@ -981,6 +1002,10 @@
         "value": -1,
         "description": "If positive, override initial spawn interval (in seconds) for all breakable_prop camps"
     },
+    "citadel_build_default_width_per_mod": 90,
+    "citadel_build_double_row_category_height": 274,
+    "citadel_build_double_row_count": 11,
+    "citadel_build_single_row_category_height": 171,
     "citadel_bullet_log_entities_hit": false,
     "citadel_bullet_obscured_shot_distance": 256,
     "citadel_bullet_shot_offset_fade_time": 0.5,
@@ -1007,15 +1032,6 @@
         "description": "Ignore the compat version check when reconnecting to a server. This generally shouldn't be done as there could be legitimate differences."
     },
     "citadel_calc_guided_bot_match_report_card": true,
-    "citadel_camera_adjust_aim_fov": {
-        "value": 1,
-        "description": "0: Use Absolute GunZoom FOV. 1: Relative FOV - Add the difference between old default fov and absolute gun aim."
-    },
-    "citadel_camera_aiming_fov": {
-        "value": 65,
-        "description": "What aiming FOV is"
-    },
-    "citadel_camera_allow_controller_when_controlling_other": true,
     "citadel_camera_dist": 150,
     "citadel_camera_draw_clip_sphere": false,
     "citadel_camera_fade_ally_tier2_far_dist": {
@@ -1028,27 +1044,27 @@
     },
     "citadel_camera_fade_other_far_dist": {
         "value": 100,
-        "description": "At this distance non-viewed character's opacity will be at 1"
+        "description": "While spectating or watching a replay, at this distance non-viewed character's opacity will be at 1"
     },
     "citadel_camera_fade_other_near_dist": {
         "value": 20,
-        "description": "At this distance non-viewed character's opacity will be at citadel_camera_fade_other_near_opacity"
+        "description": "While spectating or watching a replay, at this distance non-viewed character's opacity will be at citadel_camera_fade_other_near_opacity"
     },
     "citadel_camera_fade_other_near_opacity": {
         "value": 0.4,
-        "description": "The opacity of non-viewed character when they are at citadel_camera_fade_near_dist"
+        "description": "While spectating or watching a replay, the opacity of non-viewed character when they are at citadel_camera_fade_other_near_dist"
     },
     "citadel_camera_fade_viewed_far_dist": {
         "value": 50,
-        "description": "At this distance viewed character's opacity will be at 1"
+        "description": "While spectating or watching a replay, at this distance viewed character's opacity will be at 1"
     },
     "citadel_camera_fade_viewed_near_dist": {
         "value": 20,
-        "description": "At this distance viewed character's opacity will be at citadel_camera_fade_near_opacity"
+        "description": "While spectating or watching a replay, at this distance viewed character's opacity will be at citadel_camera_fade_near_opacity"
     },
     "citadel_camera_fade_viewed_near_opacity": {
         "value": 0.4,
-        "description": "The opacity of viewed character when they are at citadel_camera_fade_near_dist"
+        "description": "While spectating or watching a replay, the opacity of viewed character when they are at citadel_camera_fade_near_dist"
     },
     "citadel_camera_force_tunnel_alpha": -1,
     "citadel_camera_fov": {
@@ -1067,15 +1083,17 @@
         "value": 63,
         "description": "The look at point of the camera is vertically offset by this distance."
     },
-    "citadel_camera_height_approach_speed": 800,
-    "citadel_camera_height_ceiling_distance": 20,
-    "citadel_camera_height_npc": {
-        "value": 33,
-        "description": "The look at point of the camera is vertically offset by this distance when viewing NPC units."
-    },
+    "citadel_camera_height_approach_speed": 80,
     "citadel_camera_hero_fov": {
         "value": 90,
         "description": "The field of view angle of the camera when following a hero."
+    },
+    "citadel_camera_hideout_backward_offset_max": 330,
+    "citadel_camera_hideout_backward_offset_min": 80,
+    "citadel_camera_hideout_upward_offset_max": 0,
+    "citadel_camera_hideout_upward_offset_min_frac": {
+        "value": 0.75,
+        "description": "Set the fraction of the character's pivot height that the fully zoomed in mode lands at. i.e. 0.5 looks at bellybutton, 1.0 at head, 0.0f feet."
     },
     "citadel_camera_inspect_mode": {
         "value": 0,
@@ -1086,13 +1104,81 @@
         "value": 1500,
         "description": "Max distance that the camera will transition to the next target."
     },
-    "citadel_camera_offset": {
-        "value": -25,
-        "description": "The look at point of the camera is horizontally offset by this distance."
+    "citadel_camera_offset_shrink_ray_scaler": {
+        "value": 0.5,
+        "description": "How much to shrink the character's offsets by when they get shrunk."
     },
-    "citadel_camera_parrot_pov": {
+    "citadel_camera_override_ads_fov": {
+        "value": 45,
+        "description": "Override the base Fov from the player when aiming down sights"
+    },
+    "citadel_camera_override_ads_x_offset": {
+        "value": -110,
+        "description": "Offset in the camera rotation space while aiming down sights: +Forward -Backward"
+    },
+    "citadel_camera_override_ads_y_offset": {
+        "value": -34,
+        "description": "Offset in the camera rotation space while aiming down sights: +Left -Right"
+    },
+    "citadel_camera_override_ads_z_offset": {
+        "value": 0,
+        "description": "Offset in the camera rotation space while aiming down sights: +Up -Down"
+    },
+    "citadel_camera_override_fov": {
+        "value": 90,
+        "description": "Override the base Fov from the player"
+    },
+    "citadel_camera_override_pivot_x_offset": {
+        "value": 0,
+        "description": "Camera Pivot Offset in the hero model space: +Forward -Backward"
+    },
+    "citadel_camera_override_pivot_x_offset_crouching": {
+        "value": 0,
+        "description": "Camera Pivot Offset in the hero model space while crouching: +Forward -Backward"
+    },
+    "citadel_camera_override_pivot_y_offset": {
+        "value": 0,
+        "description": "Camera Pivot Offset in the hero model space: +Left -Right"
+    },
+    "citadel_camera_override_pivot_y_offset_crouching": {
+        "value": 0,
+        "description": "Camera Pivot Offset in the hero model space while crouching: +Left -Right"
+    },
+    "citadel_camera_override_pivot_z_offset": {
+        "value": 86,
+        "description": "Camera Pivot Offset in the hero model space: +Up -Down"
+    },
+    "citadel_camera_override_pivot_z_offset_crouching": {
+        "value": 55,
+        "description": "Camera Pivot Offset in the hero model space while crouching: +Up -Down"
+    },
+    "citadel_camera_override_x_offset": {
+        "value": -135,
+        "description": "Offset in the camera rotation space: +Forward -Backward"
+    },
+    "citadel_camera_override_x_worst_case_offset": {
+        "value": -10,
+        "description": "Offset in the camera rotation space while near walls: +Forward -Backward"
+    },
+    "citadel_camera_override_y_offset": {
+        "value": -34,
+        "description": "Offset in the camera rotation space: +Left -Right"
+    },
+    "citadel_camera_override_y_worst_case_offset": {
+        "value": -10,
+        "description": "Offset in the camera rotation space while near walls: +Left -Right"
+    },
+    "citadel_camera_override_z_offset": {
+        "value": 0,
+        "description": "Offset in the camera rotation space: +Up -Down"
+    },
+    "citadel_camera_override_z_worst_case_offset": {
+        "value": 10,
+        "description": "Offset in the camera rotation space while near walls: +Up -Down"
+    },
+    "citadel_camera_overrides_enabled": {
         "value": false,
-        "description": "Force the camera to be in parrot POV. Useful for tuning the closest position."
+        "description": "Ignore hero camera offset data and explicitly use citadel_camera_overrides_xxx"
     },
     "citadel_camera_parrot_pov_radius": {
         "value": 8.25,
@@ -1110,10 +1196,6 @@
         "value": 10,
         "description": "Z Axis offset from our camera pivot. +Up and -Down"
     },
-    "citadel_camera_parrot_smoothing_rate": {
-        "value": 60,
-        "description": "When the camera stops being clipped, smooth the motion back to the desired resting position."
-    },
     "citadel_camera_pitch_default": {
         "value": 20,
         "description": "The default camera pitch."
@@ -1130,6 +1212,10 @@
         "value": -89,
         "description": "The minimum pitch angle allowed on the camera."
     },
+    "citadel_camera_ragdoll_camera_distance": {
+        "value": -300,
+        "description": "How far forward/back to offset the camera, in camera rotation space, from the camera pivot. -Backwards/+Forwards"
+    },
     "citadel_camera_see_distance_max": {
         "value": 20000,
         "description": "Max Distance the camera can 'see' an entity"
@@ -1138,29 +1224,25 @@
         "value": 1,
         "description": "Mouse sensitivity for the camera"
     },
-    "citadel_camera_snapshot": {
-        "value": false,
-        "description": "Draw a debug display of the camera, then unset."
-    },
     "citadel_camera_soft_collision": {
-        "value": 2,
-        "description": "Experimental: Soften the camera to wall collision distance by using the gaussian weight of fibbonnaci cone of line traces. 2: Use soft collision system to inform hole punch."
+        "value": 1,
+        "description": "Soften the camera to wall collision distance by using the gaussian weight of fibbonnaci cone of line traces. 2: Use soft collision system to inform hole punch."
     },
     "citadel_camera_soft_collision_angle": {
         "value": 75,
-        "description": "Experimental: Soft camera collision cone arc angle in degrees. Larger cone angle results in earlier softening."
+        "description": "Soft camera collision cone arc angle in degrees. Larger cone angle results in earlier softening."
     },
     "citadel_camera_soft_collision_avoidance_bias": {
         "value": 5.75,
-        "description": "Experimental: Soft camera collision avoidance bias. > 1 pull camera in more aggressively in response to gaussian weighted samples. < 1 Not recommended"
+        "description": "Soft camera collision avoidance bias. > 1 pull camera in more aggressively in response to gaussian weighted samples. < 1 Not recommended"
     },
     "citadel_camera_soft_collision_gausian_bias": {
         "value": 2,
-        "description": "Experimental: Soft camera collision sample bias. < 1 distance samples at the edge of the cone angle contribute more to the weight. > 1 rely more on the central camera direction's distance sample."
+        "description": "Soft camera collision sample bias. < 1 distance samples at the edge of the cone angle contribute more to the weight. > 1 rely more on the central camera direction's distance sample."
     },
     "citadel_camera_soft_collision_max_sensor_range": {
         "value": 110,
-        "description": "Experimental: the range of the traces can be constrained to this value if the distance between target camera position and parrot cam position is very large"
+        "description": "The range of the traces can be constrained to this value if the distance between target camera position and parrot cam position is very large"
     },
     "citadel_camera_soft_collision_multi_thread": {
         "value": 8,
@@ -1168,23 +1250,19 @@
     },
     "citadel_camera_soft_collision_xy_scale": {
         "value": 0.75,
-        "description": "Experimental: Shrink the length of the traces in the XY axis so that going into doorways is less affected by the soft collision system."
+        "description": "Shrink the length of the traces in the XY axis so that going into doorways is less affected by the soft collision system."
     },
     "citadel_camera_spectator_auto_target_view": {
         "value": true,
         "description": "Spectator camera automatically try to match target view after no input for sometime"
     },
     "citadel_camera_spectator_dist": {
-        "value": 200,
+        "value": 250,
         "description": "How far back the spectator camera should be"
     },
     "citadel_camera_spectator_fov": {
         "value": 90,
         "description": "The field of view angle of the camera when a spectator."
-    },
-    "citadel_camera_spectator_pitch": {
-        "value": 15,
-        "description": "How much to adjust view pitch when spectating a target"
     },
     "citadel_camera_use_vmdl_far_pose": {
         "value": true,
@@ -1223,6 +1301,11 @@
     "citadel_catapult_on_damage_disable_time": 3,
     "citadel_chat_fade_time": 10,
     "citadel_chat_fade_time_extension": 7,
+    "citadel_chat_typing_indicator_fade_time": 5,
+    "citadel_chat_wheel_fade_out_duration": {
+        "value": 0.35,
+        "description": "Chat wheel must be propped open so that it can visible fade away while showing the user their selection. This controls that maximum time."
+    },
     "citadel_cinematic_intro_duration_npc": {
         "value": 7.5,
         "description": "How long is the cinematic intro applied to npcs (shrine/patron)"
@@ -1245,9 +1328,37 @@
         "description": "Number of seconds between checking to make sure that the client is still in MM"
     },
     "citadel_client_status_cycle_delay": 4,
+    "citadel_combat_log_compress": true,
+    "citadel_combat_log_enabled_in_lobbies": {
+        "value": false,
+        "description": "Turn on to enable combat log in matches with GC Lobbies"
+    },
+    "citadel_combat_log_max_lines": 300,
+    "citadel_combat_log_show_abilities": false,
+    "citadel_combat_log_show_damage": true,
+    "citadel_combat_log_show_deaths": false,
+    "citadel_combat_log_show_healing": false,
+    "citadel_combat_log_show_health_deltas": false,
+    "citadel_combat_log_show_hidden_modifiers": false,
+    "citadel_combat_log_show_items": false,
+    "citadel_combat_log_show_modifiers": false,
+    "citadel_combat_log_time_window_seconds": 300,
+    "citadel_combat_log_update_interval": 1,
+    "citadel_combatlog_fight_idle_time": {
+        "value": 5,
+        "description": "The amount of time needed to determine a fight is over (no one involved in a fight did anything to anyone else involved in the fight)."
+    },
     "citadel_comeback_redirect_fraction": {
         "value": 0.7,
         "description": "Fraction of the comeback souls earned by a player above the enemy team's average net worth that is redirected to the tick gold pool for the two lowest net worth teammates"
+    },
+    "citadel_commend_notification_anonymous_allies": {
+        "value": false,
+        "description": "Show ally commends as an anonymous thumbs up instead of the commender's hero and name"
+    },
+    "citadel_commend_notification_anonymous_enemies": {
+        "value": false,
+        "description": "Show enemy commends as an anonymous thumbs up instead of the commender's hero and name"
     },
     "citadel_commend_toast_enemy_seconds": {
         "value": 3,
@@ -1258,10 +1369,9 @@
         "description": "Number of seconds to show commend toasts"
     },
     "citadel_commend_use_toasts": {
-        "value": true,
+        "value": false,
         "description": "Whether to use commend toasts (older) or the custom commend notification (newer)"
     },
-    "citadel_cone_view_alpha": 80,
     "citadel_context_profile_page": true,
     "citadel_control_point_capture_rate_scale": 1,
     "citadel_control_point_decay_delay": 60,
@@ -1274,6 +1384,37 @@
     "citadel_corner_boost_strength": {
         "value": 0.6,
         "description": "0.0: turn off corner boosts. 1.0: raw corner boost."
+    },
+    "citadel_corrupted_item_bonus_variance_better": {
+        "value": 15,
+        "description": "Max percent a corrupted item's stat bonuses can roll above their authored values each match."
+    },
+    "citadel_corrupted_item_bonus_variance_worse": {
+        "value": 15,
+        "description": "Max percent a corrupted item's stat bonuses can roll below their authored values each match."
+    },
+    "citadel_corrupted_item_shop_enabled": true,
+    "citadel_corrupted_item_shop_num_items": 1,
+    "citadel_corrupted_item_shop_restock_interval": {
+        "value": 900,
+        "description": "Seconds between each additional corrupted item allowance after the shop opens. 0 disables restocking."
+    },
+    "citadel_corrupted_item_shop_spawn_time_base": 1800,
+    "citadel_corrupted_item_shop_spawn_time_variance": {
+        "value": 120,
+        "description": "Each corrupted shop opening and restock lands a random number of seconds within +/- this of its scheduled time."
+    },
+    "citadel_corrupted_items_force_variance": {
+        "value": false,
+        "description": "Apply the per-match corrupted item bonus and penalty variance in the sandbox and hideout too, where it is normally disabled."
+    },
+    "citadel_corrupted_penalty_seed": {
+        "value": 0,
+        "description": "Seed used to roll the corrupted item penalties at match start.  0 rolls a random seed."
+    },
+    "citadel_corrupted_penalty_variance": {
+        "value": 15,
+        "description": "Percent each corrupted penalty magnitude can roll above or below its authored value each match. Results round away from zero to whole numbers."
     },
     "citadel_crate_client_notification_time": 30,
     "citadel_crate_delivery_base_payoff": 0,
@@ -1296,6 +1437,7 @@
     "citadel_crosshair_dot_outline_gap": 0,
     "citadel_crosshair_dot_outline_opacity": 0.7,
     "citadel_crosshair_dot_size": 4,
+    "citadel_crosshair_enable_clip_status": false,
     "citadel_crosshair_hit_marker_duration": 0.1,
     "citadel_crosshair_out_of_range_dist": 50,
     "citadel_crosshair_outline_color_b": 0,
@@ -1309,16 +1451,27 @@
     "citadel_crosshair_pip_outline_gap": 0,
     "citadel_crosshair_pip_outline_opacity": 0.7,
     "citadel_crosshair_pip_width": 2,
+    "citadel_custom_ui_colors": {
+        "value": false,
+        "description": "Enable colorblind-friendly colors and the player's custom UI colors."
+    },
     "citadel_damage_indicator_enemy_display_time": 2,
     "citadel_damage_indicator_height": 120,
     "citadel_damage_indicator_radius": 300,
     "citadel_damage_indicator_width": 120,
     "citadel_damage_offscreen_indicator_disabled": true,
-    "citadel_damage_pipeline": 2,
     "citadel_damage_radar_enemy_display_time": 2,
     "citadel_damage_report_enable": {
         "value": true,
         "description": "If enabled, show damage report"
+    },
+    "citadel_damage_report_ignore_neutral_subclass": {
+        "value": 1,
+        "description": "Treat all neutral damage as one attacker class bucket"
+    },
+    "citadel_damage_report_ignore_trooper_subclass": {
+        "value": 0,
+        "description": "Treat all trooper damage as one attacker class bucket"
     },
     "citadel_damage_report_show_adjusted_percent_min": {
         "value": 3,
@@ -1330,22 +1483,31 @@
     },
     "citadel_damage_summary_max_entries": 8,
     "citadel_damage_summary_show_time": 12,
-    "citadel_damage_text_batching_window_ability": {
-        "value": 1.05,
-        "description": "When ability damage events are within this amount of time of each other, they will be added together into a single entry."
-    },
-    "citadel_damage_text_batching_window_bullet": {
-        "value": 1.5,
-        "description": "When bullet damage events are within this amount of time of each other, they will be added together into a single entry."
-    },
     "citadel_damage_text_batching_window_cumulative": {
         "value": 1.5,
         "description": "When cumulative damage events are within this amount of time of each other, they will be added together into a single entry."
     },
-    "citadel_damage_text_batching_window_pure": {
-        "value": 1.05,
-        "description": "When pure damage events are within this amount of time of each other, they will be added together into a single entry."
+    "citadel_damage_text_batching_window_individual": {
+        "value": 0,
+        "description": "When individual damage events are within this amount of time of each other, they will be added together into a single entry."
     },
+    "citadel_damage_text_batching_window_individual_heal": {
+        "value": 0.1,
+        "description": "When individual healing events are within this amount of time of each other, they will be added together into a single entry."
+    },
+    "citadel_damage_text_cumulative_final_delay": {
+        "value": 0.75,
+        "description": "In cumulative mode 2, how long a victim must go without taking damage before the total is shown."
+    },
+    "citadel_damage_text_cumulative_final_lifetime": {
+        "value": 3,
+        "description": "In cumulative mode 2, how long the total lives once shown."
+    },
+    "citadel_damage_text_cumulative_mode": {
+        "value": 0,
+        "description": "0 = off, 1 = show a running total as damage is dealt, 2 = show the total once damage stops"
+    },
+    "citadel_damage_text_cumulative_offset": "[10, 25, 0]",
     "citadel_damage_text_distance_far": {
         "value": 4000,
         "description": "Far distances at which we use far offsets for damage numbers"
@@ -1354,6 +1516,24 @@
         "value": 100,
         "description": "Near distance at which we use the near offsets for damage numbers"
     },
+    "citadel_damage_text_dynamic_emphasis": {
+        "value": true,
+        "description": "Dynamically emphasize damage number over a certain percent of the targets max health. See citadel_damage_text_dynamic_emphasis_percent"
+    },
+    "citadel_damage_text_dynamic_emphasis_percent": {
+        "value": 0.25,
+        "description": "Percent of the victims max health the damage needs to be, for it to be dynamically emphasized."
+    },
+    "citadel_damage_text_follow_healthbar_pos": {
+        "value": true,
+        "description": "Damage text follows the victim's healthbar position (only works on V2 healthbars)"
+    },
+    "citadel_damage_text_follow_victim_pos": {
+        "value": true,
+        "description": "Damage text follows victim's position"
+    },
+    "citadel_damage_text_healing_offset_x": 0,
+    "citadel_damage_text_healing_offset_y": -30,
     "citadel_damage_text_height_offset_far": {
         "value": 200,
         "description": "How much to offset damage numbers above when far from the camera"
@@ -1362,29 +1542,29 @@
         "value": 130,
         "description": "How much to offset damage numbers above when near from the camera"
     },
-    "citadel_damage_text_lifetime": {
-        "value": 1.5,
-        "description": "How long do numbers live."
+    "citadel_damage_text_ignore_left_offset_on_heroes": {
+        "value": true,
+        "description": "Ignore the left offset on hero damage numbers (it mostly points the wrong way)"
     },
     "citadel_damage_text_lifetime_new": {
         "value": 1.5,
         "description": "How long do accumulated numbers live."
     },
-    "citadel_damage_text_new_ability_offset_x": -20,
-    "citadel_damage_text_new_ability_offset_y": -25,
-    "citadel_damage_text_new_bullet_offset_x": 35,
-    "citadel_damage_text_new_bullet_offset_y": -25,
+    "citadel_damage_text_new_ability_offset_x": 20,
+    "citadel_damage_text_new_ability_offset_y": -10,
+    "citadel_damage_text_new_bullet_offset_x": 30,
+    "citadel_damage_text_new_bullet_offset_y": 10,
     "citadel_damage_text_new_melee_offset_x": 20,
-    "citadel_damage_text_new_melee_offset_y": -60,
-    "citadel_damage_text_new_pure_offset_x": -20,
-    "citadel_damage_text_new_pure_offset_y": -60,
-    "citadel_damage_text_new_x_offset": {
-        "value": 15,
-        "description": "How much to offset damage numbers left"
-    },
+    "citadel_damage_text_new_melee_offset_y": 30,
+    "citadel_damage_text_new_pure_offset_x": 25,
+    "citadel_damage_text_new_pure_offset_y": 0,
     "citadel_damage_text_show_effectiveness": {
         "value": false,
         "description": "Show the damage effectiveness on every damage number"
+    },
+    "citadel_damage_text_show_unit_health": {
+        "value": false,
+        "description": "Show remaining unit health as the large (cumulative) number rather than the damage being done"
     },
     "citadel_damage_text_spacing": {
         "value": 20,
@@ -1398,16 +1578,23 @@
         "value": 0,
         "description": "How much to offset damage numbers left and right when near the camera"
     },
-    "citadel_dead_zone_radius": 0.05,
-    "citadel_dead_zone_radius_instant_wheel": 0.1,
+    "citadel_dead_zone_radius": 0.075,
     "citadel_death_linger_time": {
         "value": 3,
         "description": "How logn does the player icon linger on the minimap after they die"
+    },
+    "citadel_death_ragdoll_duration": {
+        "value": 5,
+        "description": "How long a dead hero's ragdoll exists for before it despawns. Can outlive the death camera ( citadel_death_return_to_spawn_delay ) so that other players still see the body."
     },
     "citadel_death_replay_enabled": false,
     "citadel_death_replay_post_death_time": 2,
     "citadel_death_replay_pre_death_time": 12,
     "citadel_death_replay_pre_death_time_quick": 8,
+    "citadel_death_return_to_spawn_delay": {
+        "value": 4,
+        "description": "How long after dying we are moved back to our spawn point, which is also how long the death camera watches our ragdoll and our killer for."
+    },
     "citadel_default_bot_difficulty": {
         "value": 1,
         "description": "Time for a disconnected player to be taken over by a bot"
@@ -1437,9 +1624,10 @@
         "value": 4000,
         "description": "How far away before we stop showing in world deny events."
     },
-    "citadel_deployment_max_height_offset_down": 1000,
+    "citadel_deployment_max_height_offset_down": 1500,
     "citadel_deployment_max_height_offset_up": 125,
     "citadel_destroyable_building_damage_scale": 1,
+    "citadel_detail_sticky_tooltips": false,
     "citadel_dev_always_lethal_damage": false,
     "citadel_dev_book_force_unlocked": false,
     "citadel_dev_boss_backdoor_protection_disabled": {
@@ -1457,10 +1645,6 @@
     },
     "citadel_dev_test_end_game_fake_time": 0,
     "citadel_dev_test_end_game_gold": 20000,
-    "citadel_disable_check_on_ground": {
-        "value": false,
-        "description": "Don't run CheckOnGround ever. Do we even need it?"
-    },
     "citadel_disable_purchasing_in_combat": {
         "value": false,
         "description": "Disable purchasing if you deal or take damage from an enemy player."
@@ -1499,11 +1683,6 @@
         "description": "Draw bot pathing goal / chosen enemy"
     },
     "citadel_draw_distant_trooper_nodes": false,
-    "citadel_draw_lanes": false,
-    "citadel_draw_lanes_filter": {
-        "value": 0,
-        "description": "If sets filters to drawing to a specific lane"
-    },
     "citadel_draw_trooper_lanes": false,
     "citadel_duck_spam_slow_penalty_duration": {
         "value": 0.5,
@@ -1544,6 +1723,22 @@
     "citadel_enemy_consume_stamina_notification_range_far": {
         "value": 100,
         "description": "If an enemy is this far, then we never send a stamina consume usermessage to enemies."
+    },
+    "citadel_enemy_ui_color_b": {
+        "value": 50,
+        "description": "Blue channel of the color used for enemy health bars and other enemy indicators in the UI."
+    },
+    "citadel_enemy_ui_color_g": {
+        "value": 50,
+        "description": "Green channel of the color used for enemy health bars and other enemy indicators in the UI."
+    },
+    "citadel_enemy_ui_color_r": {
+        "value": 215,
+        "description": "Red channel of the color used for enemy health bars and other enemy indicators in the UI."
+    },
+    "citadel_enemy_visible_upon_reveal_duration": {
+        "value": 0.7,
+        "description": "How long an enemy appears through walls (outline or ui icon) after taking damage. Must also have fog of war visibility."
     },
     "citadel_english_hero_names": false,
     "citadel_english_mod_names": false,
@@ -1650,10 +1845,6 @@
     },
     "citadel_golden_idol_balance_threshold": 0.9,
     "citadel_golden_idol_balance_threshold_first_spawn": 0.85,
-    "citadel_gravity_scaling_experiment": {
-        "value": false,
-        "description": "Increase gravity for players while they are moving at pedestrian speeds (lateral speeds below 300, up to 500)"
-    },
     "citadel_guided_bot_ap_boost": 10,
     "citadel_guided_bot_match_countdown_time": 10,
     "citadel_guided_bot_match_hint_time_mult": {
@@ -1672,57 +1863,69 @@
         "value": 5,
         "description": "Max spread penalty you can incur from taking damage"
     },
-    "citadel_healthbars_enabled": true,
+    "citadel_hero_builds_confirm_discard_edits": {
+        "value": true,
+        "description": "Prompt for confirmation before discarding unsaved hero build edits."
+    },
     "citadel_hero_card_fake_party_member_count": -1,
     "citadel_hero_challenge_status_fake_data": {
         "value": false,
         "description": "Shows fake data for hero challenge status"
     },
-    "citadel_hero_demo_enable_fast_stamina": {
-        "value": false,
-        "description": "Do we enable fast stamina cooldowns"
-    },
-    "citadel_hero_demo_enable_unlimited_ammo": {
-        "value": false,
-        "description": "Do we enable unlimited ammo"
-    },
     "citadel_hero_demo_hero_spawn": {
         "value": "hero_inferno",
         "description": "Which hero do we spawn when we spawn and enemy or ally hero"
-    },
-    "citadel_hero_demo_infinite_resources": {
-        "value": true,
-        "description": "Do we start our hero demo with infinite resources"
-    },
-    "citadel_hero_demo_no_cooldowns": {
-        "value": false,
-        "description": "Do we start withough cooldowns when launching the hero demo map"
-    },
-    "citadel_hero_demo_no_death": {
-        "value": false,
-        "description": "Do we start withough death when launching the hero demo map"
     },
     "citadel_hero_demo_no_troopers": {
         "value": false,
         "description": "Do we start withough troopers when launching the hero demo map"
     },
-    "citadel_hero_demo_persist_convars": {
+    "citadel_hero_distance_guides": {
         "value": false,
-        "description": "Do we persist convars between sessions in hero demo"
+        "description": "Turn on guides (only when testing menu visible)"
     },
-    "citadel_hero_demo_unlock_flex_slots": {
+    "citadel_hero_falloff_guides": {
         "value": false,
-        "description": "Do we start flex slots unlocked"
+        "description": "Turn on gun damage falloff guides (only when testing menu visible)"
+    },
+    "citadel_hero_release_vote_force_enabled": {
+        "value": false,
+        "description": "Always show the hero release vote, even if it'd be disabled in this type of game mode"
+    },
+    "citadel_hero_release_vote_keep_visible": {
+        "value": false,
+        "description": "Keep the hero release vote terminal and ui visible even after the time it would normally disappear"
     },
     "citadel_hero_roster_random": {
         "value": false,
         "description": "Is the hero roster set to random"
+    },
+    "citadel_hero_settings_cloud_disable": false,
+    "citadel_hero_testing_dummy_bullet_resist": {
+        "value": 0,
+        "description": "Bonus bullet resist % given to Target Dummies in Hero Testing"
+    },
+    "citadel_hero_testing_dummy_debuff_resist": {
+        "value": 0,
+        "description": "Bonus debuff resist % given to Target Dummies in Hero Testing"
+    },
+    "citadel_hero_testing_dummy_health_regen": {
+        "value": 0,
+        "description": "Bonus health regen per second given to Target Dummies in Hero Testing"
+    },
+    "citadel_hero_testing_dummy_spirit_resist": {
+        "value": 0,
+        "description": "Bonus spirit resist % given to Target Dummies in Hero Testing"
     },
     "citadel_hero_testing_dummy_target": {
         "value": 55,
         "description": "Dummy Target heroID if non-specified"
     },
     "citadel_hero_testing_enabled": false,
+    "citadel_hero_testing_expanded": {
+        "value": true,
+        "description": "Remember state of Testing Tools Collapsed/Expanded"
+    },
     "citadel_hero_testing_give_abilities": {
         "value": true,
         "description": "Grant Abilities on Character Spawn"
@@ -1730,6 +1933,10 @@
     "citadel_hero_testing_infinite_money": {
         "value": false,
         "description": "Enable infinite money in Hero Testing"
+    },
+    "citadel_hero_testing_legendary_items": {
+        "value": false,
+        "description": "Show Street Brawl legendary items in the shop in Hero Testing"
     },
     "citadel_hero_testing_money": {
         "value": 4000,
@@ -1758,6 +1965,14 @@
         "description": "WIP Show fx when hitting apex/landing on floor."
     },
     "citadel_hideout_button_interact_distance": 120,
+    "citadel_hideout_camera_level_enter": {
+        "value": 5,
+        "description": "The  dolly step we enter when rolling the mouse wheel."
+    },
+    "citadel_hideout_camera_level_max": {
+        "value": 16,
+        "description": "Number of individual dolly steps the mouse wheel zoom has while in the hideout."
+    },
     "citadel_hideout_enable_testing_tools": false,
     "citadel_hideout_exclusive_mode": true,
     "citadel_hideout_hero_id": 63,
@@ -1782,17 +1997,31 @@
         "value": 15,
         "description": "Distance threshold that we allow bullet to penetrate body to headshot."
     },
+    "citadel_hud_active_stats_always_show_details": false,
+    "citadel_hud_active_stats_burst_time": 2,
+    "citadel_hud_active_stats_expire_time": 5,
+    "citadel_hud_active_stats_spike_threshold": 4800,
+    "citadel_hud_active_stats_statechange_time": 2,
     "citadel_hud_announcement_display_time_all_queued": 7,
     "citadel_hud_announcement_display_time_max": 3,
+    "citadel_hud_announcement_display_time_override": -1,
     "citadel_hud_announcement_force_single_levelup": false,
     "citadel_hud_build_category_max_height": 600,
-    "citadel_hud_build_category_min_height": 185,
-    "citadel_hud_build_category_min_width": 125,
+    "citadel_hud_build_category_min_height": 125,
+    "citadel_hud_build_category_min_width": 100,
+    "citadel_hud_build_compact_category_extra_height": 0,
+    "citadel_hud_build_compact_category_extra_width": 0,
     "citadel_hud_chat_wheel": true,
-    "citadel_hud_damage_counter_duration": 4,
-    "citadel_hud_heal_counter_duration": 4,
-    "citadel_hud_healthbars_use_new": false,
-    "citadel_hud_healthbars_use_v2": false,
+    "citadel_hud_damage_counter_duration": 2,
+    "citadel_hud_experiments_enabled": {
+        "value": false,
+        "description": "Test hud experiments"
+    },
+    "citadel_hud_heal_counter_duration": 2,
+    "citadel_hud_hide_own_health": {
+        "value": false,
+        "description": "Hides your own health bar on the HUD"
+    },
     "citadel_hud_objective_health_enabled": {
         "value": 2,
         "description": "Enable/Disable HUD-level objective health bars.  0=Off. 1=Shrines, Patron, Midboss. 2=T1s and T2s. 3=Barracks"
@@ -1804,7 +2033,10 @@
     "citadel_hud_objective_health_lane_max_range": 1000,
     "citadel_hud_objective_health_t1_max_range": 1900,
     "citadel_hud_objective_health_t2_max_range": 2500,
+    "citadel_hud_player_stats_delta_increment_time": 1,
+    "citadel_hud_player_stats_delta_time": 4,
     "citadel_hud_top_bar_enable_dynamic_player_position": true,
+    "citadel_hud_unit_indicators_v2_enable": true,
     "citadel_hud_visible": {
         "value": true,
         "description": "Turns on/off rendering the HUD"
@@ -1834,27 +2066,28 @@
         "value": 0,
         "description": "How much stamina is required, and costs, to perform your first wall jump."
     },
-    "citadel_invert_ping_type": {
-        "value": false,
-        "description": "Inverts the ping types so single ping would be aggressive and double ping would be passive"
-    },
     "citadel_item_draft_enabled": {
         "value": 1,
         "description": "Use item drafting?  1=only street brawl 2=always"
     },
     "citadel_item_draft_force_all_rares": false,
     "citadel_item_early_gold_duration": 30,
-    "citadel_item_glow_local_dist": 800,
+    "citadel_item_glow_local_dist": 2000,
     "citadel_item_idol_label_offset": 50,
     "citadel_item_neutral_gold_label_offset": 6,
     "citadel_item_pickup_fall_tolerance": 16,
     "citadel_item_pickup_fallrate": 5,
+    "citadel_item_purchases_force_corrupted": {
+        "value": false,
+        "description": "While true, all items purchased will be corrupted if they have a corrupted variant"
+    },
     "citadel_item_purchases_force_enhanced": {
         "value": false,
         "description": "While true, all items purchased/drafted will be enhanced"
     },
     "citadel_item_rejuvenator_label_offset": 160,
     "citadel_item_sell_price_ratio": 0.5,
+    "citadel_item_tooltip_show_deltas": false,
     "citadel_item_used_text_height_offset": {
         "value": 25,
         "description": "How much higher item used text show up."
@@ -1865,6 +2098,7 @@
     },
     "citadel_keybind_default_hold_duration": 1,
     "citadel_keybindings_cloud_disable": false,
+    "citadel_kill_streak_min": 3,
     "citadel_koth_early_warning_time": 60,
     "citadel_koth_enabled": true,
     "citadel_koth_respawn_interval": 420,
@@ -1887,6 +2121,7 @@
         "value": -1,
         "description": "How long lane swap is available in pre-game wait. Set to 0 to disable, -1 for infinity."
     },
+    "citadel_last_reporter_updates_check_games": 0,
     "citadel_leaderboard_cache_duration": {
         "value": 43200,
         "description": "Number of seconds before re-requesting data for the leaderboard"
@@ -1916,8 +2151,11 @@
         "value": true,
         "description": "Enable to log extended MODIFIER_STATE_IN_COMBAT"
     },
-    "citadel_loot_table_spew_flattened_table": false,
     "citadel_loot_table_spew_modifications": false,
+    "citadel_mantle_auto_step_check_inset": {
+        "value": 4,
+        "description": "How far in front of a ledge's lip auto-mantle looks for a lower step. If the drop there is within step height the ledge can be walked up to (stairs), so auto-mantle skips it."
+    },
     "citadel_mantle_cancelling_allowed": {
         "value": false,
         "description": "Pulling away from the mantle interrupts it, putting you into falling state early."
@@ -1956,6 +2194,7 @@
         "value": 1,
         "description": "0 = none, 1 = pregame simple, 2 = pregame full, 3 = in map"
     },
+    "citadel_match_pre_trooper_spawn_brawl_time": 40,
     "citadel_max_disconnected_time": {
         "value": 300,
         "description": "How long a player needs to be disconnected before they count as a leaver and get punished."
@@ -1964,17 +2203,9 @@
         "value": 110,
         "description": "How long a player needs to be disconnected during pregame before they count as a leaver and get punished."
     },
-    "citadel_max_path_detour": {
-        "value": 500,
-        "description": "Max detour for pathing calculations."
-    },
     "citadel_max_reconnect_time_secs": {
         "value": 7200,
         "description": "Max time to attempt a reconnect after a crash."
-    },
-    "citadel_max_videomode_matches": {
-        "value": 20,
-        "description": "Max number of video resolutions to show in UI."
     },
     "citadel_medic_minion_sight_range": 2400,
     "citadel_melee_damage_scale": 1,
@@ -1986,7 +2217,6 @@
     "citadel_melee_shake_amplitude": 0.55,
     "citadel_melee_shake_duration": 0.1,
     "citadel_melee_shake_frequency": 0.2,
-    "citadel_metal_expire_time": 30,
     "citadel_midboss_initial_spawn_time_override": {
         "value": -1,
         "description": "If positive, override initial spawn time (in seconds) for midboss"
@@ -2005,13 +2235,16 @@
     },
     "citadel_minimap_arrow_show_distance_down": 100,
     "citadel_minimap_arrow_show_distance_up": 200,
-    "citadel_minimap_draw_fow": false,
     "citadel_minimap_koth_trooper_size": 4.5,
     "citadel_minimap_local_player_width": 12,
     "citadel_minimap_max_icon_shrink": 0.8,
-    "citadel_minimap_npc_reveal_duration": 0.25,
+    "citadel_minimap_npc_reveal_duration": 0.75,
     "citadel_minimap_objective_damaged_reveal_duration": 1,
     "citadel_minimap_overlap_scan_distance": 12.5,
+    "citadel_minimap_ping_panel_lifetime": {
+        "value": 4.5,
+        "description": "How long a ping panel lasts for. < 0 for infinite"
+    },
     "citadel_minimap_player_width": 7,
     "citadel_minimap_show_hitboxes": false,
     "citadel_minimap_spectator_fow_team_view": {
@@ -2024,13 +2257,20 @@
     "citadel_minimap_trooper_size": 3,
     "citadel_minimap_unit_click_radius": 200,
     "citadel_minimap_use_effects": false,
+    "citadel_minimap_zip_line_hover_radius": {
+        "value": 16,
+        "description": "Extra pixels either side of a minimap zipline that still count as hovering it"
+    },
+    "citadel_minimap_zip_line_hover_thickness_scale": {
+        "value": 2,
+        "description": "How much thicker a hovered minimap zipline lane draws"
+    },
     "citadel_minimap_zip_line_thickness": 2,
     "citadel_minimum_fire_rate": {
         "value": -50,
         "description": "Minimum value possible for fire rate"
     },
     "citadel_minimum_players_to_show_postgame": 6,
-    "citadel_minion_distance_to_owner": 200,
     "citadel_minion_gold_reward": 25,
     "citadel_minion_gold_reward_bonus_per_minute": 1,
     "citadel_mobile_resupply_healthbar_pos": 10,
@@ -2038,19 +2278,24 @@
     "citadel_modifier_hud_message_display_clear": false,
     "citadel_modifier_hud_message_display_min_panel_count": 4,
     "citadel_modifier_hud_message_display_time": 2.5,
-    "citadel_move_goal_tolerance": {
-        "value": 8,
-        "description": "Some extra tolerance for considering an NPC moved to a goal; can be reduced as we fix other issues"
+    "citadel_mouse_cursor_scale": {
+        "value": 1,
+        "description": "Mouse cursor size scale factor."
     },
+    "citadel_movement_client_only_mispredict_move": -1,
+    "citadel_movement_override_separation_radius": true,
     "citadel_movement_plane_overlap_mult": 0,
     "citadel_movement_resolve_origin": true,
-    "citadel_movement_skyclip_push_distance": 196.8504,
-    "citadel_movement_skyclip_push_min_force": 400,
     "citadel_movement_slip_accel": 200,
     "citadel_movement_solver_iterations": 16,
+    "citadel_movement_temp_blocker_new": true,
     "citadel_movespeed_bonus_max": {
         "value": 472.441,
         "description": "Maximum Value for Movespeed bonuses (Diminishing Returns) in Hu"
+    },
+    "citadel_movespeed_graph_duration": {
+        "value": 5,
+        "description": "How many samples in the graph"
     },
     "citadel_mvp_enabled": {
         "value": 0,
@@ -2061,19 +2306,33 @@
         "description": "Use a KDA ratio for the mvp score instead of the real algorithm."
     },
     "citadel_nano_set_shouldercat_bodygroup": true,
-    "citadel_necro_skele_use_new_motor": true,
+    "citadel_neutral_ability_dev_test": {
+        "value": -1,
+        "description": "Force use this ability. -1 off, 0 for Melee, 1-2-3 for Abilities"
+    },
+    "citadel_neutral_aggro_time": 5,
     "citadel_neutral_camp_spawn_per_tick_limit": {
-        "value": 2,
+        "value": 1,
         "description": "Spawn this many neutral camps per tick (this is a limit, so if it's 1, we'll only spawn one per tick (perf)). Set this value to something large to effectively remove the limit. 0 or negative will prevent spawning."
     },
     "citadel_neutral_gold_ratio": {
         "value": 1,
         "description": "What percent of gold is transfered instantly on neutral kills"
     },
+    "citadel_neutral_health_growth_pct_per_min": 2.1,
     "citadel_neutral_initial_spawn_time_override": {
         "value": -1,
         "description": "If positive, override initial spawn time (in seconds) for all neutral camps"
     },
+    "citadel_neutral_player_range_aabb_padding": 100,
+    "citadel_neutral_player_range_normal_meters": 30,
+    "citadel_neutral_player_range_strong_meters": 50,
+    "citadel_neutral_player_range_weak_meters": 20,
+    "citadel_neutral_scorer_time_window": {
+        "value": 5,
+        "description": "How long after damaging a neutral are players in the window to be considered scorers."
+    },
+    "citadel_neutral_sleep_time": 5,
     "citadel_neutral_spawn_enabled": {
         "value": true,
         "description": "set to false to prevent any neutrals from spawning"
@@ -2082,11 +2341,12 @@
         "value": -1,
         "description": "If positive, override initial spawn interval (in seconds) for all neutral camps"
     },
-    "citadel_neutral_spawn_range": {
-        "value": 100,
-        "description": "Prevent spawning of neutrals if a player is in this range"
+    "citadel_neutral_tether_distance_window": 120,
+    "citadel_neutral_vault_minigame_force_speed": -1,
+    "citadel_neutral_vault_minigame_random": {
+        "value": true,
+        "description": "Add a random time phase to the neutral vault minigame"
     },
-    "citadel_neutral_weakpoints_enabled": false,
     "citadel_new_abandon_rules_early_end_countdown": {
         "value": 10,
         "description": "[New Abandon Rules] Auto-match end countdown."
@@ -2099,6 +2359,40 @@
         "value": 300,
         "description": "[New Abandon Rules] Time for the 'early' trigger to take effect. Match will not be scored, etc."
     },
+    "citadel_new_mini_radial_delay_time": 0.125,
+    "citadel_new_ping_coyote_time": 0.125,
+    "citadel_new_ping_fow_window": {
+        "value": 2,
+        "description": "How long after an enemy drops off shared team vision they can still be pinged, in seconds."
+    },
+    "citadel_new_ping_free_cursor_world_trace": {
+        "value": false,
+        "description": "Allow free cursor pings to trace through the HUD into the world (entities and ziplines)."
+    },
+    "citadel_new_ping_minimap_left_click": {
+        "value": true,
+        "description": "With citadel_new_ping_system on, left clicking anywhere on the minimap opens the ping radial, same as the ping keybind. Never overrides a minimap targeting ability like Mirage's teleport."
+    },
+    "citadel_new_ping_system": {
+        "value": 1,
+        "description": "Allow Minimap Radial to appear. 0: Off. 1: On. 2: Spew"
+    },
+    "citadel_new_ping_system_fixed_slot_icons": {
+        "value": true,
+        "description": "Draw the icon each slot pins in scripts/ping_targets.vdata on the radials whose layout is fixed, so the art stops moving when an override fires. A minimap sourced radial pins the generic_entity row's four, since one compass serves everything on the map; a radial from hud chrome pins its own row's, so a friendly and an enemy portrait stay distinct. 0 restores the per ping icons."
+    },
+    "citadel_new_ping_trace_pixel_radius": {
+        "value": 60,
+        "description": "Distance invariant capsule radius, in pixels at 1080 vertical res. This makes targets less finnicky to hit at a distance. Near range, we'll have already hit via hitbox."
+    },
+    "citadel_new_ping_world_volume_radius": {
+        "value": 60,
+        "description": "If we don't get a direct hit, iterate through entities that are inside a capsule constructed from the view or mouse ray."
+    },
+    "citadel_new_ping_zipline_range": {
+        "value": 4200,
+        "description": "2D range for the world-space zipline ping ray."
+    },
     "citadel_new_player_flow_visible": {
         "value": true,
         "description": "Are we still showing the new player instructions"
@@ -2110,61 +2404,38 @@
     "citadel_new_years_fireworks_epoch_override": 1767243600,
     "citadel_new_years_fireworks_force_start": 0,
     "citadel_news_entries_list_request_count": 10,
-    "citadel_news_entry_override_latest": 0,
+    "citadel_news_entry_override_latest": 694273194214819790,
     "citadel_no_orbs_on_hero_kill": true,
     "citadel_no_orbs_on_objective_kill": true,
-    "citadel_npc_ag2_enable": {
-        "value": true,
-        "description": "Enable AG2 in NPCs"
-    },
-    "citadel_npc_allow_climb": {
-        "value": false,
-        "description": "Allow NPCs to climb."
-    },
-    "citadel_npc_allow_jump_down": {
-        "value": true,
-        "description": "Allow NPCs to follow any drop-down navigation links."
-    },
     "citadel_npc_disable_cockroaches": {
         "value": false,
         "description": "Disable Cockroaches"
     },
-    "citadel_npc_disable_floor_point_caching": true,
     "citadel_npc_dps_multiplier": {
         "value": 1,
         "description": "Increase weapon damage for testing"
     },
-    "citadel_npc_force_animate_every_tick": true,
+    "citadel_npc_enable_hitbox_interpolation": true,
     "citadel_npc_jump_gravity_mult": 2,
-    "citadel_npc_max_direct_follow_distance": {
-        "value": 1000,
-        "description": "For far before a following NPC uses an approximate path to get to their follow target, instead of a direct calculation."
-    },
-    "citadel_npc_push_speed": {
-        "value": 50,
-        "description": "How quickly NPCs push their friends away"
-    },
-    "citadel_npc_shoot_check_sphere_size": {
-        "value": 6,
-        "description": "How large a radius sphere we use for checking if an NPC can shoot a target"
+    "citadel_npc_motor_disable_ground_trace": {
+        "value": false,
+        "description": "Don't move npcs to exact ground positions when running. What does this break besides looks?"
     },
     "citadel_npc_spawn_enabled": {
         "value": true,
         "description": "set to false to prevent any NPC from spawning"
     },
-    "citadel_npc_trooper_celebration_percent": {
-        "value": 0.7,
-        "description": "percent amount of troopers in the area to celebrate"
-    },
-    "citadel_npc_trooper_celebration_radius": {
-        "value": 2000,
-        "description": "radius to collect enemy troopers near a destroyed objective to do celebration pose"
+    "citadel_npc_ticks_per_anim_update": 2,
+    "citadel_npc_visibility_cache_duration": {
+        "value": 0.25,
+        "description": "How long CAI_CitadelNPC::FVisible() results stay cached"
     },
     "citadel_num_matches_in_profile_history": 16,
     "citadel_num_team_pauses_allowed": {
         "value": 3,
         "description": "Number of times a team is allowed to pause the game. 0 Means unbounded"
     },
+    "citadel_observer_max_dolly_level": 8,
     "citadel_observer_roaming_speed": 600,
     "citadel_one_on_one_match": false,
     "citadel_one_on_one_match_starting_gold": 0,
@@ -2204,6 +2475,10 @@
     "citadel_pause_allow_immediate_if_single_player": {
         "value": false,
         "description": "When there is only a single player on the server, set whether or not we allow for instant pausing/unpausing"
+    },
+    "citadel_pause_allow_in_combat": {
+        "value": true,
+        "description": "Allow pausing while in combat"
     },
     "citadel_pause_allow_in_pregame": {
         "value": false,
@@ -2245,7 +2520,6 @@
         "value": 30,
         "description": "Number of seconds resuming is restricted to the same team if someone disconnected, after that either team can pause"
     },
-    "citadel_pending_incoming_heal_min_change_for_update": 3,
     "citadel_pending_replay_force_failure": 0,
     "citadel_pending_replay_num_retries": 30,
     "citadel_pending_replay_retry_seconds": 300,
@@ -2263,9 +2537,41 @@
         "value": 3,
         "description": "The amount of time in milliseconds where if we have less than this in idle time, count it as a low idle frame"
     },
+    "citadel_pickup_spawner_enabled": {
+        "value": true,
+        "description": "Set to false to stop citadel_pickup_spawner pickups (healing snacks) from spawning and respawning"
+    },
+    "citadel_pickup_spawner_initial_spawn_time_override": {
+        "value": -1,
+        "description": "If positive, override the initial spawn time (in seconds) for all citadel_pickup_spawner pickups"
+    },
+    "citadel_pickup_spawner_spawn_interval_override": {
+        "value": -1,
+        "description": "If positive, override the respawn interval (in seconds) for all citadel_pickup_spawner pickups"
+    },
+    "citadel_ping_above_us_z": {
+        "value": 500,
+        "description": "If the pinged hero is above us by this many units, use the \"above_us\" voice variant"
+    },
     "citadel_ping_allow_responses_to_yourself": {
         "value": false,
         "description": "Allow you to respond to yourself."
+    },
+    "citadel_ping_almost_respawned_seconds": {
+        "value": 10,
+        "description": "Pinging a dead hero whose respawn is at most this many seconds away says they are almost back rather than dead."
+    },
+    "citadel_ping_below_us_z": {
+        "value": 500,
+        "description": "If the pinged hero is below us by this many units, use the \"below_us\" voice variant"
+    },
+    "citadel_ping_consecutive_window": {
+        "value": 0.25,
+        "description": "Seconds between taps on one subject for them to chain into a double (triple...) ping."
+    },
+    "citadel_ping_enemy_count_radius": {
+        "value": 1500,
+        "description": "How close another visible enemy has to be to the pinged position to count toward the group callout."
     },
     "citadel_ping_indicator_display_time": 5.5,
     "citadel_ping_indicator_duration": {
@@ -2276,9 +2582,21 @@
         "value": 2,
         "description": "The amount of time the in-world ping indicator stays when a boss pings itself."
     },
+    "citadel_ping_radial_anchor_mode": {
+        "value": 1,
+        "description": "Comms wheel quick reveal anchor mode 0: only compare to the heading we had when pressing down ping. 1: Use both the heading we had, AND the world space point we had at the start, updated based on our movement, and the target's relative movement, through space. Essentially a double deadzone center to help with pinging while moving fast through space. Distance from line as opposed to distance from point."
+    },
+    "citadel_ping_radial_early_open_deflection_deg": {
+        "value": 10,
+        "description": "Degrees of camera deflection away from the thing we pressed on that force the radial open ahead of its delay. Degrees rather than pixels so the mouse sensitivity slider already normalises it. <= 0, ignore gesture angle don't open"
+    },
+    "citadel_ping_spam_hides_marker": {
+        "value": false,
+        "description": "Restores the old behaviour where repeat pings hid the marker as well as the sound. The marker is positional information the team needs; the noise is the spam."
+    },
     "citadel_ping_wheel_activation_radius": {
-        "value": 0.37,
-        "description": "LEGACY. See: citadel_show_chat_wheel_angle_threshold. Increase this to change how much you have to move your mouse to make the mousewheel visible."
+        "value": 0.6,
+        "description": "Increase this to change how much you have to move your mouse to make the mousewheel visible."
     },
     "citadel_play_page_fake_data": false,
     "citadel_play_page_finished_tutorial": false,
@@ -2295,6 +2613,7 @@
         "value": 1,
         "description": "How long a player is visible to enemy FOW after attacking an enemy player"
     },
+    "citadel_player_client_reprediction_disabled": false,
     "citadel_player_crit_multiplier": {
         "value": 1.25,
         "description": "How much to scale damage when landing crits against Players"
@@ -2314,8 +2633,6 @@
     },
     "citadel_player_glow_disabled": false,
     "citadel_player_glow_from_teammate_vision_max_range": 2000,
-    "citadel_player_glow_when_in_combat": false,
-    "citadel_player_glow_when_in_combat_linger": 1,
     "citadel_player_gold_comeback_assister_ratio": 1.5,
     "citadel_player_gold_comeback_killer_fraction": 0.3,
     "citadel_player_gold_comeback_multiplier": 2.268,
@@ -2358,10 +2675,6 @@
     "citadel_player_outline_fade_range_max": 1400,
     "citadel_player_outline_fade_range_min": 400,
     "citadel_player_override_spawn_time": -1,
-    "citadel_player_pawn_ag2_enable": {
-        "value": true,
-        "description": "Enable AG2 for heroes who define an AG2 graph"
-    },
     "citadel_player_ping_duration": 6,
     "citadel_player_regen_zone_bonus_base": {
         "value": 60,
@@ -2375,6 +2688,7 @@
         "value": 150,
         "description": "When standing in a regen zone, how much extra do we stamina percentage"
     },
+    "citadel_player_reveal_notif": false,
     "citadel_player_slide_breakable_lookahead": 75.8,
     "citadel_player_slide_breakable_radius": 35,
     "citadel_player_slide_min_percent": 0.8,
@@ -2413,6 +2727,10 @@
         "value": 2,
         "description": "Which team to auto-select the first time in the game."
     },
+    "citadel_player_tiny_character_max_height": {
+        "value": 40,
+        "description": "Max height of a character with IS_TINY_CHARACTER or IsShrunkCharacter enabled"
+    },
     "citadel_playofthegame_allow_showing_last_timeframe": false,
     "citadel_playofthegame_disable_eval": {
         "value": true,
@@ -2433,12 +2751,19 @@
     "citadel_playtest_fake_coopbot_player_count": -1,
     "citadel_playtest_fake_schedule": false,
     "citadel_playtest_fake_unranked_player_count": -1,
-    "citadel_portrait_unit_ag2_enable": {
-        "value": true,
-        "description": "Enable AG2 use in portrait units"
-    },
+    "citadel_popular_items_app_universe": "publicrel",
+    "citadel_popular_items_days_in_past": 7,
+    "citadel_popular_items_earlygame_endtime": 480,
+    "citadel_popular_items_midgame_endtime": 1200,
+    "citadel_popular_items_min_games": 5000,
+    "citadel_popular_items_min_pick_pct_early_game": 10,
+    "citadel_popular_items_min_pick_pct_late_game": 10,
+    "citadel_popular_items_min_pick_pct_mid_game": 10,
+    "citadel_popular_items_min_pick_pct_vdata": 5,
+    "citadel_popular_items_min_winrate_pct": 0,
     "citadel_portrait_world_renderer_off": false,
     "citadel_post_game_fake_local_account_id": 0,
+    "citadel_post_game_hero_release_vote_results_screen_enabled": true,
     "citadel_post_game_local_player_screen_enabled": false,
     "citadel_post_game_mvp_screen_enabled": true,
     "citadel_post_game_progress": {
@@ -2498,6 +2823,14 @@
         "value": 30,
         "description": "How long pre-match is until we start the match"
     },
+    "citadel_preview_video_settings_changes": {
+        "value": true,
+        "description": "Briefly hide the menu when modifying rendering or camera settings."
+    },
+    "citadel_preview_video_settings_duration": {
+        "value": 2,
+        "description": "Duration for which the menu will be hidden after modifying rendering or camera settings."
+    },
     "citadel_previous_umuted_audio_level": 1,
     "citadel_priority_token_fake_count": {
         "value": -1,
@@ -2513,6 +2846,7 @@
     },
     "citadel_private_lobby_bot_difficulty": 0,
     "citadel_private_lobby_cheats_enabled": false,
+    "citadel_private_lobby_corrupted_item_shop_spawn_minutes": 30,
     "citadel_private_lobby_duplicate_heroes_enabled": false,
     "citadel_private_lobby_is_publicly_visible": false,
     "citadel_private_lobby_randomize_lanes": false,
@@ -2552,22 +2886,17 @@
         "description": "If enabled, show quickbuy in the HUD"
     },
     "citadel_quit_delay": 0.5,
-    "citadel_radial_ability_suggestion_weight": {
+    "citadel_radial_keep_open": {
+        "value": false,
+        "description": "Keep Radials Open (skip \"close\" commands)"
+    },
+    "citadel_radial_skip_rotation": {
         "value": 0,
-        "description": "How much extra weight to give a segment when it's the next recommended ability."
+        "description": "0: Rotate Layout 1: Don't Rotate Layout"
     },
-    "citadel_radial_distortion": {
-        "value": 0,
-        "description": "0: Off 1: Distorts the visible distribution of arcs based on the mouse pointer."
-    },
-    "citadel_radial_distortion_growth_factor": {
-        "value": 1.25,
-        "description": "When the cursor enters a radial arc fully, how much should it grow by (in terms of weight)"
-    },
-    "citadel_radial_testing": {
-        "value": 0,
-        "description": "0: Normal. 1: Inhibit showing the hud abilities' upgrade panel when the scoreboard is open."
-    },
+    "citadel_radial_test_postgame": false,
+    "citadel_radial_test_pregame": false,
+    "citadel_ragdoll_phys_death_multiplier": 1,
     "citadel_ranked_allow_overrides": true,
     "citadel_ranked_hero_roster_random": {
         "value": false,
@@ -2595,6 +2924,10 @@
     "citadel_recent_comms_session_attempt_throttled_count": 9999999,
     "citadel_recent_comms_throttling_limit": 50,
     "citadel_recent_comms_throttling_penalty": 10,
+    "citadel_reduce_camera_shake": {
+        "value": false,
+        "description": "Turns off screen shake."
+    },
     "citadel_region_override": {
         "value": -1,
         "description": "Override the region of the client"
@@ -2611,19 +2944,26 @@
         "description": "How long do we wait for them to dismiss the popup dialog in lane training?"
     },
     "citadel_report_card_tasks_complete": false,
+    "citadel_reporter_updates_poll_interval_games": 15,
     "citadel_require_server_bullet_impacts_on_important_hits": false,
     "citadel_reset_camera_speed": {
-        "value": 0.5,
-        "description": "Aggressiveness of Camera Reset Curve. Smaller = quicker. Larger = more gradual."
+        "value": 4000,
+        "description": "How quickly the camera resets to the horizon. Higher is faster"
     },
     "citadel_respond_to_ping_time": {
         "value": 5,
         "description": "The amount of time you have to respond to a ping from another player"
     },
     "citadel_restore_components_only_during_sellback": true,
+    "citadel_reveal_notif_minimap": true,
+    "citadel_reveal_notif_particle": false,
     "citadel_roster_select_force_enable_priority_token": false,
     "citadel_roster_select_force_select_any": false,
     "citadel_roster_select_hover_delay": 0.2,
+    "citadel_roster_select_screenshot_mode": {
+        "value": false,
+        "description": "Adds the gRosterScreenshotMode class to the roster select screen"
+    },
     "citadel_rp_show_dev_messages": false,
     "citadel_rr_killstreak_for_death_line": {
         "value": 2,
@@ -2633,16 +2973,25 @@
     "citadel_sat_volume_desat_color": "[100, 100, 114, 255]",
     "citadel_sat_volume_outline_color": "[200, 200, 200, 255]",
     "citadel_sat_volume_sat_color": "[255, 255, 255, 255]",
+    "citadel_scenepanel_use_intermediate_texture": false,
     "citadel_secondary_language_builds": -1,
     "citadel_secure_gold_fixed": 1.6,
     "citadel_secure_gold_fixed_growth": 0.08,
     "citadel_secure_gold_percent": 0.005,
     "citadel_secure_gold_rate": 1,
+    "citadel_secure_souls_only_at_soul_dealer": {
+        "value": false,
+        "description": "When set, unsecured souls only convert inside a citadel_trigger_secure_souls volume. When clear, they secure over time anywhere and the trigger does nothing."
+    },
     "citadel_send_gc_match_info_s": {
         "value": 30,
         "description": "Determines the rate that we should submit match info up to the GC, 0 disables this functionality"
     },
     "citadel_send_text_chat_to_player_pings": true,
+    "citadel_server_all_players_disconnected_grace_period_dev_s": {
+        "value": 600,
+        "description": "Dev version of citadel_server_all_players_disconnected_grace_period_s (this is separate so it won't get stomped by .cfg files)"
+    },
     "citadel_server_all_players_disconnected_grace_period_s": {
         "value": 120,
         "description": "How long a server should run after all players have disconnected before notifying that all players have left"
@@ -2659,9 +3008,61 @@
         "value": false,
         "description": "Ignore engine build version. Useful for testing release locally"
     },
+    "citadel_settings_active_settings_section_read_only": {
+        "value": -1,
+        "description": "Last viewed settings section"
+    },
+    "citadel_settings_active_settings_subsection_read_only": {
+        "value": -1,
+        "description": "Last viewed settings subsection"
+    },
+    "citadel_settings_always_show_all_settings": {
+        "value": true,
+        "description": "Keep the settings shared by all heroes visible while browsing a specific hero's settings"
+    },
+    "citadel_settings_hero_selector_search": {
+        "value": true,
+        "description": "When the Settings hero selector is expanded, typing in the search bar filters heroes instead of settings."
+    },
+    "citadel_settings_hide_hero_specific_disabled_notice": {
+        "value": false,
+        "description": "Suppress popups when disabling hero-specific settings"
+    },
+    "citadel_settings_hide_hero_specific_enabled_notice": {
+        "value": false,
+        "description": "Suppress popups when enabling hero-specific settings"
+    },
+    "citadel_settings_hide_keybind_delete_confirm": {
+        "value": false,
+        "description": "Suppress the confirmation popup when deleting a binding from the keybind map's Bind Key popup"
+    },
+    "citadel_settings_hide_row_reset_confirm": {
+        "value": false,
+        "description": "Suppress confirmation popups when resetting individual settings"
+    },
+    "citadel_settings_hide_show_all_settings_off_notice": {
+        "value": false,
+        "description": "Suppress the notice shown when 'Always show all settings' is turned off"
+    },
+    "citadel_settings_last_scrollbar_position_read_only": {
+        "value": 0,
+        "description": "Last Settings menu scrollbar offset"
+    },
     "citadel_settings_new_setting_newness_duration": {
         "value": 2592000,
         "description": "Maximum age a new setting will be shown without dismissing"
+    },
+    "citadel_settings_scroll_panel_height_read_only": {
+        "value": 0,
+        "description": "Last Settings menu total scroll panel height"
+    },
+    "citadel_settings_selected_base_settings": {
+        "value": false,
+        "description": "Whether the settings menu's base settings were deliberately selected"
+    },
+    "citadel_settings_selected_hero_read_only": {
+        "value": 0,
+        "description": "Hero ID of the last selected hero in settings menu"
     },
     "citadel_shield_generator_shield_scale": 7,
     "citadel_shoot_forward_offset": {
@@ -2678,12 +3079,38 @@
     },
     "citadel_shooting_test_target_attachment": "ability_attach",
     "citadel_shooting_test_tracker_window": 5,
+    "citadel_shop_always_show_names": true,
     "citadel_shop_default_tab": -1,
+    "citadel_shop_filters_and_mode": false,
+    "citadel_shop_hide_empty_tiers": {
+        "value": true,
+        "description": "Hide empty tiers when searching/filtering"
+    },
+    "citadel_shop_items_appear_corrupted": {
+        "value": false,
+        "description": "Makes all of the items in the shop appear corrupted if they can be corrupted"
+    },
     "citadel_shop_items_appear_enhanced": {
         "value": false,
         "description": "Makes all of the items in the shop appear enhanced if they can be enhanced"
     },
+    "citadel_shop_open_focus_search": {
+        "value": false,
+        "description": "Give the shop search box keyboard focus when the shop opens"
+    },
     "citadel_shop_reset_time": 10,
+    "citadel_shop_scroll_snap_threshold": {
+        "value": 5,
+        "description": "How many pixels of scroll delta triggers a snap.  Source2 mouse wheel is hardcoded to 3.0 per integral mouse wheel click."
+    },
+    "citadel_shop_scroll_snap_to_tiers": {
+        "value": true,
+        "description": "Snap mouse wheel scrolling in the shop's filtered tab to price tiers. The arrow keys step a tier either way."
+    },
+    "citadel_shop_search_use_name_only": {
+        "value": false,
+        "description": "Only match items based on the name of the item when searching"
+    },
     "citadel_show_account_ids": {
         "value": false,
         "description": "When set, account IDs will be shown on player tooltips"
@@ -2696,10 +3123,6 @@
     "citadel_show_bullet_lag_compensation": {
         "value": 0,
         "description": "if > 0.0, show lag compensated hitboxes (value is seconds) whenever a bullet is lag compensated and hits something."
-    },
-    "citadel_show_chat_wheel_angle_threshold": {
-        "value": 16,
-        "description": "(degrees) Increase this to change how much you have to move your camera angle to make the Chat Wheel instantly visible while holding Ping."
     },
     "citadel_show_chat_wheel_time": {
         "value": 0.23,
@@ -2721,22 +3144,17 @@
         "value": false,
         "description": "Turns on/off debug display of modifiers"
     },
-    "citadel_show_movement_speed_in_units": {
-        "value": false,
-        "description": "Show the movement speed in units instead of m/s"
-    },
     "citadel_show_movespeed_on_hud": {
         "value": false,
         "description": "Turns on/off Movespeed indicator on the HUD"
     },
-    "citadel_show_new_mod_tooltips": true,
+    "citadel_show_movespeed_units": {
+        "value": 1,
+        "description": "0 : nothing, 1 : meters, 2 : HammerUnits"
+    },
     "citadel_show_new_topbar": {
         "value": false,
         "description": "Show new topbar"
-    },
-    "citadel_show_new_ziplines": {
-        "value": false,
-        "description": "Turns on/off the new ziplines on the new minimap"
     },
     "citadel_show_npe_modal": {
         "value": true,
@@ -2780,6 +3198,10 @@
         "description": "Change the snowball level"
     },
     "citadel_solo_bot_match": false,
+    "citadel_soul_rune_lane_experiment": {
+        "value": false,
+        "description": "Forces all players down the mid lane."
+    },
     "citadel_spawn_combine_only": {
         "value": false,
         "description": "Only spawn creeps on one team"
@@ -2818,11 +3240,47 @@
         "value": 512,
         "description": "Maximum range (in inches) in which a spray is valid"
     },
+    "citadel_stamina_ping_interval": 1,
+    "citadel_stamina_ping_threshold": 1,
     "citadel_start_players_on_zipline": true,
+    "citadel_stat_cache_diagnostics": {
+        "value": 0,
+        "description": "Stat-dep registration diagnostics. 0=silent, 1=warn when a ScaleFunction registration consumes no EModifierValues (likely missing markup) or when cross-entity ability values suppress caching, 2=also log benign early outs."
+    },
+    "citadel_stat_cache_force_all_ignore_params": {
+        "value": false,
+        "description": "Force all non-opted-in stats to CacheEnabled_IgnoreParams (persist, skip hash check). Mutually exclusive with the other stat_cache_force_all_* convars. Resets stats on change."
+    },
+    "citadel_stat_cache_force_all_invalidate_on_tick": {
+        "value": false,
+        "description": "Force all non-opted-in stats to CacheEnabled_InvalidateOnTick. Mutually exclusive with the other stat_cache_force_all_* convars. Resets stats on change."
+    },
+    "citadel_stat_cache_force_all_invalidate_on_tick_ignore_params": {
+        "value": false,
+        "description": "Force all non-opted-in stats to CacheEnabled_InvalidateOnTick_IgnoreParams. Mutually exclusive with the other stat_cache_force_all_* convars. Resets stats on change."
+    },
+    "citadel_stat_cache_force_all_persist": {
+        "value": false,
+        "description": "Force all non-opted-in stats to CacheEnabled (persist across ticks). Mutually exclusive with the other stat_cache_force_all_* convars. Resets stats on change."
+    },
+    "citadel_stat_cache_log_deps_on_init": {
+        "value": false,
+        "description": "If set, CModifierProperty::DumpStatDepGraph is printed after each ability's runtime dependency registration completes. Each entity prints once per owned ability."
+    },
+    "citadel_stat_generation_gating": {
+        "value": true,
+        "description": "Gate per-tick stat polls (effective cooldown rescale, resource regen) on the stat cache generation counters. Disable to restore per-tick recomputation."
+    },
+    "citadel_stat_generation_watch_max_age": {
+        "value": 1,
+        "description": "Generation watches report 'changed' once their stamp is older than this many seconds of game time, bounding the staleness of any missed invalidation edge. This is here temporarily and for safety, and not intended to be standard behavior. 0=no limit."
+    },
     "citadel_stat_override_official_match": {
         "value": false,
         "description": "When set to true, the account stat cache system will act like it is in an official match when updated. Used for testing without being in official matches"
     },
+    "citadel_stat_preview_item_caching": false,
+    "citadel_stat_preview_tier_bonuses": true,
     "citadel_steamlearn_disable": false,
     "citadel_steamlearn_mechanical_behavior_allowed_game_modes_bitfield": {
         "value": 2,
@@ -2852,12 +3310,56 @@
     "citadel_stuck_normal_find_trace_fallback_elevation": 24,
     "citadel_sub_nav_outer_radius_scaler": 0.412,
     "citadel_subnav_select_time": 0,
+    "citadel_subtick_aim_data": {
+        "value": false,
+        "description": "Server wants sub-tick aim data"
+    },
+    "citadel_subtitles_all_caps": {
+        "value": false,
+        "description": "Show the HUD subtitles in all caps."
+    },
+    "citadel_subtitles_background_color_b": {
+        "value": 0,
+        "description": "Blue channel of the HUD subtitle background color."
+    },
+    "citadel_subtitles_background_color_g": {
+        "value": 0,
+        "description": "Green channel of the HUD subtitle background color."
+    },
+    "citadel_subtitles_background_color_r": {
+        "value": 0,
+        "description": "Red channel of the HUD subtitle background color."
+    },
+    "citadel_subtitles_bold_font": {
+        "value": true,
+        "description": "Show the HUD subtitles in a semi-bold font rather than normal weight."
+    },
+    "citadel_subtitles_custom_style": {
+        "value": false,
+        "description": "Show the HUD subtitles in the player's custom size, colors, and font rather than the default style."
+    },
+    "citadel_subtitles_font": {
+        "value": 0,
+        "description": "Font of the HUD subtitles: 0 default, 1 block, 2 stylized."
+    },
+    "citadel_subtitles_font_size": {
+        "value": 16,
+        "description": "Font size of the HUD subtitles."
+    },
+    "citadel_subtitles_text_color_b": {
+        "value": 198,
+        "description": "Blue channel of the HUD subtitle text color."
+    },
+    "citadel_subtitles_text_color_g": {
+        "value": 198,
+        "description": "Green channel of the HUD subtitle text color."
+    },
+    "citadel_subtitles_text_color_r": {
+        "value": 198,
+        "description": "Red channel of the HUD subtitle text color."
+    },
     "citadel_super_neutral_gold_reward": 3000,
     "citadel_super_neutral_gold_reward_bonus_per_minute": 50,
-    "citadel_super_neutral_inner_attack_range": 250,
-    "citadel_super_neutral_middle_attack_range": 400,
-    "citadel_super_neutral_old_behavior": true,
-    "citadel_super_neutral_outer_attack_range": 750,
     "citadel_super_trooper_gold_mult": {
         "value": 0.85,
         "description": "Mult Gold Bounty from Super Troopers by this amount"
@@ -2869,6 +3371,10 @@
     "citadel_t1_boss_ignore_damage": false,
     "citadel_t1_boss_max_attack_range": 1300,
     "citadel_t1_boss_melee_damage": 200,
+    "citadel_targeting_range_cone_particle": {
+        "value": false,
+        "description": "Whether to draw a particle for targeting cone ranges."
+    },
     "citadel_team_size": 6,
     "citadel_teleporter_enabled_time": 1,
     "citadel_tether_pull_speed": 200,
@@ -2920,16 +3426,14 @@
         "description": "Min Difference between teams to start getting trailing bonuses for Koth/Urn"
     },
     "citadel_trigger_rope_size": 192,
-    "citadel_trooper_aggro_radius": 0,
+    "citadel_trigger_secure_souls_indicator_threshold": 100,
     "citadel_trooper_boss_melee_knockback": 400,
     "citadel_trooper_boss_ping_interval": 10,
     "citadel_trooper_boss_shield_disable_duration": 20,
-    "citadel_trooper_celebration_delay": 1.2,
     "citadel_trooper_crit_multiplier": {
         "value": 1.5,
         "description": "How much to scale damage when landing crits against Troopers"
     },
-    "citadel_trooper_do_neardeath_behavior": false,
     "citadel_trooper_force_idle": false,
     "citadel_trooper_friendly_glow_disabled": {
         "value": true,
@@ -2941,6 +3445,7 @@
     "citadel_trooper_health_model_scale": 1.2,
     "citadel_trooper_health_mult": 1.5,
     "citadel_trooper_health_mult_gametime": 35,
+    "citadel_trooper_hop_down_jumps": false,
     "citadel_trooper_instant_gold_as_dropped_orbs": {
         "value": 2,
         "description": "0=instant gold 1=orbs in experimental only 2=orbs always"
@@ -2959,17 +3464,8 @@
     "citadel_trooper_medic_drops_health_pack": true,
     "citadel_trooper_medics_use_heal_ability": false,
     "citadel_trooper_minion_sight_range": 2000,
-    "citadel_trooper_neutral_aggro_time": 5,
-    "citadel_trooper_neutral_health_growth_pct_per_min": 2.1,
-    "citadel_trooper_neutral_scorer_time_window": {
-        "value": 5,
-        "description": "How long after damaging a neutral are players in the window to be considered scorers."
-    },
-    "citadel_trooper_neutral_sight_range": 1500,
-    "citadel_trooper_new_movement": false,
     "citadel_trooper_offscreen_indicator_range": 35,
     "citadel_trooper_outline_enabled": false,
-    "citadel_trooper_reinforcement_gold_scale": 0.5,
     "citadel_trooper_run_test_path": 0,
     "citadel_trooper_shooting_enabled": true,
     "citadel_trooper_siege_instant_gold_ratio": 0.5,
@@ -3009,7 +3505,6 @@
         "value": 4,
         "description": "How many troopers spawn together in a squad"
     },
-    "citadel_trooper_stuck_detection_duration": 0.2,
     "citadel_trooper_suicide_instant_gold_ratio": {
         "value": 0,
         "description": "What percent of gold is transfered instantly if a trooper suicides."
@@ -3018,8 +3513,12 @@
         "value": 0,
         "description": "What percent of gold is transfered into an orb if a trooper suicides."
     },
-    "citadel_trooper_use_ziplines": true,
-    "citadel_trooper_waypoint_threshold": 48,
+    "citadel_trooper_test_spawner_type": {
+        "value": "normal",
+        "description": "normal | medic | melee"
+    },
+    "citadel_trooper_use_direct_path_movement": true,
+    "citadel_trooper_use_per_tick_think_override": true,
     "citadel_trooper_zipline_leap_speed": 200,
     "citadel_tutorial_ability1_state": 0,
     "citadel_tutorial_ability2_state": 0,
@@ -3088,66 +3587,59 @@
         "value": 5,
         "description": "The number of seconds to wait between refreshes of the active matches while on the watch page"
     },
+    "citadel_unit_query_draw_all": false,
+    "citadel_unit_query_draw_mismatches": true,
+    "citadel_unit_query_draw_registry": false,
+    "citadel_unit_query_stats": false,
+    "citadel_unit_query_validate": false,
     "citadel_unit_status_allies_see_thru_walls": true,
-    "citadel_unit_status_allies_see_thru_walls_max_distance": {
-        "value": 0,
-        "description": "How far to make allied players' unit status show through walls. Use values <= 0 for no limit."
-    },
-    "citadel_unit_status_delta_decay_delay": 0.166667,
+    "citadel_unit_status_breakpoint_line_large_amt": 1000,
+    "citadel_unit_status_breakpoint_line_small_amt": 250,
+    "citadel_unit_status_delta_decay_delay": 0.5,
     "citadel_unit_status_delta_decay_rate": 3,
-    "citadel_unit_status_dpi": 10,
     "citadel_unit_status_draw_local": false,
-    "citadel_unit_status_enabled": true,
+    "citadel_unit_status_enabled": {
+        "value": true,
+        "description": "Show health bars and nameplates above units"
+    },
     "citadel_unit_status_fadeout_dist": {
         "value": 200,
         "description": "How far out of the players effective gun range do we show the health bar"
     },
-    "citadel_unit_status_health_per_minor_pip": 100,
-    "citadel_unit_status_health_per_pip": 100,
-    "citadel_unit_status_health_pips_per_row": 10,
     "citadel_unit_status_healthbar_highlight_speed": 2,
-    "citadel_unit_status_height": 100,
+    "citadel_unit_status_height": 210,
     "citadel_unit_status_hide_names": false,
     "citadel_unit_status_max_distance_distance": 800,
     "citadel_unit_status_max_distance_scale": 1,
     "citadel_unit_status_max_health_per_bar": 1000,
     "citadel_unit_status_max_health_segment_increment": 1000,
-    "citadel_unit_status_max_health_segments": 6,
-    "citadel_unit_status_max_total_bars": 6,
+    "citadel_unit_status_max_total_bars": -1,
     "citadel_unit_status_min_distance_scale": 0.2,
-    "citadel_unit_status_minor_pip_per_major_pip": 5,
-    "citadel_unit_status_old_dpi": 4,
-    "citadel_unit_status_old_draw_local": false,
-    "citadel_unit_status_old_fadeout_dist": {
-        "value": 200,
-        "description": "How far out of the players effective gun range do we show the health bar"
-    },
-    "citadel_unit_status_old_health_pips_per_row": 10,
-    "citadel_unit_status_old_height": 80,
-    "citadel_unit_status_old_hide_names": false,
-    "citadel_unit_status_old_opaque_dist_sq": 50000,
-    "citadel_unit_status_old_show_stats": false,
-    "citadel_unit_status_old_transparent_dist_sq": 0,
-    "citadel_unit_status_old_update_rate": {
-        "value": 30,
-        "description": "How many times per second the unit status can update (0 = every frame)."
-    },
-    "citadel_unit_status_old_width": 100,
     "citadel_unit_status_opaque_dist_sq": 50000,
     "citadel_unit_status_recent_damage_time": 0.25,
-    "citadel_unit_status_show_stats": false,
-    "citadel_unit_status_single_bar_mode": {
+    "citadel_unit_status_show_ally_health_value": {
         "value": false,
-        "description": "Allow only a single health bar, no stacking."
+        "description": "Show health numbers on allied heroes' health bars when they take damage."
     },
-    "citadel_unit_status_stamina_consume_linger": 3,
+    "citadel_unit_status_show_critical_state": true,
+    "citadel_unit_status_show_health_value": true,
+    "citadel_unit_status_show_stats": false,
+    "citadel_unit_status_stamina_consume_linger": 5,
+    "citadel_unit_status_stamina_low_pips": {
+        "value": 1,
+        "description": "Stamina is always shown while the target has this many pips or fewer."
+    },
+    "citadel_unit_status_stamina_low_show_window": {
+        "value": 2.5,
+        "description": "How long a low stamina reading stays trusted without a fresh stamina message."
+    },
     "citadel_unit_status_transparent_dist_sq": 0,
-    "citadel_unit_status_use_new": false,
-    "citadel_unit_status_use_v2": false,
-    "citadel_unit_status_use_v2_for_nonplayers": false,
-    "citadel_unit_status_v2_height": 210,
-    "citadel_unit_status_v2_width": 200,
+    "citadel_unit_status_viewer_damage_match_window": {
+        "value": 0.25,
+        "description": "How long a viewing player damage message and an observed healthbar drop wait for each other before being discarded"
+    },
     "citadel_unit_status_width": 200,
+    "citadel_unit_status_window_scale": 2,
     "citadel_unit_target_button_hint_mode": 0,
     "citadel_unpause_countdown": {
         "value": 3,
@@ -3179,6 +3671,7 @@
         "description": "When set, this will upload replays for server test matches, otherwise they will be discarded"
     },
     "citadel_use_character_proxy": false,
+    "citadel_use_connected_nearest_nav_for_flying_npcs": false,
     "citadel_use_contextual_ping_wheel_option": true,
     "citadel_use_csgo_style_recoil_follow_crosshair": false,
     "citadel_use_fake_lobby_signout_details": {
@@ -3197,17 +3690,21 @@
         "description": "Turns on/off the new minimap"
     },
     "citadel_use_pvs_for_players": false,
-    "citadel_use_shop_component_groupings": {
-        "value": false,
-        "description": "Use new component Grouping"
-    },
     "citadel_use_spectator_team_colors": {
         "value": false,
         "description": "Forces HUD and game to draw team colors as if you are a spectator"
     },
+    "citadel_use_stateful_ready_on_client": {
+        "value": true,
+        "description": "Use a stateful 'IsReadyOnClient' flag, used by stat caching."
+    },
     "citadel_use_ui_keybindings": {
         "value": true,
         "description": "Use UI key bindings otherwise use engine keybindings."
+    },
+    "citadel_use_unit_query_system": {
+        "value": true,
+        "description": "Route the UTIL_FindUnits* family through the cached unit query system instead of the physics broadphase"
     },
     "citadel_use_vertical_healthbars": false,
     "citadel_use_wip_models": {
@@ -3216,6 +3713,10 @@
     },
     "citadel_vanguard_enabled": false,
     "citadel_vanguard_instant_capture": false,
+    "citadel_vdata_open_in_system_editor": {
+        "value": false,
+        "description": "Open vdata nodes in the system editor instead of VData Editor (so it uses the Windows file assocation for .vdata/.vdata_inc)"
+    },
     "citadel_video_preset": {
         "value": 3,
         "description": "Rendering performance level."
@@ -3237,6 +3738,10 @@
     "citadel_voice_all_talk": {
         "value": false,
         "description": "If 1, all players can hear all other players."
+    },
+    "citadel_voicelines_show_unused": {
+        "value": false,
+        "description": "Show the Unused tab (voice lines without subtitles) on the Voice Lines page"
     },
     "citadel_waiting_for_map_load_min_duration": {
         "value": 0,
@@ -3283,9 +3788,9 @@
         "value": true,
         "description": "Keep recoil constant even with fire rate changes."
     },
-    "citadel_weapon_zoom_style": {
-        "value": 1,
-        "description": "0: Original Linear Interpolation. 1: Smooth Approach"
+    "citadel_wheel_bind_hold_time": {
+        "value": 0.3,
+        "description": "How long a single mouse wheel tick counts as holding down the key for binds that requires a held key"
     },
     "citadel_world_bullet_impacts_for_npcs": {
         "value": false,
@@ -3296,23 +3801,11 @@
         "description": "0: Chose direction based solely on camera angle. 1: Chose direction at the moment of attachment, using the player's movement direction."
     },
     "citadel_zipline_animgraph_cuvature_max": 50,
-    "citadel_zipline_arrow_boost_brightness": {
-        "value": 1,
-        "description": "Changes the zipline arrow boost brightness"
-    },
-    "citadel_zipline_arrow_scale": {
-        "value": 1,
-        "description": "Changes the zipline arrow scale"
-    },
-    "citadel_zipline_arrow_scoll_speed": {
-        "value": 1,
-        "description": "Changes the zipline arrow scroll speed"
-    },
-    "citadel_zipline_baselane_speed_mult": 0.7,
-    "citadel_zipline_capture_trigger_max_thickness": 400,
-    "citadel_zipline_capture_trigger_min_thickness": 400,
+    "citadel_zipline_capture_trigger_max_thickness": 1200,
+    "citadel_zipline_capture_trigger_min_thickness": 300,
     "citadel_zipline_capture_trigger_width": 1200,
     "citadel_zipline_curve_sampling_size": 24,
+    "citadel_zipline_node_distance_max": 300,
     "citadel_zipline_nonbaselane_speed_mult": 1.1,
     "citadel_zipline_pendulum_damping": 0.3,
     "citadel_zipline_pendulum_force": 700,
@@ -3335,6 +3828,14 @@
         "value": -1,
         "description": "Changes the percent distance of the yellow lane"
     },
+    "citadel_zipline_ping_along_rope_angle": {
+        "value": 60,
+        "description": "Determine whether a player is aiming at the zipline toward base or away."
+    },
+    "citadel_zipline_ping_targeting_angle": {
+        "value": 6,
+        "description": "Max angle deflection from the cached zipline node that will result in a ping."
+    },
     "citadel_zipline_render_mode": {
         "value": 0,
         "description": "0=Model, 1=Particle, 2=Model+Particle"
@@ -3345,10 +3846,6 @@
     },
     "citadel_zipline_show_lane_colors_for_spectators": false,
     "citadel_zipline_targeting_dot": 0.95,
-    "citadel_zipline_width": {
-        "value": 0.7,
-        "description": "Changes the zipline width"
-    },
     "citadel_zoomed_in_minimap": {
         "value": false,
         "description": "Test zoomed in minimap"
@@ -3383,7 +3880,6 @@
     },
     "cl_aggregate_particles": false,
     "cl_anglespeedkey": 0.67,
-    "cl_animgraph_history_force_temporal_consistency": true,
     "cl_async_client_shatter": {
         "value": true,
         "description": "spawn client glass shards asynchronously during demos or when remotely connected."
@@ -3424,9 +3920,6 @@
         "value": true,
         "description": "Cache sendtables"
     },
-    "cl_cameraoverride_fade_in_amount": 0,
-    "cl_cameraoverride_shadow_depth_bias": 0.006,
-    "cl_cameraoverride_shadow_end": 0.8,
     "cl_change_callback_limit": {
         "value": 0.2,
         "description": "change callback msec warning limit"
@@ -3434,10 +3927,34 @@
     "cl_chat_active": 0,
     "cl_citadel_ability_alt_cast_hold_time": 0.15,
     "cl_citadel_ability_alt_cast_instant_cast_double_tap_timeout": 0.2,
-    "cl_citadel_ability_alt_cast_mode": 2,
     "cl_citadel_ability_test_fail_all": false,
+    "cl_citadel_auto_fire": {
+        "value": false,
+        "description": "Shoot continuously, and press Fire to stop or resume shooting"
+    },
+    "cl_citadel_auto_mantle_backward": {
+        "value": false,
+        "description": "Mantle automatically when moving backward into a ledge while on the ground"
+    },
+    "cl_citadel_auto_mantle_forward": {
+        "value": false,
+        "description": "Mantle automatically when moving forward into a ledge while on the ground"
+    },
+    "cl_citadel_auto_mantle_in_air": {
+        "value": false,
+        "description": "Mantle automatically when moving forward or backward into a ledge while airborne"
+    },
+    "cl_citadel_auto_move": {
+        "value": false,
+        "description": "Double-tap Move Forward to keep moving forward until Move Forward or Move Back is pressed"
+    },
+    "cl_citadel_auto_move_double_tap_time": {
+        "value": 0.3,
+        "description": "Max time between Move Forward presses to toggle auto-move"
+    },
     "cl_citadel_bebop_beam_draw_points": false,
     "cl_citadel_cancel_with_ability_key_enabled": false,
+    "cl_citadel_current_hero_ability_alt_cast_mode_read_only": 2,
     "cl_citadel_items_quickcast_mode": 0,
     "cl_citadel_player_voting_poster_current_hero_id": {
         "value": 0,
@@ -3447,6 +3964,15 @@
     "cl_citadel_quickcast_ability2": 0,
     "cl_citadel_quickcast_ability3": 0,
     "cl_citadel_quickcast_ability4": 0,
+    "cl_citadel_stat_value_cache_enabled": {
+        "value": true,
+        "description": "Enable/disable stat value result caching"
+    },
+    "cl_citadel_stat_value_cache_validate_interval": {
+        "value": 500,
+        "description": "Validate cached stat values against freshly computed results every N hits. 0=off."
+    },
+    "cl_citadel_unit_query_draw_registry": false,
     "cl_citadel_zoom_is_toggle": false,
     "cl_clock_buffer_ticks": {
         "value": 0,
@@ -3502,22 +4028,6 @@
         "value": 1,
         "description": "Cursor size scaling factor."
     },
-    "cl_demo_steadycam_blendframes": {
-        "value": 5,
-        "description": "blend over this many frames"
-    },
-    "cl_demo_steadycam_deflection": {
-        "value": 5,
-        "description": "if camera orientation changes this much update orientation"
-    },
-    "cl_demo_steadycam_enable": {
-        "value": 0,
-        "description": "Stabilize camera orientation/position during demo playback.  1 == remove roll, 2 == steadycam"
-    },
-    "cl_demo_steadycam_radius": {
-        "value": 16,
-        "description": "if camera moves this much from last anchor update anchor"
-    },
     "cl_demo_view_offset_left": {
         "value": 0,
         "description": "View offset during demo playback (+/- 1.25 is a good default for human average left/right eye offset)"
@@ -3546,7 +4056,6 @@
         "value": true,
         "description": "Enable the rendering of the hud"
     },
-    "cl_enable_eye_occlusion": true,
     "cl_ent_joint_axis_size": 4,
     "cl_ent_joint_lines": {
         "value": true,
@@ -3579,15 +4088,16 @@
         "value": 0.25,
         "description": "Set how many seconds the client will extrapolate entities for."
     },
-    "cl_eye_sin_wave": false,
-    "cl_eye_target_override": "[0, 0, 0]",
-    "cl_eye_yaw_multiplier": 1,
     "cl_fasttempentcollision": 5,
     "cl_flushentitypacket": {
         "value": 0,
         "description": "For debugging. Force the engine to flush an entity packet."
     },
     "cl_force_next_signon_to_reset": false,
+    "cl_frame_perf_sample_buffer_max": {
+        "value": 100,
+        "description": "If >0, enable random sampling of frames, and limit random sample buffer size to N.  Set to 0 to disable frame perf sampling entirely."
+    },
     "cl_frametime_summary_report_detailed": {
         "value": true,
         "description": "When a perf report is dumped at the end of the session, should it be detailed?"
@@ -3596,17 +4106,6 @@
         "value": true,
         "description": "Do we invoke PostDataUpdatePreserved callbacks for entities that had no changes but are still in the PVS?"
     },
-    "cl_globallight_depth_bias": -999,
-    "cl_globallight_expansion": 200,
-    "cl_globallight_freeze": false,
-    "cl_globallight_orig_calc_frustum": true,
-    "cl_globallight_shadow_mode": 2,
-    "cl_globallight_slope_scale_depth_bias": -999,
-    "cl_globallight_use_alt_focus_region": false,
-    "cl_globallight_use_optimized_calc_frustum": true,
-    "cl_globallight_use_shaadow_near_offset": true,
-    "cl_globallight_world_bottom_height": 0,
-    "cl_globallight_world_top_height": 4096,
     "cl_glow_brightness": {
         "value": 1,
         "description": "Brightness of player halos"
@@ -3636,7 +4135,7 @@
         "description": "Show breakdown network misdelivery (loss, late delivery, and peak jitter).  0=never, 1=only in poor network conditions, 2=always"
     },
     "cl_hud_telemetry_net_misdelivery_poor": {
-        "value": 5,
+        "value": 2,
         "description": "Packet delivery anomaly rate (0..100) higher than this is considered 'poor'."
     },
     "cl_hud_telemetry_net_misdelivery_show": {
@@ -3746,6 +4245,14 @@
         "description": "Number of triggers before meemop reaches full volume"
     },
     "cl_modifier_parallel_gather_status_effect_updates": false,
+    "cl_modifier_value_cache_enabled": {
+        "value": false,
+        "description": "Enable/disable modifier value result caching"
+    },
+    "cl_modifier_value_cache_validate_interval": {
+        "value": 500,
+        "description": "Validate cached modifier values against freshly computed results every N hits. 0=off."
+    },
     "cl_net_showeventlisteners": {
         "value": false,
         "description": "Show listening addition/removals"
@@ -3754,7 +4261,6 @@
         "value": 0,
         "description": "Dump game events to console (1=client only, 2=all)."
     },
-    "cl_network_quality2": -1,
     "cl_panel_freeze_time_after_press": {
         "value": 0.5,
         "description": "time to freeze mouse/pointer motion after a mouse button press"
@@ -3879,10 +4385,6 @@
         "value": false,
         "description": "Low priority dlights are replaced by high priority ones"
     },
-    "cl_screenmessage_notifytime": {
-        "value": 8,
-        "description": "How long to display screen message text"
-    },
     "cl_sendtable_cache_filename": {
         "value": "sendtables.bin",
         "description": "Send tables cache file"
@@ -3929,7 +4431,6 @@
         "description": "Show user command encoding"
     },
     "cl_simulate_dormant_entities": true,
-    "cl_skel_constraints_enable": true,
     "cl_skeleton_instance_smear_boneflags": {
         "value": false,
         "description": "Smear boneflags across the model.  Costs computation, but tests to make sure your bone flags are consistent."
@@ -3969,6 +4470,10 @@
     "cl_spawngroup_spewresources": {
         "value": false,
         "description": "Spew all manifest add/updates."
+    },
+    "cl_svc_usercmds_delta_validate": {
+        "value": false,
+        "description": "Validate consistency of delta-encoded user commands.  Requires server to have sv_cq_validate_encoded_svc_usercmds enabled."
     },
     "cl_tickpacket_desired_queuelength": {
         "value": 0,
@@ -4030,7 +4535,6 @@
         "value": false,
         "description": "When connecting to local listen server (for example, using the 'map' command), default to loopback=false, which connects to '127.0.0.1' instead of 'loopback'.  This uses the network stack so that fake lag/loss can be simulated."
     },
-    "cl_viewtarget_clamp": true,
     "cl_voice_transmit_lobby": false,
     "cl_voiceenabled": true,
     "cl_vsnd_morph_override_ease_enabled": {
@@ -4063,6 +4567,7 @@
         "value": 3,
         "description": "Raise ground by this much for all cloth that traces the ground; should be 0 ideally"
     },
+    "cloth_interp_rot": false,
     "cloth_iv_dump": 4,
     "cloth_iv_store_back": false,
     "cloth_sim_on_tick": true,
@@ -4164,16 +4669,16 @@
     "csm_res_override_3": 0,
     "csm_shadow_worldview_align_x_to_u": false,
     "csm_shadow_worldview_shear_align_z_to_v": false,
-    "csm_split_log_scalar": 0.85,
     "csm_sst_max_visible_dist": 2000,
     "csm_sst_pushback_distance": {
         "value": 1500,
         "description": "default pushback"
     },
+    "csm_sst_shadow_focus_region_caster_headroom": 256,
     "csm_sst_shadow_focus_region_maxz": 2000,
     "csm_sst_shadow_focus_region_minz": -2000,
+    "csm_sst_vertical_depth_shear_enable": true,
     "csm_viewdir_shadow_bias": 0,
-    "csm_viewmodel_farz": 30,
     "csm_viewmodel_max_shadow_dist": 21,
     "csm_viewmodel_max_visible_dist": 1000,
     "csm_viewmodel_nearz": 0.5,
@@ -4181,10 +4686,6 @@
     "cv_collect_assert_stack_for_gc": {
         "value": false,
         "description": "When enabled and collecting asserts for the GC, this will generate stacks for the asserts"
-    },
-    "d3d_max_feature_level": {
-        "value": "<Not set>",
-        "description": "Report the maximum D3D feature level available."
     },
     "damage_indicator_safe_area": 6,
     "deadlock_chat_mode": {
@@ -4328,14 +4829,6 @@
         "description": "Use this to tell Steam to relaunch the app right after existing"
     },
     "engine_render_only": false,
-    "engine_rendersystem_meets_min_dx_110": {
-        "value": "Unknown",
-        "description": "Rendersystem meets min DX110 feature level (changing this does not change the shader model)."
-    },
-    "engine_rendersystem_meets_min_dx_110_simple": {
-        "value": "Unknown",
-        "description": "Rendersystem meets min DX110 feature level (changing this does not change the shader model)."
-    },
     "engine_rendersystem_shader_model": {
         "value": 0,
         "description": "Rendersystem shader model in use (changing this does not change the shader model)."
@@ -4390,7 +4883,6 @@
         "description": "Duration of ent_skeleton display"
     },
     "ent_skeleton_only_ik_joints": false,
-    "ent_skeleton_snapshot": false,
     "ent_steadystate_batchsize": {
         "value": 20,
         "description": "Max number of entities to transmit to player"
@@ -4407,6 +4899,8 @@
     "ent_test_interpolation": false,
     "ent_text_flags_active": -1,
     "ent_text_no_name_really_i_mean_it": false,
+    "entity_fgd_print_api_mismatch": false,
+    "entity_fgd_require_api_declaration": true,
     "entity_log_load_unserialize": {
         "value": 0,
         "description": "Output unserialization of entities on map load. 0 - off, 1 - client/server, 2 - server, 3 - client"
@@ -4531,8 +5025,12 @@
     "func_breakdmg_club": 1.5,
     "func_breakdmg_explosive": 1.25,
     "func_mover_async_movable_navmesh_updates": true,
+    "func_mover_disable_movement": false,
+    "func_mover_force_transition_start_direction": false,
     "func_mover_get_speed_override": 0,
     "func_mover_imgui_log_count": 30,
+    "func_mover_run_parallel": true,
+    "func_rotator_run_parallel": true,
     "fx_drawmetalspark": {
         "value": true,
         "description": "Draw metal spark effects."
@@ -4582,6 +5080,8 @@
     },
     "hairsim_force_fixed_timestep": true,
     "hairsim_reset": false,
+    "hammer_analytic_grid": true,
+    "hammer_analytic_grid_transparent": true,
     "hammer_bevel_leave_edges": false,
     "hammer_dota_path_falloff": 1,
     "hammer_dota_path_fixup": true,
@@ -4669,8 +5169,8 @@
     },
     "hud_fastswitch": 0,
     "hud_free_cursor": {
-        "value": -1,
-        "description": "If -1 use the hud default, otherwise 0 is disabled, 1 is enabled"
+        "value": 0,
+        "description": "0 is disabled, 1 is enabled"
     },
     "hud_mouselook_always": false,
     "hullivr_edge_merge_tan": {
@@ -4764,10 +5264,6 @@
     "instant_replay_history_limit": {
         "value": 120,
         "description": "Maximum amount of minutes to save history (0 is unlimited)."
-    },
-    "instant_replay_history_limit_low": {
-        "value": 10,
-        "description": "Maximum amount of minutes to save history on low memory (32 bit) systems (0 is unlimited)."
     },
     "iv_parallel_latch": true,
     "iv_parallel_restore": false,
@@ -4865,17 +5361,9 @@
         "value": 0.15,
         "description": "Delay before ice shard's physics kick in to account for client latency"
     },
-    "last_viewed_announce_id": {
-        "value": -1,
-        "description": "Tracks the last announcement ID viewed so we can know when new announcements are available"
-    },
     "lb_allow_shadow_rotation": {
         "value": true,
         "description": "SceneSystem/LightBinner/Shadow Rotation"
-    },
-    "lb_allow_time_sliced_shadow_map_rendering": {
-        "value": true,
-        "description": "Allow time-sliced shadow buffer rendering when enabled via gameinfo.gi"
     },
     "lb_barnlight_shadow_use_precomputed_vis": true,
     "lb_barnlight_shadowmap_scale": {
@@ -4925,6 +5413,14 @@
     },
     "lb_cubemap_normalization_max": 32,
     "lb_cubemap_normalization_roughness_begin": 0.1,
+    "lb_cull_offscreen_bounce_light_shadows": {
+        "value": true,
+        "description": "Skip shadowmaps for offscreen dynamic bounce lights that indirect diffuse isn't going to sample"
+    },
+    "lb_cull_onscreen_bounce_light_shadows": {
+        "value": false,
+        "description": "Skip shadowmaps for *onscreen* dynamic bounce lights which will probably not be visible"
+    },
     "lb_dynamic_shadow_penumbra": {
         "value": true,
         "description": "Adjust shadow penumbra based on light size"
@@ -4977,10 +5473,6 @@
         "value": true,
         "description": "SceneSystem/LightBinner/Enable Lights"
     },
-    "lb_enable_newsum": {
-        "value": true,
-        "description": "SceneSystem/LightBinner/Enable New Sum"
-    },
     "lb_enable_shadow_casting": {
         "value": true,
         "description": "Allow stationary/dynamic lights to cast shadows."
@@ -5012,7 +5504,11 @@
     "lb_override_barn_light_fade_sizes": "[0.05, 0.025]",
     "lb_override_barn_light_fade_sizes_enable": false,
     "lb_override_barn_light_shadow_fade_sizes": "[0.1, 0.05]",
-    "lb_precomputed_shadowmap_depth_bias": 0.0001,
+    "lb_precomputed_shadowmap_depth_bias": 0.00035,
+    "lb_precomputed_shadowmap_depth_bias_perspective": {
+        "value": 0.01,
+        "description": "Depth bias for perspective precomputed shadowmaps, as a fraction of the distance to the light"
+    },
     "lb_precomputed_shadowmap_enable": true,
     "lb_shadow_map_cull_empty_mixed": {
         "value": false,
@@ -5037,11 +5533,27 @@
         "description": "Size, in texels, where we will cull an object in the shadowmap"
     },
     "lb_tile_pixels": 8,
+    "lb_time_sliced_shadow_map_reallocation_age": {
+        "value": 0.7,
+        "description": "Age of cached allocation to be considered for re-allocation"
+    },
+    "lb_time_sliced_shadow_map_reallocation_pct": {
+        "value": 0.2,
+        "description": "Likelyhood we'll re-allocate a timesliced shadowmap (to try to improve packing)"
+    },
+    "lb_time_sliced_shadow_map_rendering_enable": {
+        "value": true,
+        "description": "Allow time-sliced shadow buffer rendering when enabled via gameinfo.gi"
+    },
     "lb_timesliced_shadows_dynamic_size": true,
     "lb_use_ellipsoid_bounds": true,
     "lb_use_illumination_silhouette": {
         "value": true,
         "description": "SceneSystem/LightBinner/Use Illumination Bounds"
+    },
+    "lb_use_illumination_volume": {
+        "value": true,
+        "description": "Disables use of illumination volume (may cause precomputed lighting errors)"
     },
     "leaderboards_cache_duration": 600,
     "legacy_models_supported": {
@@ -5068,7 +5580,6 @@
     },
     "markup_volume_ref_cone_angle": 135,
     "mat_assert_on_error_shader_use": false,
-    "mat_async_shader_load": false,
     "mat_cache_and_skip_commandbuffers": true,
     "mat_cache_renderablepasses": true,
     "mat_colcorrection_disableentities": {
@@ -5081,7 +5592,6 @@
         "description": "Forces color correction entities to be updated on the client"
     },
     "mat_colorcorrection": true,
-    "mat_depthbias_shadowmap": 0.0005,
     "mat_execute_skipbuffers": true,
     "mat_fullbright": {
         "value": 0,
@@ -5096,6 +5606,10 @@
         "description": "Visualize overdraw"
     },
     "mat_overdraw_color": "[0.075, 0.15, 0.3]",
+    "mat_shader_asserts": {
+        "value": false,
+        "description": "Enables DebugDraw_AssertMsg() in Vulkan shaders (S_DEBUG_ASSERTS_ENABLED)."
+    },
     "mat_shader_cache": true,
     "mat_shading_complexity": {
         "value": false,
@@ -5110,7 +5624,6 @@
         "description": "0=Off, 1=Visualize trace from camera, 2=Visualize occlusion, 3=Visualize far field trace from camera"
     },
     "mat_skip_static_const_eval": true,
-    "mat_slopescaledepthbias_shadowmap": 4,
     "mat_tonemap_bloom_scale": -1,
     "mat_tonemap_bloom_start_value": -1,
     "mat_tonemap_force_accelerate_exposure_down": -1,
@@ -5174,7 +5687,7 @@
         "value": false,
         "description": "Enables the ability for the mic to remain open if the window loses focus such as when a caster tabs out to adjust settings"
     },
-    "minimap_add_glow_modifier": false,
+    "minimap_trooper_update_rate_hz": 5,
     "minimap_update_rate_hz": 30,
     "mm_idle_enabled": {
         "value": true,
@@ -5192,31 +5705,14 @@
         "value": false,
         "description": "Prefer being matched with other solo players when not in a party"
     },
-    "mobile_fps_increase_during_charging": {
+    "modifier_cache_force_all_invalidate_on_tick": {
         "value": false,
-        "description": "MOBILE_FPS_CONTROL: If true we increase framerate limit while charging"
+        "description": "Force all modifier values to CacheEnabled_InvalidateOnTick for diagnostics. See modifier_cache_report."
     },
-    "mobile_fps_increase_during_hfr_animations": {
-        "value": true,
-        "description": "MOBILE_FPS_CONTROL: If true we increase framerate limit during HFR-tagged animations and transitions."
+    "modifier_cache_force_all_persist": {
+        "value": false,
+        "description": "Force all modifier values to CacheEnabled (persist) for diagnostics. See modifier_cache_report."
     },
-    "mobile_fps_increase_during_touch": {
-        "value": true,
-        "description": "MOBILE_FPS_CONTROL: If true we increase framerate limit during touch"
-    },
-    "mobile_fps_limit": {
-        "value": 30,
-        "description": "MOBILE_FPS_CONTROL: Mobile FPS limit - 15, 30, 60"
-    },
-    "modifier_capture_data_descs": false,
-    "mortar_sentry_angle_offset_above": 0,
-    "mortar_sentry_angle_offset_below": -1,
-    "mortar_sentry_destroy": false,
-    "mortar_sentry_forced_pitch": 0,
-    "mortar_sentry_no_target_distance": 1500,
-    "mortar_sentry_noise_factor_x": 84,
-    "mortar_sentry_noise_factor_y": 84,
-    "mortar_sentry_use_npc_projectile_calc": false,
     "motdfile": {
         "value": "motd.txt",
         "description": "The MOTD file to load."
@@ -5249,7 +5745,6 @@
         "description": "If non-zero, game will restart in the specified number of seconds"
     },
     "mp_teamplay": false,
-    "mp_tournament": false,
     "multigpu_skip_semaphores": false,
     "multigpu_skip_transfers": false,
     "music_arpeggiator_beat_subdivision": {
@@ -5281,13 +5776,6 @@
         "description": "Seeks into music if resumed during this period of time."
     },
     "name": "unnamed",
-    "nano_rollermine_brake_factor": 0.8,
-    "nano_rollermine_stuck_threshold": 5,
-    "nano_rollermine_stuck_time": 0.25,
-    "nano_rollermine_target_max_range": 1600,
-    "nano_rollermine_turn_speed": 180,
-    "nano_rollermine_vision": 1000,
-    "nano_rollermine_waypoint_threshold": 128,
     "nano_use_los_ultimate": true,
     "nav_attribute_obstacle_draw": false,
     "nav_attribute_obstacle_draw_elements": false,
@@ -5317,6 +5805,7 @@
         "value": 32,
         "description": "The offset of the nav drag volume bottom from center"
     },
+    "nav_draw_area_color_by_game_attribute": false,
     "nav_draw_area_connections": false,
     "nav_draw_area_filled": true,
     "nav_draw_area_gravity": false,
@@ -5371,6 +5860,11 @@
         "value": 0,
         "description": "Set to one to interactively edit the Navigation Mesh. Set to zero to leave edit mode."
     },
+    "nav_edit_draw_navlink_ranges": {
+        "value": true,
+        "description": "Add base metrics horizontal/vertical target range text to the navlink debug label when the movement defines one."
+    },
+    "nav_edit_draw_navlinks": true,
     "nav_edit_use_camera": true,
     "nav_edit_validate": {
         "value": false,
@@ -5443,14 +5937,13 @@
         "description": "For testing using legacy nav data"
     },
     "nav_max_vis_delta_list_length": 64,
-    "nav_msr_test_add_agent": false,
-    "nav_msr_test_add_goal": false,
-    "nav_msr_test_freeze": false,
-    "nav_msr_test_select_agent": false,
-    "nav_msr_test_select_goal": false,
     "nav_navlink_enable_splits": {
         "value": true,
         "description": "Split wide nav links into narrower ones to increase lanes and alleviate 'crossing' effect."
+    },
+    "nav_navlink_range_hysteresis": {
+        "value": 4,
+        "description": "Distance a nav link end target must move past its base metrics range boundary before the split disconnects or reconnects."
     },
     "nav_navlink_save_movable_connections": {
         "value": true,
@@ -5526,16 +6019,25 @@
         "value": 0,
         "description": "Show areas that are potentially visible from the current nav area"
     },
+    "nav_smooth_arrival_enable": false,
+    "nav_smooth_arrival_spline": true,
+    "nav_smooth_arrival_spring": false,
     "nav_smooth_constrain_spline": true,
     "nav_smooth_constrain_spline_relax": 0.006,
     "nav_smooth_constrain_spring": 2,
     "nav_smooth_constrain_spring_relax": 0.01,
+    "nav_smooth_draw_arrival_calc": false,
     "nav_smooth_draw_boundary": 0,
     "nav_smooth_draw_calc": 0,
     "nav_smooth_draw_constraint_spline": false,
     "nav_smooth_draw_constraint_spring": 0,
     "nav_smooth_draw_speed": 0,
-    "nav_smooth_enable": true,
+    "nav_smooth_enable": 1,
+    "nav_smooth_handle_scale": 3,
+    "nav_smooth_navlink_entry_enable": true,
+    "nav_smooth_navlink_entry_spline": true,
+    "nav_smooth_navlink_entry_spring": false,
+    "nav_smooth_push_from_walls": 12,
     "nav_smooth_relax": true,
     "nav_smooth_relax_use_timesteps": false,
     "nav_smooth_spring_const_override": -1,
@@ -5581,7 +6083,6 @@
     "nav_test_boundary_zone_rays_random": false,
     "nav_test_boundary_zone_sphere": 0,
     "nav_test_curve_opt": 0,
-    "nav_test_detour": false,
     "nav_test_find_nearest": {
         "value": false,
         "description": "Calculate the nearest point on the navmesh to the trace point.  Uses selection from nav_select_hull."
@@ -5613,10 +6114,6 @@
         "value": false,
         "description": "Calculate and draw a path from player/camera position to the test position."
     },
-    "nav_test_path_expansion_search": {
-        "value": 0,
-        "description": "Extend nav_test_path by doing an expansion search on that path.  Convar value defines dist."
-    },
     "nav_test_path_lock_goal": {
         "value": false,
         "description": "Lock the pathfinding goal to the current intersection point."
@@ -5625,7 +6122,14 @@
         "value": false,
         "description": "Lock the pathfinding start to the current intersection point."
     },
-    "nav_test_path_move": false,
+    "nav_test_path_npc": {
+        "value": false,
+        "description": "Calculate and draw a path for the selected NPC to the test position."
+    },
+    "nav_test_path_npc_success_radius_when_blocked": {
+        "value": -1,
+        "description": "Calculate and draw a path for the selected NPC to the test position."
+    },
     "nav_test_path_opt": {
         "value": true,
         "description": "Enable path optimization for nav_edit_path paths."
@@ -5650,6 +6154,19 @@
     "nav_test_pos_place": -1,
     "nav_test_ray_space": 0,
     "nav_test_rays": false,
+    "nav_test_rays_use_npc_move": false,
+    "nav_test_search_on_path": {
+        "value": false,
+        "description": "Test the 'on path' search mode for tactical searches. Requires a selected NPC with a current path."
+    },
+    "nav_test_search_on_path_boundary_edges_only": {
+        "value": false,
+        "description": "Activate the 'boundary edges only' constraint when testing the 'on path' search mode for tactical searches."
+    },
+    "nav_test_search_on_path_setgoal": {
+        "value": false,
+        "description": "Test the 'on path' search mode for tactical searches using SetGoal w/ possible path clipping (flips between 2 searches). Requires a selected NPC."
+    },
     "nav_test_smooth": false,
     "nav_test_smooth_extern_push": 0,
     "nav_test_smooth_in_speed": 120,
@@ -5673,8 +6190,8 @@
     "navlocal_lead_out_dist": 18,
     "navlocal_parallel_trace_path_for_obstacle": true,
     "navlocal_path_tight_buffer": 2,
-    "navlocal_start_solid_calc_path": true,
     "navspace_create_water_smooth_connections": true,
+    "navspace_create_water_surface_connections": true,
     "navspace_create_water_transition_connections": true,
     "navspace_draw_changes_blocks": {
         "value": 0,
@@ -5707,21 +6224,61 @@
         "description": "Log packets to files"
     },
     "net_fs_showindirections": false,
-    "net_limit_sv_recv_max_message_size_kb": {
-        "value": 32,
-        "description": "Server will reject message larger than N kb"
+    "net_gather_child_fields_only": {
+        "value": false,
+        "description": "GatherSendProxyResults only walks struct and array fields, skipping scalar fields."
+    },
+    "net_limit_sv_listen_max_message_size_kb": {
+        "value": 3,
+        "description": "Server: max SteamNetworkingSockets message size in kb accepted from a connection that does not yet have a netchan"
+    },
+    "net_limit_sv_listen_recvbuffer_kb": {
+        "value": 16,
+        "description": "Server: SteamNetworkingSockets will not buffer more than N kb from a connection that does not yet have a netchan"
+    },
+    "net_limit_sv_listen_recvbuffer_msg": {
+        "value": 4,
+        "description": "Server: SteamNetworkingSockets will not buffer more than N messages from a connection that does not yet have a netchan"
+    },
+    "net_limit_sv_message_process_time_ms_drop_burst": {
+        "value": 200,
+        "description": "Drop a client if processing their messages consumes more than N ms of CPU time in a burst (token bucket capacity)"
+    },
+    "net_limit_sv_message_process_time_ms_drop_rate": {
+        "value": 20,
+        "description": "Drop a client if processing their messages consumes more than N ms of CPU time per second, sustained (token bucket fill rate)"
+    },
+    "net_limit_sv_message_process_time_ms_warn_burst": {
+        "value": 50,
+        "description": "Warn if processing messages from a client consumes more than N ms of CPU time in a burst (token bucket capacity)"
+    },
+    "net_limit_sv_message_process_time_ms_warn_rate": {
+        "value": 5,
+        "description": "Warn if processing messages from a client consumes more than N ms of CPU time per second, sustained (token bucket fill rate)"
+    },
+    "net_limit_sv_recv_chan_buffer_messages": {
+        "value": 1000,
+        "description": "Max number of source engine messages that can be queued in a netchan receive buffer for an ordinary connection from a client."
+    },
+    "net_limit_sv_recv_chan_msgs_per_frame": {
+        "value": 500,
+        "description": "Max number of source engine messages an ordinary client connection may put in a single network frame.  Exceeding this disconnects the client."
+    },
+    "net_limit_sv_recv_max_frame_size_kb": {
+        "value": 64,
+        "description": "Server will reject uncompressed Source engine frame larger than N kb.  Also sets limit on SteamNetworkingSockets message size"
     },
     "net_limit_sv_recv_segments_per_packet": {
         "value": 50,
-        "description": "Server will reject packets with more than N segments"
+        "description": "Server: SteamNetworkingSockets will reject packets with more than N message segments"
     },
     "net_limit_sv_recvbuffer_kb": {
         "value": 128,
-        "description": "Server will not buffer more than N kb from connected clients"
+        "description": "Server: SteamNetworkingSockets will not buffer more than N kb from connected clients"
     },
     "net_limit_sv_recvbuffer_msg": {
         "value": 100,
-        "description": "Server will not buffer more than N messages from connected clients"
+        "description": "Server: SteamNetworkingSockets will not buffer more than N messages from connected clients"
     },
     "net_log_processing": {
         "value": false,
@@ -5738,6 +6295,10 @@
     "net_max_polymorphic_spew": {
         "value": 5,
         "description": "Max polymorphic variants to spew when spewing a flattened serializer."
+    },
+    "net_message_size_enforce": {
+        "value": 1,
+        "description": "Check declared engine message size limit, and either warn or reject.  Note that this is ignored in -tools mode.  0=ignore, 1=warn/log, 2=warn/assert, 3=reject"
     },
     "net_p2p_listen_dedicated": {
         "value": false,
@@ -5788,7 +6349,6 @@
         "description": "Dump non-loopback udp only"
     },
     "net_skip_redundant_change_callbacks": false,
-    "net_use_delta_property_fastpath": 1,
     "net_use_packet_compression": {
         "value": true,
         "description": "Compress network traffic"
@@ -5819,7 +6379,8 @@
     "npc_hist_filter_npc_index": -1,
     "npc_hist_filter_type": -1,
     "npc_history_record_snapshot": true,
-    "npc_record_snapshot_data": true,
+    "npc_record_skeleton_snapshot": false,
+    "npc_record_snapshot_data": false,
     "npc_steering_scalar": 1,
     "npc_task_text_verbosity": {
         "value": 1,
@@ -5858,12 +6419,12 @@
     "opus_unittest_test_signal": false,
     "orb_display_claim_offset": 10,
     "panorama_2d_translate_no_comp_layer": true,
-    "panorama_alignment_fixes": {
-        "value": true,
-        "description": "Fix alignment issues"
-    },
     "panorama_allow_texture_composition_layer_fast_path": true,
     "panorama_allow_transitions": true,
+    "panorama_apply_styles_for_invisible_parents": {
+        "value": false,
+        "description": "Specifies whether to short circuit applying styles when a parent is invisible."
+    },
     "panorama_assert_loading_panel_type": {
         "value": false,
         "description": "Force style invalidation of the entire panel subtree when adding / removing classes."
@@ -5880,16 +6441,11 @@
         "description": "Force style invalidation of the entire panel subtree when adding / removing classes."
     },
     "panorama_clear_frames_on_device_restore": 2,
-    "panorama_command_reordering": true,
     "panorama_comp_layer_lru_lifetime": 1,
     "panorama_composition_atlas": true,
     "panorama_console_max_autocomplete": 100,
     "panorama_console_max_history": 100,
     "panorama_console_max_lines": 2000,
-    "panorama_content_size_fixes": {
-        "value": true,
-        "description": "Fix content size issues"
-    },
     "panorama_daisy_wheel": {
         "value": "ABXY",
         "description": "Daisy wheel input mode: RS | ABXY"
@@ -5930,6 +6486,7 @@
         "value": 0.5,
         "description": "Multiplier for flick velocity off of actual measured velocity"
     },
+    "panorama_draw_fast_path_img_shadow": true,
     "panorama_draw_text_fast_path": true,
     "panorama_draw_text_fast_path_text_shadow": true,
     "panorama_enable_secondary_layout_pass": true,
@@ -5938,6 +6495,7 @@
         "description": "when set request key focus when a world panel is enabled"
     },
     "panorama_force_active_controller_type": -1,
+    "panorama_force_atlas_clear": false,
     "panorama_force_desired_layout_traverse": {
         "value": false,
         "description": "Force desired layout traverse, even if the cached values are up to date."
@@ -5969,9 +6527,6 @@
         "description": "Should labels try to wrap text before using text-overflow: shrink"
     },
     "panorama_large_dispatch_event_queue": 0,
-    "panorama_max_fps": 120,
-    "panorama_max_oof_overlay_up_fps": 4,
-    "panorama_max_overlay_fps": 60,
     "panorama_max_text_shadow_strength": 10,
     "panorama_might_scroll_no_comp_layer": true,
     "panorama_min_comp_layer_cache_cost": 4096,
@@ -5987,7 +6542,7 @@
     "panorama_show_fps": false,
     "panorama_show_fps_scale": 1,
     "panorama_simple_borders_no_comp_layer": true,
-    "panorama_skip_composition_layer_content_paint": false,
+    "panorama_skip_composition_layer_content_paint": true,
     "panorama_skip_composition_layer_content_paint_tint": false,
     "panorama_spew_layout_invalidates": false,
     "panorama_stats_log_time": 0,
@@ -6000,13 +6555,13 @@
     "panorama_suspend_paint": false,
     "panorama_temp_comp_layer_min_dimension": 512,
     "panorama_track_render_commands": false,
-    "panorama_transform_parents_no_layer_for_perspective": false,
-    "panorama_transforms_no_comp_layer": false,
     "panorama_transition_time_factor": {
         "value": 1,
         "description": "A float representing a scale factor for transitions. 1.0 is normal, 2.0 would be twice as fast as normal, 0.5 half as fast"
     },
+    "panorama_unlink_from_render_tree": true,
     "panorama_use_backbuffer_directly": true,
+    "panorama_use_composite_cmd_for_cached_layers": true,
     "panorama_use_new_occlusion_invalidation": true,
     "panorama_worldpanel_update_cull_distance": 1000,
     "panorama_worldpanel_update_cull_size_threshold": 5,
@@ -6039,17 +6594,10 @@
         "description": "When enabled, a popup will be shown indicating that you have received an invite"
     },
     "pawn_mimic_all": false,
-    "pestilence_drone_brake_factor": 1,
-    "pestilence_drone_healthbar_pos": 80,
-    "pestilence_drone_max_torque": 5,
-    "pestilence_drone_scale": 0.75,
-    "pestilence_drone_stuck_threshold": 4,
-    "pestilence_drone_stuck_time": 0.2,
-    "pestilence_drone_torque_accel": 2,
-    "pestilence_drone_vision": 1024,
-    "pestilence_drone_waypoint_threshold": 128,
+    "periodic_resource_cache_duration_s": 600,
     "pet_preview_gravity": "[0, 0, -800]",
     "pet_preview_underwater": false,
+    "pet_preview_wind": "[0, 0, 0]",
     "phonemedelay": {
         "value": 0,
         "description": "Phoneme delay to account for sound system latency."
@@ -6062,6 +6610,7 @@
         "value": 2,
         "description": "Lod at level at which visemes stops always considering two phonemes, regardless of duration."
     },
+    "phys_agg_world_compounds": false,
     "phys_batch_ray_test": 0,
     "phys_continuous_kinematic_update": 1,
     "phys_cull_internal_mesh_contacts": false,
@@ -6117,11 +6666,6 @@
     "phys_vehicleimpactforcescale": 1.5,
     "phys_visualize_awake_dynamic_only": false,
     "phys_visualize_awake_unattached_only": false,
-    "phys_visualize_traces": false,
-    "phys_wind_force_scale": {
-        "value": 1,
-        "description": "Scale on the force wind applies to physics bodies"
-    },
     "pickup_check_period": 0.25,
     "ping_indicator_safe_area_x": 480,
     "ping_indicator_safe_area_y": 200,
@@ -6133,9 +6677,9 @@
     "ping_wheel_phrase_1": 2,
     "ping_wheel_phrase_2": 4,
     "ping_wheel_phrase_3": 34,
-    "ping_wheel_phrase_4": 18,
+    "ping_wheel_phrase_4": 12,
     "ping_wheel_phrase_5": 5,
-    "ping_wheel_phrase_6": 42,
+    "ping_wheel_phrase_6": 18,
     "ping_wheel_phrase_7": 6,
     "player0_using_joystick": false,
     "player_ping_indicator_boss_offset": 110,
@@ -6165,6 +6709,7 @@
     "prop_nav_obstacle_block_mass_b": -1,
     "prop_nav_obstacle_block_mass_c": -1,
     "proped_attr_logging": false,
+    "proped_focus_logging": false,
     "proped_sync_timings": false,
     "property_editor_use_overlay": true,
     "props_break_apply_radial_forces": true,
@@ -6173,6 +6718,7 @@
         "description": "Maximum prop breakable piece count per frame (-1 = model default)"
     },
     "props_break_radial_force_ratio": 0.33,
+    "pulse_cursor_infinite_loop_detection_threshold": 20000,
     "pulse_save_execution_history": {
         "value": true,
         "description": "Keep a history of all instructions run on a per graph basis."
@@ -6213,15 +6759,23 @@
         "value": false,
         "description": "Always force all engine & tools to render"
     },
+    "r_animatable_mesh_shaders": false,
+    "r_animatable_mesh_shaders_visualize_bounds": false,
     "r_aoproxy_cull_dist": {
         "value": 12,
         "description": "Distance to cull the AO proxy as a factor of size"
     },
+    "r_aoproxy_default_ambient_strength": 1,
+    "r_aoproxy_default_light_cone_angles": "[0.3, 0.3, 0.3, 1]",
+    "r_aoproxy_default_light_cone_strengths": "[3, 8, 1, 4]",
+    "r_aoproxy_default_light_position_0": "[0.816497, 0, 0.57735]",
+    "r_aoproxy_default_light_position_1": "[-0.408248, 0.707107, 0.57735]",
+    "r_aoproxy_default_light_position_2": "[-0.408248, -0.707107, 0.57735]",
+    "r_aoproxy_default_light_position_3": "[0, 0, 1]",
     "r_aoproxy_min_dist": 3,
     "r_aoproxy_min_dist_box": 1,
     "r_arealights": true,
     "r_aspectratio": 0,
-    "r_async_compute_fog": false,
     "r_async_shader_compile_notify_frequency": 10,
     "r_bloom_tent_filter_radius": {
         "value": 0,
@@ -6274,12 +6828,6 @@
         "value": 0,
         "description": "cloak"
     },
-    "r_citadel_cosmic_veil_fade_dist": {
-        "value": 32,
-        "description": "cosmic veil"
-    },
-    "r_citadel_depth_prepass_cull_threshold": 60,
-    "r_citadel_depth_prepass_dynamic_objects": true,
     "r_citadel_depthoffield_aperture_diameter": {
         "value": 0,
         "description": "Depth of field aperture diameter in inches"
@@ -6300,7 +6848,6 @@
         "value": 1,
         "description": "Depth of field sensor size in inches"
     },
-    "r_citadel_disable_npr_lighting": false,
     "r_citadel_distancefield_ao_quality": {
         "value": 0,
         "description": "Distance Field AO quality"
@@ -6359,10 +6906,16 @@
     },
     "r_citadel_distancefield_shadows": true,
     "r_citadel_dlss_settings_mode": 0,
-    "r_citadel_enable_pano_world_blur": {
-        "value": true,
-        "description": "Enable world-blur style"
+    "r_citadel_drop_shadow_direction": {
+        "value": "[0.1, 0.1]",
+        "description": "Drop Shadow Offset"
     },
+    "r_citadel_drop_shadow_flare": {
+        "value": 25,
+        "description": "Percentage the shadow grows in each dimension per 100 game units below the character's feet."
+    },
+    "r_citadel_drop_shadow_max_dist": 2048,
+    "r_citadel_drop_shadow_update_frequency": 1,
     "r_citadel_fog_quality": {
         "value": 1,
         "description": "Fog Quality"
@@ -6400,17 +6953,10 @@
     "r_citadel_gpu_preview_denoise_passes": 3,
     "r_citadel_gpu_preview_denoise_shadow_passes": 1,
     "r_citadel_gpu_preview_denoise_signal_phi": 1,
-    "r_citadel_mboit_bias": 5e-06,
-    "r_citadel_mboit_enabled": {
-        "value": false,
-        "description": "enable moments oit"
-    },
-    "r_citadel_mboit_overestimation": 0.25,
     "r_citadel_mboit_quality": {
         "value": 0,
         "description": "MBOIT quality, 0: 4 Moments"
     },
-    "r_citadel_npr_force_solid_outline": false,
     "r_citadel_npr_outlines": {
         "value": true,
         "description": "Enable/Disable NPR Outlines"
@@ -6424,10 +6970,6 @@
     "r_citadel_render_game": {
         "value": true,
         "description": "Should you render the main game world"
-    },
-    "r_citadel_screenspace_particles_full_res": {
-        "value": true,
-        "description": "Render screen space particles at full resolution"
     },
     "r_citadel_see_thru_walls_opacity": {
         "value": 0.3,
@@ -6456,18 +6998,43 @@
     },
     "r_citadel_shadowdb": 2048,
     "r_citadel_ssao_quality": 3,
-    "r_citadel_ssao_thin_occluder_compensation": 0.5,
     "r_citadel_sun_shadow_slope_scale_depth_bias": 3.54,
     "r_citadel_upscaling": 4,
-    "r_citadel_use_exposure_control_in_panorama_scenes": false,
-    "r_cubemap_normalization": true,
+    "r_colorblindsim_fullscreen_cycletime": {
+        "value": 0,
+        "description": "Cycle between deficiencies, holding at each for this many seconds"
+    },
+    "r_colorblindsim_fullscreen_weight_deuteranopia": {
+        "value": 0,
+        "description": "Deuteranopia simulation weight. Affects ~6% of males & 0.39% of females."
+    },
+    "r_colorblindsim_fullscreen_weight_protanopia": {
+        "value": 0,
+        "description": "Protanopia simulation weight. Affects ~2% of males & 0.04% of females."
+    },
+    "r_colorblindsim_fullscreen_weight_tritanopia": {
+        "value": 0,
+        "description": "Tritanopia simulation weight. Affects ~0.002% of males & 0.001% of females."
+    },
+    "r_colorblindsim_mode": {
+        "value": 1,
+        "description": "0 = off, 1 = fullscreen, 2 = mouse quadrants"
+    },
+    "r_colorblindsim_rendermethod": {
+        "value": 3,
+        "description": "0 = disabled, 1 = render pipeline, 2 = render service, 3 = game ui service"
+    },
     "r_dashboard_render_quality": true,
     "r_decals": 2048,
     "r_decals_additional_offset": 0,
     "r_decals_default_fade_duration": 3,
     "r_decals_default_start_fade": 30,
-    "r_decals_max_on_deformables": 512,
+    "r_decals_max_triangle_anchored": 512,
     "r_decals_overlap_threshold": 0,
+    "r_decals_triangle_max_stretch": {
+        "value": 1.25,
+        "description": "Max stretch (and 1/x compression) ratio a triangle-anchored decal may show relative to its shape at placement. 1 = rigid follow, <= 0 = unlimited."
+    },
     "r_depth_of_field": true,
     "r_directional_lightmaps": true,
     "r_directlighting": {
@@ -6479,8 +7046,6 @@
         "description": "Graphics/Enable Distance Field rendering"
     },
     "r_dlss_preset": 5,
-    "r_dof1_d0": 0.2,
-    "r_dof1_d1": 0.3,
     "r_dof_override": false,
     "r_dof_override_far_blurry": 2000,
     "r_dof_override_far_crisp": 180,
@@ -6492,7 +7057,6 @@
     "r_draw3dskybox": true,
     "r_draw_first_tri_only": false,
     "r_draw_instances": true,
-    "r_draw_overlays": true,
     "r_draw_particle_children_with_parents": {
         "value": -1,
         "description": "Draw particle children with parents (-1=use gameinfo, 0=no, 1=yes)"
@@ -6591,7 +7155,6 @@
     "r_flashlighttracedistcutoff": 128,
     "r_flashlighttracedistwatercutoff": 80,
     "r_flashlightvisualizetrace": false,
-    "r_flush_on_pooled_ib_resize": true,
     "r_force_no_present": {
         "value": false,
         "description": "Force the render device to not present frames."
@@ -6601,10 +7164,6 @@
         "description": "The number of frames to render when a"
     },
     "r_force_thick_hair": false,
-    "r_force_zprepass": {
-        "value": -1,
-        "description": "0: Force z prepass off. 1: Force on. -1: Don't force"
-    },
     "r_frame_sync_enable": true,
     "r_freeze_sceneobjects": false,
     "r_freezeparticles": {
@@ -6658,8 +7217,6 @@
     },
     "r_light_flickering_enabled": true,
     "r_light_sensitivity_mode": false,
-    "r_lighting_only": false,
-    "r_lightmap_bicubic_filtering": true,
     "r_lightmap_set": {
         "value": "lightmaps",
         "description": "Lightmap set to use, only works on map load"
@@ -6710,9 +7267,9 @@
         "value": -1,
         "description": "Override the near clipping plane. -1 means use the default."
     },
-    "r_opaque": true,
     "r_particle_allowprerender": true,
     "r_particle_batch_collections": false,
+    "r_particle_batch_in_fullsort": false,
     "r_particle_cables_cast_shadows": true,
     "r_particle_cables_culling": 1,
     "r_particle_cables_culling_bounds_scale": 1.2,
@@ -6763,6 +7320,7 @@
         "value": true,
         "description": "Disable to get a better look at what's happening offscreen"
     },
+    "r_particle_render_sprites_issue_vizquery": true,
     "r_particle_render_test": {
         "value": false,
         "description": "render particles 100 times and show perf"
@@ -6808,20 +7366,17 @@
         "value": 1200,
         "description": "Maximum visible distance"
     },
-    "r_render_deferred_opaque": true,
-    "r_render_forward_opaque": true,
     "r_render_hair": true,
-    "r_render_portals": true,
-    "r_render_world_node_bounds": {
-        "value": false,
-        "description": "Render world node bounds"
-    },
     "r_renderdoc_auto_shader_pdbs": {
         "value": true,
         "description": "Automatically generate shader debug info on capture"
     },
     "r_renderdoc_capture_thumbnail_rendering": false,
     "r_renderdoc_open_captures": true,
+    "r_renderdoc_show_overlay": {
+        "value": true,
+        "description": "Show RenderDoc overlay"
+    },
     "r_renderdoc_validation_error_capture_limit": 5,
     "r_rendersun": {
         "value": true,
@@ -6865,7 +7420,6 @@
     "r_ssao_radius": 30,
     "r_ssao_strength": 1.2,
     "r_strip_invisible_during_sceneobject_update": false,
-    "r_suppress_redundant_state_changes": true,
     "r_texture_budget_dynamic": {
         "value": true,
         "description": "Dynamically adjust texture streaming budget based on GPU memory usage."
@@ -6911,7 +7465,6 @@
         "value": 0,
         "description": "Biases the mip level the texture streaming system choses to stream for each texture."
     },
-    "r_texture_stream_resolution_bias": 1,
     "r_texture_stream_resolution_bias_decrease_rate": 0.1,
     "r_texture_stream_resolution_bias_increase_rate": 0.05,
     "r_texture_stream_resolution_bias_min": 1,
@@ -6939,6 +7492,7 @@
         "value": true,
         "description": "Enable rendering of translucent geometry"
     },
+    "r_ui_update_parallel_with_server": false,
     "r_update_particles_on_render_only_frames": false,
     "r_use_memory_budget_model": {
         "value": false,
@@ -6987,10 +7541,6 @@
     "r_world_wind_offset_speed": "[0.25, 0.3, 0.2]",
     "r_world_wind_smooth_time": 2,
     "r_world_wind_strength": 40,
-    "r_zprepass_normals": {
-        "value": false,
-        "description": "0: Use normals reconstructed from depth. 1: Output correct normals in z prepass."
-    },
     "ragdoll_biped_settle_duration": 1.5,
     "ragdoll_biped_settle_force": 0.5,
     "ragdoll_biped_settle_lift_force": 0.2,
@@ -7077,10 +7627,6 @@
         "description": "If true, resets the input device when there was a long enough hitch between callbacks."
     },
     "resourcecompiler_log_compile_stats": false,
-    "resourcesystem_multiframe_finalize_time_msec": {
-        "value": 10,
-        "description": "Max time to spend finalizing resources per frame in miliseconds."
-    },
     "rope_averagelight": {
         "value": true,
         "description": "Makes ropes use average of cubemap lighting instead of max intensity."
@@ -7116,6 +7662,7 @@
         "description": "Don't use CPU applying small wind gusts to ropes when they're past this distance."
     },
     "rpg_camera_yaw": 90,
+    "rr_dumpresponses": false,
     "rr_followup_maxdist": {
         "value": 1800,
         "description": "'then ANY' or 'then ALL' response followups will be dispatched only to characters within this distance."
@@ -7142,6 +7689,10 @@
         "value": -1,
         "description": "Report RTX perf stats at N bounces. -1 means no report"
     },
+    "rtx_preview_dynamic_bounce": {
+        "value": true,
+        "description": "Show dynamic bounce lights and real-time emissive as baked bounce in the Hammer GPU lighting preview."
+    },
     "rtx_texture_resolution": {
         "value": 512,
         "description": "Sets the texture resolution the raytracer will mark to stream in"
@@ -7160,16 +7711,12 @@
         "value": 10,
         "description": "Max number of array entries to spew when using SaveRestoreIO spewing."
     },
-    "save_parallel": false,
+    "save_parallel": true,
     "save_screenshot": {
         "value": 2,
         "description": "0 = none, 1 = non-autosave, 2 = always, 3 = bug_only"
     },
     "save_spew": false,
-    "save_version": {
-        "value": 1,
-        "description": "0: (V0) Legacy save format, 1: (V1) KeyValues3 save format, 2: (V2) KV3Transfer saves"
-    },
     "save_write_kv3": {
         "value": false,
         "description": "Write the KV3 entity data as a text file in the save directory"
@@ -7177,6 +7724,10 @@
     "saving_enabled": true,
     "sc_aggregate_bvh": true,
     "sc_aggregate_bvh_threshold": 128,
+    "sc_aggregate_fragment_culling_boxes": {
+        "value": true,
+        "description": "Test aggregate fragments against culling boxes individually instead of per aggregate."
+    },
     "sc_aggregate_fragment_merging": true,
     "sc_aggregate_gpu_culling": {
         "value": true,
@@ -7188,7 +7739,6 @@
         "description": "SceneSystem/Aggregates/Show GPU Culled Meshes"
     },
     "sc_aggregate_gpu_occlusion_culling": true,
-    "sc_aggregate_gpu_vis_culling": true,
     "sc_aggregate_indirect_draw_compaction": {
         "value": true,
         "description": "Use multidrawindirect...count if the driver/hardware supports it"
@@ -7207,6 +7757,7 @@
     },
     "sc_aggregate_rtproxy_instanced_geo": true,
     "sc_aggregate_rtproxy_unique_geo": true,
+    "sc_aggregate_rtproxy_visualize": false,
     "sc_aggregate_show_outside_vis": false,
     "sc_allow_dithered_lod": {
         "value": true,
@@ -7241,6 +7792,7 @@
     "sc_disable_shadow_fastpath": false,
     "sc_disable_spotlight_shadows": false,
     "sc_disable_world_materials": false,
+    "sc_distancefield_visualize_atlas": false,
     "sc_dithered_lod_transition_amt": {
         "value": 0.075,
         "description": "Percentage of the transition between two lods we will apply a dither"
@@ -7252,6 +7804,7 @@
     "sc_enable_discard": true,
     "sc_extended_stats": false,
     "sc_fade_distance_scale_override": -1,
+    "sc_fog_cull": true,
     "sc_force_lod_level": -1,
     "sc_force_materials_batchable": false,
     "sc_force_single_display_list_per_layer": false,
@@ -7283,6 +7836,10 @@
         "value": true,
         "description": "Toggles GPU culling of instanced meshes"
     },
+    "sc_instanced_mesh_gpu_culling_boxes": {
+        "value": true,
+        "description": "Test instanced mesh instances against info_visibility_box culling boxes."
+    },
     "sc_instanced_mesh_gpu_density_culling": {
         "value": true,
         "description": "Toggles density culling (if enabled)"
@@ -7303,10 +7860,6 @@
         "value": 1.75,
         "description": "Bias for LOD selection of instanced meshes in shadowmaps"
     },
-    "sc_instanced_mesh_mesh_shader": {
-        "value": true,
-        "description": "Toggles mesh shader rendering for instanced meshes"
-    },
     "sc_instanced_mesh_motion_vectors": {
         "value": true,
         "description": "Toggles motion vector support for instanced meshes"
@@ -7314,6 +7867,10 @@
     "sc_instanced_mesh_opaque_fade": {
         "value": true,
         "description": "Toggles fade support for instanced meshes"
+    },
+    "sc_instanced_mesh_shadows_batch_across_materials": {
+        "value": false,
+        "description": "Toggles whether mesh shader instanced can batch on reflectivity"
     },
     "sc_instanced_mesh_size_cull_bias": {
         "value": 1.5,
@@ -7327,7 +7884,12 @@
     "sc_layer_batch_threshold": 128,
     "sc_layer_batch_threshold_fullsort": 80,
     "sc_max_framebuffer_copies_per_layer": 1,
+    "sc_mesh_allow_batch_across_primitives": true,
     "sc_mesh_backface_culling": true,
+    "sc_mesh_gpu_occlusion_culling": true,
+    "sc_mesh_gpu_volume_culling": true,
+    "sc_mesh_mesh_shaders": false,
+    "sc_mesh_shadows_batch_across_materials": true,
     "sc_no_cull": false,
     "sc_no_vis": false,
     "sc_only_render_opaque": false,
@@ -7358,8 +7920,16 @@
         "value": false,
         "description": "SceneSystem/View Profiler"
     },
+    "sc_show_vt_stats": {
+        "value": false,
+        "description": "SceneSystem/Virtual Texturing"
+    },
     "sc_skip_traversal": false,
     "sc_spew_cmt_usage": false,
+    "sc_stats_sections": {
+        "value": "SCENE_STATS_FRAME|SCENE_STATS_GEOMETRY|SCENE_STATS_CULLING|SCENE_STATS_MATERIALS|SCENE_STATS_LIGHTING|SCENE_STATS_RAYTRACING|SCENE_STATS_INTERNALS",
+        "description": "Which stats groups to show"
+    },
     "sc_throw_away_all_layers": false,
     "sc_use_clear_subrect": false,
     "sc_view_profiler_frame_averaging": 10,
@@ -7371,13 +7941,13 @@
         "value": "SCENEOBJECT_VIS_NONE",
         "description": "SceneSystem/Visualize SceneObject Mode"
     },
+    "sc_visualize_sceneobjects_meshlets": {
+        "value": "SCENEOBJECT_MESHLET_VIS_NONE",
+        "description": "SceneSystem/Visualize Base SceneObject Meshlets"
+    },
     "scene_clientflex": {
         "value": true,
         "description": "Do client side flex animation."
-    },
-    "scene_maxcaptionradius": {
-        "value": 1200,
-        "description": "Only show closed captions if recipient is within this many units of speaking actor (0==disabled)."
     },
     "scene_panel_rotate_drag": 0.19,
     "scene_panel_rotate_frametime_multiplier": 1,
@@ -7391,21 +7961,9 @@
         "value": false,
         "description": "When playing back, show the directions of faceto events."
     },
-    "scene_showmoveto": {
-        "value": false,
-        "description": "When moving, show the end location."
-    },
     "scene_vcdautosave": {
         "value": false,
         "description": "Create a savegame before VCD playback"
-    },
-    "screenmessage_notifytime": {
-        "value": 8,
-        "description": "How long to display screen message text"
-    },
-    "screenmessage_show": {
-        "value": -1,
-        "description": "Enable display of console messages on screen. 1 = Enabled, 0 = Disabled, -1 = Enabled if vgui is not present"
     },
     "screenshot_height": {
         "value": -1,
@@ -7491,7 +8049,7 @@
         "value": 1,
         "description": "Game skill level."
     },
-    "smartprop_print_timings": false,
+    "smartlineedit_drag_end_defocus": true,
     "smoothstairs": {
         "value": true,
         "description": "Smooth player eye z coordinate when traversing stairs."
@@ -7501,6 +8059,10 @@
         "description": "Spew message to console any time async sound loading blocks on file i/o."
     },
     "snd_autodetect_latency": true,
+    "snd_beatpattern_show_bpm": false,
+    "snd_beatpattern_show_events": false,
+    "snd_beatpattern_show_quantize_queue": false,
+    "snd_beatpattern_use_lookahead": false,
     "snd_boxverb_simd": {
         "value": true,
         "description": "Enable SIMD code path for shoebox reverb processor."
@@ -7554,6 +8116,10 @@
         "value": 1,
         "description": "Game volume"
     },
+    "snd_granulator_imgui": {
+        "value": false,
+        "description": "Game/Granulator Debugger"
+    },
     "snd_group_priority_max_tolerance": 0.05,
     "snd_hrtf_distance_behind": {
         "value": 0,
@@ -7591,6 +8157,10 @@
     "snd_occlusion_report": false,
     "snd_occlusion_visualize": false,
     "snd_op_test_convar": 720,
+    "snd_opvar_set_dome_catchup_distance": 64,
+    "snd_opvar_set_dome_catchup_rate": 1,
+    "snd_opvar_set_dome_churn_fraction": 0.25,
+    "snd_opvar_set_dome_cluster_steps_per_think": 32,
     "snd_opvar_set_point_update_interval": 0.2,
     "snd_opvar_set_point_update_interval_fast": 0.0333,
     "snd_rear_stereo_scale": 1,
@@ -7607,13 +8177,15 @@
         "value": false,
         "description": "If set to 1, report more error found when playing sounds."
     },
-    "snd_sequencer_show_bpm": false,
-    "snd_sequencer_show_events": false,
-    "snd_sequencer_show_quantize_queue": false,
     "snd_showclassname": 0,
     "snd_showstart": 0,
+    "snd_sos_beatpattern_show_operator_updates": false,
     "snd_sos_block_global_stack": false,
     "snd_sos_block_stop_global_stack": true,
+    "snd_sos_capture_soundevent_overwrites": {
+        "value": true,
+        "description": "When enabled, soundevent definitions overwritten while a game is active (e.g. by an addon) are captured and restored when the game deactivates."
+    },
     "snd_sos_enable_nan_check": false,
     "snd_sos_hide_simple_parameter_overwrite_warnings": true,
     "snd_sos_limit_self": false,
@@ -7623,6 +8195,7 @@
     "snd_sos_print_addfield_dupes": false,
     "snd_sos_print_field_references": false,
     "snd_sos_print_fps": false,
+    "snd_sos_print_frametime": false,
     "snd_sos_print_full_field_info": false,
     "snd_sos_print_table_arrays": false,
     "snd_sos_report_entity_deleted": false,
@@ -7657,15 +8230,111 @@
         "value": 0,
         "description": "Index of active HRTF."
     },
+    "snd_steamaudio_ambisonics_correction_type": {
+        "value": 1,
+        "description": "0: Use order-truncated Ambisonics HRTF without correction. 1: Use diffuse field equalization to correct order-truncated Ambisonics HRTFs."
+    },
+    "snd_steamaudio_baked_dimensions_probelookup_usealternate": {
+        "value": false,
+        "description": "Use alternate probe lookup algorithm to query dimensions for listener position based on kd-tree of probe points."
+    },
+    "snd_steamaudio_baked_dimensions_viz_inout_threshold": {
+        "value": -1,
+        "description": "Hammer only. Set between 0 and 1 to color dimensions probes and the smooth surface with a hard cut instead of the continuous ramp: inside / outside below the value is red, at or above is blue. Negative disables."
+    },
+    "snd_steamaudio_baked_occlusion_air_absorption_coefficient": {
+        "value": 0,
+        "description": "Air absorption coefficient sued for baked occlusion calculation."
+    },
     "snd_steamaudio_baked_occlusion_mode": {
         "value": 0,
-        "description": "0: distance ratio only. 1: deviation only (1/r). 2: deviation only (linear). 3: Mode 0 and Mode 1, 4: Mode 0 and Mode 2"
+        "description": "0: distance ratio only. 1: deviation only (1/r). 2: deviation only (linear). 3: Mode 0 and Mode 1, 4: Mode 0 and Mode 2, 5: Mode 2 and exponential pathing delta, 6: reflection energy ratios. 7: no baked value - occlusion is traced per probe pair the way the calc_occlusion_info operator does, then interpolated like any other mode."
+    },
+    "snd_steamaudio_baked_occlusion_pathing_deviation_slope": {
+        "value": 0.1,
+        "description": "Adjust how much occlusion goes does with deviation angle."
+    },
+    "snd_steamaudio_baked_occlusion_pathing_exponent": {
+        "value": 0.1,
+        "description": "Adjust scaling of pathing energy by exponentiall scaling with pathing delta."
+    },
+    "snd_steamaudio_baked_occlusion_probelookup_usealternate": {
+        "value": false,
+        "description": "Use alternate probe lookup algorithm to query occlusion for source and listener position based on kd-tree of probe points."
+    },
+    "snd_steamaudio_baked_occlusion_reflection_factor": {
+        "value": 1,
+        "description": "Adjust scaling for reflection energy when combining it to calculate occlusion value."
+    },
+    "snd_steamaudio_baked_occlusion_reflection_regularization": {
+        "value": 0,
+        "description": "Ambient noise energy to serve as a floor for reflection energy."
+    },
+    "snd_steamaudio_baked_occlusion_spatialfilter_mode": {
+        "value": 0,
+        "description": "0: No spatial filtering. 1: bidirectional spatial filter."
+    },
+    "snd_steamaudio_baked_occlusion_spatialfilter_radius_factor": {
+        "value": 2,
+        "description": "Radius factor to multiply the distance between probes with to get the radius withing which probes are averaged."
+    },
+    "snd_steamaudio_custombake_dimensions_outsidefield_bake_enabled": {
+        "value": true,
+        "description": "Enable baking outside field for probes baking custom dimensions data."
+    },
+    "snd_steamaudio_custombake_dimensions_size_and_inout_bake_enabled": {
+        "value": true,
+        "description": "Enable baking size and inout data for probes when baking custom dimensions data."
+    },
+    "snd_steamaudio_custombake_dimensions_smallsizefield_bake_enabled": {
+        "value": true,
+        "description": "Enable baking insize size field for probes when baking custom dimensions data."
+    },
+    "snd_steamaudio_custombake_occlusion_bidirectional": {
+        "value": false,
+        "description": "Run simulation from both source and listner and average the results. Potential way to reduce noise."
+    },
+    "snd_steamaudio_custombake_occlusion_numsimulations": {
+        "value": 1,
+        "description": "Number of reflection simulations to run when baking occlusion. Potential way to reduce noise."
+    },
+    "snd_steamaudio_customdata_dimensions_inout_mode": {
+        "value": 0,
+        "description": "Inside / outside estimator used when baking dimensions. 0 - direct sky fraction, 1 - multi-bounce escape. Any other value bakes mode 0."
     },
     "snd_steamaudio_default_hrtf_volume_gain": {
         "value": 0,
         "description": "Adjust overall volume of the default HRTF by the specified gain (dB)."
     },
+    "snd_steamaudio_diagnostic_baked_occlusion_single_probe": {
+        "value": -1,
+        "description": "Bake occlusion for a single source probe with the given probe id."
+    },
+    "snd_steamaudio_dimensions_grid_height_max": {
+        "value": 100,
+        "description": "The maximum height (from the ground) we allow probes to be added above the initial layer. (meters)"
+    },
+    "snd_steamaudio_dimensions_max_ray_length": {
+        "value": 0,
+        "description": "0 is disabled, but otherwise sets a limit the maximum ray size in the dimension size calculation. Used to model the enclosure algorithm. Game units"
+    },
+    "snd_steamaudio_display_dimension_data_inside": {
+        "value": true,
+        "description": "When visualizing dimensions data at runtime, draw the inside direction."
+    },
+    "snd_steamaudio_display_dimension_data_outside": {
+        "value": true,
+        "description": "When visualizing dimensions data at runtime, draw the outisde direction."
+    },
+    "snd_steamaudio_display_dimension_data_size": {
+        "value": true,
+        "description": "When visualizing dimensions data at runtime, draw the size of the space."
+    },
     "snd_steamaudio_dynamicpathing_max_samples": 16,
+    "snd_steamaudio_enabe_append_probes_to_cover_navmesh": {
+        "value": true,
+        "description": "Flag to choose whether to append probes to cover nav mesh."
+    },
     "snd_steamaudio_enable_compressed_reverb_lookup": {
         "value": true,
         "description": "Use compressed reverb data if available."
@@ -7677,6 +8346,14 @@
     "snd_steamaudio_enable_editor_profiling": {
         "value": false,
         "description": "Enables tracy profiling when baking steam audio data in Hammer."
+    },
+    "snd_steamaudio_enable_occlusion_caching": {
+        "value": true,
+        "description": "Continue using previous occlusion if probe lookup for occlusion fails."
+    },
+    "snd_steamaudio_enable_ordertruncated_ambisonics_hrtf": {
+        "value": false,
+        "description": "Enable order-truncated Ambisonics HRTF loading."
     },
     "snd_steamaudio_enable_pathing": {
         "value": false,
@@ -7694,9 +8371,9 @@
         "value": 0,
         "description": "Enable Steam Audio Reverb processor."
     },
-    "snd_steamaudio_enable_reverb_probe_caching_for_missing_probes": {
+    "snd_steamaudio_enable_reverb_caching": {
         "value": true,
-        "description": "Continue using previous prrobes if probe lookup for reverb fails."
+        "description": "Continue using previous reverb if probe lookup for reverb fails."
     },
     "snd_steamaudio_hammer_probes_always_render": {
         "value": true,
@@ -7741,6 +8418,10 @@
     "snd_steamaudio_load_reverb_data": {
         "value": true,
         "description": "If set, baked reverb data is loaded. Reset it to zero during an format changes of baked data until all data is updated."
+    },
+    "snd_steamaudio_max_ambisonics_order": {
+        "value": 3,
+        "description": "Maximum order for Ambisonics binaural rendering and Ambisonics panning."
     },
     "snd_steamaudio_max_convolution_sources": {
         "value": 4,
@@ -7793,6 +8474,18 @@
     "snd_steamaudio_num_threads": {
         "value": 2,
         "description": "Sets the number of threads used for realtime reflection by Steam Audio."
+    },
+    "snd_steamaudio_occlusionvisualization_sampleheight": {
+        "value": 1.5,
+        "description": "Height to place samples to query occlusion for visualization."
+    },
+    "snd_steamaudio_occlusionvisualization_sampleradius": {
+        "value": 4,
+        "description": "Query radius to find probes to interpolate occlusion for visualization."
+    },
+    "snd_steamaudio_occlusionvisualization_weighting_option": {
+        "value": 0,
+        "description": "How to blend the probes around a sample. 0 - smooth falloff, 1 - inverse distance, as the runtime does."
     },
     "snd_steamaudio_pathing_caching_threshold": 5,
     "snd_steamaudio_pathing_enable_caching": true,
@@ -7847,10 +8540,6 @@
         "value": -1,
         "description": "If set > 0, overrides how long the decay time is on all mix graphs (in seconds)."
     },
-    "snd_vmix_show_input_updates": {
-        "value": false,
-        "description": "If set to 1, show all incoming updates to vmix inputs."
-    },
     "snd_voipvolume": {
         "value": 1,
         "description": "Voice volume"
@@ -7896,7 +8585,7 @@
         "description": "Disable SST generation and runtime for viewmodel (use original CSM rendering)."
     },
     "sparseshadowtree_enable_rendering": {
-        "value": false,
+        "value": true,
         "description": "Enable use of SST at runtime (static geo rendered into cascades via SST)."
     },
     "sparseshadowtree_leaf_compress_scaleoffset": {
@@ -8057,6 +8746,10 @@
         "value": 0,
         "description": "Tracks an entity in spec mode"
     },
+    "speedometer_ui_enable": {
+        "value": false,
+        "description": "Enables speed testing functionality."
+    },
     "splitscreen_mode": 0,
     "ss_mimic": {
         "value": 0,
@@ -8093,10 +8786,6 @@
     "steam_inputhandler_glyph_lock_mode": {
         "value": 0,
         "description": "0: Automatic (Default) - switch glyphs when a keyboard bind or controller bind activates. 1: Keyboard and Mouse only. 2: Controller Only"
-    },
-    "steamaudio_customdata_dimensions_numrays": {
-        "value": 32768,
-        "description": "Number of rays to trace for estimating inside outside status of a probe."
     },
     "steaminput_glyph_neutral": {
         "value": 0,
@@ -8157,7 +8846,6 @@
         "description": "Don't allow for showing the survey unless a minimum number of games have been played"
     },
     "sv_accelerate": 10,
-    "sv_ag2_low_skel_lod": false,
     "sv_airaccelerate": 10,
     "sv_allchat": {
         "value": true,
@@ -8197,9 +8885,26 @@
     },
     "sv_citadel_ability_test_fail_all": false,
     "sv_citadel_bebop_beam_draw_points": false,
+    "sv_citadel_enemy_player_target_update_time": {
+        "value": 0.1,
+        "description": "How often to update the enemy player target (per pawn)"
+    },
+    "sv_citadel_enemy_player_target_width": {
+        "value": 80,
+        "description": "Setting for the targeting check cylindrical width."
+    },
     "sv_citadel_log_ability_use": false,
     "sv_citadel_log_server_fow_entities": false,
     "sv_citadel_random_strength": 0.35,
+    "sv_citadel_stat_value_cache_enabled": {
+        "value": true,
+        "description": "Enable/disable stat value result caching"
+    },
+    "sv_citadel_stat_value_cache_validate_interval": {
+        "value": 500,
+        "description": "Validate cached stat values against freshly computed results every N hits. 0=off."
+    },
+    "sv_clanserver_gms": false,
     "sv_client_max_interp_ratio": {
         "value": 5,
         "description": "This can be used to limit the value of cl_interp_ratio for connected clients (only while they are connected)."
@@ -8220,6 +8925,7 @@
         "value": false,
         "description": "Print spew related to server clock and ticking"
     },
+    "sv_cloth_interp_rot": false,
     "sv_cluster": {
         "value": 0,
         "description": "Data center cluster this server lives in."
@@ -8228,7 +8934,10 @@
         "value": true,
         "description": "When condensing late commands. Should we compress multiple moves of button presses into the target move?"
     },
-    "sv_connectionless_legacy_events_allowed": false,
+    "sv_cq_delta_encode_svc_usercmds": {
+        "value": true,
+        "description": "Delta encode svc_UserCmds message"
+    },
     "sv_cq_min_queue": {
         "value": 0,
         "description": "Server min buffer size."
@@ -8244,6 +8953,10 @@
     "sv_cq_trim_catchup_remainder": {
         "value": 1,
         "description": "When trimming an overful CQ due to app 'catchup' request, leave at least N more commands than the minimum"
+    },
+    "sv_cq_validate_encoded_svc_usercmds": {
+        "value": false,
+        "description": "VERY EXPENSIVE: serialize non-delta-encoded commands along with delta-encoded for validation"
     },
     "sv_deltaticks_enforce": {
         "value": 2,
@@ -8281,10 +8994,6 @@
         "value": 1,
         "description": "Allow alternate baseline system, set to 2 for debugging spew."
     },
-    "sv_enable_delta_packing": {
-        "value": true,
-        "description": "When enabled, this allows for entity packing to use the property changes for building up the data. This is many times faster, but can be disabled for error checking."
-    },
     "sv_enable_donttransmit": {
         "value": true,
         "description": "When encoding entity deltas, instead of unreliably deducing explicit deletions, actually send list of existing but not networked entities (dont_transmit list) to each client."
@@ -8303,10 +9012,6 @@
     },
     "sv_enable_removearrayelementsoutsidemetadatabounds": false,
     "sv_ent_showonlyhitbox": -1,
-    "sv_ents_write_alarm": {
-        "value": 0,
-        "description": "Print callstack every time CNetworkGameServerBase::WriteEntityUpdate takes more than this amount of milliseconds"
-    },
     "sv_extra_client_connect_time": {
         "value": 15,
         "description": "Seconds after client connect during which extra frames are buffered to prevent non-delta'd update"
@@ -8327,13 +9032,15 @@
         "value": 0,
         "description": "Dedicated server frame rate limiter. 0=tick rate. Only applies to the dedicated server."
     },
+    "sv_frame_perf_sample_buffer_max": {
+        "value": 100,
+        "description": "Same as cl_frame_perf_sample_buffer_max, but for dedicated servers only."
+    },
+    "sv_frame_snapshot_async_delete": false,
+    "sv_frame_snapshot_sort_entities": true,
     "sv_friction": {
         "value": 4,
         "description": "World friction."
-    },
-    "sv_friendly_dmg_immune": {
-        "value": true,
-        "description": "For npc's so marked, don't take damage caused by friendly (D_LI) npc's"
     },
     "sv_gameinstructor_disable": {
         "value": false,
@@ -8393,10 +9100,6 @@
         "value": true,
         "description": "Server will listen for direct UDP connections on the configured port.  This can be turned off to only listen for P2P/SDR connections."
     },
-    "sv_log_change_offsets": {
-        "value": false,
-        "description": "Log change offsets to game/varchangeinfoN.log files."
-    },
     "sv_log_onefile": {
         "value": false,
         "description": "Log server information to only one file."
@@ -8434,17 +9137,9 @@
         "value": false,
         "description": "Register with the GC for matchmaking"
     },
-    "sv_matchperfstats_maxclientperfsamples": {
-        "value": 100,
-        "description": "Don't retain more than N perf samples for any given client"
-    },
     "sv_matchperfstats_send_to_steam": {
         "value": true,
         "description": "Set to false to disable sending match perf stats to steam"
-    },
-    "sv_max_change_offsets": {
-        "value": 48,
-        "description": "How many network changes to track before requiring full diff check."
     },
     "sv_max_queries_sec": {
         "value": 3,
@@ -8512,6 +9207,14 @@
         "value": 21,
         "description": "Time in seconds before mmqueue reservation expires."
     },
+    "sv_modifier_value_cache_enabled": {
+        "value": false,
+        "description": "Enable/disable modifier value result caching"
+    },
+    "sv_modifier_value_cache_validate_interval": {
+        "value": 500,
+        "description": "Validate cached modifier values against freshly computed results every N hits. 0=off."
+    },
     "sv_mover_maxslope": {
         "value": 0.7,
         "description": "The maximum slope the player can overcome [-]"
@@ -8532,10 +9235,6 @@
         "value": true,
         "description": "Track individual field offset changes, rather than a single dirty flag for the whole entity."
     },
-    "sv_networkvar_validate": {
-        "value": false,
-        "description": "Validate each StateChanged against known offsets."
-    },
     "sv_no_navmesh": {
         "value": false,
         "description": "Block loading of the navmesh. Unplayable, only used for memory sampling."
@@ -8550,6 +9249,7 @@
         "description": "Friction during noclip move."
     },
     "sv_noclipspeed": 1200,
+    "sv_noclipspeedscaleonshift": 0.5,
     "sv_outofpvsentityupdates": false,
     "sv_parallel_checktransmit": {
         "value": 0,
@@ -8610,6 +9310,10 @@
         "description": "if true, impact sounds wont play if no soft impact sound is present and the impact is below the hard velocity threshold."
     },
     "sv_phys_visualize_awake": false,
+    "sv_play_stats_AbilityActivenessValue_enabled": {
+        "value": true,
+        "description": "Enable / Disable Play Stat AbilityActivenessValue."
+    },
     "sv_play_stats_CitadelHitMismatch_enabled": {
         "value": false,
         "description": "Enable / Disable Play Stat CitadelHitMismatch."
@@ -8642,13 +9346,25 @@
         "value": true,
         "description": "Enable / Disable Play Stat CitadelServerLobby."
     },
-    "sv_play_stats_CitadelTrooperUnstick_enabled": {
-        "value": false,
-        "description": "Enable / Disable Play Stat CitadelTrooperUnstick."
+    "sv_play_stats_ModifierCacheSummary_enabled": {
+        "value": true,
+        "description": "Enable / Disable Play Stat ModifierCacheSummary."
+    },
+    "sv_play_stats_ModifierCacheValue_enabled": {
+        "value": true,
+        "description": "Enable / Disable Play Stat ModifierCacheValue."
     },
     "sv_play_stats_S2MatchPerf_enabled": {
         "value": true,
         "description": "Enable / Disable Play Stat S2MatchPerf."
+    },
+    "sv_play_stats_StatCacheSummary_enabled": {
+        "value": true,
+        "description": "Enable / Disable Play Stat StatCacheSummary."
+    },
+    "sv_play_stats_StatCacheValue_enabled": {
+        "value": true,
+        "description": "Enable / Disable Play Stat StatCacheValue."
     },
     "sv_player_search_range": 64,
     "sv_player_spray_collision_radius": {
@@ -8692,14 +9408,6 @@
     "sv_rcon_minfailuretime": {
         "value": 30,
         "description": "Number of seconds to track failed rcon authentications"
-    },
-    "sv_recipients_check": {
-        "value": true,
-        "description": "When packing entities, check that recipient bits match for fast path packing."
-    },
-    "sv_recvbuf_messages": {
-        "value": 1024,
-        "description": "Max number of messages that can be queued in a netchan receive buffer for an ordinary connection from a client."
     },
     "sv_regeneration_force_on": {
         "value": false,
@@ -8787,6 +9495,10 @@
         "value": true,
         "description": "Collect CPU usage stats"
     },
+    "sv_steamauth_correct": {
+        "value": false,
+        "description": "Correct behavior"
+    },
     "sv_steamauth_enforce": {
         "value": 2,
         "description": "By default, player must maintain a reliable connection to Steam servers. When player Steam session drops, enforce it: 2 = instantly kick, 1 = kick at next spawn, 0 = do not kick."
@@ -8822,7 +9534,6 @@
         "value": false,
         "description": "Runs the final server tick of the frame in parallel with client work"
     },
-    "sv_tick_snapshot_sort_entities": true,
     "sv_timeout": {
         "value": 20,
         "description": "After this many seconds without a message from fully connected client, the client is dropped"
@@ -8867,7 +9578,6 @@
         "value": false,
         "description": "1 = Unpause the game when pressing ~ to close the console. 0 = Leave the game paused."
     },
-    "sv_use_pvs_cache": true,
     "sv_usenetworkvars": {
         "value": true,
         "description": "Use networkvar system."
@@ -8889,10 +9599,6 @@
         "description": "Specifies which voice codec DLL to use in a game. Set to the name of the DLL without the extension."
     },
     "sv_voiceenable": true,
-    "sv_watchtransmit": {
-        "value": -2,
-        "description": "Watch NetworkStateChanged info for this entity index."
-    },
     "sv_wateraccelerate": 10,
     "sv_waterdist": {
         "value": 12,
@@ -8910,6 +9616,7 @@
         "description": "Auto-join Team Chat when joining a match. Will be overridden by any party settings."
     },
     "team_chat_hold_join_time": 1,
+    "testhero_force_spotted": -1,
     "think_limit": {
         "value": 10,
         "description": "Maximum think time in milliseconds, warning is printed if this is exceeded."
@@ -8934,6 +9641,8 @@
     "toast_manager_override_duration": -1,
     "tool_spawned_model_scales": "[1, 1, 1]",
     "toolhud_enable": true,
+    "toolmodelinstance_slow_setmodel_ms": 250,
+    "tools_detailed_focus_logging": false,
     "tools_renderscenes": true,
     "tools_stall_monitor_break_on_unknown_cause": {
         "value": false,
@@ -9055,7 +9764,6 @@
         "value": 2,
         "description": "Enable delta entity bit stream cache"
     },
-    "tv_demo_starttick": 0,
     "tv_dispatchmode": {
         "value": 1,
         "description": "Dispatch clients to relay proxies: 0=never, 1=if appropriate, 2=always"
@@ -9157,6 +9865,10 @@
         "value": 25,
         "description": "In case of intermittent network problems, how long should playcast retry fragment retrieval before resorting to resync"
     },
+    "tv_playcast_slow_playback_fragment_count": {
+        "value": 3,
+        "description": "Number of fragments we need to have in the buffer before slowing down playback. For use with tv_playcast_slow_playback_when_fragment_requests_fail"
+    },
     "tv_playcast_slow_playback_when_fragment_requests_fail": {
         "value": true,
         "description": "Whether or not we slow playback rate if we start running out of buffered stream fragments."
@@ -9190,6 +9902,10 @@
         "value": true,
         "description": "When enabled, this will use a uniquely generated server code to authenticate relay to relay connections. This code is coordinated via the GC or some external means rather than by clients directly"
     },
+    "tv_relaytextchat": {
+        "value": 1,
+        "description": "Relay text chat data to GOTV: 0=off, 1=say, 2=say+say_team"
+    },
     "tv_relayvoice": {
         "value": true,
         "description": "Relay voice data: 0=off, 1=on"
@@ -9202,7 +9918,6 @@
         "value": false,
         "description": "Bypass secure challenge on TV port"
     },
-    "tv_show_allchat": true,
     "tv_snapshotrate": {
         "value": 20,
         "description": "Snapshots broadcast per second"
@@ -9373,6 +10088,10 @@
         "value": 240,
         "description": "Width of volume fog texture"
     },
+    "vprof_all_threads": {
+        "value": false,
+        "description": "Capture VProf scopes on background threads as well as the target thread. Same option as the All Threads checkbox in the VProf tools -- setting either one updates the other"
+    },
     "vprof_counters": 0,
     "vprof_counters_show_minmax": false,
     "vprof_scope_entity_clientthink": {
@@ -9381,6 +10100,11 @@
     },
     "vprof_scope_entity_thinks": false,
     "vprof_think_limit": false,
+    "vt_page_atlas_size": {
+        "value": 6,
+        "description": "Virtual texture page atlas size in 16k x 16k slices of about 256MB each, 2 to 32 ( 512MB to 8GB ). Changing it evicts every virtual texture tile."
+    },
+    "vt_sim_streaming_delay_ms": 500,
     "vulkan_batch_size": 500,
     "vulkan_batch_submits": true,
     "vulkan_dedicated_allocation_threshold": {
