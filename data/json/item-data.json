@@ -525,6 +525,12 @@
             "BulletResist": 5,
             "TechResist": 5,
             "AbilityCooldown": -10
+        },
+        "CorruptedUpgrades": {
+            "BulletResist": 15,
+            "TechResist": 15,
+            "AbilityCooldown": -15,
+            "ImbuedCooldownMultiplier": -50
         }
     },
     "upgrade_ability_refresher": {
@@ -549,6 +555,9 @@
         "BulletResist": 15,
         "PropertyUpgrades": {
             "AbilityCooldown": -210
+        },
+        "CorruptedUpgrades": {
+            "AbilityCooldown": -160
         }
     },
     "upgrade_absorbing_armor": {
@@ -577,6 +586,12 @@
             "TechPower": 26,
             "CooldownReductionPerHit": 2,
             "TechResist": 5
+        },
+        "CorruptedUpgrades": {
+            "CooldownReduction": 3,
+            "TechResist": 13,
+            "TechPower": 21,
+            "CooldownReductionPerHit": 1
         }
     },
     "upgrade_acolytes_glove": {
@@ -694,7 +709,12 @@
         "AssaultLifestealPercent": 20,
         "AssaultDuration": 3.0,
         "AssaultFireRate": 60,
-        "ExplodeRadius": "3m"
+        "ExplodeRadius": "3m",
+        "CorruptedUpgrades": {
+            "AssaultFireRate": 49,
+            "BulletLifestealPercent": 20,
+            "AssaultLifestealPercent": 16
+        }
     },
     "upgrade_aerial_supremacy": {
         "Name": "Aerial Supremacy",
@@ -810,6 +830,15 @@
             "TechRadiusMultiplier": 10,
             "TechRangeMultiplier": 10,
             "SlowPercent": 12
+        },
+        "CorruptedUpgrades": {
+            "GroundDashReductionPercent": -9,
+            "SlowPercent": 12,
+            "TechRadiusMultiplier": 12,
+            "TechRangeMultiplier": 12,
+            "BonusSprintSpeed": "4.25m",
+            "CaptureRadius": "2.17m",
+            "AbilityCooldown": -22
         }
     },
     "upgrade_aoe_silence": {
@@ -956,6 +985,11 @@
             "BonusBulletSpeedPercent": 55,
             "ProcChance": 20,
             "BaseAttackDamagePercent": 30
+        },
+        "CorruptedUpgrades": {
+            "BonusBulletSpeedPercent": 60,
+            "BaseAttackDamagePercent": 32,
+            "ProcChance": 15
         }
     },
     "upgrade_arcane_eater": {
@@ -1102,6 +1136,14 @@
             "AbilityCooldown": -12,
             "TechResist": 15,
             "FreezeDuration": 0.25
+        },
+        "CorruptedUpgrades": {
+            "SlowPercent": 30,
+            "TechResist": 15,
+            "Damage": 125,
+            "AbilityCooldown": -10,
+            "FreezeDuration": 0.5,
+            "EndRadius": "4m"
         }
     },
     "upgrade_attack_speed_1": {
@@ -1176,6 +1218,13 @@
             "TechResist": 14,
             "AbilityCooldown": -35,
             "VexBarrierCombatBarrier": 450
+        },
+        "CorruptedUpgrades": {
+            "OutOfCombatHealthRegen": 6,
+            "VexBarrierCombatBarrier": 275,
+            "BulletResist": 5,
+            "TechResist": 5,
+            "AbilityCooldown": -30
         }
     },
     "upgrade_banshee_slugs": {
@@ -1209,6 +1258,13 @@
             "HealAmpReceivePenaltyPercent": -25,
             "HealAmpRegenPenaltyPercent": -25,
             "BonusHealth": 150
+        },
+        "CorruptedUpgrades": {
+            "BonusHealth": 225,
+            "BulletResistReduction": -9,
+            "MagicResistReduction": -9,
+            "HealAmpReceivePenaltyPercent": -20,
+            "HealAmpRegenPenaltyPercent": -20
         }
     },
     "upgrade_base": {
@@ -1275,6 +1331,12 @@
             "WeaponPowerPerStack": 3,
             "BulletResist": 8,
             "MaxStacks": 8
+        },
+        "CorruptedUpgrades": {
+            "BulletResist": 12,
+            "WeaponPowerPerStack": 7,
+            "MaxStacks": 3,
+            "DamageDuration": 5
         }
     },
     "upgrade_blitz_bullets": {
@@ -1331,6 +1393,14 @@
             "BonusFireRate": 30,
             "TechResist": 14,
             "OutOfCombatHealthRegen": 8
+        },
+        "CorruptedUpgrades": {
+            "InnateStatusResistancePercent": 8,
+            "TechResist": 12,
+            "OutOfCombatHealthRegen": 6,
+            "BonusFireRate": 35,
+            "StatusResistancePercent": 15,
+            "BonusMoveSpeed": "2m"
         }
     },
     "upgrade_bonus_ability_charge_3": {
@@ -1378,6 +1448,12 @@
             "TechPowerPercent": 10,
             "OutOfCombatHealthRegen": 4,
             "BonusHealth": 100
+        },
+        "CorruptedUpgrades": {
+            "TechPower": 20,
+            "BonusHealth": 125,
+            "TechPowerPercent": 10,
+            "OutOfCombatHealthRegen": 4
         }
     },
     "upgrade_boxing_glove": {
@@ -1425,6 +1501,15 @@
             "BonusMeleeDamagePercent": 10,
             "BonusHealth": 125,
             "AbilityCooldown": -3
+        },
+        "CorruptedUpgrades": {
+            "BonusHealth": 175,
+            "BonusMeleeDamagePercent": 24,
+            "SlowPercent": 12,
+            "SlowDuration": 1,
+            "LifestealHeal": 205,
+            "LifestealHealPercent": 30,
+            "AbilityCooldown": -1
         }
     },
     "upgrade_bullet_armor": {
@@ -1476,6 +1561,12 @@
             "BulletArmorReduction": -6,
             "BonusHealth": 125,
             "BonusSprintSpeed": "3m"
+        },
+        "CorruptedUpgrades": {
+            "BonusHealth": 200,
+            "BonusSprintSpeed": "4.25m",
+            "BulletArmorReduction": -8,
+            "FireRateSlow": 15
         }
     },
     "upgrade_bullet_damage_reduction_aura": {
@@ -1561,6 +1652,14 @@
             "WeaponPowerPerStack": 15,
             "TechRangeMultiplier": 15,
             "TechRadiusMultiplier": 15
+        },
+        "CorruptedUpgrades": {
+            "WeaponPowerPerStack": 15,
+            "WeaponPowerPerStackNonHero": 5,
+            "TechRangeMultiplier": 18,
+            "TechRadiusMultiplier": 18,
+            "NonHeroStackLimit": 4,
+            "AbilityDuration": 6
         }
     },
     "upgrade_burst_fire": {
@@ -1593,6 +1692,13 @@
             "BonusMoveSpeed": "1.5m",
             "BonusFireRate": 14,
             "AbilityCooldown": -1
+        },
+        "CorruptedUpgrades": {
+            "BonusFireRate": 10,
+            "SlideScale": 40,
+            "ActivatedFireRate": 33,
+            "BonusMoveSpeed": "1.25m",
+            "AbilityCooldown": -2.5
         }
     },
     "upgrade_burst_fire_actuator": {
@@ -1698,6 +1804,17 @@
             "DamagePerChain": 25,
             "AbilityCooldown": -32,
             "Damage": 25
+        },
+        "CorruptedUpgrades": {
+            "BonusFireRate": 15,
+            "ChainRadius": "5m",
+            "DamagePerChain": 37,
+            "BonusPerChain": 37,
+            "ChainCount": 2,
+            "ProcCooldown": -0.03,
+            "AbilityCooldown": -15,
+            "SlowDuration": 1,
+            "Damage": 100
         }
     },
     "upgrade_cardio_calibrator": {
@@ -1800,6 +1917,14 @@
         "PropertyUpgrades": {
             "DamagePerChain": 25,
             "BonusPerChain": 25
+        },
+        "CorruptedUpgrades": {
+            "DamagePerChain": 47,
+            "BonusPerChain": 47,
+            "ProcChance": 5,
+            "ProcCooldown": -0.03,
+            "ChainCount": 4,
+            "ChainRadius": "7m"
         }
     },
     "upgrade_charge_mastery": {
@@ -1877,6 +2002,12 @@
             "HealAmpRegenPenaltyPercent": 90,
             "DeathImmunityDuration": 0.5,
             "AbilityCooldown": -20
+        },
+        "CorruptedUpgrades": {
+            "BonusHealth": 300,
+            "BulletResist": 10,
+            "AbilityCooldown": -40,
+            "DeathImmunityDuration": 1.5
         }
     },
     "upgrade_chonky": {
@@ -1907,6 +2038,13 @@
             "BonusHealth": 375,
             "BonusMoveSpeed": "1m",
             "HealLifePercentOutOfCombat": 1
+        },
+        "CorruptedUpgrades": {
+            "BonusHealth": 625,
+            "BonusMoveSpeed": "1.5m",
+            "HealLifePercentOutOfCombat": 2,
+            "RestoreDelay": -3,
+            "HealthThreshold": -15
         }
     },
     "upgrade_clip_size": {
@@ -2098,6 +2236,18 @@
             "AmbushBonusMeleeDamage": 30,
             "AmbushBonusTechPower": 35,
             "AbilityCooldown": -17
+        },
+        "CorruptedUpgrades": {
+            "OutOfCombatHealthRegen": 7,
+            "BonusSprintSpeed": "0.5m",
+            "InvisMoveSpeedMod": "3m",
+            "AmbushBonusFireRate": 35,
+            "AmbushBonusTechPower": 35,
+            "AmbushBonusMeleeDamage": 35,
+            "AmbushDuration": 3,
+            "AbilityDuration": 7,
+            "SpottedRadius": "-6m",
+            "AbilityCooldown": -15
         }
     },
     "upgrade_close_quarter_combat": {
@@ -2131,6 +2281,13 @@
             "MeleeResistPercent": 30,
             "BonusHealth": 150,
             "SlowPercent": 4
+        },
+        "CorruptedUpgrades": {
+            "BonusHealth": 175,
+            "MeleeResistPercent": 40,
+            "CloseRangeBonusWeaponPower": 50,
+            "SlowPercent": 15,
+            "SlowDuration": 1
         }
     },
     "upgrade_close_range": {
@@ -2234,6 +2391,19 @@
             "BuffBulletResist": 10,
             "BuffTechResist": 10,
             "AbilityCooldown": -7
+        },
+        "CorruptedUpgrades": {
+            "BonusBaseHealth": 10,
+            "BaseAttackDamagePercent": 15,
+            "BuffBulletResist": 10,
+            "BuffTechResist": 10,
+            "BonusMeleeDamagePercent": 15,
+            "ModelScaleGrowth": 0.05,
+            "ModelScaleGrowthTooltip": 5,
+            "SlowPercent": 8,
+            "GroundDashReductionPercent": -6,
+            "AbilityCooldown": -15,
+            "AbilityDuration": 2
         }
     },
     "upgrade_containment": {
@@ -2289,6 +2459,10 @@
         "OutOfCombatHealthRegen": 4,
         "PropertyUpgrades": {
             "CooldownReduction": 10,
+            "OutOfCombatHealthRegen": 6
+        },
+        "CorruptedUpgrades": {
+            "CooldownReduction": 17,
             "OutOfCombatHealthRegen": 6
         }
     },
@@ -2357,6 +2531,16 @@
             "HealOnSuccess": 250,
             "BonusMoveSpeed": "2m",
             "AbilityCooldown": -8
+        },
+        "CorruptedUpgrades": {
+            "BonusHealth": 200,
+            "SpiritPowerInnate": 17,
+            "SpiritPower": 20,
+            "HealOnSuccess": 250,
+            "BonusMoveSpeed": "1.25m",
+            "BuffDuration": 3,
+            "SpellParryDuration": 0.2,
+            "AbilityCooldown": -10
         }
     },
     "upgrade_crackshot": {
@@ -2420,6 +2604,12 @@
             "CritDamagePercent": 30,
             "BonusClipSizePercent": 40,
             "ProcChance": 5
+        },
+        "CorruptedUpgrades": {
+            "BonusClipSizePercent": 45,
+            "Radius": "0.27m",
+            "CritDamagePercent": 20,
+            "ProcChance": 10
         }
     },
     "upgrade_crushing_fists": {
@@ -2463,6 +2653,15 @@
             "BonusMeleeDamagePercent": 15,
             "BulletResistReduction": -4,
             "BonusHeavyMeleeDamage": 15
+        },
+        "CorruptedUpgrades": {
+            "MeleeDistanceScale": 40,
+            "BonusMeleeDamagePercent": 18,
+            "BulletResist": 13,
+            "BonusHeavyMeleeDamage": 5,
+            "BulletResistReduction": -2,
+            "LightMeleeAmmo": 10,
+            "StunDuration": 0.5
         }
     },
     "upgrade_damage_recycler": {
@@ -2497,6 +2696,13 @@
             "BonusHealth": 200,
             "TechPower": 15,
             "BaseAttackDamagePercent": 15
+        },
+        "CorruptedUpgrades": {
+            "BonusHealth": 220,
+            "AbilityLifestealPercentHero": 22,
+            "BulletLifestealPercent": 22,
+            "BaseAttackDamagePercent": 23,
+            "TechPower": 23
         }
     },
     "upgrade_debuff_reducer": {
@@ -2544,6 +2750,11 @@
         "BonusHealth": 130,
         "PropertyUpgrades": {
             "DeflectionPercent": 15,
+            "BulletProcDeflectionPercent": 15
+        },
+        "CorruptedUpgrades": {
+            "BonusHealth": 370,
+            "DeflectionPercent": 10,
             "BulletProcDeflectionPercent": 15
         }
     },
@@ -2613,6 +2824,13 @@
             "StatusResistancePercent": 20,
             "BonusHealth": 125,
             "AbilityDuration": 3
+        },
+        "CorruptedUpgrades": {
+            "TechResist": 15,
+            "BonusHealth": 200,
+            "StatusResistancePercent": 15,
+            "AbilityCooldown": -10,
+            "MaxHealthPercentAsDPS": 0.7
         }
     },
     "upgrade_divine_barrier": {
@@ -2649,6 +2867,14 @@
             "AbilityCooldown": -27,
             "TechRadiusMultiplier": 10,
             "TechRangeMultiplier": 10
+        },
+        "CorruptedUpgrades": {
+            "CombatBarrier": 250,
+            "BonusMoveSpeed": "1.25m",
+            "OutOfCombatHealthRegen": 8.5,
+            "AbilityCooldown": -21,
+            "TechRangeMultiplier": 5,
+            "TechRadiusMultiplier": 5
         }
     },
     "upgrade_diviners_kevlar": {
@@ -2678,6 +2904,13 @@
             "TechPower": 55,
             "CombatBarrier": 500,
             "AbilityCooldown": -14
+        },
+        "CorruptedUpgrades": {
+            "CombatBarrier": 700,
+            "TechPower": 30,
+            "BonusAbilityDurationPercent": 15,
+            "UltimateCooldownReduction": 5,
+            "AbilityCooldown": -15
         }
     },
     "upgrade_double_jump": {
@@ -2733,6 +2966,16 @@
             "BonusFireRate": 34,
             "BulletResist": 10,
             "ActiveRadius": "15m"
+        },
+        "CorruptedUpgrades": {
+            "BonusSprintSpeed": "1.5m",
+            "BulletResist": 11,
+            "BonusFireRate": 24,
+            "ActiveBonusMoveSpeed": "1.25m",
+            "Radius": "10m",
+            "ActiveRadius": "10m",
+            "AbilityDuration": 2,
+            "AbilityCooldown": -8
         }
     },
     "upgrade_drum_magazine": {
@@ -2870,6 +3113,12 @@
             "ReloadSpeedMultipler": -3,
             "BonusFireRate": 6,
             "CooldownReduction": 8
+        },
+        "CorruptedUpgrades": {
+            "BonusFireRate": 7,
+            "CooldownReduction": 13,
+            "BuffDuration": 7,
+            "MaxStacks": 2
         }
     },
     "upgrade_endurance": {
@@ -2925,6 +3174,11 @@
             "TechResist": 8,
             "TechArmorDamageReduction": -10,
             "MaxStacks": 6
+        },
+        "CorruptedUpgrades": {
+            "TechResist": 13,
+            "TechArmorDamageReduction": -4,
+            "MagicIncreasePerStack": 1.5
         }
     },
     "upgrade_eternal_gift": {
@@ -2997,6 +3251,11 @@
             "Damage": 120,
             "BulletsBonusMagicDamage": 20,
             "TechPower": 15
+        },
+        "CorruptedUpgrades": {
+            "BonusFireRate": 28,
+            "BonusClipSizePercent": 40,
+            "TechPower": 23
         }
     },
     "upgrade_express_shot": {
@@ -3041,6 +3300,14 @@
             "ProcBaseAttackDamagePercentAltFire": 25,
             "BonusBulletSpeedPercent": 45,
             "BaseAttackDamagePercent": 15
+        },
+        "CorruptedUpgrades": {
+            "BaseAttackDamagePercent": 22,
+            "BonusBulletSpeedPercent": 60,
+            "ProcBaseAttackDamagePercent": 105,
+            "ProcBaseAttackDamagePercentAltFire": 30,
+            "ProcBulletVelocity": 50,
+            "AbilityCooldown": -4
         }
     },
     "upgrade_extra_charge": {
@@ -3096,6 +3363,14 @@
             "FervorFireRate": 20,
             "FervorMovespeed": "3m",
             "FervorStatusResistancePercent": 15
+        },
+        "CorruptedUpgrades": {
+            "BonusFireRate": 10,
+            "BulletLifestealPercent": 15,
+            "BonusHealth": 240,
+            "FervorMovespeed": "2m",
+            "FervorFireRate": 25,
+            "FervorStatusResistancePercent": 20
         }
     },
     "upgrade_fire_rate_aura": {
@@ -3187,6 +3462,15 @@
             "MagicResistReduction": -12,
             "AbilityDuration": 0.25,
             "AbilityCooldown": -12
+        },
+        "CorruptedUpgrades": {
+            "BonusFireRate": 5,
+            "MagicResistReduction": -6,
+            "AbilityCastRange": "10m",
+            "AbilityCooldown": -10,
+            "AbilityDuration": 0.5,
+            "PercentDamage": 20,
+            "TechPowerReduction": -20
         }
     },
     "upgrade_frenzy": {
@@ -3271,6 +3555,16 @@
             "ActiveBonusFireRate": 25,
             "TechResist": 20,
             "BonusHealth": 110
+        },
+        "CorruptedUpgrades": {
+            "BulletLifestealPercent": 21,
+            "BonusHealth": 150,
+            "BaseAttackDamagePercent": 12,
+            "ActiveBonusFireRate": 23,
+            "TechResist": 20,
+            "ActiveBonusMoveSpeed": "1.5m",
+            "AbilityDuration": 1.5,
+            "AbilityCooldown": -5
         }
     },
     "upgrade_galvanic_storm": {
@@ -3347,6 +3641,11 @@
         "PropertyUpgrades": {
             "FireRatePerKill": 8,
             "BaseAttackDamagePercent": 60
+        },
+        "CorruptedUpgrades": {
+            "SlowPercent": 32,
+            "BaseAttackDamagePercent": 70,
+            "FireRatePerKill": 7
         }
     },
     "upgrade_glass_cannon2": {
@@ -3399,6 +3698,12 @@
         "OutgoingDamagePenaltyPercent": -25,
         "PropertyUpgrades": {
             "AbilityCooldown": -40,
+            "AbilityDuration": 0.25
+        },
+        "CorruptedUpgrades": {
+            "SkipFrames": 2,
+            "AbilityCastRange": "15m",
+            "AbilityCooldown": -30,
             "AbilityDuration": 0.25
         }
     },
@@ -3464,6 +3769,13 @@
             "BonusHealth": 175,
             "BulletArmorReduction": -7,
             "AbilityCooldown": -8
+        },
+        "CorruptedUpgrades": {
+            "AbilityCooldown": -4,
+            "AbilityDuration": 1.25,
+            "BonusSprintSpeed": "2.2m",
+            "BonusHealth": 175,
+            "BulletArmorReduction": -7
         }
     },
     "upgrade_grit": {
@@ -3606,6 +3918,15 @@
             "HeadShotBonusDamage": 75,
             "HealPercentPerHeadshot": 4,
             "AbilityCooldown": -3
+        },
+        "CorruptedUpgrades": {
+            "BonusHealth": 200,
+            "BaseAttackDamagePercent": 15,
+            "HeadShotBonusDamage": 150,
+            "HealPercentPerHeadshot": 3,
+            "BonusMoveSpeed": "0.75m",
+            "MovementSpeedBonusDuration": 1.5,
+            "AbilityCooldown": -3
         }
     },
     "upgrade_headshot_booster": {
@@ -3741,6 +4062,14 @@
             "BonusMoveSpeed": "2m",
             "BonusFireRate": 20,
             "BonusHealthRegen": 6
+        },
+        "CorruptedUpgrades": {
+            "OutOfCombatHealthRegen": 6,
+            "BonusFireRate": 25,
+            "HealAmpCastPercent": 20,
+            "TechResist": 5,
+            "BonusHealthRegen": 4,
+            "BonusMoveSpeed": "1.25m"
         }
     },
     "upgrade_healing_booster": {
@@ -3851,6 +4180,13 @@
             "TechRangeMultiplier": 12,
             "TechPower": 12,
             "TotalHealthRegen": 425
+        },
+        "CorruptedUpgrades": {
+            "SpiritPower": 22,
+            "TechRadiusMultiplier": 13,
+            "TechRangeMultiplier": 13,
+            "TotalHealthRegen": 325,
+            "AbilityCooldown": -25
         }
     },
     "upgrade_health_regen_1": {
@@ -3891,7 +4227,12 @@
         "ChannelMoveSpeed": -1,
         "HealInterval": 3,
         "HealAmount": 40,
-        "HealRadius": "9m"
+        "HealRadius": "9m",
+        "CorruptedUpgrades": {
+            "HealAmount": 50,
+            "HealRadius": "5m",
+            "HealInterval": -0.5
+        }
     },
     "upgrade_health_stealing_magic": {
         "Name": "Spirit Lifesteal",
@@ -4025,6 +4366,14 @@
             "BulletArmorReduction": -12,
             "BonusHealth": 150,
             "BaseAttackDamagePercent": 25
+        },
+        "CorruptedUpgrades": {
+            "OutOfCombatHealthRegen": 5.5,
+            "BonusHealth": 175,
+            "BaseAttackDamagePercent": 30,
+            "BulletArmorReduction": -11,
+            "DebuffDuration": 4,
+            "LifeThreshold": -15
         }
     },
     "upgrade_icarus_wings": {
@@ -4104,6 +4453,10 @@
         "PropertyUpgrades": {
             "BonusAbilityDurationPercent": 12,
             "BulletResist": 8
+        },
+        "CorruptedUpgrades": {
+            "BonusAbilityDurationPercent": 17,
+            "BulletResist": 10
         }
     },
     "upgrade_improved_bullet_armor": {
@@ -4129,6 +4482,11 @@
         "PropertyUpgrades": {
             "BulletResist": 10,
             "BulletResistBelowThreshold": 10
+        },
+        "CorruptedUpgrades": {
+            "OutOfCombatHealthRegen": 15,
+            "BulletResist": 15,
+            "BulletResistBelowThreshold": 5
         }
     },
     "upgrade_improved_spirit": {
@@ -4256,6 +4614,15 @@
             "BonusSpirit": 30,
             "BonusHealth": 50,
             "AbilityLifestealPercentHeroPassive": 16
+        },
+        "CorruptedUpgrades": {
+            "AbilityLifestealPercentHero": 30,
+            "AbilityCooldown": -10,
+            "TechPower": 14,
+            "BonusHealth": 100,
+            "TechResist": 5,
+            "AbilityLifestealPercentHeroPassive": 7,
+            "BonusSpirit": 10
         }
     },
     "upgrade_inhibitor": {
@@ -4290,6 +4657,13 @@
             "HealAmpRegenPenaltyPercent": -20,
             "BonusHealth": 125,
             "BaseAttackDamagePercent": 20
+        },
+        "CorruptedUpgrades": {
+            "BonusHealth": 300,
+            "BaseAttackDamagePercent": 15,
+            "OutgoingDamagePenaltyPercent": -15,
+            "HealAmpReceivePenaltyPercent": -15,
+            "BuildUpDuration": 4
         }
     },
     "upgrade_intensifying_clip": {
@@ -4346,6 +4720,13 @@
             "MeleeResistPercent": 15,
             "FireRateSlow": 20,
             "SlowResistancePercent": 15,
+            "BonusHealthRegen": 8
+        },
+        "CorruptedUpgrades": {
+            "SlowResistancePercent": 25,
+            "FireRateSlow": 20,
+            "MeleeResistPercent": 35,
+            "BonusMoveSpeed": "1.5m",
             "BonusHealthRegen": 8
         }
     },
@@ -4514,6 +4895,15 @@
             "BonusAbilityDurationPercent": 15,
             "FlyMoveSpeed": "6m",
             "SummonDuration": -0.3
+        },
+        "CorruptedUpgrades": {
+            "BonusHealth": 100,
+            "AirControlPercent": 35,
+            "BonusAbilityDurationPercent": 15,
+            "TechPower": 16,
+            "GravityScale": -10,
+            "AbilityCooldown": -15,
+            "FlyMoveSpeed": "5m"
         }
     },
     "upgrade_magic_clarity": {
@@ -4648,6 +5038,13 @@
             "CurrentHealthDamage": 5,
             "BonusHealth": 100,
             "Damage": 60
+        },
+        "CorruptedUpgrades": {
+            "CurrentHealthDamage": 4.5,
+            "Damage": 30,
+            "MinimumDamage": -65,
+            "AbilityChargeUpTime": -5,
+            "BonusHealth": 75
         }
     },
     "upgrade_magic_slow": {
@@ -4709,6 +5106,13 @@
             "ImbuedTechPower": 32,
             "FireRateBonus": 18,
             "BonusMoveSpeed": "2m"
+        },
+        "CorruptedUpgrades": {
+            "MoveWhileShootingSpeedPenaltyReductionPercent": 120,
+            "MoveWhileZoomedSpeedPenaltyReductionPercent": 120,
+            "ImbuedTechPower": 37,
+            "FireRateBonus": 25,
+            "BonusMoveSpeed": "2.3m"
         }
     },
     "upgrade_magic_tempo": {
@@ -4876,6 +5280,11 @@
             "GroundDashReductionPercent": 60,
             "AbilityCooldown": -2,
             "BulletResist": 5
+        },
+        "CorruptedUpgrades": {
+            "BulletResist": 21,
+            "AbilityDuration": 1,
+            "AbilityCooldown": -6
         }
     },
     "upgrade_mod_disruptor": {
@@ -4978,6 +5387,13 @@
         "PropertyUpgrades": {
             "AbilityLifestealPercentHero": 25,
             "TechDamagePercent": 20
+        },
+        "CorruptedUpgrades": {
+            "MovementSpeedSlow": 24,
+            "ImbueAbilityLifesteal": 28,
+            "TechDamagePercent": 15,
+            "AbilityLifestealPercentHero": 12,
+            "Radius": "4m"
         }
     },
     "upgrade_mystical_piano": {
@@ -5115,6 +5531,18 @@
             "BonusHealth": 300,
             "NonPlayerBonusWeaponPower": 30,
             "NonPlayerBulletResist": 30
+        },
+        "CorruptedUpgrades": {
+            "OutOfCombatHealthRegen": 6,
+            "NonPlayerBonusWeaponPower": 45,
+            "NonPlayerBulletResist": 20,
+            "BaseAttackDamagePercent": 40,
+            "BonusHealth": 450,
+            "TechRangeMultiplier": 13,
+            "TechRadiusMultiplier": 13,
+            "BonusSoulsPct": 70,
+            "AbilityDuration": 40,
+            "AbilityCooldown": -210
         }
     },
     "upgrade_nullification_aura": {
@@ -5238,7 +5666,11 @@
         "AbilityUnitTargetLimit": 1,
         "AbilityCooldownBetweenCharge": -1.0,
         "ChannelMoveSpeed": -1,
-        "RespawnDelay": 5
+        "RespawnDelay": 5,
+        "CorruptedUpgrades": {
+            "AbilityCooldown": -209,
+            "RespawnDelay": -3
+        }
     },
     "upgrade_phantom_strike": {
         "Name": "Phantom Strike",
@@ -5277,6 +5709,14 @@
             "BaseAttackDamagePercent": 20,
             "AbilityCooldown": -20,
             "ImpactDamage": 100
+        },
+        "CorruptedUpgrades": {
+            "SlowPercent": 16,
+            "BaseAttackDamagePercent": 20,
+            "AbilityCastRange": "15m",
+            "TechPower": 12,
+            "AbilityCooldown": -23,
+            "ImpactDamage": 31.4
         }
     },
     "upgrade_predator_precision": {
@@ -5420,6 +5860,11 @@
             "TechDamageReduction": -15,
             "SilenceDuration": 1.25,
             "TechResist": 15
+        },
+        "CorruptedUpgrades": {
+            "TechDamageReduction": -13,
+            "TechResist": 14,
+            "SilenceDuration": 0.6
         }
     },
     "upgrade_proc_tech_damage": {
@@ -5548,6 +5993,12 @@
             "CooldownReductionOnChargedAbilities": 15,
             "BonusSpiritForChargedAbilities": 20,
             "CooldownBetweenChargeReduction": 5
+        },
+        "CorruptedUpgrades": {
+            "CooldownBetweenChargeReduction": 20,
+            "BonusSpiritForChargedAbilities": 11,
+            "CooldownReductionOnChargedAbilities": 6,
+            "BonusAbilityCharges": 1
         }
     },
     "upgrade_rapid_rounds": {
@@ -5591,7 +6042,12 @@
         "TechPower": 12,
         "SpawnTimePenalty": 30,
         "RespawnDelay": 4,
-        "RespawnHealthPercent": 50
+        "RespawnHealthPercent": 50,
+        "CorruptedUpgrades": {
+            "TechPower": 10,
+            "AbilityCooldown": -84,
+            "RespawnHealthPercent": 43
+        }
     },
     "upgrade_rechargingbullets": {
         "Name": "Recharging Rush",
@@ -5645,6 +6101,13 @@
             "HealOnActivate": 150,
             "TechResist": 20,
             "AbilityCooldown": -25
+        },
+        "CorruptedUpgrades": {
+            "TechResist": 12,
+            "HealOnActivate": 400,
+            "ActiveBonusMoveSpeed": "1.5m",
+            "BuffDuration": 2,
+            "AbilityCooldown": -23
         }
     },
     "upgrade_regenerating_bullet_shield": {
@@ -5724,6 +6187,14 @@
             "BonusClipSizePercent": 30,
             "BonusHealth": 125,
             "WeaponPower": 10
+        },
+        "CorruptedUpgrades": {
+            "BonusHealth": 200,
+            "BaseAttackDamagePercent": 32,
+            "BonusClipSizePercent": 55,
+            "BulletResistPerStack": 3,
+            "MaxArmorStacks": 25,
+            "BulletResistDuration": 11
         }
     },
     "upgrade_reload_speed": {
@@ -5779,6 +6250,14 @@
             "TechRangeMultiplier": 20,
             "HealPercentAmount": 15,
             "AbilityCooldown": -45
+        },
+        "CorruptedUpgrades": {
+            "BonusSprintSpeed": "2.25m",
+            "TechRangeMultiplier": 12,
+            "TechRadiusMultiplier": 12,
+            "HealPercentAmount": 20,
+            "AbilityCastRange": "20m",
+            "AbilityCooldown": -32
         }
     },
     "upgrade_resilience": {
@@ -5842,6 +6321,13 @@
             "HealingPerCast": 60,
             "BonusHealth": 110,
             "BonusMoveSpeed": "1m"
+        },
+        "CorruptedUpgrades": {
+            "HealingPerCast": 65,
+            "Regeneration": 5,
+            "BonusMoveSpeed": "2.25m",
+            "BonusHealth": 230,
+            "AbilityCooldown": -2
         }
     },
     "upgrade_restorative_locket": {
@@ -5942,6 +6428,12 @@
         "PropertyUpgrades": {
             "RicochetDamagePercent": 15,
             "BonusFireRate": 25
+        },
+        "CorruptedUpgrades": {
+            "BonusFireRate": 22,
+            "RicochetRadius": "5m",
+            "RicochetDamagePercent": 15,
+            "RicochetTargets": 1
         }
     },
     "upgrade_rocket_booster": {
@@ -5992,6 +6484,15 @@
             "AbilityCooldown": -35,
             "CombatBarrier": 275,
             "InterruptCooldown": -3
+        },
+        "CorruptedUpgrades": {
+            "AbilityCooldown": -30,
+            "CombatBarrier": 300,
+            "BarrierDuration": 2,
+            "InterruptCooldown": -1.5,
+            "AirControlPercent": 90,
+            "AirControlPercentBarrier": 50,
+            "SlowPercent": 28
         }
     },
     "upgrade_rocket_boots": {
@@ -6015,7 +6516,15 @@
         "JumpVelocityHidden": "22.5m",
         "InterruptCooldown": 4,
         "AirControlPercent": 100,
-        "BonusHealth": 50
+        "BonusHealth": 50,
+        "CorruptedUpgrades": {
+            "TechPower": 12,
+            "BonusHealth": 200,
+            "AirControlPercent": 50,
+            "JumpVelocityHidden": "7.5m",
+            "InterruptCooldown": -2,
+            "AbilityCooldown": -6
+        }
     },
     "upgrade_runed_gauntlets": {
         "Name": "Runed Gauntlets",
@@ -6094,6 +6603,15 @@
             "HealAmpRegenPenaltyPercent": -20,
             "DotHealthPercent": 0.375,
             "AbilityCooldown": -10
+        },
+        "CorruptedUpgrades": {
+            "DotHealthPercent": 1.05,
+            "AbilityCooldown": -13,
+            "AbilityCastRange": "15m",
+            "HealAmpReceivePenaltyPercent": -25,
+            "HealAmpRegenPenaltyPercent": -25,
+            "BonusHealth": 195,
+            "TechPower": 22
         }
     },
     "upgrade_self_bubble": {
@@ -6128,6 +6646,13 @@
             "TechResist": 10,
             "AbilityCooldown": -10,
             "FloatMoveSpeed": "3.5m"
+        },
+        "CorruptedUpgrades": {
+            "TechResist": 15,
+            "BonusSpirit": 10,
+            "BonusMoveSpeed": "1m",
+            "AbilityCooldown": -15,
+            "AbilityDuration": 1
         }
     },
     "upgrade_shadow_step": {
@@ -6229,6 +6754,14 @@
             "BonusAttackRangePercent": 10,
             "BonusBulletSpeedPercent": 45,
             "BaseAttackDamagePercent": 15
+        },
+        "CorruptedUpgrades": {
+            "BaseAttackDamagePercent": 20,
+            "BonusBulletSpeedPercent": 60,
+            "BonusSprintSpeed": "3m",
+            "BonusAttackRangePercent": 10,
+            "BonusZoomPercent": 5,
+            "LongRangeBonusWeaponPower": 40
         }
     },
     "upgrade_shivas_bracelet": {
@@ -6350,6 +6883,12 @@
         "PropertyUpgrades": {
             "HealthStealPctHero": 1.5,
             "BulletResist": 10
+        },
+        "CorruptedUpgrades": {
+            "BaseAttackDamagePercent": 25,
+            "BulletResist": 10,
+            "HealthStealPctHero": 1.5,
+            "StealDuration": 8
         }
     },
     "upgrade_slow_immunity": {
@@ -6494,6 +7033,13 @@
             "TechResist": 15,
             "StatusResistancePercent": 15,
             "AbilityCooldown": -3
+        },
+        "CorruptedUpgrades": {
+            "BonusHealth": 160,
+            "StatusResistancePercent": 10,
+            "TechResist": 12,
+            "SpiritDamageReductionProc": 15,
+            "AbilityCooldown": -4
         }
     },
     "upgrade_spellshield": {
@@ -6547,6 +7093,15 @@
             "MagicResistReduction": -5,
             "AbilityLifestealPercentHero": 10,
             "TechArmorDamageReduction": -10
+        },
+        "CorruptedUpgrades": {
+            "BonusHealth": 175,
+            "AbilityLifestealPercentHero": 15,
+            "MagicResistReduction": -4,
+            "TechArmorDamageReduction": -6,
+            "MaxStacks": 1,
+            "DebuffDuration": 2,
+            "ProcCooldown": -0.5
         }
     },
     "upgrade_spirit_bubble": {
@@ -6630,6 +7185,15 @@
             "TechRangeMultiplier": 12,
             "DPS": 20,
             "ImmunityDuration": -6
+        },
+        "CorruptedUpgrades": {
+            "TechRadiusMultiplier": 12,
+            "TechRangeMultiplier": 12,
+            "DamagePctVsNonHeroes": 55,
+            "ExplosionDamage": 100,
+            "DPS": 31,
+            "ImmunityDuration": -8,
+            "HealAmpReceivePenaltyPercent": -15
         }
     },
     "upgrade_spirit_sap": {
@@ -6706,6 +7270,15 @@
             "TechArmorDamageReduction": -5,
             "TechPowerGain": 35,
             "TechPowerReduction": -35
+        },
+        "CorruptedUpgrades": {
+            "TechPowerReduction": -25,
+            "TechPowerGain": 25,
+            "TechArmorDamageReduction": -8,
+            "TechArmorGain": 8,
+            "SpiritDamage": 100,
+            "BonusHealth": 175,
+            "BonusMeleeDamagePercent": 18
         }
     },
     "upgrade_split_shot": {
@@ -6875,6 +7448,11 @@
             "Stamina": 2,
             "AirMoveIncreasePercent": 40,
             "StaminaCooldownReduction": 15
+        },
+        "CorruptedUpgrades": {
+            "Stamina": 2,
+            "StaminaCooldownReduction": 27,
+            "AirMoveIncreasePercent": 27
         }
     },
     "upgrade_suppressor": {
@@ -6940,6 +7518,16 @@
             "BulletResist": 10,
             "BulletLifestealPercent": 16,
             "BonusHealth": 110
+        },
+        "CorruptedUpgrades": {
+            "ActiveBonusLifesteal": 30,
+            "BaseAttackDamagePercent": 9,
+            "BonusHealth": 75,
+            "BulletLifestealPercent": 7,
+            "BulletResist": 5,
+            "ActiveBonusFireRate": 11,
+            "ActiveReloadPercent": 25,
+            "AbilityCooldown": -10
         }
     },
     "upgrade_target_stun": {
@@ -6976,6 +7564,13 @@
             "TechRangeMultiplier": 6,
             "StunDuration": 0.75,
             "BonusHealth": 75
+        },
+        "CorruptedUpgrades": {
+            "StunDuration": 0.5,
+            "AbilityCooldown": -19,
+            "BonusHealth": 150,
+            "TechRangeMultiplier": 9,
+            "TechRadiusMultiplier": 9
         }
     },
     "upgrade_targeted_silence": {
@@ -7016,6 +7611,14 @@
             "AbilityCooldown": -10,
             "Damage": 125,
             "BonusHealth": 75
+        },
+        "CorruptedUpgrades": {
+            "AbilityDuration": 1.25,
+            "AbilityCooldown": -22,
+            "CooldownOnMiss": -22,
+            "Damage": 175,
+            "AbilityCastRange": "20m",
+            "BonusHealth": 225
         }
     },
     "upgrade_tech_armor": {
@@ -7088,6 +7691,13 @@
         "PropertyUpgrades": {
             "BonusHealth": 75,
             "DamagePulseAmount": 30
+        },
+        "CorruptedUpgrades": {
+            "DamagePulseAmount": 20,
+            "DamagePulseRadius": "4m",
+            "BonusHealth": 150,
+            "MeleeResistPercent": 17,
+            "AbilityCooldown": -0.5
         }
     },
     "upgrade_tech_defense_shredders": {
@@ -7154,6 +7764,15 @@
             "AbilityLifestealPercentHero": 15,
             "BonusHealth": 80,
             "TechPower": 9
+        },
+        "CorruptedUpgrades": {
+            "BonusSpiritLifesteal": 15,
+            "BonusHealth": 85,
+            "BonusSpirit": 25,
+            "BonusAbilityDurationPercent": 5,
+            "AbilityLifestealPercentHero": 5,
+            "TechPower": 6,
+            "BonusFireRate": 20
         }
     },
     "upgrade_tech_purge": {
@@ -7179,6 +7798,12 @@
         "PropertyUpgrades": {
             "TechResist": 10,
             "TechResistBelowThreshold": 10
+        },
+        "CorruptedUpgrades": {
+            "OutOfCombatHealthRegen": 15,
+            "TechResist": 15,
+            "TechResistBelowThreshold": 5,
+            "HealthThreshold": 15
         }
     },
     "upgrade_tech_range": {
@@ -7206,6 +7831,11 @@
             "TechResist": 10,
             "TechRadiusMultiplier": 20,
             "TechRangeMultiplier": 20
+        },
+        "CorruptedUpgrades": {
+            "TechRangeMultiplier": 20,
+            "TechRadiusMultiplier": 20,
+            "TechResist": 10
         }
     },
     "upgrade_thermal_detonator": {
@@ -7267,6 +7897,16 @@
             "DPSMax": 30,
             "BulletArmorReduction": -8,
             "SpiritPower": 15
+        },
+        "CorruptedUpgrades": {
+            "SpiritPower": 20,
+            "DPS": 40,
+            "DPSMax": 80,
+            "DPSIncrease": 5.5,
+            "BulletArmorReduction": -5,
+            "Radius": "5m",
+            "AbilityDuration": 3,
+            "AbilityCooldown": -11
         }
     },
     "upgrade_timeless_emblem": {
@@ -7382,6 +8022,14 @@
             "HealAmpReceivePenaltyPercent": -30,
             "HealAmpRegenPenaltyPercent": -30,
             "DotHealthPercent": 0.7
+        },
+        "CorruptedUpgrades": {
+            "DotHealthPercent": 1.1,
+            "DotDuration": 2,
+            "BuildUpPerShot": 0.72,
+            "HealAmpReceivePenaltyPercent": -25,
+            "HealAmpRegenPenaltyPercent": -25,
+            "DotMultiplerTroopers": 0.5
         }
     },
     "upgrade_transcendent_cooldown": {
@@ -7409,6 +8057,11 @@
             "ItemCooldownReduction": 10,
             "OutOfCombatHealthRegen": 10,
             "CooldownReduction": 15
+        },
+        "CorruptedUpgrades": {
+            "CooldownReduction": 12,
+            "ItemCooldownReduction": 15,
+            "OutOfCombatHealthRegen": 6
         }
     },
     "upgrade_trophy_collector": {
@@ -7480,6 +8133,15 @@
             "Damage": 100,
             "BonusSprintSpeed": "5m",
             "StunDuration": 0.75
+        },
+        "CorruptedUpgrades": {
+            "SlowPercent": 60,
+            "MovementSpeedSlow": 16,
+            "GroundDashReductionPercent": -10,
+            "BonusHealth": 275,
+            "BonusSprintSpeed": "2.25m",
+            "StunDuration": 0.65,
+            "Damage": 100
         }
     },
     "upgrade_unstable_concoction": {
@@ -7544,6 +8206,12 @@
             "BonusHealth": 75,
             "AbilityCooldown": -35,
             "StatusResistancePercent": 15
+        },
+        "CorruptedUpgrades": {
+            "BonusHealth": 175,
+            "StatusResistancePercent": 10,
+            "AbilityCooldown": -30,
+            "AbilityDuration": 1
         }
     },
     "upgrade_vampire": {
@@ -7614,6 +8282,16 @@
             "BonusMoveSpeed": "4m",
             "OutOfCombatHealthRegen": 8,
             "BonusSprintSpeed": "12m"
+        },
+        "CorruptedUpgrades": {
+            "BonusHealth": 175,
+            "SpiritPower": 15,
+            "BonusSprintSpeed": "2m",
+            "OutOfCombatHealthRegen": 3,
+            "HealOnVeil": 165,
+            "InvisDuration": 3,
+            "BonusMoveSpeed": "2.5m",
+            "AbilityCooldown": -5
         }
     },
     "upgrade_vex_barrier": {
@@ -7673,6 +8351,12 @@
             "BulletResist": 20,
             "AbilityCastRange": "9m",
             "AbilityCooldown": -3
+        },
+        "CorruptedUpgrades": {
+            "BulletResist": 20,
+            "CasterBuffDuration": 2,
+            "AbilityCastRange": "2m",
+            "AbilityCooldown": -8
         }
     },
     "upgrade_weapon_backstabber": {
@@ -7892,6 +8576,14 @@
             "BaseAttackDamagePercent": 35,
             "SlowPercent": 16,
             "GroundDashReductionPercent": -8
+        },
+        "CorruptedUpgrades": {
+            "BaseAttackDamagePercent": 40,
+            "StatusResistancePercent": 23,
+            "SlowPercent": 12,
+            "GroundDashReductionPercent": -12,
+            "SlowDuration": 1.5,
+            "BuildUpPerShot": 0.3
         }
     },
     "upgrade_withering_whip": {
