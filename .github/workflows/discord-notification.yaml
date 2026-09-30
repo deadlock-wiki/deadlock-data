@@ -1,0 +1,26 @@
+name: Discord Notification
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'data/**'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Send Discord notification
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          REPO_URL: "https://github.com/${{ github.repository }}"
+          COMMIT_SHA: ${{ github.sha }}
+          COMMIT_MSG: ${{ github.event.head_commit.message }}
+        run: |
+          chmod +x .github/workflows/scripts/send-discord-notification.sh
+          .github/workflows/scripts/send-discord-notification.sh
