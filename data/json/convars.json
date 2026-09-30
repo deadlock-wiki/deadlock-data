@@ -1724,6 +1724,18 @@
         "value": 100,
         "description": "If an enemy is this far, then we never send a stamina consume usermessage to enemies."
     },
+    "citadel_enemy_damage_delta_color_b": {
+        "value": 91,
+        "description": "Blue channel of the color used for the part of an enemy health bar just lost to damage."
+    },
+    "citadel_enemy_damage_delta_color_g": {
+        "value": 229,
+        "description": "Green channel of the color used for the part of an enemy health bar just lost to damage."
+    },
+    "citadel_enemy_damage_delta_color_r": {
+        "value": 255,
+        "description": "Red channel of the color used for the part of an enemy health bar just lost to damage."
+    },
     "citadel_enemy_ui_color_b": {
         "value": 50,
         "description": "Blue channel of the color used for enemy health bars and other enemy indicators in the UI."
@@ -1739,6 +1751,18 @@
     "citadel_enemy_visible_upon_reveal_duration": {
         "value": 0.7,
         "description": "How long an enemy appears through walls (outline or ui icon) after taking damage. Must also have fog of war visibility."
+    },
+    "citadel_enemy_zipline_color_b": {
+        "value": 38,
+        "description": "Blue channel of the color used for enemy ziplines and enemy objectives on the minimap."
+    },
+    "citadel_enemy_zipline_color_g": {
+        "value": 55,
+        "description": "Green channel of the color used for enemy ziplines and enemy objectives on the minimap."
+    },
+    "citadel_enemy_zipline_color_r": {
+        "value": 140,
+        "description": "Red channel of the color used for enemy ziplines and enemy objectives on the minimap."
     },
     "citadel_english_hero_names": false,
     "citadel_english_mod_names": false,
@@ -2360,7 +2384,6 @@
         "description": "[New Abandon Rules] Time for the 'early' trigger to take effect. Match will not be scored, etc."
     },
     "citadel_new_mini_radial_delay_time": 0.125,
-    "citadel_new_ping_coyote_time": 0.125,
     "citadel_new_ping_fow_window": {
         "value": 2,
         "description": "How long after an enemy drops off shared team vision they can still be pinged, in seconds."
@@ -2368,6 +2391,10 @@
     "citadel_new_ping_free_cursor_world_trace": {
         "value": false,
         "description": "Allow free cursor pings to trace through the HUD into the world (entities and ziplines)."
+    },
+    "citadel_new_ping_hitbox_self_test": {
+        "value": false,
+        "description": "When tracing in free cursor mode, turn on a more expensive trace vs the local player model (nearer objects will undergo more scrutiny)"
     },
     "citadel_new_ping_minimap_left_click": {
         "value": true,
@@ -3105,7 +3132,7 @@
     },
     "citadel_shop_scroll_snap_to_tiers": {
         "value": true,
-        "description": "Snap mouse wheel scrolling in the shop's filtered tab to price tiers. The arrow keys step a tier either way."
+        "description": "Snap mouse wheel scrolling in the shop's filtered tab to price tiers. The tier keybinds step a tier either way."
     },
     "citadel_shop_search_use_name_only": {
         "value": false,
@@ -3608,6 +3635,10 @@
     },
     "citadel_unit_status_healthbar_highlight_speed": 2,
     "citadel_unit_status_height": 210,
+    "citadel_unit_status_hero_name_mode": {
+        "value": 0,
+        "description": "Name shown above hero health bars. 0: player name, 1: hero name, 2: none"
+    },
     "citadel_unit_status_hide_names": false,
     "citadel_unit_status_max_distance_distance": 800,
     "citadel_unit_status_max_distance_scale": 1,
@@ -3615,6 +3646,38 @@
     "citadel_unit_status_max_health_segment_increment": 1000,
     "citadel_unit_status_max_total_bars": -1,
     "citadel_unit_status_min_distance_scale": 0.2,
+    "citadel_unit_status_name_fade_end_dist": {
+        "value": 35,
+        "description": "Distance in meters from the camera at which names above health bars are fully faded out"
+    },
+    "citadel_unit_status_name_fade_start_dist": {
+        "value": 25,
+        "description": "Distance in meters from the camera at which names above health bars start fading out"
+    },
+    "citadel_unit_status_offset_player_min_z": {
+        "value": 50,
+        "description": "Min z offset for character's whose offset attachment go very low"
+    },
+    "citadel_unit_status_offset_player_z_offset_adjustment": {
+        "value": 16,
+        "description": "Z Offset for all charcters, indpendent of the vmdl offset."
+    },
+    "citadel_unit_status_offset_smooth_large_delta": {
+        "value": 10,
+        "description": "> this is a large delta"
+    },
+    "citadel_unit_status_offset_smooth_max_rate": {
+        "value": 30,
+        "description": "Smoothing for large deltas"
+    },
+    "citadel_unit_status_offset_smooth_min_rate": {
+        "value": 2,
+        "description": "Smoothing for small deltas"
+    },
+    "citadel_unit_status_offset_smooth_small_delta": {
+        "value": 2,
+        "description": "Around this is a small delta"
+    },
     "citadel_unit_status_opaque_dist_sq": 50000,
     "citadel_unit_status_recent_damage_time": 0.25,
     "citadel_unit_status_show_ally_health_value": {
@@ -3625,14 +3688,6 @@
     "citadel_unit_status_show_health_value": true,
     "citadel_unit_status_show_stats": false,
     "citadel_unit_status_stamina_consume_linger": 5,
-    "citadel_unit_status_stamina_low_pips": {
-        "value": 1,
-        "description": "Stamina is always shown while the target has this many pips or fewer."
-    },
-    "citadel_unit_status_stamina_low_show_window": {
-        "value": 2.5,
-        "description": "How long a low stamina reading stays trusted without a fresh stamina message."
-    },
     "citadel_unit_status_transparent_dist_sq": 0,
     "citadel_unit_status_viewer_damage_match_window": {
         "value": 0.25,
