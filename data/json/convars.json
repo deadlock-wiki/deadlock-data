@@ -2564,6 +2564,10 @@
         "value": 3,
         "description": "The amount of time in milliseconds where if we have less than this in idle time, count it as a low idle frame"
     },
+    "citadel_photomode_enabled": {
+        "value": false,
+        "description": "Hides Healthbars, Local Hero, HUD"
+    },
     "citadel_pickup_spawner_enabled": {
         "value": true,
         "description": "Set to false to stop citadel_pickup_spawner pickups (healing snacks) from spawning and respawning"
@@ -2620,6 +2624,10 @@
     "citadel_ping_spam_hides_marker": {
         "value": false,
         "description": "Restores the old behaviour where repeat pings hid the marker as well as the sound. The marker is positional information the team needs; the noise is the spam."
+    },
+    "citadel_ping_teammate_alone_radius": {
+        "value": 1500,
+        "description": "A pinged teammate with no other living ally (the pinger included) within this many units is told to be careful."
     },
     "citadel_ping_wheel_activation_radius": {
         "value": 0.6,
@@ -3357,6 +3365,14 @@
         "value": 0,
         "description": "Red channel of the HUD subtitle background color."
     },
+    "citadel_subtitles_background_opacity": {
+        "value": 93,
+        "description": "Opacity, in percent, of the HUD subtitle background."
+    },
+    "citadel_subtitles_background_style": {
+        "value": 0,
+        "description": "Style of the HUD subtitle background: 0 solid, 1 outline."
+    },
     "citadel_subtitles_bold_font": {
         "value": true,
         "description": "Show the HUD subtitles in a semi-bold font rather than normal weight."
@@ -3372,6 +3388,10 @@
     "citadel_subtitles_font_size": {
         "value": 16,
         "description": "Font size of the HUD subtitles."
+    },
+    "citadel_subtitles_outline_thickness": {
+        "value": 2,
+        "description": "Thickness, in pixels, of the outline around the HUD subtitles when their background style is outline."
     },
     "citadel_subtitles_text_color_b": {
         "value": 198,
@@ -3655,7 +3675,7 @@
         "description": "Distance in meters from the camera at which names above health bars start fading out"
     },
     "citadel_unit_status_offset_player_min_z": {
-        "value": 50,
+        "value": 75,
         "description": "Min z offset for character's whose offset attachment go very low"
     },
     "citadel_unit_status_offset_player_z_offset_adjustment": {
@@ -4981,18 +5001,12 @@
         "description": "Turns off interactive fish behavior. Fish become immobile and unresponsive."
     },
     "fog_color": "[-1, -1, -1]",
-    "fog_colorskybox": "[-1, -1, -1]",
     "fog_enable": {
         "value": true,
         "description": "Enable fog"
     },
-    "fog_enableskybox": true,
     "fog_end": -1,
-    "fog_endskybox": -1,
     "fog_hdrcolorscale": -1,
-    "fog_hdrcolorscaleskybox": -1,
-    "fog_maxdensity": -1,
-    "fog_maxdensityskybox": -1,
     "fog_override": {
         "value": 0,
         "description": "Overrides the map's fog settings (-1 populates fog_ vars with map's values)"
@@ -5006,7 +5020,6 @@
     "fog_override_max_density": 0.4,
     "fog_override_start": 1000,
     "fog_start": -1,
-    "fog_startskybox": -1,
     "font_show_glyph_miss": false,
     "footstep_force_volume": -1,
     "fov_desired": {
