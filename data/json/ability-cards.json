@@ -27260,7 +27260,605 @@
         "Name": null
     },
     "hero_ratking": {
-        "Name": "Rat King"
+        "Name": "Rat King",
+        "1": {
+            "Key": "ability_ratking_scrap_grenade",
+            "Name": "Scrap Grenade",
+            "DescKey": "ability_ratking_scrap_grenade_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "DamagePerShrapnel",
+                            "Name": "Detonation Damage",
+                            "Value": 65,
+                            "Scale": {
+                                "Value": 0.6,
+                                "Type": "weapon_damage_increase"
+                            },
+                            "Type": "bullet_damage"
+                        },
+                        {
+                            "Key": "SlowPercent",
+                            "Name": "Move Speed",
+                            "Value": 20,
+                            "Scale": {
+                                "Value": 0.08,
+                                "Type": "spirit"
+                            },
+                            "Type": "slow"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "Detonations",
+                        "Value": 3
+                    },
+                    {
+                        "Key": "ShrapnelSphereRadius",
+                        "Name": "Detonation Radius",
+                        "Value": 8,
+                        "Scale": {
+                            "Value": 1,
+                            "Type": "range"
+                        }
+                    },
+                    {
+                        "Key": "SlowDuration",
+                        "Name": "Slow Duration",
+                        "Value": 4,
+                        "Scale": {
+                            "Value": 1,
+                            "Type": "duration"
+                        },
+                        "Type": "duration"
+                    }
+                ],
+                "DescKey": "ability_ratking_scrap_grenade_desc"
+            },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "BigExplosionDamage",
+                            "Name": "Big Detonation Damage",
+                            "Value": 0,
+                            "Scale": {
+                                "Value": 0.0,
+                                "Type": "weapon_damage_increase"
+                            },
+                            "Type": "bullet_damage"
+                        },
+                        {
+                            "Key": "BigExplosionRadius",
+                            "Name": "Big Detonation Radius",
+                            "Value": 0,
+                            "Scale": {
+                                "Value": 0.0,
+                                "Type": "range"
+                            },
+                            "Type": "distance"
+                        },
+                        {
+                            "Key": "BigExplosionSlowPercent",
+                            "Name": "Big Detonation Move Speed",
+                            "Value": 40,
+                            "Scale": {
+                                "Value": 0.0,
+                                "Type": "spirit"
+                            },
+                            "Type": "slow"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "SlowDuration",
+                        "Name": "Slow Duration",
+                        "Value": 4,
+                        "Scale": {
+                            "Value": 1,
+                            "Type": "duration"
+                        },
+                        "Type": "duration"
+                    }
+                ],
+                "RequiresUpgradeIndex": 2,
+                "DescKey": "ability_ratking_scrap_grenade_big_explosion_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -8
+                },
+                {
+                    "DamagePerShrapnel": 65
+                },
+                {
+                    "Detonations": 1,
+                    "BigExplosionDamage": {
+                        "Value": 300,
+                        "Scale": {
+                            "Value": 1.0,
+                            "Type": "weapon_damage_increase"
+                        }
+                    },
+                    "BigExplosionRadius": {
+                        "Value": 14,
+                        "Scale": {
+                            "Value": 0.0254,
+                            "Type": "range"
+                        }
+                    },
+                    "BigExplosionSlowPercent": {
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 0.12,
+                            "Type": "spirit"
+                        }
+                    },
+                    "DescKey": "ability_ratking_scrap_grenade_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Debuff": {
+                "ArmorReductionPerStackNonHero": {
+                    "Name": null,
+                    "Value": -3,
+                    "Type": "bullet_armor_down"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AdditionalBounceDetonateTimer": {
+                    "Name": null,
+                    "Value": 0.7
+                },
+                "BounceGrenadeSpeed": {
+                    "Name": null,
+                    "Value": 1200
+                },
+                "FinalBounceDetonateTimer": {
+                    "Name": null,
+                    "Value": 1.5
+                },
+                "FirstBounceDetonateTimer": {
+                    "Name": null,
+                    "Value": 0.8
+                },
+                "MeleeImpulseHeavy": {
+                    "Name": null,
+                    "Value": 1000
+                },
+                "MeleeImpulseLight": {
+                    "Name": null,
+                    "Value": 750
+                },
+                "MeleeImpulseUpScale": {
+                    "Name": null,
+                    "Value": 0.45
+                }
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 26,
+                "Scale": {
+                    "Value": 1,
+                    "Type": "cooldown"
+                },
+                "Type": "cooldown"
+            }
+        },
+        "2": {
+            "Key": "ability_ratking_ratnibble",
+            "Name": "Rat Swarm",
+            "DescKey": "ability_ratking_ratnibble_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "DamagePerBite",
+                            "Name": "Damage per Bite",
+                            "Value": 8,
+                            "Scale": {
+                                "Value": 0.08,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "ArmorReductionPerBite",
+                            "Name": "Bullet Resist per Bite",
+                            "Value": -1,
+                            "Type": "bullet_armor_down"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "BiteInterval",
+                        "Name": "Bite Interval per Rat",
+                        "Value": 1
+                    },
+                    {
+                        "Key": "DebuffDuration",
+                        "Name": "Debuff Duration",
+                        "Value": 4,
+                        "Scale": {
+                            "Value": 1,
+                            "Type": "duration"
+                        },
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "MaxRats",
+                        "Value": 5
+                    }
+                ],
+                "DescKey": "ability_ratking_ratnibble_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCharges": 1
+                },
+                {
+                    "RatSwarmCols": 2,
+                    "RatSwarmRows": 1,
+                    "RatSwarmWidth": 100,
+                    "DebuffDuration": 4,
+                    "DescKey": "ability_ratking_ratnibble_t2_desc"
+                },
+                {
+                    "ArmorReductionPerBite": -1,
+                    "DamagePerBite": 8,
+                    "DescKey": "ability_ratking_ratnibble_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "RatSwarmCols": {
+                    "Name": null,
+                    "Value": 3
+                },
+                "RatSwarmRowSpeedStep": {
+                    "Name": null,
+                    "Value": 4
+                },
+                "RatSwarmRows": {
+                    "Name": null,
+                    "Value": 3
+                },
+                "RatSwarmWidth": {
+                    "Name": null,
+                    "Value": 400
+                },
+                "RatsAttached": {
+                    "Name": null,
+                    "Value": 2
+                },
+                "ThrowAngle": {
+                    "Name": null,
+                    "Value": 30
+                },
+                "ThrowJitterSpeed": {
+                    "Name": null,
+                    "Value": 2
+                },
+                "ThrowSpeed": {
+                    "Name": null,
+                    "Value": 22
+                }
+            },
+            "AbilityCastRange": {
+                "Name": "Cast Range",
+                "Value": 50,
+                "Scale": {
+                    "Value": 1,
+                    "Type": "range"
+                },
+                "Type": "range"
+            },
+            "AbilityCharges": {
+                "Name": "Charges",
+                "Value": 1,
+                "Scale": {
+                    "Value": 1,
+                    "Type": "max_charges"
+                },
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 28,
+                "Scale": {
+                    "Value": 1,
+                    "Type": "cooldown"
+                },
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": 8,
+                "Scale": {
+                    "Value": 1,
+                    "Type": "charge_cooldown"
+                },
+                "Type": "charge_cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 6,
+                "Scale": {
+                    "Value": 1,
+                    "Type": "duration"
+                },
+                "Type": "duration"
+            },
+            "Radius": {
+                "Name": "Radius",
+                "Value": 10
+            }
+        },
+        "3": {
+            "Key": "ability_ratking_ratarmor",
+            "Name": "Royal Pestments",
+            "DescKey": "ability_ratking_ratarmor_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "MaxHealthPct",
+                            "Name": "Max Health as Barrier",
+                            "Value": 15,
+                            "Type": "health"
+                        },
+                        {
+                            "Key": "ReturnFireChance",
+                            "Name": "Bullet Return Chance",
+                            "Value": 15,
+                            "Scale": {
+                                "Value": 0.1,
+                                "Type": "spirit"
+                            }
+                        }
+                    ]
+                },
+                "Alt": [],
+                "DescKey": "ability_ratking_ratarmor_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityDuration": 4,
+                    "DescKey": "ability_ratking_ratarmor_t1_desc"
+                },
+                {
+                    "ReturnFireChance": 15,
+                    "AbilityCooldown": -8,
+                    "DescKey": "ability_ratking_ratarmor_t2_desc"
+                },
+                {
+                    "MaxHealthPct": 10,
+                    "MaxDamagePerHit": 250,
+                    "DescKey": "ability_ratking_ratarmor_t3_desc"
+                }
+            ],
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "BulletDamageReflectedPct": {
+                    "Name": "Bullet Damage Returned",
+                    "Value": 100
+                },
+                "RatCount": {
+                    "Name": null,
+                    "Value": 7
+                }
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 22.0,
+                "Scale": {
+                    "Value": 1,
+                    "Type": "cooldown"
+                },
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 6,
+                "Scale": {
+                    "Value": 1,
+                    "Type": "duration"
+                },
+                "Type": "duration"
+            }
+        },
+        "4": {
+            "Key": "ability_ratking_standard_bearer",
+            "Name": "Rule, Ratannia!",
+            "DescKey": "ability_ratking_standard_bearer_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "Banner Aura",
+                            "Key": "BonusMoveSpeed",
+                            "Name": "Move Speed",
+                            "Value": 3,
+                            "Scale": {
+                                "Value": 0.05,
+                                "Type": "spirit"
+                            },
+                            "Type": "move_speed"
+                        },
+                        {
+                            "Title": "Banner Aura",
+                            "Key": "AllyDamageReduction",
+                            "Name": "Damage Reduction",
+                            "Value": 20
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "Radius",
+                        "Name": "Radius",
+                        "Value": 24,
+                        "Scale": {
+                            "Value": 1,
+                            "Type": "range"
+                        }
+                    }
+                ],
+                "DescKey": "ability_ratking_standard_bearer_desc"
+            },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "Banner Slam",
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 200,
+                            "Scale": {
+                                "Value": 1.2,
+                                "Type": "weapon_damage_increase"
+                            },
+                            "Type": "bullet_damage"
+                        },
+                        {
+                            "Title": "Banner Slam",
+                            "Key": "SlowPercent",
+                            "Name": "Move Speed",
+                            "Value": 40,
+                            "Type": "move_speed"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "FlagDuration",
+                        "Name": "Flag Duration",
+                        "Value": 12,
+                        "Scale": {
+                            "Value": 1,
+                            "Type": "duration"
+                        }
+                    },
+                    {
+                        "Key": "Radius",
+                        "Name": "Radius",
+                        "Value": 24,
+                        "Scale": {
+                            "Value": 1,
+                            "Type": "range"
+                        }
+                    }
+                ],
+                "DescKey": "ability_ratking_standard_bearer_slam_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -20,
+                    "BonusMoveSpeed": 1,
+                    "DescKey": "ability_ratking_standard_bearer_t1_desc"
+                },
+                {
+                    "FlagDuration": 8,
+                    "Radius": 8,
+                    "AbilityDuration": 8,
+                    "DescKey": "ability_ratking_standard_bearer_t2_desc"
+                },
+                {
+                    "Damage": 150,
+                    "AllyDamageReduction": 15,
+                    "DescKey": "ability_ratking_standard_bearer_t3_desc"
+                }
+            ],
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "DashSlowPercent": {
+                    "Name": null,
+                    "Value": -20
+                },
+                "TossDuration": {
+                    "Name": null,
+                    "Value": 1.2
+                }
+            },
+            "AbilityCastDelay": {
+                "Name": "Cast Delay",
+                "Value": 2.0,
+                "Type": "cast"
+            },
+            "AbilityCooldown": {
+                "Name": "Cooldown",
+                "Value": 130,
+                "Scale": {
+                    "Value": 1,
+                    "Type": "cooldown"
+                },
+                "Type": "cooldown"
+            },
+            "AbilityCooldownBetweenCharge": {
+                "Name": "Charge Delay",
+                "Value": -1.0,
+                "Type": "charge_cooldown"
+            },
+            "AbilityDuration": {
+                "Name": "Duration",
+                "Value": 12,
+                "Scale": {
+                    "Value": 1,
+                    "Type": "duration"
+                },
+                "Type": "duration"
+            },
+            "Radius": {
+                "Name": "Radius",
+                "Value": 24,
+                "Scale": {
+                    "Value": 1,
+                    "Type": "range"
+                }
+            }
+        }
     },
     "hero_chessmaster": {
         "Name": "Solomon"

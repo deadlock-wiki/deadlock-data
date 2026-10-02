@@ -10176,6 +10176,460 @@
         "WaveStartRadius": 0.5,
         "WaveThickness": 1
     },
+    "ability_ratking_entertunnel": {
+        "AbilityChannelTime": {
+            "Value": 1.7,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "AbilityCooldown": {
+            "Value": 1,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDontBreakInvisibility",
+            "BehaviorChannelled",
+            "BehaviorNotSilencable",
+            "BehaviorCannotCancelDuringChannel"
+        ],
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "ability_ratking_entertunnel",
+        "Name": "Squeezing In...",
+        "Upgrades": []
+    },
+    "ability_ratking_ratarmor": {
+        "AbilityCooldown": {
+            "Value": 22.0,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityDuration": {
+            "Value": 6,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BulletDamageReflectedPct": 100,
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "ability_ratking_ratarmor",
+        "MaxHealthPct": 15,
+        "Name": "Royal Pestments",
+        "RatArmorModifier": {
+            "Class": "RatkingRatarmor",
+            "Subclass": "RatkingArmorCaster"
+        },
+        "RatCount": 7,
+        "ReturnFireChance": {
+            "Value": 15,
+            "Scale": {
+                "Value": 0.1,
+                "Type": "spirit"
+            }
+        },
+        "Upgrades": [
+            {
+                "AbilityDuration": 4
+            },
+            {
+                "ReturnFireChance": 15,
+                "AbilityCooldown": -8
+            },
+            {
+                "MaxHealthPct": 10,
+                "MaxDamagePerHit": 250
+            }
+        ]
+    },
+    "ability_ratking_ratnibble": {
+        "AbilityCastRange": {
+            "Value": 50,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "AbilityCharges": {
+            "Value": 1,
+            "Scale": {
+                "Value": 1,
+                "Type": "max_charges"
+            }
+        },
+        "AbilityCooldown": {
+            "Value": 28,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityCooldownBetweenCharge": {
+            "Value": 8,
+            "Scale": {
+                "Value": 1,
+                "Type": "charge_cooldown"
+            }
+        },
+        "AbilityDuration": {
+            "Value": 6,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "ArmorReductionPerBite": -1,
+        "BehaviourBits": [
+            "BehaviorAlwaysPreviewRadius",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BiteInterval": 1,
+        "ChannelMoveSpeed": -1,
+        "DamagePerBite": {
+            "Value": 8,
+            "Scale": {
+                "Value": 0.08,
+                "Type": "spirit"
+            }
+        },
+        "DebuffDuration": {
+            "Value": 4,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "EnemyModifier": {
+            "Class": "RatkingRatnibble",
+            "Subclass": "RatkingNibbleEnemy",
+            "MaxRats": 5,
+            "LingerModifier": {
+                "Class": "RatkingRatnibbleLinger",
+                "Subclass": "RatkingNibbleEnemyLinger"
+            },
+            "ArmorTotalModifier": {
+                "Class": "RatkingNibbleArmorTotal",
+                "Subclass": "RatkingNibbleArmorTotal"
+            }
+        },
+        "IsDisabled": false,
+        "Key": "ability_ratking_ratnibble",
+        "MarkModifier": {
+            "Class": "RatkingRatTracker",
+            "Subclass": "ModiiferRatkingRatTracker"
+        },
+        "MaxRats": 5,
+        "Name": "Rat Swarm",
+        "Radius": 10,
+        "RatSwarmCols": 3,
+        "RatSwarmRowSpeedStep": 4,
+        "RatSwarmRows": 3,
+        "RatSwarmWidth": 400,
+        "RatsAttached": 2,
+        "ThrowAngle": 30,
+        "ThrowJitterSpeed": 2,
+        "ThrowSpeed": 22,
+        "Upgrades": [
+            {
+                "AbilityCharges": 1
+            },
+            {
+                "RatSwarmCols": 2,
+                "RatSwarmRows": 1,
+                "RatSwarmWidth": 100,
+                "DebuffDuration": 4
+            },
+            {
+                "ArmorReductionPerBite": -1,
+                "DamagePerBite": 8
+            }
+        ]
+    },
+    "ability_ratking_scrap_grenade": {
+        "AbilityCooldown": {
+            "Value": 26,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AdditionalBounceDetonateTimer": 0.7,
+        "ArmorReductionPerStackNonHero": -3,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectileFiredAsBullet",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BigExplosionDamage": {
+            "Value": 0,
+            "Scale": {
+                "Value": 0.0,
+                "Type": "weapon_damage_increase"
+            }
+        },
+        "BigExplosionRadius": {
+            "Value": 0,
+            "Scale": {
+                "Value": 0.0,
+                "Type": "range"
+            }
+        },
+        "BigExplosionSlowModifier": {
+            "Class": "SlowBase",
+            "Subclass": "RatkingScrapGrenadeBigSlow"
+        },
+        "BigExplosionSlowPercent": {
+            "Value": 40,
+            "Scale": {
+                "Value": 0.0,
+                "Type": "spirit"
+            }
+        },
+        "BounceGrenadeSpeed": 1200,
+        "ChannelMoveSpeed": -1,
+        "DamagePerShrapnel": {
+            "Value": 65,
+            "Scale": {
+                "Value": 0.6,
+                "Type": "weapon_damage_increase"
+            }
+        },
+        "Detonations": 3,
+        "FinalBounceDetonateTimer": 1.5,
+        "FirstBounceDetonateTimer": 0.8,
+        "IsDisabled": false,
+        "Key": "ability_ratking_scrap_grenade",
+        "MeleeImpulseHeavy": 1000,
+        "MeleeImpulseLight": 750,
+        "MeleeImpulseUpScale": 0.45,
+        "Name": "Scrap Grenade",
+        "ShrapnelSphereRadius": {
+            "Value": 8,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "SlowDuration": {
+            "Value": 4,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "SlowModifier": {
+            "Class": "SlowBase",
+            "Subclass": "RatkingScrapGrenadeSlow"
+        },
+        "SlowPercent": {
+            "Value": 20,
+            "Scale": {
+                "Value": 0.08,
+                "Type": "spirit"
+            }
+        },
+        "Upgrades": [
+            {
+                "AbilityCooldown": -8
+            },
+            {
+                "DamagePerShrapnel": 65
+            },
+            {
+                "Detonations": 1,
+                "BigExplosionDamage": {
+                    "Value": 300,
+                    "Scale": {
+                        "Value": 1.0,
+                        "Type": "weapon_damage_increase"
+                    }
+                },
+                "BigExplosionRadius": {
+                    "Value": 14,
+                    "Scale": {
+                        "Value": 0.0254,
+                        "Type": "range"
+                    }
+                },
+                "BigExplosionSlowPercent": {
+                    "Value": 0,
+                    "Scale": {
+                        "Value": 0.12,
+                        "Type": "spirit"
+                    }
+                }
+            }
+        ]
+    },
+    "ability_ratking_standard_bearer": {
+        "AbilityCastDelay": 2.0,
+        "AbilityCooldown": {
+            "Value": 130,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityDuration": {
+            "Value": 12,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AllyDamageReduction": 20,
+        "AllyFlagAuraModifier": {
+            "Class": "RatkingFlagAllyAura",
+            "Subclass": "RatkingFlagAllyAura",
+            "ProvidedByAura": {
+                "Class": "RatkingFlagAllyAuraBuff",
+                "Subclass": "RatkingFlagAuraPlantedBuff",
+                "EnabledStateMask": [
+                    "SlowImmune"
+                ]
+            },
+            "AuraRadius": -1.0,
+            "ModifierProvidedByAuraDuration": 0.5
+        },
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorAlwaysPreviewRadius",
+            "BehaviorCanSetQuickCast"
+        ],
+        "BonusMoveSpeed": {
+            "Value": 3,
+            "Scale": {
+                "Value": 0.05,
+                "Type": "spirit"
+            }
+        },
+        "CasterModifier": {
+            "Class": "BaseAura",
+            "Subclass": "RatkingFlagAuraCarry",
+            "ProvidedByAura": {
+                "Class": "RatkingFlagAllyAuraBuff",
+                "Subclass": "RatkingFlagAuraBuff",
+                "EnabledStateMask": [
+                    "SlowImmune"
+                ]
+            },
+            "AmbientParticleRadiusControlPoint": 2,
+            "AuraRadius": -1.0,
+            "ModifierProvidedByAuraDuration": 0.5,
+            "EnabledStateMask": [
+                "DuckingDisabled",
+                "SlidingDisabled"
+            ]
+        },
+        "Damage": {
+            "Value": 200,
+            "Scale": {
+                "Value": 1.2,
+                "Type": "weapon_damage_increase"
+            }
+        },
+        "DashSlowPercent": -20,
+        "EnemyFlagAuraModifier": {
+            "Class": "RatkingFlagAura",
+            "Subclass": "RatkingFlagAura",
+            "RatSpawnInterval": 0.5,
+            "RatsPerSpawn": 1,
+            "RatYawSegments": 8,
+            "RatLeapSpeed": 500.0,
+            "RatLeapAngle": 40.0,
+            "RatLifetime": 3.0,
+            "RatTravelRadiusFraction": 2.0,
+            "BannerRatsAttached": 1,
+            "ProvidedByAura": {
+                "Class": "Base",
+                "Subclass": "SlowBase"
+            },
+            "AmbientParticleRadiusControlPoint": 2,
+            "AuraRadius": -1.0,
+            "ModifierProvidedByAuraDuration": 0.5
+        },
+        "FlagDuration": {
+            "Value": 12,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "IsDisabled": false,
+        "Key": "ability_ratking_standard_bearer",
+        "Name": "Rule, Ratannia!",
+        "PlantedModifier": {
+            "Class": "RatkingSewerEruption",
+            "Subclass": "RatkingSewerEruptionModifier",
+            "ExplosionHalfHeightMeters": 10.0,
+            "TossSpeed": 500.0
+        },
+        "Radius": {
+            "Value": 24,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "SlowPercent": 40,
+        "TossDuration": 1.2,
+        "Upgrades": [
+            {
+                "AbilityCooldown": -20,
+                "BonusMoveSpeed": 1
+            },
+            {
+                "FlagDuration": 8,
+                "Radius": 8,
+                "AbilityDuration": 8
+            },
+            {
+                "Damage": 150,
+                "AllyDamageReduction": 15
+            }
+        ]
+    },
+    "ability_ratking_standard_bearer_trigger": {
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityPostCastDuration": 1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDontInterruptSprint",
+            "BehaviorNotSilencable",
+            "BehaviorNoTarget",
+            "BehaviorCastableWhileHidden",
+            "BehaviorIgnoreSelectionMashProtection",
+            "BehaviorTrigger"
+        ],
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "ability_ratking_standard_bearer_trigger",
+        "Name": null,
+        "Upgrades": []
+    },
     "ability_rolling_fireball": {
         "AbilityCastDelay": 0.2,
         "AbilityCooldown": {
@@ -16772,6 +17226,44 @@
         "StaminaRegenReductionDuration": 5,
         "Upgrades": [],
         "VerticalSpeed": 300,
+        "WeaponSpreadPenalty": 3
+    },
+    "citadel_ability_jump_ratking": {
+        "AbilityCooldown": {
+            "Value": 0.15,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "AirJumpVerticalSpeedPercent": 75,
+        "BehaviourBits": [
+            "BehaviorHidden",
+            "BehaviorDontBreakInvisibility",
+            "BehaviorSilentCastFailureFeedback",
+            "BehaviorDontInterruptSprint",
+            "BehaviorInputDirectional2d",
+            "BehaviorNotSilencable",
+            "BehaviorNoTarget",
+            "BehaviorNonCombat",
+            "BehaviorCastableWhileHidden"
+        ],
+        "ChannelMoveSpeed": -1,
+        "DebuffModifier": {
+            "Class": "Base",
+            "Subclass": "WallJumpStaminaRegenReduction"
+        },
+        "IsDisabled": false,
+        "Key": "citadel_ability_jump_ratking",
+        "Name": "Jump",
+        "SlideLeapSpeedPenaltyMax": 100,
+        "SlideLeapSpeedPenaltyTime": 0.2,
+        "StaminaRegenReduction": -25,
+        "StaminaRegenReductionDuration": 5,
+        "Upgrades": [],
+        "VerticalSpeed": 350,
         "WeaponSpreadPenalty": 3
     },
     "citadel_ability_kali_disruptive_charge": {
