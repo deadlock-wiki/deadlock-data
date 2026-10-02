@@ -1393,7 +1393,7 @@
         "value": 15,
         "description": "Max percent a corrupted item's stat bonuses can roll below their authored values each match."
     },
-    "citadel_corrupted_item_shop_enabled": true,
+    "citadel_corrupted_item_shop_enabled": false,
     "citadel_corrupted_item_shop_num_items": 1,
     "citadel_corrupted_item_shop_restock_interval": {
         "value": 900,
@@ -2596,6 +2596,10 @@
         "value": 500,
         "description": "If the pinged hero is below us by this many units, use the \"below_us\" voice variant"
     },
+    "citadel_ping_can_heal_range": {
+        "value": 2500,
+        "description": "Pinging a low teammate offers a heal only if they are within this many units and in line of sight. Matches citadel_fow_player_range."
+    },
     "citadel_ping_consecutive_window": {
         "value": 0.25,
         "description": "Seconds between taps on one subject for them to chain into a double (triple...) ping."
@@ -3055,6 +3059,10 @@
         "value": true,
         "description": "Keep the settings shared by all heroes visible while browsing a specific hero's settings"
     },
+    "citadel_settings_default_view": {
+        "value": 0,
+        "description": "Which hero the settings menu shows while hero-specific settings are enabled: 0 the hero being played, 1 the base settings"
+    },
     "citadel_settings_hero_selector_search": {
         "value": true,
         "description": "When the Settings hero selector is expanded, typing in the search bar filters heroes instead of settings."
@@ -3086,6 +3094,10 @@
     "citadel_settings_new_setting_newness_duration": {
         "value": 2592000,
         "description": "Maximum age a new setting will be shown without dismissing"
+    },
+    "citadel_settings_remember_selected_hero": {
+        "value": true,
+        "description": "Reopen the settings menu on the hero last selected in it, instead of its default view"
     },
     "citadel_settings_scroll_panel_height_read_only": {
         "value": 0,
@@ -7347,7 +7359,6 @@
     "r_particle_cables_render_meshlets": true,
     "r_particle_cables_visualize_roundness": false,
     "r_particle_enable_fastpath": true,
-    "r_particle_explicit_fetch": false,
     "r_particle_fixedrandomseeds": {
         "value": false,
         "description": "Use fixed seeds for easier debugging"

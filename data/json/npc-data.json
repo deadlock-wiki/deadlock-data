@@ -7124,9 +7124,85 @@
         "MaxHealth": 1,
         "Name": "npc_neutral_bug",
         "OutlineThroughWalls": false,
-        "RespawnTime": 30.0,
+        "ReplacementChance": 0.1,
+        "ReplacementSubclass": "npc_neutral_bug_rat",
+        "RespawnTime": 15.0,
         "RespawnTimeHeroTest": 2.0,
         "StepHeight": 0.8128
+    },
+    "npc_neutral_bug_rat": {
+        "DeathSwarmCount": 5,
+        "DeathSwarmImmuneHeroID": 84,
+        "DeathSwarmSpawnDistMax": 866.0,
+        "DeathSwarmSpawnDistMin": 630.0,
+        "DeathSwarmSubclass": "npc_neutral_bug_rat_swarm",
+        "GoldReward": 1,
+        "IntrinsicModifiers": [
+            {
+                "EnabledStateMask": "MODIFIER_STATE_IGNORED_BY_NPC_TARGETING"
+            }
+        ],
+        "IsRat": true,
+        "MaxHealth": 1,
+        "MoveSpeedMax": 6.096,
+        "MoveSpeedMin": 4.318,
+        "Name": "npc_neutral_bug_rat",
+        "OutlineThroughWalls": false,
+        "Radius": 0.762,
+        "ReplacementChance": 0.0,
+        "ReplacementSubclass": "",
+        "RespawnTime": 15.0,
+        "RespawnTimeHeroTest": 2.0,
+        "RunSequences": [
+            "rat_pack_run_01",
+            "rat_pack_run_02",
+            "rat_pack_run_03"
+        ],
+        "StepHeight": 0.8128,
+        "WaitTimeMax": 0.2
+    },
+    "npc_neutral_bug_rat_swarm": {
+        "AttachHeight": 2.438,
+        "AttachRadius": 1.626,
+        "ChaseLifetime": 8.0,
+        "DeathSwarmCount": 0,
+        "DeathSwarmImmuneHeroID": 84,
+        "DeathSwarmSpawnDistMax": 866.0,
+        "DeathSwarmSpawnDistMin": 630.0,
+        "DeathSwarmSubclass": "",
+        "DropDownRate": 800.0,
+        "GoldReward": 0,
+        "IntrinsicModifiers": [
+            {
+                "EnabledStateMask": "MODIFIER_STATE_IGNORED_BY_NPC_TARGETING"
+            }
+        ],
+        "IsRat": true,
+        "MaxHealth": 1,
+        "MoveSpeedMax": 5.08,
+        "MoveSpeedMin": 3.81,
+        "Name": "npc_neutral_bug_rat_swarm",
+        "OutlineThroughWalls": false,
+        "Radius": 0.762,
+        "ReplacementChance": 0.0,
+        "ReplacementSubclass": "",
+        "RespawnTime": 15.0,
+        "RespawnTimeHeroTest": 2.0,
+        "RunSequences": [
+            "rat_pack_run_01",
+            "rat_pack_run_02",
+            "rat_pack_run_03",
+            "rat_pack_run_04"
+        ],
+        "StepHeight": 0.8128,
+        "SwarmModifier": {
+            "RatDuration": 6.0,
+            "DamagePerRatPerSecond": 2.0,
+            "DamageInterval": 0.5,
+            "DamageType": "CITADEL_DAMAGETYPE_ABILITY",
+            "DashDropFraction": 0.5
+        },
+        "WaitTimeMax": 0.2
     },
     "npc_neutral_flying_pigeon": {
         "CollisionRadius": 1.041,
@@ -7334,6 +7410,20 @@
         "StuckTimeAir": 3.0,
         "TurnRate": 15.0,
         "VerticalAttachOffset": 16.0
+    },
+    "npc_ratking_rat": {
+        "DebugDraw": false,
+        "MoveSpeedMax": 0.4064,
+        "MoveSpeedMin": 0.254,
+        "Name": "npc_ratking_rat",
+        "ProbeDistance": 4.877,
+        "ProbeInterval": 0.1,
+        "ProbeStepUp": 50.0,
+        "ScurryAmplitudeMax": 30.0,
+        "ScurryAmplitudeMin": 15.0,
+        "ScurryPeriodMax": 2.0,
+        "ScurryPeriodMin": 1.0,
+        "SpreadDuration": 2.0
     },
     "npc_shielded_sentry": {
         "DeployProgressModifier": {
