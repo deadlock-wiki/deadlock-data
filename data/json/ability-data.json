@@ -6323,7 +6323,7 @@
         "MoveSpeedBonusPct": 36,
         "Name": "Rabbit Hex",
         "Radius": {
-            "Value": 6.5,
+            "Value": 6,
             "Scale": {
                 "Value": 1,
                 "Type": "range"
@@ -6338,7 +6338,7 @@
                 "HexDuration": 1
             },
             {
-                "Radius": 3,
+                "Radius": 2,
                 "DamageAmpPercentage": 7
             }
         ]
@@ -6558,13 +6558,13 @@
             ]
         },
         "CopiedUltWindow": {
-            "Value": 12,
+            "Value": 9,
             "Scale": {
                 "Value": 1,
                 "Type": "duration"
             }
         },
-        "CopyCooldownPercentage": 40,
+        "CopyCooldownPercentage": 60,
         "CopyInternalCooldown": 0.5,
         "InformTargetUltCopiedModifier": {
             "Class": "Base",
@@ -6685,6 +6685,7 @@
             "BehaviorCooldownOnChannelEnd",
             "BehaviorDontInterruptSlideOnCast"
         ],
+        "BossDamageScale": 0.5,
         "ChannelMoveSpeed": -1,
         "CloneBoltDelay": 0.1,
         "CloneDamagePercentage": 50.0,
@@ -10261,7 +10262,7 @@
             }
         },
         "AbilityCooldown": {
-            "Value": 28,
+            "Value": 24,
             "Scale": {
                 "Value": 1,
                 "Type": "cooldown"
@@ -10397,7 +10398,7 @@
         "BounceGrenadeSpeed": 1200,
         "ChannelMoveSpeed": -1,
         "DamagePerShrapnel": {
-            "Value": 65,
+            "Value": 70,
             "Scale": {
                 "Value": 0.6,
                 "Type": "weapon_damage_increase"
@@ -10442,7 +10443,7 @@
                 "AbilityCooldown": -8
             },
             {
-                "DamagePerShrapnel": 65
+                "DamagePerShrapnel": 70
             },
             {
                 "Detonations": 1,
@@ -10473,7 +10474,7 @@
     "ability_ratking_standard_bearer": {
         "AbilityCastDelay": 2.0,
         "AbilityCooldown": {
-            "Value": 130,
+            "Value": 160,
             "Scale": {
                 "Value": 1,
                 "Type": "cooldown"
@@ -10481,14 +10482,14 @@
         },
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
-            "Value": 12,
+            "Value": 10,
             "Scale": {
                 "Value": 1,
                 "Type": "duration"
             }
         },
         "AbilityUnitTargetLimit": 1,
-        "AllyDamageReduction": 20,
+        "AllyDamageReduction": 15,
         "AllyFlagAuraModifier": {
             "Class": "RatkingFlagAllyAura",
             "Subclass": "RatkingFlagAllyAura",
@@ -10507,13 +10508,7 @@
             "BehaviorAlwaysPreviewRadius",
             "BehaviorCanSetQuickCast"
         ],
-        "BonusMoveSpeed": {
-            "Value": 3,
-            "Scale": {
-                "Value": 0.05,
-                "Type": "spirit"
-            }
-        },
+        "BonusMoveSpeed": 3,
         "CasterModifier": {
             "Class": "BaseAura",
             "Subclass": "RatkingFlagAuraCarry",
@@ -10576,7 +10571,7 @@
             "TossSpeed": 500.0
         },
         "Radius": {
-            "Value": 24,
+            "Value": 20,
             "Scale": {
                 "Value": 1,
                 "Type": "range"
@@ -10586,17 +10581,15 @@
         "TossDuration": 1.2,
         "Upgrades": [
             {
-                "AbilityCooldown": -20,
-                "BonusMoveSpeed": 1
+                "BonusMoveSpeed": 2
             },
             {
-                "FlagDuration": 8,
-                "Radius": 8,
-                "AbilityDuration": 8
+                "FlagDuration": 5,
+                "Radius": 8
             },
             {
                 "Damage": 150,
-                "AllyDamageReduction": 15
+                "AllyDamageReduction": 10
             }
         ]
     },
