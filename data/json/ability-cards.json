@@ -2476,17 +2476,6 @@
                     "DescKey": "citadel_ability_bull_leap_t3_desc"
                 }
             ],
-            "Range": {
-                "ImpactRadius": {
-                    "Name": "Impact Radius",
-                    "Value": 9,
-                    "Scale": {
-                        "Value": 1,
-                        "Type": "radius"
-                    },
-                    "Type": "distance"
-                }
-            },
             "Move": {
                 "ChannelMoveSpeed": {
                     "Name": "Channel Move Speed",
@@ -2525,6 +2514,15 @@
                 "Name": "Charge Delay",
                 "Value": -1.0,
                 "Type": "charge_cooldown"
+            },
+            "ImpactRadius": {
+                "Name": "Impact Radius",
+                "Value": 9,
+                "Scale": {
+                    "Value": 1,
+                    "Type": "radius"
+                },
+                "Type": "distance"
             }
         }
     },
@@ -7370,17 +7368,6 @@
                     "DescKey": "ability_nano_dash_t3_desc"
                 }
             ],
-            "Range": {
-                "SlashRadius": {
-                    "Name": "Slash Radius",
-                    "Value": 4,
-                    "Scale": {
-                        "Value": 1,
-                        "Type": "range"
-                    },
-                    "Type": "distance"
-                }
-            },
             "Move": {
                 "ChannelMoveSpeed": {
                     "Name": "Channel Move Speed",
@@ -7457,6 +7444,15 @@
                 "Name": "Charge Delay",
                 "Value": -1.0,
                 "Type": "charge_cooldown"
+            },
+            "SlashRadius": {
+                "Name": "Slash Radius",
+                "Value": 4,
+                "Scale": {
+                    "Value": 1,
+                    "Type": "range"
+                },
+                "Type": "distance"
             }
         },
         "3": {
@@ -15596,14 +15592,6 @@
                     "Name": null,
                     "Value": 1
                 },
-                "HalfHeight": {
-                    "Name": null,
-                    "Value": 6,
-                    "Scale": {
-                        "Value": 1,
-                        "Type": "range"
-                    }
-                },
                 "PreDetonateDuration": {
                     "Name": null,
                     "Value": 0.6
@@ -15636,6 +15624,14 @@
                 "Name": "Charge Delay",
                 "Value": -1.0,
                 "Type": "charge_cooldown"
+            },
+            "HalfHeight": {
+                "Name": null,
+                "Value": 6,
+                "Scale": {
+                    "Value": 1,
+                    "Type": "range"
+                }
             },
             "Radius": {
                 "Name": "Radius",
@@ -17695,17 +17691,6 @@
                     "DescKey": "ability_vampirebat_lovebites_t3_desc"
                 }
             ],
-            "Cooldown": {
-                "PerTargetCooldown": {
-                    "Name": null,
-                    "Value": 10,
-                    "Scale": {
-                        "Value": 1,
-                        "Type": "cooldown"
-                    },
-                    "Type": "cooldown"
-                }
-            },
             "Move": {
                 "ChannelMoveSpeed": {
                     "Name": "Channel Move Speed",
@@ -17751,6 +17736,15 @@
                 "Name": "Charge Delay",
                 "Value": -1.0,
                 "Type": "charge_cooldown"
+            },
+            "PerTargetCooldown": {
+                "Name": null,
+                "Value": 10,
+                "Scale": {
+                    "Value": 1,
+                    "Type": "cooldown"
+                },
+                "Type": "cooldown"
             }
         },
         "4": {
@@ -22225,15 +22219,6 @@
                     "Value": 3,
                     "Type": "distance"
                 },
-                "WaveEndRadius": {
-                    "Name": null,
-                    "Value": 8.0,
-                    "Scale": {
-                        "Value": 1,
-                        "Type": "range"
-                    },
-                    "Type": "distance"
-                },
                 "WaveStartRadius": {
                     "Name": null,
                     "Value": 0.5,
@@ -22314,6 +22299,15 @@
                     "Type": "charge_cooldown"
                 },
                 "Type": "charge_cooldown"
+            },
+            "WaveEndRadius": {
+                "Name": null,
+                "Value": 8.0,
+                "Scale": {
+                    "Value": 1,
+                    "Type": "range"
+                },
+                "Type": "distance"
             }
         },
         "2": {
@@ -23581,17 +23575,6 @@
                     "DescKey": "ability_necro_hauntingskull_t3_desc"
                 }
             ],
-            "Duration": {
-                "SkullLifetime": {
-                    "Name": "Deadhead Lifetime",
-                    "Value": 10,
-                    "Scale": {
-                        "Value": 1,
-                        "Type": "duration"
-                    },
-                    "Type": "duration"
-                }
-            },
             "Cast": {
                 "ResourceCost": {
                     "Name": null,
@@ -23741,6 +23724,15 @@
                     "Type": "charge_cooldown"
                 },
                 "Type": "charge_cooldown"
+            },
+            "SkullLifetime": {
+                "Name": "Deadhead Lifetime",
+                "Value": 10,
+                "Scale": {
+                    "Value": 1,
+                    "Type": "duration"
+                },
+                "Type": "duration"
             }
         },
         "2": {
@@ -23856,20 +23848,6 @@
                 "ZombieWallHeight": {
                     "Name": null,
                     "Value": 2.5
-                },
-                "ZombieWallLength": {
-                    "Name": "Wall Length",
-                    "Value": 14,
-                    "Scale": [
-                        {
-                            "Value": 0.05,
-                            "Type": "spirit"
-                        },
-                        {
-                            "Value": 1,
-                            "Type": "range"
-                        }
-                    ]
                 }
             },
             "AbilityCastRange": {
@@ -23903,6 +23881,20 @@
                     "Type": "duration"
                 },
                 "Type": "duration"
+            },
+            "ZombieWallLength": {
+                "Name": "Wall Length",
+                "Value": 14,
+                "Scale": [
+                    {
+                        "Value": 0.05,
+                        "Type": "spirit"
+                    },
+                    {
+                        "Value": 1,
+                        "Type": "range"
+                    }
+                ]
             }
         },
         "3": {
@@ -24793,15 +24785,6 @@
                     },
                     "Type": "distance"
                 },
-                "SlashLength": {
-                    "Name": "Slash Length",
-                    "Value": 13,
-                    "Scale": {
-                        "Value": 1,
-                        "Type": "range"
-                    },
-                    "Type": "distance"
-                },
                 "SlashRadius": {
                     "Name": "Slash Radius",
                     "Value": 1.6,
@@ -24911,6 +24894,15 @@
                     "Type": "duration"
                 },
                 "Type": "duration"
+            },
+            "SlashLength": {
+                "Name": "Slash Length",
+                "Value": 13,
+                "Scale": {
+                    "Value": 1,
+                    "Type": "range"
+                },
+                "Type": "distance"
             }
         },
         "4": {
@@ -24994,15 +24986,6 @@
                 "DashRadius": {
                     "Name": "Radius",
                     "Value": 7,
-                    "Type": "distance"
-                },
-                "DashRange": {
-                    "Name": "Time Window",
-                    "Value": 27,
-                    "Scale": {
-                        "Value": 1,
-                        "Type": "range"
-                    },
                     "Type": "distance"
                 }
             },
@@ -25117,6 +25100,15 @@
                 "Name": "Charge Delay",
                 "Value": -1.0,
                 "Type": "charge_cooldown"
+            },
+            "DashRange": {
+                "Name": "Time Window",
+                "Value": 27,
+                "Scale": {
+                    "Value": 1,
+                    "Type": "range"
+                },
+                "Type": "distance"
             }
         }
     },
@@ -28222,14 +28214,6 @@
                 "SlashHeight": {
                     "Name": null,
                     "Value": 3
-                },
-                "SlashRadius": {
-                    "Name": "Slash Radius",
-                    "Value": 10,
-                    "Scale": {
-                        "Value": 1,
-                        "Type": "range"
-                    }
                 }
             },
             "AbilityCastDelay": {
@@ -28250,6 +28234,14 @@
                 "Name": "Charge Delay",
                 "Value": -1.0,
                 "Type": "charge_cooldown"
+            },
+            "SlashRadius": {
+                "Name": "Slash Radius",
+                "Value": 10,
+                "Scale": {
+                    "Value": 1,
+                    "Type": "range"
+                }
             }
         },
         "4": {
