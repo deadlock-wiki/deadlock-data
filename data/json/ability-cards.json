@@ -335,14 +335,16 @@
                         {
                             "Title": "Burn Effect:",
                             "Key": "BurnDurationBase",
-                            "Name": "Unknown(BurnDurationBase)",
+                            "NameKey": "AfterburnDurationBase",
+                            "Name": "Base Burn Duration",
                             "Value": 3,
                             "Type": "duration"
                         },
                         {
                             "Title": "Burn Effect:",
                             "Key": "BurnDuration",
-                            "Name": "Burn Duration",
+                            "NameKey": "AfterburnDurationMax",
+                            "Name": "Max Burn Duration",
                             "Value": 3,
                             "Scale": {
                                 "Value": 1,
@@ -374,6 +376,8 @@
                     },
                     {
                         "Key": "RefillDuration",
+                        "NameKey": "RefillDurationHit",
+                        "Name": "Extend Per Bullet",
                         "Value": 0.5,
                         "Type": "duration"
                     },
@@ -490,7 +494,8 @@
                         {
                             "Title": "On Hero Hit:",
                             "Key": "FireRatePerHero",
-                            "Name": "Unknown(FireRatePerHero)",
+                            "NameKey": "BonusFireRate",
+                            "Name": "Fire Rate",
                             "Value": 0,
                             "Type": "fire_rate"
                         },
@@ -1328,6 +1333,7 @@
                     },
                     {
                         "Key": "TechArmorDamageReduction",
+                        "NameKey": "MagicResistReduction",
                         "Name": "Spirit Resist",
                         "Value": -6,
                         "Type": "tech_armor_down"
@@ -1929,6 +1935,8 @@
                 "Alt": [
                     {
                         "Key": "SelfBuffDuration",
+                        "NameKey": "HealthSwapBuffDuration",
+                        "Name": "Buff Duration",
                         "Value": 0,
                         "Type": "duration"
                     },
@@ -3664,6 +3672,8 @@
                     },
                     {
                         "Key": "MoveSlowDuration",
+                        "NameKey": "SlowDuration",
+                        "Name": "Slow Duration",
                         "Value": 0,
                         "Type": "duration"
                     }
@@ -3810,7 +3820,8 @@
                         },
                         {
                             "Key": "DamageAmplificationPerStack",
-                            "Name": "Bonus Damage per Stack",
+                            "NameKey": "PulseGrenadeDamageAmplificationPerStack",
+                            "Name": "Damage Amp per stack",
                             "Value": 4,
                             "Type": "damage"
                         }
@@ -3835,7 +3846,8 @@
                     },
                     {
                         "Key": "DebuffDuration",
-                        "Name": "Debuff Duration",
+                        "NameKey": "PulseGrenadeDebuffDuration",
+                        "Name": "Amp Duration",
                         "Value": 8.0,
                         "Scale": {
                             "Value": 1,
@@ -3845,7 +3857,8 @@
                     },
                     {
                         "Key": "SlowPercent",
-                        "Name": "Move Speed",
+                        "NameKey": "PulseGrenadeTimeSlow",
+                        "Name": "Time Slow",
                         "Value": 20,
                         "Type": "slow"
                     },
@@ -3942,7 +3955,8 @@
                     "Props": [
                         {
                             "Key": "DebuffDuration",
-                            "Name": "Debuff Duration",
+                            "NameKey": "TimeWallSilenceDuration",
+                            "Name": "Silence Duration",
                             "Value": 0,
                             "Type": "duration"
                         },
@@ -4144,7 +4158,8 @@
                     },
                     {
                         "Key": "HeadshotBonus",
-                        "Name": "Headshot Damage",
+                        "NameKey": "CarbineHeadshotBonus",
+                        "Name": "HeadShot Bonus",
                         "Value": 14,
                         "Type": "tech_damage"
                     }
@@ -5663,6 +5678,8 @@
                     },
                     {
                         "Key": "PostInvisBuffDuration",
+                        "NameKey": "BuffDuration",
+                        "Name": "Buff Duration",
                         "Value": 0,
                         "Type": "duration"
                     },
@@ -5863,7 +5880,8 @@
                         },
                         {
                             "Key": "WeaponDamageBonus",
-                            "Name": "Weapon Damage",
+                            "NameKey": "BonusWeaponDamage",
+                            "Name": "Bullet Damage",
                             "Value": 7,
                             "Type": "bullet_damage"
                         },
@@ -5883,7 +5901,8 @@
                     },
                     {
                         "Key": "ChannelMoveSpeed",
-                        "Name": "Channel Move Speed",
+                        "NameKey": "DanceMoveSpeed",
+                        "Name": "Dance Movespeed",
                         "Value": 4,
                         "Type": "move_speed"
                     }
@@ -6028,6 +6047,7 @@
                     },
                     {
                         "Key": "ArmTime",
+                        "NameKey": "Barrel_ArmTime",
                         "Name": "Arm Time",
                         "Value": 0.1,
                         "Type": "duration"
@@ -6209,6 +6229,8 @@
                     },
                     {
                         "Key": "SpeedOnLandDuration",
+                        "NameKey": "BuffDuration",
+                        "Name": "Buff Duration",
                         "Value": 0,
                         "Type": "duration"
                     }
@@ -6483,6 +6505,7 @@
                 "Alt": [
                     {
                         "Key": "BouncePadExtendDuration",
+                        "Name": "Extended Duration from Bounce Pad",
                         "Value": 1.25
                     }
                 ],
@@ -7494,6 +7517,7 @@
                 "Alt": [
                     {
                         "Key": "SpeedBuildDuration",
+                        "Name": "Time for Max Bonus",
                         "Value": 4,
                         "Type": "duration"
                     },
@@ -7592,7 +7616,8 @@
                 "Alt": [
                     {
                         "Key": "AbilityChannelTime",
-                        "Name": "Channel Duration",
+                        "NameKey": "ShadowDuration",
+                        "Name": "Explosion Delay",
                         "Value": 3,
                         "Scale": {
                             "Value": 1,
@@ -7945,7 +7970,8 @@
                     "Props": [
                         {
                             "Key": "TetherDuration",
-                            "Name": "Tether Duration",
+                            "NameKey": "ImmobilizeTrap_CurseDuration",
+                            "Name": "Curse Duration",
                             "Value": 2.25,
                             "Scale": {
                                 "Value": 1,
@@ -9674,7 +9700,8 @@
                 "Alt": [
                     {
                         "Key": "OnLandDamageRadius",
-                        "Name": "Landing Radius",
+                        "NameKey": "AirDropExplodeRadius",
+                        "Name": "Explode Radius",
                         "Value": 20,
                         "Scale": {
                             "Value": 1,
@@ -9684,6 +9711,7 @@
                     },
                     {
                         "Key": "BuffDuration",
+                        "NameKey": "AirDropBuffDuration",
                         "Name": "Buff Duration",
                         "Value": 8,
                         "Scale": {
@@ -9700,24 +9728,28 @@
                     },
                     {
                         "Key": "DebuffDuration",
-                        "Name": "Debuff Duration",
+                        "NameKey": "AirDropDebuffDuration",
+                        "Name": "Slow Duration",
                         "Value": 0,
                         "Type": "duration"
                     },
                     {
                         "Key": "BulletArmorReduction",
-                        "Name": "Bullet Resist",
+                        "NameKey": "AirDropBulletArmorReduction",
+                        "Name": "Enemy Bullet Resist",
                         "Value": 0,
                         "Type": "bullet_armor_down"
                     },
                     {
                         "Key": "BulletArmorReductionDuration",
-                        "Name": "Duration",
+                        "NameKey": "AirDropDebuff02Duration",
+                        "Name": "Bullet Resist Duration",
                         "Value": 0,
                         "Type": "duration"
                     },
                     {
                         "Key": "SilenceDuration",
+                        "NameKey": "AirDropSilenceDuration",
                         "Name": "Silence Duration",
                         "Value": 0,
                         "Type": "duration"
@@ -9881,6 +9913,7 @@
                 "Alt": [
                     {
                         "Key": "SlowDuration",
+                        "NameKey": "MoveSpeedSlowDuration",
                         "Name": "Slow Duration",
                         "Value": 3,
                         "Scale": {
@@ -9891,7 +9924,8 @@
                     },
                     {
                         "Key": "DebuffDuration",
-                        "Name": "Debuff Duration",
+                        "NameKey": "FlaskDebuffDuration",
+                        "Name": "Weapon Debuff Duration",
                         "Value": 7,
                         "Scale": {
                             "Value": 1,
@@ -10716,7 +10750,8 @@
                         },
                         {
                             "Key": "MaxHealthRegen",
-                            "Name": "Max Health Heal",
+                            "NameKey": "InfinitySlashHealOnKill",
+                            "Name": "Max HP Heal On Kill",
                             "Value": 15,
                             "Scale": {
                                 "Value": 1,
@@ -10751,6 +10786,8 @@
                     },
                     {
                         "Key": "MaxHealthHealOnCast",
+                        "NameKey": "InfinitySlashHealOnCast",
+                        "Name": "Max HP Heal On Cast",
                         "Value": 0,
                         "Type": "healing"
                     }
@@ -11259,7 +11296,8 @@
                     },
                     {
                         "Key": "AbilityCastDelay",
-                        "Name": "Cast Delay",
+                        "NameKey": "LashUltimateChargeTime",
+                        "Name": "Charge Time",
                         "Value": 0.3,
                         "Type": "cast"
                     }
@@ -11757,6 +11795,7 @@
                     },
                     {
                         "Key": "LifeStealPercentOnHit",
+                        "Name": "Unknown(LifeStealPercentOnHit)",
                         "Value": 0,
                         "Type": "healing"
                     }
@@ -12085,7 +12124,8 @@
                         },
                         {
                             "Key": "DamageAmplificationPerStack",
-                            "Name": "Bonus Damage per Stack",
+                            "NameKey": "PulseGrenadeDamageAmplificationPerStack",
+                            "Name": "Damage Amp per stack",
                             "Value": 4,
                             "Type": "damage"
                         }
@@ -12110,7 +12150,8 @@
                     },
                     {
                         "Key": "DebuffDuration",
-                        "Name": "Debuff Duration",
+                        "NameKey": "PulseGrenadeDebuffDuration",
+                        "Name": "Amp Duration",
                         "Value": 8.0,
                         "Scale": {
                             "Value": 1,
@@ -12120,7 +12161,8 @@
                     },
                     {
                         "Key": "SlowPercent",
-                        "Name": "Move Speed",
+                        "NameKey": "PulseGrenadeTimeSlow",
+                        "Name": "Time Slow",
                         "Value": 20,
                         "Type": "slow"
                     },
@@ -13048,7 +13090,8 @@
                         },
                         {
                             "Key": "MoveSlowPercent",
-                            "Name": "Movement Slow",
+                            "NameKey": "SlowPercent",
+                            "Name": "Move Speed",
                             "Value": 24,
                             "Type": "slow"
                         }
@@ -13258,7 +13301,8 @@
                     "Props": [
                         {
                             "Key": "AbilityChannelTime",
-                            "Name": "Channel Duration",
+                            "NameKey": "EscapeDuration",
+                            "Name": "Escape Duration",
                             "Value": 1.5,
                             "Scale": {
                                 "Value": 1,
@@ -13278,7 +13322,8 @@
                         },
                         {
                             "Key": "MoveSlowPercent",
-                            "Name": "Movement Slow",
+                            "NameKey": "SlowPercent",
+                            "Name": "Move Speed",
                             "Value": 0,
                             "Type": "slow"
                         },
@@ -13505,7 +13550,8 @@
                     "Props": [
                         {
                             "Key": "DPS",
-                            "Name": "Damage Per Second",
+                            "NameKey": "MirageFireScarabsHealthSteal",
+                            "Name": "Health Steal Per Sec",
                             "Value": 8,
                             "Scale": {
                                 "Value": 0.1,
@@ -13836,7 +13882,8 @@
                         },
                         {
                             "Key": "MaxStacks",
-                            "Name": "Max Stacks",
+                            "NameKey": "DMarkMaxMarks",
+                            "Name": "Max Marks",
                             "Value": 4,
                             "Type": "distance"
                         }
@@ -13845,7 +13892,8 @@
                 "Alt": [
                     {
                         "Key": "ProcCooldown",
-                        "Name": "Max Frequency",
+                        "NameKey": "DMarkProcCD",
+                        "Name": "Per Target Cooldown",
                         "Value": 2.75,
                         "Scale": {
                             "Value": 1,
@@ -15688,6 +15736,7 @@
                     },
                     {
                         "Key": "BuildUpDuration",
+                        "Name": "Buildup Decay Time",
                         "Value": 0.1,
                         "Scale": {
                             "Value": 1,
@@ -17979,7 +18028,8 @@
                     "Props": [
                         {
                             "Key": "BonusDamage",
-                            "Name": "Bonus Damage",
+                            "NameKey": "DrifterRend_SpiritDamage",
+                            "Name": "Damage",
                             "Value": 40.0,
                             "Scale": {
                                 "Value": 1.4,
@@ -20378,11 +20428,13 @@
                 "Alt": [
                     {
                         "Key": "MaxAmp",
+                        "Name": "Max Amp",
                         "Value": 100,
                         "Type": "damage"
                     },
                     {
                         "Key": "MaxAmpDistance",
+                        "Name": "Distance for Max Amp",
                         "Value": 250,
                         "Type": "distance"
                     }
@@ -20910,6 +20962,8 @@
                 "Alt": [
                     {
                         "Key": "ProjectileFuse",
+                        "NameKey": "BellLifetime",
+                        "Name": "Bell Lifetime",
                         "Value": 3,
                         "Scale": {
                             "Value": 1,
@@ -20919,7 +20973,8 @@
                     },
                     {
                         "Key": "AbilityDuration",
-                        "Name": "Duration",
+                        "NameKey": "DebuffDuration",
+                        "Name": "Debuff Duration",
                         "Value": 4,
                         "Scale": {
                             "Value": 1,
@@ -21319,7 +21374,8 @@
                         {
                             "Title": "While a Guest",
                             "Key": "AbilityDuration",
-                            "Name": "Duration",
+                            "NameKey": "doorman_hotel_duration_override",
+                            "Name": "Check-Out Time",
                             "Value": 6.5,
                             "Type": "duration"
                         },
@@ -22347,11 +22403,13 @@
                 "Alt": [
                     {
                         "Key": "WeaponDamageBurst",
+                        "Name": "Weapon Damage",
                         "Value": 0,
                         "Type": "damage"
                     },
                     {
                         "Key": "WeaponDamageBurstDuration",
+                        "Name": "Weapon Damage Duration",
                         "Value": 0,
                         "Type": "duration"
                     }
@@ -22539,6 +22597,7 @@
                 "Alt": [
                     {
                         "Key": "HealthBoostDuration",
+                        "Name": "Health Boost Duration",
                         "Value": 11,
                         "Scale": {
                             "Value": 1,
@@ -22696,6 +22755,7 @@
                 "Alt": [
                     {
                         "Key": "MoveSpeedSlowMaxPct",
+                        "Name": "Velocity Slow",
                         "Value": 35,
                         "Type": "move_speed"
                     },
@@ -23514,6 +23574,7 @@
                 "Alt": [
                     {
                         "Key": "HealOnHit",
+                        "Name": "Heal On Hit",
                         "Value": 0
                     },
                     {
@@ -23753,7 +23814,8 @@
                     "Props": [
                         {
                             "Key": "SummonCount",
-                            "Name": "Gangsters Summoned",
+                            "NameKey": "GhoulCount",
+                            "Name": "Ghouls Raised",
                             "Value": 1
                         },
                         {
@@ -24665,7 +24727,8 @@
                     "Props": [
                         {
                             "Key": "BaseDamage",
-                            "Name": "Base Damage",
+                            "NameKey": "FencerLungeBaseDamage",
+                            "Name": "Base Hold Damage",
                             "Value": 25,
                             "Scale": {
                                 "Value": 0.55,
@@ -24933,6 +24996,7 @@
                         },
                         {
                             "Key": "BonusDamagePercent",
+                            "NameKey": "ApolloUltBonusTotalDamage",
                             "Name": "Bonus Damage",
                             "Value": 60
                         }
@@ -24951,6 +25015,7 @@
                     },
                     {
                         "Key": "DebuffDuration",
+                        "NameKey": "FencerUltDebuffDuration",
                         "Name": "Debuff Duration",
                         "Value": 1.8,
                         "Type": "duration"
@@ -25171,6 +25236,7 @@
                     },
                     {
                         "Key": "CDReduceOnPillowHit",
+                        "Name": "Cooldown On Pillow Hit",
                         "Value": 5
                     }
                 ],
@@ -25699,11 +25765,13 @@
                     },
                     {
                         "Key": "MinSleepTime",
+                        "Name": "Min Sleep Time",
                         "Value": 0.5,
                         "Type": "duration"
                     },
                     {
                         "Key": "DamageResistPctWhileChanneling",
+                        "Name": "Channel Damage Resist",
                         "Value": 30
                     }
                 ],
@@ -26804,11 +26872,13 @@
                     },
                     {
                         "Key": "PreExplosionDuration",
+                        "Name": "Beam Form Duration",
                         "Value": 1.4,
                         "Type": "duration"
                     },
                     {
                         "Key": "BuffMaxStacks",
+                        "Name": "Max Stacks",
                         "Value": 6,
                         "Type": "cast"
                     },
@@ -26973,6 +27043,7 @@
                     },
                     {
                         "Key": "BounceGrace",
+                        "Name": "Max Linger Duration",
                         "Value": 3.25
                     }
                 ],
@@ -27294,6 +27365,7 @@
                 "Alt": [
                     {
                         "Key": "Detonations",
+                        "Name": "Detonations",
                         "Value": 3
                     },
                     {
@@ -27502,6 +27574,7 @@
                     },
                     {
                         "Key": "MaxRats",
+                        "Name": "Max Attached Rats",
                         "Value": 5
                     }
                 ],
@@ -27875,7 +27948,8 @@
                     "Props": [
                         {
                             "Key": "TechPowerGain",
-                            "Name": "Unknown(TechPowerGain)",
+                            "NameKey": "BubblingBrew_TechPowerSteal",
+                            "Name": "Spirit Stolen per Hit",
                             "Value": 10,
                             "Scale": {
                                 "Value": 0.9,
@@ -27913,7 +27987,8 @@
                     },
                     {
                         "Key": "MaxStacks",
-                        "Name": "Max Stacks",
+                        "NameKey": "MaxStacks_BabaBubblingBrew",
+                        "Name": "Max Spirit Stolen",
                         "Value": 45,
                         "Scale": {
                             "Value": 2.0,
@@ -28340,7 +28415,8 @@
                         {
                             "Title": "Scalding Brew:",
                             "Key": "DamagePerSecond",
-                            "Name": "Damage Per Second",
+                            "NameKey": "BabaBrewBurnDPS",
+                            "Name": "Burn DPS",
                             "Value": 12,
                             "Scale": {
                                 "Value": 0.152,
@@ -28351,7 +28427,8 @@
                         {
                             "Title": "Scalding Brew:",
                             "Key": "SpiritResistReduction",
-                            "Name": "Unknown(SpiritResistReduction)",
+                            "NameKey": "BabaBrewBurnSpiritResist",
+                            "Name": "Burn Spirit Resist",
                             "Value": -15,
                             "Type": "tech_armor_down"
                         },
@@ -28495,7 +28572,8 @@
                     "Props": [
                         {
                             "Key": "BarrageMaxDamage",
-                            "Name": "Unknown(BarrageMaxDamage)",
+                            "NameKey": "MaxDamage",
+                            "Name": "Max Damage",
                             "Value": 450,
                             "Scale": {
                                 "Value": 1.6,
@@ -28505,7 +28583,8 @@
                         },
                         {
                             "Key": "HexDuration",
-                            "Name": "Hex Duration",
+                            "NameKey": "MaxPigeonDuration",
+                            "Name": "Max Pigeon Duration",
                             "Value": 2.75,
                             "Scale": {
                                 "Value": 1,
@@ -28518,12 +28597,15 @@
                 "Alt": [
                     {
                         "Key": "TimeToMaxStacks",
+                        "NameKey": "BabaUlt2TimeToMaxStacks",
                         "Name": "Time To Max Stacks",
                         "Value": 3.5,
                         "Type": "duration"
                     },
                     {
                         "Key": "MaxSlow",
+                        "NameKey": "BabaUlt2MaxSlow",
+                        "Name": "Max Slow",
                         "Value": 32,
                         "Type": "slow"
                     }
