@@ -289,10 +289,27 @@
         "AirDashDistanceInMeters": 8.0,
         "AirDashDuration": 0.47,
         "AirDashSpeed": 17.0,
-        "BaseHealthRegen": 2.0,
+        "BaseHealthRegen": 2.5,
         "BaseWeaponDamageIncrease": 0,
-        "BoundAbilities": {},
-        "CritDamageBonusPercent": 0.0,
+        "BoundAbilities": {
+            "1": {
+                "Name": "Threadsap",
+                "Key": "ability_baba_bubbling_brew"
+            },
+            "2": {
+                "Name": "Granny Long Legs",
+                "Key": "ability_baba_bench_run"
+            },
+            "3": {
+                "Name": "Baba's Brew",
+                "Key": "ability_baba_hexing_brew"
+            },
+            "4": {
+                "Name": "Feed The Birds",
+                "Key": "ability_baba_ultimate_2"
+            }
+        },
+        "CritDamageBonusPercent": -20.0,
         "CritDamageReceivedPercent": 0.0,
         "CrouchSpeed": 4.75,
         "GroundDashDistanceInMeters": 10.0,
@@ -301,7 +318,7 @@
         "HeavyMeleeDamage": 116,
         "HeroBulletLifestealEffectiveness": 1.0,
         "HeroSpiritLifestealEffectiveness": 1.0,
-        "InDevelopment": false,
+        "InDevelopment": true,
         "InHeroLabs": false,
         "IsDisabled": false,
         "IsRecommended": false,
@@ -313,13 +330,13 @@
             "TechPower": 1.1,
             "LightMeleeDamage": 0.7,
             "HeavyMeleeDamage": 1.624,
-            "DPS": 3.9048,
-            "SustainedDPS": 2.177
+            "DPS": 1.3226,
+            "SustainedDPS": 0.86014
         },
         "LightMeleeDamage": 50,
         "Lore": "hero_baba_lore",
         "MaxHealth": 780.0,
-        "MaxMoveSpeed": 7.2,
+        "MaxMoveSpeed": 6.5,
         "MoveAcceleration": 4,
         "Name": "Baba",
         "OOCHealthRegen": 0,
@@ -327,39 +344,47 @@
         "ProcBuildUpRateScale": 1,
         "ReloadSpeed": 0,
         "Role": "hero_baba_role",
-        "SpiritScaling": {},
+        "SpiritScaling": {
+            "TechResist": 0.12
+        },
         "SprintSpeed": 1.6,
-        "Stamina": 3,
+        "Stamina": 2,
         "StaminaCooldown": 4.5000045000045,
         "StaminaRegenPerSecond": 0.222222,
         "TechDuration": 0,
         "TechRange": 0,
-        "Type": null,
+        "TechResist": 8.0,
+        "Type": "Mystic",
         "Weapon": {
-            "BulletSpeed": 660.4,
-            "BulletDamage": 5.5,
-            "RoundsPerSecond": 9.5238,
-            "ClipSize": 27,
-            "ReloadTime": 2.25,
+            "BulletSpeed": 177.8,
+            "BulletDamage": 8.8,
+            "RoundsPerSecond": 3.2258,
+            "ClipSize": 15,
+            "ReloadTime": 2.5,
             "ReloadMovespeed": 1.0,
             "ReloadDelay": 0.0,
             "ReloadSingle": false,
-            "FalloffStartRange": 18.0,
-            "FalloffEndRange": 55.0,
+            "FalloffStartRange": 15.0,
+            "FalloffEndRange": 42.0,
             "FalloffStartScale": 1.0,
             "FalloffEndScale": 0.1,
             "FalloffBias": 0.5,
-            "BulletGravityScale": 0.8,
-            "BulletRadius": 0.1016,
-            "BulletsPerShot": 1,
+            "BulletGravityScale": 0,
+            "BulletRadius": 0.1778,
+            "BulletsPerShot": 3,
             "BulletsPerBurst": 1,
             "BurstInterShotInterval": 0,
             "ShootMoveSpeed": 0.75,
-            "HitOnceAcrossAllBullets": false,
+            "HitOnceAcrossAllBullets": true,
             "CanCrit": true,
             "AmmoConsumedPerShot": 1,
-            "DPS": 52.381,
-            "SustainedDPS": 29.204
+            "DPS": 28.387,
+            "SustainedDPS": 18.462,
+            "NameKey": "citadel_weapon_baba_set",
+            "WeaponTypes": [
+                "Attribute_EWeaponAttribute_RapidFire",
+                "Attribute_EWeaponAttribute_LongRange"
+            ]
         },
         "WeaponPowerScale": 1
     },
@@ -3709,11 +3734,11 @@
         "IsSelectable": true,
         "LevelScaling": {
             "BulletDamage": 0.53176,
-            "MaxHealth": 30.0,
+            "MaxHealth": 31.0,
             "PowerIncreases": 1,
             "TechPower": 1.1,
-            "LightMeleeDamage": 1.2,
-            "HeavyMeleeDamage": 2.784,
+            "LightMeleeDamage": 1.58,
+            "HeavyMeleeDamage": 3.6656,
             "DPS": 5.0644,
             "SustainedDPS": 2.8235
         },
