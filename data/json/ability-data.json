@@ -71,6 +71,524 @@
             }
         ]
     },
+    "ability_baba_bench_melee": {
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorHidden",
+            "BehaviorSilentCastFailureFeedback",
+            "BehaviorNotSilencable",
+            "BehaviorNoTarget",
+            "BehaviorCastableWhileHidden"
+        ],
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "ability_baba_bench_melee",
+        "MeleeAttackLength": 5,
+        "MeleeHalfAngle": 30,
+        "Name": "Melee",
+        "Upgrades": []
+    },
+    "ability_baba_bench_run": {
+        "AbilityCooldown": {
+            "Value": 30,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityDuration": {
+            "Value": 10,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AirDashDistancePercent": 20,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorNonCombat",
+            "BehaviorCastableWhileBusy"
+        ],
+        "BenchRunModifier": {
+            "Class": "BabaBenchRun",
+            "Subclass": "BabaBenchRun",
+            "HeavyKickSlowModifier": {
+                "Class": "SlowBase",
+                "Subclass": "BabaBenchHeavyKickSlow"
+            },
+            "GroundPoundFallModifier": {
+                "Class": "BabaGroundPoundFall",
+                "Subclass": "BabaGroundPoundFall"
+            },
+            "LightKickShoveModifier": {
+                "Class": "BabaThreadPull",
+                "Subclass": "BabaBenchLightKickShove"
+            },
+            "UpwardsForceOnHeavyMeleeStart": 600.0
+        },
+        "BonusMeleeRange": 2,
+        "BonusMoveSpeed": 5,
+        "ChannelMoveSpeed": 1,
+        "ChargedJumpForwardForce": 300,
+        "CrouchMoveSpeedBonus": 3.5,
+        "DashDistancePercent": 20,
+        "EndLaunchMaxLingerTime": 3,
+        "GravityScalePercent": 80,
+        "GroundPoundFallTimeReductionPercent": 30,
+        "GroundPoundKnockUpDuration": 0.3,
+        "GroundPoundKnockUpHeight": 2.54,
+        "HeavyMeleeDashSlowPercent": -25,
+        "HeavyMeleeEndGraceTime": 0.6,
+        "HeavyMeleeSlowDuration": {
+            "Value": 4,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "HeavyMeleeSlowPercent": 50,
+        "HeavyMeleeSpiritDamage": {
+            "Value": 75,
+            "Scale": {
+                "Value": 0.6,
+                "Type": "spirit"
+            }
+        },
+        "IsDisabled": "false",
+        "JumpSoundLayerVolumeMax": -4.0,
+        "JumpSoundLayerVolumeMin": -60.0,
+        "Key": "ability_baba_bench_run",
+        "KickKnockbackDuration": 0.45,
+        "LightKickKnockbackDistance": {
+            "Value": 10,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "LightKickKnockbackHeight": 0.75,
+        "MaxJumpHeight": 250,
+        "MeleeLifestealNonHeroPct": 60,
+        "MeleeResist": 30,
+        "MeleeSpiritDamage": {
+            "Value": 0,
+            "Scale": {
+                "Value": 0.0,
+                "Type": "spirit"
+            }
+        },
+        "MinJumpHeight": 75,
+        "MoveWhileShootingSpeedPenaltyReductionPercent": 100,
+        "Name": "Granny Long Legs",
+        "Radius": {
+            "Value": 8,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "RisingGravityScalePercent": 50,
+        "StatusResistancePercent": 30,
+        "Upgrades": [
+            {
+                "BonusMoveSpeed": 2.5
+            },
+            {
+                "AbilityCooldown": -7
+            },
+            {
+                "StatusResistancePercent": 15,
+                "MeleeResist": 15,
+                "MeleeLifesteal": 50
+            }
+        ]
+    },
+    "ability_baba_bubbling_brew": {
+        "AbilityCastRange": {
+            "Value": 35,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "AbilityCharges": {
+            "Value": 1,
+            "Scale": {
+                "Value": 1,
+                "Type": "max_charges"
+            }
+        },
+        "AbilityCooldown": {
+            "Value": 26.0,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityCooldownBetweenCharge": {
+            "Value": 6,
+            "Scale": {
+                "Value": 1,
+                "Type": "charge_cooldown"
+            }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AutoIntrinsicModifiers": [
+            {
+                "Class": "BabaBubblingBrewGunDamage",
+                "Subclass": "BabaBubblingBrewGunDamage"
+            }
+        ],
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BuffModifier": {
+            "Class": "BabaBubblingBrewBuff",
+            "Subclass": "BabaBubblingBrewBuff"
+        },
+        "ChannelMoveSpeed": -1,
+        "Damage": 50,
+        "DebuffDuration": {
+            "Value": 22,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "DebuffModifier": {
+            "Class": "BabaBubblingBrewDebuff",
+            "Subclass": "BabaBubblingBrewDebuff"
+        },
+        "ExplodeRadius": {
+            "Value": 3.5,
+            "Scale": {
+                "Value": 1,
+                "Type": "radius"
+            }
+        },
+        "ExplodeTime": 0.9,
+        "ExplodeTimeInterval": 0.05,
+        "IsDisabled": false,
+        "Key": "ability_baba_bubbling_brew",
+        "MagicDamagePerBullet": {
+            "Value": 8,
+            "Scale": {
+                "Value": 0.26,
+                "Type": "spirit"
+            }
+        },
+        "MaxStacks": {
+            "Value": 45,
+            "Scale": {
+                "Value": 2.0,
+                "Type": "power_increase"
+            }
+        },
+        "Name": "Threadsap",
+        "ProjectileSpacingThinkInterval": 0.05,
+        "ProjectileSpeed": 2600,
+        "ProjectileTurnMaxDegrees": 270,
+        "ProjectileTurnRate": 220,
+        "PullDuration": 0.6,
+        "PullModifier": {
+            "Class": "BabaThreadPull",
+            "Subclass": "BabaThreadPull",
+            "ExitVelocityScale": 0.2
+        },
+        "StolenSpiritEffectiveness": 175,
+        "TechPowerGain": {
+            "Value": 10,
+            "Scale": {
+                "Value": 0.9,
+                "Type": "power_increase"
+            }
+        },
+        "Upgrades": [
+            {
+                "MagicDamagePerBullet": 8
+            },
+            {
+                "AbilityCooldown": -12,
+                "DebuffDuration": 8
+            },
+            {
+                "AbilityCharges": 1,
+                "PullDistance": 7
+            }
+        ]
+    },
+    "ability_baba_hexing_brew": {
+        "AbilityCastRange": {
+            "Value": 12,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "AbilityChannelTime": {
+            "Value": 1.0,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "AbilityCooldown": {
+            "Value": 25.0,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "BarrierDuration": {
+            "Value": 8,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "BarrierLockTime": 2.5,
+        "BarrierModifier": {
+            "Class": "CombatBarrier",
+            "Subclass": "BabaBrewBarrier"
+        },
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorProjectileFiredAsBullet",
+            "BehaviorCooldownOnChannelEnd",
+            "BehaviorDontInterruptSlideOnCast",
+            "BehaviorHoldsAtMaxChannel"
+        ],
+        "BrewTime": 1.5,
+        "BurnDuration": {
+            "Value": 8,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "ChannelMoveSpeed": -1,
+        "CombatBarrier": {
+            "Value": 100,
+            "Scale": {
+                "Value": 1.2,
+                "Type": "spirit"
+            }
+        },
+        "DamagePerSecond": {
+            "Value": 12,
+            "Scale": {
+                "Value": 0.152,
+                "Type": "spirit"
+            }
+        },
+        "FireLockTime": 4.5,
+        "FireModifier": {
+            "Class": "BabaBrewBurn",
+            "Subclass": "BabaBrewFire",
+            "TickInterval": 0.5
+        },
+        "HoldingModifier": {
+            "Class": "BabaBrewHolding",
+            "Subclass": "BabaBrewHolding"
+        },
+        "IsDisabled": "false",
+        "Key": "ability_baba_hexing_brew",
+        "Name": "Baba's Brew",
+        "Radius": {
+            "Value": 6,
+            "Scale": {
+                "Value": 1,
+                "Type": "radius"
+            }
+        },
+        "SelfCastForwardOffset": 1,
+        "SilenceDuration": {
+            "Value": 3,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "SilenceLockTime": 3.5,
+        "SilenceModifier": {
+            "Class": "CitadelSilenced",
+            "Subclass": "BabaBrewSilence",
+            "EnabledStateMask": [
+                "Silenced"
+            ]
+        },
+        "SpiritResistReduction": -15,
+        "Upgrades": [
+            {
+                "Radius": 3
+            },
+            {
+                "AbilityCooldown": -12
+            },
+            {
+                "BrewEffectiveness": 33.33,
+                "DamagePerSecond": {
+                    "Value": 1.3333,
+                    "Scale": {
+                        "Value": 1.3333,
+                        "Type": "spirit",
+                        "Multiply": true
+                    },
+                    "Multiply": true
+                },
+                "CombatBarrier": {
+                    "Value": 1.3333,
+                    "Scale": {
+                        "Value": 1.3333,
+                        "Type": "spirit",
+                        "Multiply": true
+                    },
+                    "Multiply": true
+                },
+                "SilenceDuration": 33.33,
+                "SpiritResistReduction": 33.33
+            }
+        ]
+    },
+    "ability_baba_hexing_brew_throw": {
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorTrigger",
+            "BehaviorProjectile",
+            "BehaviorProjectileFiredAsBullet",
+            "BehaviorNonCombat",
+            "BehaviorCastableWhileBusy",
+            "BehaviorCastableWhileHidden",
+            "BehaviorCastableWhileDodging",
+            "BehaviorDontInterruptSprint",
+            "BehaviorIgnoreSelectionMashProtection",
+            "BehaviorAllowAltCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "ability_baba_hexing_brew_throw",
+        "Name": null,
+        "Upgrades": []
+    },
+    "ability_baba_ultimate_2": {
+        "AbilityCastDelay": 0.15,
+        "AbilityCastRange": {
+            "Value": 18,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "AbilityChannelTime": {
+            "Value": 6.5,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "AbilityCooldown": {
+            "Value": 150.0,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityPostCastDuration": 0.6,
+        "AbilityUnitTargetLimit": 9999,
+        "BarrageMaxDamage": {
+            "Value": 450,
+            "Scale": {
+                "Value": 1.6,
+                "Type": "spirit"
+            }
+        },
+        "BarrageStartDelayMax": 1.8,
+        "BarrageStartDelayMin": 1.2,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCooldownOnChannelEnd",
+            "BehaviorTriggerCancelMashProtectionOnCast",
+            "BehaviorRequireAbilityButtonToCancel",
+            "BehaviorShowCastRangeAsSatSphereWhileCasting"
+        ],
+        "ChannelMoveSpeed": 99,
+        "FinalTickDelay": 1.2,
+        "HexDuration": {
+            "Value": 2.75,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "IsDisabled": false,
+        "Key": "ability_baba_ultimate_2",
+        "LockonConeAngle": 40,
+        "LosingLockGraceTime": 1.0,
+        "MaxLockonStacks": 1,
+        "MaxSlow": 32,
+        "Name": "Feed The Birds",
+        "TargetModifier": {
+            "Class": "BabaUlt2Mark",
+            "Subclass": "BabaUlt2Mark",
+            "ImpactDelay": 0.5,
+            "ImpactModifier": {
+                "Class": "BabaUlt2Impact",
+                "Subclass": "BabaUlt2Impact",
+                "HexModifier": {
+                    "Class": "BabaHex",
+                    "Subclass": "BabaUlt2Pigeon",
+                    "ModelScale": 2.2,
+                    "FlyAcceleration": 0.8,
+                    "FlyDeceleration": 1.5,
+                    "FlySpeedScale": 1.0,
+                    "FlyIdleSinkSpeed": 40.0,
+                    "LaunchUpSpeed": 0.0,
+                    "FlyLaunchTime": 0.2,
+                    "FlyHoverMinHeight": 50.0,
+                    "FlyHoverMaxHeight": 300.0,
+                    "FlyJumpImpulseUp": 0.0,
+                    "FlyJumpImpulseHoriz": 0.0
+                }
+            }
+        },
+        "TickDamageIncreasePerHit": 30,
+        "TickInterval": 0.15,
+        "TimeToGainLockonStack": 0.7,
+        "TimeToLoseLockonStack": 2,
+        "TimeToMaxStacks": 3.5,
+        "Upgrades": [
+            {
+                "MaxSlow": 32,
+                "AbilityCastRange": 4
+            },
+            {
+                "AbilityCooldown": -55
+            },
+            {
+                "BarrageMaxDamage": {
+                    "Value": 125,
+                    "Scale": {
+                        "Value": 1.5,
+                        "Type": "spirit"
+                    }
+                },
+                "HexDuration": 0.5
+            }
+        ]
+    },
     "ability_bebop_stickybomb2": {
         "AbilityCastDelay": 0.01,
         "AbilityCooldown": {
