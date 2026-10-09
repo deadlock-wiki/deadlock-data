@@ -1673,10 +1673,6 @@
     },
     "citadel_dump_keybindings": false,
     "citadel_enable_chat_rate_limiting": true,
-    "citadel_enable_new_ping_particle": {
-        "value": false,
-        "description": "Convar to test new ping particle"
-    },
     "citadel_enable_parties": {
         "value": true,
         "description": "Enable client side party UI"
@@ -1904,6 +1900,10 @@
         "description": "Is the hero roster set to random"
     },
     "citadel_hero_settings_cloud_disable": false,
+    "citadel_hero_specific_settings_enabled": {
+        "value": false,
+        "description": "Use hero-specific settings and keybinds"
+    },
     "citadel_hero_testing_dummy_bullet_resist": {
         "value": 0,
         "description": "Bonus bullet resist % given to Target Dummies in Hero Testing"
@@ -2068,6 +2068,10 @@
     "citadel_initial_wall_jump_stamina_cost": {
         "value": 0,
         "description": "How much stamina is required, and costs, to perform your first wall jump."
+    },
+    "citadel_instant_ping_cancel_time": {
+        "value": 0.5,
+        "description": "Holding the instant ping key longer than this cancels the ping."
     },
     "citadel_item_draft_enabled": {
         "value": 1,
@@ -2520,7 +2524,10 @@
     "citadel_pending_replay_force_failure": 0,
     "citadel_pending_replay_num_retries": 30,
     "citadel_pending_replay_retry_seconds": 300,
-    "citadel_per_unit_hotkeys_checked": false,
+    "citadel_per_unit_hotkeys_checked": {
+        "value": false,
+        "description": "Old name of citadel_hero_specific_settings_enabled"
+    },
     "citadel_per_weapon_per_surface_impact_effects": true,
     "citadel_perf_interval_report_s": {
         "value": 60,
@@ -2666,6 +2673,10 @@
         "description": "Min ground dash scale"
     },
     "citadel_player_level_hiding_extra_duration": 0.45,
+    "citadel_player_model_force_highest_lod": {
+        "value": true,
+        "description": "Forces the local player pawn to render using the highest LOD level."
+    },
     "citadel_player_move_speed_min": {
         "value": 80,
         "description": "Min walk speed"
@@ -2936,10 +2947,6 @@
     "citadel_reduce_camera_shake": {
         "value": false,
         "description": "Turns off screen shake."
-    },
-    "citadel_region_override": {
-        "value": -1,
-        "description": "Override the region of the client"
     },
     "citadel_replay_manager_download_chunk_size": 1048576,
     "citadel_replay_manager_download_simultaneous_requests": 3,
@@ -6649,6 +6656,10 @@
     },
     "panorama_suspend_animation": false,
     "panorama_suspend_paint": false,
+    "panorama_synced_font_size_spew": {
+        "value": false,
+        "description": "Log SyncedFontSizeLabel group constraints and shared font size changes"
+    },
     "panorama_temp_comp_layer_min_dimension": 512,
     "panorama_track_render_commands": false,
     "panorama_transition_time_factor": {
