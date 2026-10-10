@@ -684,10 +684,6 @@
         "value": 20,
         "description": "How many seconds before the highlight event to show when viewing highlights."
     },
-    "citadel_auto_ping_window": {
-        "value": 0.35,
-        "description": "If the ping button is opened and closed within this time, and no option is selected, chose this."
-    },
     "citadel_auto_queue_build": {
         "value": false,
         "description": "Automatically queue the selected build at game start"
@@ -1302,10 +1298,7 @@
     "citadel_chat_fade_time": 10,
     "citadel_chat_fade_time_extension": 7,
     "citadel_chat_typing_indicator_fade_time": 5,
-    "citadel_chat_wheel_fade_out_duration": {
-        "value": 0.35,
-        "description": "Chat wheel must be propped open so that it can visible fade away while showing the user their selection. This controls that maximum time."
-    },
+    "citadel_check_walk_on_skyclip": true,
     "citadel_cinematic_intro_duration_npc": {
         "value": 7.5,
         "description": "How long is the cinematic intro applied to npcs (shrine/patron)"
@@ -1318,7 +1311,6 @@
         "value": 0,
         "description": "-1 = force disabled, 0 = default, 1 = force enabled"
     },
-    "citadel_clamp_mouse_when_using_ping_wheel": true,
     "citadel_client_mm_ignore_engine_version": {
         "value": false,
         "description": "Ignore the engine version number for matchmaking. Useful for testing locally in release."
@@ -1571,7 +1563,6 @@
         "value": 0,
         "description": "How much to offset damage numbers left and right when near the camera"
     },
-    "citadel_dead_zone_radius": 0.075,
     "citadel_death_linger_time": {
         "value": 3,
         "description": "How logn does the player icon linger on the minimap after they die"
@@ -1650,7 +1641,6 @@
         "value": true,
         "description": "Do we want to show the decorations for new player friendly heroes?"
     },
-    "citadel_distance_mouse_move_for_minimap_drawing": 15,
     "citadel_doorway_glow_close_distance": 200,
     "citadel_doorway_glow_other_distance": 1000,
     "citadel_doorway_infinite_duration": false,
@@ -1683,14 +1673,6 @@
     },
     "citadel_dump_keybindings": false,
     "citadel_enable_chat_rate_limiting": true,
-    "citadel_enable_double_ping": {
-        "value": true,
-        "description": "Turns off the ability to have aggressive and passive pings."
-    },
-    "citadel_enable_new_ping_particle": {
-        "value": false,
-        "description": "Convar to test new ping particle"
-    },
     "citadel_enable_parties": {
         "value": true,
         "description": "Enable client side party UI"
@@ -1918,6 +1900,10 @@
         "description": "Is the hero roster set to random"
     },
     "citadel_hero_settings_cloud_disable": false,
+    "citadel_hero_specific_settings_enabled": {
+        "value": false,
+        "description": "Use hero-specific settings and keybinds"
+    },
     "citadel_hero_testing_dummy_bullet_resist": {
         "value": 0,
         "description": "Bonus bullet resist % given to Target Dummies in Hero Testing"
@@ -2024,11 +2010,11 @@
     "citadel_hud_announcement_display_time_override": -1,
     "citadel_hud_announcement_force_single_levelup": false,
     "citadel_hud_build_category_max_height": 600,
+    "citadel_hud_build_category_max_width": 5000,
     "citadel_hud_build_category_min_height": 125,
     "citadel_hud_build_category_min_width": 100,
     "citadel_hud_build_compact_category_extra_height": 0,
     "citadel_hud_build_compact_category_extra_width": 0,
-    "citadel_hud_chat_wheel": true,
     "citadel_hud_damage_counter_duration": 2,
     "citadel_hud_experiments_enabled": {
         "value": false,
@@ -2082,6 +2068,10 @@
     "citadel_initial_wall_jump_stamina_cost": {
         "value": 0,
         "description": "How much stamina is required, and costs, to perform your first wall jump."
+    },
+    "citadel_instant_ping_cancel_time": {
+        "value": 0.5,
+        "description": "Holding the instant ping key longer than this cancels the ping."
     },
     "citadel_item_draft_enabled": {
         "value": 1,
@@ -2272,16 +2262,6 @@
     "citadel_minimap_teleporter_height_dist": 160,
     "citadel_minimap_teleporter_nearby_dist": 1600,
     "citadel_minimap_trooper_size": 3,
-    "citadel_minimap_unit_click_radius": 200,
-    "citadel_minimap_zip_line_hover_radius": {
-        "value": 16,
-        "description": "Extra pixels either side of a minimap zipline that still count as hovering it"
-    },
-    "citadel_minimap_zip_line_hover_thickness_scale": {
-        "value": 2,
-        "description": "How much thicker a hovered minimap zipline lane draws"
-    },
-    "citadel_minimap_zip_line_thickness": 2,
     "citadel_minimum_fire_rate": {
         "value": -50,
         "description": "Minimum value possible for fire rate"
@@ -2327,6 +2307,10 @@
         "description": "Force use this ability. -1 off, 0 for Melee, 1-2-3 for Abilities"
     },
     "citadel_neutral_aggro_time": 5,
+    "citadel_neutral_ai_pathfinder_max_path_detour": {
+        "value": 1500,
+        "description": "How far a path may detour from the direct route. Negative means no limit."
+    },
     "citadel_neutral_camp_spawn_per_tick_limit": {
         "value": 1,
         "description": "Spawn this many neutral camps per tick (this is a limit, so if it's 1, we'll only spawn one per tick (perf)). Set this value to something large to effectively remove the limit. 0 or negative will prevent spawning."
@@ -2390,11 +2374,7 @@
     },
     "citadel_new_ping_minimap_left_click": {
         "value": true,
-        "description": "With citadel_new_ping_system on, left clicking anywhere on the minimap opens the ping radial, same as the ping keybind. Never overrides a minimap targeting ability like Mirage's teleport."
-    },
-    "citadel_new_ping_system": {
-        "value": 1,
-        "description": "Allow Minimap Radial to appear. 0: Off. 1: On. 2: Spew"
+        "description": "Left clicking anywhere on the minimap opens the ping radial, same as the ping keybind. Never overrides a minimap targeting ability like Mirage's teleport."
     },
     "citadel_new_ping_system_fixed_slot_icons": {
         "value": true,
@@ -2487,7 +2467,6 @@
         "value": 0.85,
         "description": "Decay velocity to 0 by this amount during lag comp window"
     },
-    "citadel_outer_radius_scaler": 0.2545,
     "citadel_party_invite_in_game": {
         "value": true,
         "description": "When set, only users in game can be invited"
@@ -2545,7 +2524,10 @@
     "citadel_pending_replay_force_failure": 0,
     "citadel_pending_replay_num_retries": 30,
     "citadel_pending_replay_retry_seconds": 300,
-    "citadel_per_unit_hotkeys_checked": false,
+    "citadel_per_unit_hotkeys_checked": {
+        "value": false,
+        "description": "Old name of citadel_hero_specific_settings_enabled"
+    },
     "citadel_per_weapon_per_surface_impact_effects": true,
     "citadel_perf_interval_report_s": {
         "value": 60,
@@ -2596,7 +2578,7 @@
         "description": "Pinging a low teammate offers a heal only if they are within this many units and in line of sight. Matches citadel_fow_player_range."
     },
     "citadel_ping_consecutive_window": {
-        "value": 0.25,
+        "value": 0.35,
         "description": "Seconds between taps on one subject for them to chain into a double (triple...) ping."
     },
     "citadel_ping_enemy_count_radius": {
@@ -2627,10 +2609,6 @@
     "citadel_ping_teammate_alone_radius": {
         "value": 1500,
         "description": "A pinged teammate with no other living ally (the pinger included) within this many units is told to be careful."
-    },
-    "citadel_ping_wheel_activation_radius": {
-        "value": 0.6,
-        "description": "Increase this to change how much you have to move your mouse to make the mousewheel visible."
     },
     "citadel_play_page_fake_data": false,
     "citadel_play_page_finished_tutorial": false,
@@ -2695,6 +2673,10 @@
         "description": "Min ground dash scale"
     },
     "citadel_player_level_hiding_extra_duration": 0.45,
+    "citadel_player_model_force_highest_lod": {
+        "value": true,
+        "description": "Forces the local player pawn to render using the highest LOD level."
+    },
     "citadel_player_move_speed_min": {
         "value": 80,
         "description": "Min walk speed"
@@ -2965,10 +2947,6 @@
     "citadel_reduce_camera_shake": {
         "value": false,
         "description": "Turns off screen shake."
-    },
-    "citadel_region_override": {
-        "value": -1,
-        "description": "Override the region of the client"
     },
     "citadel_replay_manager_download_chunk_size": 1048576,
     "citadel_replay_manager_download_simultaneous_requests": 3,
@@ -3354,8 +3332,6 @@
     "citadel_street_brawl_round_time_override": 0,
     "citadel_stuck_camera_trace_extra_length": 100,
     "citadel_stuck_normal_find_trace_fallback_elevation": 24,
-    "citadel_sub_nav_outer_radius_scaler": 0.412,
-    "citadel_subnav_select_time": 0,
     "citadel_subtick_aim_data": {
         "value": false,
         "description": "Server wants sub-tick aim data"
@@ -6680,6 +6656,10 @@
     },
     "panorama_suspend_animation": false,
     "panorama_suspend_paint": false,
+    "panorama_synced_font_size_spew": {
+        "value": false,
+        "description": "Log SyncedFontSizeLabel group constraints and shared font size changes"
+    },
     "panorama_temp_comp_layer_min_dimension": 512,
     "panorama_track_render_commands": false,
     "panorama_transition_time_factor": {
@@ -6796,10 +6776,6 @@
     "pickup_check_period": 0.25,
     "ping_indicator_safe_area_x": 480,
     "ping_indicator_safe_area_y": 200,
-    "ping_target_reset_time": 1.2,
-    "ping_trace_radius": 5,
-    "ping_trace_radius_expanded": 60,
-    "ping_trace_radius_minimap": 60,
     "ping_wheel_phrase_0": 1,
     "ping_wheel_phrase_1": 2,
     "ping_wheel_phrase_2": 4,
@@ -7092,8 +7068,6 @@
         "value": 1000,
         "description": "Maximum distance at which NPR outlines are rendered"
     },
-    "r_citadel_portrait_allow_particle_only": true,
-    "r_citadel_portrait_highlight_particle_only": false,
     "r_citadel_render_game": {
         "value": true,
         "description": "Should you render the main game world"
