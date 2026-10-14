@@ -7041,7 +7041,7 @@
                     "Value": 7
                 },
                 "SelfDamagePercent": {
-                    "Name": null,
+                    "Name": "Self Damage",
                     "Value": 20
                 }
             }
@@ -19678,7 +19678,7 @@
             },
             "Health": {
                 "HealOnHit": {
-                    "Name": null,
+                    "Name": "Heal On Hit",
                     "Value": 0,
                     "Scale": {
                         "Value": 1.0,
@@ -25571,7 +25571,637 @@
         }
     },
     "hero_deadpack": {
-        "Name": "Deadman Danny"
+        "Name": "Deadman Danny",
+        "1": {
+            "Key": "ability_deadpack_chargeblast",
+            "Name": "Strix Salvo",
+            "DescKey": "ability_deadpack_chargeblast_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 27,
+                            "Scale": {
+                                "Value": 0.74,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "CoatedDamage",
+                            "Name": "Marked Damage",
+                            "Value": 45,
+                            "Scale": {
+                                "Value": 0.9,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "CoatedSlowPercent",
+                            "Name": "Fading Slow",
+                            "Value": 40,
+                            "Type": "slow"
+                        },
+                        {
+                            "Key": "BonusFireRate",
+                            "Name": "Fire Rate",
+                            "Value": 0,
+                            "Type": "fire_rate"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "CoatedDuration",
+                        "Name": "Mark Duration",
+                        "Value": 10.0,
+                        "Scale": {
+                            "Value": 1,
+                            "Type": "duration"
+                        },
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "CoatedSlowDuration",
+                        "Name": "Slow Duration",
+                        "Value": 1.5,
+                        "Scale": {
+                            "Value": 1,
+                            "Type": "duration"
+                        },
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "MissileGroundDuration",
+                        "Name": "Explode Delay",
+                        "Value": 6.0,
+                        "Scale": {
+                            "Value": 1,
+                            "Type": "duration"
+                        },
+                        "Type": "duration"
+                    }
+                ],
+                "DescKey": "ability_deadpack_chargeblast_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -12,
+                    "DescKey": "ability_deadpack_chargeblast_t1_desc"
+                },
+                {
+                    "Damage": 20,
+                    "CoatedDamage": 35,
+                    "DescKey": "ability_deadpack_chargeblast_t2_desc"
+                },
+                {
+                    "MarksTotal": 2,
+                    "Range": 14,
+                    "CoatedDamage": {
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 0.2,
+                            "Type": "spirit"
+                        }
+                    },
+                    "Damage": {
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 0.225,
+                            "Type": "spirit"
+                        }
+                    },
+                    "DescKey": "ability_deadpack_chargeblast_t3_desc"
+                }
+            ],
+            "Headers": {
+                "AbilityCastRange": {
+                    "Name": "Cast Range",
+                    "Value": 35,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "range"
+                    },
+                    "Type": "range"
+                },
+                "AbilityCooldown": {
+                    "Name": "Cooldown",
+                    "Value": 30.0,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "cooldown"
+                    },
+                    "Type": "cooldown"
+                },
+                "AbilityCooldownBetweenCharge": {
+                    "Name": "Charge Delay",
+                    "Value": -1.0,
+                    "Type": "charge_cooldown"
+                }
+            },
+            "Duration": {
+                "MineArmTime": {
+                    "Name": null,
+                    "Value": 0.3,
+                    "Type": "duration"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "ExplosionRadius": {
+                    "Name": "Explosion Radius",
+                    "Value": 3.5,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "range"
+                    }
+                },
+                "MarksTotal": {
+                    "Name": "Missiles Launched",
+                    "Value": 3
+                },
+                "Range": {
+                    "Name": "Range",
+                    "Value": 21,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "range"
+                    }
+                }
+            }
+        },
+        "2": {
+            "Key": "ability_deadpack_rocketeer",
+            "Name": "Chimera Mk1",
+            "DescKey": "ability_deadpack_rocketeer_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "AbilityCooldown",
+                            "Name": "Cooldown",
+                            "Value": 21.0,
+                            "Scale": [
+                                {
+                                    "Value": -0.25,
+                                    "Type": "power_increase"
+                                },
+                                {
+                                    "Value": 1,
+                                    "Type": "cooldown"
+                                }
+                            ],
+                            "Type": "cooldown"
+                        },
+                        {
+                            "Key": "ExplosionDamage",
+                            "Name": "Explosion Damage",
+                            "Value": 70,
+                            "Scale": {
+                                "Value": 1.5,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "ExplosionBulletDamage",
+                            "Name": "Explosion Damage",
+                            "Value": 70,
+                            "Scale": {
+                                "Value": 1.15,
+                                "Type": "weapon_damage_increase"
+                            },
+                            "Type": "bullet_damage"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "OverheatStunDurationSelf",
+                        "Name": "Self Stun",
+                        "Value": 1.3
+                    },
+                    {
+                        "Key": "MaxHealthSelfDamagePercent",
+                        "Name": "Self Damage",
+                        "Value": 12
+                    },
+                    {
+                        "Key": "HealOnHit",
+                        "Name": "Heal On Hit",
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 0.0,
+                            "Type": "spirit"
+                        },
+                        "Type": "healing"
+                    }
+                ],
+                "DescKey": "ability_deadpack_rocketeer_desc"
+            },
+            "Upgrades": [
+                {
+                    "HeatDrainRate": -4,
+                    "DescKey": "ability_deadpack_rocketeer_t1_desc"
+                },
+                {
+                    "HealOnHit": {
+                        "Value": 150,
+                        "Scale": {
+                            "Value": 1.0,
+                            "Type": "spirit"
+                        }
+                    },
+                    "SelfDamageReductionOnPlayerHitPercent": 100,
+                    "DescKey": "ability_deadpack_rocketeer_t2_desc"
+                },
+                {
+                    "ExplosionDamage": 120,
+                    "OverheatLockoutDurationReductionOnPlayerHitPercent": 40,
+                    "DescKey": "ability_deadpack_rocketeer_t3_desc"
+                }
+            ],
+            "Headers": {
+                "AbilityCastDelay": {
+                    "Name": "Cast Delay",
+                    "Value": 0.7,
+                    "Type": "cast"
+                },
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Value": 5.0,
+                    "Type": "cast"
+                },
+                "AbilityCooldown": {
+                    "Name": "Cooldown",
+                    "Value": 21.0,
+                    "Scale": [
+                        {
+                            "Value": -0.25,
+                            "Type": "power_increase"
+                        },
+                        {
+                            "Value": 1,
+                            "Type": "cooldown"
+                        }
+                    ],
+                    "Type": "cooldown"
+                },
+                "AbilityCooldownBetweenCharge": {
+                    "Name": "Charge Delay",
+                    "Value": -1.0,
+                    "Type": "charge_cooldown"
+                },
+                "Radius": {
+                    "Name": "Radius",
+                    "Value": 8.0,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "radius"
+                    },
+                    "Type": "distance"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "Heat": {
+                    "Name": null,
+                    "Value": 40
+                },
+                "HeatDrainRate": {
+                    "Name": null,
+                    "Value": -3.0
+                },
+                "HeatGainAirDash": {
+                    "Name": "Air Dash Heat",
+                    "Value": 4.0
+                },
+                "HeatGainLaunch": {
+                    "Name": null,
+                    "Value": 18.0
+                },
+                "HeatGainRate": {
+                    "Name": "Heat Gain",
+                    "Value": 33.0
+                },
+                "HeatGainRateSlowPercentEffectiveness": {
+                    "Name": null,
+                    "Value": 75.0
+                },
+                "HeatGainRateVTOL": {
+                    "Name": null,
+                    "Value": 60.0
+                },
+                "HeatPct": {
+                    "Name": null,
+                    "Value": 100
+                },
+                "OverheatStunDelayDuration": {
+                    "Name": null,
+                    "Value": 2.5
+                },
+                "TossDuration": {
+                    "Name": null,
+                    "Value": 0.9
+                }
+            }
+        },
+        "3": {
+            "Key": "ability_deadpack_flamethrower",
+            "Name": "Jettison Fuel",
+            "DescKey": "ability_deadpack_flamethrower_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "DPS",
+                            "Name": "Damage Per Second",
+                            "Value": 30.0,
+                            "Scale": {
+                                "Value": 0.8,
+                                "Type": "weapon_damage_increase"
+                            },
+                            "Type": "bullet_damage"
+                        },
+                        {
+                            "Key": "ScorchDamage",
+                            "Name": "Burst Damage",
+                            "Value": 35,
+                            "Scale": {
+                                "Value": 0.95,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "BulletResistReduction",
+                            "Name": "Bullet Resist",
+                            "Value": -15,
+                            "Type": "bullet_armor_down"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "DebuffDuration",
+                        "Name": "Debuff Duration",
+                        "Value": 7.0,
+                        "Scale": {
+                            "Value": 1,
+                            "Type": "duration"
+                        },
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "BuffDuration",
+                        "Name": "Buff Duration",
+                        "Value": 0.0,
+                        "Type": "duration"
+                    }
+                ],
+                "DescKey": "ability_deadpack_flamethrower_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -8
+                },
+                {
+                    "ScorchDamage": 60,
+                    "BonusFireRate": 18,
+                    "BuffDuration": 7,
+                    "DescKey": "ability_deadpack_flamethrower_t2_desc"
+                },
+                {
+                    "BulletResistReduction": -10,
+                    "BurstMarkStacks": 1,
+                    "DescKey": "ability_deadpack_flamethrower_t3_desc"
+                }
+            ],
+            "Headers": {
+                "AbilityCastRange": {
+                    "Name": "Cast Range",
+                    "Value": 22.0,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "range"
+                    },
+                    "Type": "radius"
+                },
+                "AbilityCooldown": {
+                    "Name": "Cooldown",
+                    "Value": 22.0,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "cooldown"
+                    },
+                    "Type": "cooldown"
+                },
+                "AbilityCooldownBetweenCharge": {
+                    "Name": "Charge Delay",
+                    "Value": -1.0,
+                    "Type": "charge_cooldown"
+                },
+                "AbilityDuration": {
+                    "Name": "Duration",
+                    "Value": 2.0,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "duration"
+                    },
+                    "Type": "duration"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "BackblastConeAngle": {
+                    "Name": null,
+                    "Value": 40
+                },
+                "BeamWidth": {
+                    "Name": "Beam Width",
+                    "Value": 2.75
+                },
+                "HeatGainRate": {
+                    "Name": "Heat Gain",
+                    "Value": -1.0
+                },
+                "HeatGainRateHittingEnemy": {
+                    "Name": null,
+                    "Value": -20.0
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 0.1
+                }
+            }
+        },
+        "4": {
+            "Key": "ability_deadpack_ultimate",
+            "Name": "Close The Deal",
+            "DescKey": "ability_deadpack_ultimate_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 70.0,
+                            "Scale": {
+                                "Value": 1.0,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "DamagePerMeter",
+                            "Name": "Falling Damage",
+                            "Value": 3.0,
+                            "Scale": {
+                                "Value": 0.09,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "StunDuration",
+                            "Name": "Stun Duration",
+                            "StatusEffect": "Stun",
+                            "Value": 0.5,
+                            "Scale": {
+                                "Value": 1.0,
+                                "Type": "duration"
+                            },
+                            "Type": "duration"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "SelfDamagePercent",
+                        "Name": "Self Damage",
+                        "Value": 25
+                    },
+                    {
+                        "Key": "BonusDamagePercent",
+                        "NameKey": "DeadpackUltBonusTotalDamage",
+                        "Name": "Bonus Damage",
+                        "Value": 50
+                    }
+                ],
+                "DescKey": "ability_deadpack_ultimate_desc"
+            },
+            "Upgrades": [
+                {
+                    "Damage": 50.0
+                },
+                {
+                    "AbilityCooldown": -35.0
+                },
+                {
+                    "DamagePerMeter": 8.0,
+                    "StunDuration": 0.5,
+                    "DescKey": "ability_deadpack_ultimate_t3_desc"
+                }
+            ],
+            "Headers": {
+                "AbilityCastDelay": {
+                    "Name": "Cast Delay",
+                    "Value": 0.5,
+                    "Type": "cast"
+                },
+                "AbilityCastRange": {
+                    "Name": "Cast Range",
+                    "Value": 10.0,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "range"
+                    },
+                    "Type": "range"
+                },
+                "AbilityCooldown": {
+                    "Name": "Cooldown",
+                    "Value": 135.0,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "cooldown"
+                    },
+                    "Type": "cooldown"
+                },
+                "AbilityCooldownBetweenCharge": {
+                    "Name": "Charge Delay",
+                    "Value": -1.0,
+                    "Type": "charge_cooldown"
+                }
+            },
+            "Duration": {
+                "StunDurationSelf": {
+                    "Name": null,
+                    "Value": 0.4,
+                    "Type": "duration"
+                }
+            },
+            "Range": {
+                "MaxHeight": {
+                    "Name": null,
+                    "Value": 1700,
+                    "Type": "distance"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.1
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "LowHealthEnemyThresholdPct": {
+                    "Name": "Low Health Threshold",
+                    "Value": 50
+                }
+            }
+        }
     },
     "hero_familiar": {
         "Name": "Rem",

@@ -1563,6 +1563,7 @@
         "value": 0,
         "description": "How much to offset damage numbers left and right when near the camera"
     },
+    "citadel_deadpack_instant_shot": false,
     "citadel_death_linger_time": {
         "value": 3,
         "description": "How logn does the player icon linger on the minimap after they die"
@@ -2040,6 +2041,7 @@
     "citadel_hud_player_stats_delta_time": 4,
     "citadel_hud_top_bar_enable_dynamic_player_position": true,
     "citadel_hud_unit_indicators_v2_enable": true,
+    "citadel_hud_unit_indicators_v2_show_distance": true,
     "citadel_hud_visible": {
         "value": true,
         "description": "Turns on/off rendering the HUD"
@@ -4083,6 +4085,7 @@
         "description": "Validate cached stat values against freshly computed results every N hits. 0=off."
     },
     "cl_citadel_unit_query_draw_registry": false,
+    "cl_citadel_zipline_and_mantle_same_bind": true,
     "cl_citadel_zoom_is_toggle": false,
     "cl_clock_buffer_ticks": {
         "value": 0,
@@ -6950,6 +6953,10 @@
     "r_citadel_depthoffield_sensor_size": {
         "value": 1,
         "description": "Depth of field sensor size in inches"
+    },
+    "r_citadel_disable_particle_lights": {
+        "value": false,
+        "description": "Disable particle lights except when explicitly overriden in particle renderer ops."
     },
     "r_citadel_distancefield_ao_quality": {
         "value": 0,
