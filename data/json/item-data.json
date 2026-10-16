@@ -1664,7 +1664,7 @@
     },
     "upgrade_burst_fire": {
         "Name": "Burst Fire",
-        "Description": "Briefly gain <span class=\"highlight\">Fire Rate</span> and <span class=\"highlight\">Move Speed</span> when one of your bullets hits an enemy hero.",
+        "Description": "Briefly gain <span class=\"highlight\">Fire Rate</span> and <span class=\"highlight\">Move Speed</span> when one of your bullets hits a hero.",
         "Cost": 3200,
         "Tier": 3,
         "Activation": "Passive",
@@ -5171,7 +5171,8 @@
         "Slot": "Weapon",
         "Components": null,
         "TargetTypes": [
-            "AllEnemy"
+            "AllEnemy",
+            "HeroFriendly"
         ],
         "ShopFilters": null,
         "IsDisabled": false,
