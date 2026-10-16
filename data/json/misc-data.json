@@ -855,6 +855,43 @@
         "OtherRejectSound": "Tough.Crate.Reject.Other",
         "MeleeDamageSound": "Tough.Crate.Prop.Impact"
     },
+    "citadel_breakable_prop_tough_crate_hideout": {
+        "RespawnTime": 180.0,
+        "Health": 1,
+        "BreakOnDodgeTouch": false,
+        "SolidAfterDeath": false,
+        "RenderAfterDeath": false,
+        "DamagedByAbilities": false,
+        "DamagedByMelee": true,
+        "DamagedByBullets": false,
+        "InitialSpawnTime": 180.0,
+        "PowerupDropChance": 100.0,
+        "DamagedBySlide": false,
+        "RollType": "ECitadelRandomRoll_BreakableGoldPickup",
+        "hModel": "models/items/item_crate_tough_2.vmdl",
+        "HitSequenceName": "hit_tough_2",
+        "BreakDebrisSpeed": 150.0,
+        "IsMantleable": true,
+        "BreakSound": "Tough.Crate.Break",
+        "SpawnSound": "Wood.Crate.Spawn",
+        "MeleeRejectSound": "Tough.Crate.Reject.Melee",
+        "HeavyMeleeOnly": true,
+        "MeleeHitsToBreak": 1,
+        "HeavyMeleeHitCount": 1,
+        "NoMeleeCleave": true,
+        "PickupChances": {
+            "big_gold_pickup": 1.0
+        },
+        "OutlineRadius": 10.0,
+        "colorOutline": [
+            50,
+            205,
+            50
+        ],
+        "OtherRejectSound": "Tough.Crate.Reject.Other",
+        "MeleeDamageSound": "Tough.Crate.Prop.Impact",
+        "LocInteractableString": "#Citadel_Hideout_HeavyCrate"
+    },
     "citadel_breakable_prop_vase": {
         "RespawnTime": 180.0,
         "Health": 1,
@@ -3048,6 +3085,702 @@
         "InitialSpawnDelayInSeconds": 0,
         "SpawnIntervalInSeconds": 30,
         "NeutralType": "NEUTRAL_NPC_WEAK"
+    },
+    "pickup_artist_drawing_assassin": {
+        "PickupRadius": {
+            "Base": 200.0,
+            "PerMinuteAfterStart": 0
+        },
+        "friendlyParticle": "particles/abilities/artist/artist_item_drop.vpcf",
+        "enemyParticle": "particles/abilities/artist/artist_item_drop.vpcf",
+        "gainedParticle": "particles/abilities/artist/artist_pickup_gained.vpcf",
+        "hModel": "",
+        "SpawnSound": "Powerup.Spawn.Generic",
+        "PickupExpirationDuration": {
+            "Base": 20.0,
+            "PerMinuteAfterStart": 0
+        },
+        "ParticleRadius": 1.5,
+        "ShowOnMinimap": false,
+        "NameLocString": "",
+        "PickupSound": "Artist.Drawing.Pickup",
+        "NameOffset": 60,
+        "IsPermanentPickup": true,
+        "Color": [
+            0,
+            180,
+            200
+        ],
+        "bPhysicallyDropToTheGroundOnSpawn": true,
+        "fInitialSpawnXYSpeed": [
+            85.0,
+            125.0
+        ],
+        "fInitialSpawnZSpeed": [
+            30.0,
+            110.0
+        ],
+        "FallGravity": 1.0,
+        "HoverOffset": 65.0,
+        "PicupIsVacuum": true,
+        "CollectionMethod": "VacuumTrigger",
+        "SameTeamOnly": true,
+        "OutlineRange": 2000.0,
+        "OutlineColor": [
+            197,
+            105,
+            240,
+            255
+        ],
+        "VacuumToPlayerSpeedCurve": {
+            "spline": [
+                {
+                    "x": 0.0,
+                    "y": -16.041637,
+                    "SlopeIncoming": 0.0,
+                    "SlopeOutgoing": -4004.629639
+                },
+                {
+                    "x": 0.105087,
+                    "y": -436.874969,
+                    "SlopeIncoming": -4004.629639,
+                    "SlopeOutgoing": 4603.734863
+                },
+                {
+                    "x": 0.634412,
+                    "y": 2000.0,
+                    "SlopeIncoming": 4603.734863,
+                    "SlopeOutgoing": 0.0
+                }
+            ],
+            "tangents": [
+                {
+                    "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                    "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                    "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                    "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+                }
+            ],
+            "vDomainMins": [
+                0.0,
+                -500.0
+            ],
+            "vDomainMaxs": [
+                1.0,
+                2000.0
+            ]
+        },
+        "InitialVacuumUpSpeed": [
+            100.0,
+            100.0
+        ],
+        "VacuumInitialVelSpeedCurve": {
+            "spline": [
+                {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "SlopeIncoming": 0.0,
+                    "SlopeOutgoing": 3.105128
+                },
+                {
+                    "x": 0.037948,
+                    "y": 0.117833,
+                    "SlopeIncoming": 7.669573,
+                    "SlopeOutgoing": 7.669573
+                },
+                {
+                    "x": 0.130385,
+                    "y": 1.0,
+                    "SlopeIncoming": 0.423242,
+                    "SlopeOutgoing": 0.423242
+                },
+                {
+                    "x": 0.356127,
+                    "y": 0.2525,
+                    "SlopeIncoming": -2.70552,
+                    "SlopeOutgoing": -2.70552
+                },
+                {
+                    "x": 0.5,
+                    "y": 0.0,
+                    "SlopeIncoming": -1.755022,
+                    "SlopeOutgoing": 0.0
+                }
+            ],
+            "tangents": [
+                {
+                    "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                    "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                    "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                    "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                    "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                    "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+                }
+            ],
+            "vDomainMins": [
+                0.0,
+                0.0
+            ],
+            "vDomainMaxs": [
+                0.5,
+                1.0
+            ]
+        },
+        "InitialVacuumSideSpeed": [
+            200.0,
+            200.0
+        ],
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_ArtistAssassin",
+        "ArtistModifer": {
+            "ScriptValues": [
+                {
+                    "ModifierValue": "MODIFIER_VALUE_MOVEMENT_SPEED_MAX",
+                    "value": 7.874
+                }
+            ],
+            "BonusIconCSSClass": "MoveSpeed",
+            "EnabledStateMask": "MODIFIER_STATE_ARTIST_PERMANENT_BUFF"
+        }
+    },
+    "pickup_artist_drawing_brawler": {
+        "PickupRadius": {
+            "Base": 200.0,
+            "PerMinuteAfterStart": 0
+        },
+        "friendlyParticle": "particles/abilities/artist/artist_item_drop.vpcf",
+        "enemyParticle": "particles/abilities/artist/artist_item_drop.vpcf",
+        "gainedParticle": "particles/abilities/artist/artist_pickup_gained.vpcf",
+        "hModel": "",
+        "SpawnSound": "Powerup.Spawn.Generic",
+        "PickupExpirationDuration": {
+            "Base": 20.0,
+            "PerMinuteAfterStart": 0
+        },
+        "ParticleRadius": 1.5,
+        "ShowOnMinimap": false,
+        "NameLocString": "",
+        "PickupSound": "Artist.Drawing.Pickup",
+        "NameOffset": 60,
+        "IsPermanentPickup": true,
+        "Color": [
+            104,
+            239,
+            59
+        ],
+        "bPhysicallyDropToTheGroundOnSpawn": true,
+        "fInitialSpawnXYSpeed": [
+            85.0,
+            125.0
+        ],
+        "fInitialSpawnZSpeed": [
+            30.0,
+            110.0
+        ],
+        "FallGravity": 1.0,
+        "HoverOffset": 65.0,
+        "PicupIsVacuum": true,
+        "CollectionMethod": "VacuumTrigger",
+        "SameTeamOnly": true,
+        "OutlineRange": 2000.0,
+        "OutlineColor": [
+            197,
+            105,
+            240,
+            255
+        ],
+        "VacuumToPlayerSpeedCurve": {
+            "spline": [
+                {
+                    "x": 0.0,
+                    "y": -16.041637,
+                    "SlopeIncoming": 0.0,
+                    "SlopeOutgoing": -4004.629639
+                },
+                {
+                    "x": 0.105087,
+                    "y": -436.874969,
+                    "SlopeIncoming": -4004.629639,
+                    "SlopeOutgoing": 4603.734863
+                },
+                {
+                    "x": 0.634412,
+                    "y": 2000.0,
+                    "SlopeIncoming": 4603.734863,
+                    "SlopeOutgoing": 0.0
+                }
+            ],
+            "tangents": [
+                {
+                    "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                    "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                    "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                    "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+                }
+            ],
+            "vDomainMins": [
+                0.0,
+                -500.0
+            ],
+            "vDomainMaxs": [
+                1.0,
+                2000.0
+            ]
+        },
+        "InitialVacuumUpSpeed": [
+            100.0,
+            100.0
+        ],
+        "VacuumInitialVelSpeedCurve": {
+            "spline": [
+                {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "SlopeIncoming": 0.0,
+                    "SlopeOutgoing": 3.105128
+                },
+                {
+                    "x": 0.037948,
+                    "y": 0.117833,
+                    "SlopeIncoming": 7.669573,
+                    "SlopeOutgoing": 7.669573
+                },
+                {
+                    "x": 0.130385,
+                    "y": 1.0,
+                    "SlopeIncoming": 0.423242,
+                    "SlopeOutgoing": 0.423242
+                },
+                {
+                    "x": 0.356127,
+                    "y": 0.2525,
+                    "SlopeIncoming": -2.70552,
+                    "SlopeOutgoing": -2.70552
+                },
+                {
+                    "x": 0.5,
+                    "y": 0.0,
+                    "SlopeIncoming": -1.755022,
+                    "SlopeOutgoing": 0.0
+                }
+            ],
+            "tangents": [
+                {
+                    "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                    "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                    "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                    "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                    "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                    "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+                }
+            ],
+            "vDomainMins": [
+                0.0,
+                0.0
+            ],
+            "vDomainMaxs": [
+                0.5,
+                1.0
+            ]
+        },
+        "InitialVacuumSideSpeed": [
+            200.0,
+            200.0
+        ],
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_ArtistBrawler",
+        "ArtistModifer": {
+            "ScriptValues": [
+                {
+                    "ModifierValue": "MODIFIER_VALUE_HEALTH_MAX",
+                    "value": 20.0
+                }
+            ],
+            "BonusIconCSSClass": "Health",
+            "EnabledStateMask": "MODIFIER_STATE_ARTIST_PERMANENT_BUFF"
+        }
+    },
+    "pickup_artist_drawing_marksman": {
+        "PickupRadius": {
+            "Base": 200.0,
+            "PerMinuteAfterStart": 0
+        },
+        "friendlyParticle": "particles/abilities/artist/artist_item_drop.vpcf",
+        "enemyParticle": "particles/abilities/artist/artist_item_drop.vpcf",
+        "gainedParticle": "particles/abilities/artist/artist_pickup_gained.vpcf",
+        "hModel": "",
+        "SpawnSound": "Powerup.Spawn.Generic",
+        "PickupExpirationDuration": {
+            "Base": 20.0,
+            "PerMinuteAfterStart": 0
+        },
+        "ParticleRadius": 1.5,
+        "ShowOnMinimap": false,
+        "NameLocString": "",
+        "PickupSound": "Artist.Drawing.Pickup",
+        "NameOffset": 60,
+        "IsPermanentPickup": true,
+        "Color": [
+            238,
+            129,
+            45
+        ],
+        "bPhysicallyDropToTheGroundOnSpawn": true,
+        "fInitialSpawnXYSpeed": [
+            85.0,
+            125.0
+        ],
+        "fInitialSpawnZSpeed": [
+            30.0,
+            110.0
+        ],
+        "FallGravity": 1.0,
+        "HoverOffset": 65.0,
+        "PicupIsVacuum": true,
+        "CollectionMethod": "VacuumTrigger",
+        "SameTeamOnly": true,
+        "OutlineRange": 2000.0,
+        "OutlineColor": [
+            197,
+            105,
+            240,
+            255
+        ],
+        "VacuumToPlayerSpeedCurve": {
+            "spline": [
+                {
+                    "x": 0.0,
+                    "y": -16.041637,
+                    "SlopeIncoming": 0.0,
+                    "SlopeOutgoing": -4004.629639
+                },
+                {
+                    "x": 0.105087,
+                    "y": -436.874969,
+                    "SlopeIncoming": -4004.629639,
+                    "SlopeOutgoing": 4603.734863
+                },
+                {
+                    "x": 0.634412,
+                    "y": 2000.0,
+                    "SlopeIncoming": 4603.734863,
+                    "SlopeOutgoing": 0.0
+                }
+            ],
+            "tangents": [
+                {
+                    "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                    "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                    "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                    "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+                }
+            ],
+            "vDomainMins": [
+                0.0,
+                -500.0
+            ],
+            "vDomainMaxs": [
+                1.0,
+                2000.0
+            ]
+        },
+        "InitialVacuumUpSpeed": [
+            100.0,
+            100.0
+        ],
+        "VacuumInitialVelSpeedCurve": {
+            "spline": [
+                {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "SlopeIncoming": 0.0,
+                    "SlopeOutgoing": 3.105128
+                },
+                {
+                    "x": 0.037948,
+                    "y": 0.117833,
+                    "SlopeIncoming": 7.669573,
+                    "SlopeOutgoing": 7.669573
+                },
+                {
+                    "x": 0.130385,
+                    "y": 1.0,
+                    "SlopeIncoming": 0.423242,
+                    "SlopeOutgoing": 0.423242
+                },
+                {
+                    "x": 0.356127,
+                    "y": 0.2525,
+                    "SlopeIncoming": -2.70552,
+                    "SlopeOutgoing": -2.70552
+                },
+                {
+                    "x": 0.5,
+                    "y": 0.0,
+                    "SlopeIncoming": -1.755022,
+                    "SlopeOutgoing": 0.0
+                }
+            ],
+            "tangents": [
+                {
+                    "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                    "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                    "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                    "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                    "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                    "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+                }
+            ],
+            "vDomainMins": [
+                0.0,
+                0.0
+            ],
+            "vDomainMaxs": [
+                0.5,
+                1.0
+            ]
+        },
+        "InitialVacuumSideSpeed": [
+            200.0,
+            200.0
+        ],
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_ArtistMarksman",
+        "ArtistModifer": {
+            "ScriptValues": [
+                {
+                    "ModifierValue": "MODIFIER_VALUE_WEAPON_DAMAGE_INCREASE",
+                    "value": 4.0
+                }
+            ],
+            "BonusIconCSSClass": "WeaponDamage",
+            "EnabledStateMask": "MODIFIER_STATE_ARTIST_PERMANENT_BUFF"
+        }
+    },
+    "pickup_artist_drawing_mystic": {
+        "PickupRadius": {
+            "Base": 200.0,
+            "PerMinuteAfterStart": 0
+        },
+        "friendlyParticle": "particles/abilities/artist/artist_item_drop.vpcf",
+        "enemyParticle": "particles/abilities/artist/artist_item_drop.vpcf",
+        "gainedParticle": "particles/abilities/artist/artist_pickup_gained.vpcf",
+        "hModel": "",
+        "SpawnSound": "Powerup.Spawn.Generic",
+        "PickupExpirationDuration": {
+            "Base": 20.0,
+            "PerMinuteAfterStart": 0
+        },
+        "ParticleRadius": 1.5,
+        "ShowOnMinimap": false,
+        "NameLocString": "",
+        "PickupSound": "Artist.Drawing.Pickup",
+        "NameOffset": 60,
+        "IsPermanentPickup": true,
+        "Color": [
+            126,
+            46,
+            238
+        ],
+        "bPhysicallyDropToTheGroundOnSpawn": true,
+        "fInitialSpawnXYSpeed": [
+            85.0,
+            125.0
+        ],
+        "fInitialSpawnZSpeed": [
+            30.0,
+            110.0
+        ],
+        "FallGravity": 1.0,
+        "HoverOffset": 65.0,
+        "PicupIsVacuum": true,
+        "CollectionMethod": "VacuumTrigger",
+        "SameTeamOnly": true,
+        "OutlineRange": 2000.0,
+        "OutlineColor": [
+            197,
+            105,
+            240,
+            255
+        ],
+        "VacuumToPlayerSpeedCurve": {
+            "spline": [
+                {
+                    "x": 0.0,
+                    "y": -16.041637,
+                    "SlopeIncoming": 0.0,
+                    "SlopeOutgoing": -4004.629639
+                },
+                {
+                    "x": 0.105087,
+                    "y": -436.874969,
+                    "SlopeIncoming": -4004.629639,
+                    "SlopeOutgoing": 4603.734863
+                },
+                {
+                    "x": 0.634412,
+                    "y": 2000.0,
+                    "SlopeIncoming": 4603.734863,
+                    "SlopeOutgoing": 0.0
+                }
+            ],
+            "tangents": [
+                {
+                    "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                    "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                    "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                    "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+                }
+            ],
+            "vDomainMins": [
+                0.0,
+                -500.0
+            ],
+            "vDomainMaxs": [
+                1.0,
+                2000.0
+            ]
+        },
+        "InitialVacuumUpSpeed": [
+            100.0,
+            100.0
+        ],
+        "VacuumInitialVelSpeedCurve": {
+            "spline": [
+                {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "SlopeIncoming": 0.0,
+                    "SlopeOutgoing": 3.105128
+                },
+                {
+                    "x": 0.037948,
+                    "y": 0.117833,
+                    "SlopeIncoming": 7.669573,
+                    "SlopeOutgoing": 7.669573
+                },
+                {
+                    "x": 0.130385,
+                    "y": 1.0,
+                    "SlopeIncoming": 0.423242,
+                    "SlopeOutgoing": 0.423242
+                },
+                {
+                    "x": 0.356127,
+                    "y": 0.2525,
+                    "SlopeIncoming": -2.70552,
+                    "SlopeOutgoing": -2.70552
+                },
+                {
+                    "x": 0.5,
+                    "y": 0.0,
+                    "SlopeIncoming": -1.755022,
+                    "SlopeOutgoing": 0.0
+                }
+            ],
+            "tangents": [
+                {
+                    "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                    "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                    "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                    "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_SPLINE",
+                    "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_LINEAR",
+                    "OutgoingTangent": "CURVE_TANGENT_LINEAR"
+                }
+            ],
+            "vDomainMins": [
+                0.0,
+                0.0
+            ],
+            "vDomainMaxs": [
+                0.5,
+                1.0
+            ]
+        },
+        "InitialVacuumSideSpeed": [
+            200.0,
+            200.0
+        ],
+        "BuffTypeLocString": "#Citadel_Graph_PermanentBuff_ArtistMystic",
+        "ArtistModifer": {
+            "ScriptValues": [
+                {
+                    "ModifierValue": "MODIFIER_VALUE_TECH_POWER",
+                    "value": 3.0
+                }
+            ],
+            "BonusIconCSSClass": "Spirit",
+            "EnabledStateMask": "MODIFIER_STATE_ARTIST_PERMANENT_BUFF"
+        }
     },
     "range_permanent_pickup": {
         "PickupRadius": {

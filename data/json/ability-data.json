@@ -71,6 +71,530 @@
             }
         ]
     },
+    "ability_artist_bamboogrove": {
+        "AbilityChannelTime": 0.6,
+        "AbilityCooldown": {
+            "Value": 165,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityDuration": {
+            "Value": 6,
+            "Scale": [
+                {
+                    "Value": 0.04,
+                    "Type": "spirit"
+                },
+                {
+                    "Value": 1,
+                    "Type": "duration"
+                }
+            ]
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AttackFrequency": -1,
+        "AuraLingerDuration": {
+            "Value": 5,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "BambooModifier": {
+            "Class": "ArtistSilenceAura",
+            "Subclass": "Groundaura",
+            "ProvidedByAura": {
+                "Class": "CitadelSilenced",
+                "Subclass": "Silence"
+            },
+            "ImmuneModifier": {
+                "Class": "Base",
+                "Subclass": "Immune",
+                "EnabledStateMask": [
+                    "ArtistBambooImmune"
+                ]
+            },
+            "ImmuneDuration": 0.5
+        },
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorAlwaysPreviewRadius",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectilePassThroughWorld",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorDontInterruptSlideOnCast",
+            "BehaviorRefundFullCooldownOnChannelInterrupt"
+        ],
+        "CenterAllyModifier": {
+            "Class": "ArtistGroveAura",
+            "Subclass": "Groveally",
+            "ProvidedByAura": {
+                "Class": "Base",
+                "Subclass": "Buff"
+            }
+        },
+        "CenterEnemyModifier": {
+            "Class": "ArtistGroveAura",
+            "Subclass": "Center",
+            "ProvidedByAura": {
+                "Class": "Base",
+                "Subclass": "Buff",
+                "EnabledStateMask": [
+                    "GlowThroughWallsToEnemy"
+                ]
+            }
+        },
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+            "Value": 100,
+            "Scale": {
+                "Value": 1.4,
+                "Type": "spirit"
+            }
+        },
+        "DestroyOnDamage": 1,
+        "GroundAuraHeight": 20,
+        "GroundAuraRadius": 1.9,
+        "GroundAuraSpacing": 3.8,
+        "GroveRadius": {
+            "Value": 18,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "IsDisabled": false,
+        "Key": "ability_artist_bamboogrove",
+        "Name": "Abstract Landscape",
+        "SilenceDuration": {
+            "Value": 2,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "SlowPercent": 30,
+        "TechPower": 25,
+        "Upgrades": [
+            {
+                "AbilityCooldown": -20
+            },
+            {
+                "AbilityLifestealPercentHero": 25,
+                "TechPower": 15
+            },
+            {
+                "SilenceDuration": 1.25,
+                "AbilityDuration": 4,
+                "DestroyOnDamage": -1
+            }
+        ]
+    },
+    "ability_artist_bamboogrove_trigger": {
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorNonCombat",
+            "BehaviorTrigger"
+        ],
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "ability_artist_bamboogrove_trigger",
+        "Name": null,
+        "Upgrades": []
+    },
+    "ability_artist_homingbrush": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCharges": {
+            "Value": 2,
+            "Scale": {
+                "Value": 1,
+                "Type": "max_charges"
+            }
+        },
+        "AbilityCooldown": {
+            "Value": 22,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityCooldownBetweenCharge": {
+            "Value": 7,
+            "Scale": {
+                "Value": 1,
+                "Type": "charge_cooldown"
+            }
+        },
+        "AbilityDuration": {
+            "Value": 10,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "AbilityPostCastDuration": 0.1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BuffModifier": {
+            "Class": "Base",
+            "Subclass": "Buff"
+        },
+        "BulletDamageMultiplier": 120,
+        "ChannelMoveSpeed": -1,
+        "CooldownReductionPerHit": 1.5,
+        "Damage": {
+            "Value": 35,
+            "Scale": {
+                "Value": 0.7,
+                "Type": "spirit"
+            }
+        },
+        "DrawDuration": {
+            "Value": 20,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "FireRateSlow": 20,
+        "IsDisabled": false,
+        "Key": "ability_artist_homingbrush",
+        "MaxDrawDistance": {
+            "Value": 25,
+            "Scale": [
+                {
+                    "Value": 0.12,
+                    "Type": "spirit"
+                },
+                {
+                    "Value": 1,
+                    "Type": "range"
+                }
+            ]
+        },
+        "MaxShots": 3,
+        "Name": "Living Ink",
+        "Radius": {
+            "Value": 2.5,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "SlowModifier": {
+            "Class": "DiminishingSlow",
+            "Subclass": "Slow"
+        },
+        "StackModifier": {
+            "Class": "Base",
+            "Subclass": "Stack",
+            "EnabledStateMask": [
+                "ArtistFlowstate",
+                "ArtistPreventBulletCreation"
+            ]
+        },
+        "StackingBuffModifier": {
+            "Class": "ArtistStackingbuff",
+            "Subclass": "Stackingbuff"
+        },
+        "Upgrades": [
+            {
+                "AbilityCooldown": -4,
+                "MaxDrawDistance": 15
+            },
+            {
+                "MaxStacks": 5,
+                "StackDuration": 10,
+                "BonusFireRatePerStack": 10
+            },
+            {
+                "BulletDamageMultiplier": 30,
+                "CooldownReductionPerHit": 1,
+                "Damage": {
+                    "Value": 0,
+                    "Scale": {
+                        "Value": 0.4,
+                        "Type": "spirit"
+                    }
+                }
+            }
+        ]
+    },
+    "ability_artist_rollingprojectile": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCooldown": {
+            "Value": 23,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "AuraLingerDuration": 1,
+        "BarrierModifier": {
+            "Class": "Base",
+            "Subclass": "Barrier"
+        },
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "DashAirSpeed": 15,
+        "DashModifier": {
+            "Class": "Base",
+            "Subclass": "Dash"
+        },
+        "DashSpeed": 20,
+        "DebuffModifier": {
+            "Class": "ArtistRollingprojectileDebuff",
+            "Subclass": "Debuff"
+        },
+        "ExplosionCone": 90,
+        "ExplosionRadius": {
+            "Value": 15,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "FadingSlowPercent": 60,
+        "GroundAuraDuration": {
+            "Value": 6,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "GroundAuraHeight": 2,
+        "GroundAuraModifier": {
+            "Class": "BaseAura",
+            "Subclass": "Aura",
+            "ProvidedByAura": {
+                "Class": "ArtistEnhancedslide",
+                "Subclass": "Buff",
+                "Acceleration": 600.0,
+                "ForwardThrust": 0.0,
+                "DamageAmpModifier": {
+                    "Class": "ArtistStackingdamageamp",
+                    "Subclass": "Stackingdamageamp"
+                }
+            }
+        },
+        "GroundAuraRadius": 2,
+        "GroundAuraSpacing": 2,
+        "IsDisabled": false,
+        "Key": "ability_artist_rollingprojectile",
+        "MaxDamage": {
+            "Value": 100,
+            "Scale": {
+                "Value": 1.8,
+                "Type": "spirit"
+            }
+        },
+        "MaxDamageTime": 2,
+        "MinDamage": {
+            "Value": 50,
+            "Scale": {
+                "Value": 0.9,
+                "Type": "spirit"
+            }
+        },
+        "Name": "Flow State",
+        "SideMoveSpeedReduction": -65,
+        "SlideScale": 100,
+        "SlideTurnScale": 25,
+        "SlowDuration": {
+            "Value": 2,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "SlowModifier": {
+            "Class": "DiminishingSlow",
+            "Subclass": "Slow"
+        },
+        "TickRate": 0.1,
+        "Upgrades": [
+            {
+                "StaminaCooldownReduction": 150
+            },
+            {
+                "AbilityCooldown": -6,
+                "ExplosionRadius": 8,
+                "GroundAuraDuration": 4
+            },
+            {
+                "OutgoingDamagePercent": 20,
+                "DamageAmpBuildDuration": 4,
+                "DamageAmpDuration": 6
+            }
+        ]
+    },
+    "ability_artist_rollingprojectile_trigger": {
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorNonCombat",
+            "BehaviorTrigger"
+        ],
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "ability_artist_rollingprojectile_trigger",
+        "Name": null,
+        "Upgrades": []
+    },
+    "ability_artist_tether": {
+        "AbilityCastRange": {
+            "Value": 25,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "AbilityChannelTime": {
+            "Value": 2.6,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "AbilityCooldown": {
+            "Value": 35,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityPostCastDuration": 0.35,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectilePassThroughWorld",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorDontInterruptSlideOnCast",
+            "BehaviorRequireAbilityButtonToCancel",
+            "BehaviorTriggerCancelMashProtectionOnCast"
+        ],
+        "BuffModifier": {
+            "Class": "Base",
+            "Subclass": "Buff"
+        },
+        "BuildUpPerAbility": 15,
+        "BuildUpPerSecond": 33,
+        "BuildUpPerShot": 15,
+        "BuildupModifier": {
+            "Class": "CitadelArtistBuildup",
+            "Subclass": "Buildup",
+            "BuffModifier": {
+                "Class": "Base",
+                "Subclass": "Buff"
+            },
+            "SlowModifier": {
+                "Class": "SlowBase",
+                "Subclass": "Slow"
+            }
+        },
+        "ChannelMoveSpeed": -1,
+        "CombatBarrier": {
+            "Value": 0,
+            "Scale": {
+                "Value": 0.0,
+                "Type": "spirit"
+            }
+        },
+        "DPS": {
+            "Value": 30,
+            "Scale": {
+                "Value": 0.7,
+                "Type": "spirit"
+            }
+        },
+        "Damage": {
+            "Value": 60,
+            "Scale": {
+                "Value": 1.4,
+                "Type": "spirit"
+            }
+        },
+        "EffectivenessPerHit": 0.35,
+        "HealthRegen": {
+            "Value": 0,
+            "Scale": {
+                "Value": 0.0,
+                "Type": "spirit"
+            }
+        },
+        "IncomingDamagePercentReductionPerPickup": 2.5,
+        "IsDisabled": false,
+        "Key": "ability_artist_tether",
+        "Name": "Still Life",
+        "OutgoingDamagePercentPerPickup": 2.5,
+        "PullDistance": 800,
+        "SelfModifier": {
+            "Class": "Base",
+            "Subclass": "Self"
+        },
+        "SpiritPerPickup": 1,
+        "StunDuration": {
+            "Value": 1,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "StunModifier": {
+            "Class": "ArtistStun",
+            "Subclass": "Stunned"
+        },
+        "TargetingConeAngle": 40,
+        "TetherBreakRange": {
+            "Value": 35,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "TickInterval": 0.15,
+        "Upgrades": [
+            {
+                "BuffDuration": 4,
+                "HealthRegen": {
+                    "Value": 15,
+                    "Scale": {
+                        "Value": 0.25,
+                        "Type": "spirit"
+                    }
+                }
+            },
+            {
+                "OutgoingDamagePercent": -35
+            },
+            {
+                "AbilityCooldown": -11,
+                "StunDuration": 0.35,
+                "BonusMoveSpeedPercent": 20
+            }
+        ]
+    },
     "ability_baba_bench_melee": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
@@ -5000,6 +5524,10 @@
         "InfestModifier": {
             "Class": "CitadelModifierFamiliarInfested",
             "Subclass": "Infest"
+        },
+        "InfestOwnerWatcherModifier": {
+            "Class": "FamiliarInfestOwnerWatcher",
+            "Subclass": "FamiliarInfestOwnerWatcher"
         },
         "InfestWaitingModifier": {
             "Class": "Base",
