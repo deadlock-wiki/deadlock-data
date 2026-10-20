@@ -3798,10 +3798,27 @@
         "AirDashDistanceInMeters": 8.0,
         "AirDashDuration": 0.47,
         "AirDashSpeed": 17.0,
-        "BaseHealthRegen": 2.0,
+        "BaseHealthRegen": 0,
         "BaseWeaponDamageIncrease": 0,
-        "BoundAbilities": {},
-        "CritDamageBonusPercent": 0.0,
+        "BoundAbilities": {
+            "1": {
+                "Name": "Leech Therapy",
+                "Key": "ability_nurse_leech_therapy"
+            },
+            "2": {
+                "Name": "Wretched Vapors",
+                "Key": "ability_nurse_adrenaline_rush"
+            },
+            "3": {
+                "Name": "Healing Needles",
+                "Key": "ability_nurse_healing_needles"
+            },
+            "4": {
+                "Name": "Lurking Terrors",
+                "Key": "ability_nurse_fear"
+            }
+        },
+        "CritDamageBonusPercent": -40.0,
         "CritDamageReceivedPercent": 0.0,
         "CrouchSpeed": 4.75,
         "GroundDashDistanceInMeters": 10.0,
@@ -3816,19 +3833,19 @@
         "IsRecommended": false,
         "IsSelectable": true,
         "LevelScaling": {
-            "BulletDamage": 0.42541,
-            "MaxHealth": 31.0,
+            "BulletDamage": 0.37436,
+            "MaxHealth": 32.0,
             "PowerIncreases": 1,
             "TechPower": 1.1,
             "LightMeleeDamage": 1.58,
             "HeavyMeleeDamage": 3.6656,
-            "DPS": 4.0515,
-            "SustainedDPS": 2.2588
+            "DPS": 0.98517,
+            "SustainedDPS": 0.6773
         },
         "LightMeleeDamage": 50,
         "Lore": "hero_nurse_lore",
-        "MaxHealth": 780.0,
-        "MaxMoveSpeed": 7.2,
+        "MaxHealth": 730,
+        "MaxMoveSpeed": 6.8,
         "MoveAcceleration": 4,
         "Name": "Nurse Harrow",
         "OOCHealthRegen": 0,
@@ -3837,29 +3854,29 @@
         "ReloadSpeed": 0,
         "Role": "hero_nurse_role",
         "SpiritScaling": {},
-        "SprintSpeed": 1.6,
+        "SprintSpeed": 2.5,
         "Stamina": 3,
         "StaminaCooldown": 4.5000045000045,
         "StaminaRegenPerSecond": 0.222222,
         "TechDuration": 0,
         "TechRange": 0,
-        "Type": null,
+        "Type": "Marksman",
         "Weapon": {
-            "BulletSpeed": 660.4,
-            "BulletDamage": 5.5,
-            "RoundsPerSecond": 9.5238,
-            "ClipSize": 27,
-            "ReloadTime": 2.25,
+            "BulletSpeed": 508.0,
+            "BulletDamage": 14.858,
+            "RoundsPerSecond": 2.6316,
+            "ClipSize": 11,
+            "ReloadTime": 1.9,
             "ReloadMovespeed": 1.0,
             "ReloadDelay": 0.0,
             "ReloadSingle": false,
-            "FalloffStartRange": 18.0,
-            "FalloffEndRange": 55.0,
+            "FalloffStartRange": 19.99,
+            "FalloffEndRange": 57.51,
             "FalloffStartScale": 1.0,
             "FalloffEndScale": 0.1,
             "FalloffBias": 0.5,
-            "BulletGravityScale": 0.8,
-            "BulletRadius": 0.1016,
+            "BulletGravityScale": 0.0,
+            "BulletRadius": 0.254,
             "BulletsPerShot": 1,
             "BulletsPerBurst": 1,
             "BurstInterShotInterval": 0,
@@ -3867,8 +3884,14 @@
             "HitOnceAcrossAllBullets": false,
             "CanCrit": true,
             "AmmoConsumedPerShot": 1,
-            "DPS": 52.381,
-            "SustainedDPS": 29.204
+            "ExplosionDamageScaleAtMaxRadius": 0.3,
+            "DPS": 39.1,
+            "SustainedDPS": 26.881,
+            "NameKey": "citadel_weapon_nurse_set",
+            "WeaponTypes": [
+                "Attribute_EWeaponAttribute_RapidFire",
+                "Attribute_EWeaponAttribute_LongRange"
+            ]
         },
         "WeaponPowerScale": 1
     },
