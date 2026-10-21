@@ -10874,6 +10874,450 @@
         "ShieldScale": 2.5,
         "Upgrades": []
     },
+    "ability_nurse_adrenaline_rush": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCastRange": {
+            "Value": 13,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "AbilityCooldown": {
+            "Value": 40,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityDuration": {
+            "Value": 4,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorAllowAltCast",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorAllowSelfCast"
+        ],
+        "BuffModifier": {
+            "Class": "NurseAdrenalineRushBuff",
+            "Subclass": "NurseAdrenalineRushBuff"
+        },
+        "ChannelMoveSpeed": -1,
+        "CrashDuration": 4,
+        "CrashModifier": {
+            "Class": "NurseAdrenalineRushCrash",
+            "Subclass": "NurseAdrenalineRushCrash"
+        },
+        "CrashTimeScalePenaltyPercent": 20,
+        "DamageSpiritThresholdPercent": 6,
+        "DeferredDamageBonusPercent": 30,
+        "DeferredDamagePercent": 100,
+        "IsDisabled": false,
+        "Key": "ability_nurse_adrenaline_rush",
+        "Name": "Wretched Vapors",
+        "RushTimeScaleBonusPercent": {
+            "Value": 25,
+            "Scale": {
+                "Value": 0.06,
+                "Type": "spirit"
+            }
+        },
+        "Upgrades": [
+            {
+                "AbilityCooldown": -15,
+                "AbilityCastRange": 7
+            },
+            {
+                "AbilityDuration": 1,
+                "HealingEffectivenessPercent": 20,
+                "HealAmpRegenPercent": 20
+            },
+            {
+                "RushTimeScaleBonusPercent": 15,
+                "DispelDebuffs": 1
+            }
+        ]
+    },
+    "ability_nurse_fear": {
+        "AbilityCastDelay": 1.3,
+        "AbilityCastRange": {
+            "Value": 35,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "AbilityChannelTime": {
+            "Value": 7.0,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "AbilityCooldown": {
+            "Value": 200.0,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "AirControlAccelPercent": -50,
+        "AirDrag": 3,
+        "AutoCastDelayModifier": {
+            "Class": "Base",
+            "Subclass": "Castdelay"
+        },
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorShowCastRangeAsSatSphereWhileCasting",
+            "BehaviorDontInterruptSlideOnCast",
+            "BehaviorDisplaysDamageImpact"
+        ],
+        "BuildupDecayTime": 10.0,
+        "BuildupLookAngle": 80,
+        "BuildupLookAngleFull": 55,
+        "BuildupModifier": {
+            "Class": "NurseFearBuildup",
+            "Subclass": "NurseFearBuildup",
+            "BuildUpDecayDelay": 0.6
+        },
+        "BuildupTickRate": 0.075,
+        "BuildupTime": 1.3,
+        "CameraTurnRateMax": 15,
+        "ChannelMoveSpeed": 3.5,
+        "ConeAngle": 180,
+        "DPS": {
+            "Value": 60,
+            "Scale": {
+                "Value": 0.3,
+                "Type": "spirit"
+            }
+        },
+        "DebuffDuration": {
+            "Value": 2.2,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "DebuffModifier": {
+            "Class": "CitadelNurseFearDebuff",
+            "Subclass": "CitadelNurseFearDebuff",
+            "SteerTurnRate": 50,
+            "ReturnTurnRate": 50
+        },
+        "ExtraSweepConeAngle": 40,
+        "ExtraSweepOffsetBehindCaster": 40,
+        "ExtraSweepRange": {
+            "Value": 4,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "FacingAwayDamagePercent": 50,
+        "FallSpeedMax": 1,
+        "FearDurationPerLeechStack": {
+            "Value": 0.1,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "FireRateSlow": 30,
+        "GazeLingerDuration": 0.3,
+        "GazeModifier": {
+            "Class": "CitadelNurseGaze",
+            "Subclass": "NurseFearGaze",
+            "EnabledStateMask": [
+                "DashDisabledDebuff",
+                "SilenceMovementAbilites"
+            ]
+        },
+        "ImmunityModifier": {
+            "Class": "Base",
+            "Subclass": "NurseFearImmunity"
+        },
+        "IsDisabled": false,
+        "Key": "ability_nurse_fear",
+        "LaunchHeight": 7.8,
+        "LookBuildupScalePercent": 35,
+        "Name": "Lurking Terrors",
+        "PitchScaleMax": 1.3,
+        "PitchScaleMin": 1.0,
+        "SlowLingerDuration": 0.5,
+        "SlowModifier": {
+            "Class": "SlowBase",
+            "Subclass": "NurseFearSlow",
+            "EnabledStateMask": [
+                "ZiplineDisabled"
+            ]
+        },
+        "SlowPercent": 30,
+        "TargetMantleAttemptInterval": 0.5,
+        "TickRate": 0.15,
+        "Upgrades": [
+            {
+                "AbilityCooldown": -50
+            },
+            {
+                "SlowPercent": 20,
+                "FireRateSlow": 20,
+                "DPS": 30
+            },
+            {
+                "ChannelDamageImmune": 1,
+                "AbilityChannelTime": 3.0,
+                "DPS": {
+                    "Value": 0,
+                    "Scale": {
+                        "Value": 0.5,
+                        "Type": "spirit"
+                    }
+                }
+            }
+        ],
+        "VolScaleMax": 1.0,
+        "VolScaleMin": 0.35
+    },
+    "ability_nurse_healing_needles": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCharges": {
+            "Value": 1,
+            "Scale": {
+                "Value": 1,
+                "Type": "max_charges"
+            }
+        },
+        "AbilityChargesConditionally": 1,
+        "AbilityChargesInitial": 1,
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontInterruptSlideOnCast",
+            "BehaviorDoNotAllowSpamProc"
+        ],
+        "BuffExtendMaxDurationPercent": 200,
+        "BuffModifier": {
+            "Class": "NurseHealingNeedlesBuff",
+            "Subclass": "NurseHealingNeedlesBuff",
+            "StatusEffectPriority": 0
+        },
+        "BuildUpDuration": 5,
+        "BuildUpModifier": {
+            "Class": "CitadelBaseBuildup",
+            "Subclass": "NurseLifeforceBuildup",
+            "BuildUpDecayDelay": 3.0
+        },
+        "ChannelMoveSpeed": -1,
+        "ChargeGenPctScale": {
+            "Value": 100,
+            "Scale": {
+                "Value": -1.0,
+                "Type": "cooldown"
+            }
+        },
+        "ChargeHitCooldown": 0.15,
+        "ChargePercentPerAbilityHit": 1.26,
+        "ChargePercentPerBulletHit": 1.26,
+        "ChargePercentPerHeadshot": 2.52,
+        "ChargePercentPerHeavyMelee": 15.12,
+        "ChargePercentPerLightMelee": 7.56,
+        "ChargePercentPerSecondPerLeech": 0.15,
+        "HeadshotHealBonusPercent": 15,
+        "HealRegen": {
+            "Value": 25,
+            "Scale": {
+                "Value": 0.2,
+                "Type": "spirit"
+            }
+        },
+        "IsDisabled": false,
+        "Key": "ability_nurse_healing_needles",
+        "Name": "Healing Needles",
+        "NonHeroChargeScalePercent": 35,
+        "ProcModifier": {
+            "Class": "Base",
+            "Subclass": "NurseLifeforceProc"
+        },
+        "SecondaryShotHealPercent": 50,
+        "SelfModifier": {
+            "Class": "NurseHealingNeedlesEquipped",
+            "Subclass": "NurseHealingNeedlesEquipped"
+        },
+        "SwapEndDelay": 1.8,
+        "SwapInDelay": 1.3,
+        "Upgrades": [
+            {
+                "AbilityCharges": 1
+            },
+            {
+                "StaminaRestorePerHit": 0.6,
+                "HealRegen": 20
+            },
+            {
+                "HealRegen": {
+                    "Value": 0,
+                    "Scale": {
+                        "Value": 0.4,
+                        "Type": "spirit"
+                    }
+                },
+                "BuffExtendPercentPerShot": 6
+            }
+        ]
+    },
+    "ability_nurse_leech_therapy": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCooldown": {
+            "Value": 30,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityDuration": {
+            "Value": 5,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "AbilityPostCastDuration": 0.2,
+        "AbilityUnitTargetLimit": 1,
+        "AllyModifier": {
+            "Class": "NurseLeechTherapyAlly",
+            "Subclass": "NurseLeechTherapyAlly"
+        },
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCanHealPlayers",
+            "BehaviorProjectileFiredAsBullet",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": 5,
+        "DPS": {
+            "Value": 23,
+            "Scale": {
+                "Value": 0.19,
+                "Type": "spirit"
+            }
+        },
+        "FireRatePerLeechPickup": 5,
+        "HealPercentOfLeechDamage": 100,
+        "IsDisabled": false,
+        "Key": "ability_nurse_leech_therapy",
+        "LeechCount": 4,
+        "LeechCrawlRadius": {
+            "Value": 8,
+            "Scale": [
+                {
+                    "Value": 1.3,
+                    "Type": "power_increase"
+                },
+                {
+                    "Value": 1,
+                    "Type": "range"
+                }
+            ]
+        },
+        "LeechCrawlRadiusExitGap": 5,
+        "LeechEatDurationPerSecond": 0.65,
+        "LeechEatTickRate": 0.38,
+        "LeechGroundLifetime": 180,
+        "LeechHuntCrawlSpeed": 3,
+        "LeechHuntLifetime": {
+            "Value": 9,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "LeechHuntLifetimeVariance": 0.55,
+        "LeechHuntMaxDrop": 3,
+        "LeechHuntSearchInterval": 0.2,
+        "LeechHuntSearchRadiusPercent": 150,
+        "LeechLeapArcHeight": 0.5,
+        "LeechLeapDuration": 0.4,
+        "LeechLungeSpeed": 15,
+        "LeechMoveSpeed": {
+            "Value": 2,
+            "Scale": {
+                "Value": 0.05,
+                "Type": "power_increase"
+            }
+        },
+        "LeechSpawnAngleJitter": 0.32,
+        "LeechSpawnSpreadMinPercent": 73,
+        "LeechSpawnSpreadPercent": 58,
+        "LeechStacksKeptOnDeathPercent": 50,
+        "MaxLeechBonusStacks": 10,
+        "Name": "Leech Therapy",
+        "PickupBonusModifier": {
+            "Class": "NurseLeechTherapyStackBonus",
+            "Subclass": "NurseLeechTherapyStackBonus"
+        },
+        "Radius": {
+            "Value": 6.5,
+            "Scale": {
+                "Value": 1,
+                "Type": "radius"
+            }
+        },
+        "RegenPerLeechPickup": {
+            "Value": 0.6,
+            "Scale": {
+                "Value": 0.13,
+                "Type": "power_increase"
+            }
+        },
+        "StacksLostOnDeathPercent": 25,
+        "TargetModifier": {
+            "Class": "NurseLeechTherapyTarget",
+            "Subclass": "NurseLeechTherapyTarget",
+            "EatingBuffsModifier": {
+                "Class": "Base",
+                "Subclass": "NurseLeechTherapyEatingBuffs"
+            }
+        },
+        "TickRate": 0.38,
+        "Upgrades": [
+            {
+                "LeechStaminaDrain": 0.3
+            },
+            {
+                "AbilityCooldown": -10,
+                "SpiritPowerPerLeechStack": 4
+            },
+            {
+                "MaxLeechBonusStacks": 8,
+                "DPS": {
+                    "Value": 0,
+                    "Scale": {
+                        "Value": 0.3,
+                        "Type": "spirit"
+                    }
+                },
+                "Radius": 1
+            }
+        ]
+    },
     "ability_opera_ability01": {
         "AbilityCooldown": {
             "Value": 26.0,

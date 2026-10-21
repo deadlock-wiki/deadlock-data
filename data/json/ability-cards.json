@@ -30336,7 +30336,797 @@
         }
     },
     "hero_nurse": {
-        "Name": "Nurse Harrow"
+        "Name": "Nurse Harrow",
+        "1": {
+            "Key": "ability_nurse_leech_therapy",
+            "Name": "Leech Therapy",
+            "DescKey": "ability_nurse_leech_therapy_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "DPS",
+                            "Name": "Damage Per Second",
+                            "Value": 23,
+                            "Scale": {
+                                "Value": 0.19,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "LeechEatDurationPerSecond",
+                            "Name": "Buff Duration Drain Per Second",
+                            "Value": 0.65,
+                            "Type": "duration"
+                        }
+                    ]
+                },
+                "Alt": [],
+                "DescKey": "ability_nurse_leech_therapy_desc"
+            },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "RegenPerLeechPickup",
+                            "Name": "Health Regen Per Leech",
+                            "Value": 0.6,
+                            "Scale": {
+                                "Value": 0.13,
+                                "Type": "power_increase"
+                            },
+                            "Type": "healing"
+                        },
+                        {
+                            "Key": "FireRatePerLeechPickup",
+                            "Name": "Fire Rate Per Leech",
+                            "Value": 5,
+                            "Type": "fire_rate"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "MaxLeechBonusStacks",
+                        "Name": "Max Leech Stacks",
+                        "Value": 10
+                    },
+                    {
+                        "Key": "LeechCrawlRadius",
+                        "Name": "Leech Crawl Range",
+                        "Value": 8,
+                        "Scale": [
+                            {
+                                "Value": 1.3,
+                                "Type": "power_increase"
+                            },
+                            {
+                                "Value": 1,
+                                "Type": "range"
+                            }
+                        ],
+                        "Type": "distance"
+                    },
+                    {
+                        "Key": "LeechStaminaDrain",
+                        "Name": "Stamina Drain",
+                        "Value": 0,
+                        "Type": "stamina_recovery"
+                    },
+                    {
+                        "Key": "SpiritPowerPerLeechStack",
+                        "Name": "Spirit Power Per Leech",
+                        "Value": 0,
+                        "Type": "tech_damage"
+                    }
+                ],
+                "DescKey": "ability_nurse_leech_therapy_leech_desc"
+            },
+            "Upgrades": [
+                {
+                    "LeechStaminaDrain": 0.3,
+                    "DescKey": "ability_nurse_leech_therapy_t1_desc"
+                },
+                {
+                    "AbilityCooldown": -10,
+                    "SpiritPowerPerLeechStack": 4,
+                    "DescKey": "ability_nurse_leech_therapy_t2_desc"
+                },
+                {
+                    "MaxLeechBonusStacks": 8,
+                    "DPS": {
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 0.3,
+                            "Type": "spirit"
+                        }
+                    },
+                    "Radius": 1,
+                    "DescKey": "ability_nurse_leech_therapy_t3_desc"
+                }
+            ],
+            "Headers": {
+                "AbilityCastDelay": {
+                    "Name": "Cast Delay",
+                    "Value": 0.1,
+                    "Type": "cast"
+                },
+                "AbilityCooldown": {
+                    "Name": "Cooldown",
+                    "Value": 30,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "cooldown"
+                    },
+                    "Type": "cooldown"
+                },
+                "AbilityDuration": {
+                    "Name": "Duration",
+                    "Value": 5,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "duration"
+                    },
+                    "Type": "duration"
+                },
+                "Radius": {
+                    "Name": "Radius",
+                    "Value": 6.5,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "radius"
+                    },
+                    "Type": "distance"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 5,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.2
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "HealPercentOfLeechDamage": {
+                    "Name": null,
+                    "Value": 100
+                },
+                "LeechCount": {
+                    "Name": null,
+                    "Value": 4
+                },
+                "LeechCrawlRadiusExitGap": {
+                    "Name": null,
+                    "Value": 5
+                },
+                "LeechEatTickRate": {
+                    "Name": null,
+                    "Value": 0.38
+                },
+                "LeechGroundLifetime": {
+                    "Name": null,
+                    "Value": 180
+                },
+                "LeechHuntCrawlSpeed": {
+                    "Name": null,
+                    "Value": 3
+                },
+                "LeechHuntLifetime": {
+                    "Name": null,
+                    "Value": 9,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "duration"
+                    }
+                },
+                "LeechHuntLifetimeVariance": {
+                    "Name": null,
+                    "Value": 0.55
+                },
+                "LeechHuntMaxDrop": {
+                    "Name": null,
+                    "Value": 3
+                },
+                "LeechHuntSearchInterval": {
+                    "Name": null,
+                    "Value": 0.2
+                },
+                "LeechHuntSearchRadiusPercent": {
+                    "Name": null,
+                    "Value": 150
+                },
+                "LeechLeapArcHeight": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "LeechLeapDuration": {
+                    "Name": null,
+                    "Value": 0.4
+                },
+                "LeechLungeSpeed": {
+                    "Name": null,
+                    "Value": 15
+                },
+                "LeechMoveSpeed": {
+                    "Name": null,
+                    "Value": 2,
+                    "Scale": {
+                        "Value": 0.05,
+                        "Type": "power_increase"
+                    }
+                },
+                "LeechSpawnAngleJitter": {
+                    "Name": null,
+                    "Value": 0.32
+                },
+                "LeechSpawnSpreadMinPercent": {
+                    "Name": null,
+                    "Value": 73
+                },
+                "LeechSpawnSpreadPercent": {
+                    "Name": null,
+                    "Value": 58
+                },
+                "LeechStacksKeptOnDeathPercent": {
+                    "Name": null,
+                    "Value": 50
+                },
+                "StacksLostOnDeathPercent": {
+                    "Name": null,
+                    "Value": 25
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 0.38
+                }
+            }
+        },
+        "2": {
+            "Key": "ability_nurse_adrenaline_rush",
+            "Name": "Wretched Vapors",
+            "DescKey": "ability_nurse_adrenaline_rush_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "RushTimeScaleBonusPercent",
+                            "Name": "Rush Speed",
+                            "Value": 25,
+                            "Scale": {
+                                "Value": 0.06,
+                                "Type": "spirit"
+                            },
+                            "Type": "move_speed"
+                        },
+                        {
+                            "Key": "AbilityDuration",
+                            "Name": "Duration",
+                            "Value": 4,
+                            "Scale": {
+                                "Value": 1,
+                                "Type": "duration"
+                            },
+                            "Type": "duration"
+                        },
+                        {
+                            "Key": "DeferredDamageBonusPercent",
+                            "Name": "Extra Damage Taken",
+                            "Value": 30,
+                            "Type": "damage"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "CrashDuration",
+                        "Name": "Crash Duration",
+                        "Value": 4,
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "CrashTimeScalePenaltyPercent",
+                        "Name": "Crash Slowdown",
+                        "Value": 20,
+                        "Type": "slow"
+                    }
+                ],
+                "DescKey": "ability_nurse_adrenaline_rush_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -15,
+                    "AbilityCastRange": 7,
+                    "DescKey": "ability_nurse_adrenaline_rush_t1_desc"
+                },
+                {
+                    "AbilityDuration": 1,
+                    "HealingEffectivenessPercent": 20,
+                    "HealAmpRegenPercent": 20,
+                    "DescKey": "ability_nurse_adrenaline_rush_t2_desc"
+                },
+                {
+                    "RushTimeScaleBonusPercent": 15,
+                    "DispelDebuffs": 1,
+                    "DescKey": "ability_nurse_adrenaline_rush_t3_desc"
+                }
+            ],
+            "Headers": {
+                "AbilityCastDelay": {
+                    "Name": "Cast Delay",
+                    "Value": 0.2,
+                    "Type": "cast"
+                },
+                "AbilityCastRange": {
+                    "Name": "Cast Range",
+                    "Value": 13,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "range"
+                    },
+                    "Type": "range"
+                },
+                "AbilityCooldown": {
+                    "Name": "Cooldown",
+                    "Value": 40,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "cooldown"
+                    },
+                    "Type": "cooldown"
+                },
+                "AbilityCooldownBetweenCharge": {
+                    "Name": "Charge Delay",
+                    "Value": -1.0,
+                    "Type": "charge_cooldown"
+                },
+                "AbilityDuration": {
+                    "Name": "Duration",
+                    "Value": 4,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "duration"
+                    },
+                    "Type": "duration"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Buff": {
+                "DeferredDamagePercent": {
+                    "Name": "Damage Deferred",
+                    "Value": 100,
+                    "Type": "bullet_armor_up"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "DamageSpiritThresholdPercent": {
+                    "Name": null,
+                    "Value": 6
+                }
+            }
+        },
+        "3": {
+            "Key": "ability_nurse_healing_needles",
+            "Name": "Healing Needles",
+            "DescKey": "ability_nurse_healing_needles_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "On Hit Friendly:",
+                            "Key": "HealRegen",
+                            "Name": "Heal Per Shot",
+                            "Value": 25,
+                            "Scale": {
+                                "Value": 0.2,
+                                "Type": "spirit"
+                            },
+                            "Type": "healing"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "HeadshotHealBonusPercent",
+                        "Name": "Headshot Heal Bonus",
+                        "Value": 15,
+                        "Type": "healing"
+                    },
+                    {
+                        "Key": "ChargePercentPerSecondPerLeech",
+                        "Name": "Charge Per Leech",
+                        "Value": 0.15
+                    },
+                    {
+                        "Key": "StaminaRestorePerHit",
+                        "Name": "Stamina Per Shot",
+                        "Value": 0.0,
+                        "Type": "stamina_recovery"
+                    }
+                ],
+                "DescKey": "ability_nurse_healing_needles_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCharges": 1,
+                    "DescKey": "ability_nurse_healing_needles_t1_desc"
+                },
+                {
+                    "StaminaRestorePerHit": 0.6,
+                    "HealRegen": 20,
+                    "DescKey": "ability_nurse_healing_needles_t2_desc"
+                },
+                {
+                    "HealRegen": {
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 0.4,
+                            "Type": "spirit"
+                        }
+                    },
+                    "BuffExtendPercentPerShot": 6,
+                    "DescKey": "ability_nurse_healing_needles_t3_desc"
+                }
+            ],
+            "Headers": {
+                "AbilityCastDelay": {
+                    "Name": "Cast Delay",
+                    "Value": 0.1,
+                    "Type": "cast"
+                },
+                "AbilityCharges": {
+                    "Name": "Charges",
+                    "Value": 1,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "max_charges"
+                    },
+                    "Type": "cast"
+                },
+                "AbilityCooldownBetweenCharge": {
+                    "Name": "Charge Delay",
+                    "Value": -1.0,
+                    "Type": "charge_cooldown"
+                }
+            },
+            "Duration": {
+                "ChargeHitCooldown": {
+                    "Name": null,
+                    "Value": 0.15,
+                    "Type": "duration"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityChargesConditionally": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AbilityChargesInitial": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "BuffExtendMaxDurationPercent": {
+                    "Name": null,
+                    "Value": 200
+                },
+                "BuildUpDuration": {
+                    "Name": null,
+                    "Value": 5
+                },
+                "ChargeGenPctScale": {
+                    "Name": "Charge Rate",
+                    "Value": 100,
+                    "Scale": {
+                        "Value": -1.0,
+                        "Type": "cooldown"
+                    }
+                },
+                "ChargePercentPerAbilityHit": {
+                    "Name": null,
+                    "Value": 1.26
+                },
+                "ChargePercentPerBulletHit": {
+                    "Name": null,
+                    "Value": 1.26
+                },
+                "ChargePercentPerHeadshot": {
+                    "Name": null,
+                    "Value": 2.52
+                },
+                "ChargePercentPerHeavyMelee": {
+                    "Name": null,
+                    "Value": 15.12
+                },
+                "ChargePercentPerLightMelee": {
+                    "Name": null,
+                    "Value": 7.56
+                },
+                "NonHeroChargeScalePercent": {
+                    "Name": null,
+                    "Value": 35
+                },
+                "SecondaryShotHealPercent": {
+                    "Name": null,
+                    "Value": 50
+                },
+                "SwapEndDelay": {
+                    "Name": null,
+                    "Value": 1.8
+                },
+                "SwapInDelay": {
+                    "Name": null,
+                    "Value": 1.3
+                }
+            }
+        },
+        "4": {
+            "Key": "ability_nurse_fear",
+            "Name": "Lurking Terrors",
+            "DescKey": "ability_nurse_fear_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "DPS",
+                            "Name": "Damage Per Second",
+                            "Value": 60,
+                            "Scale": {
+                                "Value": 0.3,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "DebuffDuration",
+                            "NameKey": "FearDuration",
+                            "Name": "Fear Duration",
+                            "Value": 2.2,
+                            "Scale": {
+                                "Value": 1,
+                                "Type": "duration"
+                            },
+                            "Type": "duration"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "BuildupTime",
+                        "NameKey": "FearBuildupTime",
+                        "Name": "Fear Buildup Time",
+                        "Value": 1.3,
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "FearDurationPerLeechStack",
+                        "Name": "Fear Duration Per Leech",
+                        "Value": 0.1,
+                        "Scale": {
+                            "Value": 1,
+                            "Type": "duration"
+                        },
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "SlowPercent",
+                        "Name": "Move Speed",
+                        "Value": 30,
+                        "Type": "slow"
+                    },
+                    {
+                        "Key": "FireRateSlow",
+                        "Name": "Fire Rate",
+                        "Value": 30,
+                        "Type": "fire_rate"
+                    }
+                ],
+                "DescKey": "ability_nurse_fear_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -50
+                },
+                {
+                    "SlowPercent": 20,
+                    "FireRateSlow": 20,
+                    "DPS": 30,
+                    "DescKey": "ability_nurse_fear_t2_desc"
+                },
+                {
+                    "ChannelDamageImmune": 1,
+                    "AbilityChannelTime": 3.0,
+                    "DPS": {
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 0.5,
+                            "Type": "spirit"
+                        }
+                    },
+                    "DescKey": "ability_nurse_fear_t3_desc"
+                }
+            ],
+            "Headers": {
+                "AbilityCastDelay": {
+                    "Name": "Cast Delay",
+                    "Value": 1.3,
+                    "Type": "cast"
+                },
+                "AbilityCastRange": {
+                    "Name": "Cast Range",
+                    "Value": 35,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "range"
+                    },
+                    "Type": "range"
+                },
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Value": 7.0,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "duration"
+                    },
+                    "Type": "cast"
+                },
+                "AbilityCooldown": {
+                    "Name": "Cooldown",
+                    "Value": 200.0,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "cooldown"
+                    },
+                    "Type": "cooldown"
+                },
+                "AbilityCooldownBetweenCharge": {
+                    "Name": "Charge Delay",
+                    "Value": -1.0,
+                    "Type": "charge_cooldown"
+                }
+            },
+            "Duration": {
+                "BuildupDecayTime": {
+                    "Name": null,
+                    "Value": 10.0,
+                    "Type": "duration"
+                },
+                "GazeLingerDuration": {
+                    "Name": "Stamina Lock Linger",
+                    "Value": 0.3,
+                    "Type": "duration"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 3.5,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AirControlAccelPercent": {
+                    "Name": "Air Acceleration",
+                    "Value": -50
+                },
+                "AirDrag": {
+                    "Name": null,
+                    "Value": 3
+                },
+                "BuildupLookAngle": {
+                    "Name": null,
+                    "Value": 80
+                },
+                "BuildupLookAngleFull": {
+                    "Name": null,
+                    "Value": 55
+                },
+                "BuildupTickRate": {
+                    "Name": null,
+                    "Value": 0.075
+                },
+                "CameraTurnRateMax": {
+                    "Name": null,
+                    "Value": 15
+                },
+                "ConeAngle": {
+                    "Name": "Cone Angle",
+                    "Value": 180
+                },
+                "ExtraSweepConeAngle": {
+                    "Name": null,
+                    "Value": 40
+                },
+                "ExtraSweepOffsetBehindCaster": {
+                    "Name": null,
+                    "Value": 40
+                },
+                "ExtraSweepRange": {
+                    "Name": null,
+                    "Value": 4,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "range"
+                    }
+                },
+                "FacingAwayDamagePercent": {
+                    "Name": null,
+                    "Value": 50
+                },
+                "FallSpeedMax": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "LaunchHeight": {
+                    "Name": null,
+                    "Value": 7.8
+                },
+                "LookBuildupScalePercent": {
+                    "Name": null,
+                    "Value": 35
+                },
+                "PitchScaleMax": {
+                    "Name": null,
+                    "Value": 1.3
+                },
+                "PitchScaleMin": {
+                    "Name": null,
+                    "Value": 1.0
+                },
+                "SlowLingerDuration": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "TargetMantleAttemptInterval": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 0.15
+                },
+                "VolScaleMax": {
+                    "Name": null,
+                    "Value": 1.0
+                },
+                "VolScaleMin": {
+                    "Name": null,
+                    "Value": 0.35
+                }
+            }
+        }
     },
     "hero_baba": {
         "Name": "Baba",
