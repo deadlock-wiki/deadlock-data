@@ -296,6 +296,11 @@
                     "Name": null,
                     "Value": 1
                 },
+                "AuraLingerDuration": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 1.0
+                },
                 "FlameDashJumpBonus": {
                     "Name": null,
                     "Value": 50
@@ -1281,6 +1286,11 @@
                 "AirSideMoveSpeedPercentage": {
                     "Name": null,
                     "Value": -35
+                },
+                "JumpVelocity": {
+                    "Name": "Jump Velocity",
+                    "Hidden": true,
+                    "Value": 1000
                 },
                 "MaxFlyHeight": {
                     "Name": null,
@@ -2668,6 +2678,16 @@
                 }
             ],
             "Headers": {
+                "AbilityCastRange": {
+                    "Name": "Cast Range",
+                    "Hidden": true,
+                    "Value": 500,
+                    "Scale": {
+                        "Value": 0.0,
+                        "Type": "range"
+                    },
+                    "Type": "range"
+                },
                 "AbilityCharges": {
                     "Name": "Charges",
                     "Value": 2,
@@ -3292,6 +3312,14 @@
                         "Type": "charge_cooldown"
                     },
                     "Type": "charge_cooldown"
+                }
+            },
+            "Duration": {
+                "TurretDeployTime": {
+                    "Name": "Deploy Time",
+                    "Hidden": true,
+                    "Value": 0.25,
+                    "Type": "duration"
                 }
             },
             "Range": {
@@ -4064,6 +4092,16 @@
                     "Value": 0.2,
                     "Type": "cast"
                 },
+                "AbilityCastRange": {
+                    "Name": "Cast Range",
+                    "Hidden": true,
+                    "Value": 5.08,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "range"
+                    },
+                    "Type": "range"
+                },
                 "AbilityCooldown": {
                     "Name": "Cooldown",
                     "Value": 25.0,
@@ -4812,6 +4850,11 @@
                 "AbilityUnitTargetLimit": {
                     "Name": null,
                     "Value": 1
+                },
+                "AuraLingerDuration": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 1.0
                 }
             }
         },
@@ -5175,6 +5218,18 @@
                 "ChannelMoveSpeed": {
                     "Name": "Channel Move Speed",
                     "Value": -1,
+                    "Type": "move_speed"
+                },
+                "MoveWhileShootingSpeedPenaltyReductionPercent": {
+                    "Name": "move speed penalty while shooting reduction",
+                    "Hidden": true,
+                    "Value": 100,
+                    "Type": "move_speed"
+                },
+                "MoveWhileZoomedSpeedPenaltyReductionPercent": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 100,
                     "Type": "move_speed"
                 },
                 "SlideScale": {
@@ -6218,6 +6273,16 @@
                     "Name": null,
                     "Value": 1.3
                 },
+                "MinTimeBeforeDestroy": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 0.1
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 0.5
+                },
                 "TossSpeed": {
                     "Name": null,
                     "Value": 3.556
@@ -6939,6 +7004,16 @@
                     "Value": -1.0,
                     "Type": "charge_cooldown"
                 },
+                "AbilityDuration": {
+                    "Name": "Duration",
+                    "Hidden": true,
+                    "Value": 3.5,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "duration"
+                    },
+                    "Type": "duration"
+                },
                 "Radius": {
                     "Name": "Radius",
                     "Value": 8,
@@ -7188,6 +7263,14 @@
                     "Name": "Charge Delay",
                     "Value": -1.0,
                     "Type": "charge_cooldown"
+                }
+            },
+            "Duration": {
+                "SlowTargetDuration": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 0.5,
+                    "Type": "duration"
                 }
             },
             "Move": {
@@ -7797,6 +7880,12 @@
                 "AbilityCastDelay": {
                     "Name": "Cast Delay",
                     "Value": 0.5,
+                    "Type": "cast"
+                },
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Hidden": true,
+                    "Value": 9999,
                     "Type": "cast"
                 },
                 "AbilityCharges": {
@@ -9562,6 +9651,18 @@
                 "ChannelMoveSpeed": {
                     "Name": "Channel Move Speed",
                     "Value": -1,
+                    "Type": "move_speed"
+                },
+                "MoveWhileShootingSpeedPenaltyReductionPercent": {
+                    "Name": "move speed penalty while shooting reduction",
+                    "Hidden": true,
+                    "Value": 100,
+                    "Type": "move_speed"
+                },
+                "MoveWhileZoomedSpeedPenaltyReductionPercent": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 100,
                     "Type": "move_speed"
                 }
             },
@@ -14605,6 +14706,12 @@
                     },
                     "Type": "range"
                 },
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Hidden": true,
+                    "Value": 9999,
+                    "Type": "cast"
+                },
                 "AbilityCooldown": {
                     "Name": "Cooldown",
                     "Value": 50.0,
@@ -16106,6 +16213,16 @@
                     "Value": 0.1,
                     "Type": "cast"
                 },
+                "AbilityCastRange": {
+                    "Name": "Cast Range",
+                    "Hidden": true,
+                    "Value": 500,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "range"
+                    },
+                    "Type": "range"
+                },
                 "AbilityCharges": {
                     "Name": "Charges",
                     "Value": 1,
@@ -17292,6 +17409,11 @@
                     "Name": null,
                     "Value": 3.81
                 },
+                "BackwardsVelocity": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 13.0
+                },
                 "FallSpeedMax": {
                     "Name": null,
                     "Value": 1.524
@@ -17299,6 +17421,11 @@
                 "TimeBeforeProjectileLaunch": {
                     "Name": null,
                     "Value": 1.25
+                },
+                "UpImpulse": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 15.0
                 }
             }
         },
@@ -21091,6 +21218,11 @@
                     "Name": null,
                     "Value": -35
                 },
+                "JumpVelocity": {
+                    "Name": "Jump Velocity",
+                    "Hidden": true,
+                    "Value": 1000
+                },
                 "MaxFlyHeight": {
                     "Name": null,
                     "Value": 1720
@@ -21517,6 +21649,16 @@
                     "Name": "Charge Delay",
                     "Value": -1.0,
                     "Type": "charge_cooldown"
+                },
+                "AbilityDuration": {
+                    "Name": "Duration",
+                    "Hidden": true,
+                    "Value": 6,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "duration"
+                    },
+                    "Type": "duration"
                 }
             },
             "Move": {
@@ -24767,6 +24909,11 @@
                     "Name": null,
                     "Value": 1
                 },
+                "JumpVelocityHidden": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 16
+                },
                 "TraceToGroundDistance": {
                     "Name": null,
                     "Value": 1000
@@ -25312,6 +25459,16 @@
                     "Value": 1.5,
                     "Type": "cast"
                 },
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Hidden": true,
+                    "Value": 9999,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "duration"
+                    },
+                    "Type": "cast"
+                },
                 "AbilityCooldown": {
                     "Name": "Cooldown",
                     "Value": 145,
@@ -25704,6 +25861,12 @@
                 "AbilityCastDelay": {
                     "Name": "Cast Delay",
                     "Value": 0.7,
+                    "Type": "cast"
+                },
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Hidden": true,
+                    "Value": 5.0,
                     "Type": "cast"
                 },
                 "AbilityCooldown": {
@@ -26133,6 +26296,16 @@
                     "Name": "Cast Delay",
                     "Value": 0.3,
                     "Type": "cast"
+                },
+                "AbilityCastRange": {
+                    "Name": "Cast Range",
+                    "Hidden": true,
+                    "Value": 40,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "range"
+                    },
+                    "Type": "range"
                 },
                 "AbilityCharges": {
                     "Name": "Charges",
@@ -26811,6 +26984,16 @@
                     "Name": "Cast Delay",
                     "Value": 0.45,
                     "Type": "cast"
+                },
+                "AbilityCastRange": {
+                    "Name": "Cast Range",
+                    "Hidden": true,
+                    "Value": 0.0254,
+                    "Scale": {
+                        "Value": 0.0,
+                        "Type": "range"
+                    },
+                    "Type": "range"
                 },
                 "AbilityCooldown": {
                     "Name": "Cooldown",
@@ -27952,6 +28135,16 @@
                     "Value": 0.75,
                     "Type": "cast"
                 },
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Hidden": true,
+                    "Value": 9999,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "duration"
+                    },
+                    "Type": "cast"
+                },
                 "AbilityCooldown": {
                     "Name": "Cooldown",
                     "Value": 160,
@@ -28394,6 +28587,21 @@
                 "FirstBounceDetonateTimer": {
                     "Name": null,
                     "Value": 0.8
+                },
+                "MeleeImpulseHeavy": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 1000
+                },
+                "MeleeImpulseLight": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 750
+                },
+                "MeleeImpulseUpScale": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 0.45
                 }
             }
         },
@@ -28530,6 +28738,11 @@
                     "Name": null,
                     "Value": 3
                 },
+                "RatSwarmRowSpeedStep": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 4
+                },
                 "RatSwarmRows": {
                     "Name": null,
                     "Value": 3
@@ -28545,6 +28758,11 @@
                 "ThrowAngle": {
                     "Name": null,
                     "Value": 30
+                },
+                "ThrowJitterSpeed": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 2
                 },
                 "ThrowSpeed": {
                     "Name": null,
@@ -28937,6 +29155,11 @@
                     "Name": "Charge Delay",
                     "Value": -1.0,
                     "Type": "charge_cooldown"
+                },
+                "Radius": {
+                    "Name": "Radius",
+                    "Hidden": true,
+                    "Value": 3.5
                 }
             },
             "Range": {
@@ -30253,6 +30476,12 @@
                 }
             ],
             "Headers": {
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Hidden": true,
+                    "Value": 0.6,
+                    "Type": "cast"
+                },
                 "AbilityCooldown": {
                     "Name": "Cooldown",
                     "Value": 165,
@@ -30498,14 +30727,17 @@
                 },
                 "HealPercentOfLeechDamage": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 100
                 },
                 "LeechCount": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 4
                 },
                 "LeechCrawlRadiusExitGap": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 5
                 },
                 "LeechEatTickRate": {
@@ -30518,10 +30750,12 @@
                 },
                 "LeechHuntCrawlSpeed": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 3
                 },
                 "LeechHuntLifetime": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 9,
                     "Scale": {
                         "Value": 1,
@@ -30530,30 +30764,37 @@
                 },
                 "LeechHuntLifetimeVariance": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 0.55
                 },
                 "LeechHuntMaxDrop": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 3
                 },
                 "LeechHuntSearchInterval": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 0.2
                 },
                 "LeechHuntSearchRadiusPercent": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 150
                 },
                 "LeechLeapArcHeight": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 0.5
                 },
                 "LeechLeapDuration": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 0.4
                 },
                 "LeechLungeSpeed": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 15
                 },
                 "LeechMoveSpeed": {
@@ -30566,18 +30807,22 @@
                 },
                 "LeechSpawnAngleJitter": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 0.32
                 },
                 "LeechSpawnSpreadMinPercent": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 73
                 },
                 "LeechSpawnSpreadPercent": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 58
                 },
                 "LeechStacksKeptOnDeathPercent": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 50
                 },
                 "StacksLostOnDeathPercent": {
@@ -30708,6 +30953,7 @@
             "Buff": {
                 "DeferredDamagePercent": {
                     "Name": "Damage Deferred",
+                    "Hidden": true,
                     "Value": 100,
                     "Type": "bullet_armor_up"
                 }
@@ -30880,10 +31126,12 @@
                 },
                 "SwapEndDelay": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 1.8
                 },
                 "SwapInDelay": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 1.3
                 }
             }
@@ -31051,6 +31299,7 @@
                 },
                 "BuildupLookAngleFull": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 55
                 },
                 "BuildupTickRate": {
@@ -31083,6 +31332,7 @@
                 },
                 "FacingAwayDamagePercent": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 50
                 },
                 "FallSpeedMax": {
@@ -31095,6 +31345,7 @@
                 },
                 "LookBuildupScalePercent": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 35
                 },
                 "PitchScaleMax": {
@@ -31107,6 +31358,7 @@
                 },
                 "SlowLingerDuration": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 0.5
                 },
                 "TargetMantleAttemptInterval": {
@@ -31292,6 +31544,11 @@
                 "ProjectileTurnRate": {
                     "Name": null,
                     "Value": 220
+                },
+                "PullDuration": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 0.6
                 }
             }
         },
@@ -31439,12 +31696,42 @@
                     "Name": "Melee Range",
                     "Value": 2,
                     "Type": "distance"
+                },
+                "GroundPoundKnockUpHeight": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 2.54,
+                    "Type": "distance"
+                },
+                "LightKickKnockbackHeight": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 0.75,
+                    "Type": "distance"
                 }
             },
             "Move": {
+                "AirDashDistancePercent": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 20,
+                    "Type": "move_speed"
+                },
                 "ChannelMoveSpeed": {
                     "Name": "Channel Move Speed",
                     "Value": 1,
+                    "Type": "move_speed"
+                },
+                "ChargedJumpForwardForce": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 300,
+                    "Type": "move_speed"
+                },
+                "CrouchMoveSpeedBonus": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 3.5,
                     "Type": "move_speed"
                 },
                 "DashDistancePercent": {
@@ -31461,6 +31748,12 @@
                     "Name": "Jump Height",
                     "Value": 75,
                     "Type": "move_speed"
+                },
+                "MoveWhileShootingSpeedPenaltyReductionPercent": {
+                    "Name": "move speed penalty while shooting reduction",
+                    "Hidden": true,
+                    "Value": 100,
+                    "Type": "move_speed"
                 }
             },
             "Debuff": {
@@ -31475,6 +31768,21 @@
                     "Name": null,
                     "Value": 1
                 },
+                "EndLaunchMaxLingerTime": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 3
+                },
+                "GravityScalePercent": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 80
+                },
+                "GroundPoundFallTimeReductionPercent": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 30
+                },
                 "JumpSoundLayerVolumeMax": {
                     "Name": null,
                     "Value": -4.0
@@ -31482,6 +31790,16 @@
                 "JumpSoundLayerVolumeMin": {
                     "Name": null,
                     "Value": -60.0
+                },
+                "MeleeLifestealNonHeroPct": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 60
+                },
+                "RisingGravityScalePercent": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 50
                 }
             }
         },
@@ -31621,6 +31939,26 @@
                 }
             ],
             "Headers": {
+                "AbilityCastRange": {
+                    "Name": "Cast Range",
+                    "Hidden": true,
+                    "Value": 12,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "range"
+                    },
+                    "Type": "range"
+                },
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Hidden": true,
+                    "Value": 1.0,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "duration"
+                    },
+                    "Type": "cast"
+                },
                 "AbilityCooldown": {
                     "Name": "Cooldown",
                     "Value": 27.0,
@@ -31839,6 +32177,16 @@
                     "Name": null,
                     "Value": 9999
                 },
+                "BarrageStartDelayMax": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 1.8
+                },
+                "BarrageStartDelayMin": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 1.2
+                },
                 "LosingLockGraceTime": {
                     "Name": null,
                     "Value": 1.0
@@ -31846,6 +32194,11 @@
                 "MaxLockonStacks": {
                     "Name": "Max Pigeons Per Target",
                     "Value": 1
+                },
+                "TickDamageIncreasePerHit": {
+                    "Name": "Damage Escalation",
+                    "Hidden": true,
+                    "Value": 30
                 },
                 "TimeToLoseLockonStack": {
                     "Name": null,
