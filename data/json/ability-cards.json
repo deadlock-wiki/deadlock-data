@@ -298,6 +298,7 @@
                 },
                 "AuraLingerDuration": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 1.0
                 },
                 "FlameDashJumpBonus": {
@@ -1288,6 +1289,7 @@
                 },
                 "JumpVelocity": {
                     "Name": "Jump Velocity",
+                    "Hidden": true,
                     "Value": 1000
                 },
                 "MaxFlyHeight": {
@@ -2678,6 +2680,7 @@
             "Headers": {
                 "AbilityCastRange": {
                     "Name": "Cast Range",
+                    "Hidden": true,
                     "Value": 500,
                     "Scale": {
                         "Value": 0.0,
@@ -3314,6 +3317,7 @@
             "Duration": {
                 "TurretDeployTime": {
                     "Name": "Deploy Time",
+                    "Hidden": true,
                     "Value": 0.25,
                     "Type": "duration"
                 }
@@ -4090,6 +4094,7 @@
                 },
                 "AbilityCastRange": {
                     "Name": "Cast Range",
+                    "Hidden": true,
                     "Value": 5.08,
                     "Scale": {
                         "Value": 1,
@@ -4848,6 +4853,7 @@
                 },
                 "AuraLingerDuration": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 1.0
                 }
             }
@@ -5216,11 +5222,13 @@
                 },
                 "MoveWhileShootingSpeedPenaltyReductionPercent": {
                     "Name": "move speed penalty while shooting reduction",
+                    "Hidden": true,
                     "Value": 100,
                     "Type": "move_speed"
                 },
                 "MoveWhileZoomedSpeedPenaltyReductionPercent": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 100,
                     "Type": "move_speed"
                 },
@@ -6267,10 +6275,12 @@
                 },
                 "MinTimeBeforeDestroy": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 0.1
                 },
                 "TickRate": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 0.5
                 },
                 "TossSpeed": {
@@ -6996,6 +7006,7 @@
                 },
                 "AbilityDuration": {
                     "Name": "Duration",
+                    "Hidden": true,
                     "Value": 3.5,
                     "Scale": {
                         "Value": 1,
@@ -7041,7 +7052,7 @@
                     "Value": 7
                 },
                 "SelfDamagePercent": {
-                    "Name": null,
+                    "Name": "Self Damage",
                     "Value": 20
                 }
             }
@@ -7257,6 +7268,7 @@
             "Duration": {
                 "SlowTargetDuration": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 0.5,
                     "Type": "duration"
                 }
@@ -7872,6 +7884,7 @@
                 },
                 "AbilityChannelTime": {
                     "Name": "Channel Duration",
+                    "Hidden": true,
                     "Value": 9999,
                     "Type": "cast"
                 },
@@ -9642,11 +9655,13 @@
                 },
                 "MoveWhileShootingSpeedPenaltyReductionPercent": {
                     "Name": "move speed penalty while shooting reduction",
+                    "Hidden": true,
                     "Value": 100,
                     "Type": "move_speed"
                 },
                 "MoveWhileZoomedSpeedPenaltyReductionPercent": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 100,
                     "Type": "move_speed"
                 }
@@ -14693,6 +14708,7 @@
                 },
                 "AbilityChannelTime": {
                     "Name": "Channel Duration",
+                    "Hidden": true,
                     "Value": 9999,
                     "Type": "cast"
                 },
@@ -16199,6 +16215,7 @@
                 },
                 "AbilityCastRange": {
                     "Name": "Cast Range",
+                    "Hidden": true,
                     "Value": 500,
                     "Scale": {
                         "Value": 1,
@@ -17394,6 +17411,7 @@
                 },
                 "BackwardsVelocity": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 13.0
                 },
                 "FallSpeedMax": {
@@ -17406,6 +17424,7 @@
                 },
                 "UpImpulse": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 15.0
                 }
             }
@@ -19678,7 +19697,7 @@
             },
             "Health": {
                 "HealOnHit": {
-                    "Name": null,
+                    "Name": "Heal On Hit",
                     "Value": 0,
                     "Scale": {
                         "Value": 1.0,
@@ -21201,6 +21220,7 @@
                 },
                 "JumpVelocity": {
                     "Name": "Jump Velocity",
+                    "Hidden": true,
                     "Value": 1000
                 },
                 "MaxFlyHeight": {
@@ -21632,6 +21652,7 @@
                 },
                 "AbilityDuration": {
                     "Name": "Duration",
+                    "Hidden": true,
                     "Value": 6,
                     "Scale": {
                         "Value": 1,
@@ -24890,6 +24911,7 @@
                 },
                 "JumpVelocityHidden": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 16
                 },
                 "TraceToGroundDistance": {
@@ -25439,6 +25461,7 @@
                 },
                 "AbilityChannelTime": {
                     "Name": "Channel Duration",
+                    "Hidden": true,
                     "Value": 9999,
                     "Scale": {
                         "Value": 1,
@@ -25571,7 +25594,634 @@
         }
     },
     "hero_deadpack": {
-        "Name": "Deadman Danny"
+        "Name": "Deadman Danny",
+        "1": {
+            "Key": "ability_deadpack_chargeblast",
+            "Name": "Strix Salvo",
+            "DescKey": "ability_deadpack_chargeblast_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 27,
+                            "Scale": {
+                                "Value": 0.74,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "CoatedDamage",
+                            "Name": "Marked Damage",
+                            "Value": 45,
+                            "Scale": {
+                                "Value": 1.1,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "CoatedSlowPercent",
+                            "Name": "Fading Slow",
+                            "Value": 40,
+                            "Type": "slow"
+                        },
+                        {
+                            "Key": "BonusFireRate",
+                            "Name": "Fire Rate",
+                            "Value": 0,
+                            "Type": "fire_rate"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "CoatedDuration",
+                        "Name": "Mark Duration",
+                        "Value": 10.0,
+                        "Scale": {
+                            "Value": 1,
+                            "Type": "duration"
+                        },
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "CoatedSlowDuration",
+                        "Name": "Slow Duration",
+                        "Value": 1.5,
+                        "Scale": {
+                            "Value": 1,
+                            "Type": "duration"
+                        },
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "MissileGroundDuration",
+                        "Name": "Explode Delay",
+                        "Value": 6.0,
+                        "Scale": {
+                            "Value": 1,
+                            "Type": "duration"
+                        },
+                        "Type": "duration"
+                    }
+                ],
+                "DescKey": "ability_deadpack_chargeblast_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -12,
+                    "DescKey": "ability_deadpack_chargeblast_t1_desc"
+                },
+                {
+                    "Damage": 30,
+                    "CoatedDamage": 45,
+                    "DescKey": "ability_deadpack_chargeblast_t2_desc"
+                },
+                {
+                    "MarksTotal": 2,
+                    "Range": 14,
+                    "CoatedDamage": {
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 0.35,
+                            "Type": "spirit"
+                        }
+                    },
+                    "Damage": {
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 0.35,
+                            "Type": "spirit"
+                        }
+                    },
+                    "DescKey": "ability_deadpack_chargeblast_t3_desc"
+                }
+            ],
+            "Headers": {
+                "AbilityCastRange": {
+                    "Name": "Cast Range",
+                    "Value": 35,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "range"
+                    },
+                    "Type": "range"
+                },
+                "AbilityCooldown": {
+                    "Name": "Cooldown",
+                    "Value": 25.0,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "cooldown"
+                    },
+                    "Type": "cooldown"
+                },
+                "AbilityCooldownBetweenCharge": {
+                    "Name": "Charge Delay",
+                    "Value": -1.0,
+                    "Type": "charge_cooldown"
+                }
+            },
+            "Duration": {
+                "MineArmTime": {
+                    "Name": null,
+                    "Value": 0.3,
+                    "Type": "duration"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "ExplosionRadius": {
+                    "Name": "Explosion Radius",
+                    "Value": 3.5,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "range"
+                    }
+                },
+                "MarksTotal": {
+                    "Name": "Missiles Launched",
+                    "Value": 3
+                },
+                "Range": {
+                    "Name": "Range",
+                    "Value": 21,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "range"
+                    }
+                }
+            }
+        },
+        "2": {
+            "Key": "ability_deadpack_rocketeer",
+            "Name": "Chimera Mk1",
+            "DescKey": "ability_deadpack_rocketeer_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "AbilityCooldown",
+                            "Name": "Cooldown",
+                            "Value": 21.0,
+                            "Scale": [
+                                {
+                                    "Value": -0.45,
+                                    "Type": "power_increase"
+                                },
+                                {
+                                    "Value": 1,
+                                    "Type": "cooldown"
+                                }
+                            ],
+                            "Type": "cooldown"
+                        },
+                        {
+                            "Key": "ExplosionDamage",
+                            "Name": "Explosion Damage",
+                            "Value": 70,
+                            "Scale": {
+                                "Value": 1.5,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "ExplosionBulletDamage",
+                            "Name": "Explosion Damage",
+                            "Value": 70,
+                            "Scale": {
+                                "Value": 1.4,
+                                "Type": "weapon_damage_increase"
+                            },
+                            "Type": "bullet_damage"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "OverheatStunDurationSelf",
+                        "Name": "Self Stun",
+                        "Value": 1.3
+                    },
+                    {
+                        "Key": "MaxHealthSelfDamagePercent",
+                        "Name": "Self Damage",
+                        "Value": 10
+                    },
+                    {
+                        "Key": "HealOnHit",
+                        "Name": "Heal On Hit",
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 0.0,
+                            "Type": "spirit"
+                        },
+                        "Type": "healing"
+                    }
+                ],
+                "DescKey": "ability_deadpack_rocketeer_desc"
+            },
+            "Upgrades": [
+                {
+                    "HeatDrainRate": -4,
+                    "DescKey": "ability_deadpack_rocketeer_t1_desc"
+                },
+                {
+                    "HealOnHit": {
+                        "Value": 150,
+                        "Scale": {
+                            "Value": 2.0,
+                            "Type": "spirit"
+                        }
+                    },
+                    "SelfDamageReductionOnPlayerHitPercent": 100,
+                    "DescKey": "ability_deadpack_rocketeer_t2_desc"
+                },
+                {
+                    "ExplosionDamage": 120,
+                    "OverheatLockoutDurationReductionOnPlayerHitPercent": 50,
+                    "DescKey": "ability_deadpack_rocketeer_t3_desc"
+                }
+            ],
+            "Headers": {
+                "AbilityCastDelay": {
+                    "Name": "Cast Delay",
+                    "Value": 0.7,
+                    "Type": "cast"
+                },
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Hidden": true,
+                    "Value": 5.0,
+                    "Type": "cast"
+                },
+                "AbilityCooldown": {
+                    "Name": "Cooldown",
+                    "Value": 21.0,
+                    "Scale": [
+                        {
+                            "Value": -0.45,
+                            "Type": "power_increase"
+                        },
+                        {
+                            "Value": 1,
+                            "Type": "cooldown"
+                        }
+                    ],
+                    "Type": "cooldown"
+                },
+                "AbilityCooldownBetweenCharge": {
+                    "Name": "Charge Delay",
+                    "Value": -1.0,
+                    "Type": "charge_cooldown"
+                },
+                "Radius": {
+                    "Name": "Radius",
+                    "Value": 8.0,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "radius"
+                    },
+                    "Type": "distance"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "Heat": {
+                    "Name": null,
+                    "Value": 40
+                },
+                "HeatDrainRate": {
+                    "Name": null,
+                    "Value": -3.0
+                },
+                "HeatGainAirDash": {
+                    "Name": "Air Dash Heat",
+                    "Value": 4.0
+                },
+                "HeatGainLaunch": {
+                    "Name": null,
+                    "Value": 18.0
+                },
+                "HeatGainRate": {
+                    "Name": "Heat Gain",
+                    "Value": 33.0
+                },
+                "HeatGainRateVTOL": {
+                    "Name": null,
+                    "Value": 60.0
+                },
+                "HeatPct": {
+                    "Name": null,
+                    "Value": 100
+                },
+                "OverheatStunDelayDuration": {
+                    "Name": null,
+                    "Value": 2.5
+                },
+                "TossDuration": {
+                    "Name": null,
+                    "Value": 0.9
+                }
+            }
+        },
+        "3": {
+            "Key": "ability_deadpack_flamethrower",
+            "Name": "Jettison Fuel",
+            "DescKey": "ability_deadpack_flamethrower_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "DPS",
+                            "Name": "Damage Per Second",
+                            "Value": 30.0,
+                            "Scale": {
+                                "Value": 0.8,
+                                "Type": "weapon_damage_increase"
+                            },
+                            "Type": "bullet_damage"
+                        },
+                        {
+                            "Key": "ScorchDamage",
+                            "Name": "Burst Damage",
+                            "Value": 35,
+                            "Scale": {
+                                "Value": 0.95,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "BulletResistReduction",
+                            "Name": "Bullet Resist",
+                            "Value": -15,
+                            "Type": "bullet_armor_down"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "DebuffDuration",
+                        "Name": "Debuff Duration",
+                        "Value": 7.0,
+                        "Scale": {
+                            "Value": 1,
+                            "Type": "duration"
+                        },
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "BuffDuration",
+                        "Name": "Buff Duration",
+                        "Value": 0.0,
+                        "Type": "duration"
+                    }
+                ],
+                "DescKey": "ability_deadpack_flamethrower_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -8
+                },
+                {
+                    "ScorchDamage": 60,
+                    "BonusFireRate": 18,
+                    "BuffDuration": 7,
+                    "DescKey": "ability_deadpack_flamethrower_t2_desc"
+                },
+                {
+                    "BulletResistReduction": -10,
+                    "BurstMarkStacks": 1,
+                    "DescKey": "ability_deadpack_flamethrower_t3_desc"
+                }
+            ],
+            "Headers": {
+                "AbilityCastRange": {
+                    "Name": "Cast Range",
+                    "Value": 22.0,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "range"
+                    },
+                    "Type": "radius"
+                },
+                "AbilityCooldown": {
+                    "Name": "Cooldown",
+                    "Value": 22.0,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "cooldown"
+                    },
+                    "Type": "cooldown"
+                },
+                "AbilityCooldownBetweenCharge": {
+                    "Name": "Charge Delay",
+                    "Value": -1.0,
+                    "Type": "charge_cooldown"
+                },
+                "AbilityDuration": {
+                    "Name": "Duration",
+                    "Value": 2.0,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "duration"
+                    },
+                    "Type": "duration"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "BackblastConeAngle": {
+                    "Name": null,
+                    "Value": 40
+                },
+                "BeamWidth": {
+                    "Name": "Beam Width",
+                    "Value": 2.75
+                },
+                "HeatGainRate": {
+                    "Name": "Heat Gain",
+                    "Value": -1.0
+                },
+                "HeatGainRateHittingEnemy": {
+                    "Name": null,
+                    "Value": -20.0
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 0.1
+                }
+            }
+        },
+        "4": {
+            "Key": "ability_deadpack_ultimate",
+            "Name": "Close The Deal",
+            "DescKey": "ability_deadpack_ultimate_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 70.0,
+                            "Scale": {
+                                "Value": 1.0,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "DamagePerMeter",
+                            "Name": "Falling Damage",
+                            "Value": 3.0,
+                            "Scale": {
+                                "Value": 0.09,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "StunDuration",
+                            "Name": "Stun Duration",
+                            "StatusEffect": "Stun",
+                            "Value": 0.5,
+                            "Scale": {
+                                "Value": 1.0,
+                                "Type": "duration"
+                            },
+                            "Type": "duration"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "SelfDamagePercent",
+                        "Name": "Self Damage",
+                        "Value": 25
+                    },
+                    {
+                        "Key": "BonusDamagePercent",
+                        "NameKey": "DeadpackUltBonusTotalDamage",
+                        "Name": "Bonus Damage",
+                        "Value": 75
+                    }
+                ],
+                "DescKey": "ability_deadpack_ultimate_desc"
+            },
+            "Upgrades": [
+                {
+                    "Damage": 90.0
+                },
+                {
+                    "AbilityCooldown": -35.0
+                },
+                {
+                    "DamagePerMeter": 8.0,
+                    "StunDuration": 0.5,
+                    "DescKey": "ability_deadpack_ultimate_t3_desc"
+                }
+            ],
+            "Headers": {
+                "AbilityCastDelay": {
+                    "Name": "Cast Delay",
+                    "Value": 0.5,
+                    "Type": "cast"
+                },
+                "AbilityCastRange": {
+                    "Name": "Cast Range",
+                    "Value": 10.0,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "range"
+                    },
+                    "Type": "range"
+                },
+                "AbilityCooldown": {
+                    "Name": "Cooldown",
+                    "Value": 135.0,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "cooldown"
+                    },
+                    "Type": "cooldown"
+                },
+                "AbilityCooldownBetweenCharge": {
+                    "Name": "Charge Delay",
+                    "Value": -1.0,
+                    "Type": "charge_cooldown"
+                }
+            },
+            "Duration": {
+                "StunDurationSelf": {
+                    "Name": null,
+                    "Value": 0.4,
+                    "Type": "duration"
+                }
+            },
+            "Range": {
+                "MaxHeight": {
+                    "Name": null,
+                    "Value": 1700,
+                    "Type": "distance"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.1
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "LowHealthEnemyThresholdPct": {
+                    "Name": "Low Health Threshold",
+                    "Value": 50
+                }
+            }
+        }
     },
     "hero_familiar": {
         "Name": "Rem",
@@ -25649,6 +26299,7 @@
                 },
                 "AbilityCastRange": {
                     "Name": "Cast Range",
+                    "Hidden": true,
                     "Value": 40,
                     "Scale": {
                         "Value": 1,
@@ -26336,6 +26987,7 @@
                 },
                 "AbilityCastRange": {
                     "Name": "Cast Range",
+                    "Hidden": true,
                     "Value": 0.0254,
                     "Scale": {
                         "Value": 0.0,
@@ -27485,6 +28137,7 @@
                 },
                 "AbilityChannelTime": {
                     "Name": "Channel Duration",
+                    "Hidden": true,
                     "Value": 9999,
                     "Scale": {
                         "Value": 1,
@@ -27937,14 +28590,17 @@
                 },
                 "MeleeImpulseHeavy": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 1000
                 },
                 "MeleeImpulseLight": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 750
                 },
                 "MeleeImpulseUpScale": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 0.45
                 }
             }
@@ -28084,6 +28740,7 @@
                 },
                 "RatSwarmRowSpeedStep": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 4
                 },
                 "RatSwarmRows": {
@@ -28104,6 +28761,7 @@
                 },
                 "ThrowJitterSpeed": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 2
                 },
                 "ThrowSpeed": {
@@ -28500,6 +29158,7 @@
                 },
                 "Radius": {
                     "Name": "Radius",
+                    "Hidden": true,
                     "Value": 3.5
                 }
             },
@@ -29175,10 +29834,1551 @@
         }
     },
     "hero_artist": {
-        "Name": "Violet"
+        "Name": "Violet",
+        "1": {
+            "Key": "ability_artist_homingbrush",
+            "Name": "Living Ink",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 35,
+                            "Scale": {
+                                "Value": 0.7,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "CooldownReductionPerHit",
+                            "Name": "Cooldown Reduction per Hit",
+                            "Value": 1.5,
+                            "Type": "cooldown"
+                        },
+                        {
+                            "Key": "BulletDamageMultiplier",
+                            "Name": "Bullet Damage",
+                            "Value": 120,
+                            "Type": "bullet_damage"
+                        }
+                    ]
+                },
+                "Alt": [],
+                "DescKey": "ability_artist_homingbrush_desc_active"
+            },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "MaxDrawDistance",
+                            "Name": "Max Drawing Size",
+                            "Value": 25,
+                            "Scale": [
+                                {
+                                    "Value": 0.12,
+                                    "Type": "spirit"
+                                },
+                                {
+                                    "Value": 1,
+                                    "Type": "range"
+                                }
+                            ],
+                            "Type": "distance"
+                        },
+                        {
+                            "Key": "DrawDuration",
+                            "Name": "Drawing Duration",
+                            "Value": 20,
+                            "Scale": {
+                                "Value": 1,
+                                "Type": "duration"
+                            },
+                            "Type": "duration"
+                        }
+                    ]
+                },
+                "Alt": [],
+                "DescKey": "ability_artist_homingbrush_desc_active_alt"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -4,
+                    "MaxDrawDistance": 15,
+                    "DescKey": "ability_artist_homingbrush_t1_desc"
+                },
+                {
+                    "MaxStacks": 5,
+                    "StackDuration": 10,
+                    "BonusFireRatePerStack": 10,
+                    "DescKey": "ability_artist_homingbrush_t2_desc"
+                },
+                {
+                    "BulletDamageMultiplier": 30,
+                    "CooldownReductionPerHit": 1,
+                    "Damage": {
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 0.4,
+                            "Type": "spirit"
+                        }
+                    },
+                    "DescKey": "ability_artist_homingbrush_t3_desc"
+                }
+            ],
+            "Headers": {
+                "AbilityCastDelay": {
+                    "Name": "Cast Delay",
+                    "Value": 0.1,
+                    "Type": "cast"
+                },
+                "AbilityCharges": {
+                    "Name": "Charges",
+                    "Value": 2,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "max_charges"
+                    },
+                    "Type": "cast"
+                },
+                "AbilityCooldown": {
+                    "Name": "Cooldown",
+                    "Value": 22,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "cooldown"
+                    },
+                    "Type": "cooldown"
+                },
+                "AbilityCooldownBetweenCharge": {
+                    "Name": "Charge Delay",
+                    "Value": 7,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "charge_cooldown"
+                    },
+                    "Type": "charge_cooldown"
+                },
+                "AbilityDuration": {
+                    "Name": "Duration",
+                    "Value": 10,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "duration"
+                    },
+                    "Type": "duration"
+                },
+                "Radius": {
+                    "Name": "Radius",
+                    "Value": 2.5,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "range"
+                    },
+                    "Type": "distance"
+                }
+            },
+            "Cast": {
+                "MaxShots": {
+                    "Name": "Max Shots",
+                    "Value": 3,
+                    "Type": "cast"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.1
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "FireRateSlow": {
+                    "Name": "Fire Rate",
+                    "Value": 20
+                }
+            }
+        },
+        "2": {
+            "Key": "ability_artist_rollingprojectile",
+            "Name": "Flow State",
+            "DescKey": "ability_artist_rollingprojectile_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "MinDamage",
+                            "Name": "Minimum Damage",
+                            "Value": 50,
+                            "Scale": {
+                                "Value": 0.9,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "MaxDamage",
+                            "Name": "Max Damage",
+                            "Value": 100,
+                            "Scale": {
+                                "Value": 1.8,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "SlideScale",
+                            "Name": "Slide Distance",
+                            "Value": 100,
+                            "Type": "move_speed"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "MaxDamageTime",
+                        "Name": "Time for Max Damage",
+                        "Value": 2
+                    },
+                    {
+                        "Key": "BonusMoveSpeed",
+                        "Name": "Move Speed",
+                        "Value": 0,
+                        "Type": "move_speed"
+                    },
+                    {
+                        "Key": "BarrierDuration",
+                        "Name": "Barrier Duration",
+                        "Value": 0
+                    },
+                    {
+                        "Key": "FadingSlowPercent",
+                        "Name": "Fading Move Speed",
+                        "Value": 60
+                    },
+                    {
+                        "Key": "SlowDuration",
+                        "Name": "Slow Duration",
+                        "Value": 2,
+                        "Scale": {
+                            "Value": 1,
+                            "Type": "duration"
+                        }
+                    },
+                    {
+                        "Key": "DebuffDuration",
+                        "Name": "Debuff Duration",
+                        "Value": 0
+                    }
+                ],
+                "DescKey": "ability_artist_rollingprojectile_desc"
+            },
+            "Upgrades": [
+                {
+                    "StaminaCooldownReduction": 150,
+                    "DescKey": "ability_artist_rollingprojectile_t1_desc"
+                },
+                {
+                    "AbilityCooldown": -6,
+                    "ExplosionRadius": 8,
+                    "GroundAuraDuration": 4,
+                    "DescKey": "ability_artist_rollingprojectile_t2_desc"
+                },
+                {
+                    "OutgoingDamagePercent": 20,
+                    "DamageAmpBuildDuration": 4,
+                    "DamageAmpDuration": 6,
+                    "DescKey": "ability_artist_rollingprojectile_t3_desc"
+                }
+            ],
+            "Headers": {
+                "AbilityCastDelay": {
+                    "Name": "Cast Delay",
+                    "Value": 0.2,
+                    "Type": "cast"
+                },
+                "AbilityCooldown": {
+                    "Name": "Cooldown",
+                    "Value": 23,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "cooldown"
+                    },
+                    "Type": "cooldown"
+                },
+                "AbilityCooldownBetweenCharge": {
+                    "Name": "Charge Delay",
+                    "Value": -1.0,
+                    "Type": "charge_cooldown"
+                },
+                "ExplosionRadius": {
+                    "Name": "Explosion Radius",
+                    "Value": 15,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "range"
+                    },
+                    "Type": "distance"
+                },
+                "GroundAuraDuration": {
+                    "Name": "Ground Aura Duration",
+                    "Value": 6,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "duration"
+                    },
+                    "Type": "duration"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AuraLingerDuration": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "DashAirSpeed": {
+                    "Name": null,
+                    "Value": 15
+                },
+                "DashSpeed": {
+                    "Name": "Dash Speed",
+                    "Value": 20
+                },
+                "ExplosionCone": {
+                    "Name": null,
+                    "Value": 90
+                },
+                "GroundAuraHeight": {
+                    "Name": null,
+                    "Value": 2
+                },
+                "GroundAuraRadius": {
+                    "Name": null,
+                    "Value": 2
+                },
+                "GroundAuraSpacing": {
+                    "Name": null,
+                    "Value": 2
+                },
+                "SideMoveSpeedReduction": {
+                    "Name": null,
+                    "Value": -65
+                },
+                "SlideTurnScale": {
+                    "Name": null,
+                    "Value": 25
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 0.1
+                }
+            }
+        },
+        "3": {
+            "Key": "ability_artist_tether",
+            "Name": "Still Life",
+            "DescKey": "ability_artist_tether_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "DPS",
+                            "Name": "Damage Per Second",
+                            "Value": 30,
+                            "Scale": {
+                                "Value": 0.7,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Title": "On Proc:",
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 60,
+                            "Scale": {
+                                "Value": 1.4,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Title": "On Proc:",
+                            "Key": "MaxSlowPercent",
+                            "Name": "Max Move Speed",
+                            "Value": 0
+                        },
+                        {
+                            "Title": "On Proc:",
+                            "Key": "StunDuration",
+                            "Name": "Stun Duration",
+                            "StatusEffect": "Stun",
+                            "Value": 1,
+                            "Scale": {
+                                "Value": 1,
+                                "Type": "duration"
+                            },
+                            "Type": "duration"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "BonusMoveSpeedPercent",
+                        "Name": "Move Speed",
+                        "Value": 0
+                    },
+                    {
+                        "Key": "CombatBarrier",
+                        "Name": "Barrier",
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 0.0,
+                            "Type": "spirit"
+                        }
+                    },
+                    {
+                        "Key": "HealthRegen",
+                        "Name": "Health Regen",
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 0.0,
+                            "Type": "spirit"
+                        }
+                    },
+                    {
+                        "Key": "BuffDuration",
+                        "Name": "Buff Duration",
+                        "Value": 0
+                    }
+                ],
+                "DescKey": "ability_artist_tether_desc"
+            },
+            "Upgrades": [
+                {
+                    "BuffDuration": 4,
+                    "HealthRegen": {
+                        "Value": 15,
+                        "Scale": {
+                            "Value": 0.25,
+                            "Type": "spirit"
+                        }
+                    },
+                    "DescKey": "ability_artist_tether_t1_desc"
+                },
+                {
+                    "OutgoingDamagePercent": -35,
+                    "DescKey": "ability_artist_tether_t2_desc"
+                },
+                {
+                    "AbilityCooldown": -11,
+                    "StunDuration": 0.35,
+                    "BonusMoveSpeedPercent": 20,
+                    "DescKey": "ability_artist_tether_t3_desc"
+                }
+            ],
+            "Headers": {
+                "AbilityCastRange": {
+                    "Name": "Cast Range",
+                    "Value": 25,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "range"
+                    },
+                    "Type": "range"
+                },
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Value": 2.6,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "duration"
+                    },
+                    "Type": "cast"
+                },
+                "AbilityCooldown": {
+                    "Name": "Cooldown",
+                    "Value": 35,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "cooldown"
+                    },
+                    "Type": "cooldown"
+                },
+                "AbilityCooldownBetweenCharge": {
+                    "Name": "Charge Delay",
+                    "Value": -1.0,
+                    "Type": "charge_cooldown"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.35
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "BuildUpPerAbility": {
+                    "Name": "Buildup Per Ability",
+                    "Value": 15
+                },
+                "BuildUpPerSecond": {
+                    "Name": "Buildup per Second",
+                    "Value": 33
+                },
+                "BuildUpPerShot": {
+                    "Name": null,
+                    "Value": 15
+                },
+                "EffectivenessPerHit": {
+                    "Name": null,
+                    "Value": 0.35
+                },
+                "IncomingDamagePercentReductionPerPickup": {
+                    "Name": null,
+                    "Value": 2.5
+                },
+                "OutgoingDamagePercentPerPickup": {
+                    "Name": null,
+                    "Value": 2.5
+                },
+                "PullDistance": {
+                    "Name": null,
+                    "Value": 800
+                },
+                "SpiritPerPickup": {
+                    "Name": "Spirit per Sketch",
+                    "Value": 1
+                },
+                "TargetingConeAngle": {
+                    "Name": "Attack Angle",
+                    "Value": 40
+                },
+                "TetherBreakRange": {
+                    "Name": null,
+                    "Value": 35,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "range"
+                    }
+                },
+                "TickInterval": {
+                    "Name": "Time Between Hits",
+                    "Value": 0.15
+                }
+            }
+        },
+        "4": {
+            "Key": "ability_artist_bamboogrove",
+            "Name": "Abstract Landscape",
+            "DescKey": "ability_artist_bamboogrove_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "On Buff:",
+                            "Key": "TechPower",
+                            "Name": "Spirit Power",
+                            "Value": 25,
+                            "Type": "spirit"
+                        },
+                        {
+                            "Title": "On Buff:",
+                            "Key": "AbilityLifestealPercentHero",
+                            "Name": "Spirit Lifesteal",
+                            "Value": 0,
+                            "Type": "healing"
+                        }
+                    ]
+                },
+                "Alt": [],
+                "DescKey": "ability_artist_bamboogrove_desc"
+            },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "On Enemy Hit:",
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 100,
+                            "Scale": {
+                                "Value": 1.4,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Title": "On Enemy Hit:",
+                            "Key": "SlowPercent",
+                            "Name": "Move Speed",
+                            "Value": 30,
+                            "Type": "slow"
+                        },
+                        {
+                            "Title": "On Enemy Hit:",
+                            "Key": "SilenceDuration",
+                            "Name": "Silence Duration",
+                            "StatusEffect": "Silence",
+                            "Value": 2,
+                            "Scale": {
+                                "Value": 1,
+                                "Type": "duration"
+                            },
+                            "Type": "duration"
+                        }
+                    ]
+                },
+                "Alt": []
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -20
+                },
+                {
+                    "AbilityLifestealPercentHero": 25,
+                    "TechPower": 15,
+                    "DescKey": "ability_artist_bamboogrove_t2_desc"
+                },
+                {
+                    "SilenceDuration": 1.25,
+                    "AbilityDuration": 4,
+                    "DestroyOnDamage": -1,
+                    "DescKey": "ability_artist_bamboogrove_t3_desc"
+                }
+            ],
+            "Headers": {
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Hidden": true,
+                    "Value": 0.6,
+                    "Type": "cast"
+                },
+                "AbilityCooldown": {
+                    "Name": "Cooldown",
+                    "Value": 165,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "cooldown"
+                    },
+                    "Type": "cooldown"
+                },
+                "AbilityCooldownBetweenCharge": {
+                    "Name": "Charge Delay",
+                    "Value": -1.0,
+                    "Type": "charge_cooldown"
+                },
+                "AbilityDuration": {
+                    "Name": "Duration",
+                    "Value": 6,
+                    "Scale": [
+                        {
+                            "Value": 0.04,
+                            "Type": "spirit"
+                        },
+                        {
+                            "Value": 1,
+                            "Type": "duration"
+                        }
+                    ],
+                    "Type": "duration"
+                },
+                "GroveRadius": {
+                    "Name": "Display Radius",
+                    "Value": 18,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "range"
+                    },
+                    "Type": "distance"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AttackFrequency": {
+                    "Name": null,
+                    "Value": -1
+                },
+                "AuraLingerDuration": {
+                    "Name": null,
+                    "Value": 5,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "duration"
+                    }
+                },
+                "DestroyOnDamage": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "GroundAuraHeight": {
+                    "Name": null,
+                    "Value": 20
+                },
+                "GroundAuraRadius": {
+                    "Name": null,
+                    "Value": 1.9
+                },
+                "GroundAuraSpacing": {
+                    "Name": null,
+                    "Value": 3.8
+                }
+            }
+        }
     },
     "hero_nurse": {
-        "Name": "Nurse Harrow"
+        "Name": "Nurse Harrow",
+        "1": {
+            "Key": "ability_nurse_leech_therapy",
+            "Name": "Leech Therapy",
+            "DescKey": "ability_nurse_leech_therapy_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "DPS",
+                            "Name": "Damage Per Second",
+                            "Value": 23,
+                            "Scale": {
+                                "Value": 0.19,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "LeechEatDurationPerSecond",
+                            "Name": "Buff Duration Drain Per Second",
+                            "Value": 0.65,
+                            "Type": "duration"
+                        }
+                    ]
+                },
+                "Alt": [],
+                "DescKey": "ability_nurse_leech_therapy_desc"
+            },
+            "Info2": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "RegenPerLeechPickup",
+                            "Name": "Health Regen Per Leech",
+                            "Value": 0.6,
+                            "Scale": {
+                                "Value": 0.13,
+                                "Type": "power_increase"
+                            },
+                            "Type": "healing"
+                        },
+                        {
+                            "Key": "FireRatePerLeechPickup",
+                            "Name": "Fire Rate Per Leech",
+                            "Value": 5,
+                            "Type": "fire_rate"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "MaxLeechBonusStacks",
+                        "Name": "Max Leech Stacks",
+                        "Value": 10
+                    },
+                    {
+                        "Key": "LeechCrawlRadius",
+                        "Name": "Leech Crawl Range",
+                        "Value": 8,
+                        "Scale": [
+                            {
+                                "Value": 1.3,
+                                "Type": "power_increase"
+                            },
+                            {
+                                "Value": 1,
+                                "Type": "range"
+                            }
+                        ],
+                        "Type": "distance"
+                    },
+                    {
+                        "Key": "LeechStaminaDrain",
+                        "Name": "Stamina Drain",
+                        "Value": 0,
+                        "Type": "stamina_recovery"
+                    },
+                    {
+                        "Key": "SpiritPowerPerLeechStack",
+                        "Name": "Spirit Power Per Leech",
+                        "Value": 0,
+                        "Type": "tech_damage"
+                    }
+                ],
+                "DescKey": "ability_nurse_leech_therapy_leech_desc"
+            },
+            "Upgrades": [
+                {
+                    "LeechStaminaDrain": 0.3,
+                    "DescKey": "ability_nurse_leech_therapy_t1_desc"
+                },
+                {
+                    "AbilityCooldown": -10,
+                    "SpiritPowerPerLeechStack": 4,
+                    "DescKey": "ability_nurse_leech_therapy_t2_desc"
+                },
+                {
+                    "MaxLeechBonusStacks": 8,
+                    "DPS": {
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 0.3,
+                            "Type": "spirit"
+                        }
+                    },
+                    "Radius": 1,
+                    "DescKey": "ability_nurse_leech_therapy_t3_desc"
+                }
+            ],
+            "Headers": {
+                "AbilityCastDelay": {
+                    "Name": "Cast Delay",
+                    "Value": 0.1,
+                    "Type": "cast"
+                },
+                "AbilityCooldown": {
+                    "Name": "Cooldown",
+                    "Value": 30,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "cooldown"
+                    },
+                    "Type": "cooldown"
+                },
+                "AbilityDuration": {
+                    "Name": "Duration",
+                    "Value": 5,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "duration"
+                    },
+                    "Type": "duration"
+                },
+                "Radius": {
+                    "Name": "Radius",
+                    "Value": 6.5,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "radius"
+                    },
+                    "Type": "distance"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 5,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityPostCastDuration": {
+                    "Name": null,
+                    "Value": 0.2
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "HealPercentOfLeechDamage": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 100
+                },
+                "LeechCount": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 4
+                },
+                "LeechCrawlRadiusExitGap": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 5
+                },
+                "LeechEatTickRate": {
+                    "Name": null,
+                    "Value": 0.38
+                },
+                "LeechGroundLifetime": {
+                    "Name": null,
+                    "Value": 180
+                },
+                "LeechHuntCrawlSpeed": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 3
+                },
+                "LeechHuntLifetime": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 9,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "duration"
+                    }
+                },
+                "LeechHuntLifetimeVariance": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 0.55
+                },
+                "LeechHuntMaxDrop": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 3
+                },
+                "LeechHuntSearchInterval": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 0.2
+                },
+                "LeechHuntSearchRadiusPercent": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 150
+                },
+                "LeechLeapArcHeight": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 0.5
+                },
+                "LeechLeapDuration": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 0.4
+                },
+                "LeechLungeSpeed": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 15
+                },
+                "LeechMoveSpeed": {
+                    "Name": null,
+                    "Value": 2,
+                    "Scale": {
+                        "Value": 0.05,
+                        "Type": "power_increase"
+                    }
+                },
+                "LeechSpawnAngleJitter": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 0.32
+                },
+                "LeechSpawnSpreadMinPercent": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 73
+                },
+                "LeechSpawnSpreadPercent": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 58
+                },
+                "LeechStacksKeptOnDeathPercent": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 50
+                },
+                "StacksLostOnDeathPercent": {
+                    "Name": null,
+                    "Value": 25
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 0.38
+                }
+            }
+        },
+        "2": {
+            "Key": "ability_nurse_adrenaline_rush",
+            "Name": "Wretched Vapors",
+            "DescKey": "ability_nurse_adrenaline_rush_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "RushTimeScaleBonusPercent",
+                            "Name": "Rush Speed",
+                            "Value": 25,
+                            "Scale": {
+                                "Value": 0.06,
+                                "Type": "spirit"
+                            },
+                            "Type": "move_speed"
+                        },
+                        {
+                            "Key": "AbilityDuration",
+                            "Name": "Duration",
+                            "Value": 4,
+                            "Scale": {
+                                "Value": 1,
+                                "Type": "duration"
+                            },
+                            "Type": "duration"
+                        },
+                        {
+                            "Key": "DeferredDamageBonusPercent",
+                            "Name": "Extra Damage Taken",
+                            "Value": 30,
+                            "Type": "damage"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "CrashDuration",
+                        "Name": "Crash Duration",
+                        "Value": 4,
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "CrashTimeScalePenaltyPercent",
+                        "Name": "Crash Slowdown",
+                        "Value": 20,
+                        "Type": "slow"
+                    }
+                ],
+                "DescKey": "ability_nurse_adrenaline_rush_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -15,
+                    "AbilityCastRange": 7,
+                    "DescKey": "ability_nurse_adrenaline_rush_t1_desc"
+                },
+                {
+                    "AbilityDuration": 1,
+                    "HealingEffectivenessPercent": 20,
+                    "HealAmpRegenPercent": 20,
+                    "DescKey": "ability_nurse_adrenaline_rush_t2_desc"
+                },
+                {
+                    "RushTimeScaleBonusPercent": 15,
+                    "DispelDebuffs": 1,
+                    "DescKey": "ability_nurse_adrenaline_rush_t3_desc"
+                }
+            ],
+            "Headers": {
+                "AbilityCastDelay": {
+                    "Name": "Cast Delay",
+                    "Value": 0.2,
+                    "Type": "cast"
+                },
+                "AbilityCastRange": {
+                    "Name": "Cast Range",
+                    "Value": 13,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "range"
+                    },
+                    "Type": "range"
+                },
+                "AbilityCooldown": {
+                    "Name": "Cooldown",
+                    "Value": 40,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "cooldown"
+                    },
+                    "Type": "cooldown"
+                },
+                "AbilityCooldownBetweenCharge": {
+                    "Name": "Charge Delay",
+                    "Value": -1.0,
+                    "Type": "charge_cooldown"
+                },
+                "AbilityDuration": {
+                    "Name": "Duration",
+                    "Value": 4,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "duration"
+                    },
+                    "Type": "duration"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Buff": {
+                "DeferredDamagePercent": {
+                    "Name": "Damage Deferred",
+                    "Hidden": true,
+                    "Value": 100,
+                    "Type": "bullet_armor_up"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "DamageSpiritThresholdPercent": {
+                    "Name": null,
+                    "Value": 6
+                }
+            }
+        },
+        "3": {
+            "Key": "ability_nurse_healing_needles",
+            "Name": "Healing Needles",
+            "DescKey": "ability_nurse_healing_needles_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Title": "On Hit Friendly:",
+                            "Key": "HealRegen",
+                            "Name": "Heal Per Shot",
+                            "Value": 25,
+                            "Scale": {
+                                "Value": 0.2,
+                                "Type": "spirit"
+                            },
+                            "Type": "healing"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "HeadshotHealBonusPercent",
+                        "Name": "Headshot Heal Bonus",
+                        "Value": 15,
+                        "Type": "healing"
+                    },
+                    {
+                        "Key": "ChargePercentPerSecondPerLeech",
+                        "Name": "Charge Per Leech",
+                        "Value": 0.15
+                    },
+                    {
+                        "Key": "StaminaRestorePerHit",
+                        "Name": "Stamina Per Shot",
+                        "Value": 0.0,
+                        "Type": "stamina_recovery"
+                    }
+                ],
+                "DescKey": "ability_nurse_healing_needles_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCharges": 1,
+                    "DescKey": "ability_nurse_healing_needles_t1_desc"
+                },
+                {
+                    "StaminaRestorePerHit": 0.6,
+                    "HealRegen": 20,
+                    "DescKey": "ability_nurse_healing_needles_t2_desc"
+                },
+                {
+                    "HealRegen": {
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 0.4,
+                            "Type": "spirit"
+                        }
+                    },
+                    "BuffExtendPercentPerShot": 6,
+                    "DescKey": "ability_nurse_healing_needles_t3_desc"
+                }
+            ],
+            "Headers": {
+                "AbilityCastDelay": {
+                    "Name": "Cast Delay",
+                    "Value": 0.1,
+                    "Type": "cast"
+                },
+                "AbilityCharges": {
+                    "Name": "Charges",
+                    "Value": 1,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "max_charges"
+                    },
+                    "Type": "cast"
+                },
+                "AbilityCooldownBetweenCharge": {
+                    "Name": "Charge Delay",
+                    "Value": -1.0,
+                    "Type": "charge_cooldown"
+                }
+            },
+            "Duration": {
+                "ChargeHitCooldown": {
+                    "Name": null,
+                    "Value": 0.15,
+                    "Type": "duration"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": -1,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityChargesConditionally": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AbilityChargesInitial": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "BuffExtendMaxDurationPercent": {
+                    "Name": null,
+                    "Value": 200
+                },
+                "BuildUpDuration": {
+                    "Name": null,
+                    "Value": 5
+                },
+                "ChargeGenPctScale": {
+                    "Name": "Charge Rate",
+                    "Value": 100,
+                    "Scale": {
+                        "Value": -1.0,
+                        "Type": "cooldown"
+                    }
+                },
+                "ChargePercentPerAbilityHit": {
+                    "Name": null,
+                    "Value": 1.26
+                },
+                "ChargePercentPerBulletHit": {
+                    "Name": null,
+                    "Value": 1.26
+                },
+                "ChargePercentPerHeadshot": {
+                    "Name": null,
+                    "Value": 2.52
+                },
+                "ChargePercentPerHeavyMelee": {
+                    "Name": null,
+                    "Value": 15.12
+                },
+                "ChargePercentPerLightMelee": {
+                    "Name": null,
+                    "Value": 7.56
+                },
+                "NonHeroChargeScalePercent": {
+                    "Name": null,
+                    "Value": 35
+                },
+                "SecondaryShotHealPercent": {
+                    "Name": null,
+                    "Value": 50
+                },
+                "SwapEndDelay": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 1.8
+                },
+                "SwapInDelay": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 1.3
+                }
+            }
+        },
+        "4": {
+            "Key": "ability_nurse_fear",
+            "Name": "Lurking Terrors",
+            "DescKey": "ability_nurse_fear_desc",
+            "Info1": {
+                "Main": {
+                    "Props": [
+                        {
+                            "Key": "DPS",
+                            "Name": "Damage Per Second",
+                            "Value": 60,
+                            "Scale": {
+                                "Value": 0.3,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Key": "DebuffDuration",
+                            "NameKey": "FearDuration",
+                            "Name": "Fear Duration",
+                            "Value": 2.2,
+                            "Scale": {
+                                "Value": 1,
+                                "Type": "duration"
+                            },
+                            "Type": "duration"
+                        }
+                    ]
+                },
+                "Alt": [
+                    {
+                        "Key": "BuildupTime",
+                        "NameKey": "FearBuildupTime",
+                        "Name": "Fear Buildup Time",
+                        "Value": 1.3,
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "FearDurationPerLeechStack",
+                        "Name": "Fear Duration Per Leech",
+                        "Value": 0.1,
+                        "Scale": {
+                            "Value": 1,
+                            "Type": "duration"
+                        },
+                        "Type": "duration"
+                    },
+                    {
+                        "Key": "SlowPercent",
+                        "Name": "Move Speed",
+                        "Value": 30,
+                        "Type": "slow"
+                    },
+                    {
+                        "Key": "FireRateSlow",
+                        "Name": "Fire Rate",
+                        "Value": 30,
+                        "Type": "fire_rate"
+                    }
+                ],
+                "DescKey": "ability_nurse_fear_desc"
+            },
+            "Upgrades": [
+                {
+                    "AbilityCooldown": -50
+                },
+                {
+                    "SlowPercent": 20,
+                    "FireRateSlow": 20,
+                    "DPS": 30,
+                    "DescKey": "ability_nurse_fear_t2_desc"
+                },
+                {
+                    "ChannelDamageImmune": 1,
+                    "AbilityChannelTime": 3.0,
+                    "DPS": {
+                        "Value": 0,
+                        "Scale": {
+                            "Value": 0.5,
+                            "Type": "spirit"
+                        }
+                    },
+                    "DescKey": "ability_nurse_fear_t3_desc"
+                }
+            ],
+            "Headers": {
+                "AbilityCastDelay": {
+                    "Name": "Cast Delay",
+                    "Value": 1.3,
+                    "Type": "cast"
+                },
+                "AbilityCastRange": {
+                    "Name": "Cast Range",
+                    "Value": 35,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "range"
+                    },
+                    "Type": "range"
+                },
+                "AbilityChannelTime": {
+                    "Name": "Channel Duration",
+                    "Value": 7.0,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "duration"
+                    },
+                    "Type": "cast"
+                },
+                "AbilityCooldown": {
+                    "Name": "Cooldown",
+                    "Value": 200.0,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "cooldown"
+                    },
+                    "Type": "cooldown"
+                },
+                "AbilityCooldownBetweenCharge": {
+                    "Name": "Charge Delay",
+                    "Value": -1.0,
+                    "Type": "charge_cooldown"
+                }
+            },
+            "Duration": {
+                "BuildupDecayTime": {
+                    "Name": null,
+                    "Value": 10.0,
+                    "Type": "duration"
+                },
+                "GazeLingerDuration": {
+                    "Name": "Stamina Lock Linger",
+                    "Value": 0.3,
+                    "Type": "duration"
+                }
+            },
+            "Move": {
+                "ChannelMoveSpeed": {
+                    "Name": "Channel Move Speed",
+                    "Value": 3.5,
+                    "Type": "move_speed"
+                }
+            },
+            "Other": {
+                "AbilityUnitTargetLimit": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "AirControlAccelPercent": {
+                    "Name": "Air Acceleration",
+                    "Value": -50
+                },
+                "AirDrag": {
+                    "Name": null,
+                    "Value": 3
+                },
+                "BuildupLookAngle": {
+                    "Name": null,
+                    "Value": 80
+                },
+                "BuildupLookAngleFull": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 55
+                },
+                "BuildupTickRate": {
+                    "Name": null,
+                    "Value": 0.075
+                },
+                "CameraTurnRateMax": {
+                    "Name": null,
+                    "Value": 15
+                },
+                "ConeAngle": {
+                    "Name": "Cone Angle",
+                    "Value": 180
+                },
+                "ExtraSweepConeAngle": {
+                    "Name": null,
+                    "Value": 40
+                },
+                "ExtraSweepOffsetBehindCaster": {
+                    "Name": null,
+                    "Value": 40
+                },
+                "ExtraSweepRange": {
+                    "Name": null,
+                    "Value": 4,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "range"
+                    }
+                },
+                "FacingAwayDamagePercent": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 50
+                },
+                "FallSpeedMax": {
+                    "Name": null,
+                    "Value": 1
+                },
+                "LaunchHeight": {
+                    "Name": null,
+                    "Value": 7.8
+                },
+                "LookBuildupScalePercent": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 35
+                },
+                "PitchScaleMax": {
+                    "Name": null,
+                    "Value": 1.3
+                },
+                "PitchScaleMin": {
+                    "Name": null,
+                    "Value": 1.0
+                },
+                "SlowLingerDuration": {
+                    "Name": null,
+                    "Hidden": true,
+                    "Value": 0.5
+                },
+                "TargetMantleAttemptInterval": {
+                    "Name": null,
+                    "Value": 0.5
+                },
+                "TickRate": {
+                    "Name": null,
+                    "Value": 0.15
+                },
+                "VolScaleMax": {
+                    "Name": null,
+                    "Value": 1.0
+                },
+                "VolScaleMin": {
+                    "Name": null,
+                    "Value": 0.35
+                }
+            }
+        }
     },
     "hero_baba": {
         "Name": "Baba",
@@ -29283,7 +31483,7 @@
                 },
                 "AbilityCooldown": {
                     "Name": "Cooldown",
-                    "Value": 26.0,
+                    "Value": 28.0,
                     "Scale": {
                         "Value": 1,
                         "Type": "cooldown"
@@ -29347,6 +31547,7 @@
                 },
                 "PullDuration": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 0.6
                 }
             }
@@ -29447,7 +31648,7 @@
             "Headers": {
                 "AbilityCooldown": {
                     "Name": "Cooldown",
-                    "Value": 30,
+                    "Value": 32,
                     "Scale": {
                         "Value": 1,
                         "Type": "cooldown"
@@ -29498,11 +31699,13 @@
                 },
                 "GroundPoundKnockUpHeight": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 2.54,
                     "Type": "distance"
                 },
                 "LightKickKnockbackHeight": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 0.75,
                     "Type": "distance"
                 }
@@ -29510,6 +31713,7 @@
             "Move": {
                 "AirDashDistancePercent": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 20,
                     "Type": "move_speed"
                 },
@@ -29520,11 +31724,13 @@
                 },
                 "ChargedJumpForwardForce": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 300,
                     "Type": "move_speed"
                 },
                 "CrouchMoveSpeedBonus": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 3.5,
                     "Type": "move_speed"
                 },
@@ -29545,6 +31751,7 @@
                 },
                 "MoveWhileShootingSpeedPenaltyReductionPercent": {
                     "Name": "move speed penalty while shooting reduction",
+                    "Hidden": true,
                     "Value": 100,
                     "Type": "move_speed"
                 }
@@ -29563,14 +31770,17 @@
                 },
                 "EndLaunchMaxLingerTime": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 3
                 },
                 "GravityScalePercent": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 80
                 },
                 "GroundPoundFallTimeReductionPercent": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 30
                 },
                 "JumpSoundLayerVolumeMax": {
@@ -29583,10 +31793,12 @@
                 },
                 "MeleeLifestealNonHeroPct": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 60
                 },
                 "RisingGravityScalePercent": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 50
                 }
             }
@@ -29609,9 +31821,9 @@
                             "Title": "Soothing Brew:",
                             "Key": "CombatBarrier",
                             "Name": "Barrier",
-                            "Value": 100,
+                            "Value": 90,
                             "Scale": {
-                                "Value": 1.2,
+                                "Value": 0.7,
                                 "Type": "spirit"
                             },
                             "Type": "combat_barrier"
@@ -29693,7 +31905,7 @@
                     "Radius": 3
                 },
                 {
-                    "AbilityCooldown": -12
+                    "AbilityCooldown": -14
                 },
                 {
                     "BrewEffectiveness": 33.33,
@@ -29729,6 +31941,7 @@
             "Headers": {
                 "AbilityCastRange": {
                     "Name": "Cast Range",
+                    "Hidden": true,
                     "Value": 12,
                     "Scale": {
                         "Value": 1,
@@ -29738,6 +31951,7 @@
                 },
                 "AbilityChannelTime": {
                     "Name": "Channel Duration",
+                    "Hidden": true,
                     "Value": 1.0,
                     "Scale": {
                         "Value": 1,
@@ -29747,7 +31961,7 @@
                 },
                 "AbilityCooldown": {
                     "Name": "Cooldown",
-                    "Value": 25.0,
+                    "Value": 27.0,
                     "Scale": {
                         "Value": 1,
                         "Type": "cooldown"
@@ -29965,10 +32179,12 @@
                 },
                 "BarrageStartDelayMax": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 1.8
                 },
                 "BarrageStartDelayMin": {
                     "Name": null,
+                    "Hidden": true,
                     "Value": 1.2
                 },
                 "LosingLockGraceTime": {
@@ -29981,6 +32197,7 @@
                 },
                 "TickDamageIncreasePerHit": {
                     "Name": "Damage Escalation",
+                    "Hidden": true,
                     "Value": 30
                 },
                 "TimeToLoseLockonStack": {

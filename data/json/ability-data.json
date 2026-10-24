@@ -71,6 +71,530 @@
             }
         ]
     },
+    "ability_artist_bamboogrove": {
+        "AbilityChannelTime": 0.6,
+        "AbilityCooldown": {
+            "Value": 165,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityDuration": {
+            "Value": 6,
+            "Scale": [
+                {
+                    "Value": 0.04,
+                    "Type": "spirit"
+                },
+                {
+                    "Value": 1,
+                    "Type": "duration"
+                }
+            ]
+        },
+        "AbilityUnitTargetLimit": 1,
+        "AttackFrequency": -1,
+        "AuraLingerDuration": {
+            "Value": 5,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "BambooModifier": {
+            "Class": "ArtistSilenceAura",
+            "Subclass": "Groundaura",
+            "ProvidedByAura": {
+                "Class": "CitadelSilenced",
+                "Subclass": "Silence"
+            },
+            "ImmuneModifier": {
+                "Class": "Base",
+                "Subclass": "Immune",
+                "EnabledStateMask": [
+                    "ArtistBambooImmune"
+                ]
+            },
+            "ImmuneDuration": 0.5
+        },
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorAlwaysPreviewRadius",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectilePassThroughWorld",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorDontInterruptSlideOnCast",
+            "BehaviorRefundFullCooldownOnChannelInterrupt"
+        ],
+        "CenterAllyModifier": {
+            "Class": "ArtistGroveAura",
+            "Subclass": "Groveally",
+            "ProvidedByAura": {
+                "Class": "Base",
+                "Subclass": "Buff"
+            }
+        },
+        "CenterEnemyModifier": {
+            "Class": "ArtistGroveAura",
+            "Subclass": "Center",
+            "ProvidedByAura": {
+                "Class": "Base",
+                "Subclass": "Buff",
+                "EnabledStateMask": [
+                    "GlowThroughWallsToEnemy"
+                ]
+            }
+        },
+        "ChannelMoveSpeed": -1,
+        "Damage": {
+            "Value": 100,
+            "Scale": {
+                "Value": 1.4,
+                "Type": "spirit"
+            }
+        },
+        "DestroyOnDamage": 1,
+        "GroundAuraHeight": 20,
+        "GroundAuraRadius": 1.9,
+        "GroundAuraSpacing": 3.8,
+        "GroveRadius": {
+            "Value": 18,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "IsDisabled": false,
+        "Key": "ability_artist_bamboogrove",
+        "Name": "Abstract Landscape",
+        "SilenceDuration": {
+            "Value": 2,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "SlowPercent": 30,
+        "TechPower": 25,
+        "Upgrades": [
+            {
+                "AbilityCooldown": -20
+            },
+            {
+                "AbilityLifestealPercentHero": 25,
+                "TechPower": 15
+            },
+            {
+                "SilenceDuration": 1.25,
+                "AbilityDuration": 4,
+                "DestroyOnDamage": -1
+            }
+        ]
+    },
+    "ability_artist_bamboogrove_trigger": {
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorNonCombat",
+            "BehaviorTrigger"
+        ],
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "ability_artist_bamboogrove_trigger",
+        "Name": null,
+        "Upgrades": []
+    },
+    "ability_artist_homingbrush": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCharges": {
+            "Value": 2,
+            "Scale": {
+                "Value": 1,
+                "Type": "max_charges"
+            }
+        },
+        "AbilityCooldown": {
+            "Value": 22,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityCooldownBetweenCharge": {
+            "Value": 7,
+            "Scale": {
+                "Value": 1,
+                "Type": "charge_cooldown"
+            }
+        },
+        "AbilityDuration": {
+            "Value": 10,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "AbilityPostCastDuration": 0.1,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
+        "BuffModifier": {
+            "Class": "Base",
+            "Subclass": "Buff"
+        },
+        "BulletDamageMultiplier": 120,
+        "ChannelMoveSpeed": -1,
+        "CooldownReductionPerHit": 1.5,
+        "Damage": {
+            "Value": 35,
+            "Scale": {
+                "Value": 0.7,
+                "Type": "spirit"
+            }
+        },
+        "DrawDuration": {
+            "Value": 20,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "FireRateSlow": 20,
+        "IsDisabled": false,
+        "Key": "ability_artist_homingbrush",
+        "MaxDrawDistance": {
+            "Value": 25,
+            "Scale": [
+                {
+                    "Value": 0.12,
+                    "Type": "spirit"
+                },
+                {
+                    "Value": 1,
+                    "Type": "range"
+                }
+            ]
+        },
+        "MaxShots": 3,
+        "Name": "Living Ink",
+        "Radius": {
+            "Value": 2.5,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "SlowModifier": {
+            "Class": "DiminishingSlow",
+            "Subclass": "Slow"
+        },
+        "StackModifier": {
+            "Class": "Base",
+            "Subclass": "Stack",
+            "EnabledStateMask": [
+                "ArtistFlowstate",
+                "ArtistPreventBulletCreation"
+            ]
+        },
+        "StackingBuffModifier": {
+            "Class": "ArtistStackingbuff",
+            "Subclass": "Stackingbuff"
+        },
+        "Upgrades": [
+            {
+                "AbilityCooldown": -4,
+                "MaxDrawDistance": 15
+            },
+            {
+                "MaxStacks": 5,
+                "StackDuration": 10,
+                "BonusFireRatePerStack": 10
+            },
+            {
+                "BulletDamageMultiplier": 30,
+                "CooldownReductionPerHit": 1,
+                "Damage": {
+                    "Value": 0,
+                    "Scale": {
+                        "Value": 0.4,
+                        "Type": "spirit"
+                    }
+                }
+            }
+        ]
+    },
+    "ability_artist_rollingprojectile": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCooldown": {
+            "Value": 23,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "AuraLingerDuration": 1,
+        "BarrierModifier": {
+            "Class": "Base",
+            "Subclass": "Barrier"
+        },
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": -1,
+        "DashAirSpeed": 15,
+        "DashModifier": {
+            "Class": "Base",
+            "Subclass": "Dash"
+        },
+        "DashSpeed": 20,
+        "DebuffModifier": {
+            "Class": "ArtistRollingprojectileDebuff",
+            "Subclass": "Debuff"
+        },
+        "ExplosionCone": 90,
+        "ExplosionRadius": {
+            "Value": 15,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "FadingSlowPercent": 60,
+        "GroundAuraDuration": {
+            "Value": 6,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "GroundAuraHeight": 2,
+        "GroundAuraModifier": {
+            "Class": "BaseAura",
+            "Subclass": "Aura",
+            "ProvidedByAura": {
+                "Class": "ArtistEnhancedslide",
+                "Subclass": "Buff",
+                "Acceleration": 600.0,
+                "ForwardThrust": 0.0,
+                "DamageAmpModifier": {
+                    "Class": "ArtistStackingdamageamp",
+                    "Subclass": "Stackingdamageamp"
+                }
+            }
+        },
+        "GroundAuraRadius": 2,
+        "GroundAuraSpacing": 2,
+        "IsDisabled": false,
+        "Key": "ability_artist_rollingprojectile",
+        "MaxDamage": {
+            "Value": 100,
+            "Scale": {
+                "Value": 1.8,
+                "Type": "spirit"
+            }
+        },
+        "MaxDamageTime": 2,
+        "MinDamage": {
+            "Value": 50,
+            "Scale": {
+                "Value": 0.9,
+                "Type": "spirit"
+            }
+        },
+        "Name": "Flow State",
+        "SideMoveSpeedReduction": -65,
+        "SlideScale": 100,
+        "SlideTurnScale": 25,
+        "SlowDuration": {
+            "Value": 2,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "SlowModifier": {
+            "Class": "DiminishingSlow",
+            "Subclass": "Slow"
+        },
+        "TickRate": 0.1,
+        "Upgrades": [
+            {
+                "StaminaCooldownReduction": 150
+            },
+            {
+                "AbilityCooldown": -6,
+                "ExplosionRadius": 8,
+                "GroundAuraDuration": 4
+            },
+            {
+                "OutgoingDamagePercent": 20,
+                "DamageAmpBuildDuration": 4,
+                "DamageAmpDuration": 6
+            }
+        ]
+    },
+    "ability_artist_rollingprojectile_trigger": {
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorNonCombat",
+            "BehaviorTrigger"
+        ],
+        "ChannelMoveSpeed": -1,
+        "IsDisabled": false,
+        "Key": "ability_artist_rollingprojectile_trigger",
+        "Name": null,
+        "Upgrades": []
+    },
+    "ability_artist_tether": {
+        "AbilityCastRange": {
+            "Value": 25,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "AbilityChannelTime": {
+            "Value": 2.6,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "AbilityCooldown": {
+            "Value": 35,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityPostCastDuration": 0.35,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectilePassThroughWorld",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorDontInterruptSlideOnCast",
+            "BehaviorRequireAbilityButtonToCancel",
+            "BehaviorTriggerCancelMashProtectionOnCast"
+        ],
+        "BuffModifier": {
+            "Class": "Base",
+            "Subclass": "Buff"
+        },
+        "BuildUpPerAbility": 15,
+        "BuildUpPerSecond": 33,
+        "BuildUpPerShot": 15,
+        "BuildupModifier": {
+            "Class": "CitadelArtistBuildup",
+            "Subclass": "Buildup",
+            "BuffModifier": {
+                "Class": "Base",
+                "Subclass": "Buff"
+            },
+            "SlowModifier": {
+                "Class": "SlowBase",
+                "Subclass": "Slow"
+            }
+        },
+        "ChannelMoveSpeed": -1,
+        "CombatBarrier": {
+            "Value": 0,
+            "Scale": {
+                "Value": 0.0,
+                "Type": "spirit"
+            }
+        },
+        "DPS": {
+            "Value": 30,
+            "Scale": {
+                "Value": 0.7,
+                "Type": "spirit"
+            }
+        },
+        "Damage": {
+            "Value": 60,
+            "Scale": {
+                "Value": 1.4,
+                "Type": "spirit"
+            }
+        },
+        "EffectivenessPerHit": 0.35,
+        "HealthRegen": {
+            "Value": 0,
+            "Scale": {
+                "Value": 0.0,
+                "Type": "spirit"
+            }
+        },
+        "IncomingDamagePercentReductionPerPickup": 2.5,
+        "IsDisabled": false,
+        "Key": "ability_artist_tether",
+        "Name": "Still Life",
+        "OutgoingDamagePercentPerPickup": 2.5,
+        "PullDistance": 800,
+        "SelfModifier": {
+            "Class": "Base",
+            "Subclass": "Self"
+        },
+        "SpiritPerPickup": 1,
+        "StunDuration": {
+            "Value": 1,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "StunModifier": {
+            "Class": "ArtistStun",
+            "Subclass": "Stunned"
+        },
+        "TargetingConeAngle": 40,
+        "TetherBreakRange": {
+            "Value": 35,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "TickInterval": 0.15,
+        "Upgrades": [
+            {
+                "BuffDuration": 4,
+                "HealthRegen": {
+                    "Value": 15,
+                    "Scale": {
+                        "Value": 0.25,
+                        "Type": "spirit"
+                    }
+                }
+            },
+            {
+                "OutgoingDamagePercent": -35
+            },
+            {
+                "AbilityCooldown": -11,
+                "StunDuration": 0.35,
+                "BonusMoveSpeedPercent": 20
+            }
+        ]
+    },
     "ability_baba_bench_melee": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
@@ -91,7 +615,7 @@
     },
     "ability_baba_bench_run": {
         "AbilityCooldown": {
-            "Value": 30,
+            "Value": 32,
             "Scale": {
                 "Value": 1,
                 "Type": "cooldown"
@@ -221,7 +745,7 @@
             }
         },
         "AbilityCooldown": {
-            "Value": 26.0,
+            "Value": 28.0,
             "Scale": {
                 "Value": 1,
                 "Type": "cooldown"
@@ -336,7 +860,7 @@
             }
         },
         "AbilityCooldown": {
-            "Value": 25.0,
+            "Value": 27.0,
             "Scale": {
                 "Value": 1,
                 "Type": "cooldown"
@@ -376,9 +900,9 @@
         },
         "ChannelMoveSpeed": -1,
         "CombatBarrier": {
-            "Value": 100,
+            "Value": 90,
             "Scale": {
-                "Value": 1.2,
+                "Value": 0.7,
                 "Type": "spirit"
             }
         },
@@ -431,7 +955,7 @@
                 "Radius": 3
             },
             {
-                "AbilityCooldown": -12
+                "AbilityCooldown": -14
             },
             {
                 "BrewEffectiveness": 33.33,
@@ -2942,6 +3466,518 @@
             }
         ]
     },
+    "ability_deadpack_chargeblast": {
+        "AbilityCastRange": {
+            "Value": 35,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "AbilityCooldown": {
+            "Value": 25.0,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorProjectilePassThroughWorld",
+            "BehaviorShowCastRangeAsSatSphereWhileCasting",
+            "BehaviorDontInterruptSlideOnCast",
+            "BehaviorRefundHalfCooldownOnChannelInterrupt"
+        ],
+        "BuffModifier": {
+            "Class": "Base",
+            "Subclass": "CoatedBuff"
+        },
+        "ChannelMoveSpeed": -1,
+        "CoatedDamage": {
+            "Value": 45,
+            "Scale": {
+                "Value": 1.1,
+                "Type": "spirit"
+            }
+        },
+        "CoatedDuration": {
+            "Value": 10.0,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "CoatedModifier": {
+            "Class": "DeadpackCoated",
+            "Subclass": "Coated"
+        },
+        "CoatedSlowDuration": {
+            "Value": 1.5,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "CoatedSlowModifier": {
+            "Class": "DiminishingSlow",
+            "Subclass": "CoatedSlow"
+        },
+        "CoatedSlowPercent": 40,
+        "Damage": {
+            "Value": 27,
+            "Scale": {
+                "Value": 0.74,
+                "Type": "spirit"
+            }
+        },
+        "ExplosionRadius": {
+            "Value": 3.5,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "IsDisabled": false,
+        "Key": "ability_deadpack_chargeblast",
+        "MarksTotal": 3,
+        "MineArmTime": 0.3,
+        "MissileGroundDuration": {
+            "Value": 6.0,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "Name": "Strix Salvo",
+        "Range": {
+            "Value": 21,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "StuckMineAuraModifier": {
+            "Class": "DeadpackChargeblastMineAura",
+            "Subclass": "MineAura",
+            "ProvidedByAura": {
+                "Class": "Base",
+                "Subclass": "MineTriggerMarker"
+            }
+        },
+        "Upgrades": [
+            {
+                "AbilityCooldown": -12
+            },
+            {
+                "Damage": 30,
+                "CoatedDamage": 45
+            },
+            {
+                "MarksTotal": 2,
+                "Range": 14,
+                "CoatedDamage": {
+                    "Value": 0,
+                    "Scale": {
+                        "Value": 0.35,
+                        "Type": "spirit"
+                    }
+                },
+                "Damage": {
+                    "Value": 0,
+                    "Scale": {
+                        "Value": 0.35,
+                        "Type": "spirit"
+                    }
+                }
+            }
+        ]
+    },
+    "ability_deadpack_flamethrower": {
+        "AbilityCastRange": {
+            "Value": 22.0,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "AbilityCooldown": {
+            "Value": 22.0,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityDuration": {
+            "Value": 2.0,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BackblastConeAngle": 40,
+        "BackblastModifier": {
+            "Class": "DeadpackForcedtoairmovement",
+            "Subclass": "BackblastBackflip",
+            "HeroStateDuration": 0.25,
+            "DashRemovalDelay": 0.18
+        },
+        "BeamWidth": 2.75,
+        "BehaviourBits": [
+            "BehaviorSilentCastFailureFeedback",
+            "BehaviorStartCooldownOnToggleOff",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontAimFacingEnemy",
+            "BehaviorRequireAbilityButtonToCancel",
+            "BehaviorDoNotAllowSpamProc",
+            "BehaviorDoNotCancelOnParry"
+        ],
+        "BuffModifier": {
+            "Class": "DeadpackFlamethrowerFireRate",
+            "Subclass": "FirerateBuff"
+        },
+        "BulletResistReduction": -15,
+        "ChannelMoveSpeed": -1,
+        "DPS": {
+            "Value": 30.0,
+            "Scale": {
+                "Value": 0.8,
+                "Type": "weapon_damage_increase"
+            }
+        },
+        "DebuffDuration": {
+            "Value": 7.0,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "DebuffModifier": {
+            "Class": "SlowBase",
+            "Subclass": "Debuff"
+        },
+        "HeatGainRate": -1.0,
+        "HeatGainRateHittingEnemy": -20.0,
+        "IsDisabled": false,
+        "Key": "ability_deadpack_flamethrower",
+        "Name": "Jettison Fuel",
+        "ResistModifier": {
+            "Class": "DeadpackFlamethrowerResistReduction",
+            "Subclass": "ResistReduction"
+        },
+        "ScorchDamage": {
+            "Value": 35,
+            "Scale": {
+                "Value": 0.95,
+                "Type": "spirit"
+            }
+        },
+        "TickRate": 0.1,
+        "Upgrades": [
+            {
+                "AbilityCooldown": -8
+            },
+            {
+                "ScorchDamage": 60,
+                "BonusFireRate": 18,
+                "BuffDuration": 7
+            },
+            {
+                "BulletResistReduction": -10,
+                "BurstMarkStacks": 1
+            }
+        ]
+    },
+    "ability_deadpack_rocketeer": {
+        "AbilityCastDelay": 0.7,
+        "AbilityChannelTime": 5.0,
+        "AbilityCooldown": {
+            "Value": 21.0,
+            "Scale": [
+                {
+                    "Value": -0.45,
+                    "Type": "power_increase"
+                },
+                {
+                    "Value": 1,
+                    "Type": "cooldown"
+                }
+            ]
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "AutoIntrinsicModifiers": [
+            {
+                "Class": "DeadpackHeatPool",
+                "Subclass": "DeadpackHeatPool"
+            }
+        ],
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorCannotCancelDuringChannel",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorMovement",
+            "BehaviorCanSetQuickCast"
+        ],
+        "BounceBackModifier": {
+            "Class": "DeadpackOverloadedlaunch",
+            "Subclass": "Bounceback"
+        },
+        "ChannelMoveSpeed": -1,
+        "ExplosionBulletDamage": {
+            "Value": 70,
+            "Scale": {
+                "Value": 1.4,
+                "Type": "weapon_damage_increase"
+            }
+        },
+        "ExplosionDamage": {
+            "Value": 70,
+            "Scale": {
+                "Value": 1.5,
+                "Type": "spirit"
+            }
+        },
+        "HealOnHit": {
+            "Value": 0,
+            "Scale": {
+                "Value": 0.0,
+                "Type": "spirit"
+            }
+        },
+        "Heat": 40,
+        "HeatDrainRate": -3.0,
+        "HeatGainAirDash": 4.0,
+        "HeatGainLaunch": 18.0,
+        "HeatGainRate": 33.0,
+        "HeatGainRateVTOL": 60.0,
+        "HeatPct": 100,
+        "IsDisabled": false,
+        "JetpackingModifier": {
+            "Class": "Base",
+            "Subclass": "Jetpacking"
+        },
+        "JetpackingVTOLModifier": {
+            "Class": "Base",
+            "Subclass": "Jetpackingvtol"
+        },
+        "Key": "ability_deadpack_rocketeer",
+        "MaxHealthSelfDamagePercent": 10,
+        "MaxHeatModifier": {
+            "Class": "CitadelModifierDeadpackMaxheat",
+            "Subclass": "Maxheat",
+            "LaunchAngleRandom": 40.0,
+            "JetpackLockoutModifier": {
+                "Class": "CitadelModifierDeadpackJetpacklockout",
+                "Subclass": "Lockout"
+            },
+            "OverheatAirToBackflipModifier": {
+                "Class": "DeadpackForcedtoairmovement",
+                "Subclass": "Backflip"
+            },
+            "OverheatLaunchModifier": {
+                "Class": "DeadpackOverloadedlaunch",
+                "Subclass": "Overloaded"
+            }
+        },
+        "Name": "Chimera Mk1",
+        "OverheatStunDelayDuration": 2.5,
+        "OverheatStunDurationSelf": 1.3,
+        "Radius": {
+            "Value": 8.0,
+            "Scale": {
+                "Value": 1,
+                "Type": "radius"
+            }
+        },
+        "TossDuration": 0.9,
+        "Upgrades": [
+            {
+                "HeatDrainRate": -4
+            },
+            {
+                "HealOnHit": {
+                    "Value": 150,
+                    "Scale": {
+                        "Value": 2.0,
+                        "Type": "spirit"
+                    }
+                },
+                "SelfDamageReductionOnPlayerHitPercent": 100
+            },
+            {
+                "ExplosionDamage": 120,
+                "OverheatLockoutDurationReductionOnPlayerHitPercent": 50
+            }
+        ]
+    },
+    "ability_deadpack_ultimate": {
+        "AbilityCastDelay": 0.5,
+        "AbilityCastRange": {
+            "Value": 10.0,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "AbilityCooldown": {
+            "Value": 135.0,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityPostCastDuration": 0.1,
+        "AbilityUnitTargetLimit": 1,
+        "AutoCastDelayModifier": {
+            "Class": "Base",
+            "Subclass": "Castdelay"
+        },
+        "BehaviourBits": [
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDeactivateCrouchToggleOnCast",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorCanSetQuickCast"
+        ],
+        "BonusDamagePercent": 75,
+        "ChannelMoveSpeed": -1,
+        "ChargingModifier": {
+            "Class": "Base",
+            "Subclass": "Charging"
+        },
+        "Damage": {
+            "Value": 70.0,
+            "Scale": {
+                "Value": 1.0,
+                "Type": "spirit"
+            }
+        },
+        "DamagePerMeter": {
+            "Value": 3.0,
+            "Scale": {
+                "Value": 0.09,
+                "Type": "spirit"
+            }
+        },
+        "GoingDownModifier": {
+            "Class": "DeadpackUltimateGoingdown",
+            "Subclass": "Goingdown"
+        },
+        "GoingUpModifier": {
+            "Class": "Base",
+            "Subclass": "Goingup"
+        },
+        "IsDisabled": false,
+        "Key": "ability_deadpack_ultimate",
+        "LowHealthEnemyThresholdPct": 50,
+        "MaxHeight": 1700,
+        "Name": "Close The Deal",
+        "SelfDamagePercent": 25,
+        "StunDuration": {
+            "Value": 0.5,
+            "Scale": {
+                "Value": 1.0,
+                "Type": "duration"
+            }
+        },
+        "StunDurationSelf": 0.4,
+        "TargetModifier": {
+            "Class": "DeadpackUltimateTarget",
+            "Subclass": "DeadpackUltGrabbed",
+            "ForwardOffset": 50,
+            "VerticalOffset": 0,
+            "ForceDistScale": 20,
+            "SelfViewOpacity": 0.7
+        },
+        "Upgrades": [
+            {
+                "Damage": 90.0
+            },
+            {
+                "AbilityCooldown": -35.0
+            },
+            {
+                "DamagePerMeter": 8.0,
+                "StunDuration": 0.5
+            }
+        ]
+    },
+    "ability_deadpack_zip_line": {
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorDontBreakInvisibility",
+            "BehaviorDontInterruptSprint",
+            "BehaviorNotSilencable",
+            "BehaviorNoTarget",
+            "BehaviorNonCombat",
+            "BehaviorCastableWhileHidden"
+        ],
+        "ChannelMoveSpeed": -1,
+        "DamageCooldown": {
+            "Value": 3,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "DismountHorizontalMaxSpeedPercent": 85,
+        "DismountHorizontalMinSpeedPercent": 40,
+        "DismountVerticalSpeed": 300,
+        "IsDisabled": false,
+        "Key": "ability_deadpack_zip_line",
+        "KnockedOffDamagePct": 15,
+        "KnockedOffSlowModifier": {
+            "Class": "DiminishingSlow",
+            "Subclass": "KnockedOffZiplineSlow"
+        },
+        "LatchEndSpeed": 750,
+        "LatchInitialSpeed": 600,
+        "LatchMaxTime": 0.5,
+        "LatchSpeed": 1500,
+        "LatchVisualSnapProgress": 0.85,
+        "MaxMountDistance2D": 15,
+        "Name": null,
+        "PlayerSpeedCheckScale": 0.55,
+        "RegenZoneDismountHorizontalMaxSpeed": 300,
+        "RidingZipLineModifier": {
+            "Class": "Base",
+            "Subclass": "RidingZipline"
+        },
+        "SlowDuration": 8,
+        "StunDuration": 2.5,
+        "Upgrades": [],
+        "ZipAcc": 1000,
+        "ZipLineIntroModifier": {
+            "Class": "Base",
+            "Subclass": "ZiplineIntro",
+            "EnabledStateMask": [
+                "ZiplineIntro",
+                "ZiplineLocked"
+            ]
+        },
+        "ZipLineKnockdownImmuneModifier": {
+            "Class": "ZiplineKnockdownImmune",
+            "Subclass": "ZiplineKnockdownImmune"
+        },
+        "ZipLineSlowModifier": {
+            "Class": "ZiplineSpeed",
+            "Subclass": "ZiplineProtectionSlow",
+            "RampUpTime": 2.0,
+            "PercentageMultiplierStart": -70,
+            "PercentageMultiplierEnd": 0
+        },
+        "ZipSpeedInner": 693,
+        "ZipSpeedOuter": 810,
+        "ZiplineProtectionDamageAmp": 35,
+        "ZiplineProtectionSlowDurationOnHit": 2.0
+    },
     "ability_death_tax": {
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityDuration": {
@@ -4488,6 +5524,10 @@
         "InfestModifier": {
             "Class": "CitadelModifierFamiliarInfested",
             "Subclass": "Infest"
+        },
+        "InfestOwnerWatcherModifier": {
+            "Class": "FamiliarInfestOwnerWatcher",
+            "Subclass": "FamiliarInfestOwnerWatcher"
         },
         "InfestWaitingModifier": {
             "Class": "Base",
@@ -6500,7 +7540,8 @@
             "BehaviorCanHealPlayers",
             "BehaviorProjectileFiredAsBullet",
             "BehaviorCanSetQuickCast",
-            "BehaviorDontInterruptSlideOnCast"
+            "BehaviorDontInterruptSlideOnCast",
+            "BehaviorAbilityIsCold"
         ],
         "ChannelMoveSpeed": -1,
         "Damage": {
@@ -9832,6 +10873,450 @@
         "ShieldHealth": 10000,
         "ShieldScale": 2.5,
         "Upgrades": []
+    },
+    "ability_nurse_adrenaline_rush": {
+        "AbilityCastDelay": 0.2,
+        "AbilityCastRange": {
+            "Value": 13,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "AbilityCooldown": {
+            "Value": 40,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityDuration": {
+            "Value": 4,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorAllowAltCast",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast",
+            "BehaviorUseInstantCastUnitTargetUi",
+            "BehaviorAllowSelfCast"
+        ],
+        "BuffModifier": {
+            "Class": "NurseAdrenalineRushBuff",
+            "Subclass": "NurseAdrenalineRushBuff"
+        },
+        "ChannelMoveSpeed": -1,
+        "CrashDuration": 4,
+        "CrashModifier": {
+            "Class": "NurseAdrenalineRushCrash",
+            "Subclass": "NurseAdrenalineRushCrash"
+        },
+        "CrashTimeScalePenaltyPercent": 20,
+        "DamageSpiritThresholdPercent": 6,
+        "DeferredDamageBonusPercent": 30,
+        "DeferredDamagePercent": 100,
+        "IsDisabled": false,
+        "Key": "ability_nurse_adrenaline_rush",
+        "Name": "Wretched Vapors",
+        "RushTimeScaleBonusPercent": {
+            "Value": 25,
+            "Scale": {
+                "Value": 0.06,
+                "Type": "spirit"
+            }
+        },
+        "Upgrades": [
+            {
+                "AbilityCooldown": -15,
+                "AbilityCastRange": 7
+            },
+            {
+                "AbilityDuration": 1,
+                "HealingEffectivenessPercent": 20,
+                "HealAmpRegenPercent": 20
+            },
+            {
+                "RushTimeScaleBonusPercent": 15,
+                "DispelDebuffs": 1
+            }
+        ]
+    },
+    "ability_nurse_fear": {
+        "AbilityCastDelay": 1.3,
+        "AbilityCastRange": {
+            "Value": 35,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "AbilityChannelTime": {
+            "Value": 7.0,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "AbilityCooldown": {
+            "Value": 200.0,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "AirControlAccelPercent": -50,
+        "AirDrag": 3,
+        "AutoCastDelayModifier": {
+            "Class": "Base",
+            "Subclass": "Castdelay"
+        },
+        "BehaviourBits": [
+            "BehaviorChannelled",
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorShowCastRangeAsSatSphereWhileCasting",
+            "BehaviorDontInterruptSlideOnCast",
+            "BehaviorDisplaysDamageImpact"
+        ],
+        "BuildupDecayTime": 10.0,
+        "BuildupLookAngle": 80,
+        "BuildupLookAngleFull": 55,
+        "BuildupModifier": {
+            "Class": "NurseFearBuildup",
+            "Subclass": "NurseFearBuildup",
+            "BuildUpDecayDelay": 0.6
+        },
+        "BuildupTickRate": 0.075,
+        "BuildupTime": 1.3,
+        "CameraTurnRateMax": 15,
+        "ChannelMoveSpeed": 3.5,
+        "ConeAngle": 180,
+        "DPS": {
+            "Value": 60,
+            "Scale": {
+                "Value": 0.3,
+                "Type": "spirit"
+            }
+        },
+        "DebuffDuration": {
+            "Value": 2.2,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "DebuffModifier": {
+            "Class": "CitadelNurseFearDebuff",
+            "Subclass": "CitadelNurseFearDebuff",
+            "SteerTurnRate": 50,
+            "ReturnTurnRate": 50
+        },
+        "ExtraSweepConeAngle": 40,
+        "ExtraSweepOffsetBehindCaster": 40,
+        "ExtraSweepRange": {
+            "Value": 4,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
+        "FacingAwayDamagePercent": 50,
+        "FallSpeedMax": 1,
+        "FearDurationPerLeechStack": {
+            "Value": 0.1,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "FireRateSlow": 30,
+        "GazeLingerDuration": 0.3,
+        "GazeModifier": {
+            "Class": "CitadelNurseGaze",
+            "Subclass": "NurseFearGaze",
+            "EnabledStateMask": [
+                "DashDisabledDebuff",
+                "SilenceMovementAbilites"
+            ]
+        },
+        "ImmunityModifier": {
+            "Class": "Base",
+            "Subclass": "NurseFearImmunity"
+        },
+        "IsDisabled": false,
+        "Key": "ability_nurse_fear",
+        "LaunchHeight": 7.8,
+        "LookBuildupScalePercent": 35,
+        "Name": "Lurking Terrors",
+        "PitchScaleMax": 1.3,
+        "PitchScaleMin": 1.0,
+        "SlowLingerDuration": 0.5,
+        "SlowModifier": {
+            "Class": "SlowBase",
+            "Subclass": "NurseFearSlow",
+            "EnabledStateMask": [
+                "ZiplineDisabled"
+            ]
+        },
+        "SlowPercent": 30,
+        "TargetMantleAttemptInterval": 0.5,
+        "TickRate": 0.15,
+        "Upgrades": [
+            {
+                "AbilityCooldown": -50
+            },
+            {
+                "SlowPercent": 20,
+                "FireRateSlow": 20,
+                "DPS": 30
+            },
+            {
+                "ChannelDamageImmune": 1,
+                "AbilityChannelTime": 3.0,
+                "DPS": {
+                    "Value": 0,
+                    "Scale": {
+                        "Value": 0.5,
+                        "Type": "spirit"
+                    }
+                }
+            }
+        ],
+        "VolScaleMax": 1.0,
+        "VolScaleMin": 0.35
+    },
+    "ability_nurse_healing_needles": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCharges": {
+            "Value": 1,
+            "Scale": {
+                "Value": 1,
+                "Type": "max_charges"
+            }
+        },
+        "AbilityChargesConditionally": 1,
+        "AbilityChargesInitial": 1,
+        "AbilityCooldownBetweenCharge": -1.0,
+        "AbilityUnitTargetLimit": 1,
+        "BehaviourBits": [
+            "BehaviorNoTarget",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorDontInterruptSlideOnCast",
+            "BehaviorDoNotAllowSpamProc"
+        ],
+        "BuffExtendMaxDurationPercent": 200,
+        "BuffModifier": {
+            "Class": "NurseHealingNeedlesBuff",
+            "Subclass": "NurseHealingNeedlesBuff",
+            "StatusEffectPriority": 0
+        },
+        "BuildUpDuration": 5,
+        "BuildUpModifier": {
+            "Class": "CitadelBaseBuildup",
+            "Subclass": "NurseLifeforceBuildup",
+            "BuildUpDecayDelay": 3.0
+        },
+        "ChannelMoveSpeed": -1,
+        "ChargeGenPctScale": {
+            "Value": 100,
+            "Scale": {
+                "Value": -1.0,
+                "Type": "cooldown"
+            }
+        },
+        "ChargeHitCooldown": 0.15,
+        "ChargePercentPerAbilityHit": 1.26,
+        "ChargePercentPerBulletHit": 1.26,
+        "ChargePercentPerHeadshot": 2.52,
+        "ChargePercentPerHeavyMelee": 15.12,
+        "ChargePercentPerLightMelee": 7.56,
+        "ChargePercentPerSecondPerLeech": 0.15,
+        "HeadshotHealBonusPercent": 15,
+        "HealRegen": {
+            "Value": 25,
+            "Scale": {
+                "Value": 0.2,
+                "Type": "spirit"
+            }
+        },
+        "IsDisabled": false,
+        "Key": "ability_nurse_healing_needles",
+        "Name": "Healing Needles",
+        "NonHeroChargeScalePercent": 35,
+        "ProcModifier": {
+            "Class": "Base",
+            "Subclass": "NurseLifeforceProc"
+        },
+        "SecondaryShotHealPercent": 50,
+        "SelfModifier": {
+            "Class": "NurseHealingNeedlesEquipped",
+            "Subclass": "NurseHealingNeedlesEquipped"
+        },
+        "SwapEndDelay": 1.8,
+        "SwapInDelay": 1.3,
+        "Upgrades": [
+            {
+                "AbilityCharges": 1
+            },
+            {
+                "StaminaRestorePerHit": 0.6,
+                "HealRegen": 20
+            },
+            {
+                "HealRegen": {
+                    "Value": 0,
+                    "Scale": {
+                        "Value": 0.4,
+                        "Type": "spirit"
+                    }
+                },
+                "BuffExtendPercentPerShot": 6
+            }
+        ]
+    },
+    "ability_nurse_leech_therapy": {
+        "AbilityCastDelay": 0.1,
+        "AbilityCooldown": {
+            "Value": 30,
+            "Scale": {
+                "Value": 1,
+                "Type": "cooldown"
+            }
+        },
+        "AbilityDuration": {
+            "Value": 5,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "AbilityPostCastDuration": 0.2,
+        "AbilityUnitTargetLimit": 1,
+        "AllyModifier": {
+            "Class": "NurseLeechTherapyAlly",
+            "Subclass": "NurseLeechTherapyAlly"
+        },
+        "BehaviourBits": [
+            "BehaviorProjectile",
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCanHealPlayers",
+            "BehaviorProjectileFiredAsBullet",
+            "BehaviorCanSetQuickCast",
+            "BehaviorDontInterruptSlideOnCast"
+        ],
+        "ChannelMoveSpeed": 5,
+        "DPS": {
+            "Value": 23,
+            "Scale": {
+                "Value": 0.19,
+                "Type": "spirit"
+            }
+        },
+        "FireRatePerLeechPickup": 5,
+        "HealPercentOfLeechDamage": 100,
+        "IsDisabled": false,
+        "Key": "ability_nurse_leech_therapy",
+        "LeechCount": 4,
+        "LeechCrawlRadius": {
+            "Value": 8,
+            "Scale": [
+                {
+                    "Value": 1.3,
+                    "Type": "power_increase"
+                },
+                {
+                    "Value": 1,
+                    "Type": "range"
+                }
+            ]
+        },
+        "LeechCrawlRadiusExitGap": 5,
+        "LeechEatDurationPerSecond": 0.65,
+        "LeechEatTickRate": 0.38,
+        "LeechGroundLifetime": 180,
+        "LeechHuntCrawlSpeed": 3,
+        "LeechHuntLifetime": {
+            "Value": 9,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
+        "LeechHuntLifetimeVariance": 0.55,
+        "LeechHuntMaxDrop": 3,
+        "LeechHuntSearchInterval": 0.2,
+        "LeechHuntSearchRadiusPercent": 150,
+        "LeechLeapArcHeight": 0.5,
+        "LeechLeapDuration": 0.4,
+        "LeechLungeSpeed": 15,
+        "LeechMoveSpeed": {
+            "Value": 2,
+            "Scale": {
+                "Value": 0.05,
+                "Type": "power_increase"
+            }
+        },
+        "LeechSpawnAngleJitter": 0.32,
+        "LeechSpawnSpreadMinPercent": 73,
+        "LeechSpawnSpreadPercent": 58,
+        "LeechStacksKeptOnDeathPercent": 50,
+        "MaxLeechBonusStacks": 10,
+        "Name": "Leech Therapy",
+        "PickupBonusModifier": {
+            "Class": "NurseLeechTherapyStackBonus",
+            "Subclass": "NurseLeechTherapyStackBonus"
+        },
+        "Radius": {
+            "Value": 6.5,
+            "Scale": {
+                "Value": 1,
+                "Type": "radius"
+            }
+        },
+        "RegenPerLeechPickup": {
+            "Value": 0.6,
+            "Scale": {
+                "Value": 0.13,
+                "Type": "power_increase"
+            }
+        },
+        "StacksLostOnDeathPercent": 25,
+        "TargetModifier": {
+            "Class": "NurseLeechTherapyTarget",
+            "Subclass": "NurseLeechTherapyTarget",
+            "EatingBuffsModifier": {
+                "Class": "Base",
+                "Subclass": "NurseLeechTherapyEatingBuffs"
+            }
+        },
+        "TickRate": 0.38,
+        "Upgrades": [
+            {
+                "LeechStaminaDrain": 0.3
+            },
+            {
+                "AbilityCooldown": -10,
+                "SpiritPowerPerLeechStack": 4
+            },
+            {
+                "MaxLeechBonusStacks": 8,
+                "DPS": {
+                    "Value": 0,
+                    "Scale": {
+                        "Value": 0.3,
+                        "Type": "spirit"
+                    }
+                },
+                "Radius": 1
+            }
+        ]
     },
     "ability_opera_ability01": {
         "AbilityCooldown": {
@@ -14756,6 +16241,9 @@
         "AutoCastDelayModifier": {
             "Class": "WardenRiotProtocolCastdelay",
             "Subclass": "WardenRiotProtocolCastDelay",
+            "EnabledStateMask": [
+                "FearImmune"
+            ],
             "UnstoppableModifier": {
                 "Class": "Unstoppable",
                 "Subclass": "Unstoppable",
@@ -14839,7 +16327,8 @@
             "Subclass": "WardenRiotProtocol",
             "EnabledStateMask": [
                 "SinclairTaxUltActive",
-                "SinclairTaxKeepModelSwap"
+                "SinclairTaxKeepModelSwap",
+                "FearImmune"
             ],
             "EnemyDebuffModifier": {
                 "Class": "WardenRiotProtocolEnemyDebuff",

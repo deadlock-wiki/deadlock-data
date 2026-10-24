@@ -147,12 +147,15 @@
                 "AbilityActivation": "CITADEL_ABILITY_ACTIVATION_INSTANT_CAST",
                 "AbilityBehaviorsBits": "CITADEL_ABILITY_BEHAVIOR_CHANNELLED | CITADEL_ABILITY_BEHAVIOR_TARGET_THROUGH_WALLS",
                 "AbilityTargetTypes": "CITADEL_UNIT_TARGET_HERO_ENEMY | CITADEL_UNIT_TARGET_TROOPER_ENEMY | CITADEL_UNIT_TARGET_MINION_ENEMY",
-                "projectileInfo": {
-                    "TrackingDuration": 1,
-                    "TrackingStartTime": 1,
-                    "TrackingEndTime": 2,
-                    "GravityScale": 0.5,
-                    "Behaviors": "PBF_DetonateOnHitWorld"
+                "ProjectileInfos": {
+                    "primary": {
+                        "TargetTypes": "CITADEL_UNIT_TARGET_HERO_ENEMY | CITADEL_UNIT_TARGET_TROOPER_ENEMY | CITADEL_UNIT_TARGET_MINION_ENEMY",
+                        "TrackingDuration": 1,
+                        "TrackingStartTime": 1,
+                        "TrackingEndTime": 2,
+                        "GravityScale": 0.5,
+                        "Behaviors": "PBF_DetonateOnHitWorld"
+                    }
                 },
                 "LaunchAngle": 45,
                 "AuraModifier": {
@@ -573,12 +576,15 @@
                 "AbilityActivation": "CITADEL_ABILITY_ACTIVATION_INSTANT_CAST",
                 "AbilityBehaviorsBits": "CITADEL_ABILITY_BEHAVIOR_CHANNELLED | CITADEL_ABILITY_BEHAVIOR_TARGET_THROUGH_WALLS",
                 "AbilityTargetTypes": "CITADEL_UNIT_TARGET_HERO_ENEMY | CITADEL_UNIT_TARGET_TROOPER_ENEMY | CITADEL_UNIT_TARGET_MINION_ENEMY",
-                "projectileInfo": {
-                    "TrackingDuration": 1,
-                    "TrackingStartTime": 1,
-                    "TrackingEndTime": 2,
-                    "GravityScale": 0.5,
-                    "Behaviors": "PBF_DetonateOnHitWorld"
+                "ProjectileInfos": {
+                    "primary": {
+                        "TargetTypes": "CITADEL_UNIT_TARGET_HERO_ENEMY | CITADEL_UNIT_TARGET_TROOPER_ENEMY | CITADEL_UNIT_TARGET_MINION_ENEMY",
+                        "TrackingDuration": 1,
+                        "TrackingStartTime": 1,
+                        "TrackingEndTime": 2,
+                        "GravityScale": 0.5,
+                        "Behaviors": "PBF_DetonateOnHitWorld"
+                    }
                 },
                 "LaunchAngle": 45,
                 "AuraModifier": {
@@ -1212,10 +1218,12 @@
                 "AbilityActivation": "CITADEL_ABILITY_ACTIVATION_PRESS",
                 "AbilityBehaviorsBits": "CITADEL_ABILITY_BEHAVIOR_PROJECTILE",
                 "AbilityTargetTypes": "CITADEL_UNIT_TARGET_ALL_ENEMY",
-                "projectileInfo": {
-                    "Speed": 40.64,
-                    "UpSpeed": 0,
-                    "Behaviors": "PBF_StickToWorld | PBF_StartDetonateTimeOnHitTarget | PBF_StartDetonateTimeOnHitWorld | PBF_DisableTouchOnHit | PBF_OnlyTouchWorld"
+                "ProjectileInfos": {
+                    "primary": {
+                        "Speed": 40.64,
+                        "UpSpeed": 0,
+                        "Behaviors": "PBF_StickToWorld | PBF_StartDetonateTimeOnHitTarget | PBF_StartDetonateTimeOnHitWorld | PBF_DisableTouchOnHit | PBF_OnlyTouchWorld"
+                    }
                 },
                 "CooldownMax": 12.0,
                 "CooldownMin": 6.0,
@@ -1307,12 +1315,15 @@
                 "AbilityActivation": "CITADEL_ABILITY_ACTIVATION_INSTANT_CAST",
                 "AbilityBehaviorsBits": "CITADEL_ABILITY_BEHAVIOR_CHANNELLED | CITADEL_ABILITY_BEHAVIOR_TARGET_THROUGH_WALLS",
                 "AbilityTargetTypes": "CITADEL_UNIT_TARGET_HERO_ENEMY | CITADEL_UNIT_TARGET_TROOPER_ENEMY | CITADEL_UNIT_TARGET_MINION_ENEMY",
-                "projectileInfo": {
-                    "TrackingDuration": 1,
-                    "TrackingStartTime": 1,
-                    "TrackingEndTime": 2,
-                    "GravityScale": 0.5,
-                    "Behaviors": "PBF_DetonateOnHitWorld"
+                "ProjectileInfos": {
+                    "primary": {
+                        "TargetTypes": "CITADEL_UNIT_TARGET_HERO_ENEMY | CITADEL_UNIT_TARGET_TROOPER_ENEMY | CITADEL_UNIT_TARGET_MINION_ENEMY",
+                        "TrackingDuration": 1,
+                        "TrackingStartTime": 1,
+                        "TrackingEndTime": 2,
+                        "GravityScale": 0.5,
+                        "Behaviors": "PBF_DetonateOnHitWorld"
+                    }
                 },
                 "LaunchAngle": 45,
                 "AuraModifier": {
@@ -1423,6 +1434,11 @@
     },
     "bullet_time_warp": {
         "Name": "bullet_time_warp"
+    },
+    "citadel_artist_strokeblocker": {
+        "BlockerIsVisible": false,
+        "MeleeHits": 1,
+        "Name": "citadel_artist_strokeblocker"
     },
     "citadel_basketball": {
         "BallTouchRadius": 1.016,
@@ -5850,12 +5866,15 @@
                 "AbilityActivation": "CITADEL_ABILITY_ACTIVATION_INSTANT_CAST",
                 "AbilityBehaviorsBits": "CITADEL_ABILITY_BEHAVIOR_CHANNELLED | CITADEL_ABILITY_BEHAVIOR_TARGET_THROUGH_WALLS",
                 "AbilityTargetTypes": "CITADEL_UNIT_TARGET_HERO_ENEMY | CITADEL_UNIT_TARGET_TROOPER_ENEMY | CITADEL_UNIT_TARGET_MINION_ENEMY",
-                "projectileInfo": {
-                    "TrackingDuration": 1,
-                    "TrackingStartTime": 1,
-                    "TrackingEndTime": 2,
-                    "GravityScale": 0.5,
-                    "Behaviors": "PBF_DetonateOnHitWorld"
+                "ProjectileInfos": {
+                    "primary": {
+                        "TargetTypes": "CITADEL_UNIT_TARGET_HERO_ENEMY | CITADEL_UNIT_TARGET_TROOPER_ENEMY | CITADEL_UNIT_TARGET_MINION_ENEMY",
+                        "TrackingDuration": 1,
+                        "TrackingStartTime": 1,
+                        "TrackingEndTime": 2,
+                        "GravityScale": 0.5,
+                        "Behaviors": "PBF_DetonateOnHitWorld"
+                    }
                 },
                 "LaunchAngle": 45,
                 "AuraModifier": {
@@ -6276,12 +6295,15 @@
                 "AbilityActivation": "CITADEL_ABILITY_ACTIVATION_INSTANT_CAST",
                 "AbilityBehaviorsBits": "CITADEL_ABILITY_BEHAVIOR_CHANNELLED | CITADEL_ABILITY_BEHAVIOR_TARGET_THROUGH_WALLS",
                 "AbilityTargetTypes": "CITADEL_UNIT_TARGET_HERO_ENEMY | CITADEL_UNIT_TARGET_TROOPER_ENEMY | CITADEL_UNIT_TARGET_MINION_ENEMY",
-                "projectileInfo": {
-                    "TrackingDuration": 1,
-                    "TrackingStartTime": 1,
-                    "TrackingEndTime": 2,
-                    "GravityScale": 0.5,
-                    "Behaviors": "PBF_DetonateOnHitWorld"
+                "ProjectileInfos": {
+                    "primary": {
+                        "TargetTypes": "CITADEL_UNIT_TARGET_HERO_ENEMY | CITADEL_UNIT_TARGET_TROOPER_ENEMY | CITADEL_UNIT_TARGET_MINION_ENEMY",
+                        "TrackingDuration": 1,
+                        "TrackingStartTime": 1,
+                        "TrackingEndTime": 2,
+                        "GravityScale": 0.5,
+                        "Behaviors": "PBF_DetonateOnHitWorld"
+                    }
                 },
                 "LaunchAngle": 45,
                 "AuraModifier": {
@@ -6915,10 +6937,12 @@
                 "AbilityActivation": "CITADEL_ABILITY_ACTIVATION_PRESS",
                 "AbilityBehaviorsBits": "CITADEL_ABILITY_BEHAVIOR_PROJECTILE",
                 "AbilityTargetTypes": "CITADEL_UNIT_TARGET_ALL_ENEMY",
-                "projectileInfo": {
-                    "Speed": 40.64,
-                    "UpSpeed": 0,
-                    "Behaviors": "PBF_StickToWorld | PBF_StartDetonateTimeOnHitTarget | PBF_StartDetonateTimeOnHitWorld | PBF_DisableTouchOnHit | PBF_OnlyTouchWorld"
+                "ProjectileInfos": {
+                    "primary": {
+                        "Speed": 40.64,
+                        "UpSpeed": 0,
+                        "Behaviors": "PBF_StickToWorld | PBF_StartDetonateTimeOnHitTarget | PBF_StartDetonateTimeOnHitWorld | PBF_DisableTouchOnHit | PBF_OnlyTouchWorld"
+                    }
                 },
                 "CooldownMax": 12.0,
                 "CooldownMin": 6.0,
@@ -7010,12 +7034,15 @@
                 "AbilityActivation": "CITADEL_ABILITY_ACTIVATION_INSTANT_CAST",
                 "AbilityBehaviorsBits": "CITADEL_ABILITY_BEHAVIOR_CHANNELLED | CITADEL_ABILITY_BEHAVIOR_TARGET_THROUGH_WALLS",
                 "AbilityTargetTypes": "CITADEL_UNIT_TARGET_HERO_ENEMY | CITADEL_UNIT_TARGET_TROOPER_ENEMY | CITADEL_UNIT_TARGET_MINION_ENEMY",
-                "projectileInfo": {
-                    "TrackingDuration": 1,
-                    "TrackingStartTime": 1,
-                    "TrackingEndTime": 2,
-                    "GravityScale": 0.5,
-                    "Behaviors": "PBF_DetonateOnHitWorld"
+                "ProjectileInfos": {
+                    "primary": {
+                        "TargetTypes": "CITADEL_UNIT_TARGET_HERO_ENEMY | CITADEL_UNIT_TARGET_TROOPER_ENEMY | CITADEL_UNIT_TARGET_MINION_ENEMY",
+                        "TrackingDuration": 1,
+                        "TrackingStartTime": 1,
+                        "TrackingEndTime": 2,
+                        "GravityScale": 0.5,
+                        "Behaviors": "PBF_DetonateOnHitWorld"
+                    }
                 },
                 "LaunchAngle": 45,
                 "AuraModifier": {
@@ -7451,6 +7478,91 @@
             "DPS": 0.0,
             "SustainedDPS": 0.0
         }
+    },
+    "npc_nurse_leech": {
+        "Acceleration": 0,
+        "CapsuleHeightOverride": 0.2032,
+        "CapsuleRadiusOverride": 0.1016,
+        "CollectRadius": 2.2,
+        "CrawlCycleCurve": {
+            "pline": [
+                {
+                    "x": 0.0,
+                    "y": 1.498167,
+                    "SlopeIncoming": 0.6,
+                    "SlopeOutgoing": 0.6
+                },
+                {
+                    "x": 0.49625,
+                    "y": 0.198833,
+                    "SlopeIncoming": 0.0,
+                    "SlopeOutgoing": 0.005833
+                },
+                {
+                    "x": 1.0,
+                    "y": 1.504,
+                    "SlopeIncoming": 0.6,
+                    "SlopeOutgoing": 0.6
+                }
+            ],
+            "tangents": [
+                {
+                    "IncomingTangent": "CURVE_TANGENT_FREE",
+                    "OutgoingTangent": "CURVE_TANGENT_FREE"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_FREE",
+                    "OutgoingTangent": "CURVE_TANGENT_SPLINE"
+                },
+                {
+                    "IncomingTangent": "CURVE_TANGENT_FREE",
+                    "OutgoingTangent": "CURVE_TANGENT_FREE"
+                }
+            ],
+            "vDomainMins": [
+                0.0,
+                0.0
+            ],
+            "vDomainMaxs": [
+                1.0,
+                2.0
+            ]
+        },
+        "CrawlCycleDuration": 0.85,
+        "CrawlRadius": 10.16,
+        "DropOutSpeed": [
+            80.0,
+            120.0
+        ],
+        "DropUpSpeed": [
+            30.0,
+            200.0
+        ],
+        "HuntingRenderColor": [
+            116,
+            127,
+            140
+        ],
+        "JarLaunchUpSpeed": [
+            350.0,
+            600.0
+        ],
+        "MaxHealth": 1,
+        "MaxScaleDuration": 7.0,
+        "MeleeAttemptRange": 0.0,
+        "MeleeHitRange": 0.0,
+        "MinScaleDuration": 0.0,
+        "Name": "npc_nurse_leech",
+        "OutlineRange": 50.8,
+        "OutlineThroughWalls": true,
+        "OutlineWhenVisible": true,
+        "RunSpeed": 2.54,
+        "SightRangeNPCs": 0.0,
+        "SightRangePlayers": 0.0,
+        "TrailRadius": 0.254,
+        "TrailRadiusHunting": 0.1524,
+        "TurnRate": 180.0,
+        "WalkSpeed": 2.54
     },
     "npc_player_bot_brain": {
         "AirJumpMin": 200.0,
