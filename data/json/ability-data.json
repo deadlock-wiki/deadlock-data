@@ -74,7 +74,7 @@
     "ability_artist_bamboogrove": {
         "AbilityChannelTime": 0.6,
         "AbilityCooldown": {
-            "Value": 165,
+            "Value": 180,
             "Scale": {
                 "Value": 1,
                 "Type": "cooldown"
@@ -85,7 +85,7 @@
             "Value": 6,
             "Scale": [
                 {
-                    "Value": 0.04,
+                    "Value": 0.01,
                     "Type": "spirit"
                 },
                 {
@@ -117,7 +117,7 @@
                     "ArtistBambooImmune"
                 ]
             },
-            "ImmuneDuration": 0.5
+            "ImmuneDuration": 0.75
         },
         "BehaviourBits": [
             "BehaviorChannelled",
@@ -188,8 +188,7 @@
             },
             {
                 "SilenceDuration": 1.25,
-                "AbilityDuration": 4,
-                "DestroyOnDamage": -1
+                "AbilityDuration": 4
             }
         ]
     },
@@ -555,7 +554,7 @@
         },
         "SpiritPerPickup": 1,
         "StunDuration": {
-            "Value": 1,
+            "Value": 0.9,
             "Scale": {
                 "Value": 1,
                 "Type": "duration"
@@ -580,7 +579,7 @@
                 "HealthRegen": {
                     "Value": 15,
                     "Scale": {
-                        "Value": 0.25,
+                        "Value": 0.15,
                         "Type": "spirit"
                     }
                 }
@@ -590,7 +589,7 @@
             },
             {
                 "AbilityCooldown": -11,
-                "StunDuration": 0.35,
+                "StunDuration": 0.45,
                 "BonusMoveSpeedPercent": 20
             }
         ]
@@ -666,7 +665,7 @@
         "GroundPoundKnockUpHeight": 2.54,
         "HeavyMeleeDashSlowPercent": -25,
         "HeavyMeleeSlowDuration": {
-            "Value": 4,
+            "Value": 2,
             "Scale": {
                 "Value": 1,
                 "Type": "duration"
@@ -686,7 +685,7 @@
         "Key": "ability_baba_bench_run",
         "KickKnockbackDuration": 0.45,
         "LightKickKnockbackDistance": {
-            "Value": 10,
+            "Value": 8,
             "Scale": {
                 "Value": 1,
                 "Type": "range"
@@ -776,7 +775,7 @@
         "ChannelMoveSpeed": -1,
         "Damage": 50,
         "DebuffDuration": {
-            "Value": 22,
+            "Value": 16,
             "Scale": {
                 "Value": 1,
                 "Type": "duration"
@@ -875,11 +874,11 @@
                 "Type": "duration"
             }
         },
-        "BarrierLockTime": 2.5,
         "BarrierModifier": {
             "Class": "CombatBarrier",
             "Subclass": "BabaBrewBarrier"
         },
+        "BarrierWindow": 1.5,
         "BehaviourBits": [
             "BehaviorChannelled",
             "BehaviorNoTarget",
@@ -890,7 +889,6 @@
             "BehaviorDontInterruptSlideOnCast",
             "BehaviorHoldsAtMaxChannel"
         ],
-        "BrewTime": 1.5,
         "BurnDuration": {
             "Value": 8,
             "Scale": {
@@ -913,12 +911,12 @@
                 "Type": "spirit"
             }
         },
-        "FireLockTime": 4.5,
         "FireModifier": {
             "Class": "BabaBrewBurn",
             "Subclass": "BabaBrewFire",
             "TickInterval": 0.5
         },
+        "FireWindow": 1.5,
         "HoldingModifier": {
             "Class": "BabaBrewHolding",
             "Subclass": "BabaBrewHolding"
@@ -935,13 +933,12 @@
         },
         "SelfCastForwardOffset": 1,
         "SilenceDuration": {
-            "Value": 3,
+            "Value": 2.75,
             "Scale": {
                 "Value": 1,
                 "Type": "duration"
             }
         },
-        "SilenceLockTime": 3.5,
         "SilenceModifier": {
             "Class": "CitadelSilenced",
             "Subclass": "BabaBrewSilence",
@@ -949,6 +946,7 @@
                 "Silenced"
             ]
         },
+        "SilenceWindow": 1.5,
         "SpiritResistReduction": -15,
         "Upgrades": [
             {
@@ -1228,7 +1226,7 @@
         "Damage": {
             "Value": 90,
             "Scale": {
-                "Value": 1.22,
+                "Value": 1.35,
                 "Type": "spirit"
             }
         },
@@ -2563,9 +2561,9 @@
         },
         "ChannelMoveSpeed": -1,
         "DPS": {
-            "Value": 75,
+            "Value": 65,
             "Scale": {
-                "Value": 1.488,
+                "Value": 1.339,
                 "Type": "spirit"
             }
         },
@@ -2604,7 +2602,7 @@
         "UpForce": 250,
         "Upgrades": [
             {
-                "DPS": 50
+                "DPS": 45
             },
             {
                 "AbilityChannelTime": 4,
@@ -2738,10 +2736,11 @@
                 "AbilityCharges": 1
             },
             {
-                "Damage": 54.0
+                "Damage": 54.0,
+                "AbilityCooldownBetweenCharge": -2
             },
             {
-                "AbilityCooldownBetweenCharge": -3,
+                "WallRicochet": 1,
                 "Damage": {
                     "Value": 0,
                     "Scale": {
@@ -2786,7 +2785,7 @@
         "Damage": {
             "Value": 50,
             "Scale": {
-                "Value": 1.3,
+                "Value": 0.9,
                 "Type": "spirit"
             }
         },
@@ -2870,7 +2869,7 @@
                 "CurrentHealthPercent": 5
             },
             {
-                "AbilityCooldown": -12,
+                "AbilityCooldown": -10,
                 "ImmobilizeDuration": 0.5,
                 "MaxReflectCount": 1
             }
@@ -3059,7 +3058,7 @@
             }
         },
         "AbilityCooldown": {
-            "Value": 210,
+            "Value": 240,
             "Scale": {
                 "Value": 1,
                 "Type": "cooldown"
@@ -3076,9 +3075,9 @@
         ],
         "ChannelMoveSpeed": -1,
         "CheckmateThreshold": {
-            "Value": 0,
+            "Value": 100,
             "Scale": {
-                "Value": 0.0,
+                "Value": 5.0,
                 "Type": "power_increase"
             }
         },
@@ -3093,7 +3092,7 @@
         "Damage": {
             "Value": 120,
             "Scale": {
-                "Value": 1.4,
+                "Value": 1.6,
                 "Type": "spirit"
             }
         },
@@ -3168,13 +3167,7 @@
                 "AbilityCooldown": -40
             },
             {
-                "CheckmateThreshold": {
-                    "Value": 200,
-                    "Scale": {
-                        "Value": 5,
-                        "Type": "power_increase"
-                    }
-                },
+                "CheckmateThreshold": 150,
                 "SlowPercent": 15
             },
             {
@@ -3247,7 +3240,7 @@
         "Damage": {
             "Value": 25,
             "Scale": {
-                "Value": 0.64,
+                "Value": 0.85,
                 "Type": "spirit"
             }
         },
@@ -3270,7 +3263,7 @@
         },
         "ExpireDistance": 80,
         "FadingSlowPercent": 30,
-        "GroundAuraHeight": 4,
+        "GroundAuraHeight": 1,
         "ImpactDamage": {
             "Value": 70,
             "Scale": {
@@ -3371,15 +3364,15 @@
         "Upgrades": [
             {
                 "MoveDistance": 5,
-                "FadingSlowPercent": 15
+                "FadingSlowPercent": 25
             },
             {
                 "MaxPieces": 1,
                 "RecastWindow": 8
             },
             {
-                "TechArmorDamageReductionPerStack": -2.5,
-                "MaxStacks": 10,
+                "TechArmorDamageReductionPerStack": -5,
+                "MaxStacks": 5,
                 "StackDuration": 10,
                 "TileSteps": 1
             }
@@ -4461,7 +4454,7 @@
             {
                 "AbilityCastRange": 25,
                 "WallImpactDamage": {
-                    "Value": 75,
+                    "Value": 90,
                     "Scale": {
                         "Value": 0.6,
                         "Type": "spirit"
@@ -4470,7 +4463,7 @@
             },
             {
                 "StunDuration": 1.25,
-                "AbilityCooldown": -15
+                "AbilityCooldown": -18
             }
         ],
         "WallImpactDamage": {
@@ -4557,7 +4550,7 @@
                 "StaminaToRestore": 2
             },
             {
-                "AmpDamagePercent": 11.0
+                "AmpDamagePercent": 12.0
             }
         ],
         "WeaponDmgPerIsolationKill": 3
@@ -5774,6 +5767,13 @@
             "Class": "Base",
             "Subclass": "FencerRiposteAttackDebuff"
         },
+        "ImmobilizeModifier": {
+            "Class": "CitadelRoot",
+            "Subclass": "FencerRiposteImmobilize",
+            "EnabledStateMask": [
+                "ParryDisabled"
+            ]
+        },
         "IsDisabled": false,
         "Key": "ability_fencer_riposte",
         "LiftHeight": 240,
@@ -5801,7 +5801,7 @@
         },
         "SlowPercent": 40,
         "StunDuration": {
-            "Value": 0.8,
+            "Value": 1.5,
             "Scale": {
                 "Value": 1,
                 "Type": "duration"
@@ -5818,7 +5818,7 @@
             },
             {
                 "MeleeResistReduction": -25,
-                "StunDuration": 0.4
+                "StunDuration": 0.6
             },
             {
                 "TargetLifesteal": 75,
@@ -6149,7 +6149,14 @@
             },
             {
                 "StunDuration": 0.9,
-                "Radius": 10
+                "Radius": 10,
+                "Damage": {
+                    "Value": 0,
+                    "Scale": {
+                        "Value": 0.4,
+                        "Type": "spirit"
+                    }
+                }
             }
         ]
     },
@@ -6452,7 +6459,7 @@
                 "MaxDPS": 34.0
             },
             {
-                "IncomingDamagePercent": 15,
+                "IncomingDamagePercent": 16,
                 "Radius": 1
             }
         ]
@@ -7383,7 +7390,7 @@
             }
         },
         "AbilityCooldown": {
-            "Value": 185,
+            "Value": 190,
             "Scale": {
                 "Value": 1,
                 "Type": "cooldown"
@@ -7471,14 +7478,15 @@
         "SlowPercent": 28,
         "Upgrades": [
             {
-                "AbilityCooldown": -20
+                "AbilityCooldown": -30
             },
             {
-                "AbilityDuration": 1.5
+                "AbilityDuration": 1.5,
+                "FireRateSlow": 20
             },
             {
                 "BonusHealthRegen": {
-                    "Value": 65,
+                    "Value": 75,
                     "Scale": {
                         "Value": 1.0,
                         "Type": "spirit"
@@ -8002,7 +8010,7 @@
                 "AbilityCharges": 1
             },
             {
-                "LifestealPercentHero": 15
+                "LifestealPercentHero": 20
             },
             {
                 "IncomingDamagePercentFromCaster": 17,
@@ -8029,9 +8037,9 @@
         ],
         "ChannelMoveSpeed": 1.3,
         "Damage": {
-            "Value": 50,
+            "Value": 45,
             "Scale": {
-                "Value": 0.75,
+                "Value": 0.675,
                 "Type": "spirit"
             }
         },
@@ -8070,7 +8078,7 @@
         "TickRate": 0.1,
         "Upgrades": [
             {
-                "Damage": 35
+                "Damage": 30
             },
             {
                 "AbilityCooldown": -5,
@@ -9224,7 +9232,7 @@
             },
             {
                 "OutgoingDamagePercent": 18,
-                "DamageAmpDuration": 6,
+                "DamageAmpDuration": 8,
                 "DamageAmpBuildDuration": 10
             }
         ]
@@ -9400,7 +9408,7 @@
             },
             {
                 "CooldownRefundPercent": 50,
-                "ImpactDamage": 60
+                "ImpactDamage": 90
             }
         ]
     },
@@ -10190,11 +10198,11 @@
                 "MoveSpeedPercent": 25
             },
             {
-                "AbilityDuration": 10,
-                "SummonFrequency": -0.3
+                "AbilityDuration": 10
             },
             {
-                "CurrentHealthDamagePercentage": 5
+                "CurrentHealthDamagePercentage": 5,
+                "SummonFrequency": -0.3
             }
         ],
         "ZombieSummonModifier": {
@@ -10781,6 +10789,7 @@
             }
         },
         "DebuffDuration": 0.5,
+        "GrabHeight": 1.75,
         "GroundAuraModifier": {
             "Class": "ZombiewallGroundAura",
             "Subclass": "Zombiewall",
@@ -10836,7 +10845,7 @@
                 "AbilityCooldown": -14
             }
         ],
-        "ZombieWallDeployTime": 0.6,
+        "ZombieWallDeployTime": 0.8,
         "ZombieWallHeight": 2.5,
         "ZombieWallLength": {
             "Value": 14,
@@ -10941,7 +10950,7 @@
                 "HealAmpRegenPercent": 20
             },
             {
-                "RushTimeScaleBonusPercent": 15,
+                "RushTimeScaleBonusPercent": 20,
                 "DispelDebuffs": 1
             }
         ]
@@ -10988,13 +10997,14 @@
         "BuildupDecayTime": 10.0,
         "BuildupLookAngle": 80,
         "BuildupLookAngleFull": 55,
+        "BuildupLookAngleVertical": 50,
         "BuildupModifier": {
             "Class": "NurseFearBuildup",
             "Subclass": "NurseFearBuildup",
             "BuildUpDecayDelay": 0.6
         },
         "BuildupTickRate": 0.075,
-        "BuildupTime": 1.3,
+        "BuildupTime": 2,
         "CameraTurnRateMax": 15,
         "ChannelMoveSpeed": 3.5,
         "ConeAngle": 180,
@@ -11078,7 +11088,7 @@
                 "DPS": 30
             },
             {
-                "ChannelDamageImmune": 1,
+                "DamageResistPctWhileChanneling": 50,
                 "AbilityChannelTime": 3.0,
                 "DPS": {
                     "Value": 0,
@@ -11140,9 +11150,9 @@
         "ChargePercentPerSecondPerLeech": 0.15,
         "HeadshotHealBonusPercent": 15,
         "HealRegen": {
-            "Value": 25,
+            "Value": 22,
             "Scale": {
-                "Value": 0.2,
+                "Value": 0.24,
                 "Type": "spirit"
             }
         },
@@ -11167,7 +11177,7 @@
             },
             {
                 "StaminaRestorePerHit": 0.6,
-                "HealRegen": 20
+                "HealRegen": 16
             },
             {
                 "HealRegen": {
@@ -11240,7 +11250,8 @@
         "LeechCrawlRadiusExitGap": 5,
         "LeechEatDurationPerSecond": 0.65,
         "LeechEatTickRate": 0.38,
-        "LeechGroundLifetime": 180,
+        "LeechGroundLifetime": 120,
+        "LeechGroundLifetimePerMinute": 3,
         "LeechHuntCrawlSpeed": 3,
         "LeechHuntLifetime": {
             "Value": 9,
@@ -12310,10 +12321,10 @@
         ],
         "BonusAmpToVampire": 5,
         "BonusDamage": {
-            "Value": 115,
+            "Value": 95,
             "Scale": [
                 {
-                    "Value": 3.0,
+                    "Value": 3.6,
                     "Type": "power_increase"
                 },
                 {
@@ -12366,7 +12377,7 @@
     "ability_punkgoat_blasted": {
         "AbilityCastDelay": 0.28,
         "AbilityCooldown": {
-            "Value": 27,
+            "Value": 25,
             "Scale": {
                 "Value": 1,
                 "Type": "cooldown"
@@ -12536,8 +12547,8 @@
                 "AbilityDuration": 0.4
             },
             {
-                "MaxHealthBuffPct": 10,
-                "MaxHealthBuffDuration": 16,
+                "MaxHealthBuffPct": 15,
+                "MaxHealthBuffDuration": 20,
                 "AbilityCooldown": -13
             }
         ],
@@ -13055,7 +13066,7 @@
         "BounceGrenadeSpeed": 1200,
         "ChannelMoveSpeed": -1,
         "DamagePerShrapnel": {
-            "Value": 70,
+            "Value": 60,
             "Scale": {
                 "Value": 0.6,
                 "Type": "weapon_damage_increase"
@@ -13100,12 +13111,12 @@
                 "AbilityCooldown": -8
             },
             {
-                "DamagePerShrapnel": 70
+                "DamagePerShrapnel": 60
             },
             {
                 "Detonations": 1,
                 "BigExplosionDamage": {
-                    "Value": 300,
+                    "Value": 275,
                     "Scale": {
                         "Value": 1.0,
                         "Type": "weapon_damage_increase"
@@ -13131,7 +13142,7 @@
     "ability_ratking_standard_bearer": {
         "AbilityCastDelay": 2.0,
         "AbilityCooldown": {
-            "Value": 160,
+            "Value": 180,
             "Scale": {
                 "Value": 1,
                 "Type": "cooldown"
@@ -13225,7 +13236,8 @@
             "Class": "RatkingSewerEruption",
             "Subclass": "RatkingSewerEruptionModifier",
             "ExplosionHalfHeightMeters": 10.0,
-            "TossSpeed": 500.0
+            "TossSpeed": 500.0,
+            "TossGravityScale": 2.0
         },
         "Radius": {
             "Value": 20,
@@ -14108,7 +14120,7 @@
             "BehaviorDontInterruptSlideOnCast"
         ],
         "ChannelMoveSpeed": 1.3,
-        "Damage": 40,
+        "Damage": 35,
         "DebuffModifier": {
             "Class": "CitadelThrowSandDebuff",
             "Subclass": "CitadelThrowSandDebuff"
@@ -14121,7 +14133,7 @@
         "Name": "Sand Blast",
         "Upgrades": [
             {
-                "Damage": 50,
+                "Damage": 45,
                 "AbilityCastRange": 5
             },
             {
@@ -14646,9 +14658,9 @@
             }
         },
         "DPS": {
-            "Value": 40,
+            "Value": 35,
             "Scale": {
-                "Value": 0.6,
+                "Value": 0.54,
                 "Type": "spirit"
             }
         },
@@ -14688,9 +14700,9 @@
             {
                 "AbilityChannelTime": 0.7,
                 "DPS": {
-                    "Value": 40,
+                    "Value": 35,
                     "Scale": {
-                        "Value": 0.4,
+                        "Value": 0.36,
                         "Type": "spirit"
                     }
                 }
@@ -14733,7 +14745,7 @@
         },
         "ChannelMoveSpeed": -1,
         "Damage": {
-            "Value": 140,
+            "Value": 125,
             "Scale": {
                 "Value": 0.6,
                 "Type": "spirit"
@@ -16083,7 +16095,7 @@
                 "Radius": 2
             }
         ],
-        "WeaponPowerDebuff": -25
+        "WeaponPowerDebuff": -30
     },
     "ability_warden_high_alert": {
         "AbilityCooldown": {
@@ -16118,7 +16130,7 @@
         },
         "IsDisabled": false,
         "Key": "ability_warden_high_alert",
-        "MoveSpeedBonusPct": 15,
+        "MoveSpeedBonusPct": 20,
         "Name": "Willpower",
         "Upgrades": [
             {
@@ -16312,8 +16324,8 @@
                 "Radius": 4
             },
             {
-                "PulseDPS": 40.5,
-                "AbilityCooldown": -30.0
+                "PulseDPS": 50.0,
+                "AbilityCooldown": -40.0
             },
             {
                 "AbilityDuration": 4,
@@ -18221,7 +18233,7 @@
             },
             {
                 "DPS": {
-                    "Value": 18,
+                    "Value": 22,
                     "Scale": {
                         "Value": 0.12,
                         "Type": "spirit"
@@ -18423,7 +18435,7 @@
             }
         },
         "HeartHeal": {
-            "Value": 60,
+            "Value": 45,
             "Scale": {
                 "Value": 0.5,
                 "Type": "spirit"
@@ -18813,7 +18825,7 @@
             }
         },
         "AbilityCooldown": {
-            "Value": 110.0,
+            "Value": 95.0,
             "Scale": {
                 "Value": 1,
                 "Type": "cooldown"
@@ -19188,7 +19200,7 @@
     },
     "citadel_ability_flying_strike": {
         "AbilityCastRange": {
-            "Value": 26,
+            "Value": 23,
             "Scale": {
                 "Value": 1,
                 "Type": "range"
@@ -19228,6 +19240,10 @@
             "Class": "CitadelFlyingStrike",
             "Subclass": "Target"
         },
+        "HomingTargetModifier": {
+            "Class": "Base",
+            "Subclass": "Homing"
+        },
         "IsDisabled": false,
         "Key": "citadel_ability_flying_strike",
         "Name": "Flying Slash",
@@ -19252,7 +19268,7 @@
                 "BuffDuration": 6
             },
             {
-                "AbilityCastRange": 15,
+                "AbilityCastRange": 8,
                 "CanGrappleAllyHeroes": 1,
                 "AbilityCharges": 2,
                 "AbilityCooldownBetweenCharge": 5
@@ -19732,7 +19748,7 @@
     "citadel_ability_infinity_slash": {
         "AbilityChannelTime": 1.5,
         "AbilityCooldown": {
-            "Value": 150.0,
+            "Value": 160.0,
             "Scale": {
                 "Value": 1,
                 "Type": "cooldown"
@@ -19823,7 +19839,7 @@
             },
             {
                 "BonusMoveSpeed": 4,
-                "AbilityCooldown": -20
+                "AbilityCooldown": -30
             },
             {
                 "AbilityDuration": 3.0,
@@ -20100,7 +20116,8 @@
             {
                 "AbilityCharges": 1,
                 "RestoreStaminaOnUse": 1,
-                "AirControlPercent": 60
+                "AirControlPercent": 60,
+                "JumpVelocity": 4
             }
         ]
     },
@@ -20755,7 +20772,7 @@
         "FullChargeDamage": {
             "Value": 145,
             "Scale": {
-                "Value": 1.85,
+                "Value": 1.96,
                 "Type": "spirit"
             }
         },
@@ -20811,7 +20828,7 @@
                 "FullChargeDamage": {
                     "Value": 150,
                     "Scale": {
-                        "Value": 0.5,
+                        "Value": 0.53,
                         "Type": "spirit"
                     }
                 },
@@ -20820,7 +20837,7 @@
         ]
     },
     "citadel_ability_projectmind": {
-        "AbilityCastDelay": 0.75,
+        "AbilityCastDelay": 1.0,
         "AbilityCastRange": {
             "Value": 25,
             "Scale": {
@@ -20829,7 +20846,7 @@
             }
         },
         "AbilityCooldown": {
-            "Value": 46.0,
+            "Value": 50.0,
             "Scale": {
                 "Value": 1,
                 "Type": "cooldown"
@@ -21230,7 +21247,7 @@
         "MeleeResist": 35,
         "ModelScale": 0.8,
         "Name": "Mini Turret",
-        "NonHeroDamagePercentOutgoing": 50,
+        "NonHeroDamagePercentOutgoing": 65,
         "TechResist": 35,
         "TickRate": 0.5,
         "TrackingSpeed": 430,
@@ -21259,7 +21276,7 @@
         "TurretBaseHealth": {
             "Value": 100,
             "Scale": {
-                "Value": 9,
+                "Value": 10,
                 "Type": "power_increase"
             }
         },
@@ -21352,9 +21369,9 @@
             "Subclass": "ShivThrownShivDamageDebuff"
         },
         "FullRageCurrentHealthDamagePct": {
-            "Value": 3.5,
+            "Value": 4,
             "Scale": {
-                "Value": 0.01,
+                "Value": 0.015,
                 "Type": "spirit"
             }
         },
@@ -21385,6 +21402,13 @@
                     "Value": 12,
                     "Scale": {
                         "Value": 0.07,
+                        "Type": "spirit"
+                    }
+                },
+                "FullRageCurrentHealthDamagePct": {
+                    "Value": 0,
+                    "Scale": {
+                        "Value": 0.01,
                         "Type": "spirit"
                     }
                 }
@@ -21584,7 +21608,7 @@
         "RagePerSpiritDamage": 0.01452864,
         "RagePerWeaponDamage": 0.0158766,
         "RecastWindow": {
-            "Value": 16,
+            "Value": 12,
             "Scale": {
                 "Value": 1,
                 "Type": "duration"
@@ -21729,7 +21753,7 @@
                 "AbilityCastRange": 5
             },
             {
-                "StunDuration": 0.9,
+                "StunDuration": 1.1,
                 "Damage": 160
             }
         ]
@@ -23639,7 +23663,7 @@
                 "AbilityCooldown": -40
             },
             {
-                "AbilityDuration": 2.5,
+                "AbilityDuration": 2.75,
                 "MaxTargets": 1
             }
         ]
@@ -24657,13 +24681,13 @@
         },
         "ChannelMoveSpeed": -1,
         "CombatBarrier": {
-            "Value": 0,
+            "Value": 400,
             "Scale": {
                 "Value": 0.0,
                 "Type": "spirit"
             }
         },
-        "InterruptCooldown": 4,
+        "InterruptCooldown": 5,
         "InterruptNotificationModifier": {
             "Class": "Base",
             "Subclass": "Notification",
@@ -24671,26 +24695,33 @@
         },
         "IsDisabled": false,
         "Key": "mirage_teleport",
+        "MovementSpeedBonusDuration": {
+            "Value": 12,
+            "Scale": {
+                "Value": 1,
+                "Type": "duration"
+            }
+        },
         "Name": "Traveler",
         "SearchRadius": 30,
-        "TeleportCompletedTime": 2,
+        "TeleportCompletedTime": 3,
         "Upgrades": [
             {
                 "BonusMoveSpeed": 3,
-                "BonusFireRate": 20,
-                "MovementSpeedBonusDuration": 12
+                "BonusFireRate": 20
             },
             {
+                "AbilityCooldown": -65
+            },
+            {
+                "UninterruptibleByDamage": 1,
                 "CombatBarrier": {
-                    "Value": 400,
+                    "Value": 0,
                     "Scale": {
-                        "Value": 0.6,
+                        "Value": 0.8,
                         "Type": "spirit"
                     }
                 }
-            },
-            {
-                "AbilityCooldown": -90
             }
         ]
     },
@@ -26376,7 +26407,7 @@
         "ThirdHitDamagePercentage": 0.38,
         "Upgrades": [
             {
-                "Damage": 36,
+                "Damage": 45,
                 "Radius": 1.5
             },
             {
