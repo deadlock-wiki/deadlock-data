@@ -694,7 +694,7 @@
         "LightKickKnockbackHeight": 0.75,
         "MaxJumpHeight": 250,
         "MeleeLifestealNonHeroPct": 60,
-        "MeleeResist": 30,
+        "MeleeResist": 25,
         "MeleeSpiritDamage": {
             "Value": 0,
             "Scale": {
@@ -713,7 +713,7 @@
             }
         },
         "RisingGravityScalePercent": 50,
-        "StatusResistancePercent": 30,
+        "StatusResistancePercent": 25,
         "Upgrades": [
             {
                 "BonusMoveSpeed": 2.5
@@ -859,7 +859,7 @@
             }
         },
         "AbilityCooldown": {
-            "Value": 27.0,
+            "Value": 28.0,
             "Scale": {
                 "Value": 1,
                 "Type": "cooldown"
@@ -878,7 +878,7 @@
             "Class": "CombatBarrier",
             "Subclass": "BabaBrewBarrier"
         },
-        "BarrierWindow": 1.5,
+        "BarrierWindow": 1.6,
         "BehaviourBits": [
             "BehaviorChannelled",
             "BehaviorNoTarget",
@@ -907,7 +907,7 @@
         "DamagePerSecond": {
             "Value": 12,
             "Scale": {
-                "Value": 0.152,
+                "Value": 0.13,
                 "Type": "spirit"
             }
         },
@@ -916,7 +916,7 @@
             "Subclass": "BabaBrewFire",
             "TickInterval": 0.5
         },
-        "FireWindow": 1.5,
+        "FireWindow": 1.6,
         "HoldingModifier": {
             "Class": "BabaBrewHolding",
             "Subclass": "BabaBrewHolding"
@@ -946,7 +946,7 @@
                 "Silenced"
             ]
         },
-        "SilenceWindow": 1.5,
+        "SilenceWindow": 1.6,
         "SpiritResistReduction": -15,
         "Upgrades": [
             {
@@ -2572,7 +2572,7 @@
         "Key": "ability_burrow",
         "Name": "Burrow",
         "Radius": {
-            "Value": 5,
+            "Value": 5.5,
             "Scale": {
                 "Value": 1,
                 "Type": "radius"
@@ -3492,7 +3492,7 @@
         "CoatedDamage": {
             "Value": 45,
             "Scale": {
-                "Value": 1.1,
+                "Value": 1.012,
                 "Type": "spirit"
             }
         },
@@ -3522,7 +3522,7 @@
         "Damage": {
             "Value": 27,
             "Scale": {
-                "Value": 0.74,
+                "Value": 0.681,
                 "Type": "spirit"
             }
         },
@@ -3574,14 +3574,14 @@
                 "CoatedDamage": {
                     "Value": 0,
                     "Scale": {
-                        "Value": 0.35,
+                        "Value": 0.322,
                         "Type": "spirit"
                     }
                 },
                 "Damage": {
                     "Value": 0,
                     "Scale": {
-                        "Value": 0.35,
+                        "Value": 0.322,
                         "Type": "spirit"
                     }
                 }
@@ -3795,9 +3795,9 @@
             },
             {
                 "HealOnHit": {
-                    "Value": 150,
+                    "Value": 125,
                     "Scale": {
-                        "Value": 2.0,
+                        "Value": 1.7,
                         "Type": "spirit"
                     }
                 },
@@ -3838,7 +3838,7 @@
             "BehaviorUseInstantCastUnitTargetUi",
             "BehaviorCanSetQuickCast"
         ],
-        "BonusDamagePercent": 75,
+        "BonusDamagePercent": 55,
         "ChannelMoveSpeed": -1,
         "ChargingModifier": {
             "Class": "Base",
@@ -5771,7 +5771,8 @@
             "Class": "CitadelRoot",
             "Subclass": "FencerRiposteImmobilize",
             "EnabledStateMask": [
-                "ParryDisabled"
+                "ParryDisabled",
+                "Disarmed"
             ]
         },
         "IsDisabled": false,
@@ -5818,7 +5819,7 @@
             },
             {
                 "MeleeResistReduction": -25,
-                "StunDuration": 0.6
+                "StunDuration": 0.7
             },
             {
                 "TargetLifesteal": 75,
@@ -6076,7 +6077,7 @@
                 "AbilityCooldown": -35
             },
             {
-                "BonusDamagePercent": 50
+                "BonusDamagePercent": 60
             }
         ],
         "VacuumSpeed": 10.16
@@ -8044,7 +8045,7 @@
             }
         },
         "DamageHealMult": {
-            "Value": 1.2,
+            "Value": 1.3,
             "Scale": {
                 "Value": 1,
                 "Type": "healing"
@@ -10997,14 +10998,14 @@
         "BuildupDecayTime": 10.0,
         "BuildupLookAngle": 80,
         "BuildupLookAngleFull": 55,
-        "BuildupLookAngleVertical": 50,
+        "BuildupLookAngleVertical": 65,
         "BuildupModifier": {
             "Class": "NurseFearBuildup",
             "Subclass": "NurseFearBuildup",
             "BuildUpDecayDelay": 0.6
         },
         "BuildupTickRate": 0.075,
-        "BuildupTime": 2,
+        "BuildupTime": 1.75,
         "CameraTurnRateMax": 15,
         "ChannelMoveSpeed": 3.5,
         "ConeAngle": 180,
@@ -13176,7 +13177,7 @@
             "BehaviorAlwaysPreviewRadius",
             "BehaviorCanSetQuickCast"
         ],
-        "BonusMoveSpeed": 3,
+        "BonusMoveSpeed": 4,
         "CasterModifier": {
             "Class": "BaseAura",
             "Subclass": "RatkingFlagAuraCarry",
@@ -13250,7 +13251,8 @@
         "TossDuration": 1.2,
         "Upgrades": [
             {
-                "BonusMoveSpeed": 2
+                "BonusMoveSpeed": 2,
+                "AbilityCooldown": -25
             },
             {
                 "FlagDuration": 5,
@@ -14137,8 +14139,8 @@
                 "AbilityCastRange": 5
             },
             {
-                "SlowPercent": 24,
-                "GroundDashReductionPercent": -26
+                "SlowPercent": 28,
+                "GroundDashReductionPercent": -28
             },
             {
                 "AbilityCooldown": -25.0,
@@ -14651,7 +14653,7 @@
             "BehaviorDeactivateCrouchToggleOnCast"
         ],
         "BonusHealthOnKill": {
-            "Value": 40,
+            "Value": 50,
             "Scale": {
                 "Value": 2,
                 "Type": "power_increase"
@@ -14719,7 +14721,7 @@
             }
         },
         "AbilityCooldown": {
-            "Value": 160,
+            "Value": 170,
             "Scale": {
                 "Value": 1,
                 "Type": "cooldown"
@@ -14737,7 +14739,7 @@
         ],
         "BounceGrace": 3.25,
         "BounceRadius": {
-            "Value": 15.5,
+            "Value": 15,
             "Scale": {
                 "Value": 1,
                 "Type": "range"
@@ -14789,11 +14791,11 @@
                 "Type": "duration"
             }
         },
-        "SlowPercent": 32,
+        "SlowPercent": 28,
         "Upgrades": [
             {
                 "GroundDashReductionPercent": -14,
-                "SlowPercent": 16
+                "SlowPercent": 14
             },
             {
                 "Damage": {
@@ -14813,7 +14815,7 @@
     "ability_unicorn_luminousstrike": {
         "AbilityCastDelay": 0.2,
         "AbilityCastRange": {
-            "Value": 30,
+            "Value": 25,
             "Scale": {
                 "Value": 1,
                 "Type": "range"
@@ -14879,7 +14881,7 @@
         },
         "IsDisabled": false,
         "Key": "ability_unicorn_luminousstrike",
-        "MagicIncreasePerStack": 7,
+        "MagicIncreasePerStack": 6,
         "Name": "Radiant Daggers",
         "PostExplosionDuration": 0.8,
         "PreExplosionDuration": 1.4,
@@ -14890,10 +14892,11 @@
             },
             {
                 "ImpactDamage": 70,
-                "AbilityCooldown": -22
+                "AbilityCooldown": -22,
+                "AbilityCastRange": 5
             },
             {
-                "MagicIncreasePerStack": 4,
+                "MagicIncreasePerStack": 5,
                 "FireRatePerStack": 9
             }
         ]
@@ -14973,7 +14976,7 @@
                 }
             },
             {
-                "DebuffDuration": 1.25,
+                "DebuffDuration": 0.75,
                 "AbilityCooldown": -20
             }
         ]
