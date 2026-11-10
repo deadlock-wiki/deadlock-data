@@ -1,5 +1,16 @@
 {
     "ability-changes": {
+        "ability_artist_bamboogrove": {
+            "Name": "Abstract Landscape",
+            "AbilityDuration": {
+                "Value": 5
+            },
+            "Upgrades": {
+                "3": {
+                    "AbilityDuration": 3
+                }
+            }
+        },
         "ability_baba_bubbling_brew": {
             "Name": "Threadsap",
             "DebuffDuration": {
@@ -28,6 +39,7 @@
             "DragonSearchRadius": 7.2,
             "Upgrades": {
                 "2": {
+                    "GroundFlameDuration": 1,
                     "Radius": 0.85
                 }
             }
@@ -43,6 +55,21 @@
             "Damage": {
                 "Scale": {
                     "Value": 2.5
+                }
+            }
+        },
+        "ability_deadpack_rocketeer": {
+            "Name": "Chimera Mk1",
+            "AbilityCooldown": {
+                "Scale": {
+                    "1": {
+                        "Value": -0.25
+                    }
+                }
+            },
+            "Upgrades": {
+                "3": {
+                    "OverheatLockoutDurationReductionOnPlayerHitPercent": 30
                 }
             }
         },
@@ -114,6 +141,44 @@
             "Name": "Jar of Dead",
             "AbilityCooldownBetweenCharge": {
                 "Value": 16
+            }
+        },
+        "ability_nurse_fear": {
+            "Name": "Lurking Terrors",
+            "AbilityChannelTime": {
+                "Value": 5.0
+            },
+            "Upgrades": {
+                "3": {
+                    "AbilityChannelTime": 2.0
+                }
+            }
+        },
+        "ability_ratking_scrap_grenade": {
+            "Name": "Scrap Grenade",
+            "ShrapnelSphereRadius": {
+                "Value": 6
+            },
+            "Upgrades": {
+                "3": {
+                    "BigExplosionRadius": {
+                        "Value": 10
+                    }
+                }
+            }
+        },
+        "ability_ratking_standard_bearer": {
+            "Name": "Rule, Ratannia!",
+            "FlagDuration": {
+                "Value": 9
+            },
+            "Radius": {
+                "Value": 16
+            },
+            "Upgrades": {
+                "2": {
+                    "Radius": 6
+                }
             }
         },
         "ability_unicorn_dazzlingorb": {
