@@ -1570,29 +1570,6 @@
         "PingFirstPowerupSpawn": false,
         "InitialPingDelay": -15.0
     },
-    "citadel_item_punchable_gold": {
-        "AmbientParticle": "particles/generic/holding_gold_dropped.vpcf",
-        "GroundOffset": 60,
-        "PunchPickupModifier": {
-            "EnabledStateMask": "MODIFIER_STATE_IS_MELEE_TARGET",
-            "IsHidden": true,
-            "HitSound": "Powerup.Punchable.Souls",
-            "AuraRadius": 200.0,
-            "PhysicsRadius": 20.0,
-            "modifierProvidedByAura": {
-                "IsHidden": true,
-                "EnabledStateMask": "MODIFIER_STATE_NEAR_PUNCHABLE_PICKUP",
-                "Attributes": "MODIFIER_ATTRIBUTE_CANNOT_BE_PURGED"
-            },
-            "AuraSearchType": "CITADEL_UNIT_TARGET_HERO"
-        },
-        "BobHeight": 2.0,
-        "BobFrequency": 1.5,
-        "_editor": {
-            "folder_name": "Pickup Items"
-        },
-        "PanelShowThruWalls": true
-    },
     "citadel_koth_cashin": {
         "ZoneParticle": "particles/generic/koth_aura.vpcf",
         "EndParticleFriendly": "particles/generic/idol_pickup_end.vpcf",
@@ -1926,6 +1903,64 @@
             "Base": 14.0
         },
         "PicupIsVacuum": true
+    },
+    "citadel_pickup_soulbag": {
+        "PickupRadius": {
+            "Base": 85.0,
+            "PerMinuteAfterStart": 0
+        },
+        "friendlyParticle": "particles/generic/holding_gold_dropped.vpcf",
+        "enemyParticle": "particles/generic/holding_gold_dropped.vpcf",
+        "gainedParticle": "particles/generic/powerup_spawner_gained.vpcf",
+        "hModel": "models/props_gameplay/soul_container/soul_container.vmdl",
+        "SpawnSound": "Powerup.Spawn.Generic",
+        "PickupExpirationDuration": {
+            "Base": 180,
+            "PerMinuteAfterStart": 0
+        },
+        "ParticleRadius": 1.5,
+        "ShowOnMinimap": true,
+        "NameLocString": "#big_gold_pickup_label:f",
+        "PickupSound": "Powerup.Punchable.Souls",
+        "NameOffset": 150,
+        "HeavyMeleeOnly": true,
+        "CollectionMethod": "Punch",
+        "Color": [
+            0,
+            255,
+            204
+        ],
+        "DefaultMaterialGroupName": "gold",
+        "IsPermanentPickup": true,
+        "MinimapClass": "gold_spawn",
+        "ShowModelOverhead": false,
+        "CollisionRadius": 7.0,
+        "CenterHeightOffset": 0,
+        "HoverOffset": 20.0,
+        "HoverHeight": 0.0,
+        "HoverRate": 1,
+        "HoverTurnRate": 0,
+        "YawSpin": 0,
+        "OutlineRange": 2000.0,
+        "OutlineColor": [
+            112,
+            248,
+            193,
+            255
+        ],
+        "AuraModifier": {
+            "IsHidden": true,
+            "AuraRadius": 300.0,
+            "modifierProvidedByAura": {
+                "IsHidden": true,
+                "EnabledStateMask": "MODIFIER_STATE_NEAR_PUNCHABLE_PICKUP",
+                "Attributes": "MODIFIER_ATTRIBUTE_CANNOT_BE_PURGED"
+            },
+            "AuraSearchType": "CITADEL_UNIT_TARGET_HERO"
+        },
+        "ParryCheckModifier": {
+            "ParryCheckRadius": 60.0
+        }
     },
     "citadel_pickup_spawner": {
         "Pickup": "",
