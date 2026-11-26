@@ -152,7 +152,7 @@
                 },
                 "GrowthPerMeter": {
                     "Name": null,
-                    "Value": 0.5
+                    "Value": 0.475
                 },
                 "HeightOffGround": {
                     "Name": null,
@@ -160,7 +160,7 @@
                 },
                 "InitialWidth": {
                     "Name": null,
-                    "Value": 1
+                    "Value": 1.5
                 },
                 "ParticleRadiusMultiplier": {
                     "Name": null,
@@ -1584,9 +1584,9 @@
                         {
                             "Key": "Damage",
                             "Name": "Damage",
-                            "Value": 90,
+                            "Value": 85,
                             "Scale": {
-                                "Value": 1.35,
+                                "Value": 1.3,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -1594,7 +1594,7 @@
                         {
                             "Key": "SelfDamagePct",
                             "Name": "Health Cost",
-                            "Value": 30
+                            "Value": 50
                         }
                     ]
                 },
@@ -1602,7 +1602,7 @@
                     {
                         "Key": "ArmingDuration",
                         "Name": "Arming Duration",
-                        "Value": 0.65,
+                        "Value": 0.8,
                         "Type": "duration"
                     }
                 ],
@@ -1628,7 +1628,7 @@
                     "AbilityCooldown": -5
                 },
                 {
-                    "Damage": 50,
+                    "Damage": 45,
                     "Radius": 2,
                     "DescKey": "ability_blood_bomb_t2_desc"
                 },
@@ -2776,7 +2776,7 @@
                 },
                 "CardResourceGenPctScale": {
                     "Name": "Card Summon Rate",
-                    "Value": 85,
+                    "Value": 68,
                     "Scale": {
                         "Value": -1.0,
                         "Type": "cooldown"
@@ -2998,7 +2998,7 @@
                     "MagicDamagePerBullet": {
                         "Value": 0,
                         "Scale": {
-                            "Value": 0.045,
+                            "Value": 0.03,
                             "Type": "spirit"
                         }
                     },
@@ -4178,7 +4178,7 @@
                             "Name": "Max Damage",
                             "Value": 5,
                             "Scale": {
-                                "Value": 125,
+                                "Value": 110,
                                 "Type": "weapon_power"
                             },
                             "Type": "tech_damage"
@@ -4256,7 +4256,7 @@
                     "MaxBonusBulletDamage": {
                         "Value": 0,
                         "Scale": {
-                            "Value": 55,
+                            "Value": 40,
                             "Type": "weapon_power"
                         }
                     },
@@ -5174,7 +5174,7 @@
                     "AbilityCooldown": -25.0
                 },
                 {
-                    "BonusSpiritPct": 35,
+                    "BonusSpiritPct": 30,
                     "BonusSpirit": 20,
                     "DescKey": "ability_icepath_t3_desc"
                 }
@@ -5313,7 +5313,7 @@
                             "Name": "Damage Per Second",
                             "Value": 45.0,
                             "Scale": {
-                                "Value": 0.38,
+                                "Value": 0.32,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -5336,7 +5336,7 @@
                     {
                         "Key": "MaxSlowTime",
                         "Name": "Time To Max Debuff",
-                        "Value": 2.0,
+                        "Value": 2.5,
                         "Type": "duration"
                     },
                     {
@@ -5387,7 +5387,7 @@
                     "DPS": {
                         "Value": 20,
                         "Scale": {
-                            "Value": 0.6,
+                            "Value": 0.5,
                             "Type": "spirit"
                         }
                     },
@@ -5409,7 +5409,7 @@
             "Headers": {
                 "AbilityCooldown": {
                     "Name": "Cooldown",
-                    "Value": 28.0,
+                    "Value": 29.0,
                     "Scale": {
                         "Value": 1,
                         "Type": "cooldown"
@@ -6481,7 +6481,7 @@
                             "Name": "Damage",
                             "Value": 55,
                             "Scale": {
-                                "Value": 1.116,
+                                "Value": 0.9,
                                 "Type": "spirit"
                             },
                             "Type": "bullet_damage"
@@ -7514,8 +7514,8 @@
                     "DescKey": "ability_nano_dash_t2_desc"
                 },
                 {
-                    "CooldownRefundPercent": 50,
-                    "ImpactDamage": 90,
+                    "CooldownRefundPercent": 60,
+                    "ImpactDamage": 100,
                     "DescKey": "ability_nano_dash_t3_desc"
                 }
             ],
@@ -9071,12 +9071,12 @@
                     "AbilityCooldown": -6
                 },
                 {
-                    "TechArmorDamageReduction": -4,
+                    "ImpactDamage": 50,
                     "DashRange": 2,
                     "DescKey": "citadel_ability_shiv_dash_t2_desc"
                 },
                 {
-                    "ImpactDamage": 50,
+                    "TechArmorDamageReduction": -4,
                     "CooldownReductionOnHit": 2,
                     "CooldownReductionOnHitNonHero": 1,
                     "MaxCooldownReductionsFromHits": 8,
@@ -9312,7 +9312,7 @@
                     "DescKey": "citadel_ability_shiv_killing_blow_t2_desc"
                 },
                 {
-                    "EnemyHealthPercent": 10,
+                    "EnemyHealthPercent": 8,
                     "DescKey": "citadel_ability_shiv_killing_blow_t3_desc"
                 }
             ],
@@ -9746,14 +9746,14 @@
                     "MaxHealthRegen": 6.0
                 },
                 {
-                    "AbilityCooldown": -25
+                    "StunDuration": 0.75
                 },
                 {
-                    "StunDuration": 0.75,
+                    "AbilityCooldown": -25,
                     "Damage": {
                         "Value": 0,
                         "Scale": {
-                            "Value": 1.5,
+                            "Value": 1.2,
                             "Type": "spirit"
                         }
                     },
@@ -9929,6 +9929,11 @@
             },
             "Upgrades": [
                 {
+                    "SlowPercent": 32,
+                    "DebuffDuration": 3,
+                    "DescKey": "citadel_ability_tengu_airlift_t1_desc"
+                },
+                {
                     "AirDropBulletShield": {
                         "Value": 300,
                         "Scale": {
@@ -9936,11 +9941,6 @@
                             "Type": "spirit"
                         }
                     },
-                    "DescKey": "citadel_ability_tengu_airlift_t1_desc"
-                },
-                {
-                    "SlowPercent": 32,
-                    "DebuffDuration": 3,
                     "DescKey": "citadel_ability_tengu_airlift_t2_desc"
                 },
                 {
@@ -10218,7 +10218,9 @@
             },
             "Upgrades": [
                 {
-                    "MoveSpeedBonusPct": 20
+                    "MoveSpeedBonusPct": 20,
+                    "CombatBarrier": 50,
+                    "DescKey": "ability_warden_high_alert_t1_desc"
                 },
                 {
                     "AbilityCooldown": -24,
@@ -10407,7 +10409,7 @@
                         {
                             "Key": "HealthStealPctHero",
                             "Name": "Hero Lifesteal",
-                            "Value": 75,
+                            "Value": 90,
                             "Scale": {
                                 "Value": 1,
                                 "Type": "healing"
@@ -10432,7 +10434,7 @@
                     {
                         "Key": "HealthStealPct",
                         "Name": "Non-Hero Lifesteal",
-                        "Value": 10,
+                        "Value": 15,
                         "Scale": {
                             "Value": 1,
                             "Type": "healing"
@@ -17506,7 +17508,7 @@
                     "MagicDamagePerBullet": {
                         "Value": 0,
                         "Scale": {
-                            "Value": 0.045,
+                            "Value": 0.03,
                             "Type": "spirit"
                         }
                     },
@@ -17913,7 +17915,7 @@
                 },
                 {
                     "MaxRecasts": 1,
-                    "AbilityCastRange": 4,
+                    "AbilityCastRange": 3,
                     "DescKey": "ability_vampirebat_batblink_t3_desc"
                 }
             ],
@@ -18005,7 +18007,7 @@
                             "Name": "Bonus Damage",
                             "Value": 45,
                             "Scale": {
-                                "Value": 1.85,
+                                "Value": 1.5,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -18049,7 +18051,13 @@
                 },
                 {
                     "MagicDamagePerBullet": 3.0,
-                    "BonusDamage": 45,
+                    "BonusDamage": {
+                        "Value": 45,
+                        "Scale": {
+                            "Value": 0.35,
+                            "Type": "spirit"
+                        }
+                    },
                     "DescKey": "ability_vampirebat_lovebites_t2_desc"
                 },
                 {
@@ -19262,7 +19270,7 @@
                 },
                 "AbilityCooldown": {
                     "Name": "Cooldown",
-                    "Value": 23,
+                    "Value": 20,
                     "Scale": {
                         "Value": 1,
                         "Type": "cooldown"
@@ -24900,7 +24908,7 @@
                 },
                 "AbilityCooldown": {
                     "Name": "Cooldown",
-                    "Value": 12,
+                    "Value": 11,
                     "Scale": {
                         "Value": 1,
                         "Type": "cooldown"
@@ -24970,45 +24978,44 @@
                     "Props": [
                         {
                             "Title": "On Pommel Hit:",
-                            "Key": "StunDuration",
-                            "NameKey": "ImmobilizeDuration",
-                            "Name": "Immobilize Duration",
-                            "Value": 1.5,
+                            "Key": "Damage",
+                            "Name": "Damage",
+                            "Value": 100,
+                            "Scale": {
+                                "Value": 1.5,
+                                "Type": "spirit"
+                            },
+                            "Type": "tech_damage"
+                        },
+                        {
+                            "Title": "On Pommel Hit:",
+                            "Key": "SlowPercent",
+                            "Name": "Move Speed",
+                            "Value": 50,
+                            "Type": "slow"
+                        },
+                        {
+                            "Title": "On Pommel Hit:",
+                            "Key": "SlowDuration",
+                            "Name": "Slow Duration",
+                            "Value": 2,
                             "Scale": {
                                 "Value": 1,
                                 "Type": "duration"
                             },
                             "Type": "duration"
-                        },
-                        {
-                            "Title": "On Pommel Hit:",
-                            "Key": "MeleeResistReduction",
-                            "Name": "Melee Resist",
-                            "Value": -25,
-                            "Type": "bullet_armor_down"
                         }
                     ]
                 },
-                "Alt": [
-                    {
-                        "Key": "MeleeResistReductionDuration",
-                        "Name": "Melee Resist Reduction Duration",
-                        "Value": 3.0,
-                        "Scale": {
-                            "Value": 1,
-                            "Type": "duration"
-                        },
-                        "Type": "duration"
-                    }
-                ]
+                "Alt": []
             },
             "Upgrades": [
                 {
-                    "AbilityCooldown": -8
+                    "AbilityCooldown": -9
                 },
                 {
-                    "MeleeResistReduction": -25,
-                    "StunDuration": 0.7,
+                    "Damage": 100,
+                    "SlowDuration": 1,
                     "DescKey": "ability_fencer_riposte_t2_desc"
                 },
                 {
@@ -25018,6 +25025,15 @@
                 }
             ],
             "Headers": {
+                "AbilityCastRange": {
+                    "Name": "Cast Range",
+                    "Value": 35,
+                    "Scale": {
+                        "Value": 1,
+                        "Type": "range"
+                    },
+                    "Type": "range"
+                },
                 "AbilityChannelTime": {
                     "Name": "Channel Duration",
                     "Value": 0.8,
@@ -25040,17 +25056,6 @@
                     "Name": "Charge Delay",
                     "Value": -1.0,
                     "Type": "charge_cooldown"
-                }
-            },
-            "Range": {
-                "DashRange": {
-                    "Name": "Time Window",
-                    "Value": 35,
-                    "Scale": {
-                        "Value": 1,
-                        "Type": "range"
-                    },
-                    "Type": "distance"
                 }
             },
             "Move": {
@@ -25101,7 +25106,7 @@
                 },
                 "DashGraceWindow": {
                     "Name": null,
-                    "Value": 1.3
+                    "Value": 1.8
                 },
                 "DashRadius": {
                     "Name": "Radius",
@@ -25130,18 +25135,6 @@
                 "SlashRadius": {
                     "Name": "Slash Radius",
                     "Value": 6
-                },
-                "SlowDuration": {
-                    "Name": "Slow Duration",
-                    "Value": 4,
-                    "Scale": {
-                        "Value": 1,
-                        "Type": "duration"
-                    }
-                },
-                "SlowPercent": {
-                    "Name": "Move Speed",
-                    "Value": 40
                 },
                 "TurnRateMax": {
                     "Name": null,
@@ -25277,7 +25270,7 @@
                 },
                 "AbilityCooldown": {
                     "Name": "Cooldown",
-                    "Value": 26,
+                    "Value": 30,
                     "Scale": {
                         "Value": 1,
                         "Type": "cooldown"
@@ -25636,7 +25629,7 @@
                             "Name": "Damage",
                             "Value": 27,
                             "Scale": {
-                                "Value": 0.681,
+                                "Value": 0.62,
                                 "Type": "spirit"
                             },
                             "Type": "tech_damage"
@@ -25741,7 +25734,7 @@
                 },
                 "AbilityCooldown": {
                     "Name": "Cooldown",
-                    "Value": 25.0,
+                    "Value": 26.0,
                     "Scale": {
                         "Value": 1,
                         "Type": "cooldown"
@@ -25920,7 +25913,7 @@
                 },
                 "Radius": {
                     "Name": "Radius",
-                    "Value": 8.0,
+                    "Value": 6.5,
                     "Scale": {
                         "Value": 1,
                         "Type": "radius"
@@ -28833,7 +28826,7 @@
                     "DescKey": "ability_ratking_ratarmor_t1_desc"
                 },
                 {
-                    "ReturnFireChance": 15,
+                    "ReturnFireChance": 20,
                     "AbilityCooldown": -8,
                     "DescKey": "ability_ratking_ratarmor_t2_desc"
                 },
@@ -28901,7 +28894,7 @@
                             "Title": "Banner Aura",
                             "Key": "BonusMoveSpeed",
                             "Name": "Move Speed",
-                            "Value": 4,
+                            "Value": 5,
                             "Type": "move_speed"
                         },
                         {
@@ -29940,7 +29933,7 @@
                     "DescKey": "ability_artist_homingbrush_t2_desc"
                 },
                 {
-                    "BulletDamageMultiplier": 30,
+                    "BulletDamageMultiplier": 45,
                     "CooldownReductionPerHit": 1,
                     "Damage": {
                         "Value": 0,
@@ -31441,7 +31434,7 @@
                         {
                             "Key": "MagicDamagePerBullet",
                             "Name": "Spirit Damage Per Bullet",
-                            "Value": 8,
+                            "Value": 12,
                             "Scale": {
                                 "Value": 0.26,
                                 "Type": "spirit"
@@ -31454,7 +31447,7 @@
                     {
                         "Key": "DebuffDuration",
                         "Name": "Debuff Duration",
-                        "Value": 16,
+                        "Value": 10,
                         "Scale": {
                             "Value": 1,
                             "Type": "duration"
@@ -31486,7 +31479,7 @@
                 },
                 {
                     "AbilityCooldown": -12,
-                    "DebuffDuration": 8,
+                    "DebuffDuration": 6,
                     "DescKey": "ability_baba_bubbling_brew_t2_desc"
                 },
                 {
@@ -32065,7 +32058,7 @@
                             "Key": "BarrageMaxDamage",
                             "NameKey": "MaxDamage",
                             "Name": "Max Damage",
-                            "Value": 450,
+                            "Value": 650,
                             "Scale": {
                                 "Value": 1.6,
                                 "Type": "spirit"
@@ -32090,7 +32083,7 @@
                         "Key": "TimeToMaxStacks",
                         "NameKey": "BabaUlt2TimeToMaxStacks",
                         "Name": "Time To Max Stacks",
-                        "Value": 3.5,
+                        "Value": 4,
                         "Type": "duration"
                     },
                     {
@@ -32132,7 +32125,7 @@
                 },
                 "AbilityCastRange": {
                     "Name": "Cast Range",
-                    "Value": 18,
+                    "Value": 20,
                     "Scale": {
                         "Value": 1,
                         "Type": "range"

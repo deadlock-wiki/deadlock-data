@@ -317,7 +317,7 @@
                 "BonusFireRatePerStack": 10
             },
             {
-                "BulletDamageMultiplier": 30,
+                "BulletDamageMultiplier": 45,
                 "CooldownReductionPerHit": 1,
                 "Damage": {
                     "Value": 0,
@@ -775,7 +775,7 @@
         "ChannelMoveSpeed": -1,
         "Damage": 50,
         "DebuffDuration": {
-            "Value": 16,
+            "Value": 10,
             "Scale": {
                 "Value": 1,
                 "Type": "duration"
@@ -797,7 +797,7 @@
         "IsDisabled": false,
         "Key": "ability_baba_bubbling_brew",
         "MagicDamagePerBullet": {
-            "Value": 8,
+            "Value": 12,
             "Scale": {
                 "Value": 0.26,
                 "Type": "spirit"
@@ -835,7 +835,7 @@
             },
             {
                 "AbilityCooldown": -12,
-                "DebuffDuration": 8
+                "DebuffDuration": 6
             },
             {
                 "AbilityCharges": 1,
@@ -887,7 +887,8 @@
             "BehaviorProjectileFiredAsBullet",
             "BehaviorCooldownOnChannelEnd",
             "BehaviorDontInterruptSlideOnCast",
-            "BehaviorHoldsAtMaxChannel"
+            "BehaviorHoldsAtMaxChannel",
+            "BehaviorCanCastOnZipline"
         ],
         "BurnDuration": {
             "Value": 8,
@@ -1010,7 +1011,7 @@
     "ability_baba_ultimate_2": {
         "AbilityCastDelay": 0.15,
         "AbilityCastRange": {
-            "Value": 18,
+            "Value": 20,
             "Scale": {
                 "Value": 1,
                 "Type": "range"
@@ -1034,7 +1035,7 @@
         "AbilityPostCastDuration": 0.6,
         "AbilityUnitTargetLimit": 9999,
         "BarrageMaxDamage": {
-            "Value": 450,
+            "Value": 650,
             "Scale": {
                 "Value": 1.6,
                 "Type": "spirit"
@@ -1095,7 +1096,7 @@
         "TickInterval": 0.15,
         "TimeToGainLockonStack": 0.7,
         "TimeToLoseLockonStack": 2,
-        "TimeToMaxStacks": 3.5,
+        "TimeToMaxStacks": 4,
         "Upgrades": [
             {
                 "MaxSlow": 32,
@@ -1213,7 +1214,7 @@
         },
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
-        "ArmingDuration": 0.65,
+        "ArmingDuration": 0.8,
         "BeepSoundBuildupCount": 4,
         "BeepSoundIntervalBias": 0.55,
         "BeepSoundMaxFrequency": 0.1,
@@ -1224,9 +1225,9 @@
         ],
         "ChannelMoveSpeed": -1,
         "Damage": {
-            "Value": 90,
+            "Value": 85,
             "Scale": {
-                "Value": 1.35,
+                "Value": 1.3,
                 "Type": "spirit"
             }
         },
@@ -1240,7 +1241,7 @@
                 "Type": "radius"
             }
         },
-        "SelfDamagePct": 30,
+        "SelfDamagePct": 50,
         "SpilledBloodModifier": {
             "Class": "SpilledBloodThinker",
             "Subclass": "SpilledBloodThinker",
@@ -1252,7 +1253,7 @@
                 "AbilityCooldown": -5
             },
             {
-                "Damage": 50,
+                "Damage": 45,
                 "Radius": 2
             },
             {
@@ -1737,7 +1738,8 @@
             "BehaviorNoTarget",
             "BehaviorMovement",
             "BehaviorRequireAbilityButtonToCancel",
-            "BehaviorDeactivateCrouchToggleOnCast"
+            "BehaviorDeactivateCrouchToggleOnCast",
+            "BehaviorFlying"
         ],
         "FlyingItemCastRange": 50,
         "IsDisabled": false,
@@ -3418,7 +3420,7 @@
         "Damage": {
             "Value": 55,
             "Scale": {
-                "Value": 1.116,
+                "Value": 0.9,
                 "Type": "spirit"
             }
         },
@@ -3468,7 +3470,7 @@
             }
         },
         "AbilityCooldown": {
-            "Value": 25.0,
+            "Value": 26.0,
             "Scale": {
                 "Value": 1,
                 "Type": "cooldown"
@@ -3482,7 +3484,8 @@
             "BehaviorProjectilePassThroughWorld",
             "BehaviorShowCastRangeAsSatSphereWhileCasting",
             "BehaviorDontInterruptSlideOnCast",
-            "BehaviorRefundHalfCooldownOnChannelInterrupt"
+            "BehaviorRefundHalfCooldownOnChannelInterrupt",
+            "BehaviorCountsAsAbilityUse"
         ],
         "BuffModifier": {
             "Class": "Base",
@@ -3522,7 +3525,7 @@
         "Damage": {
             "Value": 27,
             "Scale": {
-                "Value": 0.681,
+                "Value": 0.62,
                 "Type": "spirit"
             }
         },
@@ -3627,8 +3630,8 @@
             "BehaviorDisplaysDamageImpact",
             "BehaviorDontAimFacingEnemy",
             "BehaviorRequireAbilityButtonToCancel",
-            "BehaviorDoNotAllowSpamProc",
-            "BehaviorDoNotCancelOnParry"
+            "BehaviorDoNotCancelOnParry",
+            "BehaviorCountsAsAbilityUse"
         ],
         "BuffModifier": {
             "Class": "DeadpackFlamethrowerFireRate",
@@ -3715,7 +3718,8 @@
             "BehaviorCannotCancelDuringChannel",
             "BehaviorDisplaysDamageImpact",
             "BehaviorMovement",
-            "BehaviorCanSetQuickCast"
+            "BehaviorCanSetQuickCast",
+            "BehaviorFlying"
         ],
         "BounceBackModifier": {
             "Class": "DeadpackOverloadedlaunch",
@@ -3782,7 +3786,7 @@
         "OverheatStunDelayDuration": 2.5,
         "OverheatStunDurationSelf": 1.3,
         "Radius": {
-            "Value": 8.0,
+            "Value": 6.5,
             "Scale": {
                 "Value": 1,
                 "Type": "radius"
@@ -3869,6 +3873,10 @@
         "IsDisabled": false,
         "Key": "ability_deadpack_ultimate",
         "LowHealthEnemyThresholdPct": 50,
+        "LowHealthGlowModifier": {
+            "Class": "LowHealthGlow",
+            "Subclass": "DeadpackUltimateLowHealthGlow"
+        },
         "MaxHeight": 1700,
         "Name": "Close The Deal",
         "SelfDamagePercent": 25,
@@ -5565,7 +5573,7 @@
     "ability_fencer_lunge": {
         "AbilityCastDelay": 0.1,
         "AbilityCooldown": {
-            "Value": 26,
+            "Value": 30,
             "Scale": {
                 "Value": 1,
                 "Type": "cooldown"
@@ -5711,6 +5719,13 @@
         ]
     },
     "ability_fencer_riposte": {
+        "AbilityCastRange": {
+            "Value": 35,
+            "Scale": {
+                "Value": 1,
+                "Type": "range"
+            }
+        },
         "AbilityChannelTime": {
             "Value": 0.8,
             "Scale": {
@@ -5741,10 +5756,18 @@
         "BehaviourBits": [
             "BehaviorChannelled",
             "BehaviorNoTarget",
-            "BehaviorDisplaysDamageImpact"
+            "BehaviorDisplaysDamageImpact",
+            "BehaviorCastableWhileBusy"
         ],
         "ChannelMoveSpeed": -1,
         "CounterattackAntiMashDelay": 0.2,
+        "Damage": {
+            "Value": 100,
+            "Scale": {
+                "Value": 1.5,
+                "Type": "spirit"
+            }
+        },
         "DamageThreshold": {
             "Value": 60,
             "Scale": {
@@ -5753,61 +5776,35 @@
             }
         },
         "DampingFactor": 0.5,
-        "DashGraceWindow": 1.3,
+        "DashGraceWindow": 1.8,
         "DashRadius": 2.2,
-        "DashRange": {
-            "Value": 35,
-            "Scale": {
-                "Value": 1,
-                "Type": "range"
-            }
-        },
         "DashSpeed": 76.2,
-        "DebuffModifier": {
-            "Class": "Base",
-            "Subclass": "FencerRiposteAttackDebuff"
-        },
-        "ImmobilizeModifier": {
-            "Class": "CitadelRoot",
-            "Subclass": "FencerRiposteImmobilize",
-            "EnabledStateMask": [
-                "ParryDisabled",
-                "Disarmed"
-            ]
-        },
         "IsDisabled": false,
         "Key": "ability_fencer_riposte",
         "LiftHeight": 240,
-        "MeleeResistReduction": -25,
-        "MeleeResistReductionDuration": {
-            "Value": 3.0,
-            "Scale": {
-                "Value": 1,
-                "Type": "duration"
-            }
-        },
         "MoveSpeedMax": 4,
         "Name": "Riposte",
         "ParryWindow": 0.3,
+        "PommelDebuffModifier": {
+            "Class": "SlowBase",
+            "Subclass": "FencerRipostePommelDebuff",
+            "EnabledStateMask": [
+                "Slowed",
+                "DashDisabledDebuff"
+            ]
+        },
         "SideMoveSpeed": -100,
         "SlashConeAngle": 90,
         "SlashHalfWidth": 1,
         "SlashRadius": 6,
         "SlowDuration": {
-            "Value": 4,
+            "Value": 2,
             "Scale": {
                 "Value": 1,
                 "Type": "duration"
             }
         },
-        "SlowPercent": 40,
-        "StunDuration": {
-            "Value": 1.5,
-            "Scale": {
-                "Value": 1,
-                "Type": "duration"
-            }
-        },
+        "SlowPercent": 50,
         "TargetLifestealModifier": {
             "Class": "FencerRiposteTargetLifesteal",
             "Subclass": "FencerRiposteTargetLifesteal"
@@ -5815,11 +5812,11 @@
         "TurnRateMax": 10,
         "Upgrades": [
             {
-                "AbilityCooldown": -8
+                "AbilityCooldown": -9
             },
             {
-                "MeleeResistReduction": -25,
-                "StunDuration": 0.7
+                "Damage": 100,
+                "SlowDuration": 1
             },
             {
                 "TargetLifesteal": 75,
@@ -5828,13 +5825,6 @@
         ]
     },
     "ability_fencer_riposte_target_select": {
-        "AbilityCastRange": {
-            "Value": 35,
-            "Scale": {
-                "Value": 1,
-                "Type": "range"
-            }
-        },
         "AbilityCooldownBetweenCharge": -1.0,
         "AbilityUnitTargetLimit": 1,
         "BehaviourBits": [
@@ -5858,7 +5848,7 @@
     "ability_fencer_throwblade": {
         "AbilityCastDelay": 0.5,
         "AbilityCooldown": {
-            "Value": 12,
+            "Value": 11,
             "Scale": {
                 "Value": 1,
                 "Type": "cooldown"
@@ -6030,6 +6020,10 @@
         "IsDisabled": false,
         "Key": "ability_fencer_ultimate",
         "LowHealthEnemyThresholdPct": 50,
+        "LowHealthGlowModifier": {
+            "Class": "LowHealthGlow",
+            "Subclass": "FencerUltimateLowHealthGlow"
+        },
         "MoveSpeedPenaltyMaxSpeed": 200,
         "Name": "Itani Lo Sahn",
         "SideMoveSpeedReduction": -100,
@@ -7635,7 +7629,7 @@
     },
     "ability_icebeam": {
         "AbilityCooldown": {
-            "Value": 28.0,
+            "Value": 29.0,
             "Scale": {
                 "Value": 1,
                 "Type": "cooldown"
@@ -7684,7 +7678,7 @@
         "DPS": {
             "Value": 45.0,
             "Scale": {
-                "Value": 0.38,
+                "Value": 0.32,
                 "Type": "spirit"
             }
         },
@@ -7704,7 +7698,7 @@
         "MaxFireRateSlowPercent": 20,
         "MaxGroundDashReductionPercent": -18,
         "MaxSlowPercent": 16,
-        "MaxSlowTime": 2.0,
+        "MaxSlowTime": 2.5,
         "MinSlowPercent": 24,
         "Name": "Arctic Beam",
         "PathLength": {
@@ -7732,7 +7726,7 @@
                 "DPS": {
                     "Value": 20,
                     "Scale": {
-                        "Value": 0.6,
+                        "Value": 0.5,
                         "Type": "spirit"
                     }
                 }
@@ -7844,7 +7838,7 @@
                 "AbilityCooldown": -25.0
             },
             {
-                "BonusSpiritPct": 35,
+                "BonusSpiritPct": 30,
                 "BonusSpirit": 20
             }
         ]
@@ -7985,10 +7979,10 @@
             "Subclass": "IncendiaryDebuff",
             "StatusEffectPriority": 50
         },
-        "GrowthPerMeter": 0.5,
+        "GrowthPerMeter": 0.475,
         "HeightOffGround": 50,
         "IncomingDamagePercentFromCaster": 16,
-        "InitialWidth": 1,
+        "InitialWidth": 1.5,
         "IsDisabled": false,
         "Key": "ability_incendiary_projectile",
         "Name": "Napalm",
@@ -8907,7 +8901,6 @@
             "BehaviorCooldownOnChannelEnd",
             "BehaviorDontInterruptSlideOnCast"
         ],
-        "BossDamageScale": 0.5,
         "ChannelMoveSpeed": -1,
         "CloneBoltDelay": 0.1,
         "CloneDamagePercentage": 50.0,
@@ -9408,8 +9401,8 @@
                 "BountyDuration": 3
             },
             {
-                "CooldownRefundPercent": 50,
-                "ImpactDamage": 90
+                "CooldownRefundPercent": 60,
+                "ImpactDamage": 100
             }
         ]
     },
@@ -10092,6 +10085,7 @@
             }
         },
         "BonusSpiritDamagePercentage": 15,
+        "BossDamageScale": 0.75,
         "BuffDuration": -1,
         "BulletResist": 12.5,
         "Damage": {
@@ -11120,7 +11114,8 @@
             "BehaviorNoTarget",
             "BehaviorDisplaysDamageImpact",
             "BehaviorDontInterruptSlideOnCast",
-            "BehaviorDoNotAllowSpamProc"
+            "BehaviorDoNotAllowSpamProc",
+            "BehaviorDoesNotCountAsAbilityUse"
         ],
         "BuffExtendMaxDurationPercent": 200,
         "BuffModifier": {
@@ -11548,7 +11543,8 @@
             "BehaviorNoTarget",
             "BehaviorAllowAltCast",
             "BehaviorMovement",
-            "BehaviorDeactivateCrouchToggleOnCast"
+            "BehaviorDeactivateCrouchToggleOnCast",
+            "BehaviorFlying"
         ],
         "BulletSplitShot": 5,
         "FallSpeedMax": 0.635,
@@ -11955,7 +11951,7 @@
             }
         },
         "AbilityCooldown": {
-            "Value": 23,
+            "Value": 20,
             "Scale": {
                 "Value": 1,
                 "Type": "cooldown"
@@ -12318,7 +12314,8 @@
             "BehaviorDisplaysDamageImpact",
             "BehaviorCannotCancelDuringChannel",
             "BehaviorDontInterruptSlideOnCast",
-            "BehaviorRefundHalfCooldownOnChannelInterrupt"
+            "BehaviorRefundHalfCooldownOnChannelInterrupt",
+            "BehaviorCountsAsAbilityUse"
         ],
         "BonusAmpToVampire": 5,
         "BonusDamage": {
@@ -12906,7 +12903,7 @@
                 "AbilityDuration": 4
             },
             {
-                "ReturnFireChance": 15,
+                "ReturnFireChance": 20,
                 "AbilityCooldown": -8
             },
             {
@@ -13177,7 +13174,7 @@
             "BehaviorAlwaysPreviewRadius",
             "BehaviorCanSetQuickCast"
         ],
-        "BonusMoveSpeed": 4,
+        "BonusMoveSpeed": 5,
         "CasterModifier": {
             "Class": "BaseAura",
             "Subclass": "RatkingFlagAuraCarry",
@@ -13237,7 +13234,7 @@
             "Class": "RatkingSewerEruption",
             "Subclass": "RatkingSewerEruptionModifier",
             "ExplosionHalfHeightMeters": 10.0,
-            "TossSpeed": 500.0,
+            "TossSpeed": 675.0,
             "TossGravityScale": 2.0
         },
         "Radius": {
@@ -15139,7 +15136,7 @@
             },
             {
                 "MaxRecasts": 1,
-                "AbilityCastRange": 4
+                "AbilityCastRange": 3
             }
         ]
     },
@@ -15169,7 +15166,8 @@
             "BehaviorMovement",
             "BehaviorCanSetQuickCast",
             "BehaviorDeactivateCrouchToggleOnCast",
-            "BehaviorTrigger"
+            "BehaviorTrigger",
+            "BehaviorCountsAsAbilityUse"
         ],
         "ChannelMoveSpeed": -1,
         "IsDisabled": false,
@@ -15318,7 +15316,7 @@
         "BonusDamage": {
             "Value": 45,
             "Scale": {
-                "Value": 1.85,
+                "Value": 1.5,
                 "Type": "spirit"
             }
         },
@@ -15371,7 +15369,13 @@
             },
             {
                 "MagicDamagePerBullet": 3.0,
-                "BonusDamage": 45
+                "BonusDamage": {
+                    "Value": 45,
+                    "Scale": {
+                        "Value": 0.35,
+                        "Type": "spirit"
+                    }
+                }
             },
             {
                 "PerTargetCooldown": -5,
@@ -16137,7 +16141,8 @@
         "Name": "Willpower",
         "Upgrades": [
             {
-                "MoveSpeedBonusPct": 20
+                "MoveSpeedBonusPct": 20,
+                "CombatBarrier": 50
             },
             {
                 "AbilityCooldown": -24,
@@ -16290,14 +16295,14 @@
         "BulletResist": 50,
         "ConeAngle": 115,
         "HealthStealPct": {
-            "Value": 10,
+            "Value": 15,
             "Scale": {
                 "Value": 1,
                 "Type": "healing"
             }
         },
         "HealthStealPctHero": {
-            "Value": 75,
+            "Value": 90,
             "Scale": {
                 "Value": 1,
                 "Type": "healing"
@@ -18394,7 +18399,7 @@
         ],
         "BonusAbilityResource": 100,
         "CardResourceGenPctScale": {
-            "Value": 85,
+            "Value": 68,
             "Scale": {
                 "Value": -1.0,
                 "Type": "cooldown"
@@ -18647,7 +18652,7 @@
         "MaxBonusBulletDamage": {
             "Value": 5,
             "Scale": {
-                "Value": 125,
+                "Value": 110,
                 "Type": "weapon_power"
             }
         },
@@ -18712,7 +18717,7 @@
                 "MaxBonusBulletDamage": {
                     "Value": 0,
                     "Scale": {
-                        "Value": 55,
+                        "Value": 40,
                         "Type": "weapon_power"
                     }
                 }
@@ -19549,7 +19554,8 @@
             "BehaviorNoTarget",
             "BehaviorMovement",
             "BehaviorRequireAbilityButtonToCancel",
-            "BehaviorDeactivateCrouchToggleOnCast"
+            "BehaviorDeactivateCrouchToggleOnCast",
+            "BehaviorFlying"
         ],
         "FlyingItemCastRange": 50,
         "IsDisabled": false,
@@ -21483,11 +21489,11 @@
                 "AbilityCooldown": -6
             },
             {
-                "TechArmorDamageReduction": -4,
+                "ImpactDamage": 50,
                 "DashRange": 2
             },
             {
-                "ImpactDamage": 50,
+                "TechArmorDamageReduction": -4,
                 "CooldownReductionOnHit": 2,
                 "CooldownReductionOnHitNonHero": 1,
                 "MaxCooldownReductionsFromHits": 8
@@ -21632,7 +21638,7 @@
                 "AbilityCooldown": -25
             },
             {
-                "EnemyHealthPercent": 10
+                "EnemyHealthPercent": 8
             }
         ]
     },
@@ -22279,7 +22285,8 @@
             "BehaviorMovement",
             "BehaviorRequireAbilityButtonToCancel",
             "BehaviorCanSetQuickCast",
-            "BehaviorDeactivateCrouchToggleOnCast"
+            "BehaviorDeactivateCrouchToggleOnCast",
+            "BehaviorFlying"
         ],
         "BuffDuration": {
             "Value": 8,
@@ -22366,6 +22373,10 @@
         },
         "Upgrades": [
             {
+                "SlowPercent": 32,
+                "DebuffDuration": 3
+            },
+            {
                 "AirDropBulletShield": {
                     "Value": 300,
                     "Scale": {
@@ -22373,10 +22384,6 @@
                         "Type": "spirit"
                     }
                 }
-            },
-            {
-                "SlowPercent": 32,
-                "DebuffDuration": 3
             },
             {
                 "SilenceDuration": 3,
@@ -22468,14 +22475,14 @@
                 "MaxHealthRegen": 6.0
             },
             {
-                "AbilityCooldown": -25
+                "StunDuration": 0.75
             },
             {
-                "StunDuration": 0.75,
+                "AbilityCooldown": -25,
                 "Damage": {
                     "Value": 0,
                     "Scale": {
-                        "Value": 1.5,
+                        "Value": 1.2,
                         "Type": "spirit"
                     }
                 }
@@ -23174,7 +23181,7 @@
                 "MagicDamagePerBullet": {
                     "Value": 0,
                     "Scale": {
-                        "Value": 0.045,
+                        "Value": 0.03,
                         "Type": "spirit"
                     }
                 },
@@ -24676,7 +24683,8 @@
             "BehaviorCanCastOnZipline",
             "BehaviorCastableWhileBusy",
             "BehaviorRequireAbilityButtonToCancel",
-            "BehaviorCanCancelDuringCastDelay"
+            "BehaviorCanCancelDuringCastDelay",
+            "BehaviorAllowAltCast"
         ],
         "BuffModifier": {
             "Class": "MirageTravelerMovementSpeed",
@@ -25367,9 +25375,9 @@
         "CameraDistance": 120,
         "ChannelMoveSpeed": -1,
         "Damage": {
-            "Value": 120,
+            "Value": 156,
             "Scale": {
-                "Value": 0.609336,
+                "Value": 0.792137,
                 "Type": "spirit"
             }
         },
